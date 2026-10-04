@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · coopa</title>
+  <meta name="description" content="About coopa (cooparobla): real-time rendering and game engine engineering, open source on GitHub.">
+  <meta name="theme-color" content="#0f0f12">
+  <meta property="og:title" content="About · coopa">
+  <meta property="og:image" content="../assets/img/avatar.jpg">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=3">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="../" aria-label="coopa, home">
+    <svg class="brand-mark" aria-hidden="true"><use href="../assets/icons.svg#i-brick"/></svg>
+    <span>coopa</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="../#projects">projects</a>
+    <a class="nav-proj" href="../projects/toyengine/">toyengine</a>
+    <a class="nav-proj" href="../projects/mapcoopa/">mapcoopa</a>
+    <a href="./" aria-current="page">about</a>
+    <a class="nav-gh" href="https://github.com/cooparobla" aria-label="GitHub">
+      <svg aria-hidden="true"><use href="../assets/icons.svg#i-github"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap about">
+      <aside class="about-card reveal">
+        <img class="avatar" src="../assets/img/avatar.jpg" alt="coopa's GitHub avatar: a figure relaxing in a deck chair under a purple umbrella" width="460" height="460">
+        <h1>coopa</h1>
+        <p class="handle mono">@cooparobla</p>
+        <a class="btn btn-primary" href="https://github.com/cooparobla"><svg aria-hidden="true"><use href="../assets/icons.svg#i-github"/></svg> GitHub</a>
+      </aside>
+
+      <div class="about-body">
+        <p class="crumbs"><a href="../">coopa</a> / <span>about</span></p>
+        <p class="eyebrow">About</p>
+        <h2>Rendering and game engine engineering</h2>
+        <p class="prose">
+          coopa builds real-time rendering and game engine technology in C++20 and Vulkan: renderers,
+          physics, water, procedural worlds, and the editors and tools that drive them. The work is
+          developed on Linux and macOS and published as open source.
+        </p>
+        <p class="prose">
+          The flagship is <a href="../projects/toyengine/">toyengine</a>, a 3D engine with a deferred PBR
+          renderer and a Blender-style editor. It is built on a family of standalone libraries, including
+          <a href="../projects/mapcoopa/">mapcoopa</a>, which generates whole fantasy worlds from a seed.
+        </p>
+
+        <h3 class="kicker">Focus areas</h3>
+        <div class="grid-2">
+          <article class="card reveal">
+            <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-render"/></svg>
+            <h4>Real-time rendering</h4>
+            <p>Deferred PBR, shadows, screen-space effects, volumetrics and post-processing on Vulkan.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-physics"/></svg>
+            <h4>Simulation</h4>
+            <p>Rigid bodies, XPBD cloth, Gerstner-wave water and buoyancy.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-map"/></svg>
+            <h4>Procedural worlds</h4>
+            <p>Seeded, deterministic generation of terrain, climate, rivers, roads and settlements.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-gizmo"/></svg>
+            <h4>Engine tools</h4>
+            <p>Editors, asset pipelines, packaging and headless test harnesses.</p>
+          </article>
+        </div>
+
+        <h3 class="kicker">Toolkit</h3>
+        <div class="tags">
+          <span class="tag">C++20</span><span class="tag">Vulkan</span><span class="tag">GLSL</span>
+          <span class="tag">MoltenVK</span><span class="tag">CMake</span><span class="tag">GLFW</span>
+          <span class="tag">glm</span><span class="tag">YAML</span><span class="tag">Python tooling</span>
+          <span class="tag">Linux</span><span class="tag">macOS</span>
+        </div>
+
+        <h3 class="kicker">Open source</h3>
+        <ul class="ticks">
+          <li><b><a href="../projects/toyengine/">toyengine</a></b>: the engine and editor.</li>
+          <li><b><a href="../projects/mapcoopa/">mapcoopa</a></b>: seeded fantasy world generation.</li>
+          <li><b>libraries</b>: <a href="https://github.com/cooparobla/libcoopa">libcoopa</a>, <a href="https://github.com/cooparobla/gfxcoopa">gfxcoopa</a>, <a href="https://github.com/cooparobla/physxcoopa">physxcoopa</a>, <a href="https://github.com/cooparobla/uicoopa">uicoopa</a>, <a href="https://github.com/cooparobla/sfxcoopa">sfxcoopa</a>, <a href="https://github.com/cooparobla/caml">caml</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" style="margin-top: 80px">
+  <div class="wrap footer-inner mono">
+    <span>© <span id="year">2026</span> coopa · cooparobla</span>
+    <span><a href="../projects/toyengine/">toyengine</a> · <a href="../projects/mapcoopa/">mapcoopa</a> · <a href="./">about</a> · <a href="https://github.com/cooparobla">github</a></span>
+  </div>
+</footer>
+
+<script src="../main.js?v=3" defer></script>
+</body>
+</html>

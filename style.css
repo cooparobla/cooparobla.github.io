@@ -104,7 +104,7 @@ h4 { font-size: 1.12rem; font-weight: 600; }
 #waves { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-inner { position: relative; z-index: 1; width: 100%; padding-top: 80px; padding-bottom: 80px; pointer-events: none; }
 .hero-inner a, .hero-inner .btn { pointer-events: auto; }
-.hero h1 { max-width: 15ch; text-shadow: 0 4px 30px rgba(0, 0, 0, .6); }
+.hero h1 { max-width: 13ch; text-shadow: 0 4px 30px rgba(0, 0, 0, .6); }
 .hero h1 .plus { color: var(--violet-400); font-weight: 500; }
 .lede { max-width: 520px; color: var(--muted); font-size: 1.12rem; margin: 24px 0 32px; text-shadow: 0 2px 16px var(--bg); }
 .lede b { color: var(--text); font-weight: 500; }
@@ -352,6 +352,22 @@ pre code { background: none; border: 0; padding: 0; border-radius: 0; color: inh
   font-size: .7rem; color: var(--violet-300);
 }
 
+/* ── About ── */
+.about { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; position: relative; }
+.about-card {
+  position: sticky; top: 100px; display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 28px; border-radius: 20px; background: var(--surface); border: 1px solid var(--border);
+}
+.avatar {
+  width: 200px; height: 200px; border-radius: 50%; object-fit: cover; background: #f2f2f2;
+  border: 3px solid var(--surface-3); box-shadow: 0 0 0 6px rgba(139, 92, 246, .12), 0 20px 40px -12px rgba(0, 0, 0, .7);
+  margin-bottom: 20px;
+}
+.about-card h1 { font-size: 2rem; font-family: var(--mono); }
+.handle { color: var(--muted); font-size: .9rem; margin: 4px 0 20px; }
+.about-body .kicker { margin: 52px 0 18px; }
+.about-body .prose a { border-bottom: 1px solid rgba(167, 139, 250, .4); }
+
 /* ── Contact & footer ── */
 .contact { padding-bottom: 120px; }
 .contact-brick { width: 80px; height: 80px; margin: 0 auto 18px; display: block; animation: bob 4s ease-in-out infinite; }
@@ -389,7 +405,8 @@ pre code { background: none; border: 0; padding: 0; border-radius: 0; color: inh
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .brick-row { grid-template-columns: repeat(3, 1fr); }
-  .split, .split-rev, .split-shot, .projects { grid-template-columns: 1fr; gap: 40px; }
+  .split, .split-rev, .split-shot, .projects, .about { grid-template-columns: 1fr; gap: 40px; }
+  .about-card { position: static; }
   .split-rev .code { order: 2; }
   .window { transform: none; }
 }

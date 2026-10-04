@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -26,6 +26,7 @@
     <a href="#projects">projects</a>
     <a class="nav-proj" href="projects/toyengine/">toyengine</a>
     <a class="nav-proj" href="projects/mapcoopa/">mapcoopa</a>
+    <a href="about/">about</a>
     <a class="nav-gh" href="https://github.com/cooparobla" aria-label="GitHub">
       <svg aria-hidden="true"><use href="assets/icons.svg#i-github"/></svg>
     </a>
@@ -38,15 +39,15 @@
   <section class="hero">
     <canvas id="waves" aria-hidden="true"></canvas>
     <div class="hero-inner wrap">
-      <p class="eyebrow"><span class="dot"></span>coopa · cooparobla</p>
-      <h1>Render <span class="plus">+</span> Game Engine <span class="grad">Engineer</span></h1>
+      <p class="eyebrow"><span class="dot"></span>open source · C++20 · Vulkan</p>
+      <h1>Rendering <span class="plus">+</span> Game Engine <span class="grad">Engineering</span></h1>
       <p class="lede">
-        Real-time renderers, physics, water and procedural worlds, built from the ground up in
-        <b>C++20</b> and <b>Vulkan</b>. Open source, data-driven and deterministic.
+        <b>toyengine</b> is a 3D game engine with a deferred PBR renderer, physics, dynamic water and a
+        Blender-style editor. <b>mapcoopa</b> generates whole fantasy worlds from a single seed.
       </p>
       <div class="cta">
-        <a class="btn btn-primary" href="#projects">View projects <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="https://github.com/cooparobla"><svg aria-hidden="true"><use href="assets/icons.svg#i-github"/></svg> cooparobla</a>
+        <a class="btn btn-primary" href="projects/toyengine/">toyengine <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="projects/mapcoopa/">mapcoopa <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
       </div>
       <p class="hero-term mono" aria-hidden="true"><span class="prompt">$</span><span id="typed" data-lines='["./build/toyengine water_test","./build/mapcoopa --seed=42 --out=world","./build/toyengine terrain_test","./build/toyengine_editor --new-project ~/game","./build/mapcoopa --shape=archipelago --out=islands","./build/toyengine underwater_test"]'>./build/toyengine water_test</span><span class="caret"></span></p>
     </div>
@@ -170,10 +171,10 @@
 <footer class="footer">
   <div class="wrap footer-inner mono">
     <span>© <span id="year">2026</span> coopa · cooparobla</span>
-    <span><a href="projects/toyengine/">toyengine</a> · <a href="projects/mapcoopa/">mapcoopa</a> · <a href="https://github.com/cooparobla">github</a></span>
+    <span><a href="projects/toyengine/">toyengine</a> · <a href="projects/mapcoopa/">mapcoopa</a> · <a href="about/">about</a> · <a href="https://github.com/cooparobla">github</a></span>
   </div>
 </footer>
 
-<script src="main.js" defer></script>
+<script src="main.js?v=3" defer></script>
 </body>
 </html>
