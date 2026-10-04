@@ -1,24 +1,35 @@
 # cooparobla.github.io
 
-Personal developer site for **coopa** (cooparobla), home of
-[toyengine](https://github.com/cooparobla/toyengine).
+Developer site for **coopa** (cooparobla): render and game engine engineering.
 
 Plain static HTML, CSS and JS with no build step:
 
 ```
-index.html        the page (icons are an inline SVG sprite at the top)
-style.css         palette taken from toyengine's logo (toyengine/core/branding.h)
-main.js           hero wave grid (canvas), scroll reveals, lightbox, copy button
-assets/img/       toyengine screenshots and icon (copied from toyengine/docs/images)
+index.html                    home: hero, projects, principles
+projects/toyengine/index.html toyengine project page
+projects/mapcoopa/index.html  mapcoopa project page
+style.css                     shared styles (dark greys, violet accents)
+main.js                       hero wave grid (canvas), scroll reveals, lightbox, copy buttons
+assets/icons.svg              shared icon sprite: <svg><use href="…/assets/icons.svg#i-name"/></svg>
+assets/img/<project>/         screenshots, copied from each project's docs/images
 assets/favicon.svg
-.nojekyll         serve files as-is on GitHub Pages
+.nojekyll                     serve files as-is on GitHub Pages
 ```
+
+All paths are relative, so the site works at a domain root or under a sub-path.
+
+## Adding a project
+
+1. Copy `projects/mapcoopa/` to `projects/<name>/` and rewrite its content.
+2. Put screenshots in `assets/img/<name>/`.
+3. Add a card to the `.projects` grid in `index.html`.
+4. Add a `nav-proj` link to the nav on every page, and update the pager links at the
+   bottom of the neighbouring project pages.
 
 ## Run locally
 
-```bash
-python3 -m http.server 8000   # then open http://localhost:8000
-```
+Serve the folder with any static file server (the icon sprite doesn't load over `file://`),
+for example `python3 -m http.server 8000`, then open http://localhost:8000.
 
 ## Deploy
 
@@ -26,12 +37,6 @@ GitHub Pages: push to `main` on `cooparobla/cooparobla.github.io`, then under
 **Settings → Pages** choose *Deploy from a branch*, `main`, `/ (root)`. The site
 appears at `https://cooparobla.github.io`.
 
-Moving to a custom domain later: add a `CNAME` file containing the domain and point
-DNS at GitHub Pages. Because everything is relative paths, the same files also work
-unchanged on Netlify, Cloudflare Pages or any static host.
-
-## Updating screenshots
-
-```bash
-cp ../toyengine/docs/images/*.jpg assets/img/
-```
+For a custom domain later, add a `CNAME` file containing the domain and point DNS at
+GitHub Pages. The same files also work unchanged on Netlify, Cloudflare Pages or any
+static host.

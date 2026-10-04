@@ -3,525 +3,165 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>coopa · engines from the bricks up</title>
-  <meta name="description" content="coopa (cooparobla) builds game engines and the libraries under them. Home of toyengine, an open source C++20 / Vulkan 3D engine with a Blender-style editor.">
-  <meta name="theme-color" content="#1b1638">
-  <meta property="og:title" content="coopa · engines from the bricks up">
-  <meta property="og:description" content="toyengine: an open source C++20 / Vulkan 3D game engine with a Blender-style editor, built on seven header-only coopa libraries.">
-  <meta property="og:image" content="assets/img/water_test.jpg">
+  <title>coopa · render + game engine engineering</title>
+  <meta name="description" content="coopa (cooparobla): real-time rendering and game engine engineering. Home of toyengine, a C++20 / Vulkan 3D engine, and mapcoopa, a seeded fantasy world generator.">
+  <meta name="theme-color" content="#0f0f12">
+  <meta property="og:title" content="coopa · render + game engine engineering">
+  <meta property="og:description" content="toyengine, a C++20 / Vulkan 3D game engine with a Blender-style editor, and mapcoopa, a seeded world generator.">
+  <meta property="og:image" content="assets/img/toyengine/water_test.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/img/toyengine-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Icon sprite: isometric, drawn in the toyengine logo palette. -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="i-brick" viewBox="0 0 48 48">
-      <path d="M24 10 37.9 18 24 26 10.1 18Z" fill="var(--sun)"/>
-      <path d="M10.1 18 24 26V42L10.1 34Z" fill="var(--coral)"/>
-      <path d="M24 26 37.9 18V34L24 42Z" fill="var(--teal)"/>
-      <ellipse cx="24" cy="16.5" rx="6" ry="3.4" fill="var(--sun-dk)"/>
-      <ellipse cx="24" cy="14.5" rx="6" ry="3.4" fill="var(--sun-lt)"/>
-    </symbol>
-
-    <symbol id="i-render" viewBox="0 0 48 48">
-      <path d="M24 18 35 24.5 24 31 13 24.5Z" fill="var(--sun)"/>
-      <path d="M13 24.5 24 31V43L13 36.5Z" fill="var(--coral)"/>
-      <path d="M24 31 35 24.5V36.5L24 43Z" fill="var(--teal)"/>
-      <circle cx="35" cy="9" r="4" fill="var(--sun-lt)"/>
-      <path d="M35 1.5V3.5M35 14.5V16.5M27.5 9H29.5M40.5 9H42.5M29.7 3.7 31 5M39 13 40.3 14.3M29.7 14.3 31 13M39 5 40.3 3.7" stroke="var(--sun-lt)" stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M31 13 24 22" stroke="var(--sun-lt)" stroke-width="1.6" stroke-dasharray="2 2.5" stroke-linecap="round"/>
-    </symbol>
-
-    <symbol id="i-water" viewBox="0 0 48 48">
-      <path d="M24 14 42 24.5 24 35 6 24.5Z" fill="var(--teal-dk)"/>
-      <path d="M6 24.5 24 35V39L6 28.5Z" fill="var(--indigo-2)"/>
-      <path d="M24 35 42 24.5V28.5L24 39Z" fill="var(--indigo-1)"/>
-      <path d="M11 24c2.5-2 5-2 7.5 0s5 2 7.5 0 5-2 7.5 0" fill="none" stroke="var(--teal-lt)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M17 28c2-1.6 4-1.6 6 0s4 1.6 6 0" fill="none" stroke="var(--teal-lt)" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-      <path d="M24 3 27 8.5A3.4 3.4 0 1 1 21 8.5Z" fill="var(--teal)"/>
-    </symbol>
-
-    <symbol id="i-physics" viewBox="0 0 48 48">
-      <path d="M6 37 24 47 42 37 24 27Z" fill="var(--indigo-1)" opacity=".9"/>
-      <path d="M8 12C13 4 19 6 21 18" fill="none" stroke="var(--line)" stroke-width="1.6" stroke-dasharray="2 3" stroke-linecap="round"/>
-      <path d="M27 30C31 18 37 18 40 26" fill="none" stroke="var(--line)" stroke-width="1.6" stroke-dasharray="2 3" stroke-linecap="round"/>
-      <ellipse cx="24" cy="37" rx="6" ry="2.2" fill="#000" opacity=".25"/>
-      <circle cx="24" cy="25" r="8" fill="var(--coral)"/>
-      <path d="M19.5 21.5a6 6 0 0 1 5-3" fill="none" stroke="#ffd2c7" stroke-width="2" stroke-linecap="round"/>
-    </symbol>
-
-    <symbol id="i-terrain" viewBox="0 0 48 48">
-      <path d="M24 22 42 32 24 42 6 32Z" fill="var(--grass)"/>
-      <path d="M6 32 24 42V46L6 36Z" fill="var(--soil)"/>
-      <path d="M24 42 42 32V36L24 46Z" fill="var(--soil-dk)"/>
-      <path d="M10 31 20 10 30 30Z" fill="var(--teal)"/>
-      <path d="M20 10 30 30 24 33Z" fill="var(--teal-dk)"/>
-      <path d="M16.6 17 20 10 23.5 17 20 15.5Z" fill="#fff"/>
-      <path d="M26 33 33 19 40 31Z" fill="var(--sun)"/>
-      <path d="M33 19 40 31 35 33Z" fill="var(--sun-dk)"/>
-    </symbol>
-
-    <symbol id="i-cloth" viewBox="0 0 48 48">
-      <circle cx="24" cy="30" r="9" fill="var(--indigo-1)"/>
-      <path d="M6 20C10 14 16 13 24 13s14 1 18 7l-3 22c-2-3-4-3-6 0-2-3-4-3-6 0-2-3-4-3-6 0-2-3-4-3-6 0Z" fill="var(--coral)"/>
-      <path d="M14 15C13 24 14 33 15 42M24 13V42M34 15c1 9 0 18-1 27" fill="none" stroke="var(--coral-dk)" stroke-width="1.5"/>
-      <path d="M6 20C10 14 16 13 24 13s14 1 18 7" fill="none" stroke="#ffb3a1" stroke-width="2" stroke-linecap="round"/>
-    </symbol>
-
-    <symbol id="i-ui" viewBox="0 0 48 48">
-      <rect x="6" y="8" width="36" height="32" rx="5" fill="var(--indigo-1)" stroke="var(--line)" stroke-width="1.5"/>
-      <circle cx="12" cy="14" r="1.8" fill="var(--coral)"/><circle cx="17.5" cy="14" r="1.8" fill="var(--sun)"/><circle cx="23" cy="14" r="1.8" fill="var(--teal)"/>
-      <rect x="11" y="21" width="26" height="3" rx="1.5" fill="var(--indigo-2)"/>
-      <rect x="11" y="21" width="16" height="3" rx="1.5" fill="var(--teal)"/>
-      <circle cx="27" cy="22.5" r="3.4" fill="var(--sun-lt)"/>
-      <rect x="11" y="29" width="12" height="6" rx="3" fill="var(--coral)"/>
-      <rect x="26" y="29" width="11" height="6" rx="3" fill="none" stroke="var(--line)" stroke-width="1.5"/>
-    </symbol>
-
-    <symbol id="i-gizmo" viewBox="0 0 48 48">
-      <circle cx="24" cy="24" r="17" fill="none" stroke="var(--line)" stroke-width="1.4" stroke-dasharray="3 3"/>
-      <path d="M24 26V7" stroke="var(--axis-z)" stroke-width="3" stroke-linecap="round"/>
-      <path d="M24 26 40 34" stroke="var(--axis-x)" stroke-width="3" stroke-linecap="round"/>
-      <path d="M24 26 9 33" stroke="var(--axis-y)" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="24" cy="6" r="3.6" fill="var(--axis-z)"/>
-      <circle cx="41" cy="34.5" r="3.6" fill="var(--axis-x)"/>
-      <circle cx="8" cy="33.5" r="3.6" fill="var(--axis-y)"/>
-      <circle cx="24" cy="26" r="3" fill="var(--sun-lt)"/>
-    </symbol>
-
-    <symbol id="i-audio" viewBox="0 0 48 48">
-      <path d="M8 19H15L25 10V38L15 29H8Z" fill="var(--sun)"/>
-      <path d="M8 19H15V29H8Z" fill="var(--sun-dk)"/>
-      <path d="M30 18a8 8 0 0 1 0 12M34 13a15 15 0 0 1 0 22M38.5 8.5a21 21 0 0 1 0 31" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round"/>
-    </symbol>
-
-    <symbol id="i-map" viewBox="0 0 48 48">
-      <path d="M24 10 32 14.6V23.8L24 28.4 16 23.8V14.6Z" fill="var(--grass)"/>
-      <path d="M32 23.8 40 28.4V37.6L32 42.2 24 37.6V28.4Z" fill="var(--teal)"/>
-      <path d="M16 23.8 24 28.4V37.6L16 42.2 8 37.6V28.4Z" fill="var(--sun)"/>
-      <path d="M24 28.4 32 23.8 32 14.6 40 19.2V28.4L32 23.8" fill="var(--coral)" opacity=".85"/>
-      <path d="M20 17c2 3 5 2 6 6s-3 6-2 10" fill="none" stroke="var(--teal-lt)" stroke-width="1.8" stroke-linecap="round"/>
-    </symbol>
-
-    <symbol id="i-jobs" viewBox="0 0 48 48">
-      <path d="M8 12H40M8 24H40M8 36H40" stroke="var(--line)" stroke-width="1.4" stroke-dasharray="1 3"/>
-      <rect x="8" y="8" width="14" height="8" rx="3" fill="var(--teal)"/>
-      <rect x="25" y="8" width="9" height="8" rx="3" fill="var(--sun)"/>
-      <rect x="12" y="20" width="10" height="8" rx="3" fill="var(--coral)"/>
-      <rect x="25" y="20" width="15" height="8" rx="3" fill="var(--teal)"/>
-      <rect x="8" y="32" width="20" height="8" rx="3" fill="var(--sun)"/>
-      <rect x="31" y="32" width="9" height="8" rx="3" fill="var(--coral)"/>
-    </symbol>
-
-    <symbol id="i-lock" viewBox="0 0 48 48">
-      <path d="M12 6H30L38 14V42H12Z" fill="var(--indigo-1)" stroke="var(--line)" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M30 6V14H38" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-linejoin="round"/>
-      <rect x="18" y="25" width="14" height="11" rx="2.5" fill="var(--sun)"/>
-      <path d="M20.5 25v-3a4.5 4.5 0 0 1 9 0v3" fill="none" stroke="var(--sun)" stroke-width="2.4"/>
-      <circle cx="25" cy="30.5" r="1.8" fill="var(--indigo-0)"/>
-    </symbol>
-
-    <symbol id="i-vulkan" viewBox="0 0 48 48">
-      <path d="M24 6 40 15V33L24 42 8 33V15Z" fill="none" stroke="var(--coral)" stroke-width="2.4" stroke-linejoin="round"/>
-      <path d="M24 6V24M24 24 40 33M24 24 8 33" stroke="var(--coral)" stroke-width="1.4" opacity=".55"/>
-      <path d="M8 15 24 24 40 15" stroke="var(--teal)" stroke-width="1.4" fill="none" opacity=".8"/>
-      <circle cx="24" cy="24" r="4" fill="var(--sun)"/>
-    </symbol>
-
-    <symbol id="i-test" viewBox="0 0 48 48">
-      <rect x="6" y="9" width="36" height="30" rx="5" fill="var(--indigo-1)" stroke="var(--line)" stroke-width="1.5"/>
-      <path d="M12 20 17 24 12 28" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M21 29H29" stroke="var(--sun)" stroke-width="2.4" stroke-linecap="round"/>
-      <circle cx="35" cy="15" r="6" fill="var(--grass)"/>
-      <path d="M32.3 15 34.3 17 37.8 13.3" fill="none" stroke="var(--indigo-0)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-
-    <symbol id="i-file" viewBox="0 0 48 48">
-      <path d="M12 6H30L38 14V42H12Z" fill="var(--indigo-1)" stroke="var(--line)" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M30 6V14H38" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M17 20H24M20 26H31M20 32H28M17 38H22" stroke-width="2.4" stroke-linecap="round" stroke="var(--teal)"/>
-      <path d="M17 26H17.1M17 32H17.1" stroke-width="2.4" stroke-linecap="round" stroke="var(--sun)"/>
-    </symbol>
-
-    <symbol id="i-seed" viewBox="0 0 48 48">
-      <path d="M24 42V24" stroke="var(--grass)" stroke-width="2.6" stroke-linecap="round"/>
-      <path d="M24 28C14 28 10 21 10 14 20 14 24 20 24 28Z" fill="var(--grass)"/>
-      <path d="M24 24C24 15 29 9 38 9 38 18 33 24 24 24Z" fill="var(--teal)"/>
-      <path d="M14 42H34" stroke="var(--soil)" stroke-width="3" stroke-linecap="round"/>
-    </symbol>
-
-    <symbol id="i-switch" viewBox="0 0 48 48">
-      <rect x="6" y="10" width="36" height="12" rx="6" fill="var(--teal)"/>
-      <circle cx="36" cy="16" r="4.4" fill="var(--sun-lt)"/>
-      <rect x="6" y="27" width="36" height="12" rx="6" fill="var(--indigo-1)" stroke="var(--line)" stroke-width="1.5"/>
-      <circle cx="12" cy="33" r="4.4" fill="var(--line)"/>
-    </symbol>
-
-    <symbol id="i-mirror" viewBox="0 0 48 48">
-      <path d="M24 5V43" stroke="var(--line)" stroke-width="1.4" stroke-dasharray="2 3"/>
-      <path d="M4 26c3-4 6-4 9 0s6 4 9 0" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round"/>
-      <path d="M26 26c3-4 6-4 9 0s6 4 9 0" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round"/>
-      <text x="13" y="16" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7.5" font-weight="600" fill="var(--sun)">GPU</text>
-      <text x="35" y="16" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7.5" font-weight="600" fill="var(--coral)">CPU</text>
-    </symbol>
-
-    <symbol id="i-github" viewBox="0 0 24 24">
-      <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12.02c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.53 11.53 0 0 0 23.5 12.02C23.5 5.65 18.35.5 12 .5Z"/>
-    </symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24">
-      <path d="M5 12H19M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-    <symbol id="i-copy" viewBox="0 0 24 24">
-      <rect x="8" y="8" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
-      <path d="M16 8V6.5A2.5 2.5 0 0 0 13.5 4h-7A2.5 2.5 0 0 0 4 6.5v7A2.5 2.5 0 0 0 6.5 16H8" fill="none" stroke="currentColor" stroke-width="1.8"/>
-    </symbol>
-  </defs>
-</svg>
-
 <header class="nav" id="nav">
-  <a class="brand" href="#top" aria-label="coopa, home">
-    <svg class="brand-mark" aria-hidden="true"><use href="#i-brick"/></svg>
+  <a class="brand" href="./" aria-label="coopa, home">
+    <svg class="brand-mark" aria-hidden="true"><use href="assets/icons.svg#i-brick"/></svg>
     <span>coopa</span>
   </a>
-  <nav aria-label="Sections">
-    <a href="#toyengine">toyengine</a>
-    <a href="#editor">editor</a>
-    <a href="#stack">stack</a>
-    <a href="#style">style</a>
+  <nav aria-label="Main">
+    <a href="#projects">projects</a>
+    <a class="nav-proj" href="projects/toyengine/">toyengine</a>
+    <a class="nav-proj" href="projects/mapcoopa/">mapcoopa</a>
     <a class="nav-gh" href="https://github.com/cooparobla" aria-label="GitHub">
-      <svg aria-hidden="true"><use href="#i-github"/></svg>
+      <svg aria-hidden="true"><use href="assets/icons.svg#i-github"/></svg>
     </a>
   </nav>
 </header>
 
-<main id="top">
+<main>
 
   <!-- ───────── Hero ───────── -->
   <section class="hero">
     <canvas id="waves" aria-hidden="true"></canvas>
     <div class="hero-inner wrap">
-      <p class="eyebrow mono"><span class="dot"></span>cooparobla · engine programmer</p>
-      <h1>I build game engines<br><span class="grad">from the bricks up.</span></h1>
+      <p class="eyebrow"><span class="dot"></span>coopa · cooparobla</p>
+      <h1>Render <span class="plus">+</span> Game Engine <span class="grad">Engineer</span></h1>
       <p class="lede">
-        Hi, I'm <strong>coopa</strong>. I write renderers, physics, water, world generators and the
-        tools that drive them, in modern C++ on Vulkan. My main project is
-        <a href="#toyengine">toyengine</a>, an open source 3D engine with its own Blender-style editor.
+        Real-time renderers, physics, water and procedural worlds, built from the ground up in
+        <b>C++20</b> and <b>Vulkan</b>. Open source, data-driven and deterministic.
       </p>
       <div class="cta">
-        <a class="btn btn-primary" href="#toyengine">Explore toyengine <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="https://github.com/cooparobla"><svg aria-hidden="true"><use href="#i-github"/></svg> github.com/cooparobla</a>
+        <a class="btn btn-primary" href="#projects">View projects <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="https://github.com/cooparobla"><svg aria-hidden="true"><use href="assets/icons.svg#i-github"/></svg> cooparobla</a>
       </div>
-      <p class="hero-term mono" aria-hidden="true"><span class="prompt">$</span> ./build/toyengine <span id="typed">water_test</span><span class="caret"></span></p>
+      <p class="hero-term mono" aria-hidden="true"><span class="prompt">$</span><span id="typed" data-lines='["./build/toyengine water_test","./build/mapcoopa --seed=42 --out=world","./build/toyengine terrain_test","./build/toyengine_editor --new-project ~/game","./build/mapcoopa --shape=archipelago --out=islands","./build/toyengine underwater_test"]'>./build/toyengine water_test</span><span class="caret"></span></p>
     </div>
-    <p class="hero-note mono">↖ Gerstner waves on a grid of blocks. Move your cursor to make ripples.</p>
+    <p class="hero-note mono">↖ Gerstner waves on a grid of blocks. Move the cursor to make ripples.</p>
   </section>
 
-  <!-- ───────── Stats strip ───────── -->
-  <section class="strip" aria-label="At a glance">
+  <!-- ───────── Disciplines ───────── -->
+  <section class="strip" aria-label="Disciplines">
     <div class="wrap strip-inner">
-      <div><b>C++20</b><span>header-only libs</span></div>
-      <div><b>Vulkan</b><span>deferred PBR</span></div>
-      <div><b>7</b><span>coopa libraries</span></div>
-      <div><b>9</b><span>demo scenes</span></div>
-      <div><b>2</b><span>platforms: Linux + macOS</span></div>
+      <div><b>Rendering</b><span>deferred PBR · Vulkan</span></div>
+      <div><b>Simulation</b><span>rigid bodies · cloth · water</span></div>
+      <div><b>Procedural</b><span>seeded worlds · terrain</span></div>
+      <div><b>Tools</b><span>editors · pipelines</span></div>
+      <div><b>Engines</b><span>C++20 · header-only libs</span></div>
     </div>
   </section>
 
-  <!-- ───────── toyengine ───────── -->
-  <section id="toyengine" class="section">
+  <!-- ───────── Projects ───────── -->
+  <section id="projects" class="section">
     <div class="wrap">
-      <div class="project-head reveal">
-        <img src="assets/img/toyengine-icon.png" alt="toyengine logo" width="96" height="96" class="project-icon">
-        <div>
-          <p class="eyebrow mono">Main project · open source · v0.1.0</p>
-          <h2>toyengine</h2>
-          <p class="sub">A modern C++20 / Vulkan 3D game engine with a Blender-style editor.</p>
-        </div>
+      <div class="section-head reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Engines, generators and the tools around them</h2>
       </div>
 
-      <p class="prose reveal">
-        toyengine pairs a full-resolution deferred PBR renderer with rigid-body and cloth physics,
-        dynamic water, streamed procedural terrain, an interactive UI toolkit and a native editor
-        that writes exactly the files the game loads. It's <em>adaptable</em> by design: scenes, objects,
-        materials and render settings are plain YAML, every rendering feature has a quality tier and a
-        master switch, and each subsystem is its own library you can lift out and use elsewhere.
-        It runs on Linux and on Apple Silicon Macs through MoltenVK.
-      </p>
-
-      <figure class="hero-shot reveal">
-        <img src="assets/img/water_test.jpg" alt="A lake with Gerstner waves, shoreline foam, a river and floating crates" loading="lazy" data-zoom>
-        <figcaption class="mono"><b>water_test</b>: lake, river, foam, ripples, buoyant crates</figcaption>
-      </figure>
-
-      <div class="gallery">
-        <figure class="reveal"><img src="assets/img/terrain_test.jpg" alt="Streamed procedural tile terrain" loading="lazy" data-zoom><figcaption class="mono"><b>terrain_test</b>: procedural world streamed in chunks</figcaption></figure>
-        <figure class="reveal"><img src="assets/img/underwater_test.jpg" alt="Underwater fog, caustics and Snell's window" loading="lazy" data-zoom><figcaption class="mono"><b>underwater_test</b>: caustics, Snell's window</figcaption></figure>
-        <figure class="reveal"><img src="assets/img/pixel_demo.jpg" alt="PBR materials, glass, emissive and water" loading="lazy" data-zoom><figcaption class="mono"><b>pixel_demo</b>: PBR, refraction, SDFs, bloom, SSR</figcaption></figure>
-        <figure class="reveal"><img src="assets/img/physics_test.jpg" alt="Rigid-body physics arena" loading="lazy" data-zoom><figcaption class="mono"><b>physics_test</b>: friction, stacking, hinges, triggers</figcaption></figure>
-        <figure class="reveal"><img src="assets/img/cloth_test.jpg" alt="XPBD cloth draped over a moving ball" loading="lazy" data-zoom><figcaption class="mono"><b>cloth_test</b>: XPBD cloth over a moving ball</figcaption></figure>
-        <figure class="reveal"><img src="assets/img/editor.jpg" alt="toyengine_editor with the water_test scene open" loading="lazy" data-zoom><figcaption class="mono"><b>toyengine_editor</b>: the real renderer in the viewport</figcaption></figure>
-      </div>
-
-      <h3 class="kicker reveal">What's inside</h3>
-      <div class="features">
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-render"/></svg>
-          <h4>Rendering</h4>
-          <ul>
-            <li>Deferred PBR: Cook-Torrance with directional, point and spot lights</li>
-            <li>Cascaded shadows, soft PCF, PCSS and contact shadows</li>
-            <li>Hi-Z SSR, traced SSGI, temporally stable SSAO</li>
-            <li>SDF raymarching that mixes with meshes; volumetric light shafts</li>
-            <li>Bloom, auto exposure, LUTs, physical DoF, TAA / SMAA / FXAA</li>
-            <li>Optional cel bands, outlines, dithering and palette quantisation</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-water"/></svg>
-          <h4>Water</h4>
-          <ul>
-            <li>Lakes and oceans with Gerstner waves</li>
-            <li>The same wave math runs in the shader <em>and</em> a CPU query, so gameplay matches visuals</li>
-            <li>Rivers whose current follows the mesh slope and bends around obstacles</li>
-            <li>Shoreline foam and ripple rings; <code>Buoyancy</code> floats any rigid body</li>
-            <li>Underwater fog, absorption, caustics, Snell's window</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-physics"/></svg>
-          <h4>Physics</h4>
-          <ul>
-            <li>Box, sphere, capsule and triangle-mesh colliders</li>
-            <li>Physics materials, hinge joints, triggers, collision layers</li>
-            <li>Kinematic movers and character controllers</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-cloth"/></svg>
-          <h4>Cloth</h4>
-          <ul>
-            <li>XPBD cloth that collides with the world</li>
-            <li>Renders as a shaded, shadow-casting mesh</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-terrain"/></svg>
-          <h4>Procedural terrain</h4>
-          <ul>
-            <li>A seeded world with elevation, biomes and rivers</li>
-            <li>Meshed in chunks on the job system, streamed around the camera</li>
-            <li>Tile shapes are mesh assets, so one line of YAML changes the look</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-ui"/></svg>
-          <h4>UI toolkit</h4>
-          <ul>
-            <li>Panels, text, buttons, sliders, progress bars, layouts, masks</li>
-            <li>Crisp screen-space HUDs, or world-space canvases that stay clickable in 3D</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───────── Editor ───────── -->
-  <section id="editor" class="section section-alt">
-    <div class="wrap split">
-      <div class="split-text reveal">
-        <p class="eyebrow mono">toyengine_editor</p>
-        <h2>An editor that <span class="grad">feels like Blender</span></h2>
-        <p class="prose">
-          The editor embeds the real engine, so its Full Render viewport <em>is</em> the game's renderer.
-          It uses Blender's keymaps, gizmos, modes and outliner, and Unity's component model.
-        </p>
-        <ul class="ticks">
-          <li><b>Scenes and object assets.</b> Hierarchy, inspector, gizmos, and play / pause / step in place. Prefab-style assets are instanced with <code>prefab:</code>.</li>
-          <li><b>Mesh modelling.</b> Extrude, inset, bevel, loop cut, bridge, Catmull-Clark subdivide, mirror and UVs. Sculpt with draw, smooth, inflate, grab and flatten.</li>
-          <li><b>Material lookdev.</b> Shader ball, studio lighting, turntable.</li>
-          <li><b>Build › Package.</b> Turns a project into compact <code>.caml</code> binaries.</li>
-          <li><b>Plain files.</b> Everything saves as YAML in <code>assets/</code>, so you can hand-edit, diff and merge it.</li>
-        </ul>
-      </div>
-      <div class="window reveal">
-        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · WaterTest</span></div>
-        <img src="assets/img/editor.jpg" alt="toyengine_editor showing the water_test scene, outliner and properties" loading="lazy" data-zoom>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───────── Code ───────── -->
-  <section class="section">
-    <div class="wrap split split-rev">
-      <div class="code reveal">
-        <div class="window-bar"><i></i><i></i><i></i><span class="mono">assets/scenes/hello/scene.yaml</span></div>
-<pre class="mono"><code><span class="k">format</span>: <span class="s">blender</span>
-<span class="k">scene</span>:
-  <span class="k">scene_name</span>: <span class="s">Hello</span>
-  <span class="k">root_objects</span>:
-    - <span class="k">name</span>: <span class="s">camera</span>
-      <span class="k">components</span>:
-        - <span class="k">type</span>: <span class="t">Transform</span>
-          <span class="k">position</span>: { <span class="k">x</span>: <span class="n">0</span>, <span class="k">y</span>: <span class="n">-10</span>, <span class="k">z</span>: <span class="n">6</span> }   <span class="c"># Z-up, metres</span>
-          <span class="k">rotation</span>: { <span class="k">x</span>: <span class="n">68</span>, <span class="k">y</span>: <span class="n">0</span>, <span class="k">z</span>: <span class="n">0</span> }
-        - <span class="k">type</span>: <span class="t">Camera</span>
-          <span class="k">main</span>: <span class="n">true</span>
-    - <span class="k">name</span>: <span class="s">sun</span>
-      <span class="k">components</span>:
-        - <span class="k">type</span>: <span class="t">DirectionalLight</span>
-          <span class="k">direction</span>: { <span class="k">x</span>: <span class="n">-0.35</span>, <span class="k">y</span>: <span class="n">-0.45</span>, <span class="k">z</span>: <span class="n">-0.82</span> }
-          <span class="k">cast_shadows</span>: <span class="n">true</span>
-    - <span class="k">name</span>: <span class="s">ball</span>
-      <span class="k">components</span>:
-        - <span class="k">type</span>: <span class="t">Transform</span>
-          <span class="k">position</span>: { <span class="k">x</span>: <span class="n">0</span>, <span class="k">y</span>: <span class="n">0</span>, <span class="k">z</span>: <span class="n">4</span> }
-        - <span class="k">type</span>: <span class="t">MeshRenderer</span>
-          <span class="k">mesh_path</span>: <span class="s">sphere.000</span>
-          <span class="k">material</span>: { <span class="k">albedo</span>: { <span class="k">r</span>: <span class="n">0.8</span>, <span class="k">g</span>: <span class="n">0.3</span>, <span class="k">b</span>: <span class="n">0.2</span> } }
-        - <span class="k">type</span>: <span class="t">SphereCollider</span>
-          <span class="k">radius</span>: <span class="n">1.0</span>
-        - <span class="k">type</span>: <span class="t">Rigidbody</span>
-          <span class="k">mass</span>: <span class="n">1.0</span></code></pre>
-      </div>
-      <div class="split-text reveal">
-        <p class="eyebrow mono">Data-driven</p>
-        <h2>A scene is a file you can read</h2>
-        <p class="prose">
-          Scenes are trees of objects with components, written in YAML. The demo scenes are heavily
-          commented and serve as the reference for every component. <code>config.yaml</code> has a comment
-          on every key. When you ship, every loader also reads binary <code>.caml</code>
-          (Zstandard + AES-256-GCM), so a packaged project needs no path rewriting.
-        </p>
-        <div class="term mono">
-          <div><span class="prompt">$</span> git clone --recurse-submodules github.com/cooparobla/toyengine</div>
-          <div><span class="prompt">$</span> cmake -B build &amp;&amp; cmake --build build -j</div>
-          <div><span class="prompt">$</span> ./build/toyengine hello</div>
-          <button class="copy" data-copy="git clone --recurse-submodules git@github.com:cooparobla/toyengine.git&#10;cd toyengine&#10;cmake -B build &amp;&amp; cmake --build build -j" aria-label="Copy build commands"><svg aria-hidden="true"><use href="#i-copy"/></svg></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───────── Stack ───────── -->
-  <section id="stack" class="section section-alt">
-    <div class="wrap">
-      <div class="center reveal">
-        <p class="eyebrow mono">The coopa stack</p>
-        <h2>Seven libraries, stacked like bricks</h2>
-        <p class="prose narrow">
-          toyengine sits on pinned submodules I wrote alongside it. Each is C++20, mostly
-          header-only, builds standalone, and is useful without the engine.
-        </p>
-      </div>
-
-      <div class="stack">
-        <a class="brick brick-top reveal" href="https://github.com/cooparobla/toyengine">
-          <svg class="icon" aria-hidden="true"><use href="#i-brick"/></svg>
-          <div><h4>toyengine</h4><p>The engine and editor: render pipeline, water, streamed world, gameplay components.</p></div>
+      <div class="projects">
+        <a class="project-card reveal" href="projects/toyengine/">
+          <span class="badge">Flagship</span>
+          <div class="thumb"><img src="assets/img/toyengine/water_test.jpg" alt="toyengine water_test scene: a lake with waves, foam and floating crates" loading="lazy"></div>
+          <div class="body">
+            <div class="title"><svg aria-hidden="true"><use href="assets/icons.svg#i-brick"/></svg><h3>toyengine</h3></div>
+            <p>A modern C++20 / Vulkan 3D game engine with a Blender-style editor. Deferred PBR, rigid-body and cloth physics, dynamic water, streamed procedural terrain, and an editor that writes exactly the files the game loads.</p>
+            <div class="tags"><span class="tag">C++20</span><span class="tag">Vulkan</span><span class="tag">editor</span><span class="tag">Linux · macOS</span></div>
+            <span class="more">Explore toyengine <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></span>
+          </div>
         </a>
-        <div class="brick-row">
-          <a class="brick reveal" href="https://github.com/cooparobla/gfxcoopa">
-            <svg class="icon" aria-hidden="true"><use href="#i-vulkan"/></svg>
-            <div><h4>gfxcoopa</h4><p>Vulkan, from RAII device objects up to a deferred PBR renderer.</p></div>
-          </a>
-          <a class="brick reveal" href="https://github.com/cooparobla/physxcoopa">
-            <svg class="icon" aria-hidden="true"><use href="#i-physics"/></svg>
-            <div><h4>physxcoopa</h4><p>Real-time rigid-body and cloth physics.</p></div>
-          </a>
-          <a class="brick reveal" href="https://github.com/cooparobla/uicoopa">
-            <svg class="icon" aria-hidden="true"><use href="#i-ui"/></svg>
-            <div><h4>uicoopa</h4><p>Anchored retained widgets, a fluent builder and an immediate-mode layer for tools.</p></div>
-          </a>
-          <a class="brick reveal" href="https://github.com/cooparobla/sfxcoopa">
-            <svg class="icon" aria-hidden="true"><use href="#i-audio"/></svg>
-            <div><h4>sfxcoopa</h4><p>Game audio with a bus mixer and binaural 3D sound.</p></div>
-          </a>
-          <a class="brick reveal" href="https://github.com/cooparobla/mapcoopa">
-            <svg class="icon" aria-hidden="true"><use href="#i-map"/></svg>
-            <div><h4>mapcoopa</h4><p>Seeded fantasy worlds: 33 biomes, rivers, roads, nations, towns and caves.</p></div>
-          </a>
-        </div>
-        <div class="brick-row brick-row-base">
-          <a class="brick reveal" href="https://github.com/cooparobla/libcoopa">
-            <svg class="icon" aria-hidden="true"><use href="#i-jobs"/></svg>
-            <div><h4>libcoopa</h4><p>The shared runtime: work-stealing jobs, scene graph, async assets with hot reload, coroutines.</p></div>
-          </a>
-          <a class="brick reveal" href="https://github.com/cooparobla/caml">
-            <svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>
-            <div><h4>caml</h4><p>YAML stored as compressed, encrypted <code>.caml</code> files. Library and CLI.</p></div>
-          </a>
+
+        <a class="project-card reveal" href="projects/mapcoopa/">
+          <div class="thumb"><img src="assets/img/mapcoopa/layer_composite.jpg" alt="A mapcoopa world: continents, biomes, rivers, roads and towns" loading="lazy" style="object-position: 50% 40%"></div>
+          <div class="body">
+            <div class="title"><svg aria-hidden="true"><use href="assets/icons.svg#i-map"/></svg><h3>mapcoopa</h3></div>
+            <p>A seeded, header-only generator for whole fantasy worlds: terrain, 33 biomes, rivers, roads, nations, settlements, landmarks and caves. Same seed, same world, on every platform.</p>
+            <div class="tags"><span class="tag">C++20</span><span class="tag">header-only</span><span class="tag">deterministic</span></div>
+            <span class="more">Explore mapcoopa <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></span>
+          </div>
+        </a>
+
+        <div class="project-card soon reveal">
+          <svg aria-hidden="true"><use href="assets/icons.svg#i-layers"/></svg>
+          <p>More projects on the way. The supporting libraries (gfxcoopa, physxcoopa, uicoopa, sfxcoopa, libcoopa) are open source on <a href="https://github.com/cooparobla">GitHub</a>.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ───────── Style ───────── -->
-  <section id="style" class="section">
+  <!-- ───────── Principles ───────── -->
+  <section id="principles" class="section section-alt">
     <div class="wrap">
-      <div class="center reveal">
-        <p class="eyebrow mono">How I build</p>
-        <h2>A few habits you'll find in my code</h2>
+      <div class="section-head center reveal">
+        <p class="eyebrow">Engineering principles</p>
+        <h2>What carries across every project</h2>
       </div>
-      <div class="principles">
+      <div class="grid-4">
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-brick"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-brick"/></svg>
           <h4>Small bricks, clean seams</h4>
-          <p>Every subsystem is a standalone, header-only library with its own README. The engine is just the thing that snaps them together.</p>
+          <p>Every subsystem is a standalone, header-only library with its own README and tests. An engine is what snaps them together.</p>
         </article>
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-file"/></svg>
           <h4>Data you can diff</h4>
-          <p>Scenes, materials and settings are commented YAML. Binary only happens at package time, and the loaders don't care which they get.</p>
+          <p>Scenes, materials, worlds and settings are commented YAML. Binary appears only at package time, and loaders accept either.</p>
         </article>
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-mirror"/></svg>
-          <h4>One truth, both sides</h4>
-          <p>The Gerstner wave math runs on the GPU and in a CPU surface query, so a crate bobs exactly where the water looks like it is.</p>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-seed"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-seed"/></svg>
           <h4>Deterministic by default</h4>
-          <p>Seeded worlds are byte-identical on Linux and macOS. That means shipping libstdc++-exact random and sort functions and building with <code>-ffp-contract=off</code>.</p>
+          <p>Seeded output is byte-identical on Linux and macOS, thanks to portable random and sort functions and <code>-ffp-contract=off</code>.</p>
         </article>
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-switch"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mirror"/></svg>
+          <h4>One truth, both sides</h4>
+          <p>The same wave math runs in the shader and in a CPU query, so gameplay agrees with what is on screen.</p>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-switch"/></svg>
           <h4>Off really means off</h4>
-          <p>Each render feature has quality tiers and a master switch that costs nothing when disabled. <code>PROFILE=1</code> writes per-feature GPU and CPU timings to CSV.</p>
+          <p>Each render feature has quality tiers and a master switch that costs nothing when disabled, with per-feature GPU and CPU profiling.</p>
         </article>
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-test"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-test"/></svg>
           <h4>Headless and tested</h4>
-          <p>Engine and editor suites run under <code>ctest</code>. Render tests use a never-mapped window, and <code>HEADLESS</code>, <code>ONESHOT</code> and <code>FIXED_DT</code> make captures reproducible.</p>
+          <p>Suites run under <code>ctest</code>. Render tests use a never-mapped window, and parallel paths are checked against serial ones.</p>
         </article>
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-gizmo"/></svg>
-          <h4>Tools people already know</h4>
-          <p>Blender's keymaps and modes, Unity's components. If you've used either, the editor already makes sense.</p>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-gizmo"/></svg>
+          <h4>Familiar tools</h4>
+          <p>Blender's keymaps and modes, Unity's component model. Anyone who has used either already knows the editor.</p>
         </article>
         <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="#i-vulkan"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-vulkan"/></svg>
           <h4>Close to the metal</h4>
-          <p>Vulkan with RAII wrappers I own end to end, from device objects up to the deferred renderer, on Linux and on Apple Silicon via MoltenVK.</p>
+          <p>Vulkan through thin RAII wrappers, from device objects up to the deferred renderer. Native on Linux, and on Apple Silicon through MoltenVK.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ───────── Contact ───────── -->
-  <section id="contact" class="section contact">
+  <!-- ───────── Open source ───────── -->
+  <section class="section contact">
     <div class="wrap center reveal">
-      <svg class="contact-brick" aria-hidden="true"><use href="#i-brick"/></svg>
-      <h2>Let's build something</h2>
-      <p class="prose narrow">toyengine is open source. Clone it, break it, or open an issue. I'm always up for talking engines, rendering and tools.</p>
+      <svg class="contact-brick" aria-hidden="true"><use href="assets/icons.svg#i-brick"/></svg>
+      <h2>Open source, all the way down</h2>
+      <p class="prose narrow">Every project and library here is on GitHub. Clone it, build it, break it, open an issue.</p>
       <div class="cta cta-center">
-        <a class="btn btn-primary" href="https://github.com/cooparobla/toyengine"><svg aria-hidden="true"><use href="#i-github"/></svg> toyengine on GitHub</a>
-        <a class="btn btn-ghost" href="https://github.com/cooparobla">@cooparobla</a>
+        <a class="btn btn-primary" href="https://github.com/cooparobla"><svg aria-hidden="true"><use href="assets/icons.svg#i-github"/></svg> github.com/cooparobla</a>
       </div>
     </div>
   </section>
@@ -530,14 +170,9 @@
 <footer class="footer">
   <div class="wrap footer-inner mono">
     <span>© <span id="year">2026</span> coopa · cooparobla</span>
-    <span>Hand-written HTML, CSS and a little canvas. No frameworks were harmed.</span>
+    <span><a href="projects/toyengine/">toyengine</a> · <a href="projects/mapcoopa/">mapcoopa</a> · <a href="https://github.com/cooparobla">github</a></span>
   </div>
 </footer>
-
-<div class="lightbox" id="lightbox" hidden>
-  <button class="lightbox-close" aria-label="Close">×</button>
-  <img alt="">
-</div>
 
 <script src="main.js" defer></script>
 </body>

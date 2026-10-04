@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>toyengine · coopa</title>
+  <meta name="description" content="toyengine: an open source C++20 / Vulkan 3D game engine with deferred PBR, physics, water, streamed procedural terrain and a Blender-style editor.">
+  <meta name="theme-color" content="#0f0f12">
+  <meta property="og:title" content="toyengine · coopa">
+  <meta property="og:description" content="A modern C++20 / Vulkan 3D game engine with a Blender-style editor.">
+  <meta property="og:image" content="../../assets/img/toyengine/water_test.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="../../" aria-label="coopa, home">
+    <svg class="brand-mark" aria-hidden="true"><use href="../../assets/icons.svg#i-brick"/></svg>
+    <span>coopa</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="../../#projects">projects</a>
+    <a class="nav-proj" href="./" aria-current="page">toyengine</a>
+    <a class="nav-proj" href="../mapcoopa/">mapcoopa</a>
+    <a class="nav-gh" href="https://github.com/cooparobla" aria-label="GitHub">
+      <svg aria-hidden="true"><use href="../../assets/icons.svg#i-github"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ───────── Header ───────── -->
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="../../">coopa</a> / <a href="../../#projects">projects</a> / <span>toyengine</span></p>
+      <div class="project-head">
+        <div class="project-icon"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-brick"/></svg></div>
+        <div>
+          <p class="eyebrow">Flagship project · open source · v0.1.0</p>
+          <h1>toyengine</h1>
+          <p class="sub">A modern C++20 / Vulkan 3D game engine with a Blender-style editor.</p>
+          <div class="tags"><span class="tag">C++20</span><span class="tag">Vulkan</span><span class="tag">MoltenVK</span><span class="tag">Linux</span><span class="tag">macOS</span><span class="tag">YAML scenes</span></div>
+        </div>
+      </div>
+      <p class="prose">
+        toyengine pairs a full-resolution deferred PBR renderer with rigid-body and cloth physics,
+        dynamic water, streamed procedural terrain, an interactive UI toolkit and a native editor
+        that writes exactly the files the game loads. It is <em>adaptable</em> by design: scenes,
+        objects, materials and render settings are plain YAML, every rendering feature has quality
+        tiers and a master switch, and each subsystem is its own library that can be lifted out and
+        used elsewhere.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://github.com/cooparobla/toyengine"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-github"/></svg> View on GitHub</a>
+        <a class="btn btn-ghost" href="#build">Build it <svg aria-hidden="true"><use href="../../assets/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Screens ───────── -->
+  <section class="section" style="padding-top: 20px">
+    <div class="wrap">
+      <figure class="shot reveal">
+        <img src="../../assets/img/toyengine/water_test.jpg" alt="A lake with Gerstner waves, shoreline foam, a river and floating crates" data-zoom>
+        <figcaption><b>water_test</b>: lake, river, foam, ripples, buoyant crates</figcaption>
+      </figure>
+
+      <div class="gallery">
+        <figure class="reveal"><img src="../../assets/img/toyengine/terrain_test.jpg" alt="Streamed procedural tile terrain" loading="lazy" data-zoom><figcaption><b>terrain_test</b>: streamed procedural world</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/underwater_test.jpg" alt="Underwater fog, caustics and Snell's window" loading="lazy" data-zoom><figcaption><b>underwater_test</b>: caustics, Snell's window</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/pixel_demo.jpg" alt="PBR materials, glass, emissive and water" loading="lazy" data-zoom><figcaption><b>pixel_demo</b>: PBR, refraction, SDFs, bloom</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/physics_test.jpg" alt="Rigid-body physics arena" loading="lazy" data-zoom><figcaption><b>physics_test</b>: stacking, hinges, triggers</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/cloth_test.jpg" alt="XPBD cloth draped over a moving ball" loading="lazy" data-zoom><figcaption><b>cloth_test</b>: XPBD cloth</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor with the water_test scene open" loading="lazy" data-zoom><figcaption><b>toyengine_editor</b></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── At a glance ───────── -->
+  <section class="strip" aria-label="At a glance">
+    <div class="wrap strip-inner">
+      <div><b>Deferred</b><span>PBR renderer</span></div>
+      <div><b>9</b><span>demo scenes</span></div>
+      <div><b>7</b><span>coopa libraries</span></div>
+      <div><b>2</b><span>platforms: Linux + macOS</span></div>
+      <div><b>.caml</b><span>packaged builds</span></div>
+    </div>
+  </section>
+
+  <!-- ───────── Features ───────── -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What's inside</p>
+        <h2>Rendering, simulation and worlds</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-render"/></svg>
+          <h4>Rendering</h4>
+          <ul>
+            <li>Deferred PBR: Cook-Torrance with directional, point and spot lights</li>
+            <li>Cascaded shadows, soft PCF, PCSS and contact shadows</li>
+            <li>Hi-Z SSR, traced SSGI, temporally stable SSAO</li>
+            <li>SDF raymarching that mixes with meshes; volumetric light shafts</li>
+            <li>Bloom, auto exposure, LUTs, physical DoF, TAA / SMAA / FXAA</li>
+            <li>Optional cel bands, outlines, dithering and palette quantisation</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-water"/></svg>
+          <h4>Water</h4>
+          <ul>
+            <li>Lakes and oceans with Gerstner waves</li>
+            <li>The same wave math runs in the shader and in a CPU query, so gameplay matches visuals</li>
+            <li>Rivers whose current follows the mesh slope and bends around obstacles</li>
+            <li>Shoreline foam and ripple rings; <code>Buoyancy</code> floats any rigid body</li>
+            <li>Underwater fog, absorption, caustics, Snell's window</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-physics"/></svg>
+          <h4>Physics</h4>
+          <ul>
+            <li>Box, sphere, capsule and triangle-mesh colliders</li>
+            <li>Physics materials, hinge joints, triggers, collision layers</li>
+            <li>Kinematic movers and character controllers</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-cloth"/></svg>
+          <h4>Cloth</h4>
+          <ul>
+            <li>XPBD cloth that collides with the world</li>
+            <li>Renders as a shaded, shadow-casting mesh</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-terrain"/></svg>
+          <h4>Procedural terrain</h4>
+          <ul>
+            <li>A seeded <a href="../mapcoopa/">mapcoopa</a> world with elevation, biomes and rivers</li>
+            <li>Meshed in chunks on the job system, streamed around the camera</li>
+            <li>Tile shapes are mesh assets, so one line of YAML changes the look</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-ui"/></svg>
+          <h4>UI toolkit</h4>
+          <ul>
+            <li>Panels, text, buttons, sliders, progress bars, layouts, masks</li>
+            <li>Crisp screen-space HUDs, or world-space canvases that stay clickable in 3D</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Editor ───────── -->
+  <section id="editor" class="section section-alt">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow">toyengine_editor</p>
+        <h2>An editor that <span class="grad">feels like Blender</span></h2>
+        <p class="prose">
+          The editor embeds the real engine, so its Full Render viewport is the game's renderer.
+          Blender's keymaps, gizmos, modes and outliner, with Unity's component model.
+        </p>
+        <ul class="ticks">
+          <li><b>Scenes and object assets.</b> Hierarchy, inspector, gizmos, and play / pause / step in place. Prefab-style assets are instanced with <code>prefab:</code>.</li>
+          <li><b>Mesh modelling.</b> Extrude, inset, bevel, loop cut, bridge, Catmull-Clark subdivide, mirror and UVs. Sculpting with draw, smooth, inflate, grab and flatten.</li>
+          <li><b>Material lookdev.</b> Shader ball, studio lighting, turntable.</li>
+          <li><b>Build › Package.</b> Turns a project into compact <code>.caml</code> binaries.</li>
+          <li><b>Plain files.</b> Everything saves as YAML in <code>assets/</code>, ready to hand-edit, diff and merge.</li>
+        </ul>
+      </div>
+      <div class="window reveal">
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · WaterTest</span></div>
+        <img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor showing the water_test scene, outliner and properties" loading="lazy" data-zoom>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Scenes as data ───────── -->
+  <section id="build" class="section">
+    <div class="wrap split split-rev">
+      <div class="code reveal">
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">assets/scenes/hello/scene.yaml</span></div>
+<pre class="mono"><code><span class="k">format</span>: <span class="s">blender</span>
+<span class="k">scene</span>:
+  <span class="k">scene_name</span>: <span class="s">Hello</span>
+  <span class="k">root_objects</span>:
+    - <span class="k">name</span>: <span class="s">camera</span>
+      <span class="k">components</span>:
+        - <span class="k">type</span>: <span class="t">Transform</span>
+          <span class="k">position</span>: { <span class="k">x</span>: <span class="n">0</span>, <span class="k">y</span>: <span class="n">-10</span>, <span class="k">z</span>: <span class="n">6</span> }   <span class="c"># Z-up, metres</span>
+          <span class="k">rotation</span>: { <span class="k">x</span>: <span class="n">68</span>, <span class="k">y</span>: <span class="n">0</span>, <span class="k">z</span>: <span class="n">0</span> }
+        - <span class="k">type</span>: <span class="t">Camera</span>
+          <span class="k">main</span>: <span class="n">true</span>
+    - <span class="k">name</span>: <span class="s">sun</span>
+      <span class="k">components</span>:
+        - <span class="k">type</span>: <span class="t">DirectionalLight</span>
+          <span class="k">direction</span>: { <span class="k">x</span>: <span class="n">-0.35</span>, <span class="k">y</span>: <span class="n">-0.45</span>, <span class="k">z</span>: <span class="n">-0.82</span> }
+          <span class="k">cast_shadows</span>: <span class="n">true</span>
+    - <span class="k">name</span>: <span class="s">ball</span>
+      <span class="k">components</span>:
+        - <span class="k">type</span>: <span class="t">Transform</span>
+          <span class="k">position</span>: { <span class="k">x</span>: <span class="n">0</span>, <span class="k">y</span>: <span class="n">0</span>, <span class="k">z</span>: <span class="n">4</span> }
+        - <span class="k">type</span>: <span class="t">MeshRenderer</span>
+          <span class="k">mesh_path</span>: <span class="s">sphere.000</span>
+          <span class="k">material</span>: { <span class="k">albedo</span>: { <span class="k">r</span>: <span class="n">0.8</span>, <span class="k">g</span>: <span class="n">0.3</span>, <span class="k">b</span>: <span class="n">0.2</span> } }
+        - <span class="k">type</span>: <span class="t">SphereCollider</span>
+          <span class="k">radius</span>: <span class="n">1.0</span>
+        - <span class="k">type</span>: <span class="t">Rigidbody</span>
+          <span class="k">mass</span>: <span class="n">1.0</span></code></pre>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Data-driven</p>
+        <h2>A scene is a file you can read</h2>
+        <p class="prose">
+          Scenes are trees of objects with components, written in YAML. The demo scenes are heavily
+          commented and double as the reference for every component, and <code>config.yaml</code>
+          has a comment on every key. Packaged builds use binary <code>.caml</code> (Zstandard +
+          AES-256-GCM), and every loader reads both, so nothing needs path rewriting.
+        </p>
+        <div class="term mono">
+          <div><span class="prompt">$</span>git clone --recurse-submodules git@github.com:cooparobla/toyengine.git</div>
+          <div><span class="prompt">$</span>cmake -B build &amp;&amp; cmake --build build -j</div>
+          <div><span class="prompt">$</span>./build/toyengine water_test</div>
+          <div><span class="prompt">$</span>./build/toyengine_editor</div>
+          <button class="copy" data-copy="git clone --recurse-submodules git@github.com:cooparobla/toyengine.git&#10;cd toyengine&#10;cmake -B build &amp;&amp; cmake --build build -j" aria-label="Copy build commands"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-copy"/></svg></button>
+        </div>
+        <p class="prose" style="font-size: .92rem; margin-top: 14px">On macOS, run <code>tools/setup_macos.sh</code> once first to install MoltenVK, the Vulkan loader, <code>glslc</code> and GLFW.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Stack ───────── -->
+  <section id="stack" class="section section-alt">
+    <div class="wrap">
+      <div class="center reveal">
+        <p class="eyebrow">The coopa stack</p>
+        <h2>Seven libraries, stacked like bricks</h2>
+        <p class="prose narrow">
+          toyengine sits on pinned submodules. Each is C++20, mostly header-only, builds
+          standalone, and is useful without the engine.
+        </p>
+      </div>
+
+      <div class="stack">
+        <a class="brick brick-top reveal" href="https://github.com/cooparobla/toyengine">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-brick"/></svg>
+          <div><h4>toyengine</h4><p>The engine and editor: render pipeline, water, streamed world, gameplay components.</p></div>
+        </a>
+        <div class="brick-row">
+          <a class="brick reveal" href="https://github.com/cooparobla/gfxcoopa">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-vulkan"/></svg>
+            <div><h4>gfxcoopa</h4><p>Vulkan, from RAII device objects up to a deferred PBR renderer.</p></div>
+          </a>
+          <a class="brick reveal" href="https://github.com/cooparobla/physxcoopa">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-physics"/></svg>
+            <div><h4>physxcoopa</h4><p>Real-time rigid-body and cloth physics.</p></div>
+          </a>
+          <a class="brick reveal" href="https://github.com/cooparobla/uicoopa">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-ui"/></svg>
+            <div><h4>uicoopa</h4><p>Anchored retained widgets, a fluent builder and an immediate-mode layer for tools.</p></div>
+          </a>
+          <a class="brick reveal" href="https://github.com/cooparobla/sfxcoopa">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-audio"/></svg>
+            <div><h4>sfxcoopa</h4><p>Game audio with a bus mixer and binaural 3D sound.</p></div>
+          </a>
+          <a class="brick brick-page reveal" href="../mapcoopa/">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-map"/></svg>
+            <div><h4>mapcoopa</h4><p>Seeded fantasy worlds: 33 biomes, rivers, roads, nations, towns and caves.</p></div>
+          </a>
+        </div>
+        <div class="brick-row brick-row-base">
+          <a class="brick reveal" href="https://github.com/cooparobla/libcoopa">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-jobs"/></svg>
+            <div><h4>libcoopa</h4><p>The shared runtime: work-stealing jobs, scene graph, async assets with hot reload, coroutines.</p></div>
+          </a>
+          <a class="brick reveal" href="https://github.com/cooparobla/caml">
+            <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-lock"/></svg>
+            <div><h4>caml</h4><p>YAML stored as compressed, encrypted <code>.caml</code> files. Library and CLI.</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Pager ───────── -->
+  <section class="section" style="padding-top: 60px; padding-bottom: 80px">
+    <div class="wrap pager">
+      <a href="../../#projects"><small>← back</small><b>all projects</b></a>
+      <a class="next" href="../mapcoopa/"><small>next project →</small><b>mapcoopa</b></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner mono">
+    <span>© <span id="year">2026</span> coopa · cooparobla</span>
+    <span><a href="./">toyengine</a> · <a href="../mapcoopa/">mapcoopa</a> · <a href="https://github.com/cooparobla">github</a></span>
+  </div>
+</footer>
+
+<script src="../../main.js" defer></script>
+</body>
+</html>

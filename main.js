@@ -9,7 +9,8 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 
   // ── Reveal on scroll ──
   const reveals = document.querySelectorAll(".reveal");
@@ -29,10 +30,10 @@
     reveals.forEach((el) => el.classList.add("in"));
   }
 
-  // ── Typed scene names in the hero terminal ──
+  // ── Typed commands in the hero terminal (list comes from data-lines) ──
   const typed = document.getElementById("typed");
-  const scenes = ["water_test", "terrain_test", "underwater_test", "pixel_demo", "physics_test", "cloth_test", "world_canvas_test"];
-  if (typed && !reduceMotion) {
+  const scenes = typed ? JSON.parse(typed.dataset.lines || "[]") : [];
+  if (typed && scenes.length > 1 && !reduceMotion) {
     let si = 0, ci = scenes[0].length, deleting = true;
     const tick = () => {
       if (deleting) {
@@ -49,8 +50,12 @@
   }
 
   // ── Lightbox for screenshots ──
-  const box = document.getElementById("lightbox");
-  const boxImg = box.querySelector("img");
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.hidden = true;
+  const boxImg = document.createElement("img");
+  box.appendChild(boxImg);
+  document.body.appendChild(box);
   const closeBox = () => { box.hidden = true; document.body.style.overflow = ""; };
   document.querySelectorAll("[data-zoom]").forEach((img) => {
     img.addEventListener("click", () => {
@@ -91,22 +96,22 @@
 
   // A few "buoyant crates" riding the surface.
   const crates = [
-    { i: 6, j: 5, top: "#ffc845", left: "#ff6b4a", right: "#2fb5c8" },
-    { i: 13, j: 9, top: "#ff8a6e", left: "#d24a2c", right: "#b33d22" },
-    { i: 8, j: 14, top: "#ffe08a", left: "#d9962a", right: "#b97c1f" },
+    { i: 6, j: 5, top: "#ede9fe", left: "#a78bfa", right: "#6d28d9" },
+    { i: 13, j: 9, top: "#c4b5fd", left: "#8b5cf6", right: "#5b21b6" },
+    { i: 8, j: 14, top: "#f4f4f6", left: "#b8b8c4", right: "#7a7a86" },
   ];
   const crateAt = new Map(crates.map((c) => [c.i * N + c.j, c]));
 
   const ripples = [];
   let lastCell = -1, lastRippleT = 0;
 
-  // Colour ramp: deep indigo → teal → pale foam/sun at the crests.
+  // Colour ramp: charcoal troughs → violet → pale lavender crests.
   const stops = [
-    [0.0, [42, 35, 80]],
-    [0.35, [31, 127, 147]],
-    [0.65, [47, 181, 200]],
-    [0.88, [143, 227, 238]],
-    [1.0, [255, 224, 138]],
+    [0.0, [26, 26, 31]],
+    [0.3, [48, 46, 60]],
+    [0.6, [91, 63, 180]],
+    [0.85, [167, 139, 250]],
+    [1.0, [237, 233, 254]],
   ];
   const ramp = (v) => {
     v = Math.min(1, Math.max(0, v));

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mapcoopa · coopa</title>
+  <meta name="description" content="mapcoopa: a seeded, header-only C++20 generator for whole fantasy worlds, with terrain, biomes, rivers, roads, nations, settlements, landmarks and caves.">
+  <meta name="theme-color" content="#0f0f12">
+  <meta property="og:title" content="mapcoopa · coopa">
+  <meta property="og:description" content="A seeded, header-only C++20 generator for whole fantasy worlds.">
+  <meta property="og:image" content="../../assets/img/mapcoopa/layer_composite.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="../../" aria-label="coopa, home">
+    <svg class="brand-mark" aria-hidden="true"><use href="../../assets/icons.svg#i-brick"/></svg>
+    <span>coopa</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="../../#projects">projects</a>
+    <a class="nav-proj" href="../toyengine/">toyengine</a>
+    <a class="nav-proj" href="./" aria-current="page">mapcoopa</a>
+    <a class="nav-gh" href="https://github.com/cooparobla" aria-label="GitHub">
+      <svg aria-hidden="true"><use href="../../assets/icons.svg#i-github"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ───────── Header ───────── -->
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="../../">coopa</a> / <a href="../../#projects">projects</a> / <span>mapcoopa</span></p>
+      <div class="project-head">
+        <div class="project-icon"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-map"/></svg></div>
+        <div>
+          <p class="eyebrow">World generation · open source</p>
+          <h1>mapcoopa</h1>
+          <p class="sub">A seeded, header-only C++20 generator for whole fantasy worlds.</p>
+          <div class="tags"><span class="tag">C++20</span><span class="tag">header-only</span><span class="tag">deterministic</span><span class="tag">YAML output</span><span class="tag">Linux · macOS</span></div>
+        </div>
+      </div>
+      <p class="prose">
+        mapcoopa turns a seed and a <code>MapConfig</code> into a <code>MapGraph</code>: Voronoi cells
+        with elevation, climate and one of 33 biomes, rivers that run downhill to the sea, a graded road
+        network, nations and provinces, named settlements with streets and buildings, landmarks, and
+        multi-level cave systems. It produces <em>data, not pixels</em>. The graph saves to YAML so a game
+        can load a world it did not generate, and a software renderer draws nine PNG layers for inspection.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://github.com/cooparobla/mapcoopa"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-github"/></svg> View on GitHub</a>
+        <a class="btn btn-ghost" href="#use">Use it <svg aria-hidden="true"><use href="../../assets/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Hero map ───────── -->
+  <section class="section" style="padding-top: 40px">
+    <div class="wrap split-shot">
+      <figure class="shot reveal">
+        <img src="../../assets/img/mapcoopa/layer_composite.jpg" alt="The default world, seed 42: the composite layer lit by elevation" data-zoom>
+        <figcaption><b>seed 42</b>: composite layer, lit by elevation</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow">Real scale</p>
+        <h2>A world you can walk across</h2>
+        <p class="prose">
+          One grid cell is 60 m, so the default map is 4.8 km square. Every physical size in the config is
+          in metres, and the default render is one pixel per metre. Landmasses can be a rectangle, circle,
+          triangle, a single irregular continent, or an archipelago whose islands fuse when they land close
+          together.
+        </p>
+        <ul class="ticks">
+          <li><b>Elevation</b> blends distance from the coast with fractal relief, over a real sea level and sea bed.</li>
+          <li><b>Climate</b> comes from latitude, altitude and noise, with independent polar caps.</li>
+          <li><b>Biomes</b> are picked from a three-axis Whittaker table: 33 of them.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Stats ───────── -->
+  <section class="strip" aria-label="At a glance">
+    <div class="wrap strip-inner">
+      <div><b>33</b><span>biomes</span></div>
+      <div><b>14</b><span>generation passes</span></div>
+      <div><b>9</b><span>render layers</span></div>
+      <div><b>118</b><span>tests</span></div>
+      <div><b>60 m</b><span>per grid cell</span></div>
+    </div>
+  </section>
+
+  <!-- ───────── Layers ───────── -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Layers</p>
+        <h2>One graph, many views</h2>
+      </div>
+      <div class="gallery square">
+        <figure class="reveal"><img src="../../assets/img/mapcoopa/layer_elevation.jpg" alt="Elevation layer" loading="lazy" data-zoom><figcaption><b>elevation</b>: ground height, sea bed included</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/mapcoopa/layer_biomes.jpg" alt="Biomes layer" loading="lazy" data-zoom><figcaption><b>biomes</b>: flat biome colour</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/mapcoopa/layer_regions.jpg" alt="Regions layer" loading="lazy" data-zoom><figcaption><b>regions</b>: provinces of five nations</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/mapcoopa/layer_water.jpg" alt="Water surface layer" loading="lazy" data-zoom><figcaption><b>water</b>: sea, lake and river surfaces</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/mapcoopa/layer_caves.jpg" alt="Cave overview layer" loading="lazy" data-zoom><figcaption><b>caves</b>: systems coloured by depth</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/mapcoopa/closeup_settlement.jpg" alt="Close-up of a settlement at one pixel per metre" loading="lazy" data-zoom><figcaption><b>close-up</b>: a settlement at 1 px per metre</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Features ───────── -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What it generates</p>
+        <h2>From coastlines to cobbled streets</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-terrain"/></svg>
+          <h4>Terrain and climate</h4>
+          <ul>
+            <li>Five landmass shapes, including fusing archipelagos</li>
+            <li>Vertical scale in metres via <code>elevation_range_m</code></li>
+            <li>Temperature, moisture and 33 Whittaker biomes</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-water"/></svg>
+          <h4>Water</h4>
+          <ul>
+            <li>Pits are filled, so every river ends in a lake or the sea</li>
+            <li>River surfaces only fall, agree at confluences and open into estuaries</li>
+            <li>Rivers cut valleys and true-width channels into the terrain</li>
+            <li>A flat <code>water_level</code> per lake or sea, ready for a water mesh</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-road"/></svg>
+          <h4>Roads</h4>
+          <ul>
+            <li>Routed between hubs</li>
+            <li>Graded into trail, road and highway by the traffic each stretch carries</li>
+            <li>Bridges wherever a road crosses a river</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-town"/></svg>
+          <h4>Nations and settlements</h4>
+          <ul>
+            <li>Countries split into provinces, each with an invented language and dialect for place names</li>
+            <li>Capitals, towns and villages with streets, a market square, civic buildings and dwellings</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-cave"/></svg>
+          <h4>Landmarks and caves</h4>
+          <ul>
+            <li>Peaks, volcanoes, waterfalls, canyons, oases, ruins, towers, shrines and more, placed only where the terrain suits them</li>
+            <li>Multi-level cave systems that open on steep slopes and grow by vadose and phreatic rules</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-seed"/></svg>
+          <h4>Engineering</h4>
+          <ul>
+            <li>A config and seed fully determine the output, byte for byte, on Linux and macOS</li>
+            <li>Header-only: one CMake target, <code>coopa::maps</code>, no graphics dependency</li>
+            <li>Optional async and parallel generation, identical to a serial run</li>
+            <li><code>save_map()</code> / <code>load_map()</code> round-trip the whole graph through YAML</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Pipeline ───────── -->
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Fourteen passes over one graph</h2>
+        <p class="prose">
+          <code>MapGenerator</code> lays a jittered point grid, triangulates it with delaunator and reads the
+          Voronoi dual off the triangulation. Fourteen passes then annotate the graph in a fixed order. Each
+          pass is one header, and each can be switched off with an <code>enable_*</code> key.
+        </p>
+      </div>
+      <ol class="pipeline reveal">
+        <li>water</li><li>coast</li><li>elevation</li><li>temperature</li><li>rivers</li><li>valleys</li><li>moisture</li>
+        <li>biomes</li><li>roads</li><li>regions</li><li>towns</li><li>landmarks</li><li>caves</li><li>noisy edges</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────── Use it ───────── -->
+  <section id="use" class="section section-alt">
+    <div class="wrap split split-rev">
+      <div class="code reveal">
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">worldgen.cpp</span></div>
+<pre class="mono"><code><span class="k">#include</span> <span class="s">&lt;coopa/debug/logger.h&gt;</span>
+<span class="k">#include</span> <span class="s">&lt;coopa/maps/map_generator.h&gt;</span>
+<span class="k">#include</span> <span class="s">&lt;coopa/maps/map_yaml.h&gt;</span>
+
+<span class="k">namespace</span> maps = coopa::maps;
+
+maps::<span class="t">MapConfig</span> config;
+config.seed = <span class="n">42</span>;
+config.noise_island.seed = config.seed;  <span class="c">// noise fields have their own seeds</span>
+config.grid_size = <span class="n">40</span>;                   <span class="c">// 40 cells x 60 m = 2.4 km square</span>
+
+coopa::debug::<span class="t">Logger</span> logger(<span class="s">"worldgen"</span>);
+maps::<span class="t">MapGenerator</span> generator(config, logger);
+generator.generate();
+<span class="k">const</span> maps::<span class="t">MapGraph</span>&amp; map = generator.graph();
+
+<span class="k">for</span> (<span class="k">const</span> maps::<span class="t">MapTown</span>&amp; town : map.towns) {
+    <span class="c">// Grid units; multiply by meters_per_grid_unit for metres.</span>
+    spawn_town(town.name, town.point.x, town.point.y, town.population);
+}
+
+maps::save_map(map, config, <span class="s">"world.yaml"</span>);</code></pre>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Use it</p>
+        <h2>A CLI for maps, a library for games</h2>
+        <p class="prose">
+          The <code>mapcoopa</code> tool writes a world's YAML and every render layer in a few seconds.
+          In C++, add the repository with <code>add_subdirectory()</code> and link <code>coopa::maps</code>.
+          The graph's records refer to each other by index, never by pointer, so it saves and loads cleanly.
+        </p>
+        <div class="term mono">
+          <div><span class="prompt">$</span>cmake -B build &amp;&amp; cmake --build build -j</div>
+          <div><span class="prompt">$</span>./build/mapcoopa --seed=42 --out=world</div>
+          <div><span class="prompt">$</span>./build/mapcoopa --shape=archipelago --shape-count=5 --out=islands</div>
+          <div class="c"># world.yaml + world_&lt;layer&gt;.png</div>
+          <button class="copy" data-copy="mkdir coopa &amp;&amp; cd coopa&#10;git clone git@github.com:cooparobla/libcoopa.git&#10;git clone git@github.com:cooparobla/mapcoopa.git&#10;cd mapcoopa&#10;cmake -B build &amp;&amp; cmake --build build -j" aria-label="Copy build commands"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-copy"/></svg></button>
+        </div>
+        <p class="prose" style="font-size: .92rem; margin-top: 14px">Builds on <a href="https://github.com/cooparobla/libcoopa">libcoopa</a>, checked out as a sibling directory. A port and extension of Amit Patel's <a href="https://www.redblobgames.com/maps/mapgen2/">Polygonal Map Generation</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Used by toyengine ───────── -->
+  <section class="section">
+    <div class="wrap split-shot">
+      <div class="reveal">
+        <p class="eyebrow">Used by</p>
+        <h2>Streamed as 3D terrain in <a href="../toyengine/">toyengine</a></h2>
+        <p class="prose">
+          toyengine builds streamed 3D terrain from mapcoopa worlds. Chunks are meshed on the job system
+          around the camera, and tile shapes are mesh assets, so the whole look of a world changes with a
+          line of YAML.
+        </p>
+        <div class="cta" style="margin-top: 24px">
+          <a class="btn btn-ghost" href="../toyengine/">Explore toyengine <svg aria-hidden="true"><use href="../../assets/icons.svg#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <figure class="shot reveal">
+        <img src="../../assets/img/mapcoopa/toyengine_terrain.jpg" alt="toyengine's terrain_test scene, meshed from a mapcoopa world" loading="lazy" data-zoom>
+        <figcaption><b>terrain_test</b>: a mapcoopa world in toyengine</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ───────── Pager ───────── -->
+  <section class="section" style="padding-top: 20px; padding-bottom: 80px">
+    <div class="wrap pager">
+      <a href="../toyengine/"><small>← previous project</small><b>toyengine</b></a>
+      <a class="next" href="../../#projects"><small>back →</small><b>all projects</b></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner mono">
+    <span>© <span id="year">2026</span> coopa · cooparobla</span>
+    <span><a href="../toyengine/">toyengine</a> · <a href="./">mapcoopa</a> · <a href="https://github.com/cooparobla">github</a></span>
+  </div>
+</footer>
+
+<script src="../../main.js" defer></script>
+</body>
+</html>
