@@ -97,8 +97,7 @@ h4 { font-size: 1.12rem; font-weight: 600; }
   position: relative; min-height: 100vh; min-height: 100svh;
   display: flex; align-items: center;
   background:
-    radial-gradient(1000px 600px at 78% 45%, rgba(109, 40, 217, .16), transparent 65%),
-    radial-gradient(700px 500px at 5% 100%, rgba(139, 92, 246, .06), transparent 60%),
+    radial-gradient(1000px 600px at 78% 45%, rgba(255, 255, 255, .035), transparent 65%),
     var(--bg);
   overflow: hidden;
 }
@@ -156,7 +155,7 @@ h4 { font-size: 1.12rem; font-weight: 600; }
 .page-head { padding: 140px 0 20px; position: relative; }
 .page-head::before {
   content: ""; position: absolute; inset: 0 0 -200px 0;
-  background: radial-gradient(800px 420px at 85% 10%, rgba(109, 40, 217, .18), transparent 65%);
+  background: radial-gradient(800px 420px at 85% 10%, rgba(255, 255, 255, .035), transparent 65%);
   pointer-events: none;
 }
 .crumbs { font-family: var(--mono); font-size: .8rem; color: var(--faint); margin-bottom: 26px; display: flex; gap: 8px; align-items: center; position: relative; }
@@ -329,7 +328,7 @@ pre code { background: none; border: 0; padding: 0; border-radius: 0; color: inh
 .brick p { margin: 0; font-size: .85rem; color: var(--muted); line-height: 1.5; }
 .brick-row .brick { flex-direction: column; }
 .brick-top {
-  background: linear-gradient(120deg, rgba(139, 92, 246, .22), rgba(109, 40, 217, .08) 60%, var(--surface));
+  background: linear-gradient(120deg, var(--surface-3), var(--surface) 60%);
   border-color: rgba(167, 139, 250, .45); align-items: center;
 }
 .brick-top .icon { width: 54px; height: 54px; }
