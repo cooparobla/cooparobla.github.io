@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docs · coopa</title>
+  <meta name="description" content="API references for toyengine and the coopa libraries, generated from the source with coopadocs.">
+  <meta name="theme-color" content="#0f0f12">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=4">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="../" aria-label="coopa, home">
+    <svg class="brand-mark" aria-hidden="true"><use href="../assets/icons.svg#i-brick"/></svg>
+    <span>coopa</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="../#projects">projects</a>
+    <a class="nav-proj" href="../projects/toyengine/">toyengine</a>
+    <a class="nav-proj" href="../projects/mapcoopa/">mapcoopa</a>
+    <a href="./" aria-current="page">docs</a>
+    <a href="../about/">about</a>
+    <a class="nav-gh" href="https://github.com/cooparobla" aria-label="GitHub">
+      <svg aria-hidden="true"><use href="../assets/icons.svg#i-github"/></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="../">coopa</a> / <span>docs</span></p>
+      <p class="eyebrow">Documentation</p>
+      <h1>API references</h1>
+      <p class="prose">
+        Generated from the docstrings in each repository's headers with coopadocs. Every reference covers the
+        public classes, functions and modules of one library, with search.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 20px">
+    <div class="wrap grid-2 docs-grid">
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-brick"/></svg>
+        <h4 class="mono">toyengine</h4>
+        <p>The engine and editor: render pipeline, water, streamed world, gameplay components.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="toyengine/index.html">API reference</a>
+          <a href="../projects/toyengine/">project page</a>
+          <a href="https://github.com/cooparobla/toyengine#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-jobs"/></svg>
+        <h4 class="mono">libcoopa</h4>
+        <p>The shared runtime: work-stealing jobs, scene graph, async assets with hot reload, coroutines.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="libcoopa/index.html">API reference</a>
+          <a href="https://github.com/cooparobla/libcoopa#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-vulkan"/></svg>
+        <h4 class="mono">gfxcoopa</h4>
+        <p>Vulkan, from RAII device objects up to a deferred PBR renderer.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="gfxcoopa/index.html">API reference</a>
+          <a href="https://github.com/cooparobla/gfxcoopa#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-physics"/></svg>
+        <h4 class="mono">physxcoopa</h4>
+        <p>Real-time rigid-body and cloth physics.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="physxcoopa/index.html">API reference</a>
+          <a href="https://github.com/cooparobla/physxcoopa#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-ui"/></svg>
+        <h4 class="mono">uicoopa</h4>
+        <p>Anchored retained widgets, a fluent builder and an immediate-mode layer for tools.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="uicoopa/index.html">API reference</a>
+          <a href="https://github.com/cooparobla/uicoopa#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-audio"/></svg>
+        <h4 class="mono">sfxcoopa</h4>
+        <p>Game audio with a bus mixer and binaural 3D sound.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="sfxcoopa/index.html">API reference</a>
+          <a href="https://github.com/cooparobla/sfxcoopa#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-map"/></svg>
+        <h4 class="mono">mapcoopa</h4>
+        <p>Seeded fantasy worlds: 33 biomes, rivers, roads, nations, towns and caves.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="mapcoopa/index.html">API reference</a>
+          <a href="../projects/mapcoopa/">project page</a>
+          <a href="https://github.com/cooparobla/mapcoopa#readme">README</a>
+        </div>
+      </article>
+      <article class="card doc-card reveal">
+        <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-lock"/></svg>
+        <h4 class="mono">caml</h4>
+        <p>YAML stored as compressed, encrypted <code>.caml</code> files. Library and CLI.</p>
+        <div class="doc-links">
+          <a class="btn btn-primary" href="caml/index.html">API reference</a>
+          <a href="https://github.com/cooparobla/caml#readme">README</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner mono">
+    <span>© <span id="year">2026</span> coopa · cooparobla</span>
+    <span><a href="../projects/toyengine/">toyengine</a> · <a href="../projects/mapcoopa/">mapcoopa</a> · <a href="./">docs</a> · <a href="../about/">about</a> · <a href="https://github.com/cooparobla">github</a></span>
+  </div>
+</footer>
+
+<script src="../main.js?v=4" defer></script>
+</body>
+</html>

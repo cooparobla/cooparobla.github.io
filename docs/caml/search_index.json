@@ -1,0 +1,104 @@
+[
+  {
+    "name": "caml",
+    "kind": "Namespace",
+    "url": "scope_caml.html",
+    "desc": ""
+  },
+  {
+    "name": "caml::derive_key",
+    "kind": "Function",
+    "url": "scope_caml.html#func_derive_key",
+    "desc": "Derives a 32-byte key from a passphrase string using PBKDF2 (SHA-256)."
+  },
+  {
+    "name": "caml::encode",
+    "kind": "Function",
+    "url": "scope_caml.html#func_encode",
+    "desc": "Encodes a raw YAML string into binary .caml format (Zstd compression + AES-256-GCM encryption)."
+  },
+  {
+    "name": "caml::decode",
+    "kind": "Function",
+    "url": "scope_caml.html#func_decode",
+    "desc": "Decodes binary .caml format back into a raw YAML string."
+  },
+  {
+    "name": "caml::encode_file",
+    "kind": "Function",
+    "url": "scope_caml.html#func_encode_file",
+    "desc": ""
+  },
+  {
+    "name": "caml::decode_file",
+    "kind": "Function",
+    "url": "scope_caml.html#func_decode_file",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap",
+    "kind": "Class",
+    "url": "class_CAMLMap.html",
+    "desc": "Header-only wrapper managing YAML data nodes with built-in .caml export/import capabilities."
+  },
+  {
+    "name": "CAMLMap::CAMLMap",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_CAMLMap",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::CAMLMap",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_CAMLMap",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::save_yaml",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_save_yaml",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::save_caml",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_save_caml",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::get_raw_node",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_get_raw_node",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::get_raw_node",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_get_raw_node",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::to_yaml_string",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_to_yaml_string",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::load_yaml",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_load_yaml",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::load_caml",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_load_caml",
+    "desc": ""
+  },
+  {
+    "name": "CAMLMap::from_yaml_string",
+    "kind": "Method",
+    "url": "class_CAMLMap.html#method_from_yaml_string",
+    "desc": ""
+  }
+]

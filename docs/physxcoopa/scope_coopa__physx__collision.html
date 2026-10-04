@@ -1,0 +1,2596 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopa::physx::collision - physxcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">physxcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset.html">
+                        <span class="badge">C++</span>coopa::asset
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx.html">
+                        <span class="badge">C++</span>coopa::physx
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__broadphase.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth.html">
+                        <span class="badge">C++</span>coopa::physx::cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth__detail.html">
+                        <span class="badge">C++</span>coopa::physx::cloth::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_coopa__physx__collision.html">
+                        <span class="badge">C++</span>coopa::physx::collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__components.html">
+                        <span class="badge">C++</span>coopa::physx::components
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug.html">
+                        <span class="badge">C++</span>coopa::physx::debug
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug__colors.html">
+                        <span class="badge">C++</span>coopa::physx::debug::colors
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__detail.html">
+                        <span class="badge">C++</span>coopa::physx::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__dynamics.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__geometry.html">
+                        <span class="badge">C++</span>coopa::physx::geometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders.html">
+                        <span class="badge">C++</span>coopa::physx::loaders
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders__detail.html">
+                        <span class="badge">C++</span>coopa::physx::loaders::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__query.html">
+                        <span class="badge">C++</span>coopa::physx::query
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__system.html">
+                        <span class="badge">C++</span>coopa::physx::system
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util.html">
+                        <span class="badge">C++</span>coopa::physx::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util__detail.html">
+                        <span class="badge">C++</span>coopa::physx::util::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsWorld.html">
+                        <span class="badge">C++</span>PhysicsWorld
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABBTree.html">
+                        <span class="badge">C++</span>AABBTree
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LayerMatrix.html">
+                        <span class="badge">C++</span>LayerMatrix
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PairCache.html">
+                        <span class="badge">C++</span>PairCache
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProxyPair.html">
+                        <span class="badge">C++</span>ProxyPair
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Cloth.html">
+                        <span class="badge">C++</span>Cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchor.html">
+                        <span class="badge">C++</span>ClothAnchor
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothCollider.html">
+                        <span class="badge">C++</span>ClothCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothConstraint.html">
+                        <span class="badge">C++</span>ClothConstraint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothId.html">
+                        <span class="badge">C++</span>ClothId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParams.html">
+                        <span class="badge">C++</span>ClothParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParticle.html">
+                        <span class="badge">C++</span>ClothParticle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothSolverScratch.html">
+                        <span class="badge">C++</span>ClothSolverScratch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothTether.html">
+                        <span class="badge">C++</span>ClothTether
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ConstraintBatch.html">
+                        <span class="badge">C++</span>ConstraintBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GridClothDesc.html">
+                        <span class="badge">C++</span>GridClothDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SerialDispatch.html">
+                        <span class="badge">C++</span>SerialDispatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClipPlane.html">
+                        <span class="badge">C++</span>ClipPlane
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactEvent.html">
+                        <span class="badge">C++</span>ContactEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactManifold.html">
+                        <span class="badge">C++</span>ContactManifold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactPoint.html">
+                        <span class="badge">C++</span>ContactPoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SatAxisResult.html">
+                        <span class="badge">C++</span>SatAxisResult
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Shape.html">
+                        <span class="badge">C++</span>Shape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BoxCollider.html">
+                        <span class="badge">C++</span>BoxCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CapsuleCollider.html">
+                        <span class="badge">C++</span>CapsuleCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchorSpec.html">
+                        <span class="badge">C++</span>ClothAnchorSpec
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothComponent.html">
+                        <span class="badge">C++</span>ClothComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collider.html">
+                        <span class="badge">C++</span>Collider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collision.html">
+                        <span class="badge">C++</span>Collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FixedUpdateBehaviour.html">
+                        <span class="badge">C++</span>FixedUpdateBehaviour
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJointComponent.html">
+                        <span class="badge">C++</span>HingeJointComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshCollider.html">
+                        <span class="badge">C++</span>MeshCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RigidbodyComponent.html">
+                        <span class="badge">C++</span>RigidbodyComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SphereCollider.html">
+                        <span class="badge">C++</span>SphereCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugDraw.html">
+                        <span class="badge">C++</span>DebugDraw
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Body.html">
+                        <span class="badge">C++</span>Body
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BodyId.html">
+                        <span class="badge">C++</span>BodyId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChildMassInput.html">
+                        <span class="badge">C++</span>ChildMassInput
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJoint.html">
+                        <span class="badge">C++</span>HingeJoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IslandUnionFind.html">
+                        <span class="badge">C++</span>IslandUnionFind
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JointId.html">
+                        <span class="badge">C++</span>JointId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MassProperties.html">
+                        <span class="badge">C++</span>MassProperties
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterial.html">
+                        <span class="badge">C++</span>PhysicsMaterial
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SolverState.html">
+                        <span class="badge">C++</span>SolverState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABB.html">
+                        <span class="badge">C++</span>AABB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Capsule.html">
+                        <span class="badge">C++</span>Capsule
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshBVH.html">
+                        <span class="badge">C++</span>MeshBVH
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OBB.html">
+                        <span class="badge">C++</span>OBB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Ray.html">
+                        <span class="badge">C++</span>Ray
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Sphere.html">
+                        <span class="badge">C++</span>Sphere
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleAdjacency.html">
+                        <span class="badge">C++</span>TriangleAdjacency
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMesh.html">
+                        <span class="badge">C++</span>TriangleMesh
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterialLoader.html">
+                        <span class="badge">C++</span>PhysicsMaterialLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMeshLoader.html">
+                        <span class="badge">C++</span>TriangleMeshLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RaycastHit.html">
+                        <span class="badge">C++</span>RaycastHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSystem.html">
+                        <span class="badge">C++</span>PhysicsSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsConfig.html">
+                        <span class="badge">C++</span>PhysicsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSettings.html">
+                        <span class="badge">C++</span>PhysicsSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Trs.html">
+                        <span class="badge">C++</span>Trs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__Binding.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__dynamics__SolverState__CachedImpulse.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics::SolverState::CachedImpulse
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__PhysicsWorld__DeferredCommand.html">
+                        <span class="badge">C++</span>coopa::physx::PhysicsWorld::DeferredCommand
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__broadphase__AABBTree__Node.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase::AABBTree::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__geometry__MeshBVH__Node.html">
+                        <span class="badge">C++</span>coopa::physx::geometry::MeshBVH::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__RaycastHit.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::RaycastHit
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; coopa::physx::collision
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>coopa::physx::collision</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/physxcoopa/physxcoopa/collision/clip.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClipPlane.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClipPlane
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A half-space: points p with dot(normal, p) &lt;= d are kept by clip_polygon().
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ContactEvent.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ContactEvent
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One (a, b) pair's enter/stay/exit transition this step, for either a solid contact or a trigger overlap (see is_trigg...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ContactManifold.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ContactManifold
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                All contact points between one pair of bodies this step. normal points from body a toward body b. valid supports the ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ContactPoint.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ContactPoint
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One point of contact within a manifold. normal_impulse/tangent_impulse persist across steps via the solver's warm-sta...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_SatAxisResult.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class SatAxisResult
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                The minimum-penetration separating axis found across all 15 candidates. best_axis encodes which axis won: 0-2 = A's l...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Shape.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Shape
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Final, world-scale collision geometry for one body, plus its material/trigger/layer. Dimensions here are already worl...
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_clip_polygon">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">clip_polygon</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">clip_polygon</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">*</span><span class="n">in</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">in_count</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ClipPlane</span><span class="w"> </span><span class="o">&amp;</span><span class="n">plane</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out_count</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Clips a polygon against one half-space (Sutherland-Hodgman), preserving winding.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">in</td>
+                        <td class="param-type">const glm::vec3 *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Input polygon vertices, in order.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">in_count</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Number of input vertices.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">plane</td>
+                        <td class="param-type">const ClipPlane &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Half-space to clip against.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">glm::vec3 *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output buffer, capacity >= k_max_clip_vertices.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out_count</td>
+                        <td class="param-type">int &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: number of vertices written to `out`.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_obb_face">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">obb_face</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">obb_face</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">axis</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">sign</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">corners</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Returns the 4 world-space corners of one face of an OBB, plus its outward normal.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Box to query.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">axis</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Which local axis the face is perpendicular to (0=X, 1=Y, 2=Z).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sign</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>+1 for the face on the positive side of that axis, -1 for the negative side.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">corners</td>
+                        <td class="param-type">glm::vec3</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: 4 corners, in a consistent (if not guaranteed CCW) winding order.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: outward unit face normal.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_obb_side_planes">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">obb_side_planes</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">obb_side_planes</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">axis</span><span class="p">,</span><span class="w"> </span><span class="n">ClipPlane</span><span class="w"> </span><span class="n">planes</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Returns the 4 side clip planes bounding one face of an OBB  the planes the incident face gets clipped against to produce a face-face contact manifold.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Reference box.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">axis</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The reference face's axis (0=X, 1=Y, 2=Z).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">planes</td>
+                        <td class="param-type">ClipPlane</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: exactly 4 planes.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_closest_point_on_triangle">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">closest_point_on_triangle</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">closest_point_on_triangle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Closest point on triangle (a,b,c) to <code>p</code> (Ericson, "Real-Time Collision Detection", 5.1.5  the standard barycentric-region case analysis).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">p</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sphere_or_capsule_vs_triangle_contact_">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sphere_or_capsule_vs_triangle_contact_</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">sphere_or_capsule_vs_triangle_contact_</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v0</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v1</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v2</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">on_shape</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">on_tri</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">penetration</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Per-triangle contact for a Sphere or Capsule: both have a "core" (a point or a segment) offset from the actual surface by a constant radius, so penetration is simply <code>radius - distance(core, triangle)</code>  exactly how sphere_vs_box and capsule_vs_box already work elsewhere in narrowphase. <code>on_shape</code> is the closest point on the core (not the shape's swept surface); the capsule case alternates between the segment and the triangle a few times, since both are convex sets needing mutual projection to converge on their true closest points.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">shape</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">v0</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">v1</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">v2</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">on_shape</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">on_tri</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">penetration</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_box_vs_triangle_contacts_">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">box_vs_triangle_contacts_</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Fn</span><span class="o">&gt;</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">box_vs_triangle_contacts_</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v0</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v1</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v2</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">face_normal</span><span class="p">,</span><span class="w"> </span><span class="n">Fn</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="n">emit</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Per-triangle contact for a Box: a box has no core-radius offset, so the closest-point-on-surface trick above doesn't work  once a box's face has overlapped a triangle's plane at all, the "closest point on the box" to any point on that triangle is already inside the box (distance 0), destroying the penetration signal immediately rather than growing it as the box sinks in further.</p>
+<p>Instead: test all 8 corners against the triangle's own plane directly (a convex-vs-halfspace test per corner, the same one SAT reduces to along a single fixed axis) and emit one contact per embedded corner  a box resting flat generates all 4 corners on its underside as one consistent 4-point manifold, matching what box-vs-box's face clipping produces, rather than an arbitrarily-chosen single corner that would inject spurious torque as the box rocks between which corner is "deepest" from one step to the next. This only tests the triangle's own face-normal axis (not a full per-triangle SAT with the box's face/edge axes too), which is sufficient for the resting/sliding-on-a-surface case this loop exists for; a box approaching a mesh edge/corner from the side falls to the closest-point-based <code>on_tri</code> (already clamped into the finite triangle) and the internal-edge correction below, same as the sphere/capsule path.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">shape</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">v0</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">v1</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">v2</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">face_normal</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">emit</td>
+                        <td class="param-type">Fn &&</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Called as `emit(on_shape, on_tri, penetration)` for each embedded corner.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_barycentric_">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">barycentric_</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">barycentric_</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Barycentric weights of <code>p</code> w.r.t. triangle (a,b,c): {weight of a, weight of b, weight of c}.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">p</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_classify_triangle_edge_">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">classify_triangle_edge_</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">int</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">classify_triangle_edge_</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bary</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Which of triangle <code>tri</code>'s edges (0: v0-v1, 1: v1-v2, 2: v2-v0) barycentric point <code>bary</code> lies on, or -1 for a face-interior point or a vertex (two weights near zero at once  deliberately left uncorrected by edge adjacency, see generate_mesh_contacts).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bary</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">int</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_correct_mesh_normal_">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">correct_mesh_normal_</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">correct_mesh_normal_</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">edge</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">face_normal</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">neighbor_normal</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">has_neighbor</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">raw_normal</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Internal-edge correction (Phase 8): clamps a raw closest-point normal into a normal consistent with the mesh's actual surface, using the edge adjacency built by TriangleMeshLoader.</p>
+<p>Face-interior (or vertex) contacts: unambiguous, but still prefer the face normal whenever the shape is genuinely on its outward side  only a true silhouette keeps the raw direction.Boundary edges (no neighbour, <code>k_no_neighbor</code>): no constraint  these are the mesh's perimeter, where the raw closest-feature direction is the only correct answer.Nearly-coplanar neighbours (the classic ghost-collision case  a flat floor tessellated into many triangles): always trust this triangle's own face normal, which is what stops the shared edge from ever producing a normal that points along the surface instead of away from it.Genuine creases (a real corner): clamp to whichever of the two adjacent face normals the raw direction is closer to, rather than either an edge-tangent direction or an unconstrained raw normal.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">edge</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">face_normal</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">neighbor_normal</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">has_neighbor</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">raw_normal</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_generate_mesh_contacts">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">generate_mesh_contacts</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">generate_mesh_contacts</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">mesh_shape</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">mesh_pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">mesh_rot</span><span class="p">,</span><span class="w"> </span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Generates a manifold between a convex Shape and a static TriangleMesh shape.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">shape</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The convex (Sphere/Box/Capsule) shape.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>That shape's world pose.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>That shape's world pose.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mesh_shape</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The TriangleMesh shape (its own pose is `mesh_pos`/`mesh_rot`).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mesh_pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mesh_rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ContactManifold &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output manifold, normal pointing from the mesh's surface toward the convex shape  caller (generate_contacts) applies the final A->B sign.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sphere_vs_sphere">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sphere_vs_sphere</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">sphere_vs_sphere</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">penetration</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Sphere-vs-sphere closest-point test.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: unit normal from A's center toward B's center.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">penetration</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: overlap depth (positive when overlapping).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: contact point, on A's surface along `normal`.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sphere_vs_box">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sphere_vs_box</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">sphere_vs_box</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sphere</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">penetration</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Sphere-vs-box closest-point test, including the degenerate case where the sphere's center lies inside the box (handled via minimum-face-distance push-out, since the ordinary closest-point-on-surface distance is meaningless once the center is inside).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sphere</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: unit normal from the box's surface toward the sphere's center.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">penetration</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: overlap depth.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: contact point, on the box's surface.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sphere_vs_sphere_separation">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sphere_vs_sphere_separation</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">sphere_vs_sphere_separation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">separation</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Sphere-vs-sphere signed-separation query for the CCD speculative-contact path  companion to sphere_vs_sphere() above, which only ever reports an overlapping pair. Trivial for spheres (their surfaces ARE their distance field), unlike Box-Box's SAT extension in collision/sat.h.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">separation</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sphere_vs_box_separation">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sphere_vs_box_separation</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">sphere_vs_box_separation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sphere</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">separation</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Sphere-vs-box signed-separation query for the CCD speculative-contact path  companion to sphere_vs_box() above. Only handles the sphere-center-outside-the-box case (sphere_vs_box()'s own <code>!inside</code> branch)  the inside case always means overlapping already, never speculative.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sphere</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">separation</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_generate_contacts">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">generate_contacts</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">generate_contacts</span><span class="p">(</span><span class="n">dynamics</span><span class="o">::</span><span class="n">BodyId</span><span class="w"> </span><span class="n">id_a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">shape_a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos_a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot_a</span><span class="p">,</span><span class="w"> </span><span class="n">dynamics</span><span class="o">::</span><span class="n">BodyId</span><span class="w"> </span><span class="n">id_b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">shape_b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos_b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot_b</span><span class="p">,</span><span class="w"> </span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">allow_speculative</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Generates (or refuses) a contact manifold for one pair of bodies, dispatching on shape type. <code>out</code> is fully overwritten; <code>out.a</code>/<code>out.b</code> are set even on failure.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">id_a</td>
+                        <td class="param-type">dynamics::BodyId</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shape_a</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos_a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot_a</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">id_b</td>
+                        <td class="param-type">dynamics::BodyId</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shape_b</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos_b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot_b</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ContactManifold &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">allow_speculative</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td>When true, a not-yet-touching-but-close pair still produces a SINGLE-point speculative manifold (ContactManifold::add_speculative_point(), see its doc) instead of returning false, for Sphere-Sphere, Sphere-Box, Box-Sphere, and Box-Box pairs  the pairs cheap enough to extend for v1 (Box-Box already needed a real extension to collision/sat.h; the sphere ones are near-trivial distance math on top of what sphere_vs_sphere()/sphere_vs_box() above already compute). Capsule-involving and TriangleMesh pairs are NOT extended (default false is unaffected either way)  meshes are static-only already and a genuine mesh CCD lift is deferred (same precedent as sphere_cast()'s own documented mesh-inflation gap in world.h); capsule speculative support is a reasonable, tractable follow-up (closest_points_segment_obb/ closest_points_segment_segment in collision/segment.h are already distance-based) but wasn't done in this pass. Default false: every pre-existing call site is unaffected.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sat_test_obb_obb">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sat_test_obb_obb</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">sat_test_obb_obb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">SatAxisResult</span><span class="w"> </span><span class="o">&amp;</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">allow_separated</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Runs the 15-axis SAT test between two OBBs.</p>
+<p>Edge-cross axes are given a small overlap penalty relative to face axes before comparing, so a near-tie (common for axis-aligned or near-axis-aligned boxes) resolves to the more stable face-face manifold rather than flickering between face and edge contacts frame to frame. A near-degenerate edge-cross axis (parallel edges) is skipped as a candidate rather than causing a false separation.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">result</td>
+                        <td class="param-type">SatAxisResult &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">allow_separated</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td>When false (the default  every pre-existing call site), behavior is byte-for-byte identical to before this parameter existed: the first axis that proves separation short-circuits the remaining tests and the function returns false. When true, ALL 15 axes are tested regardless, and if every one of them proves separation (the pair is definitively NOT touching), the function still returns true with `result.is_separated = true` and `result.separation` set from whichever separating axis has the SMALLEST gap  for box-box specifically, the same 15 candidate axes that contain the true minimum-PENETRATION axis when overlapping also contain the true minimum-SEPARATION axis when not (the mirror-image selection: max overlap among the negative values, vs. min overlap among the positive ones), so no additional geometry beyond what this function already computes is needed. This is what lets a fast-moving pair get a genuine (not merely inflated-margin) speculative contact  see generate_box_box_contacts()'s own `allow_speculative` parameter, the only caller that passes true here.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_generate_box_box_contacts">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">generate_box_box_contacts</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">generate_box_box_contacts</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">allow_speculative</span><span class="o">=</span><span class="nb">false</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Generates a face-face or edge-edge contact manifold for two overlapping OBBs.</p>
+<p>Feature ids: face contacts pack <code>(reference_face &lt;&lt; 8) | (incident_face &lt;&lt; 4) | clipped_point_index</code> (reference/incident face each 0-5: <code>axis*2 + (sign&lt;0)</code>); edge contacts use a disjoint range (<code>0x1000 | (edge_a &lt;&lt; 4) | edge_b</code>) so the two schemes can never collide. Both are stable across steps for a fixed pair of touching faces/edges, which is what warm starting needs.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>First box.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Second box.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ContactManifold &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output manifold (`out.a`/`out.b`/material/friction are NOT set here  the caller, collision::generate_contacts, fills those in).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">allow_speculative</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td>When true, a not-yet-touching pair (see sat_test_obb_obb()'s `allow_separated` doc) still produces a manifold: a SINGLE speculative point (ContactManifold::add_speculative_point()) at the midpoint of each box's closest point to the OTHER box's center (geometry::closest_point_on_obb())  an approximation, not a full clipped face manifold, since the only job a speculative point has is stopping tunneling for one substep before the ordinary (non-speculative) path takes over once the pair genuinely touches next substep. Deliberately NOT each box's support point (farthest vertex along the separating axis): for a pure face-separation case the other two axes have an ambiguous (zero-dot) choice and a support point can land on an arbitrary corner far from the real contact area, injecting a large phantom moment arm that neutralizes almost all of the resulting impulse  an earlier version of this function did exactly that and a fast box was measurably barely slowed down at all before landing on closest_point_on_obb instead. Default false: every pre-existing call site is completely unaffected (separation still just returns false, same as ever).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_closest_points_segment_obb">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">closest_points_segment_obb</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">closest_points_segment_obb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">on_segment</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">on_box</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Finds the closest points between a segment and an OBB via alternating projection: repeatedly clamp the current segment-side point onto the box, then clamp that box-side point back onto the segment. Both shapes are convex, so this converges quickly to the true closest pair (a handful of iterations is enough in practice)  a standard technique for closest-point-between-two-convex-shapes when a closed form would otherwise require casing on which Voronoi region of the box the segment falls into.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Segment start.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Segment end.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Box to test against.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">on_segment</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: closest point on the segment.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">on_box</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: closest point on/in the box.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_capsule_vs_sphere">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">capsule_vs_sphere</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">capsule_vs_sphere</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Capsule</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cap</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sphere</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">penetration</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Capsule-vs-sphere contact.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">cap</td>
+                        <td class="param-type">const geometry::Capsule &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sphere</td>
+                        <td class="param-type">const geometry::Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">penetration</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_capsule_vs_capsule">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">capsule_vs_capsule</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">capsule_vs_capsule</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Capsule</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Capsule</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">penetration</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Capsule-vs-capsule contact via the two segments' closest points.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const geometry::Capsule &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const geometry::Capsule &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">penetration</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_capsule_vs_box">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">capsule_vs_box</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">capsule_vs_box</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">Capsule</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cap</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Capsule-vs-box contact, promoting to a 2-point manifold when the segment lies flat against a box face (both endpoints similarly close to the same surface) rather than just poking a single point into it  without this, a capsule lying on a flat floor would only ever get one contact point and could rock/roll around it.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">cap</td>
+                        <td class="param-type">const geometry::Capsule &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const geometry::OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ContactManifold &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Manifold filled with 1 or 2 points on success (`a`/`b`/material fields are left to the caller, matching collision::generate_contacts's convention).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_world_sphere">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">world_sphere</h3>
+            
+            <div class="signature-panel">
+                <span class="n">geometry</span><span class="o">::</span><span class="n">Sphere</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">world_sphere</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Instances a Sphere shape at a body's current world pose.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">geometry::Sphere</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_world_obb">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">world_obb</h3>
+            
+            <div class="signature-panel">
+                <span class="n">geometry</span><span class="o">::</span><span class="n">OBB</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">world_obb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Instances a Box shape (as an OBB) at a body's current world pose.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">geometry::OBB</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_world_capsule">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">world_capsule</h3>
+            
+            <div class="signature-panel">
+                <span class="n">geometry</span><span class="o">::</span><span class="n">Capsule</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">world_capsule</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Instances a Capsule shape at a body's current world pose.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">geometry::Capsule</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_world_bounds">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">world_bounds</h3>
+            
+            <div class="signature-panel">
+                <span class="n">geometry</span><span class="o">::</span><span class="n">AABB</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">collision</span><span class="o">::</span><span class="n">world_bounds</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>World-space AABB enclosing a shape at a body's current pose, used by broadphase.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">const Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Shape (must have `enabled == true`).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body world position.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body world orientation.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">geometry::AABB</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

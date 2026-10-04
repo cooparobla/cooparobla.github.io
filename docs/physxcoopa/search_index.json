@@ -1,0 +1,2636 @@
+[
+  {
+    "name": "coopa",
+    "kind": "Namespace",
+    "url": "scope_coopa.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::asset",
+    "kind": "Namespace",
+    "url": "scope_coopa__asset.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::register_physics_components",
+    "kind": "Function",
+    "url": "scope_coopa__physx.html#func_register_physics_components",
+    "desc": "Registers every physxcoopa component's YAML parser with SceneLoader. Each name is registered once SceneLoader::normal..."
+  },
+  {
+    "name": "coopa::physx::apply_physics_settings",
+    "kind": "Function",
+    "url": "scope_coopa__physx.html#func_apply_physics_settings",
+    "desc": "Applies a scene's physics: settings to a freshly-constructed PhysicsWorld gravity, solver tunables, fixed timestep an..."
+  },
+  {
+    "name": "PhysicsWorld",
+    "kind": "Class",
+    "url": "class_PhysicsWorld.html",
+    "desc": "Owns every Body and Shape and drives the fixed-substep simulation loop. Depends only on glm, coopa::event::Signal and..."
+  },
+  {
+    "name": "PhysicsWorld::PhysicsWorld",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_PhysicsWorld",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::add_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_add_body",
+    "desc": "Creates a new body with an optional collision shape, returning a generational handle to it. A default-constructed Sha..."
+  },
+  {
+    "name": "PhysicsWorld::remove_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_remove_body",
+    "desc": "Destroys a body immediately, including every shape it owns (see add_shape()'s doc for compound bodies). A no-op if id..."
+  },
+  {
+    "name": "PhysicsWorld::add_shape",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_add_shape",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::remove_shape",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_remove_shape",
+    "desc": "Removes one shape slot (as returned by add_shape()/add_body()) immediately. A body left with zero shapes participates..."
+  },
+  {
+    "name": "PhysicsWorld::shape_at",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_shape_at",
+    "desc": "The shape slot at body_shapes_[id.index][i], or k_invalid_shape if id is invalid or has no shape at that position (i=..."
+  },
+  {
+    "name": "PhysicsWorld::shapes_of",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_shapes_of",
+    "desc": "Every shape slot id currently owns, primary first. Empty for a shapeless body."
+  },
+  {
+    "name": "PhysicsWorld::set_shape",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_set_shape",
+    "desc": "Replaces a live body's PRIMARY shape immediately for a compound body (more than one shape), every OTHER shape is unto..."
+  },
+  {
+    "name": "PhysicsWorld::set_shape_at",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_set_shape_at",
+    "desc": "Replaces the shape at slot shape_index immediately (see add_shape()'s doc for where the slot comes from). No-op if sh..."
+  },
+  {
+    "name": "PhysicsWorld::set_body_type",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_set_body_type",
+    "desc": "Transitions a live body between BodyType::Dynamic and BodyType::Kinematic in place the only supported transition (a S..."
+  },
+  {
+    "name": "PhysicsWorld::layers",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_layers",
+    "desc": "The layer matrix consulted before any narrowphase work."
+  },
+  {
+    "name": "PhysicsWorld::layers",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_layers",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::set_job_engine",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_set_job_engine",
+    "desc": "Installs the JobEngine generate_manifolds_() dispatches its broadphase-bounds, pair-discovery and narrowphase passes ..."
+  },
+  {
+    "name": "PhysicsWorld::job_engine",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_job_engine",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::set_parallel_threshold",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_set_parallel_threshold",
+    "desc": "Minimum item count (bodies for bounds/pairs, pairs for narrowphase) before a stage dispatches to job_engine() instead..."
+  },
+  {
+    "name": "PhysicsWorld::parallel_threshold",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_parallel_threshold",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::create_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_create_body",
+    "desc": "Creates a body, deferring the actual insertion to the top of the next step_fixed() if called while a substep is in pr..."
+  },
+  {
+    "name": "PhysicsWorld::destroy_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_destroy_body",
+    "desc": "Destroys a body, deferring the actual slot free to the top of the next step_fixed() if called from an on_substep slot..."
+  },
+  {
+    "name": "PhysicsWorld::is_valid",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_is_valid",
+    "desc": "True if id addresses a currently-alive body (index in range, generation matches)."
+  },
+  {
+    "name": "PhysicsWorld::get_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_body",
+    "desc": "Returns the body id addresses, or nullptr if id is invalid/stale."
+  },
+  {
+    "name": "PhysicsWorld::get_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_body",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::get_shape",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_shape",
+    "desc": "Returns id's PRIMARY shape (see body_shapes_'s doc), or nullptr if id is invalid/stale or currently shapeless. For a ..."
+  },
+  {
+    "name": "PhysicsWorld::get_shape",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_shape",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::get_shape_at",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_shape_at",
+    "desc": "Returns the shape at slot shape_index (as returned by add_shape()/shape_at()), or nullptr if the slot is out of range..."
+  },
+  {
+    "name": "PhysicsWorld::get_shape_at",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_shape_at",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::add_hinge_joint",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_add_hinge_joint",
+    "desc": "Creates a hinge joint between a and b, returning a generational handle. Both must already be valid bodies (no-op, ret..."
+  },
+  {
+    "name": "PhysicsWorld::is_valid",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_is_valid",
+    "desc": "True if id addresses a currently-alive joint."
+  },
+  {
+    "name": "PhysicsWorld::remove_joint",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_remove_joint",
+    "desc": "Destroys a joint immediately. A no-op if id is already invalid/stale."
+  },
+  {
+    "name": "PhysicsWorld::get_joint",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_joint",
+    "desc": "Returns the joint id addresses, or nullptr if id is invalid/stale mutable access is intentional (e.g. a caller adjust..."
+  },
+  {
+    "name": "PhysicsWorld::get_joint",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_joint",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::add_cloth",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_add_cloth",
+    "desc": "Takes ownership of a cloth and starts simulating it. Build the sheet with cloth::make_grid_cloth(), pin it with cloth..."
+  },
+  {
+    "name": "PhysicsWorld::is_valid",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_is_valid",
+    "desc": "True if id addresses a currently-alive cloth."
+  },
+  {
+    "name": "PhysicsWorld::remove_cloth",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_remove_cloth",
+    "desc": "Destroys a cloth immediately. A no-op if id is already invalid/stale. The slot's particle/constraint vectors are clea..."
+  },
+  {
+    "name": "PhysicsWorld::get_cloth",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_cloth",
+    "desc": "Returns the cloth id addresses, or nullptr if id is invalid/stale. Mutable access is intentional retuning ClothParams..."
+  },
+  {
+    "name": "PhysicsWorld::get_cloth",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_get_cloth",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::cloth_count",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_cloth_count",
+    "desc": "Number of currently-alive cloths."
+  },
+  {
+    "name": "PhysicsWorld::for_each_cloth",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_for_each_cloth",
+    "desc": "Invokes fn(ClothId, Cloth&amp;) for every currently-alive cloth, in index order."
+  },
+  {
+    "name": "PhysicsWorld::for_each_cloth",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_for_each_cloth",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::for_each_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_for_each_body",
+    "desc": "Invokes fn(BodyId, Body&amp;) for every currently-alive body, in index order. Index order (not creation order once sl..."
+  },
+  {
+    "name": "PhysicsWorld::for_each_body",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_for_each_body",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::alive_body_count",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_alive_body_count",
+    "desc": "Number of currently-alive bodies."
+  },
+  {
+    "name": "PhysicsWorld::manifolds",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_manifolds",
+    "desc": "This step's contact manifolds (valid between step_fixed() calls, for debug draw and diagnostics do not mutate)."
+  },
+  {
+    "name": "PhysicsWorld::events",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_events",
+    "desc": "This frame's collision/trigger enter/stay/exit events accumulated across every substep step() ran, cleared at the top..."
+  },
+  {
+    "name": "PhysicsWorld::clear_events",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_clear_events",
+    "desc": "Clears the accumulated event queue step() already does this each call; only needed by a caller driving step_fixed() d..."
+  },
+  {
+    "name": "PhysicsWorld::raycast",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_raycast",
+    "desc": "Closest hit along ray, or false if nothing was hit."
+  },
+  {
+    "name": "PhysicsWorld::raycast_any",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_raycast_any",
+    "desc": "True if ANYTHING along ray is hit, stopping at the first tree-traversal hit NOT necessarily the closest one (unlike r..."
+  },
+  {
+    "name": "PhysicsWorld::raycast_all",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_raycast_all",
+    "desc": "Every hit along ray, sorted nearest-first (unlike raycast(), not clipped to the closest hit as it goes, since every o..."
+  },
+  {
+    "name": "PhysicsWorld::sphere_cast",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_sphere_cast",
+    "desc": "Casts a sphere of radius from origin along dir, up to max_distance. v1 simplification: approximates each candidate sh..."
+  },
+  {
+    "name": "PhysicsWorld::box_cast",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_box_cast",
+    "desc": "Casts a half_extents-sized box from origin along dir, up to max_distance, keeping orientation fixed throughout the sw..."
+  },
+  {
+    "name": "PhysicsWorld::capsule_cast",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_capsule_cast",
+    "desc": "Casts a capsule (radius, half_height along direction_axis 0=X, 1=Y, 2=Z, matching CapsuleCollider's own convention) f..."
+  },
+  {
+    "name": "PhysicsWorld::overlap_sphere",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_overlap_sphere",
+    "desc": "Every body whose shape overlaps a world-space sphere for a compound body (more than one shape), its BodyId appears on..."
+  },
+  {
+    "name": "PhysicsWorld::overlap_box",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_overlap_box",
+    "desc": "Every body whose shape overlaps a world-space OBB see overlap_sphere()'s doc for the per-child-shape duplication a co..."
+  },
+  {
+    "name": "PhysicsWorld::overlap_capsule",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_overlap_capsule",
+    "desc": "Every body whose shape overlaps a world-space capsule see overlap_sphere()'s doc for the per-child-shape duplication ..."
+  },
+  {
+    "name": "PhysicsWorld::debug_draw",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_debug_draw",
+    "desc": "Fills out with this world's current debug geometry: collider wireframes (colored white/awake, green/sleeping, yellow/..."
+  },
+  {
+    "name": "PhysicsWorld::set_gravity",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_set_gravity",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::gravity",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_gravity",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::config",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_config",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::config",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_config",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsWorld::step",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_step",
+    "desc": "Accumulates dt and runs zero or more fixed RIGID substeps, then advances every cloth by one FRAME step. dt is clamped..."
+  },
+  {
+    "name": "PhysicsWorld::step_fixed",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_step_fixed",
+    "desc": "Runs exactly one fixed substep, with no accumulator involved. RIGID bodies only cloth is advanced once per FRAME by s..."
+  },
+  {
+    "name": "PhysicsWorld::interpolation_alpha",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_interpolation_alpha",
+    "desc": "Fractional progress (in [0,1)) through the next substep, for render interpolation."
+  },
+  {
+    "name": "PhysicsWorld::world_state_hash",
+    "kind": "Method",
+    "url": "class_PhysicsWorld.html#method_world_state_hash",
+    "desc": "FNV-1a hash over every alive body's position/orientation/velocity bit patterns. The determinism harness: two independ..."
+  },
+  {
+    "name": "coopa::physx::broadphase",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__broadphase.html",
+    "desc": ""
+  },
+  {
+    "name": "AABBTree",
+    "kind": "Class",
+    "url": "class_AABBTree.html",
+    "desc": "A dynamic AABB tree over opaque void* user data, keyed by proxy id."
+  },
+  {
+    "name": "AABBTree::AABBTree",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_AABBTree",
+    "desc": ""
+  },
+  {
+    "name": "AABBTree::create_proxy",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_create_proxy",
+    "desc": "Inserts a new proxy with a fattened version of tight_bounds."
+  },
+  {
+    "name": "AABBTree::destroy_proxy",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_destroy_proxy",
+    "desc": "Removes a proxy. proxy must not be used again after this call."
+  },
+  {
+    "name": "AABBTree::move_proxy",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_move_proxy",
+    "desc": "Updates a proxy's tight bounds, PREDICTIVELY fattened along displacement the swept volume the leaf is expected to cov..."
+  },
+  {
+    "name": "AABBTree::fat_bounds",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_fat_bounds",
+    "desc": "Returns a proxy's current fat AABB."
+  },
+  {
+    "name": "AABBTree::user_data",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_user_data",
+    "desc": "Returns a proxy's user data."
+  },
+  {
+    "name": "AABBTree::query",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_query",
+    "desc": "Invokes fn(void* user_data) for every leaf whose fat AABB overlaps bounds. The traversal stack is thread_local (not t..."
+  },
+  {
+    "name": "AABBTree::raycast",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_raycast",
+    "desc": "Invokes fn(void* user_data) for every leaf whose fat AABB the ray intersects. See query()'s doc same thread_local tra..."
+  },
+  {
+    "name": "AABBTree::raycast_until",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_raycast_until",
+    "desc": "Invokes fn(void* user_data) for every leaf whose fat AABB the ray intersects, IN TRAVERSAL ORDER, stopping as soon as..."
+  },
+  {
+    "name": "AABBTree::empty",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_empty",
+    "desc": "True if the tree currently has no proxies."
+  },
+  {
+    "name": "AABBTree::for_each_node",
+    "kind": "Method",
+    "url": "class_AABBTree.html#method_for_each_node",
+    "desc": "Invokes fn(const geometry::AABB&amp;, int32_t height) for every allocated node (leaf and internal), for debug visuali..."
+  },
+  {
+    "name": "LayerMatrix",
+    "kind": "Class",
+    "url": "class_LayerMatrix.html",
+    "desc": "Symmetric 32x32 collision matrix, tested before any narrowphase work. Every layer collides with every other layer by ..."
+  },
+  {
+    "name": "LayerMatrix::LayerMatrix",
+    "kind": "Method",
+    "url": "class_LayerMatrix.html#method_LayerMatrix",
+    "desc": ""
+  },
+  {
+    "name": "LayerMatrix::should_collide",
+    "kind": "Method",
+    "url": "class_LayerMatrix.html#method_should_collide",
+    "desc": "True if layers a and b are permitted to collide."
+  },
+  {
+    "name": "LayerMatrix::set_layer_collision",
+    "kind": "Method",
+    "url": "class_LayerMatrix.html#method_set_layer_collision",
+    "desc": "Enables or disables collision between layers a and b (symmetric)."
+  },
+  {
+    "name": "PairCache",
+    "kind": "Class",
+    "url": "class_PairCache.html",
+    "desc": "Sorted, deduplicated set of proxy pairs for one step, plus a diff against the previous step's set the mechanism trigg..."
+  },
+  {
+    "name": "PairCache::add",
+    "kind": "Method",
+    "url": "class_PairCache.html#method_add",
+    "desc": "Records a pair. Order of x/y doesn't matter stored canonically as a&lt;b."
+  },
+  {
+    "name": "PairCache::finalize",
+    "kind": "Method",
+    "url": "class_PairCache.html#method_finalize",
+    "desc": "Sorts and deduplicates this step's added pairs. Call once after all add() calls."
+  },
+  {
+    "name": "PairCache::current",
+    "kind": "Method",
+    "url": "class_PairCache.html#method_current",
+    "desc": "This step's finalized pair set."
+  },
+  {
+    "name": "PairCache::diff",
+    "kind": "Method",
+    "url": "class_PairCache.html#method_diff",
+    "desc": "Computes which pairs appeared/disappeared relative to the last call to advance()."
+  },
+  {
+    "name": "PairCache::classify",
+    "kind": "Method",
+    "url": "class_PairCache.html#method_classify",
+    "desc": "Like diff(), but also reports stayed pairs present in both sets for callers that need enter/stay/exit rather than jus..."
+  },
+  {
+    "name": "PairCache::advance",
+    "kind": "Method",
+    "url": "class_PairCache.html#method_advance",
+    "desc": "Moves this step's set into \"previous\" and clears the working set for next step."
+  },
+  {
+    "name": "ProxyPair",
+    "kind": "Class",
+    "url": "class_ProxyPair.html",
+    "desc": "One broadphase pair, always stored with a &lt; b."
+  },
+  {
+    "name": "ProxyPair::operator==",
+    "kind": "Method",
+    "url": "class_ProxyPair.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "ProxyPair::operator<",
+    "kind": "Method",
+    "url": "class_ProxyPair.html#method_operator<",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::cloth",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__cloth.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::cloth::compute_bounds",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_compute_bounds",
+    "desc": "Recomputes the world AABB over a cloth's particles. Returns an inverted (empty) AABB for a cloth with no particles, w..."
+  },
+  {
+    "name": "coopa::physx::cloth::max_particle_speed",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_max_particle_speed",
+    "desc": "Largest particle speed in the cloth, in m/s. Drives both the sleep decision and the broadphase query margin (a fast s..."
+  },
+  {
+    "name": "coopa::physx::cloth::make_grid_cloth",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_make_grid_cloth",
+    "desc": "Builds a rectangular cloth sheet with structural, shear and bend constraints. Particles are emitted row-major (index ..."
+  },
+  {
+    "name": "coopa::physx::cloth::pin_to_body",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_pin_to_body",
+    "desc": "Pins every particle within radius of world_point to body. Pinned particles get inv_mass = 0 and a ClothAnchor recordi..."
+  },
+  {
+    "name": "coopa::physx::cloth::pin_static",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_pin_static",
+    "desc": "Pins every particle within radius of world_point in place, with no body to follow. The fixed-point equivalent of pin_..."
+  },
+  {
+    "name": "coopa::physx::cloth::build_tethers",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_build_tethers",
+    "desc": "Derives one tether per free particle from the current anchors. Runs Dijkstra over the stretch graph from every anchor..."
+  },
+  {
+    "name": "coopa::physx::cloth::project_particle",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_project_particle",
+    "desc": "Pushes p out of a collider including the volume it sweeps before the cloth is next solved to thickness above its surf..."
+  },
+  {
+    "name": "coopa::physx::cloth::solve_cloth",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_solve_cloth",
+    "desc": "Advances one cloth by h seconds, in substeps XPBD substeps."
+  },
+  {
+    "name": "coopa::physx::cloth::solve_cloth",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth.html#func_solve_cloth",
+    "desc": "Serial convenience overload what test.cpp and any job-engine-less caller uses."
+  },
+  {
+    "name": "Cloth",
+    "kind": "Class",
+    "url": "class_Cloth.html",
+    "desc": "A complete cloth sheet: particles, constraints, anchors, render topology and tunables. Owned by PhysicsWorld in a gen..."
+  },
+  {
+    "name": "ClothAnchor",
+    "kind": "Class",
+    "url": "class_ClothAnchor.html",
+    "desc": "Pins a particle to a rigid body, so the sheet follows that body's motion. Anchored particles have inv_mass == 0, so e..."
+  },
+  {
+    "name": "ClothCollider",
+    "kind": "Class",
+    "url": "class_ClothCollider.html",
+    "desc": "A snapshot of one rigid shape at the pose the cloth should collide against. A snapshot, rather than a (BodyId, shape ..."
+  },
+  {
+    "name": "ClothCollider::is_swept",
+    "kind": "Method",
+    "url": "class_ClothCollider.html#method_is_swept",
+    "desc": "True if this collider moves far enough between cloth solves to be worth sweeping."
+  },
+  {
+    "name": "ClothConstraint",
+    "kind": "Class",
+    "url": "class_ClothConstraint.html",
+    "desc": "One XPBD distance constraint C = |pa - pb| - rest_length, used for both stretch and bend. lambda is the constraint's ..."
+  },
+  {
+    "name": "ClothId",
+    "kind": "Class",
+    "url": "class_ClothId.html",
+    "desc": "Generational handle to a cloth owned by PhysicsWorld. Same index+generation scheme as dynamics::BodyId and dynamics::..."
+  },
+  {
+    "name": "ClothId::is_valid",
+    "kind": "Method",
+    "url": "class_ClothId.html#method_is_valid",
+    "desc": "True if this handle names a slot at all (says nothing about that slot's liveness)."
+  },
+  {
+    "name": "ClothId::operator==",
+    "kind": "Method",
+    "url": "class_ClothId.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "ClothId::operator!=",
+    "kind": "Method",
+    "url": "class_ClothId.html#method_operator!=",
+    "desc": ""
+  },
+  {
+    "name": "ClothParams",
+    "kind": "Class",
+    "url": "class_ClothParams.html",
+    "desc": "Per-cloth tunables. Field names and defaults track Unity's Cloth component where an equivalent exists, so a value cop..."
+  },
+  {
+    "name": "ClothParticle",
+    "kind": "Class",
+    "url": "class_ClothParticle.html",
+    "desc": "One point mass in a cloth sheet. prev_position is the position at the START of the current substep, not the previous ..."
+  },
+  {
+    "name": "ClothSolverScratch",
+    "kind": "Class",
+    "url": "class_ClothSolverScratch.html",
+    "desc": "Reusable per-solve working memory. One instance per PhysicsWorld, resized on first use."
+  },
+  {
+    "name": "ClothSolverScratch::ensure",
+    "kind": "Method",
+    "url": "class_ClothSolverScratch.html#method_ensure",
+    "desc": "Grows every buffer to fit particles, preserving the \"resize once, reuse forever\" contract the != test (rather than &l..."
+  },
+  {
+    "name": "ClothTether",
+    "kind": "Class",
+    "url": "class_ClothTether.html",
+    "desc": "A one-sided maximum-distance constraint from a particle to an anchored particle. Also called a \"long-range attachment..."
+  },
+  {
+    "name": "ConstraintBatch",
+    "kind": "Class",
+    "url": "class_ConstraintBatch.html",
+    "desc": "A half-open [begin, end) range of constraints whose particle sets are pairwise disjoint. This is the whole parallelis..."
+  },
+  {
+    "name": "GridClothDesc",
+    "kind": "Class",
+    "url": "class_GridClothDesc.html",
+    "desc": "Authoring description of a rectangular cloth sheet. The sheet is built in a local XY plane with its normal along +Z, ..."
+  },
+  {
+    "name": "SerialDispatch",
+    "kind": "Class",
+    "url": "class_SerialDispatch.html",
+    "desc": "Default work dispatcher: runs the whole range inline on the calling thread. solve_cloth() is templated on a dispatche..."
+  },
+  {
+    "name": "SerialDispatch::operator()",
+    "kind": "Method",
+    "url": "class_SerialDispatch.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::cloth::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__cloth__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::cloth::detail::project_at_pose_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth__detail.html#func_project_at_pose_",
+    "desc": "Pushes p out to thickness above a shape's surface at ONE pose, if it is closer. The per-pose worker behind project_pa..."
+  },
+  {
+    "name": "coopa::physx::cloth::detail::hash_cell",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth__detail.html#func_hash_cell",
+    "desc": "Hashes integer cell coordinates into [0, buckets). The three primes are the standard Teschner et al. (2003) spatial-h..."
+  },
+  {
+    "name": "coopa::physx::cloth::detail::hash_bucket_count",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth__detail.html#func_hash_bucket_count",
+    "desc": "Smallest power of two &gt;= n, minimum 16. Sizing the hash table at ~2x the particle count keeps the average bucket u..."
+  },
+  {
+    "name": "coopa::physx::cloth::detail::project_distance",
+    "kind": "Function",
+    "url": "scope_coopa__physx__cloth__detail.html#func_project_distance",
+    "desc": "Projects one XPBD distance constraint. Returns immediately when both endpoints are pinned (w == 0), which is also wha..."
+  },
+  {
+    "name": "coopa::physx::collision",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__collision.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::collision::clip_polygon",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_clip_polygon",
+    "desc": "Clips a polygon against one half-space (Sutherland-Hodgman), preserving winding."
+  },
+  {
+    "name": "coopa::physx::collision::obb_face",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_obb_face",
+    "desc": "Returns the 4 world-space corners of one face of an OBB, plus its outward normal."
+  },
+  {
+    "name": "coopa::physx::collision::obb_side_planes",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_obb_side_planes",
+    "desc": "Returns the 4 side clip planes bounding one face of an OBB the planes the incident face gets clipped against to produ..."
+  },
+  {
+    "name": "coopa::physx::collision::closest_point_on_triangle",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_closest_point_on_triangle",
+    "desc": "Closest point on triangle (a,b,c) to p (Ericson, \"Real-Time Collision Detection\", 5.1.5 the standard barycentric-regi..."
+  },
+  {
+    "name": "coopa::physx::collision::sphere_or_capsule_vs_triangle_contact_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_sphere_or_capsule_vs_triangle_contact_",
+    "desc": "Per-triangle contact for a Sphere or Capsule: both have a \"core\" (a point or a segment) offset from the actual surfac..."
+  },
+  {
+    "name": "coopa::physx::collision::box_vs_triangle_contacts_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_box_vs_triangle_contacts_",
+    "desc": "Per-triangle contact for a Box: a box has no core-radius offset, so the closest-point-on-surface trick above doesn't ..."
+  },
+  {
+    "name": "coopa::physx::collision::barycentric_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_barycentric_",
+    "desc": "Barycentric weights of p w.r.t. triangle (a,b,c): {weight of a, weight of b, weight of c}."
+  },
+  {
+    "name": "coopa::physx::collision::classify_triangle_edge_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_classify_triangle_edge_",
+    "desc": "Which of triangle tri's edges (0: v0-v1, 1: v1-v2, 2: v2-v0) barycentric point bary lies on, or -1 for a face-interio..."
+  },
+  {
+    "name": "coopa::physx::collision::correct_mesh_normal_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_correct_mesh_normal_",
+    "desc": "Internal-edge correction (Phase 8): clamps a raw closest-point normal into a normal consistent with the mesh's actual..."
+  },
+  {
+    "name": "coopa::physx::collision::generate_mesh_contacts",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_generate_mesh_contacts",
+    "desc": "Generates a manifold between a convex Shape and a static TriangleMesh shape."
+  },
+  {
+    "name": "coopa::physx::collision::sphere_vs_sphere",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_sphere_vs_sphere",
+    "desc": "Sphere-vs-sphere closest-point test."
+  },
+  {
+    "name": "coopa::physx::collision::sphere_vs_box",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_sphere_vs_box",
+    "desc": "Sphere-vs-box closest-point test, including the degenerate case where the sphere's center lies inside the box (handle..."
+  },
+  {
+    "name": "coopa::physx::collision::sphere_vs_sphere_separation",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_sphere_vs_sphere_separation",
+    "desc": "Sphere-vs-sphere signed-separation query for the CCD speculative-contact path companion to sphere_vs_sphere() above, ..."
+  },
+  {
+    "name": "coopa::physx::collision::sphere_vs_box_separation",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_sphere_vs_box_separation",
+    "desc": "Sphere-vs-box signed-separation query for the CCD speculative-contact path companion to sphere_vs_box() above. Only h..."
+  },
+  {
+    "name": "coopa::physx::collision::generate_contacts",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_generate_contacts",
+    "desc": "Generates (or refuses) a contact manifold for one pair of bodies, dispatching on shape type. out is fully overwritten..."
+  },
+  {
+    "name": "coopa::physx::collision::sat_test_obb_obb",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_sat_test_obb_obb",
+    "desc": "Runs the 15-axis SAT test between two OBBs. Edge-cross axes are given a small overlap penalty relative to face axes b..."
+  },
+  {
+    "name": "coopa::physx::collision::generate_box_box_contacts",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_generate_box_box_contacts",
+    "desc": "Generates a face-face or edge-edge contact manifold for two overlapping OBBs. Feature ids: face contacts pack (refere..."
+  },
+  {
+    "name": "coopa::physx::collision::closest_points_segment_obb",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_closest_points_segment_obb",
+    "desc": "Finds the closest points between a segment and an OBB via alternating projection: repeatedly clamp the current segmen..."
+  },
+  {
+    "name": "coopa::physx::collision::capsule_vs_sphere",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_capsule_vs_sphere",
+    "desc": "Capsule-vs-sphere contact."
+  },
+  {
+    "name": "coopa::physx::collision::capsule_vs_capsule",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_capsule_vs_capsule",
+    "desc": "Capsule-vs-capsule contact via the two segments' closest points."
+  },
+  {
+    "name": "coopa::physx::collision::capsule_vs_box",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_capsule_vs_box",
+    "desc": "Capsule-vs-box contact, promoting to a 2-point manifold when the segment lies flat against a box face (both endpoints..."
+  },
+  {
+    "name": "coopa::physx::collision::world_sphere",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_world_sphere",
+    "desc": "Instances a Sphere shape at a body's current world pose."
+  },
+  {
+    "name": "coopa::physx::collision::world_obb",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_world_obb",
+    "desc": "Instances a Box shape (as an OBB) at a body's current world pose."
+  },
+  {
+    "name": "coopa::physx::collision::world_capsule",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_world_capsule",
+    "desc": "Instances a Capsule shape at a body's current world pose."
+  },
+  {
+    "name": "coopa::physx::collision::world_bounds",
+    "kind": "Function",
+    "url": "scope_coopa__physx__collision.html#func_world_bounds",
+    "desc": "World-space AABB enclosing a shape at a body's current pose, used by broadphase."
+  },
+  {
+    "name": "ClipPlane",
+    "kind": "Class",
+    "url": "class_ClipPlane.html",
+    "desc": "A half-space: points p with dot(normal, p) &lt;= d are kept by clip_polygon()."
+  },
+  {
+    "name": "ContactEvent",
+    "kind": "Class",
+    "url": "class_ContactEvent.html",
+    "desc": "One (a, b) pair's enter/stay/exit transition this step, for either a solid contact or a trigger overlap (see is_trigg..."
+  },
+  {
+    "name": "ContactManifold",
+    "kind": "Class",
+    "url": "class_ContactManifold.html",
+    "desc": "All contact points between one pair of bodies this step. normal points from body a toward body b. valid supports the ..."
+  },
+  {
+    "name": "ContactManifold::add_point",
+    "kind": "Method",
+    "url": "class_ContactManifold.html#method_add_point",
+    "desc": "Appends a contact point (up to 4); additional points beyond that are dropped."
+  },
+  {
+    "name": "ContactManifold::add_speculative_point",
+    "kind": "Method",
+    "url": "class_ContactManifold.html#method_add_speculative_point",
+    "desc": "Appends a SPECULATIVE point not yet overlapping (penetration stays 0), but close enough and closing fast enough this ..."
+  },
+  {
+    "name": "ContactPoint",
+    "kind": "Class",
+    "url": "class_ContactPoint.html",
+    "desc": "One point of contact within a manifold. normal_impulse/tangent_impulse persist across steps via the solver's warm-sta..."
+  },
+  {
+    "name": "SatAxisResult",
+    "kind": "Class",
+    "url": "class_SatAxisResult.html",
+    "desc": "The minimum-penetration separating axis found across all 15 candidates. best_axis encodes which axis won: 0-2 = A's l..."
+  },
+  {
+    "name": "Shape",
+    "kind": "Class",
+    "url": "class_Shape.html",
+    "desc": "Final, world-scale collision geometry for one body, plus its material/trigger/layer. Dimensions here are already worl..."
+  },
+  {
+    "name": "Shape::material_or_default",
+    "kind": "Method",
+    "url": "class_Shape.html#method_material_or_default",
+    "desc": "The effective material for contacts against this shape."
+  },
+  {
+    "name": "Shape::make_sphere",
+    "kind": "Method",
+    "url": "class_Shape.html#method_make_sphere",
+    "desc": ""
+  },
+  {
+    "name": "Shape::make_box",
+    "kind": "Method",
+    "url": "class_Shape.html#method_make_box",
+    "desc": ""
+  },
+  {
+    "name": "Shape::make_capsule",
+    "kind": "Method",
+    "url": "class_Shape.html#method_make_capsule",
+    "desc": ""
+  },
+  {
+    "name": "Shape::make_mesh",
+    "kind": "Method",
+    "url": "class_Shape.html#method_make_mesh",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::components",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__components.html",
+    "desc": ""
+  },
+  {
+    "name": "BoxCollider",
+    "kind": "Class",
+    "url": "class_BoxCollider.html",
+    "desc": "A box collider. size is full extents (Unity semantics) in the object's local, pre-scale space half-extents are comput..."
+  },
+  {
+    "name": "BoxCollider::type_name",
+    "kind": "Method",
+    "url": "class_BoxCollider.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "BoxCollider::size",
+    "kind": "Method",
+    "url": "class_BoxCollider.html#method_size",
+    "desc": ""
+  },
+  {
+    "name": "BoxCollider::set_size",
+    "kind": "Method",
+    "url": "class_BoxCollider.html#method_set_size",
+    "desc": ""
+  },
+  {
+    "name": "BoxCollider::make_shape",
+    "kind": "Method",
+    "url": "class_BoxCollider.html#method_make_shape",
+    "desc": "Builds this collider's world-scale Shape."
+  },
+  {
+    "name": "CapsuleCollider",
+    "kind": "Class",
+    "url": "class_CapsuleCollider.html",
+    "desc": "A capsule collider. height is the total height including both hemispherical caps (Unity semantics). Default axis is Z..."
+  },
+  {
+    "name": "CapsuleCollider::type_name",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::radius",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_radius",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::set_radius",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_set_radius",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::height",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_height",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::set_height",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_set_height",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::direction",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_direction",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::set_direction",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_set_direction",
+    "desc": ""
+  },
+  {
+    "name": "CapsuleCollider::make_shape",
+    "kind": "Method",
+    "url": "class_CapsuleCollider.html#method_make_shape",
+    "desc": "Builds this collider's world-scale Shape."
+  },
+  {
+    "name": "ClothAnchorSpec",
+    "kind": "Class",
+    "url": "class_ClothAnchorSpec.html",
+    "desc": "Authoring description of one pinned region: \"pin every particle within radius of point to the object named object\". A..."
+  },
+  {
+    "name": "ClothComponent",
+    "kind": "Class",
+    "url": "class_ClothComponent.html",
+    "desc": "A rectangular XPBD cloth sheet owned by the object this is attached to. The sheet is built in the owner's local XY pl..."
+  },
+  {
+    "name": "ClothComponent::type_name",
+    "kind": "Method",
+    "url": "class_ClothComponent.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "ClothComponent::set_cloth_binding",
+    "kind": "Method",
+    "url": "class_ClothComponent.html#method_set_cloth_binding",
+    "desc": "Set only by PhysicsSystem's reconcile pass, once the cloth is actually created."
+  },
+  {
+    "name": "ClothComponent::cloth_id",
+    "kind": "Method",
+    "url": "class_ClothComponent.html#method_cloth_id",
+    "desc": "Handle of the simulated cloth, or an invalid id if this component never bound."
+  },
+  {
+    "name": "ClothComponent::world",
+    "kind": "Method",
+    "url": "class_ClothComponent.html#method_world",
+    "desc": "The world this cloth is simulated in, or nullptr if unbound."
+  },
+  {
+    "name": "ClothComponent::cloth",
+    "kind": "Method",
+    "url": "class_ClothComponent.html#method_cloth",
+    "desc": "The live simulated cloth particle positions, triangles, bounds or nullptr if this component never bound. This is the ..."
+  },
+  {
+    "name": "ClothComponent::cloth_mut",
+    "kind": "Method",
+    "url": "class_ClothComponent.html#method_cloth_mut",
+    "desc": "Mutable access, for driving tunables (wind, friction, gravity_scale) at runtime those are re-read every substep, unli..."
+  },
+  {
+    "name": "Collider",
+    "kind": "Class",
+    "url": "class_Collider.html",
+    "desc": "Base for BoxCollider/SphereCollider/CapsuleCollider/MeshCollider. A Collider is pure data until PhysicsSystem's recon..."
+  },
+  {
+    "name": "Collider::start",
+    "kind": "Method",
+    "url": "class_Collider.html#method_start",
+    "desc": ""
+  },
+  {
+    "name": "Collider::is_trigger",
+    "kind": "Method",
+    "url": "class_Collider.html#method_is_trigger",
+    "desc": ""
+  },
+  {
+    "name": "Collider::set_is_trigger",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_is_trigger",
+    "desc": ""
+  },
+  {
+    "name": "Collider::is_enabled",
+    "kind": "Method",
+    "url": "class_Collider.html#method_is_enabled",
+    "desc": "Unity's Collider.enabled false makes PhysicsSystem hand the body a disabled Shape (participates in dynamics, never in..."
+  },
+  {
+    "name": "Collider::set_enabled",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_enabled",
+    "desc": ""
+  },
+  {
+    "name": "Collider::layer",
+    "kind": "Method",
+    "url": "class_Collider.html#method_layer",
+    "desc": ""
+  },
+  {
+    "name": "Collider::set_layer",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_layer",
+    "desc": ""
+  },
+  {
+    "name": "Collider::center",
+    "kind": "Method",
+    "url": "class_Collider.html#method_center",
+    "desc": ""
+  },
+  {
+    "name": "Collider::set_center",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_center",
+    "desc": ""
+  },
+  {
+    "name": "Collider::material",
+    "kind": "Method",
+    "url": "class_Collider.html#method_material",
+    "desc": "The effective material for this collider, resolved asset-first: an AssetManager-backed material set via set_material_..."
+  },
+  {
+    "name": "Collider::set_material_asset",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_material_asset",
+    "desc": "Points this collider at an AssetManager-owned, shareable PhysicsMaterial."
+  },
+  {
+    "name": "Collider::material_asset",
+    "kind": "Method",
+    "url": "class_Collider.html#method_material_asset",
+    "desc": ""
+  },
+  {
+    "name": "Collider::set_material",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_material",
+    "desc": "Sets an inline (not AssetManager-tracked) material from a YAML inline mapping or direct C++ code. Ignored while a val..."
+  },
+  {
+    "name": "Collider::revision",
+    "kind": "Method",
+    "url": "class_Collider.html#method_revision",
+    "desc": "Bumped by every setter above (and by a subclass's own shape-parameter setters)."
+  },
+  {
+    "name": "Collider::body_id",
+    "kind": "Method",
+    "url": "class_Collider.html#method_body_id",
+    "desc": "The physics body this collider is currently bound to, or an invalid id before PhysicsSystem's first reconcile pass. S..."
+  },
+  {
+    "name": "Collider::set_body_id",
+    "kind": "Method",
+    "url": "class_Collider.html#method_set_body_id",
+    "desc": "Called only by PhysicsSystem's reconcile pass."
+  },
+  {
+    "name": "Collider::make_shape",
+    "kind": "Method",
+    "url": "class_Collider.html#method_make_shape",
+    "desc": "Builds this collider's world-scale Shape."
+  },
+  {
+    "name": "Collision",
+    "kind": "Class",
+    "url": "class_Collision.html",
+    "desc": "Contact-level detail for one collision event, from the perspective of the Collider whose signal is firing (self, impl..."
+  },
+  {
+    "name": "FixedUpdateBehaviour",
+    "kind": "Class",
+    "url": "class_FixedUpdateBehaviour.html",
+    "desc": "Subclass and override fixed_update() for Unity-style FixedUpdate() ergonomics. On its first update(), looks up scene-..."
+  },
+  {
+    "name": "FixedUpdateBehaviour::~FixedUpdateBehaviour",
+    "kind": "Method",
+    "url": "class_FixedUpdateBehaviour.html#method_~FixedUpdateBehaviour",
+    "desc": ""
+  },
+  {
+    "name": "FixedUpdateBehaviour::update",
+    "kind": "Method",
+    "url": "class_FixedUpdateBehaviour.html#method_update",
+    "desc": ""
+  },
+  {
+    "name": "FixedUpdateBehaviour::fixed_update",
+    "kind": "Method",
+    "url": "class_FixedUpdateBehaviour.html#method_fixed_update",
+    "desc": "Called once per fixed substep see PhysicsWorld::on_substep's doc for exactly where in the step this fires, and which ..."
+  },
+  {
+    "name": "HingeJointComponent",
+    "kind": "Class",
+    "url": "class_HingeJointComponent.html",
+    "desc": "Connects the object this is attached to, to connected_object, via a hinge. Unlike dynamics::HingeJoint (which needs b..."
+  },
+  {
+    "name": "HingeJointComponent::type_name",
+    "kind": "Method",
+    "url": "class_HingeJointComponent.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "HingeJointComponent::set_joint_id",
+    "kind": "Method",
+    "url": "class_HingeJointComponent.html#method_set_joint_id",
+    "desc": "Set only by PhysicsSystem's reconcile pass, once the joint is actually created."
+  },
+  {
+    "name": "HingeJointComponent::joint_id",
+    "kind": "Method",
+    "url": "class_HingeJointComponent.html#method_joint_id",
+    "desc": ""
+  },
+  {
+    "name": "MeshCollider",
+    "kind": "Class",
+    "url": "class_MeshCollider.html",
+    "desc": "A static (or, with convex = true in a future revision, dynamic) triangle-mesh collider. Non-convex mesh colliders are..."
+  },
+  {
+    "name": "MeshCollider::type_name",
+    "kind": "Method",
+    "url": "class_MeshCollider.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "MeshCollider::mesh",
+    "kind": "Method",
+    "url": "class_MeshCollider.html#method_mesh",
+    "desc": ""
+  },
+  {
+    "name": "MeshCollider::set_mesh",
+    "kind": "Method",
+    "url": "class_MeshCollider.html#method_set_mesh",
+    "desc": ""
+  },
+  {
+    "name": "MeshCollider::convex",
+    "kind": "Method",
+    "url": "class_MeshCollider.html#method_convex",
+    "desc": ""
+  },
+  {
+    "name": "MeshCollider::set_convex",
+    "kind": "Method",
+    "url": "class_MeshCollider.html#method_set_convex",
+    "desc": ""
+  },
+  {
+    "name": "MeshCollider::make_shape",
+    "kind": "Method",
+    "url": "class_MeshCollider.html#method_make_shape",
+    "desc": "Builds this collider's world-scale Shape."
+  },
+  {
+    "name": "RigidbodyComponent",
+    "kind": "Class",
+    "url": "class_RigidbodyComponent.html",
+    "desc": "Configures a body's dynamics; also the gameplay-facing force/velocity API. world_/body_id_ are set only by PhysicsSys..."
+  },
+  {
+    "name": "RigidbodyComponent::type_name",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::set_body_binding",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_set_body_binding",
+    "desc": "Called only by PhysicsSystem's reconcile pass."
+  },
+  {
+    "name": "RigidbodyComponent::body_id",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_body_id",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::set_local_center_of_mass",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_set_local_center_of_mass",
+    "desc": "Called only by PhysicsSystem when it (re)computes this body's center offset see local_center_of_mass()."
+  },
+  {
+    "name": "RigidbodyComponent::local_center_of_mass",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_local_center_of_mass",
+    "desc": "World-scaled, local-space (pre-rotation) offset from the owning Transform's pivot to the body's true center of mass e..."
+  },
+  {
+    "name": "RigidbodyComponent::world_center_of_mass",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_world_center_of_mass",
+    "desc": "The body's live (un-interpolated, current-substep) center of mass. Falls back to the owner's Transform pivot + offset..."
+  },
+  {
+    "name": "RigidbodyComponent::rotation",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_rotation",
+    "desc": "The body's live (un-interpolated) orientation; identity when unbound."
+  },
+  {
+    "name": "RigidbodyComponent::velocity_at_point",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_velocity_at_point",
+    "desc": "See Body::velocity_at_point(). Zero when unbound."
+  },
+  {
+    "name": "RigidbodyComponent::add_impulse_at_position",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_add_impulse_at_position",
+    "desc": "See Body::apply_impulse_at_position()."
+  },
+  {
+    "name": "RigidbodyComponent::add_force",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_add_force",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::add_torque",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_add_torque",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::add_force_at_position",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_add_force_at_position",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::add_impulse",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_add_impulse",
+    "desc": "Instantaneous world-space impulse at the center of mass see Body::apply_impulse()'s doc for how this differs from add..."
+  },
+  {
+    "name": "RigidbodyComponent::add_torque_impulse",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_add_torque_impulse",
+    "desc": "Instantaneous world-space angular impulse see Body::apply_angular_impulse()."
+  },
+  {
+    "name": "RigidbodyComponent::velocity",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_velocity",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::set_velocity",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_set_velocity",
+    "desc": "Wakes a sleeping Dynamic body, same reasoning as Body::add_force()'s doc an explicit velocity write is exactly the ki..."
+  },
+  {
+    "name": "RigidbodyComponent::angular_velocity",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_angular_velocity",
+    "desc": ""
+  },
+  {
+    "name": "RigidbodyComponent::set_angular_velocity",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_set_angular_velocity",
+    "desc": "See set_velocity()'s doc."
+  },
+  {
+    "name": "RigidbodyComponent::is_sleeping",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_is_sleeping",
+    "desc": "True if this Rigidbody's body is currently asleep (skipped by the solver/ integrator until woken see Body::awake's do..."
+  },
+  {
+    "name": "RigidbodyComponent::wake",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_wake",
+    "desc": "Wakes the body immediately see Body::wake(). No-op if unbound."
+  },
+  {
+    "name": "RigidbodyComponent::sleep",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_sleep",
+    "desc": "Puts the body to sleep immediately see Body::sleep(). No-op if unbound. Note this can be immediately undone the next ..."
+  },
+  {
+    "name": "RigidbodyComponent::move_position",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_move_position",
+    "desc": "Moves a kinematic body's transform smoothly for v1, this is a direct alias for writing the owning object's Transform ..."
+  },
+  {
+    "name": "RigidbodyComponent::move_rotation",
+    "kind": "Method",
+    "url": "class_RigidbodyComponent.html#method_move_rotation",
+    "desc": "See move_position()'s doc the rotational equivalent."
+  },
+  {
+    "name": "SphereCollider",
+    "kind": "Class",
+    "url": "class_SphereCollider.html",
+    "desc": "A sphere collider. Takes the MAX component of the object's world scale (Unity's rule) a non-uniformly-scaled sphere i..."
+  },
+  {
+    "name": "SphereCollider::type_name",
+    "kind": "Method",
+    "url": "class_SphereCollider.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "SphereCollider::radius",
+    "kind": "Method",
+    "url": "class_SphereCollider.html#method_radius",
+    "desc": ""
+  },
+  {
+    "name": "SphereCollider::set_radius",
+    "kind": "Method",
+    "url": "class_SphereCollider.html#method_set_radius",
+    "desc": ""
+  },
+  {
+    "name": "SphereCollider::make_shape",
+    "kind": "Method",
+    "url": "class_SphereCollider.html#method_make_shape",
+    "desc": "Builds this collider's world-scale Shape."
+  },
+  {
+    "name": "coopa::physx::debug",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__debug.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::debug::operator|",
+    "kind": "Function",
+    "url": "scope_coopa__physx__debug.html#func_operator|",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::debug::has_flag",
+    "kind": "Function",
+    "url": "scope_coopa__physx__debug.html#func_has_flag",
+    "desc": ""
+  },
+  {
+    "name": "DebugDraw",
+    "kind": "Class",
+    "url": "class_DebugDraw.html",
+    "desc": "Accumulates one frame's worth of debug lines."
+  },
+  {
+    "name": "DebugDraw::add_line",
+    "kind": "Method",
+    "url": "class_DebugDraw.html#method_add_line",
+    "desc": ""
+  },
+  {
+    "name": "DebugDraw::add_aabb",
+    "kind": "Method",
+    "url": "class_DebugDraw.html#method_add_aabb",
+    "desc": "The 12 edges of a world-space AABB."
+  },
+  {
+    "name": "DebugDraw::add_obb",
+    "kind": "Method",
+    "url": "class_DebugDraw.html#method_add_obb",
+    "desc": "The 12 edges of an oriented box."
+  },
+  {
+    "name": "DebugDraw::add_sphere",
+    "kind": "Method",
+    "url": "class_DebugDraw.html#method_add_sphere",
+    "desc": "Three axis-aligned great circles approximating a sphere."
+  },
+  {
+    "name": "DebugDraw::add_capsule",
+    "kind": "Method",
+    "url": "class_DebugDraw.html#method_add_capsule",
+    "desc": "A capsule: two end-cap circles (perpendicular to the axis) plus four side lines."
+  },
+  {
+    "name": "DebugDraw::add_mesh",
+    "kind": "Method",
+    "url": "class_DebugDraw.html#method_add_mesh",
+    "desc": "Every triangle edge of a mesh, placed at transform. Fine for the small collider meshes v1 targets; a large terrain me..."
+  },
+  {
+    "name": "DebugLine",
+    "kind": "Class",
+    "url": "class_DebugLine.html",
+    "desc": "One line segment. color is packed 0xRRGGBBAA."
+  },
+  {
+    "name": "coopa::physx::debug::colors",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__debug__colors.html",
+    "desc": "Color palette debug_draw() colors state by: white awake, green sleeping, red contact normals, yellow trigger collider..."
+  },
+  {
+    "name": "coopa::physx::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::detail::read_vec3_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_read_vec3_",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::detail::layer_registry_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_layer_registry_",
+    "desc": "Process-wide layer-name registry, populated by register_physics_components()'s settings-aware overload from PhysicsSe..."
+  },
+  {
+    "name": "coopa::physx::detail::read_layer_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_read_layer_",
+    "desc": "Resolves node[key] as either a layer name (looked up in layer_registry_(), 0 if unknown) or a bare integer, defaultin..."
+  },
+  {
+    "name": "coopa::physx::detail::parse_inline_material_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_parse_inline_material_",
+    "desc": "Parses an inline material: { dynamic_friction: ..., ... } mapping directly into a PhysicsMaterial the non-asset half ..."
+  },
+  {
+    "name": "coopa::physx::detail::apply_material_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_apply_material_",
+    "desc": "Applies a collider's material: key, if present a string loads a shared physics_materials/&lt;name&gt;.yaml asset (set..."
+  },
+  {
+    "name": "coopa::physx::detail::apply_common_collider_fields_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_apply_common_collider_fields_",
+    "desc": "Common fields every Collider subclass's parser applies, beyond its own shape params."
+  },
+  {
+    "name": "coopa::physx::detail::read_freeze_flags_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__detail.html#func_read_freeze_flags_",
+    "desc": "Parses freeze_position/freeze_rotation: {x,y,z} (each axis a bool) into dynamics::BodyConstraints bits, OR'd onto wha..."
+  },
+  {
+    "name": "coopa::physx::dynamics",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__dynamics.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::dynamics::box_inverse_inertia",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_box_inverse_inertia",
+    "desc": "Inverse of the diagonal local-space inertia tensor for a solid box."
+  },
+  {
+    "name": "coopa::physx::dynamics::sphere_inverse_inertia",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_sphere_inverse_inertia",
+    "desc": "Inverse of the local-space inertia tensor for a solid sphere (isotropic)."
+  },
+  {
+    "name": "coopa::physx::dynamics::capsule_inverse_inertia",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_capsule_inverse_inertia",
+    "desc": "Inverse of the local-space inertia tensor for a solid capsule (cylinder + two hemispherical caps), with the capsule's..."
+  },
+  {
+    "name": "coopa::physx::dynamics::inertia_for_shape",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_inertia_for_shape",
+    "desc": "Dispatches to the analytic inverse-inertia function matching shape.type, permuting the capsule result to match shape...."
+  },
+  {
+    "name": "coopa::physx::dynamics::compose_mass_properties",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_compose_mass_properties",
+    "desc": "Composes N compound-collider children into one body's mass/center-of-mass/inertia via the parallel-axis theorem. DIAG..."
+  },
+  {
+    "name": "coopa::physx::dynamics::apply_gravity",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_apply_gravity",
+    "desc": "Applies gravity into a dynamic, awake body's force accumulator. Static/kinematic/sleeping bodies are untouched their ..."
+  },
+  {
+    "name": "coopa::physx::dynamics::apply_constraints",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_apply_constraints",
+    "desc": "Zeroes velocity components along axes frozen by Body::constraints. Applied after every velocity change (integration a..."
+  },
+  {
+    "name": "coopa::physx::dynamics::update_world_inertia",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_update_world_inertia",
+    "desc": "Recomputes a dynamic body's world-space inverse inertia tensor from its current orientation: R * diag(inv_inertia_loc..."
+  },
+  {
+    "name": "coopa::physx::dynamics::integrate_forces",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_integrate_forces",
+    "desc": "Integrates accumulated force/torque into velocity for one substep (semi-implicit Euler: velocity is updated from forc..."
+  },
+  {
+    "name": "coopa::physx::dynamics::integrate_velocities",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_integrate_velocities",
+    "desc": "Integrates velocity into position/orientation for one substep. Quaternion integration convention: angular_velocity is..."
+  },
+  {
+    "name": "coopa::physx::dynamics::combine",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_combine",
+    "desc": "Combines two scalar values (friction or restitution) per the higher-priority of the two materials' combine modes."
+  },
+  {
+    "name": "coopa::physx::dynamics::pack_warm_start_key",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_pack_warm_start_key",
+    "desc": "Packs an ordered body-index pair and a feature id into one warm-start cache key. Ordering by (min,max) index means th..."
+  },
+  {
+    "name": "coopa::physx::dynamics::apply_impulse_pair",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_apply_impulse_pair",
+    "desc": "Applies a world-space impulse at point to the pair (A,B): -impulse to A, +impulse to B (impulse is defined along the ..."
+  },
+  {
+    "name": "coopa::physx::dynamics::apply_angular_impulse_pair",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_apply_angular_impulse_pair",
+    "desc": "Applies a pure angular impulse (no linear component, no moment arm) to both bodies of a pair the joint solver's count..."
+  },
+  {
+    "name": "coopa::physx::dynamics::capture_restitution_bias",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_capture_restitution_bias",
+    "desc": "Captures each contact point's pre-solve approach velocity and derives its restitution target, before any impulse (war..."
+  },
+  {
+    "name": "coopa::physx::dynamics::warm_start",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_warm_start",
+    "desc": "Seeds each point's impulse accumulators from the previous step's cache (if any point with the same key existed) and i..."
+  },
+  {
+    "name": "coopa::physx::dynamics::solve_velocity_pass",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_solve_velocity_pass",
+    "desc": "One Gauss-Seidel velocity-iteration pass over every manifold point: solves the clamped normal constraint (with restit..."
+  },
+  {
+    "name": "coopa::physx::dynamics::solve_position",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_solve_position",
+    "desc": "Linear-only non-linear-Gauss-Seidel position correction: nudges body positions directly along each manifold's normal,..."
+  },
+  {
+    "name": "coopa::physx::dynamics::hinge_current_angle",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_hinge_current_angle",
+    "desc": "Twist angle (radians) of b relative to a about the hinge axis, measured from rest_relative_rotation (the relative ori..."
+  },
+  {
+    "name": "coopa::physx::dynamics::warm_start_joints",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_warm_start_joints",
+    "desc": "Re-applies each joint's own persistent impulse accumulators (point + axis-alignment; NOT the angle-limit impulse see ..."
+  },
+  {
+    "name": "coopa::physx::dynamics::solve_joint_velocity_pass",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_solve_joint_velocity_pass",
+    "desc": "One Gauss-Seidel velocity-iteration pass over every hinge joint: the point constraint (3 independent scalar constrain..."
+  },
+  {
+    "name": "coopa::physx::dynamics::solve_joint_position",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_solve_joint_position",
+    "desc": "NGS position correction for joints: closes point-constraint drift (linear, same cumulative-error-vs-slop pattern as s..."
+  },
+  {
+    "name": "coopa::physx::dynamics::rebuild_warm_start_cache",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_rebuild_warm_start_cache",
+    "desc": "Rebuilds the warm-start cache from this step's fully-solved manifolds, so next step's warm_start() has something to s..."
+  },
+  {
+    "name": "coopa::physx::dynamics::wake_if_kinematic_moving",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_wake_if_kinematic_moving",
+    "desc": "Wakes dyn if kin is a moving Kinematic body shared by update_islands_and_sleep()'s manifold-based and joint-based wak..."
+  },
+  {
+    "name": "coopa::physx::dynamics::update_islands_and_sleep",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_update_islands_and_sleep",
+    "desc": "Builds this step's islands, updates per-body sleep timers, applies the kinematic wake rule, and puts fully-settled is..."
+  },
+  {
+    "name": "coopa::physx::dynamics::solve",
+    "kind": "Function",
+    "url": "scope_coopa__physx__dynamics.html#func_solve",
+    "desc": "Runs the full solve: warm start, restitution capture, velocity iterations, relax iterations, position correction, cac..."
+  },
+  {
+    "name": "Body",
+    "kind": "Class",
+    "url": "class_Body.html",
+    "desc": "Full dynamic state of one rigid body. Geometry/material live alongside this in PhysicsWorld's parallel shape array (s..."
+  },
+  {
+    "name": "Body::add_force",
+    "kind": "Method",
+    "url": "class_Body.html#method_add_force",
+    "desc": "Applies a world-space force at the center of mass; cleared after each integrate. Wakes a sleeping Dynamic body (match..."
+  },
+  {
+    "name": "Body::add_torque",
+    "kind": "Method",
+    "url": "class_Body.html#method_add_torque",
+    "desc": "Applies a world-space torque; cleared after each integrate. See add_force()'s doc for why this wakes the body."
+  },
+  {
+    "name": "Body::add_force_at_position",
+    "kind": "Method",
+    "url": "class_Body.html#method_add_force_at_position",
+    "desc": "Applies a world-space force at a world-space point, deriving the resulting torque. See add_force()'s doc for why this..."
+  },
+  {
+    "name": "Body::apply_impulse",
+    "kind": "Method",
+    "url": "class_Body.html#method_apply_impulse",
+    "desc": "Applies an instantaneous world-space impulse at the center of mass, changing linear_velocity immediately (unlike add_..."
+  },
+  {
+    "name": "Body::apply_angular_impulse",
+    "kind": "Method",
+    "url": "class_Body.html#method_apply_angular_impulse",
+    "desc": "Applies an instantaneous world-space angular impulse, changing angular_velocity immediately. See apply_impulse()'s doc."
+  },
+  {
+    "name": "Body::apply_impulse_at_position",
+    "kind": "Method",
+    "url": "class_Body.html#method_apply_impulse_at_position",
+    "desc": "Applies an instantaneous world-space impulse at a world-space point: the linear part changes linear_velocity and the ..."
+  },
+  {
+    "name": "Body::velocity_at_point",
+    "kind": "Method",
+    "url": "class_Body.html#method_velocity_at_point",
+    "desc": "World-space velocity of the material point currently at world_point: linear_velocity + cross(angular_velocity, world_..."
+  },
+  {
+    "name": "Body::clear_accumulators",
+    "kind": "Method",
+    "url": "class_Body.html#method_clear_accumulators",
+    "desc": "Clears accumulated force/torque called once per substep after integration."
+  },
+  {
+    "name": "Body::wake",
+    "kind": "Method",
+    "url": "class_Body.html#method_wake",
+    "desc": "Wakes the body and resets its sleep timer."
+  },
+  {
+    "name": "Body::sleep",
+    "kind": "Method",
+    "url": "class_Body.html#method_sleep",
+    "desc": "Puts the body to sleep immediately, bypassing the usual sleep_time-below-threshold accumulation in update_islands_and..."
+  },
+  {
+    "name": "BodyId",
+    "kind": "Class",
+    "url": "class_BodyId.html",
+    "desc": "Generational handle into PhysicsWorld's body array. Shape mirrors coopa::job::JobHandle's current design ({index, gen..."
+  },
+  {
+    "name": "BodyId::is_valid",
+    "kind": "Method",
+    "url": "class_BodyId.html#method_is_valid",
+    "desc": ""
+  },
+  {
+    "name": "BodyId::operator==",
+    "kind": "Method",
+    "url": "class_BodyId.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "BodyId::operator!=",
+    "kind": "Method",
+    "url": "class_BodyId.html#method_operator!=",
+    "desc": ""
+  },
+  {
+    "name": "BodyId::operator<",
+    "kind": "Method",
+    "url": "class_BodyId.html#method_operator<",
+    "desc": ""
+  },
+  {
+    "name": "ChildMassInput",
+    "kind": "Class",
+    "url": "class_ChildMassInput.html",
+    "desc": "One compound-collider child's contribution, relative to the owning body's own local frame the input to compose_mass_p..."
+  },
+  {
+    "name": "HingeJoint",
+    "kind": "Class",
+    "url": "class_HingeJoint.html",
+    "desc": "One hinge constraint between bodies a and b. Anchors/axes are in each body's OWN local frame (rotated/translated by t..."
+  },
+  {
+    "name": "IslandUnionFind",
+    "kind": "Class",
+    "url": "class_IslandUnionFind.html",
+    "desc": "Disjoint-set structure over body array indices, built fresh each substep from the current step's dynamic-dynamic cont..."
+  },
+  {
+    "name": "IslandUnionFind::IslandUnionFind",
+    "kind": "Method",
+    "url": "class_IslandUnionFind.html#method_IslandUnionFind",
+    "desc": ""
+  },
+  {
+    "name": "IslandUnionFind::find",
+    "kind": "Method",
+    "url": "class_IslandUnionFind.html#method_find",
+    "desc": "Finds i's island root, path-compressing along the way."
+  },
+  {
+    "name": "IslandUnionFind::unite",
+    "kind": "Method",
+    "url": "class_IslandUnionFind.html#method_unite",
+    "desc": "Merges the islands containing a and b. Both must be dynamic bodies."
+  },
+  {
+    "name": "JointId",
+    "kind": "Class",
+    "url": "class_JointId.html",
+    "desc": "Generational handle into PhysicsWorld's joint array same shape as BodyId (see its own doc for why: a plain, non-atomi..."
+  },
+  {
+    "name": "JointId::is_valid",
+    "kind": "Method",
+    "url": "class_JointId.html#method_is_valid",
+    "desc": ""
+  },
+  {
+    "name": "JointId::operator==",
+    "kind": "Method",
+    "url": "class_JointId.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "JointId::operator!=",
+    "kind": "Method",
+    "url": "class_JointId.html#method_operator!=",
+    "desc": ""
+  },
+  {
+    "name": "MassProperties",
+    "kind": "Class",
+    "url": "class_MassProperties.html",
+    "desc": "Composite mass/center-of-mass/inertia produced by compose_mass_properties()."
+  },
+  {
+    "name": "PhysicsMaterial",
+    "kind": "Class",
+    "url": "class_PhysicsMaterial.html",
+    "desc": "Friction and restitution for one surface. Instances are shared by pointer; a Collider with no material assigned uses ..."
+  },
+  {
+    "name": "PhysicsMaterial::default_material",
+    "kind": "Method",
+    "url": "class_PhysicsMaterial.html#method_default_material",
+    "desc": "The material used by a Collider with no PhysicsMaterial assigned."
+  },
+  {
+    "name": "SolverState",
+    "kind": "Class",
+    "url": "class_SolverState.html",
+    "desc": "Solver state that persists across steps currently just the warm-start impulse cache. Owned by PhysicsWorld, passed in..."
+  },
+  {
+    "name": "coopa::physx::geometry",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__geometry.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::geometry::closest_point_on_segment",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_closest_point_on_segment",
+    "desc": "Finds the closest point on segment [a, b] to point, and how far along the segment that point lies."
+  },
+  {
+    "name": "coopa::physx::geometry::closest_point_on_segment",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_closest_point_on_segment",
+    "desc": "Convenience overload discarding the parametric t."
+  },
+  {
+    "name": "coopa::physx::geometry::closest_points_segment_segment",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_closest_points_segment_segment",
+    "desc": "Finds the closest points between two segments [p1,q1] and [p2,q2]. Standard clamped-parametric approach (Ericson, \"Re..."
+  },
+  {
+    "name": "coopa::physx::geometry::closest_point_on_obb",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_closest_point_on_obb",
+    "desc": "Finds the closest point on (or in) an OBB's surface/volume to a world-space point. Projects the point into the box's ..."
+  },
+  {
+    "name": "coopa::physx::geometry::ray_vs_sphere",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_ray_vs_sphere",
+    "desc": "Exact ray-vs-sphere intersection."
+  },
+  {
+    "name": "coopa::physx::geometry::ray_vs_obb",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_ray_vs_obb",
+    "desc": "Exact ray-vs-OBB intersection, via the local-space slab test (Ray::intersect's slab test operates on an axis-aligned ..."
+  },
+  {
+    "name": "coopa::physx::geometry::ray_vs_capsule",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_ray_vs_capsule",
+    "desc": "Exact ray-vs-capsule intersection: nearest of the infinite-cylinder surface (clamped to the segment's span) and the t..."
+  },
+  {
+    "name": "coopa::physx::geometry::ray_vs_triangle",
+    "kind": "Function",
+    "url": "scope_coopa__physx__geometry.html#func_ray_vs_triangle",
+    "desc": "Exact ray-vs-triangle intersection (Moller-Trumbore, single-sided: only hits the face normal from triangle_mesh.h's w..."
+  },
+  {
+    "name": "AABB",
+    "kind": "Class",
+    "url": "class_AABB.html",
+    "desc": "Axis-aligned bounding box in world space."
+  },
+  {
+    "name": "AABB::merge",
+    "kind": "Method",
+    "url": "class_AABB.html#method_merge",
+    "desc": "Returns the smallest AABB containing both a and b."
+  },
+  {
+    "name": "AABB::overlaps",
+    "kind": "Method",
+    "url": "class_AABB.html#method_overlaps",
+    "desc": "True if this box and other overlap on all three axes (touching counts as overlap)."
+  },
+  {
+    "name": "AABB::contains",
+    "kind": "Method",
+    "url": "class_AABB.html#method_contains",
+    "desc": "True if point lies within this box on all three axes."
+  },
+  {
+    "name": "AABB::contains",
+    "kind": "Method",
+    "url": "class_AABB.html#method_contains",
+    "desc": "True if this box fully contains other."
+  },
+  {
+    "name": "AABB::expand",
+    "kind": "Method",
+    "url": "class_AABB.html#method_expand",
+    "desc": "Returns a copy of this box grown by margin on every side."
+  },
+  {
+    "name": "AABB::surface_area",
+    "kind": "Method",
+    "url": "class_AABB.html#method_surface_area",
+    "desc": "Surface area of the box, used as the SAH cost metric for tree construction."
+  },
+  {
+    "name": "AABB::center",
+    "kind": "Method",
+    "url": "class_AABB.html#method_center",
+    "desc": "Geometric center of the box."
+  },
+  {
+    "name": "AABB::extents",
+    "kind": "Method",
+    "url": "class_AABB.html#method_extents",
+    "desc": "Full-extent (not half-extent) size of the box along each axis."
+  },
+  {
+    "name": "AABB::transform",
+    "kind": "Method",
+    "url": "class_AABB.html#method_transform",
+    "desc": "Transforms this AABB by a matrix, returning the (generally larger) AABB of the transformed box computed by transformi..."
+  },
+  {
+    "name": "Capsule",
+    "kind": "Class",
+    "url": "class_Capsule.html",
+    "desc": "A capsule: a line segment {a, b} swept by radius."
+  },
+  {
+    "name": "MeshBVH",
+    "kind": "Class",
+    "url": "class_MeshBVH.html",
+    "desc": "Maps a world/object-space AABB or ray query to a set of candidate triangle indices."
+  },
+  {
+    "name": "MeshBVH::MeshBVH",
+    "kind": "Method",
+    "url": "class_MeshBVH.html#method_MeshBVH",
+    "desc": ""
+  },
+  {
+    "name": "MeshBVH::build",
+    "kind": "Method",
+    "url": "class_MeshBVH.html#method_build",
+    "desc": "Builds the tree from a mesh's vertex/index arrays. Safe to call with zero triangles (the tree is then simply empty)."
+  },
+  {
+    "name": "MeshBVH::query",
+    "kind": "Method",
+    "url": "class_MeshBVH.html#method_query",
+    "desc": "Invokes fn(uint32_t triangle_index) for every triangle whose bounds overlap bounds."
+  },
+  {
+    "name": "MeshBVH::raycast",
+    "kind": "Method",
+    "url": "class_MeshBVH.html#method_raycast",
+    "desc": "Invokes fn(uint32_t triangle_index) for every triangle whose bounds the ray intersects."
+  },
+  {
+    "name": "MeshBVH::empty",
+    "kind": "Method",
+    "url": "class_MeshBVH.html#method_empty",
+    "desc": ""
+  },
+  {
+    "name": "OBB",
+    "kind": "Class",
+    "url": "class_OBB.html",
+    "desc": "A box in world space with an arbitrary orientation."
+  },
+  {
+    "name": "OBB::axes",
+    "kind": "Method",
+    "url": "class_OBB.html#method_axes",
+    "desc": "The box's local X/Y/Z axes in world space, unit length."
+  },
+  {
+    "name": "OBB::bounds",
+    "kind": "Method",
+    "url": "class_OBB.html#method_bounds",
+    "desc": "A world-space AABB that tightly encloses this OBB (exact, via 8-corner transform)."
+  },
+  {
+    "name": "Ray",
+    "kind": "Class",
+    "url": "class_Ray.html",
+    "desc": "A world-space ray with a maximum travel distance."
+  },
+  {
+    "name": "Ray::intersect",
+    "kind": "Method",
+    "url": "class_Ray.html#method_intersect",
+    "desc": "Slab-test intersection against an AABB. Cribbed from gfxcoopa's GI-baking ray/box routine (gi_baker.h's intersect_box..."
+  },
+  {
+    "name": "Sphere",
+    "kind": "Class",
+    "url": "class_Sphere.html",
+    "desc": "A sphere in world space."
+  },
+  {
+    "name": "TriangleAdjacency",
+    "kind": "Class",
+    "url": "class_TriangleAdjacency.html",
+    "desc": "Per-triangle neighbour info, indexed by triangle. Edge i of a triangle runs from vertex i to vertex (i+1)%3; neighbor..."
+  },
+  {
+    "name": "TriangleMesh",
+    "kind": "Class",
+    "url": "class_TriangleMesh.html",
+    "desc": "A static, welded triangle mesh with precomputed per-triangle normals and adjacency. Used as the collision geometry fo..."
+  },
+  {
+    "name": "TriangleMesh::TriangleMesh",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_TriangleMesh",
+    "desc": ""
+  },
+  {
+    "name": "TriangleMesh::TriangleMesh",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_TriangleMesh",
+    "desc": "Builds a TriangleMesh from already-welded vertex/index data plus precomputed per-triangle normals and adjacency."
+  },
+  {
+    "name": "TriangleMesh::vertices",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_vertices",
+    "desc": "Welded vertex positions."
+  },
+  {
+    "name": "TriangleMesh::indices",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_indices",
+    "desc": "Triangle list, 3 indices per triangle."
+  },
+  {
+    "name": "TriangleMesh::normals",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_normals",
+    "desc": "One face normal per triangle."
+  },
+  {
+    "name": "TriangleMesh::adjacency",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_adjacency",
+    "desc": "One TriangleAdjacency per triangle."
+  },
+  {
+    "name": "TriangleMesh::triangle_count",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_triangle_count",
+    "desc": "Number of triangles in the mesh."
+  },
+  {
+    "name": "TriangleMesh::triangle_vertices",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_triangle_vertices",
+    "desc": "The three vertex positions of triangle tri."
+  },
+  {
+    "name": "TriangleMesh::bounds",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_bounds",
+    "desc": "Object-space bounds of the whole mesh."
+  },
+  {
+    "name": "TriangleMesh::bvh",
+    "kind": "Method",
+    "url": "class_TriangleMesh.html#method_bvh",
+    "desc": "Static BVH over this mesh's triangles, built once at construction."
+  },
+  {
+    "name": "coopa::physx::loaders",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__loaders.html",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsMaterialLoader",
+    "kind": "Class",
+    "url": "class_PhysicsMaterialLoader.html",
+    "desc": "Registers as the coopa::asset loader for dynamics::PhysicsMaterial. assets.register_loader&lt;dynamics::PhysicsMateri..."
+  },
+  {
+    "name": "PhysicsMaterialLoader::decode_typed",
+    "kind": "Method",
+    "url": "class_PhysicsMaterialLoader.html#method_decode_typed",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsMaterialLoader::finalize_typed",
+    "kind": "Method",
+    "url": "class_PhysicsMaterialLoader.html#method_finalize_typed",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsMaterialLoader::type_name",
+    "kind": "Method",
+    "url": "class_PhysicsMaterialLoader.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "TriangleMeshLoader",
+    "kind": "Class",
+    "url": "class_TriangleMeshLoader.html",
+    "desc": "Registers as the coopa::asset loader for geometry::TriangleMesh. assets.register_loader&lt;geometry::TriangleMesh&gt;..."
+  },
+  {
+    "name": "TriangleMeshLoader::decode_typed",
+    "kind": "Method",
+    "url": "class_TriangleMeshLoader.html#method_decode_typed",
+    "desc": ""
+  },
+  {
+    "name": "TriangleMeshLoader::finalize_typed",
+    "kind": "Method",
+    "url": "class_TriangleMeshLoader.html#method_finalize_typed",
+    "desc": ""
+  },
+  {
+    "name": "TriangleMeshLoader::type_name",
+    "kind": "Method",
+    "url": "class_TriangleMeshLoader.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::loaders::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__loaders__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::loaders::detail::parse_combine_mode_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__loaders__detail.html#func_parse_combine_mode_",
+    "desc": "Parses a CombineMode name (case-sensitive, matching the enum's spelling). Unknown or absent values fall back to fallb..."
+  },
+  {
+    "name": "coopa::physx::loaders::detail::edge_key_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__loaders__detail.html#func_edge_key_",
+    "desc": "Packs two triangle-vertex indices into an order-independent 64-bit edge key."
+  },
+  {
+    "name": "coopa::physx::loaders::detail::cell_key_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__loaders__detail.html#func_cell_key_",
+    "desc": "Packs a quantized 3D grid cell into a 64-bit key for the welding spatial hash."
+  },
+  {
+    "name": "coopa::physx::query",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__query.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::query::raycast_shape",
+    "kind": "Function",
+    "url": "scope_coopa__physx__query.html#func_raycast_shape",
+    "desc": "Exact ray-vs-shape dispatch, analytic for Sphere/Box/Capsule and BVH descent for TriangleMesh (the ray is transformed..."
+  },
+  {
+    "name": "coopa::physx::query::shape_overlaps_sphere",
+    "kind": "Function",
+    "url": "scope_coopa__physx__query.html#func_shape_overlaps_sphere",
+    "desc": "True if shape (at pos/rot) overlaps query, a world-space sphere."
+  },
+  {
+    "name": "coopa::physx::query::shape_overlaps_obb",
+    "kind": "Function",
+    "url": "scope_coopa__physx__query.html#func_shape_overlaps_obb",
+    "desc": "True if shape (at pos/rot) overlaps query, a world-space OBB."
+  },
+  {
+    "name": "coopa::physx::query::quat_from_z_to",
+    "kind": "Function",
+    "url": "scope_coopa__physx__query.html#func_quat_from_z_to",
+    "desc": "Rotation mapping world +Z onto unit vector dir the shortest arc between them. Used only to pose a capsule::make_capsu..."
+  },
+  {
+    "name": "coopa::physx::query::shape_overlaps_capsule",
+    "kind": "Function",
+    "url": "scope_coopa__physx__query.html#func_shape_overlaps_capsule",
+    "desc": "True if shape (at pos/rot) overlaps query, a world-space capsule."
+  },
+  {
+    "name": "RaycastHit",
+    "kind": "Class",
+    "url": "class_RaycastHit.html",
+    "desc": "One raycast/sphere-cast result."
+  },
+  {
+    "name": "coopa::physx::system",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__system.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::system::install_physics_system",
+    "kind": "Function",
+    "url": "scope_coopa__physx__system.html#func_install_physics_system",
+    "desc": "Constructs a PhysicsSystem and registers it, mirroring install_animation_system()."
+  },
+  {
+    "name": "coopa::physx::system::install_physics_system",
+    "kind": "Function",
+    "url": "scope_coopa__physx__system.html#func_install_physics_system",
+    "desc": "Constructs a PhysicsSystem from a full project-wide PhysicsSettings (gravity, solver tunables, fixed timestep, layer ..."
+  },
+  {
+    "name": "PhysicsSystem",
+    "kind": "Class",
+    "url": "class_PhysicsSystem.html",
+    "desc": "Registered at coopa::scene::UpdatePhase::Physics (100) by default; owns a PhysicsWorld and reconciles Collider compon..."
+  },
+  {
+    "name": "PhysicsSystem::raycast",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_raycast",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::raycast_any",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_raycast_any",
+    "desc": "True if anything along ray is hit see PhysicsWorld::raycast_any()'s doc: first tree-traversal hit, not necessarily th..."
+  },
+  {
+    "name": "PhysicsSystem::raycast_all",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_raycast_all",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::sphere_cast",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_sphere_cast",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::box_cast",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_box_cast",
+    "desc": "See PhysicsWorld::box_cast()'s doc for the discretized-stepped-sweep approximation."
+  },
+  {
+    "name": "PhysicsSystem::capsule_cast",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_capsule_cast",
+    "desc": "See PhysicsWorld::capsule_cast()'s doc for the discretized-stepped-sweep approximation."
+  },
+  {
+    "name": "PhysicsSystem::overlap_sphere",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_overlap_sphere",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::overlap_box",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_overlap_box",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::overlap_capsule",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_overlap_capsule",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::collider_for",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_collider_for",
+    "desc": "The PRIMARY Collider bound to id, or nullptr if id doesn't address a bound body for a compound body (see Binding's do..."
+  },
+  {
+    "name": "PhysicsSystem::PhysicsSystem",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_PhysicsSystem",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::system_name",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_system_name",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::on_attach",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_on_attach",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::execute",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_execute",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::refresh",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_refresh",
+    "desc": "Re-gathers the Collider list on the next execute() call. Call after adding/removing a Collider (or its owning SceneOb..."
+  },
+  {
+    "name": "PhysicsSystem::world",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_world",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::world",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_world",
+    "desc": ""
+  },
+  {
+    "name": "PhysicsSystem::bound_count",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_bound_count",
+    "desc": "Number of colliders currently bound to a body for tests/diagnostics."
+  },
+  {
+    "name": "PhysicsSystem::set_parallel_threshold",
+    "kind": "Method",
+    "url": "class_PhysicsSystem.html#method_set_parallel_threshold",
+    "desc": "Minimum bound-collider count before this system's own job-parallel passes (sync_transforms_in_/write_transforms_back_..."
+  },
+  {
+    "name": "coopa::physx::util",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__util.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::util::throw_error",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_throw_error",
+    "desc": "Throws a std::runtime_error tagged with the \"[physxcoopa]\" prefix used consistently across the module, so every physi..."
+  },
+  {
+    "name": "coopa::physx::util::safe_normalize",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_safe_normalize",
+    "desc": "Normalizes a vector, returning a zero vector instead of NaN when the input is degenerate (length below k_epsilon)."
+  },
+  {
+    "name": "coopa::physx::util::orthonormal_basis",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_orthonormal_basis",
+    "desc": "Builds an orthonormal basis {n, t1, t2} from a unit normal, for friction directions. Uses the branch-free constructio..."
+  },
+  {
+    "name": "coopa::physx::util::skew",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_skew",
+    "desc": "Returns the skew-symmetric (\"cross-product\") matrix of a vector, such that skew(v) * u == cross(v, u) for any u."
+  },
+  {
+    "name": "coopa::physx::util::parse_physics_settings",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_parse_physics_settings",
+    "desc": "Parses a physics: YAML node into a PhysicsSettings. Every key is optional; a missing or malformed field is left at it..."
+  },
+  {
+    "name": "coopa::physx::util::world_trs",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_world_trs",
+    "desc": "Decomposes a Transform's world matrix into position/rotation/scale."
+  },
+  {
+    "name": "coopa::physx::util::set_world_trs",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util.html#func_set_world_trs",
+    "desc": "Writes a world-space position/rotation into a Transform, converting to local space when parented."
+  },
+  {
+    "name": "PhysicsConfig",
+    "kind": "Class",
+    "url": "class_PhysicsConfig.html",
+    "desc": "All solver/broadphase tunables for one PhysicsWorld."
+  },
+  {
+    "name": "PhysicsSettings",
+    "kind": "Class",
+    "url": "class_PhysicsSettings.html",
+    "desc": "Everything a scene's physics: YAML block can configure, applied once to a PhysicsWorld by apply_physics_settings() (c..."
+  },
+  {
+    "name": "Trs",
+    "kind": "Class",
+    "url": "class_Trs.html",
+    "desc": "A decomposed world-space position + rotation (scale is not needed by physics)."
+  },
+  {
+    "name": "coopa::physx::util::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__physx__util__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::util::detail::parse_debug_draw_flag_",
+    "kind": "Function",
+    "url": "scope_coopa__physx__util__detail.html#func_parse_debug_draw_flag_",
+    "desc": ""
+  },
+  {
+    "name": "coopa::scene",
+    "kind": "Namespace",
+    "url": "scope_coopa__scene.html",
+    "desc": ""
+  },
+  {
+    "name": "Global Namespace",
+    "kind": "Namespace",
+    "url": "scope_Global_Namespace.html",
+    "desc": "Global C++ symbols."
+  },
+  {
+    "name": "coopa::physx::system::PhysicsSystem::Binding",
+    "kind": "Class",
+    "url": "class_coopa__physx__system__PhysicsSystem__Binding.html",
+    "desc": "One Collider bound to one physics body bindings_' index is stable for one frame at a time (rebuilt by regather_()), w..."
+  },
+  {
+    "name": "coopa::physx::dynamics::SolverState::CachedImpulse",
+    "kind": "Class",
+    "url": "class_coopa__physx__dynamics__SolverState__CachedImpulse.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::PhysicsWorld::DeferredCommand",
+    "kind": "Class",
+    "url": "class_coopa__physx__PhysicsWorld__DeferredCommand.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::broadphase::AABBTree::Node",
+    "kind": "Class",
+    "url": "class_coopa__physx__broadphase__AABBTree__Node.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::geometry::MeshBVH::Node",
+    "kind": "Class",
+    "url": "class_coopa__physx__geometry__MeshBVH__Node.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::geometry::MeshBVH::Node::is_leaf",
+    "kind": "Method",
+    "url": "class_coopa__physx__geometry__MeshBVH__Node.html#method_is_leaf",
+    "desc": ""
+  },
+  {
+    "name": "coopa::physx::system::PhysicsSystem::RaycastHit",
+    "kind": "Class",
+    "url": "class_coopa__physx__system__PhysicsSystem__RaycastHit.html",
+    "desc": ""
+  }
+]

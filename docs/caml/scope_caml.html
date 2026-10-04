@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caml - caml Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">caml Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_caml.html">
+                        <span class="badge">C++</span>caml
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CAMLMap.html">
+                        <span class="badge">C++</span>CAMLMap
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; caml
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>caml</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/caml/includes/caml/caml.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_CAMLMap.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class CAMLMap
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Header-only wrapper managing YAML data nodes with built-in .caml export/import capabilities.
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_derive_key">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">derive_key</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">caml</span><span class="o">::</span><span class="n">derive_key</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">passphrase</span><span class="o">=</span><span class="n">DEFAULT_PASSPHRASE</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">salt</span><span class="o">=</span><span class="p">{</span><span class="w"> </span><span class="sc">'c'</span><span class="p">,</span><span class="w"> </span><span class="sc">'a'</span><span class="p">,</span><span class="w"> </span><span class="sc">'m'</span><span class="p">,</span><span class="w"> </span><span class="sc">'l'</span><span class="p">,</span><span class="w"> </span><span class="sc">'_'</span><span class="p">,</span><span class="w"> </span><span class="sc">'s'</span><span class="p">,</span><span class="w"> </span><span class="sc">'a'</span><span class="p">,</span><span class="w"> </span><span class="sc">'l'</span><span class="p">,</span><span class="w"> </span><span class="sc">'t'</span><span class="p">,</span><span class="w"> </span><span class="sc">'_'</span><span class="p">,</span><span class="w"> </span><span class="sc">'2'</span><span class="p">,</span><span class="w"> </span><span class="sc">'0'</span><span class="p">,</span><span class="w"> </span><span class="sc">'2'</span><span class="p">,</span><span class="w"> </span><span class="sc">'6'</span><span class="p">,</span><span class="w"> </span><span class="sc">'!'</span><span class="p">,</span><span class="w"> </span><span class="sc">'!'</span><span class="w"> </span><span class="p">})</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Derives a 32-byte key from a passphrase string using PBKDF2 (SHA-256).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">passphrase</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">DEFAULT_PASSPHRASE</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">salt</td>
+                        <td class="param-type">const std::vector< uint8_t > &</td>
+                        <td class="param-type" style="color: var(--text-muted);">{ 'c', 'a', 'm', 'l', '_', 's', 'a', 'l', 't', '_', '2', '0', '2', '6', '!', '!' }</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< uint8_t ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_encode">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">encode</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">caml</span><span class="o">::</span><span class="n">encode</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">yaml_str</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">key</span><span class="o">=</span><span class="p">{})</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Encodes a raw YAML string into binary .caml format (Zstd compression + AES-256-GCM encryption).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">yaml_str</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const std::vector< uint8_t > &</td>
+                        <td class="param-type" style="color: var(--text-muted);">{}</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< uint8_t ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_decode">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">decode</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">caml</span><span class="o">::</span><span class="n">decode</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">caml_data</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">key</span><span class="o">=</span><span class="p">{})</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Decodes binary .caml format back into a raw YAML string.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">caml_data</td>
+                        <td class="param-type">const std::vector< uint8_t > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const std::vector< uint8_t > &</td>
+                        <td class="param-type" style="color: var(--text-muted);">{}</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::string</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_encode_file">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">encode_file</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">caml</span><span class="o">::</span><span class="n">encode_file</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">input_yaml_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output_caml_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">passphrase</span><span class="o">=</span><span class="n">DEFAULT_PASSPHRASE</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">input_yaml_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">output_caml_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">passphrase</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">DEFAULT_PASSPHRASE</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_decode_file">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">decode_file</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">caml</span><span class="o">::</span><span class="n">decode_file</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">input_caml_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output_yaml_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">passphrase</span><span class="o">=</span><span class="n">DEFAULT_PASSPHRASE</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">input_caml_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">output_yaml_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">passphrase</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">DEFAULT_PASSPHRASE</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

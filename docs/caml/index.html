@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - caml Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">caml Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_caml.html">
+                        <span class="badge">C++</span>caml
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CAMLMap.html">
+                        <span class="badge">C++</span>CAMLMap
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; Overview
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <h1 style="font-size: 3rem; margin-bottom: 24px;">caml Documentation</h1>
+    
+    <div class="card" style="background: var(--primary-gradient); color: white; border: none; padding: 32px; border-radius: 16px;">
+        <p style="font-size: 1.25rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 24px;">
+            Welcome to the unified API documentation for <strong>caml</strong>. 
+            This documentation provides a uniform interface to browse, search, and inspect classes, methods, and functions across Python and C++ source code.
+        </p>
+        
+        <div>
+            <span style="font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px; color: rgba(255,255,255,0.7);">
+                Detected Languages
+            </span>
+            
+            <span class="badge" style="background-color: rgba(255,255,255,0.25); color: white; font-size: 0.8rem; padding: 4px 12px;">
+                C++
+            </span>
+            
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="card">
+            <h3 style="margin-top: 0; font-family: var(--font-display); font-size: 1.5rem;">API Modules &amp; Namespaces</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                Browse packages, namespaces, subscopes, and global namespace functions.
+            </p>
+            <ul style="list-style: none;">
+                
+                <li style="margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
+                    <a href="scope_caml.html" style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                        <span class="badge" style="font-size: 0.7rem; padding: 1px 6px;">C++</span>
+                        caml
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+        <div class="card">
+            <h3 style="margin-top: 0; font-family: var(--font-display); font-size: 1.5rem;">Class Index</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                Explore structures, templates, methods, attributes, and inheritance hierarchies.
+            </p>
+            <ul style="list-style: none;">
+                
+                <li style="margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
+                    <a href="class_CAMLMap.html" style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                        <span class="badge" style="font-size: 0.7rem; padding: 1px 6px;">C++</span>
+                        CAMLMap
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+    
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

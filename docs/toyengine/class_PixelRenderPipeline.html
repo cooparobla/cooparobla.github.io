@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelRenderPipeline - toyengine Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">toyengine Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_std.html">
+                        <span class="badge">C++</span>std
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy.html">
+                        <span class="badge">C++</span>toy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core.html">
+                        <span class="badge">C++</span>toy::core
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core__detail.html">
+                        <span class="badge">C++</span>toy::core::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render.html">
+                        <span class="badge">C++</span>toy::render
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render__passes.html">
+                        <span class="badge">C++</span>toy::render::passes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__scene.html">
+                        <span class="badge">C++</span>toy::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water.html">
+                        <span class="badge">C++</span>toy::water
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water__detail.html">
+                        <span class="badge">C++</span>toy::water::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__world.html">
+                        <span class="badge">C++</span>toy::world
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__BuoyantEntry.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::BuoyantEntry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Camera.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Camera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__ContactShadowKnobs.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::ContactShadowKnobs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__DofFocus.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::DofFocus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameContext.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameScene.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameScene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatch.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshDrawStats.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshDrawStats
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshGather.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshGather
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__ContactShadowPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::ContactShadowPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__UnderwaterPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::UnderwaterPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__TransparentPreviewPass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::TransparentPreviewPass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__WaterFrameState__Ripple.html">
+                        <span class="badge">C++</span>toy::render::WaterFrameState::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__Ripple.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__RippleEmitter.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::RippleEmitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__FrameProfile__Row.html">
+                        <span class="badge">C++</span>toy::render::FrameProfile::Row
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Shadow.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Shadow
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__world__TileMeshLibrary__SideGeometry.html">
+                        <span class="badge">C++</span>toy::world::TileMeshLibrary::SideGeometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__GpuProfiler__Slot.html">
+                        <span class="badge">C++</span>toy::render::GpuProfiler::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__SpotShadowCaster.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::SpotShadowCaster
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterBody__TileSlot.html">
+                        <span class="badge">C++</span>toy::water::WaterBody::TileSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__UnderwaterInfo.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::UnderwaterInfo
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__Vertex.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::Vertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaveSet__Wave.html">
+                        <span class="badge">C++</span>toy::water::WaveSet::Wave
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord__.html">
+                        <span class="badge">C++</span>ChunkCoord >
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AppConfig.html">
+                        <span class="badge">C++</span>AppConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Engine.html">
+                        <span class="badge">C++</span>Engine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EngineOptions.html">
+                        <span class="badge">C++</span>EngineOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameHooks.html">
+                        <span class="badge">C++</span>FrameHooks
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobsConfig.html">
+                        <span class="badge">C++</span>JobsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LogoShape.html">
+                        <span class="badge">C++</span>LogoShape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OutputConfig.html">
+                        <span class="badge">C++</span>OutputConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WindowConfig.html">
+                        <span class="badge">C++</span>WindowConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CamlKeyState.html">
+                        <span class="badge">C++</span>CamlKeyState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeSplits.html">
+                        <span class="badge">C++</span>CascadeSplits
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeTile.html">
+                        <span class="badge">C++</span>CascadeTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CpuTimer.html">
+                        <span class="badge">C++</span>CpuTimer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugViewPushConstants.html">
+                        <span class="badge">C++</span>DebugViewPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DirShadowFit.html">
+                        <span class="badge">C++</span>DirShadowFit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobals.html">
+                        <span class="badge">C++</span>ForwardGlobals
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobalsData.html">
+                        <span class="badge">C++</span>ForwardGlobalsData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameProfile.html">
+                        <span class="badge">C++</span>FrameProfile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Frustum.html">
+                        <span class="badge">C++</span>Frustum
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GpuProfiler.html">
+                        <span class="badge">C++</span>GpuProfiler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_InstanceStream.html">
+                        <span class="badge">C++</span>InstanceStream
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LetterboxRect.html">
+                        <span class="badge">C++</span>LetterboxRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LodThreshold.html">
+                        <span class="badge">C++</span>LodThreshold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelLightingPushConstants.html">
+                        <span class="badge">C++</span>PixelLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRect.html">
+                        <span class="badge">C++</span>PixelRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRenderConfig.html">
+                        <span class="badge">C++</span>PixelRenderConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_PixelRenderPipeline.html">
+                        <span class="badge">C++</span>PixelRenderPipeline
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RenderExtent.html">
+                        <span class="badge">C++</span>RenderExtent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfClipRect.html">
+                        <span class="badge">C++</span>SdfClipRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfDrawItem.html">
+                        <span class="badge">C++</span>SdfDrawItem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShadowFitCamera.html">
+                        <span class="badge">C++</span>ShadowFitCamera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentCaptureLightingPushConstants.html">
+                        <span class="badge">C++</span>TransparentCaptureLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentRefractionPushConstants.html">
+                        <span class="badge">C++</span>TransparentRefractionPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterFrameState.html">
+                        <span class="badge">C++</span>WaterFrameState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WorldBounds.html">
+                        <span class="badge">C++</span>WorldBounds
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactShadowPass.html">
+                        <span class="badge">C++</span>ContactShadowPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLinePass.html">
+                        <span class="badge">C++</span>DebugLinePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FullscreenBlitPass.html">
+                        <span class="badge">C++</span>FullscreenBlitPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentPreviewPass.html">
+                        <span class="badge">C++</span>TransparentPreviewPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UiCompositePass.html">
+                        <span class="badge">C++</span>UiCompositePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UnderwaterPass.html">
+                        <span class="badge">C++</span>UnderwaterPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UpscalePass.html">
+                        <span class="badge">C++</span>UpscalePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CameraController.html">
+                        <span class="badge">C++</span>CameraController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothRenderer.html">
+                        <span class="badge">C++</span>ClothRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FreeMover.html">
+                        <span class="badge">C++</span>FreeMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HealthDriver.html">
+                        <span class="badge">C++</span>HealthDriver
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicController.html">
+                        <span class="badge">C++</span>KinematicController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicControlSystem.html">
+                        <span class="badge">C++</span>KinematicControlSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicMover.html">
+                        <span class="badge">C++</span>KinematicMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SkinnedMeshRenderer.html">
+                        <span class="badge">C++</span>SkinnedMeshRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Buoyancy.html">
+                        <span class="badge">C++</span>Buoyancy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowBakeParams.html">
+                        <span class="badge">C++</span>FlowBakeParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowRayHit.html">
+                        <span class="badge">C++</span>FlowRayHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Pontoon.html">
+                        <span class="badge">C++</span>Pontoon
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PontoonDesc.html">
+                        <span class="badge">C++</span>PontoonDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBaseSample.html">
+                        <span class="badge">C++</span>WaterBaseSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBody.html">
+                        <span class="badge">C++</span>WaterBody
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSample.html">
+                        <span class="badge">C++</span>WaterSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSettings.html">
+                        <span class="badge">C++</span>WaterSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSurfaceQuery.html">
+                        <span class="badge">C++</span>WaterSurfaceQuery
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSystem.html">
+                        <span class="badge">C++</span>WaterSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTile.html">
+                        <span class="badge">C++</span>WaterTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTileLodParams.html">
+                        <span class="badge">C++</span>WaterTileLodParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterVertex.html">
+                        <span class="badge">C++</span>WaterVertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveParams.html">
+                        <span class="badge">C++</span>WaveParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveQueryOptions.html">
+                        <span class="badge">C++</span>WaveQueryOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSample.html">
+                        <span class="badge">C++</span>WaveSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSet.html">
+                        <span class="badge">C++</span>WaveSet
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkBuildJob.html">
+                        <span class="badge">C++</span>ChunkBuildJob
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord.html">
+                        <span class="badge">C++</span>ChunkCoord
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkMeshData.html">
+                        <span class="badge">C++</span>ChunkMeshData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ColumnPad.html">
+                        <span class="badge">C++</span>ColumnPad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainChunk.html">
+                        <span class="badge">C++</span>TerrainChunk
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainComponent.html">
+                        <span class="badge">C++</span>TerrainComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainParams.html">
+                        <span class="badge">C++</span>TerrainParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSampler.html">
+                        <span class="badge">C++</span>TerrainSampler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSystem.html">
+                        <span class="badge">C++</span>TerrainSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileColumn.html">
+                        <span class="badge">C++</span>TileColumn
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileMeshLibrary.html">
+                        <span class="badge">C++</span>TileMeshLibrary
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; PixelRenderPipeline
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            class
+        </span>
+    </div>
+    
+    <h1>class PixelRenderPipeline</h1>
+    
+    
+    
+    
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/toyengine/render/pixel_render_pipeline.h
+    </div>
+    
+    
+    
+    <div class="card docstring">
+        <p>Renders a scene through the low-resolution deferred pixel-art frame graph and upscales it into the swapchain.</p>
+<p>Not copyable or movable: passes hold references to sibling members, and the ExtraSets callbacks capture <code>this</code>.</p>
+    </div>
+    
+    
+    
+    <section>
+        <h2>Class Relationships</h2>
+        <div class="card mermaid-container" style="padding: 24px; display: flex; justify-content: center; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; position: relative; height: 400px;">
+            <div class="mermaid">
+                graph LR
+    PixelRenderPipeline --> LetterboxRect
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Constructors -->
+    
+    
+    
+    <!-- Methods -->
+    
+    
+    <section>
+        <h2>Methods</h2>
+        
+        <div class="card" id="method_PixelRenderPipeline">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                PixelRenderPipeline
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">PixelRenderPipeline</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Device</span><span class="w"> </span><span class="o">&amp;</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">memory</span><span class="o">::</span><span class="n">Allocator</span><span class="w"> </span><span class="o">&amp;</span><span class="n">allocator</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Swapchain</span><span class="w"> </span><span class="o">&amp;</span><span class="n">swapchain</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">pipeline</span><span class="o">::</span><span class="n">RenderPass</span><span class="w"> </span><span class="o">&amp;</span><span class="n">swapchain_pass</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">command</span><span class="o">::</span><span class="n">CommandPool</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cmd_pool</span><span class="p">,</span><span class="w"> </span><span class="n">PixelRenderConfig</span><span class="w"> </span><span class="n">config</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">device</td>
+                        <td class="param-type">coopa::gfx::core::Device &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">allocator</td>
+                        <td class="param-type">coopa::gfx::memory::Allocator &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">swapchain</td>
+                        <td class="param-type">coopa::gfx::core::Swapchain &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">swapchain_pass</td>
+                        <td class="param-type">coopa::gfx::pipeline::RenderPass &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">cmd_pool</td>
+                        <td class="param-type">coopa::gfx::command::CommandPool &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">PixelRenderConfig</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_PixelRenderPipeline">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                PixelRenderPipeline
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">PixelRenderPipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">PixelRenderPipeline</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_operator=">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                operator=
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">PixelRenderPipeline</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">PixelRenderPipeline</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">PixelRenderPipeline &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_job_engine">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_job_engine
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_job_engine</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">job</span><span class="o">::</span><span class="n">JobEngine</span><span class="w"> </span><span class="o">*</span><span class="n">jobs</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Installs the JobEngine render()'s per-frame gathers may dispatch to.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">jobs</td>
+                        <td class="param-type">coopa::job::JobEngine *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Non-owning pointer, or nullptr to force every gather fully serial (the default)  see should_parallelize_()'s doc.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_set_parallel_threshold">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_parallel_threshold
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_parallel_threshold</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Sets the minimum element count before a gather dispatches jobs instead of running serially  see should_parallelize_()'s doc. Default 256, matching coopa::anim::AnimationSystem's own house threshold.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">n</td>
+                        <td class="param-type">std::size_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_debug_lines">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                debug_lines
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">DebugLine</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">debug_lines</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>This frame's physics debug-draw lines  fill it (typically from PhysicsWorld::debug_draw(), see debug_line_pass.h's file doc) between Scene::update()/late_update() and render(); drawn when config_.debug_view == "lines", cleared by the caller each frame (this pipeline never clears it itself, matching how it never owns the scene it reads).</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< DebugLine > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_display_region">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_display_region
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_display_region</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="w"> </span><span class="n">LetterboxRect</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">region</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Confines the scene image to a window-pixel rect (an editor viewport panel); the image is letterboxed/fit inside it exactly as it would be inside the window. nullopt (the default) uses the whole window.</p>
+<p>Applied at the next render(). Only the display-rect-sized resources (world-UI layer, tilt shift) are rebuilt when the rect's SIZE changes, and nothing when only its position does  the screen-UI pass and overlay target follow the swapchain alone.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">region</td>
+                        <td class="param-type">std::optional< LetterboxRect ></td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_display_region">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                display_region
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="w"> </span><span class="n">LetterboxRect</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">display_region</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::optional< LetterboxRect > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_display_rect_for">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                display_rect_for
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">LetterboxRect</span><span class="w"> </span><span class="n">display_rect_for</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sh</span><span class="p">)</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The window-pixel rect the scene image lands in for a swapchain of sw x sh.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">LetterboxRect</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_overlay_scene">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_overlay_scene
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_overlay_scene</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">scene</span><span class="o">::</span><span class="n">Scene</span><span class="w"> </span><span class="o">*</span><span class="n">scene</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>A second scene whose screen-space canvases draw over the main scene's (the editor UI). Null removes it. Needs screen_ui_enabled.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">scene</td>
+                        <td class="param-type">coopa::scene::Scene *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_world_ui_white_view">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                world_ui_white_view
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">TextureView</span><span class="w"> </span><span class="n">world_ui_white_view</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>world_ui_pass_'s 1x1 white texture view, for seeding a world canvas's DrawList::set_default_texture()  or a default-constructed (null) view when config_.world_ui_enabled is off.</p>
+<p>A DrawList emits solid-colour quads (every untextured Image, every panel) against its default texture, so a canvas whose default was never seeded submits draws bound to a VK_NULL_HANDLE image view. That is a validation error and, in a release build, undefined behaviour  not a blank quad. The host seeds it before Scene::late_update() emits, since the DrawList captures the view at emit time; see Engine::drive_ui_canvases_().</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">coopa::gfx::TextureView</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_render_width">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                render_width
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">render_width</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Low-resolution render width in pixels.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_render_height">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                render_height
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">render_height</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Low-resolution render height in pixels.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_low_res_color_image">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                low_res_color_image
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">memory</span><span class="o">::</span><span class="n">Image</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">low_res_color_image</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The final low-resolution LDR color image, for pixel-accurate screenshots: aa_target_'s result once config_.aa_mode != "off", else post_target_ directly.</p>
+<p>Scene and debug lines only  NEITHER UI layer is in here. Both are composited one stage later, at window resolution, which is the whole point of the overlay chain (see overlay_target_'s member doc); use final_color_image() for a capture that includes UI.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">coopa::gfx::memory::Image &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_final_color_image">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                final_color_image
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">memory</span><span class="o">::</span><span class="n">Image</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">final_color_image</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The full-window image actually presented: the post-processed scene with both UI layers composited over it, letterbox bars included.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">coopa::gfx::memory::Image &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_screen_ui_white_view">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                screen_ui_white_view
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">TextureView</span><span class="w"> </span><span class="n">screen_ui_white_view</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The screen-space UI pass's default white texture, for seeding a screen canvas's DrawList::set_default_texture(). Empty when config_.screen_ui_enabled is off. Same contract and the same null-view hazard as world_ui_white_view() above.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">coopa::gfx::TextureView</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_water_state">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_water_state
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_water_state</span><span class="p">(</span><span class="n">WaterFrameState</span><span class="w"> </span><span class="n">state</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Hands over this frame's water state  ripple rings for the water shader and the underwater parameters for UnderwaterPass. Engine calls it every frame before render() from toy::water::WaterSystem; keeping it a plain struct means render/ never depends on toyengine/water/.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">state</td>
+                        <td class="param-type">WaterFrameState</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_water_state">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                water_state
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">WaterFrameState</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">water_state</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const WaterFrameState &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_underwater_active">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                underwater_active
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">underwater_active</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>True when UnderwaterPass exists and is applying the underwater look this frame.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_validate_material_shaders">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                validate_material_shaders
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">validate_material_shaders</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">scene</span><span class="o">::</span><span class="n">Scene</span><span class="w"> </span><span class="o">&amp;</span><span class="n">scene</span><span class="p">)</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Validates every loaded MeshRenderer/SdfRenderer material's <code>shader</code> field against config_.surface_shaders, throwing on the first unregistered name.</p>
+<p>Call once after a scene finishes loading (see Engine's ctor)  an unresolvable PBRMaterial::shader is a scene-authoring error, and this is what turns it into a startup failure instead of a silent fall-back-to-stock at draw time. Materials are plain YAML-parsed structs with no pipeline/registry context of their own (see PBRMaterial::shader's doc), so this check can't happen during parsing itself  it has to happen here, once both the scene and this pipeline's registry exist.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">scene</td>
+                        <td class="param-type">coopa::scene::Scene &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_render_config">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                render_config
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">PixelRenderConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">render_config</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Read-only access to the live render config.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const PixelRenderConfig &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_profiler">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_profiler
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_profiler</span><span class="p">(</span><span class="n">FrameProfile</span><span class="w"> </span><span class="o">*</span><span class="n">profile</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Turns on profiling mode: CPU phase timers record into <code>profile</code>, and GPU timestamp queries time each feature's passes (see GpuProfiler). Null turns it off. Without it the frame loop records no queries and pays nothing.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">profile</td>
+                        <td class="param-type">FrameProfile *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_mesh_draw_stats_summary">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                mesh_draw_stats_summary
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">mesh_draw_stats_summary</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Per-frame mesh draw averages since startup  MeshRenderers, how many the camera sees, and draw calls / instances / triangles for the camera passes and for all shadow views together. Empty before the second frame. Engine::run() prints it on exit, beside the frame time.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::string</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_render_config_mut">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                render_config_mut
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">PixelRenderConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">render_config_mut</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>MUTABLE access to the live render config, for changing parameters at runtime.</p>
+<p>Most parameters are re-read from config_ every frame  the fog and volumetrics UBO fills and the bloom/DOF/stylize/tilt-shift push constants all source their values inside render()  so writing through this reference takes effect on the very next frame:</p>
+<p><code>pipeline.render_config_mut().fog_density=0.12f;//visiblenextframe</code></p>
+<p>The exception is the STARTUP-FIXED set (see the file doc's rule 1, and each toggle's own doc in PixelRenderConfig): writing those changes the struct but not what renders, and can leave descriptors pointing at targets nothing writes. Use apply_live_config() when setting many fields at once  it refuses those and names them.</p>
+<p>Mutate between frames, never mid-record.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">PixelRenderConfig &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_apply_live_config">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                apply_live_config
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">apply_live_config</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">PixelRenderConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">next</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Applies a whole config to the live pipeline, skipping startup-fixed fields.</p>
+<p>The bulk counterpart to render_config_mut(): use it when replacing many values at once and you cannot be sure none are startup-fixed. Those are restored from the live values and NAMED in a warning rather than silently dropped  an edit that quietly does nothing is the failure mode that makes runtime tweaking feel broken.</p>
+<p>Call between frames, never mid-record.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">next</td>
+                        <td class="param-type">const PixelRenderConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The config to apply.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_render">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                render
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">render</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">presentation</span><span class="o">::</span><span class="n">Renderer</span><span class="w"> </span><span class="o">&amp;</span><span class="n">renderer</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">scene</span><span class="o">::</span><span class="n">Scene</span><span class="w"> </span><span class="o">&amp;</span><span class="n">scene</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Renders one frame of the given scene.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">renderer</td>
+                        <td class="param-type">coopa::gfx::presentation::Renderer &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">scene</td>
+                        <td class="param-type">coopa::scene::Scene &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dt</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Seconds since the previous frame (or the FIXED_DT override). Accumulated into elapsed_time_ and pushed as gfx_time to every surface-shader backbone, so a derived shader's displacement hook (foliage sway, water waves) can animate. The stock hooks ignore it, so a scene with no derived shaders is unaffected.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+    
+    <!-- Members -->
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

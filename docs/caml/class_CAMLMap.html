@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMLMap - caml Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">caml Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_caml.html">
+                        <span class="badge">C++</span>caml
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_CAMLMap.html">
+                        <span class="badge">C++</span>CAMLMap
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; CAMLMap
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            class
+        </span>
+    </div>
+    
+    <h1>class CAMLMap</h1>
+    
+    
+    
+    
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/caml/includes/caml/caml.h
+    </div>
+    
+    
+    
+    <div class="card docstring">
+        <p>Header-only wrapper managing YAML data nodes with built-in .caml export/import capabilities.</p>
+    </div>
+    
+    
+    
+    
+    <!-- Constructors -->
+    
+    
+    
+    <!-- Methods -->
+    
+    
+    <section>
+        <h2>Methods</h2>
+        
+        <div class="card" id="method_CAMLMap">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                CAMLMap
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">CAMLMap</span><span class="p">()</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_CAMLMap">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                CAMLMap
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">CAMLMap</span><span class="p">(</span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="n">node</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">node</td>
+                        <td class="param-type">fkyaml::node</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_save_yaml">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                save_yaml
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">save_yaml</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">filepath</span><span class="p">)</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">filepath</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_save_caml">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                save_caml
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">save_caml</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">filepath</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">passphrase</span><span class="o">=</span><span class="n">DEFAULT_PASSPHRASE</span><span class="p">)</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">filepath</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">passphrase</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">DEFAULT_PASSPHRASE</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_get_raw_node">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                get_raw_node
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_raw_node</span><span class="p">()</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">fkyaml::node &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_get_raw_node">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                get_raw_node
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">get_raw_node</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const fkyaml::node &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_to_yaml_string">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                to_yaml_string
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">to_yaml_string</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::string</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_load_yaml">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">static</span> 
+                
+                load_yaml
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">static</span><span class="w"> </span><span class="n">CAMLMap</span><span class="w"> </span><span class="n">load_yaml</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">filepath</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">filepath</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">CAMLMap</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_load_caml">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">static</span> 
+                
+                load_caml
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">static</span><span class="w"> </span><span class="n">CAMLMap</span><span class="w"> </span><span class="n">load_caml</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">filepath</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">passphrase</span><span class="o">=</span><span class="n">DEFAULT_PASSPHRASE</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">filepath</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">passphrase</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">DEFAULT_PASSPHRASE</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">CAMLMap</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_from_yaml_string">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">static</span> 
+                
+                from_yaml_string
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">static</span><span class="w"> </span><span class="n">CAMLMap</span><span class="w"> </span><span class="n">from_yaml_string</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">yaml_str</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">yaml_str</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">CAMLMap</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+    
+    <!-- Members -->
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

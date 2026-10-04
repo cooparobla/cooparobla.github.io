@@ -1,0 +1,5756 @@
+[
+  {
+    "name": "coopa",
+    "kind": "Namespace",
+    "url": "scope_coopa.html",
+    "desc": "Root namespace for the libcoopa library."
+  },
+  {
+    "name": "coopa::anim",
+    "kind": "Namespace",
+    "url": "scope_coopa__anim.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::anim::split_channel_suffix",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_split_channel_suffix",
+    "desc": "Splits a trailing channel suffix off a property name. Accepts .x/.y/.z/.w and .r/.g/.b/.a, single or combined (e.g. \"..."
+  },
+  {
+    "name": "coopa::anim::parse_wrap_mode",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_parse_wrap_mode",
+    "desc": "Parses a WrapMode from its YAML spelling (\"once\"/\"loop\"/\"pingpong\"). Defaults to Loop."
+  },
+  {
+    "name": "coopa::anim::parse_value4",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_parse_value4",
+    "desc": "Reads a scalar, {x,y,z,w}/{r,g,b,a} mapping, or [a,b,c,d] sequence into a 4-float array, pre-initialized to the glm-i..."
+  },
+  {
+    "name": "coopa::anim::parse_track",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_parse_track",
+    "desc": "Parses one AnimationTrack from its YAML node \u2014 either a keys: list or a procedural: block."
+  },
+  {
+    "name": "coopa::anim::parse_clip",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_parse_clip",
+    "desc": "Parses a full AnimationClip from an already-deserialized YAML root node. Expects the clip: mapping form described in ..."
+  },
+  {
+    "name": "coopa::anim::install_animation_system",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_install_animation_system",
+    "desc": "Constructs an AnimationSystem and registers it at UpdatePhase::Animation. The one-line install an application needs; ..."
+  },
+  {
+    "name": "coopa::anim::register_animation_components",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_register_animation_components",
+    "desc": "Registers the AnimationClip asset loader and the \"Animator\" scene component parser against the given AssetManager. Ca..."
+  },
+  {
+    "name": "coopa::anim::parse_interpolation",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_parse_interpolation",
+    "desc": "Parses an Interpolation from its YAML spelling. Accepts \"linear\", \"step\", \"ease_in\", \"ease_out\", \"ease_in_out\" (case-..."
+  },
+  {
+    "name": "coopa::anim::apply_easing",
+    "kind": "Function",
+    "url": "scope_coopa__anim.html#func_apply_easing",
+    "desc": "Applies an easing curve to a normalized segment parameter."
+  },
+  {
+    "name": "AnimatedProperty",
+    "kind": "Class",
+    "url": "class_AnimatedProperty.html",
+    "desc": "One registered, typed binding target. cast is resolved ONCE per binding, at an Animator's bind time, and its result c..."
+  },
+  {
+    "name": "AnimatedPropertyRegistry",
+    "kind": "Class",
+    "url": "class_AnimatedPropertyRegistry.html",
+    "desc": "Function-local-static registry of AnimatedProperty, keyed by \"component_type.name\"."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::instance",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_instance",
+    "desc": "The shared instance. Registers the built-in Transform properties on first call."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::add",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_add",
+    "desc": ""
+  },
+  {
+    "name": "AnimatedPropertyRegistry::find",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_find",
+    "desc": "Looks up a property, decoding any channel suffix on property."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::properties_for",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_properties_for",
+    "desc": "Lists every registered property name (bare, no channel suffix) for a component type."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::clear",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_clear",
+    "desc": "Test hook: clears everything, then re-adds the built-ins."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::register_float",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_register_float",
+    "desc": "Registers a single-float property via a getter/setter method pair."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::register_vec",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_register_vec",
+    "desc": "Registers a vector property whose getter returns const V&amp;."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::register_vec_value",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_register_vec_value",
+    "desc": "Registers a vector property whose getter returns V BY VALUE. Needed separately from register_vec() because a single o..."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::register_vec_member",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_register_vec_member",
+    "desc": "Registers a vector property backed directly by a public member of C."
+  },
+  {
+    "name": "AnimatedPropertyRegistry::register_vec_member_as",
+    "kind": "Method",
+    "url": "class_AnimatedPropertyRegistry.html#method_register_vec_member_as",
+    "desc": "Registers a vector property backed by a BASE class's public member, keyed under a DERIVED type_name(). This is how Gr..."
+  },
+  {
+    "name": "AnimationClip",
+    "kind": "Class",
+    "url": "class_AnimationClip.html",
+    "desc": "Immutable, shareable animation data \u2014 the payload behind AssetHandle. Pure data: no SceneObject, no Component, no reg..."
+  },
+  {
+    "name": "AnimationClip::set_explicit_length",
+    "kind": "Method",
+    "url": "class_AnimationClip.html#method_set_explicit_length",
+    "desc": "Sets an explicit length (e.g. from the clip's length: YAML field). Overrides the length that would otherwise be deriv..."
+  },
+  {
+    "name": "AnimationClip::effective_length",
+    "kind": "Method",
+    "url": "class_AnimationClip.html#method_effective_length",
+    "desc": "The clip's length: the explicit length if set, else the longest keyframed track's length, else 0 (meaning \"infinite\" ..."
+  },
+  {
+    "name": "AnimationClip::is_infinite",
+    "kind": "Method",
+    "url": "class_AnimationClip.html#method_is_infinite",
+    "desc": "True when this clip has no way to derive a finite length (see effective_length()'s doc)."
+  },
+  {
+    "name": "AnimationClipLoader",
+    "kind": "Class",
+    "url": "class_AnimationClipLoader.html",
+    "desc": "coopa::asset TypedAssetLoader for AnimationClip \u2014 a pure-CPU asset. decode_typed() runs entirely on the asset IO work..."
+  },
+  {
+    "name": "AnimationClipLoader::decode_typed",
+    "kind": "Method",
+    "url": "class_AnimationClipLoader.html#method_decode_typed",
+    "desc": ""
+  },
+  {
+    "name": "AnimationClipLoader::finalize_typed",
+    "kind": "Method",
+    "url": "class_AnimationClipLoader.html#method_finalize_typed",
+    "desc": ""
+  },
+  {
+    "name": "AnimationClipLoader::type_name",
+    "kind": "Method",
+    "url": "class_AnimationClipLoader.html#method_type_name",
+    "desc": "Human-readable type name, for logging and error messages."
+  },
+  {
+    "name": "AnimationCurve",
+    "kind": "Class",
+    "url": "class_AnimationCurve.html",
+    "desc": "Holds a time-sorted list of Keyframes and samples between them. sample() is STATELESS by design \u2014 no mutable \"last ke..."
+  },
+  {
+    "name": "AnimationCurve::add_key",
+    "kind": "Method",
+    "url": "class_AnimationCurve.html#method_add_key",
+    "desc": "Appends a keyframe. Does not sort \u2014 call sort_keys() once all keys are added."
+  },
+  {
+    "name": "AnimationCurve::sort_keys",
+    "kind": "Method",
+    "url": "class_AnimationCurve.html#method_sort_keys",
+    "desc": "Sorts keys by time ascending. Call once after all add_key() calls (e.g. at load time)."
+  },
+  {
+    "name": "AnimationCurve::keys",
+    "kind": "Method",
+    "url": "class_AnimationCurve.html#method_keys",
+    "desc": "Returns the keys, in whatever order they were last sorted/added."
+  },
+  {
+    "name": "AnimationCurve::empty",
+    "kind": "Method",
+    "url": "class_AnimationCurve.html#method_empty",
+    "desc": "True if this curve has no keys."
+  },
+  {
+    "name": "AnimationCurve::length",
+    "kind": "Method",
+    "url": "class_AnimationCurve.html#method_length",
+    "desc": "The time of the last key, or 0 if empty. Keys must be sorted."
+  },
+  {
+    "name": "AnimationCurve::sample",
+    "kind": "Method",
+    "url": "class_AnimationCurve.html#method_sample",
+    "desc": "Samples the curve at the given time into out. Clamps before the first key and after the last key. Keys must already b..."
+  },
+  {
+    "name": "AnimationSystem",
+    "kind": "Class",
+    "url": "class_AnimationSystem.html",
+    "desc": "Registered at coopa::scene::UpdatePhase::Animation; the sole driver of every Animator. An Animator has no update()/la..."
+  },
+  {
+    "name": "AnimationSystem::system_name",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_system_name",
+    "desc": "Stable name used by Scene::find_system()/remove_system() and logging."
+  },
+  {
+    "name": "AnimationSystem::on_attach",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_on_attach",
+    "desc": "Called once when the system is registered via Scene::add_system()."
+  },
+  {
+    "name": "AnimationSystem::execute",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_execute",
+    "desc": "Does this system's per-frame work. Called with a live Scene&amp; every time \u2014 a system must not cache the reference i..."
+  },
+  {
+    "name": "AnimationSystem::set_parallel_threshold",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_set_parallel_threshold",
+    "desc": "Minimum total active-track count across all Animators before evaluation is dispatched as jobs instead of run inline. ..."
+  },
+  {
+    "name": "AnimationSystem::set_chunk_size",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_set_chunk_size",
+    "desc": "How many Animators' worth of evaluate_() calls go into one job. Default 32."
+  },
+  {
+    "name": "AnimationSystem::refresh",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_refresh",
+    "desc": "Re-gathers the Animator list. Call after adding/removing Animators or toggling set_active()."
+  },
+  {
+    "name": "AnimationSystem::animator_count",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_animator_count",
+    "desc": ""
+  },
+  {
+    "name": "AnimationSystem::find_conflicts",
+    "kind": "Method",
+    "url": "class_AnimationSystem.html#method_find_conflicts",
+    "desc": "Debug aid: one string per (object, component_type, property) written by more than one Animator. Dedup within a single..."
+  },
+  {
+    "name": "AnimationTrack",
+    "kind": "Class",
+    "url": "class_AnimationTrack.html",
+    "desc": "One clip-authored binding target plus its value source. object_path/component_type/component_index/property/channel_m..."
+  },
+  {
+    "name": "Animator",
+    "kind": "Class",
+    "url": "class_Animator.html",
+    "desc": "Plays named AnimatorStates, crossfading between them, driving any number of AnimatedProperty bindings across the scen..."
+  },
+  {
+    "name": "Animator::type_name",
+    "kind": "Method",
+    "url": "class_Animator.html#method_type_name",
+    "desc": "Returns the type name string for this component."
+  },
+  {
+    "name": "Animator::start",
+    "kind": "Method",
+    "url": "class_Animator.html#method_start",
+    "desc": "Binds and starts auto_play, if set. Does NOT warn about a missing \"Animation\" system: SceneLoader::load() (and theref..."
+  },
+  {
+    "name": "Animator::add_state",
+    "kind": "Method",
+    "url": "class_Animator.html#method_add_state",
+    "desc": "Adds a state backed by a programmatically-built clip (e.g. for tests or an imperative demo)."
+  },
+  {
+    "name": "Animator::add_state",
+    "kind": "Method",
+    "url": "class_Animator.html#method_add_state",
+    "desc": "Adds a state backed by an asset-loaded clip."
+  },
+  {
+    "name": "Animator::find_state",
+    "kind": "Method",
+    "url": "class_Animator.html#method_find_state",
+    "desc": "Finds a state by name, or nullptr."
+  },
+  {
+    "name": "Animator::play",
+    "kind": "Method",
+    "url": "class_Animator.html#method_play",
+    "desc": "Immediately switches to state, discarding any in-progress crossfade."
+  },
+  {
+    "name": "Animator::crossfade",
+    "kind": "Method",
+    "url": "class_Animator.html#method_crossfade",
+    "desc": "Crossfades from whatever is currently playing into state over duration seconds. If nothing is currently playing, beha..."
+  },
+  {
+    "name": "Animator::stop",
+    "kind": "Method",
+    "url": "class_Animator.html#method_stop",
+    "desc": "Freezes playback in place; the last-applied pose remains."
+  },
+  {
+    "name": "Animator::sample_at",
+    "kind": "Method",
+    "url": "class_Animator.html#method_sample_at",
+    "desc": "Seeks the current state to time and applies its pose immediately, without advancing playback or firing on_state_finis..."
+  },
+  {
+    "name": "Animator::set_speed",
+    "kind": "Method",
+    "url": "class_Animator.html#method_set_speed",
+    "desc": ""
+  },
+  {
+    "name": "Animator::speed",
+    "kind": "Method",
+    "url": "class_Animator.html#method_speed",
+    "desc": ""
+  },
+  {
+    "name": "Animator::set_time",
+    "kind": "Method",
+    "url": "class_Animator.html#method_set_time",
+    "desc": ""
+  },
+  {
+    "name": "Animator::time",
+    "kind": "Method",
+    "url": "class_Animator.html#method_time",
+    "desc": ""
+  },
+  {
+    "name": "Animator::normalized_time",
+    "kind": "Method",
+    "url": "class_Animator.html#method_normalized_time",
+    "desc": "Current layer's raw time divided by its clip length, or 0 if no state/clip/length."
+  },
+  {
+    "name": "Animator::is_playing",
+    "kind": "Method",
+    "url": "class_Animator.html#method_is_playing",
+    "desc": ""
+  },
+  {
+    "name": "Animator::current_state",
+    "kind": "Method",
+    "url": "class_Animator.html#method_current_state",
+    "desc": ""
+  },
+  {
+    "name": "Animator::rebind",
+    "kind": "Method",
+    "url": "class_Animator.html#method_rebind",
+    "desc": "Re-resolves every track's target object/component/property. Called automatically on start(), on play()/crossfade() in..."
+  },
+  {
+    "name": "Animator::binding_count",
+    "kind": "Method",
+    "url": "class_Animator.html#method_binding_count",
+    "desc": "Number of deduplicated (Component, AnimatedProperty) bindings \u2014 for AnimationSystem's scratch sizing."
+  },
+  {
+    "name": "Animator::active_track_count",
+    "kind": "Method",
+    "url": "class_Animator.html#method_active_track_count",
+    "desc": "Track count across the currently active layer(s) \u2014 what evaluate_() actually samples this frame."
+  },
+  {
+    "name": "AnimatorState",
+    "kind": "Class",
+    "url": "class_AnimatorState.html",
+    "desc": "One named entry on an Animator: a clip (inline or asset-loaded) plus per-state overrides."
+  },
+  {
+    "name": "AnimatorState::resolve",
+    "kind": "Method",
+    "url": "class_AnimatorState.html#method_resolve",
+    "desc": "The clip data to sample, or nullptr if not yet loaded/set."
+  },
+  {
+    "name": "AnimatorState::revision",
+    "kind": "Method",
+    "url": "class_AnimatorState.html#method_revision",
+    "desc": "AssetHandle::revision(), or 0 for an inline clip (which never changes underneath us)."
+  },
+  {
+    "name": "AnimatorState::effective_wrap",
+    "kind": "Method",
+    "url": "class_AnimatorState.html#method_effective_wrap",
+    "desc": ""
+  },
+  {
+    "name": "Keyframe",
+    "kind": "Class",
+    "url": "class_Keyframe.html",
+    "desc": "A single timed value, up to 4 components, on an AnimationCurve. value[] is pre-initialized to the glm-idiomatic xyzw/..."
+  },
+  {
+    "name": "ProceduralInputs",
+    "kind": "Class",
+    "url": "class_ProceduralInputs.html",
+    "desc": "Live scene values snapshotted on the MAIN THREAD, read-only inside evaluate_(). This is the one piece of per-track ru..."
+  },
+  {
+    "name": "ProceduralParams",
+    "kind": "Class",
+    "url": "class_ProceduralParams.html",
+    "desc": "Immutable, clip-authored parameters for one procedural track. Part of the shared, const AnimationClip payload \u2014 sampl..."
+  },
+  {
+    "name": "ProceduralParams::scalar",
+    "kind": "Method",
+    "url": "class_ProceduralParams.html#method_scalar",
+    "desc": ""
+  },
+  {
+    "name": "ProceduralParams::vector",
+    "kind": "Method",
+    "url": "class_ProceduralParams.html#method_vector",
+    "desc": ""
+  },
+  {
+    "name": "ProceduralTrack",
+    "kind": "Class",
+    "url": "class_ProceduralTrack.html",
+    "desc": "Clip-authored data for one procedural track: which evaluator, and its parameters. Pure data, part of the shared const..."
+  },
+  {
+    "name": "ProceduralTrackRegistry",
+    "kind": "Class",
+    "url": "class_ProceduralTrackRegistry.html",
+    "desc": "String-keyed registry of procedural evaluators. Function-local static, mirroring AnimatedPropertyRegistry::instance()..."
+  },
+  {
+    "name": "ProceduralTrackRegistry::instance",
+    "kind": "Method",
+    "url": "class_ProceduralTrackRegistry.html#method_instance",
+    "desc": ""
+  },
+  {
+    "name": "ProceduralTrackRegistry::add",
+    "kind": "Method",
+    "url": "class_ProceduralTrackRegistry.html#method_add",
+    "desc": ""
+  },
+  {
+    "name": "ProceduralTrackRegistry::find",
+    "kind": "Method",
+    "url": "class_ProceduralTrackRegistry.html#method_find",
+    "desc": ""
+  },
+  {
+    "name": "ProceduralTrackRegistry::clear",
+    "kind": "Method",
+    "url": "class_ProceduralTrackRegistry.html#method_clear",
+    "desc": "Test hook: clears everything, then re-adds the built-ins."
+  },
+  {
+    "name": "coopa::asset",
+    "kind": "Namespace",
+    "url": "scope_coopa__asset.html",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle",
+    "kind": "Class",
+    "url": "class_AssetHandle.html",
+    "desc": "Refcounted, typed reference to an asset managed by AssetManager. A handle keeps its slot's ref_count above zero for a..."
+  },
+  {
+    "name": "AssetHandle::AssetHandle",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_AssetHandle",
+    "desc": "Constructs an empty (invalid) handle referencing no slot."
+  },
+  {
+    "name": "AssetHandle::AssetHandle",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_AssetHandle",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::AssetHandle",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_AssetHandle",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::operator=",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::operator=",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::~AssetHandle",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_~AssetHandle",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::is_valid",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_is_valid",
+    "desc": "True if this handle references a slot (regardless of its load state)."
+  },
+  {
+    "name": "AssetHandle::state",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_state",
+    "desc": "Current lifecycle state, or AssetState::Unloaded if this handle is empty."
+  },
+  {
+    "name": "AssetHandle::is_loaded",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_is_loaded",
+    "desc": "True once the payload is published and safe to dereference."
+  },
+  {
+    "name": "AssetHandle::is_failed",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_is_failed",
+    "desc": "True once the load has failed; see error() for details."
+  },
+  {
+    "name": "AssetHandle::error",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_error",
+    "desc": "Error message set when is_failed() is true; empty otherwise."
+  },
+  {
+    "name": "AssetHandle::id",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_id",
+    "desc": "The identity this handle was loaded for, or an empty AssetId if invalid."
+  },
+  {
+    "name": "AssetHandle::revision",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_revision",
+    "desc": "Bumped every time the underlying payload is (re)published, including the first load. Cache this value alongside deriv..."
+  },
+  {
+    "name": "AssetHandle::get",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_get",
+    "desc": "Pointer to the current payload, or nullptr unless is_loaded()."
+  },
+  {
+    "name": "AssetHandle::operator*",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_operator*",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::operator->",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_operator->",
+    "desc": ""
+  },
+  {
+    "name": "AssetHandle::operator bool",
+    "kind": "Method",
+    "url": "class_AssetHandle.html#method_operator bool",
+    "desc": "True when is_loaded() \u2014 lets a handle be used directly as a boolean condition."
+  },
+  {
+    "name": "AssetId",
+    "kind": "Class",
+    "url": "class_AssetId.html",
+    "desc": "Identity of an asset, derived from its virtual (logical) path. Two paths that differ only by backslash-vs-forward-sla..."
+  },
+  {
+    "name": "AssetId::AssetId",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_AssetId",
+    "desc": "Constructs an empty, invalid AssetId."
+  },
+  {
+    "name": "AssetId::hash",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_hash",
+    "desc": "64-bit FNV-1a hash of the normalized path; the key AssetManager stores slots under."
+  },
+  {
+    "name": "AssetId::path",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_path",
+    "desc": "The normalized virtual path this id was built from."
+  },
+  {
+    "name": "AssetId::is_valid",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_is_valid",
+    "desc": "True if this id was built from a non-empty path."
+  },
+  {
+    "name": "AssetId::operator==",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "AssetId::operator!=",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_operator!=",
+    "desc": ""
+  },
+  {
+    "name": "AssetId::from_path",
+    "kind": "Method",
+    "url": "class_AssetId.html#method_from_path",
+    "desc": "Builds an AssetId from a virtual path, normalizing separators."
+  },
+  {
+    "name": "AssetManager",
+    "kind": "Class",
+    "url": "class_AssetManager.html",
+    "desc": "Owns loader registration, slot caching, async loading, and hot reload for every asset type. Downstream packages regis..."
+  },
+  {
+    "name": "AssetManager::AssetManager",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_AssetManager",
+    "desc": "Constructs an AssetManager, optionally sharing an existing JobEngine. Handles are reclaimed individually (see handle...."
+  },
+  {
+    "name": "AssetManager::~AssetManager",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_~AssetManager",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::AssetManager",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_AssetManager",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::operator=",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::add_search_root",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_add_search_root",
+    "desc": "Registers a directory the resolver should search, in registration order."
+  },
+  {
+    "name": "AssetManager::source",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_source",
+    "desc": "The underlying path resolver, for loaders that need to resolve sibling files."
+  },
+  {
+    "name": "AssetManager::source",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_source",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::register_loader",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_register_loader",
+    "desc": "Registers the loader responsible for asset type T. Registering the same type twice replaces the previous loader."
+  },
+  {
+    "name": "AssetManager::clear_loaders",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_clear_loaders",
+    "desc": "Clears every registered loader. Call before the objects a loader's closure/ctor captured (Device, Allocator, ...) are..."
+  },
+  {
+    "name": "AssetManager::loader",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_loader",
+    "desc": "Returns the loader registered for asset type T, or nullptr if none is registered. Lets a caller reach loader-specific..."
+  },
+  {
+    "name": "AssetManager::loader",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_loader",
+    "desc": "Const overload of loader()."
+  },
+  {
+    "name": "AssetManager::load",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_load",
+    "desc": "Loads (or returns the cached handle for) an asset, synchronously. If a load for this id is already in flight via load..."
+  },
+  {
+    "name": "AssetManager::load_async",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_load_async",
+    "desc": "Kicks off an asynchronous load on this manager's JobEngine, at Priority::Low so it never preempts ordinary frame work..."
+  },
+  {
+    "name": "AssetManager::get",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_get",
+    "desc": "Looks up a handle for an already-known id without triggering a load. Resolves virtual_path/base_dir the same way load..."
+  },
+  {
+    "name": "AssetManager::create",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_create",
+    "desc": "Publishes an already-constructed payload into a slot, bypassing AssetSource and the loader entirely. For procedurally..."
+  },
+  {
+    "name": "AssetManager::unload",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_unload",
+    "desc": "Requests eviction of an asset's slot. If any AssetHandle still references the slot (or a load for it is in flight), t..."
+  },
+  {
+    "name": "AssetManager::garbage_collect",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_garbage_collect",
+    "desc": "Evicts every slot whose ref_count has dropped to zero and has no load in flight."
+  },
+  {
+    "name": "AssetManager::set_idle_eviction",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_set_idle_eviction",
+    "desc": "Enables/disables automatic eviction of slots unreferenced for max_idle_frames() (checked inside update()). Off by def..."
+  },
+  {
+    "name": "AssetManager::set_max_idle_frames",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_set_max_idle_frames",
+    "desc": "Consecutive idle update() calls before a slot is evicted. Default 300 (~5s at 60fps). 0 evicts on the first idle upda..."
+  },
+  {
+    "name": "AssetManager::idle_eviction_enabled",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_idle_eviction_enabled",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::max_idle_frames",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_max_idle_frames",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::set_hot_reload",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_set_hot_reload",
+    "desc": "Enables/disables mtime-polling hot reload (checked inside update()). Off by default."
+  },
+  {
+    "name": "AssetManager::reload_changed",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_reload_changed",
+    "desc": "Runs hot reload's change check now, regardless of set_hot_reload() and the poll interval: every referenced, loaded as..."
+  },
+  {
+    "name": "AssetManager::set_poll_interval",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_set_poll_interval",
+    "desc": "Seconds between hot-reload polling passes. Default 1.0."
+  },
+  {
+    "name": "AssetManager::hot_reload_enabled",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_hot_reload_enabled",
+    "desc": ""
+  },
+  {
+    "name": "AssetManager::pending_load_count",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_pending_load_count",
+    "desc": "Number of async loads still in flight; 0 once every load_async() has been finalized."
+  },
+  {
+    "name": "AssetManager::update",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_update",
+    "desc": "Drains completed async loads, ages out retired payloads, sweeps idle slots, and (if enabled) polls for hot reload. Ca..."
+  },
+  {
+    "name": "AssetManager::shutdown",
+    "kind": "Method",
+    "url": "class_AssetManager.html#method_shutdown",
+    "desc": "Drains in-flight loads, releases every payload, and clears loaders and slots. Must be called while whatever a registe..."
+  },
+  {
+    "name": "AssetSource",
+    "kind": "Class",
+    "url": "class_AssetSource.html",
+    "desc": "Resolves virtual asset paths against a list of search roots and reads their bytes. Resolution order for a virtual pat..."
+  },
+  {
+    "name": "AssetSource::add_search_root",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_add_search_root",
+    "desc": "Registers a directory to search, in the order roots should be tried."
+  },
+  {
+    "name": "AssetSource::clear_search_roots",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_clear_search_roots",
+    "desc": "Removes every registered search root."
+  },
+  {
+    "name": "AssetSource::search_roots",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_search_roots",
+    "desc": "The registered search roots, in try-order."
+  },
+  {
+    "name": "AssetSource::resolve",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_resolve",
+    "desc": "Resolves a virtual path to a concrete filesystem path."
+  },
+  {
+    "name": "AssetSource::exists",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_exists",
+    "desc": "True if resolve() would find an existing file for this path."
+  },
+  {
+    "name": "AssetSource::read_bytes",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_read_bytes",
+    "desc": "Reads a resolved (already-concrete) file path fully into memory."
+  },
+  {
+    "name": "AssetSource::last_write_time_ns",
+    "kind": "Method",
+    "url": "class_AssetSource.html#method_last_write_time_ns",
+    "desc": "Returns a file's last-write time as an opaque, monotonically-ordered tick count. Only meaningful for ordering compari..."
+  },
+  {
+    "name": "IAssetLoader",
+    "kind": "Class",
+    "url": "class_IAssetLoader.html",
+    "desc": "Type-erased two-stage loader: an off-thread decode(), a main-thread finalize(). decode() must be safe to call from a ..."
+  },
+  {
+    "name": "IAssetLoader::~IAssetLoader",
+    "kind": "Method",
+    "url": "class_IAssetLoader.html#method_~IAssetLoader",
+    "desc": ""
+  },
+  {
+    "name": "IAssetLoader::decode",
+    "kind": "Method",
+    "url": "class_IAssetLoader.html#method_decode",
+    "desc": "Reads and decodes raw bytes into an intermediate, GPU-free representation. May run on a worker thread \u2014 must not touc..."
+  },
+  {
+    "name": "IAssetLoader::finalize",
+    "kind": "Method",
+    "url": "class_IAssetLoader.html#method_finalize",
+    "desc": "Finalizes a decoded intermediate into the published asset payload. Always runs on the thread driving AssetManager::up..."
+  },
+  {
+    "name": "IAssetLoader::type_name",
+    "kind": "Method",
+    "url": "class_IAssetLoader.html#method_type_name",
+    "desc": "Human-readable type name, for logging and error messages."
+  },
+  {
+    "name": "LoadContext",
+    "kind": "Class",
+    "url": "class_LoadContext.html",
+    "desc": "Everything a loader needs beyond the raw bytes to decode/finalize an asset."
+  },
+  {
+    "name": "TypedAssetLoader",
+    "kind": "Class",
+    "url": "class_TypedAssetLoader.html",
+    "desc": "Typed adapter over IAssetLoader that removes std::shared_ptr casts from implementations. classTextureLoader:publiccoo..."
+  },
+  {
+    "name": "TypedAssetLoader::decode_typed",
+    "kind": "Method",
+    "url": "class_TypedAssetLoader.html#method_decode_typed",
+    "desc": "Reads and decodes raw bytes into an intermediate, GPU-free representation. May run on a worker thread \u2014 must not touc..."
+  },
+  {
+    "name": "TypedAssetLoader::finalize_typed",
+    "kind": "Method",
+    "url": "class_TypedAssetLoader.html#method_finalize_typed",
+    "desc": "Finalizes a decoded intermediate into the published asset payload. Always runs on the thread driving AssetManager::up..."
+  },
+  {
+    "name": "TypedAssetLoader::decode",
+    "kind": "Method",
+    "url": "class_TypedAssetLoader.html#method_decode",
+    "desc": "Reads and decodes raw bytes into an intermediate, GPU-free representation. May run on a worker thread \u2014 must not touc..."
+  },
+  {
+    "name": "TypedAssetLoader::finalize",
+    "kind": "Method",
+    "url": "class_TypedAssetLoader.html#method_finalize",
+    "desc": "Finalizes a decoded intermediate into the published asset payload. Always runs on the thread driving AssetManager::up..."
+  },
+  {
+    "name": "coopa::asset::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__asset__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "AssetSlot",
+    "kind": "Class",
+    "url": "class_AssetSlot.html",
+    "desc": "One asset's identity, lifecycle state, and published payload. AssetManager owns every AssetSlot behind a std::unique_..."
+  },
+  {
+    "name": "AssetSlot::AssetSlot",
+    "kind": "Method",
+    "url": "class_AssetSlot.html#method_AssetSlot",
+    "desc": "Constructs a slot for the given identity and asset type."
+  },
+  {
+    "name": "coopa::collections",
+    "kind": "Namespace",
+    "url": "scope_coopa__collections.html",
+    "desc": "Namespace containing collection utilities."
+  },
+  {
+    "name": "YAMLMap",
+    "kind": "Class",
+    "url": "class_YAMLMap.html",
+    "desc": "A wrapper class for managing YAML configuration using fkYAML."
+  },
+  {
+    "name": "YAMLMap::YAMLMap",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_YAMLMap",
+    "desc": "Constructs an empty YAMLMap with a mapping root node."
+  },
+  {
+    "name": "YAMLMap::YAMLMap",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_YAMLMap",
+    "desc": "Constructs a YAMLMap from an existing fkYAML node."
+  },
+  {
+    "name": "YAMLMap::save",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_save",
+    "desc": "Saves the current configuration to the specified file path."
+  },
+  {
+    "name": "YAMLMap::get",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_get",
+    "desc": "Retrieves a scalar value associated with the given key."
+  },
+  {
+    "name": "YAMLMap::get_node",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_get_node",
+    "desc": "Retrieves a nested YAMLMap node."
+  },
+  {
+    "name": "YAMLMap::exists",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_exists",
+    "desc": "Checks if a key exists in the current YAML map."
+  },
+  {
+    "name": "YAMLMap::set",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_set",
+    "desc": "Sets a value associated with the given key."
+  },
+  {
+    "name": "YAMLMap::get_vector",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_get_vector",
+    "desc": "Retrieves a list/sequence of elements from a key."
+  },
+  {
+    "name": "YAMLMap::set_vector",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_set_vector",
+    "desc": "Sets a key in the YAML map to a std::vector. (CORRECTED)"
+  },
+  {
+    "name": "YAMLMap::get_raw_node",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_get_raw_node",
+    "desc": "Retrieves the raw fkYAML node reference."
+  },
+  {
+    "name": "YAMLMap::get_raw_node",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_get_raw_node",
+    "desc": "Retrieves the raw fkYAML node reference (const version)."
+  },
+  {
+    "name": "YAMLMap::size",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_size",
+    "desc": "Gets the size of the YAMLMap (number of mapping keys or sequence elements)."
+  },
+  {
+    "name": "YAMLMap::log",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_log",
+    "desc": "Dumps the current YAML node's content to the logger."
+  },
+  {
+    "name": "YAMLMap::load",
+    "kind": "Method",
+    "url": "class_YAMLMap.html#method_load",
+    "desc": "Loads a YAML file from the specified path."
+  },
+  {
+    "name": "coopa::debug",
+    "kind": "Namespace",
+    "url": "scope_coopa__debug.html",
+    "desc": ""
+  },
+  {
+    "name": "DebugBucket",
+    "kind": "Class",
+    "url": "class_DebugBucket.html",
+    "desc": "A container bucket to collect parallel logs, sorting them by timestamp before output. Identical to DebugManager excep..."
+  },
+  {
+    "name": "DebugBucket::DebugBucket",
+    "kind": "Method",
+    "url": "class_DebugBucket.html#method_DebugBucket",
+    "desc": "Constructs a DebugBucket."
+  },
+  {
+    "name": "DebugBucket::info",
+    "kind": "Method",
+    "url": "class_DebugBucket.html#method_info",
+    "desc": "Pushes a message into the bucket's queue with the current timestamp."
+  },
+  {
+    "name": "DebugBucket::show",
+    "kind": "Method",
+    "url": "class_DebugBucket.html#method_show",
+    "desc": "Sorts and prints all queued log messages to console."
+  },
+  {
+    "name": "DebugBucket::get_context",
+    "kind": "Method",
+    "url": "class_DebugBucket.html#method_get_context",
+    "desc": "Retrieves the associated DebugContext."
+  },
+  {
+    "name": "DebugContext",
+    "kind": "Class",
+    "url": "class_DebugContext.html",
+    "desc": "Thread-safe logging context that pushes logs into a ParallelQueue."
+  },
+  {
+    "name": "DebugContext::DebugContext",
+    "kind": "Method",
+    "url": "class_DebugContext.html#method_DebugContext",
+    "desc": "Constructs a DebugContext associated with a specific queue."
+  },
+  {
+    "name": "DebugContext::info",
+    "kind": "Method",
+    "url": "class_DebugContext.html#method_info",
+    "desc": "Pushes a new log message into the queue with the current system time."
+  },
+  {
+    "name": "DebugManager",
+    "kind": "Class",
+    "url": "class_DebugManager.html",
+    "desc": "Manager class that collects, sorts, and prints queue-based diagnostic logs. Collects under a [JOBS] scope. See DebugB..."
+  },
+  {
+    "name": "DebugManager::DebugManager",
+    "kind": "Method",
+    "url": "class_DebugManager.html#method_DebugManager",
+    "desc": "Constructs a DebugManager."
+  },
+  {
+    "name": "DebugManager::info",
+    "kind": "Method",
+    "url": "class_DebugManager.html#method_info",
+    "desc": "Submits a log message into the queue with the current timestamp."
+  },
+  {
+    "name": "DebugManager::show",
+    "kind": "Method",
+    "url": "class_DebugManager.html#method_show",
+    "desc": "Flushes all collected log messages, sorts them chronologically, and prints to console."
+  },
+  {
+    "name": "DebugManager::get_context",
+    "kind": "Method",
+    "url": "class_DebugManager.html#method_get_context",
+    "desc": "Returns a reference to the internal DebugContext."
+  },
+  {
+    "name": "Logger",
+    "kind": "Class",
+    "url": "class_Logger.html",
+    "desc": "Thread-safe synchronous logger that formats outputs with timestamps and level tags."
+  },
+  {
+    "name": "Logger::Logger",
+    "kind": "Method",
+    "url": "class_Logger.html#method_Logger",
+    "desc": "Constructs a Logger instance."
+  },
+  {
+    "name": "Logger::~Logger",
+    "kind": "Method",
+    "url": "class_Logger.html#method_~Logger",
+    "desc": "Virtual destructor."
+  },
+  {
+    "name": "Logger::info",
+    "kind": "Method",
+    "url": "class_Logger.html#method_info",
+    "desc": "Logs an informational message."
+  },
+  {
+    "name": "Logger::warn",
+    "kind": "Method",
+    "url": "class_Logger.html#method_warn",
+    "desc": "Logs a warning message."
+  },
+  {
+    "name": "Logger::error",
+    "kind": "Method",
+    "url": "class_Logger.html#method_error",
+    "desc": "Logs an error message."
+  },
+  {
+    "name": "LogMessage",
+    "kind": "Class",
+    "url": "class_LogMessage.html",
+    "desc": "Representation of a logged message."
+  },
+  {
+    "name": "LogMessage::LogMessage",
+    "kind": "Method",
+    "url": "class_LogMessage.html#method_LogMessage",
+    "desc": "Default constructor (required for queue containers)."
+  },
+  {
+    "name": "LogMessage::LogMessage",
+    "kind": "Method",
+    "url": "class_LogMessage.html#method_LogMessage",
+    "desc": "Constructs a LogMessage with full details."
+  },
+  {
+    "name": "LogMessage::operator<",
+    "kind": "Method",
+    "url": "class_LogMessage.html#method_operator<",
+    "desc": "Compares two LogMessages by their timestamp."
+  },
+  {
+    "name": "Printer",
+    "kind": "Class",
+    "url": "class_Printer.html",
+    "desc": "Interface for logging messages."
+  },
+  {
+    "name": "Printer::Printer",
+    "kind": "Method",
+    "url": "class_Printer.html#method_Printer",
+    "desc": "Constructs a Printer."
+  },
+  {
+    "name": "Printer::~Printer",
+    "kind": "Method",
+    "url": "class_Printer.html#method_~Printer",
+    "desc": "Virtual destructor for clean inheritance teardown."
+  },
+  {
+    "name": "Printer::info",
+    "kind": "Method",
+    "url": "class_Printer.html#method_info",
+    "desc": "Logs an informational message."
+  },
+  {
+    "name": "coopa::debug::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__debug__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::debug::detail::format_timestamp",
+    "kind": "Function",
+    "url": "scope_coopa__debug__detail.html#func_format_timestamp",
+    "desc": "Renders a time point as HH:MM:SS.mmm in local time. Deliberately time-of-day only: these logs are read alongside a ru..."
+  },
+  {
+    "name": "coopa::debug::detail::drain_sorted",
+    "kind": "Function",
+    "url": "scope_coopa__debug__detail.html#func_drain_sorted",
+    "desc": "Drains a log queue, orders it by timestamp, and writes it out. Messages arrive from many worker threads in whatever o..."
+  },
+  {
+    "name": "coopa::event",
+    "kind": "Namespace",
+    "url": "scope_coopa__event.html",
+    "desc": ""
+  },
+  {
+    "name": "Connection",
+    "kind": "Class",
+    "url": "class_Connection.html",
+    "desc": "Copyable token identifying one slot, safe to hold past its Signal's lifetime."
+  },
+  {
+    "name": "Connection::Connection",
+    "kind": "Method",
+    "url": "class_Connection.html#method_Connection",
+    "desc": ""
+  },
+  {
+    "name": "Connection::connected",
+    "kind": "Method",
+    "url": "class_Connection.html#method_connected",
+    "desc": "True if the signal still exists and the slot is still attached."
+  },
+  {
+    "name": "Connection::disconnect",
+    "kind": "Method",
+    "url": "class_Connection.html#method_disconnect",
+    "desc": "Detaches the slot from its signal, if both still exist."
+  },
+  {
+    "name": "Connection::id",
+    "kind": "Method",
+    "url": "class_Connection.html#method_id",
+    "desc": "The slot id, or k_invalid_slot for an empty connection."
+  },
+  {
+    "name": "EventArgs",
+    "kind": "Class",
+    "url": "class_EventArgs.html",
+    "desc": "A named signal's argument bag: order-independent key -&gt; EventValue. EventArgsargs; args.set(\"x\",pos.x).set(\"y\",pos..."
+  },
+  {
+    "name": "EventArgs::EventArgs",
+    "kind": "Method",
+    "url": "class_EventArgs.html#method_EventArgs",
+    "desc": ""
+  },
+  {
+    "name": "EventArgs::set",
+    "kind": "Method",
+    "url": "class_EventArgs.html#method_set",
+    "desc": "Sets key to v, returning *this for chained set() calls."
+  },
+  {
+    "name": "EventArgs::get",
+    "kind": "Method",
+    "url": "class_EventArgs.html#method_get",
+    "desc": "Returns key's value as T, or fallback if key is absent or the wrong category."
+  },
+  {
+    "name": "EventArgs::contains",
+    "kind": "Method",
+    "url": "class_EventArgs.html#method_contains",
+    "desc": ""
+  },
+  {
+    "name": "EventArgs::to_string",
+    "kind": "Method",
+    "url": "class_EventArgs.html#method_to_string",
+    "desc": "key's value rendered as text (see EventValue::to_string()), or fallback if key is absent."
+  },
+  {
+    "name": "EventBus",
+    "kind": "Class",
+    "url": "class_EventBus.html",
+    "desc": "Named (object name, signal name) pub/sub, plus a signal-name-only wildcard tier. Every (object name, signal name) pai..."
+  },
+  {
+    "name": "EventBus::on",
+    "kind": "Method",
+    "url": "class_EventBus.html#method_on",
+    "desc": "Listens for signal_name emitted specifically as object_name."
+  },
+  {
+    "name": "EventBus::on_any",
+    "kind": "Method",
+    "url": "class_EventBus.html#method_on_any",
+    "desc": "Listens for signal_name emitted as ANY object."
+  },
+  {
+    "name": "EventBus::emit",
+    "kind": "Method",
+    "url": "class_EventBus.html#method_emit",
+    "desc": "Emits signal_name as object_name with args, notifying both the object-specific listeners and the signal's wildcard li..."
+  },
+  {
+    "name": "EventValue",
+    "kind": "Class",
+    "url": "class_EventValue.html",
+    "desc": "A single named signal argument: bool, integer, floating-point, or string. Covers every payload shape currently needed..."
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::EventValue",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_EventValue",
+    "desc": ""
+  },
+  {
+    "name": "EventValue::is",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_is",
+    "desc": "Whether the stored value's category matches T (bool / integral / floating-point / string)."
+  },
+  {
+    "name": "EventValue::as",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_as",
+    "desc": "Returns the stored value as T, or fallback if the category doesn't match. Never throws \u2014 a mismatched request (e.g. a..."
+  },
+  {
+    "name": "EventValue::to_string",
+    "kind": "Method",
+    "url": "class_EventValue.html#method_to_string",
+    "desc": "Renders the stored value as text, whatever its category \u2014 bool as \"true\"/\"false\", numbers via std::to_string, strings..."
+  },
+  {
+    "name": "ScopedConnection",
+    "kind": "Class",
+    "url": "class_ScopedConnection.html",
+    "desc": "Move-only RAII owner of a Connection; disconnects on destruction. coopa::event::ScopedConnectionc=button-&gt;on_click..."
+  },
+  {
+    "name": "ScopedConnection::ScopedConnection",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_ScopedConnection",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::ScopedConnection",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_ScopedConnection",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::ScopedConnection",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_ScopedConnection",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::operator=",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::ScopedConnection",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_ScopedConnection",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::operator=",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::operator=",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_operator=",
+    "desc": "Disconnects whatever this held, then takes ownership of connection."
+  },
+  {
+    "name": "ScopedConnection::~ScopedConnection",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_~ScopedConnection",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::connected",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_connected",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::disconnect",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_disconnect",
+    "desc": ""
+  },
+  {
+    "name": "ScopedConnection::release",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_release",
+    "desc": "Gives up ownership without disconnecting."
+  },
+  {
+    "name": "ScopedConnection::connection",
+    "kind": "Method",
+    "url": "class_ScopedConnection.html#method_connection",
+    "desc": ""
+  },
+  {
+    "name": "Signal",
+    "kind": "Class",
+    "url": "class_Signal.html",
+    "desc": "Multicast event source: many slots, one emit(). Re-entrancy: a slot may connect a new slot (it runs starting from the..."
+  },
+  {
+    "name": "Signal::Signal",
+    "kind": "Method",
+    "url": "class_Signal.html#method_Signal",
+    "desc": ""
+  },
+  {
+    "name": "Signal::~Signal",
+    "kind": "Method",
+    "url": "class_Signal.html#method_~Signal",
+    "desc": ""
+  },
+  {
+    "name": "Signal::Signal",
+    "kind": "Method",
+    "url": "class_Signal.html#method_Signal",
+    "desc": ""
+  },
+  {
+    "name": "Signal::operator=",
+    "kind": "Method",
+    "url": "class_Signal.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Signal::Signal",
+    "kind": "Method",
+    "url": "class_Signal.html#method_Signal",
+    "desc": ""
+  },
+  {
+    "name": "Signal::operator=",
+    "kind": "Method",
+    "url": "class_Signal.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Signal::connect",
+    "kind": "Method",
+    "url": "class_Signal.html#method_connect",
+    "desc": "Attaches a slot."
+  },
+  {
+    "name": "Signal::connect_scoped",
+    "kind": "Method",
+    "url": "class_Signal.html#method_connect_scoped",
+    "desc": "connect() wrapped in RAII."
+  },
+  {
+    "name": "Signal::disconnect",
+    "kind": "Method",
+    "url": "class_Signal.html#method_disconnect",
+    "desc": "Detaches the slot with the given id."
+  },
+  {
+    "name": "Signal::disconnect",
+    "kind": "Method",
+    "url": "class_Signal.html#method_disconnect",
+    "desc": ""
+  },
+  {
+    "name": "Signal::disconnect_all",
+    "kind": "Method",
+    "url": "class_Signal.html#method_disconnect_all",
+    "desc": "Detaches every slot."
+  },
+  {
+    "name": "Signal::emit",
+    "kind": "Method",
+    "url": "class_Signal.html#method_emit",
+    "desc": "Invokes every attached slot, in connection order."
+  },
+  {
+    "name": "Signal::operator()",
+    "kind": "Method",
+    "url": "class_Signal.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "Signal::slot_count",
+    "kind": "Method",
+    "url": "class_Signal.html#method_slot_count",
+    "desc": "Number of currently attached slots (including ones connected during an emit)."
+  },
+  {
+    "name": "Signal::empty",
+    "kind": "Method",
+    "url": "class_Signal.html#method_empty",
+    "desc": ""
+  },
+  {
+    "name": "Signal::has_slot",
+    "kind": "Method",
+    "url": "class_Signal.html#method_has_slot",
+    "desc": "Whether a given slot id is still attached (used by Connection::connected())."
+  },
+  {
+    "name": "coopa::event::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__event__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "SignalCore",
+    "kind": "Class",
+    "url": "class_SignalCore.html",
+    "desc": "Shared control block linking a Signal to every Connection it handed out. The Signal owns the only shared_ptr to this ..."
+  },
+  {
+    "name": "coopa::input",
+    "kind": "Namespace",
+    "url": "scope_coopa__input.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::input::operator|",
+    "kind": "Function",
+    "url": "scope_coopa__input.html#func_operator|",
+    "desc": "Combines two modifier masks."
+  },
+  {
+    "name": "coopa::input::operator|=",
+    "kind": "Function",
+    "url": "scope_coopa__input.html#func_operator|=",
+    "desc": "Merges b into a in place."
+  },
+  {
+    "name": "coopa::input::operator&",
+    "kind": "Function",
+    "url": "scope_coopa__input.html#func_operator&",
+    "desc": "Intersects two modifier masks."
+  },
+  {
+    "name": "coopa::input::has",
+    "kind": "Function",
+    "url": "scope_coopa__input.html#func_has",
+    "desc": "True if set contains every bit set in m (e.g. a Ctrl+Shift chord's has(mods, Mods::Control | Mods::Shift)). m == Mods..."
+  },
+  {
+    "name": "coopa::input::key_name",
+    "kind": "Function",
+    "url": "scope_coopa__input.html#func_key_name",
+    "desc": "A short display name for key, e.g. for a keybinding-remap UI. Returns \"Unknown\" for Key::Unknown, Key::Count, or any ..."
+  },
+  {
+    "name": "IInputBackend",
+    "kind": "Class",
+    "url": "class_IInputBackend.html",
+    "desc": "Cursor/clipboard commands an Input forwards to its owning window."
+  },
+  {
+    "name": "IInputBackend::~IInputBackend",
+    "kind": "Method",
+    "url": "class_IInputBackend.html#method_~IInputBackend",
+    "desc": ""
+  },
+  {
+    "name": "IInputBackend::set_cursor_shape",
+    "kind": "Method",
+    "url": "class_IInputBackend.html#method_set_cursor_shape",
+    "desc": "Sets the mouse cursor's shape (e.g. for hover feedback over UI widgets)."
+  },
+  {
+    "name": "IInputBackend::set_cursor_mode",
+    "kind": "Method",
+    "url": "class_IInputBackend.html#method_set_cursor_mode",
+    "desc": "Sets the cursor's visibility/capture behavior (see CursorMode)."
+  },
+  {
+    "name": "IInputBackend::set_cursor_position",
+    "kind": "Method",
+    "url": "class_IInputBackend.html#method_set_cursor_position",
+    "desc": "Warps the OS cursor to (x, y) in window coordinates."
+  },
+  {
+    "name": "IInputBackend::set_clipboard_text",
+    "kind": "Method",
+    "url": "class_IInputBackend.html#method_set_clipboard_text",
+    "desc": "Sets the system clipboard's text contents."
+  },
+  {
+    "name": "IInputBackend::clipboard_text",
+    "kind": "Method",
+    "url": "class_IInputBackend.html#method_clipboard_text",
+    "desc": "Returns the system clipboard's current text contents."
+  },
+  {
+    "name": "Input",
+    "kind": "Class",
+    "url": "class_Input.html",
+    "desc": "Complete per-frame keyboard/mouse state: level, edges, deltas, held time, discrete events, modifiers, and cursor/clip..."
+  },
+  {
+    "name": "Input::set_backend",
+    "kind": "Method",
+    "url": "class_Input.html#method_set_backend",
+    "desc": "Attaches the backend that set_cursor_*()/set_clipboard_text() forward to. Pass nullptr to detach (state is then cache..."
+  },
+  {
+    "name": "Input::backend",
+    "kind": "Method",
+    "url": "class_Input.html#method_backend",
+    "desc": ""
+  },
+  {
+    "name": "Input::begin_frame",
+    "kind": "Method",
+    "url": "class_Input.html#method_begin_frame",
+    "desc": "Clears this frame's edges/events/deltas and accumulates held-time for whatever is still down, using the PREVIOUS fram..."
+  },
+  {
+    "name": "Input::push_key",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_key",
+    "desc": "Records a keyboard transition. Repeats update key_events() but leave down/pressed/released untouched \u2014 the key was al..."
+  },
+  {
+    "name": "Input::push_char",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_char",
+    "desc": "Records a printable-text codepoint (UTF-32), independent of push_key()."
+  },
+  {
+    "name": "Input::push_mouse_button",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_mouse_button",
+    "desc": "Records a mouse button transition. Event-driven (unlike the old GLFW polling this replaces), so a press and release i..."
+  },
+  {
+    "name": "Input::push_cursor_position",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_cursor_position",
+    "desc": "Records the cursor's absolute position, in window coordinates (+Y down). cursor_delta() accumulates the change across..."
+  },
+  {
+    "name": "Input::push_scroll",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_scroll",
+    "desc": "Accumulates a scroll wheel delta, in wheel notches."
+  },
+  {
+    "name": "Input::push_focus",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_focus",
+    "desc": "Records the window's OS focus state. Losing focus releases every held key/button \u2014 the OS is not guaranteed to delive..."
+  },
+  {
+    "name": "Input::push_cursor_enter",
+    "kind": "Method",
+    "url": "class_Input.html#method_push_cursor_enter",
+    "desc": "Records whether the cursor is currently inside the window's client area."
+  },
+  {
+    "name": "Input::release_all",
+    "kind": "Method",
+    "url": "class_Input.html#method_release_all",
+    "desc": "Forces every key and mouse button to released, firing this frame's release edge for anything that was down. See push_..."
+  },
+  {
+    "name": "Input::key_down",
+    "kind": "Method",
+    "url": "class_Input.html#method_key_down",
+    "desc": "True while key is held down (level-triggered)."
+  },
+  {
+    "name": "Input::key_pressed",
+    "kind": "Method",
+    "url": "class_Input.html#method_key_pressed",
+    "desc": "True on the exact frame key transitioned to down."
+  },
+  {
+    "name": "Input::key_released",
+    "kind": "Method",
+    "url": "class_Input.html#method_key_released",
+    "desc": "True on the exact frame key transitioned to up."
+  },
+  {
+    "name": "Input::key_held_time",
+    "kind": "Method",
+    "url": "class_Input.html#method_key_held_time",
+    "desc": "Seconds key has been continuously held; 0 if it isn't down."
+  },
+  {
+    "name": "Input::any_key_down",
+    "kind": "Method",
+    "url": "class_Input.html#method_any_key_down",
+    "desc": "True if any key at all is currently down."
+  },
+  {
+    "name": "Input::any_key_pressed",
+    "kind": "Method",
+    "url": "class_Input.html#method_any_key_pressed",
+    "desc": "True if any key at all was pressed this frame."
+  },
+  {
+    "name": "Input::button_down",
+    "kind": "Method",
+    "url": "class_Input.html#method_button_down",
+    "desc": "True while button is held down (level-triggered)."
+  },
+  {
+    "name": "Input::button_pressed",
+    "kind": "Method",
+    "url": "class_Input.html#method_button_pressed",
+    "desc": "True on the exact frame button transitioned to down."
+  },
+  {
+    "name": "Input::button_released",
+    "kind": "Method",
+    "url": "class_Input.html#method_button_released",
+    "desc": "True on the exact frame button transitioned to up."
+  },
+  {
+    "name": "Input::button_held_time",
+    "kind": "Method",
+    "url": "class_Input.html#method_button_held_time",
+    "desc": "Seconds button has been continuously held; 0 if it isn't down."
+  },
+  {
+    "name": "Input::mods",
+    "kind": "Method",
+    "url": "class_Input.html#method_mods",
+    "desc": "The modifier mask active as of the most recent key or button event."
+  },
+  {
+    "name": "Input::mod_down",
+    "kind": "Method",
+    "url": "class_Input.html#method_mod_down",
+    "desc": "True if every bit of m is currently held (see has())."
+  },
+  {
+    "name": "Input::cursor_position",
+    "kind": "Method",
+    "url": "class_Input.html#method_cursor_position",
+    "desc": "Cursor position in window coordinates (+Y down), as of the last push_cursor_position()."
+  },
+  {
+    "name": "Input::cursor_delta",
+    "kind": "Method",
+    "url": "class_Input.html#method_cursor_delta",
+    "desc": "Cursor motion accumulated since the last begin_frame()."
+  },
+  {
+    "name": "Input::scroll_delta",
+    "kind": "Method",
+    "url": "class_Input.html#method_scroll_delta",
+    "desc": "Scroll wheel delta accumulated since the last begin_frame()."
+  },
+  {
+    "name": "Input::chars",
+    "kind": "Method",
+    "url": "class_Input.html#method_chars",
+    "desc": "UTF-32 codepoints typed since the last begin_frame()."
+  },
+  {
+    "name": "Input::key_events",
+    "kind": "Method",
+    "url": "class_Input.html#method_key_events",
+    "desc": "Discrete key press/release/repeat events since the last begin_frame()."
+  },
+  {
+    "name": "Input::button_events",
+    "kind": "Method",
+    "url": "class_Input.html#method_button_events",
+    "desc": "Discrete mouse button press/release events since the last begin_frame()."
+  },
+  {
+    "name": "Input::focused",
+    "kind": "Method",
+    "url": "class_Input.html#method_focused",
+    "desc": "True if the window currently has OS input focus."
+  },
+  {
+    "name": "Input::cursor_inside",
+    "kind": "Method",
+    "url": "class_Input.html#method_cursor_inside",
+    "desc": "True if the cursor is currently inside the window's client area."
+  },
+  {
+    "name": "Input::set_cursor_shape",
+    "kind": "Method",
+    "url": "class_Input.html#method_set_cursor_shape",
+    "desc": "Sets the mouse cursor's shape."
+  },
+  {
+    "name": "Input::cursor_shape",
+    "kind": "Method",
+    "url": "class_Input.html#method_cursor_shape",
+    "desc": "The shape last set via set_cursor_shape() (Arrow by default)."
+  },
+  {
+    "name": "Input::set_cursor_mode",
+    "kind": "Method",
+    "url": "class_Input.html#method_set_cursor_mode",
+    "desc": "Sets the cursor's visibility/capture mode. Re-arms the first-delta suppression described on push_cursor_position(), s..."
+  },
+  {
+    "name": "Input::cursor_mode",
+    "kind": "Method",
+    "url": "class_Input.html#method_cursor_mode",
+    "desc": "The mode last set via set_cursor_mode() (Normal by default)."
+  },
+  {
+    "name": "Input::set_cursor_position",
+    "kind": "Method",
+    "url": "class_Input.html#method_set_cursor_position",
+    "desc": "Warps the cursor to (x, y) in window coordinates. This call itself is the new position baseline, not a jump to suppre..."
+  },
+  {
+    "name": "Input::set_clipboard_text",
+    "kind": "Method",
+    "url": "class_Input.html#method_set_clipboard_text",
+    "desc": "Sets the system clipboard's text contents."
+  },
+  {
+    "name": "Input::clipboard_text",
+    "kind": "Method",
+    "url": "class_Input.html#method_clipboard_text",
+    "desc": "Returns the system clipboard's text from the backend if one is attached, else the last value cached by set_clipboard_..."
+  },
+  {
+    "name": "InputMap",
+    "kind": "Class",
+    "url": "class_InputMap.html",
+    "desc": "Maps named actions to one or more keys/mouse buttons (optionally requiring a modifier chord), and named axes/vectors ..."
+  },
+  {
+    "name": "InputMap::bind",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_bind",
+    "desc": "Binds a key to an action, optionally requiring required_mods to be held too (e.g. bind(\"save\", Key::S, Mods::Control)..."
+  },
+  {
+    "name": "InputMap::bind",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_bind",
+    "desc": "Binds a mouse button to an action. See the Key overload."
+  },
+  {
+    "name": "InputMap::unbind",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_unbind",
+    "desc": "Removes every binding for action. Leaves action unbound afterward, same as if bind() had never been called for it."
+  },
+  {
+    "name": "InputMap::bindings",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_bindings",
+    "desc": "Returns the bindings currently registered for action (empty if none)."
+  },
+  {
+    "name": "InputMap::is_down",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_is_down",
+    "desc": "True if any binding for action is currently down (chord included)."
+  },
+  {
+    "name": "InputMap::is_pressed",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_is_pressed",
+    "desc": "True if any binding for action transitioned to down this frame."
+  },
+  {
+    "name": "InputMap::is_released",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_is_released",
+    "desc": "True if any binding for action transitioned to up this frame."
+  },
+  {
+    "name": "InputMap::is_down",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_is_down",
+    "desc": "True if any key bound to action is currently down, per is_key_pressed. Predicate form, for callers that want to query..."
+  },
+  {
+    "name": "InputMap::bind_axis",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_bind_axis",
+    "desc": "Binds a two-key axis (e.g. \"move_x\" -&gt; D/A), read via axis()."
+  },
+  {
+    "name": "InputMap::axis",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_axis",
+    "desc": "Returns -1, 0, or +1 depending on which of the axis's two keys (if any) is held. If both are held, they cancel to 0."
+  },
+  {
+    "name": "InputMap::axis",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_axis",
+    "desc": "Predicate form of axis() see is_down(action, const KeyState&amp;)."
+  },
+  {
+    "name": "InputMap::bind_vector",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_bind_vector",
+    "desc": "Binds a four-key 2D vector (e.g. WASD movement), read via vector()."
+  },
+  {
+    "name": "InputMap::vector",
+    "kind": "Method",
+    "url": "class_InputMap.html#method_vector",
+    "desc": "Returns the {-1,0,1} x {-1,0,1} vector for name's four keys (0,0) if unbound, or on either axis if both its keys are ..."
+  },
+  {
+    "name": "KeyEvent",
+    "kind": "Class",
+    "url": "class_KeyEvent.html",
+    "desc": "A single discrete keyboard event captured during the last input poll. Unlike level-triggered \"is this key down\" queri..."
+  },
+  {
+    "name": "MouseButtonEvent",
+    "kind": "Class",
+    "url": "class_MouseButtonEvent.html",
+    "desc": "A single discrete mouse button event, the button-side sibling of KeyEvent."
+  },
+  {
+    "name": "coopa::item",
+    "kind": "Namespace",
+    "url": "scope_coopa__item.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::item::parse_item_def",
+    "kind": "Function",
+    "url": "scope_coopa__item.html#func_parse_item_def",
+    "desc": "Parses one ItemDef from its YAML mapping node. Missing keys fall back to ItemDef's own in-class defaults; category/ra..."
+  },
+  {
+    "name": "coopa::item::parse_item_database",
+    "kind": "Function",
+    "url": "scope_coopa__item.html#func_parse_item_database",
+    "desc": "Parses every entry under items: and defines each one on out, merging into whatever out already contains (so a C++-def..."
+  },
+  {
+    "name": "coopa::item::parse_item_category",
+    "kind": "Function",
+    "url": "scope_coopa__item.html#func_parse_item_category",
+    "desc": "Parses a lowercase category name (\"consumable\", \"weapon\", ...) into an ItemCategory, falling back to ItemCategory::Mi..."
+  },
+  {
+    "name": "coopa::item::parse_item_rarity",
+    "kind": "Function",
+    "url": "scope_coopa__item.html#func_parse_item_rarity",
+    "desc": "Parses a lowercase rarity name (\"uncommon\", \"rare\", ...) into an ItemRarity, falling back to ItemRarity::Common for a..."
+  },
+  {
+    "name": "Hotbar",
+    "kind": "Class",
+    "url": "class_Hotbar.html",
+    "desc": "Tracks which of a contiguous range of an Inventory's slots is \"selected\" the model behind a typical bottom-of-screen ..."
+  },
+  {
+    "name": "Hotbar::Hotbar",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_Hotbar",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::Hotbar",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_Hotbar",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::Hotbar",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_Hotbar",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::operator=",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::Hotbar",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_Hotbar",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::operator=",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::inventory",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_inventory",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::first_slot",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_first_slot",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::count",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_count",
+    "desc": ""
+  },
+  {
+    "name": "Hotbar::selected",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_selected",
+    "desc": "Currently selected slot, relative to first_slot() (0-based), or -1 if none."
+  },
+  {
+    "name": "Hotbar::selected_slot",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_selected_slot",
+    "desc": "Absolute Inventory slot index of the current selection, or -1 if none."
+  },
+  {
+    "name": "Hotbar::select",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_select",
+    "desc": "Selects relative index i (clamped into [0, count())); -1 clears selection. Emits on_selection_changed only when the s..."
+  },
+  {
+    "name": "Hotbar::next",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_next",
+    "desc": "Selects the next slot, wrapping to 0 past the end. No-op if count() == 0."
+  },
+  {
+    "name": "Hotbar::prev",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_prev",
+    "desc": "Selects the previous slot, wrapping to count()-1 before the start. No-op if count() == 0."
+  },
+  {
+    "name": "Hotbar::selected_stack",
+    "kind": "Method",
+    "url": "class_Hotbar.html#method_selected_stack",
+    "desc": "The ItemStack in the currently selected slot, read through to the backing Inventory. Empty if nothing is selected or ..."
+  },
+  {
+    "name": "Inventory",
+    "kind": "Class",
+    "url": "class_Inventory.html",
+    "desc": "A fixed number of ItemStack slots, with add/remove/move/merge/swap operations and change notification. This is the mo..."
+  },
+  {
+    "name": "Inventory::Inventory",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_Inventory",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::Inventory",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_Inventory",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::Inventory",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_Inventory",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::operator=",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::Inventory",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_Inventory",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::operator=",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::capacity",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_capacity",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::at",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_at",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::set",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_set",
+    "desc": "Overwrites a slot outright (no merge/stack logic) and notifies."
+  },
+  {
+    "name": "Inventory::clear_slot",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_clear_slot",
+    "desc": ""
+  },
+  {
+    "name": "Inventory::first_empty",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_first_empty",
+    "desc": "The first slot index with an empty stack, or -1 if none."
+  },
+  {
+    "name": "Inventory::count_of",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_count_of",
+    "desc": "Total count of id across every slot."
+  },
+  {
+    "name": "Inventory::add",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_add",
+    "desc": "Adds count of id, filling partial stacks (in slot-index order) before spilling into empty slots."
+  },
+  {
+    "name": "Inventory::remove",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_remove",
+    "desc": "Removes up to count of id, taking from slots in index order."
+  },
+  {
+    "name": "Inventory::move_or_merge",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_move_or_merge",
+    "desc": "The authoritative three-way transfer rule: move into an empty slot, merge stacks of the same item (up to max_stack, l..."
+  },
+  {
+    "name": "Inventory::swap",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_swap",
+    "desc": "Unconditionally swaps two slots' contents (no merge logic), notifying both."
+  },
+  {
+    "name": "Inventory::split",
+    "kind": "Method",
+    "url": "class_Inventory.html#method_split",
+    "desc": "Splits count off of slot from into slot to (which must be empty), leaving the remainder in from."
+  },
+  {
+    "name": "ItemDatabase",
+    "kind": "Class",
+    "url": "class_ItemDatabase.html",
+    "desc": "A lookup table of ItemDefs, the shared backing data every ItemStack (via its ItemId) resolves through. Plain value ty..."
+  },
+  {
+    "name": "ItemDatabase::define",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_define",
+    "desc": "Adds or replaces the definition for def.id."
+  },
+  {
+    "name": "ItemDatabase::find",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_find",
+    "desc": "Looks up a definition by id, or nullptr if not defined."
+  },
+  {
+    "name": "ItemDatabase::contains",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_contains",
+    "desc": "True if id has a registered definition."
+  },
+  {
+    "name": "ItemDatabase::max_stack_of",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_max_stack_of",
+    "desc": "The per-slot stack limit for id, or k_default_max_stack if undefined."
+  },
+  {
+    "name": "ItemDatabase::size",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_size",
+    "desc": ""
+  },
+  {
+    "name": "ItemDatabase::clear",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_clear",
+    "desc": ""
+  },
+  {
+    "name": "ItemDatabase::begin",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_begin",
+    "desc": ""
+  },
+  {
+    "name": "ItemDatabase::end",
+    "kind": "Method",
+    "url": "class_ItemDatabase.html#method_end",
+    "desc": ""
+  },
+  {
+    "name": "ItemDatabaseLoader",
+    "kind": "Class",
+    "url": "class_ItemDatabaseLoader.html",
+    "desc": "coopa::asset TypedAssetLoader for ItemDatabase a pure-CPU asset. decode_typed() runs entirely on the asset IO worker ..."
+  },
+  {
+    "name": "ItemDatabaseLoader::decode_typed",
+    "kind": "Method",
+    "url": "class_ItemDatabaseLoader.html#method_decode_typed",
+    "desc": ""
+  },
+  {
+    "name": "ItemDatabaseLoader::finalize_typed",
+    "kind": "Method",
+    "url": "class_ItemDatabaseLoader.html#method_finalize_typed",
+    "desc": ""
+  },
+  {
+    "name": "ItemDatabaseLoader::type_name",
+    "kind": "Method",
+    "url": "class_ItemDatabaseLoader.html#method_type_name",
+    "desc": "Human-readable type name, for logging and error messages."
+  },
+  {
+    "name": "ItemDef",
+    "kind": "Class",
+    "url": "class_ItemDef.html",
+    "desc": "The authoritative, immutable description of one kind of item. ItemDatabase owns a collection of these, keyed by id. E..."
+  },
+  {
+    "name": "ItemId",
+    "kind": "Class",
+    "url": "class_ItemId.html",
+    "desc": "Identity of an item definition, derived from its short authoring name. Mirrors coopa::asset::AssetId (coopa/asset/ass..."
+  },
+  {
+    "name": "ItemId::ItemId",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_ItemId",
+    "desc": "Constructs an empty, invalid ItemId."
+  },
+  {
+    "name": "ItemId::hash",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_hash",
+    "desc": "64-bit FNV-1a hash of the normalized name; the key maps store this id under."
+  },
+  {
+    "name": "ItemId::str",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_str",
+    "desc": "The normalized name this id was built from."
+  },
+  {
+    "name": "ItemId::is_valid",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_is_valid",
+    "desc": "True if this id was built from a non-empty name."
+  },
+  {
+    "name": "ItemId::operator==",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "ItemId::operator!=",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_operator!=",
+    "desc": ""
+  },
+  {
+    "name": "ItemId::from_name",
+    "kind": "Method",
+    "url": "class_ItemId.html#method_from_name",
+    "desc": "Builds an ItemId from an authoring name, normalizing case and whitespace."
+  },
+  {
+    "name": "ItemStack",
+    "kind": "Class",
+    "url": "class_ItemStack.html",
+    "desc": "One inventory slot's contents: which item, and how many. Deliberately holds nothing else name/icon/max_stack/etc. all..."
+  },
+  {
+    "name": "ItemStack::empty",
+    "kind": "Method",
+    "url": "class_ItemStack.html#method_empty",
+    "desc": "True if this slot has no item or a non-positive count."
+  },
+  {
+    "name": "coopa::job",
+    "kind": "Namespace",
+    "url": "scope_coopa__job.html",
+    "desc": ""
+  },
+  {
+    "name": "CounterPool",
+    "kind": "Class",
+    "url": "class_CounterPool.html",
+    "desc": "Lock-free pool of generation-tagged counter slots. Slots are allocated from and returned to a Treiber-stack free list..."
+  },
+  {
+    "name": "CounterPool::CounterPool",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_CounterPool",
+    "desc": "Constructs a CounterPool with the given capacity, all slots free."
+  },
+  {
+    "name": "CounterPool::~CounterPool",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_~CounterPool",
+    "desc": "Destructor. Frees the slot array."
+  },
+  {
+    "name": "CounterPool::CounterPool",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_CounterPool",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "CounterPool::operator=",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "CounterPool::allocate",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_allocate",
+    "desc": "Pops a free slot, bumps its generation, and resets its state."
+  },
+  {
+    "name": "CounterPool::is_current",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_is_current",
+    "desc": "Checks whether generation is still the slot's current generation. A mismatch means the slot has since been reclaimed ..."
+  },
+  {
+    "name": "CounterPool::add_jobs",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_add_jobs",
+    "desc": "Adds n to the outstanding job count (called from submit()/submit_jobs()). A handle may be reused after its counter ha..."
+  },
+  {
+    "name": "CounterPool::complete_job",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_complete_job",
+    "desc": "Records one job's completion."
+  },
+  {
+    "name": "CounterPool::load_counter",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_load_counter",
+    "desc": "Reads the current outstanding job count. is_complete() == (this == 0)."
+  },
+  {
+    "name": "CounterPool::cancel",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_cancel",
+    "desc": "Marks every job still queued against this handle as cancelled."
+  },
+  {
+    "name": "CounterPool::is_cancelled",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_is_cancelled",
+    "desc": "Whether cancel() has been called for this slot's current occupant."
+  },
+  {
+    "name": "CounterPool::waiters_slot",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_waiters_slot",
+    "desc": "Returns the slot's waiter-stack head for Treiber-stack push/pop. Stored as void* here so this header has no dependenc..."
+  },
+  {
+    "name": "CounterPool::close",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_close",
+    "desc": "Declares the creator done with this handle (called once, from JobHandle::close() / ScopedJobHandle's destructor)."
+  },
+  {
+    "name": "CounterPool::try_reclaim_after_completion",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_try_reclaim_after_completion",
+    "desc": "Attempts the reclaim after complete_job() reported the counter hit zero."
+  },
+  {
+    "name": "CounterPool::reclaim",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_reclaim",
+    "desc": "Pushes a slot back onto the free list. Must only be called once per allocation, by whichever of close() / try_reclaim..."
+  },
+  {
+    "name": "CounterPool::capacity",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_capacity",
+    "desc": "Total slot capacity."
+  },
+  {
+    "name": "CounterPool::debug_outstanding_count",
+    "kind": "Method",
+    "url": "class_CounterPool.html#method_debug_outstanding_count",
+    "desc": "Number of slots currently allocated-and-not-yet-closed (debug leak reporting)."
+  },
+  {
+    "name": "DependencyGraph",
+    "kind": "Class",
+    "url": "class_DependencyGraph.html",
+    "desc": "Owns the event-driven dependency resolution machinery for one JobEngine."
+  },
+  {
+    "name": "DependencyGraph::DependencyGraph",
+    "kind": "Method",
+    "url": "class_DependencyGraph.html#method_DependencyGraph",
+    "desc": ""
+  },
+  {
+    "name": "DependencyGraph::DependencyGraph",
+    "kind": "Method",
+    "url": "class_DependencyGraph.html#method_DependencyGraph",
+    "desc": "Non-copyable, non-movable (holds no state that would survive a move safely mid-flight)."
+  },
+  {
+    "name": "DependencyGraph::operator=",
+    "kind": "Method",
+    "url": "class_DependencyGraph.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "DependencyGraph::submit_with_dependencies",
+    "kind": "Method",
+    "url": "class_DependencyGraph.html#method_submit_with_dependencies",
+    "desc": "Parks job until every handle in deps[0..dep_count) completes."
+  },
+  {
+    "name": "DependencyGraph::harvest_and_fire",
+    "kind": "Method",
+    "url": "class_DependencyGraph.html#method_harvest_and_fire",
+    "desc": "Called by JobEngine right after a handle's job counter hits zero: pops and fires every waiter registered against it."
+  },
+  {
+    "name": "Job",
+    "kind": "Class",
+    "url": "class_Job.html",
+    "desc": "Represents a single unit of work to be executed by a worker thread. Cache-friendly and allocation-free to construct: ..."
+  },
+  {
+    "name": "Job::Job",
+    "kind": "Method",
+    "url": "class_Job.html#method_Job",
+    "desc": "Default constructor. Produces an empty, non-executable job."
+  },
+  {
+    "name": "Job::Job",
+    "kind": "Method",
+    "url": "class_Job.html#method_Job",
+    "desc": "Constructs a Job with a callback, type, handle, and priority."
+  },
+  {
+    "name": "Job::Job",
+    "kind": "Method",
+    "url": "class_Job.html#method_Job",
+    "desc": "Non-copyable (TaskWrapper is non-copyable)."
+  },
+  {
+    "name": "Job::operator=",
+    "kind": "Method",
+    "url": "class_Job.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "Job::Job",
+    "kind": "Method",
+    "url": "class_Job.html#method_Job",
+    "desc": "Move constructor."
+  },
+  {
+    "name": "Job::operator=",
+    "kind": "Method",
+    "url": "class_Job.html#method_operator=",
+    "desc": "Move assignment."
+  },
+  {
+    "name": "JobContext",
+    "kind": "Class",
+    "url": "class_JobContext.html",
+    "desc": "Passed to any job body written as void(const JobContext&amp;) instead of the plain void() form."
+  },
+  {
+    "name": "JobContext::is_cancelled",
+    "kind": "Method",
+    "url": "class_JobContext.html#method_is_cancelled",
+    "desc": "Whether JobEngine::cancel() has been called on this job's group handle."
+  },
+  {
+    "name": "JobEngine",
+    "kind": "Class",
+    "url": "class_JobEngine.html",
+    "desc": "Processes tasks in parallel across worker threads, utilizing lock-free work-stealing. Non-copyable and non-movable (i..."
+  },
+  {
+    "name": "JobEngine::JobEngine",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_JobEngine",
+    "desc": "Constructs the JobEngine and spawns its worker threads."
+  },
+  {
+    "name": "JobEngine::~JobEngine",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_~JobEngine",
+    "desc": "Destructor. Shuts down the job system, joins all worker threads, and reports leaks."
+  },
+  {
+    "name": "JobEngine::JobEngine",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_JobEngine",
+    "desc": "Non-copyable, non-movable see class doc."
+  },
+  {
+    "name": "JobEngine::operator=",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "JobEngine::JobEngine",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_JobEngine",
+    "desc": ""
+  },
+  {
+    "name": "JobEngine::operator=",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "JobEngine::begin_frame",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_begin_frame",
+    "desc": "Resets per-frame diagnostic counters. No-op when COOPA_JOB_DIAGNOSTICS is off."
+  },
+  {
+    "name": "JobEngine::end_frame",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_end_frame",
+    "desc": "Reserved for future per-frame finalization (e.g. profiling snapshots)."
+  },
+  {
+    "name": "JobEngine::create_handle",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_create_handle",
+    "desc": "Allocates a new JobHandle. Must eventually be closed via JobHandle::close() (or wrapped in a ScopedJobHandle) once th..."
+  },
+  {
+    "name": "JobEngine::close_handle",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_close_handle",
+    "desc": "Convenience equivalent to handle.close()."
+  },
+  {
+    "name": "JobEngine::complete_external_job",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_complete_external_job",
+    "desc": "Resolves completion bookkeeping for a job that was executed outside the normal dispatch loop (e.g. JobScheduler's mai..."
+  },
+  {
+    "name": "JobEngine::cancel",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_cancel",
+    "desc": "Cancels every job still queued (not yet running) against this handle."
+  },
+  {
+    "name": "JobEngine::get_counter_pool",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_get_counter_pool",
+    "desc": "Direct access to the counter pool (diagnostics / advanced use). Provided for consumers and leak assertions; not used ..."
+  },
+  {
+    "name": "JobEngine::dedicate_thread_to_job_type",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_dedicate_thread_to_job_type",
+    "desc": "Dedicates a job type to a specific worker thread. Jobs of this type always land in a dedicated per-type queue that on..."
+  },
+  {
+    "name": "JobEngine::worker_index",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_worker_index",
+    "desc": "This engine's worker index for the calling thread, or k_main_thread_index."
+  },
+  {
+    "name": "JobEngine::worker_count",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_worker_count",
+    "desc": "Number of worker threads owned by this engine."
+  },
+  {
+    "name": "JobEngine::is_worker_thread",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_is_worker_thread",
+    "desc": "Whether the calling thread is one of this engine's own workers."
+  },
+  {
+    "name": "JobEngine::submit",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_submit",
+    "desc": "Submits a single job."
+  },
+  {
+    "name": "JobEngine::submit",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_submit",
+    "desc": "Convenience overload taking dependencies as a span."
+  },
+  {
+    "name": "JobEngine::submit_jobs",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_submit_jobs",
+    "desc": "Submits a batch of jobs that all contribute to a single new handle."
+  },
+  {
+    "name": "JobEngine::parallel_for",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_parallel_for",
+    "desc": "Splits [0, count) into contiguous chunks and submits one job per chunk, all contributing to the returned handle. Defi..."
+  },
+  {
+    "name": "JobEngine::parallel_for_blocking",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_parallel_for_blocking",
+    "desc": "parallel_for() followed by wait_for() and close() on the resulting handle."
+  },
+  {
+    "name": "JobEngine::wait_for",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_wait_for",
+    "desc": "Stalls the calling thread until the specified handle is complete. If called from one of this engine's own worker thre..."
+  },
+  {
+    "name": "JobEngine::wait_for",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_wait_for",
+    "desc": "Timed variant of wait_for()."
+  },
+  {
+    "name": "JobEngine::wait_for_all",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_wait_for_all",
+    "desc": "Blocks until every handle in the span is complete."
+  },
+  {
+    "name": "JobEngine::wait_for_any",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_wait_for_any",
+    "desc": "Blocks until at least one handle in the span is complete; returns its index."
+  },
+  {
+    "name": "JobEngine::shutdown",
+    "kind": "Method",
+    "url": "class_JobEngine.html#method_shutdown",
+    "desc": "Signals all worker threads to stop, joins them, and reports any unclosed handles."
+  },
+  {
+    "name": "JobHandle",
+    "kind": "Class",
+    "url": "class_JobHandle.html",
+    "desc": "Lightweight, trivially-copyable token for tracking asynchronous job completion. 16 bytes: a pool pointer, a slot inde..."
+  },
+  {
+    "name": "JobHandle::JobHandle",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_JobHandle",
+    "desc": "Default constructor. Creates an invalid (always-complete) handle."
+  },
+  {
+    "name": "JobHandle::JobHandle",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_JobHandle",
+    "desc": "Constructs a JobHandle referencing a specific slot."
+  },
+  {
+    "name": "JobHandle::~JobHandle",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_~JobHandle",
+    "desc": "Trivially destructible, copyable, assignable see class doc on ownership."
+  },
+  {
+    "name": "JobHandle::JobHandle",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_JobHandle",
+    "desc": ""
+  },
+  {
+    "name": "JobHandle::operator=",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "JobHandle::is_valid",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_is_valid",
+    "desc": "Checks if this handle references a valid, non-stale slot."
+  },
+  {
+    "name": "JobHandle::is_complete",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_is_complete",
+    "desc": "Checks if all jobs contributing to this handle have finished. An invalid or stale handle always reports complete. The..."
+  },
+  {
+    "name": "JobHandle::is_cancelled",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_is_cancelled",
+    "desc": "Whether JobEngine::cancel() has been called against this handle's current occupant."
+  },
+  {
+    "name": "JobHandle::close",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_close",
+    "desc": "Declares the caller done with this handle, allowing its slot to be recycled once any outstanding jobs finish. Safe to..."
+  },
+  {
+    "name": "JobHandle::index",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_index",
+    "desc": "Returns the raw slot index for identity comparisons and dedup."
+  },
+  {
+    "name": "JobHandle::generation",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_generation",
+    "desc": "Returns the generation this handle was allocated with."
+  },
+  {
+    "name": "JobHandle::pool",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_pool",
+    "desc": "Returns the owning pool (used internally by dependency_graph.h/engine.h)."
+  },
+  {
+    "name": "JobHandle::add_jobs_",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_add_jobs_",
+    "desc": "Internal use only (engine.h): adds n to the outstanding job count on submit(). No-op on an invalid/stale handle."
+  },
+  {
+    "name": "JobHandle::operator==",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_operator==",
+    "desc": "Equality by (pool, index, generation) identity."
+  },
+  {
+    "name": "JobHandle::operator!=",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_operator!=",
+    "desc": "Inequality."
+  },
+  {
+    "name": "JobHandle::operator<",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_operator<",
+    "desc": "Less-than for sorting/dedup (by index, then generation)."
+  },
+  {
+    "name": "JobHandle::complete_job_and_check_zero_",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_complete_job_and_check_zero_",
+    "desc": "Internal use only (dependency_graph.h): called after this handle's job completes, exactly once, to fire waiters and p..."
+  },
+  {
+    "name": "JobHandle::try_reclaim_after_completion_",
+    "kind": "Method",
+    "url": "class_JobHandle.html#method_try_reclaim_after_completion_",
+    "desc": ""
+  },
+  {
+    "name": "JobNode",
+    "kind": "Class",
+    "url": "class_JobNode.html",
+    "desc": "A main-thread job parked until execute_main_thread_jobs() runs it. Unlike a worker-thread job (submitted straight to ..."
+  },
+  {
+    "name": "JobNodeDefinition",
+    "kind": "Class",
+    "url": "class_JobNodeDefinition.html",
+    "desc": "Defines a job's task callback and its component read/write access patterns. task is a TaskWrapper (not std::function)..."
+  },
+  {
+    "name": "JobNodeDefinition::JobNodeDefinition",
+    "kind": "Method",
+    "url": "class_JobNodeDefinition.html#method_JobNodeDefinition",
+    "desc": ""
+  },
+  {
+    "name": "JobNodeDefinition::JobNodeDefinition",
+    "kind": "Method",
+    "url": "class_JobNodeDefinition.html#method_JobNodeDefinition",
+    "desc": "Constructs an explicit JobNodeDefinition."
+  },
+  {
+    "name": "JobScheduler",
+    "kind": "Class",
+    "url": "class_JobScheduler.html",
+    "desc": "Manages a batch of jobs and their dependencies based on component resource access. The scheduler automatically forms ..."
+  },
+  {
+    "name": "JobScheduler::JobScheduler",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_JobScheduler",
+    "desc": "Constructs a JobScheduler associated with a JobEngine."
+  },
+  {
+    "name": "JobScheduler::begin_frame",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_begin_frame",
+    "desc": "Signals the start of a new frame. Clears all persistent hazard-tracking state (last-writer and active-reader maps) to..."
+  },
+  {
+    "name": "JobScheduler::end_frame",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_end_frame",
+    "desc": "Signals the end of a frame. Drops any main-thread job that execute_main_thread_jobs() was never called to run this fr..."
+  },
+  {
+    "name": "JobScheduler::add_job",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_add_job",
+    "desc": "Enqueues a job definition. Dependencies are automatically calculated upon submission based on read/write component ac..."
+  },
+  {
+    "name": "JobScheduler::submit_all",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_submit_all",
+    "desc": "Resolves dependency hazards and submits all enqueued jobs to the JobEngine. Builds a dependency graph by analyzing re..."
+  },
+  {
+    "name": "JobScheduler::execute_main_thread_jobs",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_execute_main_thread_jobs",
+    "desc": "Executes every enqueued main-thread job, in submission order, on the calling (main/render) thread. For each job, firs..."
+  },
+  {
+    "name": "JobScheduler::wait_for_all",
+    "kind": "Method",
+    "url": "class_JobScheduler.html#method_wait_for_all",
+    "desc": "Blocks the current thread until every handle in the batch is complete."
+  },
+  {
+    "name": "ParallelMap",
+    "kind": "Class",
+    "url": "class_ParallelMap.html",
+    "desc": "A generic wrapper for phmap::parallel_flat_hash_map providing a simplified thread-safe interface. This class encapsul..."
+  },
+  {
+    "name": "ParallelMap::ParallelMap",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_ParallelMap",
+    "desc": "Default constructor. The underlying phmap::parallel_flat_hash_map is initialized with its default constructor."
+  },
+  {
+    "name": "ParallelMap::~ParallelMap",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_~ParallelMap",
+    "desc": "Destructor. Cleans up the underlying phmap::parallel_flat_hash_map."
+  },
+  {
+    "name": "ParallelMap::add",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_add",
+    "desc": "Adds or updates a key-value pair in the map. This method is thread-safe due to the internal locking mechanisms of phm..."
+  },
+  {
+    "name": "ParallelMap::get",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_get",
+    "desc": "Retrieves the value associated with a given key. This method is thread-safe. It returns an std::optional containing t..."
+  },
+  {
+    "name": "ParallelMap::remove",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_remove",
+    "desc": "Removes a key-value pair from the map. This method is thread-safe."
+  },
+  {
+    "name": "ParallelMap::contains",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_contains",
+    "desc": "Checks if the map contains a specific key. This method is thread-safe."
+  },
+  {
+    "name": "ParallelMap::clear",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_clear",
+    "desc": "Clears all elements from the map."
+  },
+  {
+    "name": "ParallelMap::size",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_size",
+    "desc": "Returns the number of elements in the map. This method is thread-safe for phmap::parallel_flat_hash_map."
+  },
+  {
+    "name": "ParallelMap::begin",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_begin",
+    "desc": "Returns an iterator to the beginning of the map."
+  },
+  {
+    "name": "ParallelMap::begin",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_begin",
+    "desc": "Returns a const iterator to the beginning of the map."
+  },
+  {
+    "name": "ParallelMap::end",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_end",
+    "desc": "Returns an iterator to the end of the map."
+  },
+  {
+    "name": "ParallelMap::end",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_end",
+    "desc": "Returns a const iterator to the end of the map."
+  },
+  {
+    "name": "ParallelMap::cbegin",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_cbegin",
+    "desc": "Returns a const iterator to the beginning of the map."
+  },
+  {
+    "name": "ParallelMap::cend",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_cend",
+    "desc": "Returns a const iterator to the end of the map."
+  },
+  {
+    "name": "ParallelMap::snapshot",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_snapshot",
+    "desc": "Creates and returns a snapshot of the map's contents. This method iterates over the map and copies all key-value pair..."
+  },
+  {
+    "name": "ParallelMap::keys",
+    "kind": "Method",
+    "url": "class_ParallelMap.html#method_keys",
+    "desc": "Returns all keys currently stored in the map."
+  },
+  {
+    "name": "ParallelQueue",
+    "kind": "Class",
+    "url": "class_ParallelQueue.html",
+    "desc": "Thread-safe FIFO queue wrapper using std::queue, std::mutex, and std::condition_variable."
+  },
+  {
+    "name": "ParallelQueue::push",
+    "kind": "Method",
+    "url": "class_ParallelQueue.html#method_push",
+    "desc": "Pushes an item to the end of the queue."
+  },
+  {
+    "name": "ParallelQueue::try_pop",
+    "kind": "Method",
+    "url": "class_ParallelQueue.html#method_try_pop",
+    "desc": "Tries to pop one item from the front of the queue."
+  },
+  {
+    "name": "ParallelQueue::pop_all",
+    "kind": "Method",
+    "url": "class_ParallelQueue.html#method_pop_all",
+    "desc": "Pops all elements from the queue and moves them into the provided vector."
+  },
+  {
+    "name": "ParallelQueue::empty",
+    "kind": "Method",
+    "url": "class_ParallelQueue.html#method_empty",
+    "desc": "Checks if the queue is empty."
+  },
+  {
+    "name": "ParallelQueue::size",
+    "kind": "Method",
+    "url": "class_ParallelQueue.html#method_size",
+    "desc": "Returns the current size of the queue."
+  },
+  {
+    "name": "ParallelQueue::clear",
+    "kind": "Method",
+    "url": "class_ParallelQueue.html#method_clear",
+    "desc": "Clears all elements from the queue."
+  },
+  {
+    "name": "ParallelVector",
+    "kind": "Class",
+    "url": "class_ParallelVector.html",
+    "desc": "Thread-safe vector wrapper using std::vector, std::mutex, and std::condition_variable. Provided for consumers; the jo..."
+  },
+  {
+    "name": "ParallelVector::push_back",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_push_back",
+    "desc": "Adds an item to the end of the vector."
+  },
+  {
+    "name": "ParallelVector::try_pop_back",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_try_pop_back",
+    "desc": "Tries to pop the last item from the vector."
+  },
+  {
+    "name": "ParallelVector::try_pop_front",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_try_pop_front",
+    "desc": "Tries to pop the first item from the vector."
+  },
+  {
+    "name": "ParallelVector::push_back_all",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_push_back_all",
+    "desc": "Atomically appends all items from a given vector to the end of this vector."
+  },
+  {
+    "name": "ParallelVector::pop_all",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_pop_all",
+    "desc": "Removes all items from the vector and moves them into the provided vector."
+  },
+  {
+    "name": "ParallelVector::empty",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_empty",
+    "desc": "Checks if the vector is empty."
+  },
+  {
+    "name": "ParallelVector::size",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_size",
+    "desc": "Returns the current size of the vector."
+  },
+  {
+    "name": "ParallelVector::clear",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_clear",
+    "desc": "Clears all elements from the vector."
+  },
+  {
+    "name": "ParallelVector::at",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_at",
+    "desc": "Accesses an element at a specific index."
+  },
+  {
+    "name": "ParallelVector::remove_one",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_remove_one",
+    "desc": "Removes the first occurrence of a specific item from the vector."
+  },
+  {
+    "name": "ParallelVector::remove_all",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_remove_all",
+    "desc": "Removes all occurrences of a specific item from the vector."
+  },
+  {
+    "name": "ParallelVector::get_copy",
+    "kind": "Method",
+    "url": "class_ParallelVector.html#method_get_copy",
+    "desc": "Returns a copy of the underlying vector."
+  },
+  {
+    "name": "PendingNode",
+    "kind": "Class",
+    "url": "class_PendingNode.html",
+    "desc": "A job parked until every one of its dependencies completes. Heap-allocated per dependency-bearing submission rather t..."
+  },
+  {
+    "name": "ScopedJobHandle",
+    "kind": "Class",
+    "url": "class_ScopedJobHandle.html",
+    "desc": "RAII wrapper that closes its JobHandle exactly once, on destruction or reset(). Move-only. Prefer this over a raw Job..."
+  },
+  {
+    "name": "ScopedJobHandle::ScopedJobHandle",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_ScopedJobHandle",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::ScopedJobHandle",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_ScopedJobHandle",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::~ScopedJobHandle",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_~ScopedJobHandle",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::ScopedJobHandle",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_ScopedJobHandle",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::operator=",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::ScopedJobHandle",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_ScopedJobHandle",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::operator=",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "ScopedJobHandle::get",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_get",
+    "desc": "Read-only access to the wrapped handle (for is_complete()/is_valid() etc)."
+  },
+  {
+    "name": "ScopedJobHandle::operator const JobHandle &",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_operator const JobHandle &",
+    "desc": "Implicit conversion so a ScopedJobHandle can be passed anywhere a JobHandle is expected."
+  },
+  {
+    "name": "ScopedJobHandle::reset",
+    "kind": "Method",
+    "url": "class_ScopedJobHandle.html#method_reset",
+    "desc": "Closes the current handle (if any) and releases ownership of it."
+  },
+  {
+    "name": "TaskWrapper",
+    "kind": "Class",
+    "url": "class_TaskWrapper.html",
+    "desc": "A small-buffer-optimized callable that avoids heap allocation for callables up to k_task_buffer_size bytes. Accepts a..."
+  },
+  {
+    "name": "TaskWrapper::TaskWrapper",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_TaskWrapper",
+    "desc": "Default constructor. Creates an empty (no-op) TaskWrapper."
+  },
+  {
+    "name": "TaskWrapper::TaskWrapper",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_TaskWrapper",
+    "desc": "Constructs a TaskWrapper from any callable invocable as void() or void(const JobContext&amp;)."
+  },
+  {
+    "name": "TaskWrapper::~TaskWrapper",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_~TaskWrapper",
+    "desc": "Destructor. Destroys the stored callable if present."
+  },
+  {
+    "name": "TaskWrapper::TaskWrapper",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_TaskWrapper",
+    "desc": "Move constructor. Transfers ownership of the callable."
+  },
+  {
+    "name": "TaskWrapper::operator=",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_operator=",
+    "desc": "Move assignment. Destroys current callable and takes ownership."
+  },
+  {
+    "name": "TaskWrapper::TaskWrapper",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_TaskWrapper",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "TaskWrapper::operator=",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "TaskWrapper::operator()",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_operator()",
+    "desc": "Invokes the stored callable."
+  },
+  {
+    "name": "TaskWrapper::operator bool",
+    "kind": "Method",
+    "url": "class_TaskWrapper.html#method_operator bool",
+    "desc": "Checks if the wrapper contains a valid callable."
+  },
+  {
+    "name": "Thread",
+    "kind": "Class",
+    "url": "class_Thread.html",
+    "desc": "Managed worker thread instance in the job system pool. Each Thread wraps a std::thread and provides:Atomic stop flag ..."
+  },
+  {
+    "name": "Thread::Thread",
+    "kind": "Method",
+    "url": "class_Thread.html#method_Thread",
+    "desc": "Constructs a worker Thread and immediately starts execution."
+  },
+  {
+    "name": "Thread::~Thread",
+    "kind": "Method",
+    "url": "class_Thread.html#method_~Thread",
+    "desc": "Destructor. Blocks until the thread completes joining."
+  },
+  {
+    "name": "Thread::Thread",
+    "kind": "Method",
+    "url": "class_Thread.html#method_Thread",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "Thread::operator=",
+    "kind": "Method",
+    "url": "class_Thread.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "Thread::Thread",
+    "kind": "Method",
+    "url": "class_Thread.html#method_Thread",
+    "desc": "Non-movable."
+  },
+  {
+    "name": "Thread::operator=",
+    "kind": "Method",
+    "url": "class_Thread.html#method_operator=",
+    "desc": "Non-movable."
+  },
+  {
+    "name": "Thread::signal_stop",
+    "kind": "Method",
+    "url": "class_Thread.html#method_signal_stop",
+    "desc": "Signals the thread to stop and notifies its condition variable."
+  },
+  {
+    "name": "Thread::joinable",
+    "kind": "Method",
+    "url": "class_Thread.html#method_joinable",
+    "desc": "Checks if the underlying thread is joinable."
+  },
+  {
+    "name": "Thread::join",
+    "kind": "Method",
+    "url": "class_Thread.html#method_join",
+    "desc": "Blocks until this worker thread completes execution."
+  },
+  {
+    "name": "Thread::get_id",
+    "kind": "Method",
+    "url": "class_Thread.html#method_get_id",
+    "desc": "Gets the worker thread's internal ID."
+  },
+  {
+    "name": "WaiterNode",
+    "kind": "Class",
+    "url": "class_WaiterNode.html",
+    "desc": "One dependency edge: lives on the dependency handle's waiter stack until fired, at which point it decrements its owni..."
+  },
+  {
+    "name": "WorkStealingDeque",
+    "kind": "Class",
+    "url": "class_WorkStealingDeque.html",
+    "desc": "Lock-free single-producer multi-consumer work-stealing deque. Thread safety guarantees:push() and pop() may only be c..."
+  },
+  {
+    "name": "WorkStealingDeque::WorkStealingDeque",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_WorkStealingDeque",
+    "desc": "Constructs a deque with the given fixed capacity (must be a power of 2)."
+  },
+  {
+    "name": "WorkStealingDeque::~WorkStealingDeque",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_~WorkStealingDeque",
+    "desc": "Destructor. Frees the buffer."
+  },
+  {
+    "name": "WorkStealingDeque::WorkStealingDeque",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_WorkStealingDeque",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "WorkStealingDeque::operator=",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "WorkStealingDeque::push",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_push",
+    "desc": "Pushes an item onto the bottom of the deque (owner thread only)."
+  },
+  {
+    "name": "WorkStealingDeque::pop",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_pop",
+    "desc": "Pops an item from the bottom of the deque (owner thread only)."
+  },
+  {
+    "name": "WorkStealingDeque::steal",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_steal",
+    "desc": "Steals an item from the top of the deque (any thread)."
+  },
+  {
+    "name": "WorkStealingDeque::size_approx",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_size_approx",
+    "desc": "Returns the approximate number of items in the deque. This is a best-effort snapshot \u2014 the actual count may change im..."
+  },
+  {
+    "name": "WorkStealingDeque::empty_approx",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_empty_approx",
+    "desc": "Checks if the deque is approximately empty."
+  },
+  {
+    "name": "WorkStealingDeque::clear",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_clear",
+    "desc": "Resets the deque to empty state. Owner thread only, not thread-safe."
+  },
+  {
+    "name": "WorkStealingDeque::capacity",
+    "kind": "Method",
+    "url": "class_WorkStealingDeque.html#method_capacity",
+    "desc": "Returns the fixed capacity of the deque."
+  },
+  {
+    "name": "coopa::job::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__job__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::routine",
+    "kind": "Namespace",
+    "url": "scope_coopa__routine.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::routine::runner_for",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_runner_for",
+    "desc": "Finds the RoutineRunner of the RoutineSystem registered on a scene."
+  },
+  {
+    "name": "coopa::routine::runner_for",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_runner_for",
+    "desc": "Finds the RoutineRunner reachable from a component's scene."
+  },
+  {
+    "name": "coopa::routine::start_routine",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_start_routine",
+    "desc": "Starts a routine owned by a component the StartCoroutine equivalent. The component's address becomes the routine's ow..."
+  },
+  {
+    "name": "coopa::routine::stop_routines",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_stop_routines",
+    "desc": "Stops every routine started for a component StopAllCoroutines."
+  },
+  {
+    "name": "coopa::routine::next_frame",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_next_frame",
+    "desc": "Resumes the routine on the next tick Unity's yield return null."
+  },
+  {
+    "name": "coopa::routine::frames",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_frames",
+    "desc": "Resumes the routine after count ticks. frames(1) is next_frame()."
+  },
+  {
+    "name": "coopa::routine::seconds",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_seconds",
+    "desc": "Resumes once duration seconds of scaled time have passed Unity's WaitForSeconds. Scaled time is whatever the caller p..."
+  },
+  {
+    "name": "coopa::routine::seconds_realtime",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_seconds_realtime",
+    "desc": "Resumes once duration seconds of unscaled time have passed Unity's WaitForSecondsRealtime. Unaffected by the time scale."
+  },
+  {
+    "name": "coopa::routine::wait_until",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_wait_until",
+    "desc": "Resumes on the first tick where pred() returns true Unity's WaitUntil. The predicate is evaluated once per tick on th..."
+  },
+  {
+    "name": "coopa::routine::wait_while",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_wait_while",
+    "desc": "Resumes on the first tick where pred() returns false Unity's WaitWhile."
+  },
+  {
+    "name": "coopa::routine::wait_for",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_wait_for",
+    "desc": "Resumes once a coopa::job::JobHandle completes, without blocking a thread. The routine occupies no worker while it wa..."
+  },
+  {
+    "name": "coopa::routine::on_worker",
+    "kind": "Function",
+    "url": "scope_coopa__routine.html#func_on_worker",
+    "desc": "Runs body on the JobEngine and resumes the routine, back on the tick thread, once it finishes. This is the piece Unit..."
+  },
+  {
+    "name": "Routine",
+    "kind": "Class",
+    "url": "class_Routine.html",
+    "desc": "A move-only owner of one coroutine frame the return type of every routine body. Construct one by calling a function w..."
+  },
+  {
+    "name": "Routine::Routine",
+    "kind": "Method",
+    "url": "class_Routine.html#method_Routine",
+    "desc": "Constructs an empty Routine owning no frame."
+  },
+  {
+    "name": "Routine::Routine",
+    "kind": "Method",
+    "url": "class_Routine.html#method_Routine",
+    "desc": "Adopts an existing coroutine frame."
+  },
+  {
+    "name": "Routine::Routine",
+    "kind": "Method",
+    "url": "class_Routine.html#method_Routine",
+    "desc": "Move constructor. Transfers frame ownership."
+  },
+  {
+    "name": "Routine::operator=",
+    "kind": "Method",
+    "url": "class_Routine.html#method_operator=",
+    "desc": "Move assignment. Destroys any frame currently owned."
+  },
+  {
+    "name": "Routine::Routine",
+    "kind": "Method",
+    "url": "class_Routine.html#method_Routine",
+    "desc": "Non-copyable: a coroutine frame has exactly one owner."
+  },
+  {
+    "name": "Routine::operator=",
+    "kind": "Method",
+    "url": "class_Routine.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "Routine::~Routine",
+    "kind": "Method",
+    "url": "class_Routine.html#method_~Routine",
+    "desc": "Destroys the owned frame, running every live local's destructor."
+  },
+  {
+    "name": "Routine::valid",
+    "kind": "Method",
+    "url": "class_Routine.html#method_valid",
+    "desc": "Checks whether this Routine owns a frame."
+  },
+  {
+    "name": "Routine::operator bool",
+    "kind": "Method",
+    "url": "class_Routine.html#method_operator bool",
+    "desc": "Same as valid()."
+  },
+  {
+    "name": "Routine::is_done",
+    "kind": "Method",
+    "url": "class_Routine.html#method_is_done",
+    "desc": "Checks whether the body has run to completion."
+  },
+  {
+    "name": "Routine::handle",
+    "kind": "Method",
+    "url": "class_Routine.html#method_handle",
+    "desc": "The owned coroutine handle."
+  },
+  {
+    "name": "Routine::promise",
+    "kind": "Method",
+    "url": "class_Routine.html#method_promise",
+    "desc": "The coroutine's promise."
+  },
+  {
+    "name": "Routine::release",
+    "kind": "Method",
+    "url": "class_Routine.html#method_release",
+    "desc": "Gives up ownership of the frame without destroying it."
+  },
+  {
+    "name": "RoutineHandle",
+    "kind": "Class",
+    "url": "class_RoutineHandle.html",
+    "desc": "Copyable token identifying one running routine, safe to hold past its runner's lifetime."
+  },
+  {
+    "name": "RoutineHandle::RoutineHandle",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_RoutineHandle",
+    "desc": "Constructs an empty handle that refers to no routine."
+  },
+  {
+    "name": "RoutineHandle::id",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_id",
+    "desc": "The identity this handle refers to."
+  },
+  {
+    "name": "RoutineHandle::is_running",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_is_running",
+    "desc": "Checks whether the routine is still running."
+  },
+  {
+    "name": "RoutineHandle::stop",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_stop",
+    "desc": "Stops the routine, destroying its remaining coroutine frames. A no-op if the routine already finished, was already st..."
+  },
+  {
+    "name": "RoutineHandle::operator bool",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_operator bool",
+    "desc": "Same as a non-empty id()."
+  },
+  {
+    "name": "RoutineHandle::operator==",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_operator==",
+    "desc": "Two handles are equal when they name the same routine of the same runner."
+  },
+  {
+    "name": "RoutineHandle::operator!=",
+    "kind": "Method",
+    "url": "class_RoutineHandle.html#method_operator!=",
+    "desc": "Inequality."
+  },
+  {
+    "name": "RoutineRunner",
+    "kind": "Class",
+    "url": "class_RoutineRunner.html",
+    "desc": "Owns a set of running Routines and resumes the eligible ones once per tick(). Usage: coopa::routine::RoutineRunnerrun..."
+  },
+  {
+    "name": "RoutineRunner::RoutineRunner",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_RoutineRunner",
+    "desc": "Constructs a runner."
+  },
+  {
+    "name": "RoutineRunner::~RoutineRunner",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_~RoutineRunner",
+    "desc": "Stops every routine still running, then severs every outstanding handle."
+  },
+  {
+    "name": "RoutineRunner::RoutineRunner",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_RoutineRunner",
+    "desc": "Non-copyable: outstanding handles and owner tokens refer to this address."
+  },
+  {
+    "name": "RoutineRunner::operator=",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "RoutineRunner::RoutineRunner",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_RoutineRunner",
+    "desc": "Non-movable, for the same reason."
+  },
+  {
+    "name": "RoutineRunner::operator=",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_operator=",
+    "desc": "Non-movable."
+  },
+  {
+    "name": "RoutineRunner::set_job_engine",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_set_job_engine",
+    "desc": "Installs (or clears) the JobEngine that on_worker() bodies are submitted to."
+  },
+  {
+    "name": "RoutineRunner::job_engine",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_job_engine",
+    "desc": "The installed JobEngine, or nullptr."
+  },
+  {
+    "name": "RoutineRunner::start",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_start",
+    "desc": "Starts a routine, running its body immediately up to the first suspension. Matches Unity's StartCoroutine: everything..."
+  },
+  {
+    "name": "RoutineRunner::stop",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_stop",
+    "desc": "Stops one routine, destroying its remaining coroutine frames."
+  },
+  {
+    "name": "RoutineRunner::stop_owner",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_stop_owner",
+    "desc": "Stops every routine started with the given owner token."
+  },
+  {
+    "name": "RoutineRunner::stop_all",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_stop_all",
+    "desc": "Stops every routine this runner owns."
+  },
+  {
+    "name": "RoutineRunner::is_running",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_is_running",
+    "desc": "Checks whether a routine is still running."
+  },
+  {
+    "name": "RoutineRunner::tick",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_tick",
+    "desc": "Resumes every routine whose wait is satisfied, once each. Ignored if called re-entrantly from inside a routine body a..."
+  },
+  {
+    "name": "RoutineRunner::tick",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_tick",
+    "desc": "Convenience overload for callers with no separate unscaled clock."
+  },
+  {
+    "name": "RoutineRunner::active_count",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_active_count",
+    "desc": "How many routines are currently running."
+  },
+  {
+    "name": "RoutineRunner::last_exception",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_last_exception",
+    "desc": "The most recent exception that escaped a routine body. An escaping exception is logged and stops that routine; it is ..."
+  },
+  {
+    "name": "RoutineRunner::clear_last_exception",
+    "kind": "Method",
+    "url": "class_RoutineRunner.html#method_clear_last_exception",
+    "desc": "Clears last_exception()."
+  },
+  {
+    "name": "RoutineScope",
+    "kind": "Class",
+    "url": "class_RoutineScope.html",
+    "desc": "Move-only RAII owner that stops every routine it started when destroyed. The RoutineRunner analogue of coopa::event::..."
+  },
+  {
+    "name": "RoutineScope::RoutineScope",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_RoutineScope",
+    "desc": "Constructs an empty scope."
+  },
+  {
+    "name": "RoutineScope::~RoutineScope",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_~RoutineScope",
+    "desc": "Stops every routine this scope started."
+  },
+  {
+    "name": "RoutineScope::RoutineScope",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_RoutineScope",
+    "desc": "Move constructor. Takes over the other scope's routines."
+  },
+  {
+    "name": "RoutineScope::operator=",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_operator=",
+    "desc": "Move assignment. Stops this scope's routines, then takes over the other's."
+  },
+  {
+    "name": "RoutineScope::RoutineScope",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_RoutineScope",
+    "desc": "Non-copyable: two scopes must not both stop the same routines."
+  },
+  {
+    "name": "RoutineScope::operator=",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "RoutineScope::start",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_start",
+    "desc": "Starts a routine on runner and keeps it alive only as long as this scope."
+  },
+  {
+    "name": "RoutineScope::start",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_start",
+    "desc": "Starts a routine on the runner reachable from owner's Scene, owned by owner. Defined in coopa/routine/routine_system...."
+  },
+  {
+    "name": "RoutineScope::stop_all",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_stop_all",
+    "desc": "Stops every routine this scope started."
+  },
+  {
+    "name": "RoutineScope::active_count",
+    "kind": "Method",
+    "url": "class_RoutineScope.html#method_active_count",
+    "desc": "How many routines this scope started are still running."
+  },
+  {
+    "name": "RoutineSystem",
+    "kind": "Class",
+    "url": "class_RoutineSystem.html",
+    "desc": "Registered at coopa::scene::UpdatePhase::Routine; resumes every running Routine once per frame. Landing at 250 puts r..."
+  },
+  {
+    "name": "RoutineSystem::system_name",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_system_name",
+    "desc": "The name Scene::find_system() and remove_system() match on."
+  },
+  {
+    "name": "RoutineSystem::on_detach",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_on_detach",
+    "desc": "Stops every routine still running when this system leaves the Scene."
+  },
+  {
+    "name": "RoutineSystem::execute",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_execute",
+    "desc": "Pumps every running routine once."
+  },
+  {
+    "name": "RoutineSystem::runner",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_runner",
+    "desc": "The runner this system pumps."
+  },
+  {
+    "name": "RoutineSystem::runner",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_runner",
+    "desc": "Const overload of runner()."
+  },
+  {
+    "name": "RoutineSystem::set_time_scale",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_set_time_scale",
+    "desc": "Multiplier applied to the frame delta before it reaches seconds(). Unity's Time.timeScale. Setting it to 0 pauses eve..."
+  },
+  {
+    "name": "RoutineSystem::time_scale",
+    "kind": "Method",
+    "url": "class_RoutineSystem.html#method_time_scale",
+    "desc": "The current time scale."
+  },
+  {
+    "name": "YieldInstruction",
+    "kind": "Class",
+    "url": "class_YieldInstruction.html",
+    "desc": "One suspension request, produced by the factories below and consumed by RoutineRunner. Move-only, and owns two things..."
+  },
+  {
+    "name": "YieldInstruction::YieldInstruction",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_YieldInstruction",
+    "desc": "Default-constructs a plain \"resume on the next tick\" instruction."
+  },
+  {
+    "name": "YieldInstruction::YieldInstruction",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_YieldInstruction",
+    "desc": "Move constructor. Transfers ownership of the nested frame."
+  },
+  {
+    "name": "YieldInstruction::operator=",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_operator=",
+    "desc": "Move assignment. Destroys any nested frame this instruction still owns."
+  },
+  {
+    "name": "YieldInstruction::YieldInstruction",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_YieldInstruction",
+    "desc": "Non-copyable: it owns a coroutine frame."
+  },
+  {
+    "name": "YieldInstruction::operator=",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_operator=",
+    "desc": "Non-copyable."
+  },
+  {
+    "name": "YieldInstruction::~YieldInstruction",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_~YieldInstruction",
+    "desc": "Destroys a nested frame the runner never took ownership of."
+  },
+  {
+    "name": "YieldInstruction::take_nested",
+    "kind": "Method",
+    "url": "class_YieldInstruction.html#method_take_nested",
+    "desc": "Hands the nested frame to the caller, who becomes responsible for destroying it."
+  },
+  {
+    "name": "coopa::routine::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__routine__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "RoutinePromise",
+    "kind": "Class",
+    "url": "class_RoutinePromise.html",
+    "desc": "The coroutine promise behind Routine. Holds whatever the body last yielded, plus any exception that escaped it. Defin..."
+  },
+  {
+    "name": "RoutinePromise::get_return_object",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_get_return_object",
+    "desc": "Builds the Routine handed back to whoever called the coroutine."
+  },
+  {
+    "name": "RoutinePromise::initial_suspend",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_initial_suspend",
+    "desc": "Suspends before the first statement of the body. The body therefore does not run at construction, which keeps a Routi..."
+  },
+  {
+    "name": "RoutinePromise::final_suspend",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_final_suspend",
+    "desc": "Suspends at the end, so the runner can observe done() and destroy the frame itself."
+  },
+  {
+    "name": "RoutinePromise::return_void",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_return_void",
+    "desc": "A routine body produces no value."
+  },
+  {
+    "name": "RoutinePromise::unhandled_exception",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_unhandled_exception",
+    "desc": "Captures an exception that escaped the body; the runner logs it and stops the routine."
+  },
+  {
+    "name": "RoutinePromise::yield_value",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_yield_value",
+    "desc": "Handles co_yield of any instruction from yield.h."
+  },
+  {
+    "name": "RoutinePromise::yield_value",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_yield_value",
+    "desc": "Handles co_yield other_routine() Unity's yield return StartCoroutine(x). The child starts immediately and runs to com..."
+  },
+  {
+    "name": "RoutinePromise::yield_value",
+    "kind": "Method",
+    "url": "class_RoutinePromise.html#method_yield_value",
+    "desc": "Handles co_yield some_job_handle sugar for co_yield wait_for(h), so co_yield engine.parallel_for(...) reads naturally."
+  },
+  {
+    "name": "RoutineState",
+    "kind": "Class",
+    "url": "class_RoutineState.html",
+    "desc": "One running routine: its nesting stack, what it is waiting for, and its bookkeeping flags. stack.back() is the corout..."
+  },
+  {
+    "name": "RunnerCore",
+    "kind": "Class",
+    "url": "class_RunnerCore.html",
+    "desc": "Shared control block linking a RoutineRunner to every handle it handed out. The runner owns the only shared_ptr; ever..."
+  },
+  {
+    "name": "coopa::scene",
+    "kind": "Namespace",
+    "url": "scope_coopa__scene.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::scene::normalize_component_tag",
+    "kind": "Function",
+    "url": "scope_coopa__scene.html#func_normalize_component_tag",
+    "desc": "Strips a leading '!' so a YAML tag-form name (\"!MeshRenderer\") and a type-form name (\"MeshRenderer\") compare equal. S..."
+  },
+  {
+    "name": "coopa::scene::install_transform_system",
+    "kind": "Function",
+    "url": "scope_coopa__scene.html#func_install_transform_system",
+    "desc": "Constructs a TransformSystem and registers it at UpdatePhase::TransformResolve."
+  },
+  {
+    "name": "BehaviourSystem",
+    "kind": "Class",
+    "url": "class_BehaviourSystem.html",
+    "desc": "Built-in UpdatePhase::Behaviour step: the recursive Component::update() walk. Auto-installed by every Scene at constr..."
+  },
+  {
+    "name": "BehaviourSystem::execute",
+    "kind": "Method",
+    "url": "class_BehaviourSystem.html#method_execute",
+    "desc": "Does this system's per-frame work. Called with a live Scene&amp; every time \u2014 a system must not cache the reference i..."
+  },
+  {
+    "name": "BehaviourSystem::system_name",
+    "kind": "Method",
+    "url": "class_BehaviourSystem.html#method_system_name",
+    "desc": "Stable name used by Scene::find_system()/remove_system() and logging."
+  },
+  {
+    "name": "Component",
+    "kind": "Class",
+    "url": "class_Component.html",
+    "desc": "Abstract base class for all components attached to a SceneObject. Subclass and override start()/update()/late_update(..."
+  },
+  {
+    "name": "Component::~Component",
+    "kind": "Method",
+    "url": "class_Component.html#method_~Component",
+    "desc": ""
+  },
+  {
+    "name": "Component::start",
+    "kind": "Method",
+    "url": "class_Component.html#method_start",
+    "desc": "Called once when the scene is loaded, after all objects are constructed."
+  },
+  {
+    "name": "Component::update",
+    "kind": "Method",
+    "url": "class_Component.html#method_update",
+    "desc": "Called every frame."
+  },
+  {
+    "name": "Component::late_update",
+    "kind": "Method",
+    "url": "class_Component.html#method_late_update",
+    "desc": "Called every frame, after every component's update() has already run this frame across the whole scene \u2014 mirrors Unit..."
+  },
+  {
+    "name": "Component::type_name",
+    "kind": "Method",
+    "url": "class_Component.html#method_type_name",
+    "desc": "Returns the type name string for this component."
+  },
+  {
+    "name": "FrameContext",
+    "kind": "Class",
+    "url": "class_FrameContext.html",
+    "desc": "Per-frame inputs handed to every ISceneSystem::execute() call."
+  },
+  {
+    "name": "ISceneSystem",
+    "kind": "Class",
+    "url": "class_ISceneSystem.html",
+    "desc": "A unit of per-frame scene work, run at a fixed point in the phase order. Register an instance with Scene::add_system(..."
+  },
+  {
+    "name": "ISceneSystem::~ISceneSystem",
+    "kind": "Method",
+    "url": "class_ISceneSystem.html#method_~ISceneSystem",
+    "desc": ""
+  },
+  {
+    "name": "ISceneSystem::on_attach",
+    "kind": "Method",
+    "url": "class_ISceneSystem.html#method_on_attach",
+    "desc": "Called once when the system is registered via Scene::add_system()."
+  },
+  {
+    "name": "ISceneSystem::on_detach",
+    "kind": "Method",
+    "url": "class_ISceneSystem.html#method_on_detach",
+    "desc": "Called once when the system is removed via Scene::remove_system()."
+  },
+  {
+    "name": "ISceneSystem::execute",
+    "kind": "Method",
+    "url": "class_ISceneSystem.html#method_execute",
+    "desc": "Does this system's per-frame work. Called with a live Scene&amp; every time \u2014 a system must not cache the reference i..."
+  },
+  {
+    "name": "ISceneSystem::system_name",
+    "kind": "Method",
+    "url": "class_ISceneSystem.html#method_system_name",
+    "desc": "Stable name used by Scene::find_system()/remove_system() and logging."
+  },
+  {
+    "name": "ISceneSystem::runs_in_edit_mode",
+    "kind": "Method",
+    "url": "class_ISceneSystem.html#method_runs_in_edit_mode",
+    "desc": "Whether this system still runs while its Scene is not simulating. An editor holds its scene in a non-simulating state..."
+  },
+  {
+    "name": "LateBehaviourSystem",
+    "kind": "Class",
+    "url": "class_LateBehaviourSystem.html",
+    "desc": "Built-in UpdatePhase::LateBehaviour step: the recursive Component::late_update() walk. Auto-installed by every Scene ..."
+  },
+  {
+    "name": "LateBehaviourSystem::execute",
+    "kind": "Method",
+    "url": "class_LateBehaviourSystem.html#method_execute",
+    "desc": "Does this system's per-frame work. Called with a live Scene&amp; every time \u2014 a system must not cache the reference i..."
+  },
+  {
+    "name": "LateBehaviourSystem::system_name",
+    "kind": "Method",
+    "url": "class_LateBehaviourSystem.html#method_system_name",
+    "desc": "Stable name used by Scene::find_system()/remove_system() and logging."
+  },
+  {
+    "name": "Scene",
+    "kind": "Class",
+    "url": "class_Scene.html",
+    "desc": "Owns the root SceneObjects and provides generic hierarchy-wide queries. Single-owner + deferred commands. At any inst..."
+  },
+  {
+    "name": "Scene::Scene",
+    "kind": "Method",
+    "url": "class_Scene.html#method_Scene",
+    "desc": "Constructs an empty scene with the given name. Installs the two built-in systems (BehaviourSystem at UpdatePhase::Beh..."
+  },
+  {
+    "name": "Scene::Scene",
+    "kind": "Method",
+    "url": "class_Scene.html#method_Scene",
+    "desc": ""
+  },
+  {
+    "name": "Scene::operator=",
+    "kind": "Method",
+    "url": "class_Scene.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Scene::Scene",
+    "kind": "Method",
+    "url": "class_Scene.html#method_Scene",
+    "desc": ""
+  },
+  {
+    "name": "Scene::operator=",
+    "kind": "Method",
+    "url": "class_Scene.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Scene::name",
+    "kind": "Method",
+    "url": "class_Scene.html#method_name",
+    "desc": "Returns the scene name."
+  },
+  {
+    "name": "Scene::add_root_object",
+    "kind": "Method",
+    "url": "class_Scene.html#method_add_root_object",
+    "desc": "Adds a root SceneObject (takes ownership)."
+  },
+  {
+    "name": "Scene::remove_root_object",
+    "kind": "Method",
+    "url": "class_Scene.html#method_remove_root_object",
+    "desc": "Detaches and destroys a root object by pointer."
+  },
+  {
+    "name": "Scene::root_objects",
+    "kind": "Method",
+    "url": "class_Scene.html#method_root_objects",
+    "desc": "Returns the list of root SceneObjects (read-only)."
+  },
+  {
+    "name": "Scene::root_objects",
+    "kind": "Method",
+    "url": "class_Scene.html#method_root_objects",
+    "desc": "Returns the list of root SceneObjects (mutable)."
+  },
+  {
+    "name": "Scene::start",
+    "kind": "Method",
+    "url": "class_Scene.html#method_start",
+    "desc": "Calls start() on all root objects (recursively). Should be called once after the scene is fully loaded. Also stamps e..."
+  },
+  {
+    "name": "Scene::update",
+    "kind": "Method",
+    "url": "class_Scene.html#method_update",
+    "desc": "Runs every registered system with order &lt; UpdatePhase::LateBehaviour. With nothing else registered this is just th..."
+  },
+  {
+    "name": "Scene::late_update",
+    "kind": "Method",
+    "url": "class_Scene.html#method_late_update",
+    "desc": "Runs every registered system with order &gt;= UpdatePhase::LateBehaviour, then flushes every worker's deferred SceneC..."
+  },
+  {
+    "name": "Scene::flush_commands",
+    "kind": "Method",
+    "url": "class_Scene.html#method_flush_commands",
+    "desc": "Applies every worker's recorded SceneCommandBuffer, in worker-index order (deterministic), then clears them. Called a..."
+  },
+  {
+    "name": "Scene::commands_for",
+    "kind": "Method",
+    "url": "class_Scene.html#method_commands_for",
+    "desc": "Returns the SceneCommandBuffer a system should record deferred edits into for the given worker index (see FrameContex..."
+  },
+  {
+    "name": "Scene::adopt",
+    "kind": "Method",
+    "url": "class_Scene.html#method_adopt",
+    "desc": "Stamps Component::scene on every component in obj's subtree, without calling start() on any of them. For attaching a ..."
+  },
+  {
+    "name": "Scene::events",
+    "kind": "Method",
+    "url": "class_Scene.html#method_events",
+    "desc": "The scene-wide named EventBus \u2014 see coopa/event/event_bus.h."
+  },
+  {
+    "name": "Scene::set_job_engine",
+    "kind": "Method",
+    "url": "class_Scene.html#method_set_job_engine",
+    "desc": "Installs the JobEngine every system sees via FrameContext::jobs (non-owning; the caller keeps ownership). This Scene ..."
+  },
+  {
+    "name": "Scene::job_engine",
+    "kind": "Method",
+    "url": "class_Scene.html#method_job_engine",
+    "desc": "Returns the installed frame JobEngine, or nullptr if none."
+  },
+  {
+    "name": "Scene::add_system",
+    "kind": "Method",
+    "url": "class_Scene.html#method_add_system",
+    "desc": "Registers a system at the given phase slot. Systems at equal order run in registration order. Ownership transfers to ..."
+  },
+  {
+    "name": "Scene::add_system",
+    "kind": "Method",
+    "url": "class_Scene.html#method_add_system",
+    "desc": "Registers a system at an arbitrary numeric order. Lets a consumer insert between the built-in phases (e.g. 375 for IK..."
+  },
+  {
+    "name": "Scene::remove_system",
+    "kind": "Method",
+    "url": "class_Scene.html#method_remove_system",
+    "desc": "Removes the system with the given system_name(), calling on_detach()."
+  },
+  {
+    "name": "Scene::find_system",
+    "kind": "Method",
+    "url": "class_Scene.html#method_find_system",
+    "desc": "Finds a registered system by system_name(), or nullptr."
+  },
+  {
+    "name": "Scene::frame_index",
+    "kind": "Method",
+    "url": "class_Scene.html#method_frame_index",
+    "desc": "Monotonically increasing frame counter, incremented once per late_update()."
+  },
+  {
+    "name": "Scene::set_simulating",
+    "kind": "Method",
+    "url": "class_Scene.html#method_set_simulating",
+    "desc": "Turns simulation on (the default) or off. Off is an editor's \"edit mode\": update()/late_update() run only the systems..."
+  },
+  {
+    "name": "Scene::is_simulating",
+    "kind": "Method",
+    "url": "class_Scene.html#method_is_simulating",
+    "desc": "See set_simulating()."
+  },
+  {
+    "name": "Scene::get_components",
+    "kind": "Method",
+    "url": "class_Scene.html#method_get_components",
+    "desc": "Returns a flat list of every active component of type T in the scene hierarchy."
+  },
+  {
+    "name": "Scene::find_objects_with",
+    "kind": "Method",
+    "url": "class_Scene.html#method_find_objects_with",
+    "desc": "Returns every active SceneObject that carries a component of type T."
+  },
+  {
+    "name": "Scene::find_first_component",
+    "kind": "Method",
+    "url": "class_Scene.html#method_find_first_component",
+    "desc": "Returns the first active component of type T found in the hierarchy (pre-order)."
+  },
+  {
+    "name": "Scene::find_object",
+    "kind": "Method",
+    "url": "class_Scene.html#method_find_object",
+    "desc": "Finds the first SceneObject with the given name (depth-first)."
+  },
+  {
+    "name": "Scene::find_object_by_path",
+    "kind": "Method",
+    "url": "class_Scene.html#method_find_object_by_path",
+    "desc": "Finds a SceneObject by a ':'-separated hierarchy path, e.g. \"sdf_blob:sdf_blob_sphere\". The FIRST segment is resolved..."
+  },
+  {
+    "name": "SceneCommandBuffer",
+    "kind": "Class",
+    "url": "class_SceneCommandBuffer.html",
+    "desc": "One worker's queue of deferred structural edits against one Scene. Every method here is safe to call from any single ..."
+  },
+  {
+    "name": "SceneCommandBuffer::add_root_object",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_add_root_object",
+    "desc": "Adds obj as a new scene root once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::add_child",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_add_child",
+    "desc": "Adds child under parent once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::destroy_object",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_destroy_object",
+    "desc": "Detaches and destroys obj (root or non-root) once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::attach_component",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_attach_component",
+    "desc": "Attaches comp onto obj once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::remove_component",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_remove_component",
+    "desc": "Removes and destroys comp from its owner once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::set_active",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_set_active",
+    "desc": "Sets obj's active flag once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::emit",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_emit",
+    "desc": "Emits a named EventBus signal once flushed (EventBus is not thread-safe see its class doc)."
+  },
+  {
+    "name": "SceneCommandBuffer::enqueue",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_enqueue",
+    "desc": "Escape hatch: runs an arbitrary callback against the Scene once flushed."
+  },
+  {
+    "name": "SceneCommandBuffer::empty",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_empty",
+    "desc": ""
+  },
+  {
+    "name": "SceneCommandBuffer::clear",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_clear",
+    "desc": ""
+  },
+  {
+    "name": "SceneCommandBuffer::flush_",
+    "kind": "Method",
+    "url": "class_SceneCommandBuffer.html#method_flush_",
+    "desc": "Internal use (Scene::flush_commands()): applies and clears every recorded op, in order."
+  },
+  {
+    "name": "SceneConfig",
+    "kind": "Class",
+    "url": "class_SceneConfig.html",
+    "desc": "Default scene loading parameters."
+  },
+  {
+    "name": "SceneInheritance",
+    "kind": "Class",
+    "url": "class_SceneInheritance.html",
+    "desc": "Static resolver that expands every inherit_from in a scene document into one fully-merged fkyaml::node."
+  },
+  {
+    "name": "SceneInheritance::resolve",
+    "kind": "Method",
+    "url": "class_SceneInheritance.html#method_resolve",
+    "desc": "Resolves every inherit_from reachable from path's document."
+  },
+  {
+    "name": "SceneInheritance::resolve_object",
+    "kind": "Method",
+    "url": "class_SceneInheritance.html#method_resolve_object",
+    "desc": "Expands one object node's prefab / inherit_from (and its children's) as if it were declared in declaring_path an inst..."
+  },
+  {
+    "name": "SceneInheritance::set_search_roots",
+    "kind": "Method",
+    "url": "class_SceneInheritance.html#method_set_search_roots",
+    "desc": "Asset roots searched for references after the declaring / root scene folders."
+  },
+  {
+    "name": "SceneInheritance::search_roots",
+    "kind": "Method",
+    "url": "class_SceneInheritance.html#method_search_roots",
+    "desc": ""
+  },
+  {
+    "name": "SceneLoader",
+    "kind": "Class",
+    "url": "class_SceneLoader.html",
+    "desc": "Parses a YAML scene file into a Scene, dispatching component parsing to registered callbacks. Usage: `//Onceatstartup..."
+  },
+  {
+    "name": "SceneLoader::load",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_load",
+    "desc": "Loads a scene from a YAML file (or whatever set_document_loader() routes to). Constructs the full Scene hierarchy. Ev..."
+  },
+  {
+    "name": "SceneLoader::load_from_node",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_load_from_node",
+    "desc": "Builds a scene from an already-parsed (not yet inheritance-resolved) document. The in-memory twin of load(): an edito..."
+  },
+  {
+    "name": "SceneLoader::build_object",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_build_object",
+    "desc": "Builds one object (and its subtree) from an already-resolved object node. For an editor rebuilding a single edited ob..."
+  },
+  {
+    "name": "SceneLoader::set_search_roots",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_set_search_roots",
+    "desc": "The project's asset roots, searched for prefab: / inherit_from references after the declaring file's folder (so a sce..."
+  },
+  {
+    "name": "SceneLoader::instantiate",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_instantiate",
+    "desc": "Builds an instance of an object asset (objects/crate, or a path), with optional overrides merged on top (components: ..."
+  },
+  {
+    "name": "SceneLoader::spawn",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_spawn",
+    "desc": "Spawns an object asset into a running scene: builds it (instantiate()), parents it (root, or under parent), stamps it..."
+  },
+  {
+    "name": "SceneLoader::set_object_observer",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_set_object_observer",
+    "desc": "Installs (or, with an empty function, removes) the process-wide object observer. Lets a tool map document nodes to th..."
+  },
+  {
+    "name": "SceneLoader::register_component_parser",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_register_component_parser",
+    "desc": "Registers a parser for a component's YAML tag/type name. Lets libraries outside libcoopa (e.g. gfxcoopa, uicoopa) ext..."
+  },
+  {
+    "name": "SceneLoader::clear_component_parsers",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_clear_component_parsers",
+    "desc": "Clears every registered component parser. Registered parsers commonly capture references (e.g. a Device or Allocator)..."
+  },
+  {
+    "name": "SceneLoader::set_document_loader",
+    "kind": "Method",
+    "url": "class_SceneLoader.html#method_set_document_loader",
+    "desc": "Installs a custom raw-document loader, consulted by every subsequent load(). Pass an empty std::function to restore t..."
+  },
+  {
+    "name": "SceneManager",
+    "kind": "Class",
+    "url": "class_SceneManager.html",
+    "desc": "Manages the lifecycle of zero or more Scenes, one of which is \"active\" (the primary scene get_active_scene()/add_syst..."
+  },
+  {
+    "name": "SceneManager::SceneManager",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_SceneManager",
+    "desc": ""
+  },
+  {
+    "name": "SceneManager::load_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_load_scene",
+    "desc": "Loads a scene from the given path, replacing every previously managed scene (the single-scene-app entry point). Regis..."
+  },
+  {
+    "name": "SceneManager::load_scene_additive",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_load_scene_additive",
+    "desc": "Loads a scene from the given path and adds it alongside any already-managed scenes, active by default."
+  },
+  {
+    "name": "SceneManager::add_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_add_scene",
+    "desc": "Adds an already-constructed scene (e.g. built up by hand rather than via SceneLoader), active by default. Applies wha..."
+  },
+  {
+    "name": "SceneManager::remove_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_remove_scene",
+    "desc": "Removes and destroys a managed scene by pointer."
+  },
+  {
+    "name": "SceneManager::set_scene_active",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_set_scene_active",
+    "desc": "Enables/disables a managed scene's participation in update()/late_update()."
+  },
+  {
+    "name": "SceneManager::scenes",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_scenes",
+    "desc": "Every managed scene, in registration order (regardless of active flag)."
+  },
+  {
+    "name": "SceneManager::set_job_engine",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_set_job_engine",
+    "desc": "Installs the JobEngine to hand to every managed scene (now and future). See Scene::set_job_engine() the same engine m..."
+  },
+  {
+    "name": "SceneManager::add_system",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_add_system",
+    "desc": "Forwards to the active scene's add_system()."
+  },
+  {
+    "name": "SceneManager::remove_system",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_remove_system",
+    "desc": "Forwards to the active scene's remove_system()."
+  },
+  {
+    "name": "SceneManager::find_system",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_find_system",
+    "desc": "Forwards to the active scene's find_system()."
+  },
+  {
+    "name": "SceneManager::has_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_has_scene",
+    "desc": "Returns true if a scene is currently loaded/active."
+  },
+  {
+    "name": "SceneManager::set_active_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_set_active_scene",
+    "desc": "Makes an already-managed scene the primary one get_active_scene() returns."
+  },
+  {
+    "name": "SceneManager::is_scene_active",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_is_scene_active",
+    "desc": "True if scene participates in update()/late_update() (see set_scene_active())."
+  },
+  {
+    "name": "SceneManager::get_active_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_get_active_scene",
+    "desc": "Returns a reference to the active scene."
+  },
+  {
+    "name": "SceneManager::get_active_scene",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_get_active_scene",
+    "desc": "Returns a const reference to the active scene."
+  },
+  {
+    "name": "SceneManager::begin_frame",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_begin_frame",
+    "desc": "Resets per-frame diagnostic counters on the installed JobEngine, if any."
+  },
+  {
+    "name": "SceneManager::end_frame",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_end_frame",
+    "desc": "Reserved for future per-frame finalization on the installed JobEngine, if any."
+  },
+  {
+    "name": "SceneManager::update",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_update",
+    "desc": "Calls update() on every active scene. If a JobEngine is installed and more than one scene is active, each active scen..."
+  },
+  {
+    "name": "SceneManager::late_update",
+    "kind": "Method",
+    "url": "class_SceneManager.html#method_late_update",
+    "desc": "Calls late_update() on every active scene (each scene's own late_update() also flushes that scene's deferred SceneCom..."
+  },
+  {
+    "name": "SceneObject",
+    "kind": "Class",
+    "url": "class_SceneObject.html",
+    "desc": "A named node in the scene hierarchy, owning components and child objects. Usage: autoobj=std::make_unique&lt;SceneObj..."
+  },
+  {
+    "name": "SceneObject::SceneObject",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_SceneObject",
+    "desc": "Constructs a SceneObject with the given name. Carries no components until add_component()/attach_component() is calle..."
+  },
+  {
+    "name": "SceneObject::name",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_name",
+    "desc": "Returns the object name."
+  },
+  {
+    "name": "SceneObject::active",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_active",
+    "desc": "Returns whether this object is active."
+  },
+  {
+    "name": "SceneObject::set_active",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_set_active",
+    "desc": "Sets the active state."
+  },
+  {
+    "name": "SceneObject::parent",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_parent",
+    "desc": "Returns the parent SceneObject (non-owning, may be nullptr)."
+  },
+  {
+    "name": "SceneObject::add_component",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_add_component",
+    "desc": "Constructs and attaches a component of type T. Sets the component's owner pointer to this object."
+  },
+  {
+    "name": "SceneObject::get_component",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_get_component",
+    "desc": "Returns the first component of type T, or nullptr if not found."
+  },
+  {
+    "name": "SceneObject::get_components_in_children",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_get_components_in_children",
+    "desc": "Returns every component of type T found on this object or any descendant."
+  },
+  {
+    "name": "SceneObject::remove_component",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_remove_component",
+    "desc": "Removes and destroys the given component if owned by this object."
+  },
+  {
+    "name": "SceneObject::remove_component",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_remove_component",
+    "desc": "Removes and destroys the first component of type T."
+  },
+  {
+    "name": "SceneObject::get_transform",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_get_transform",
+    "desc": "Returns the TransformComponent (convenience alias for get_component). Avoids template syntax in generic pipeline code..."
+  },
+  {
+    "name": "SceneObject::attach_component",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_attach_component",
+    "desc": "Directly attaches a pre-constructed component (takes ownership). Sets the component's owner pointer to this object."
+  },
+  {
+    "name": "SceneObject::components",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_components",
+    "desc": "Returns all components (read-only)."
+  },
+  {
+    "name": "SceneObject::components",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_components",
+    "desc": "Returns all components (mutable)."
+  },
+  {
+    "name": "SceneObject::get_component_by_type_name",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_get_component_by_type_name",
+    "desc": "Returns the index-th component whose type_name() matches, or nullptr. The string-keyed counterpart to get_component()..."
+  },
+  {
+    "name": "SceneObject::add_child",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_add_child",
+    "desc": "Adds a child SceneObject (takes ownership). Only the SceneObject ownership link is established here \u2014 a child's Trans..."
+  },
+  {
+    "name": "SceneObject::detach_child",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_detach_child",
+    "desc": "Detaches a child from this object without destroying it. The returned unique_ptr owns the detached subtree; the child..."
+  },
+  {
+    "name": "SceneObject::set_parent",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_set_parent",
+    "desc": "Reparents this object under new_parent, preserving the subtree. Detaches this object from its current parent (if any)..."
+  },
+  {
+    "name": "SceneObject::children",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_children",
+    "desc": "Returns the list of children (read-only)."
+  },
+  {
+    "name": "SceneObject::children",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_children",
+    "desc": "Returns the list of children (mutable)."
+  },
+  {
+    "name": "SceneObject::for_each_recursive",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_for_each_recursive",
+    "desc": "Depth-first traversal of this object and all descendants."
+  },
+  {
+    "name": "SceneObject::for_each_recursive",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_for_each_recursive",
+    "desc": "Depth-first traversal (const version)."
+  },
+  {
+    "name": "SceneObject::find_descendant",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_find_descendant",
+    "desc": "Depth-first search for a descendant with the given name. Excludes this object itself \u2014 only children and further desc..."
+  },
+  {
+    "name": "SceneObject::find_child",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_find_child",
+    "desc": "Finds a DIRECT child with the given name (non-recursive). Unlike find_descendant(), does not search grandchildren \u2014 t..."
+  },
+  {
+    "name": "SceneObject::start",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_start",
+    "desc": "Calls start() on all components, then recurses to children. Iterates by index rather than range-based for: a componen..."
+  },
+  {
+    "name": "SceneObject::update",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_update",
+    "desc": "Calls update(dt) on all components, then recurses to active children."
+  },
+  {
+    "name": "SceneObject::late_update",
+    "kind": "Method",
+    "url": "class_SceneObject.html#method_late_update",
+    "desc": "Calls late_update(dt) on all components, then recurses to active children. Mirrors update()'s exact shape (pre-order,..."
+  },
+  {
+    "name": "TransformComponent",
+    "kind": "Class",
+    "url": "class_TransformComponent.html",
+    "desc": "Wraps coopa::util::Transform, linking it into the SceneObject hierarchy. On update(), checks whether the parent's tra..."
+  },
+  {
+    "name": "TransformComponent::TransformComponent",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_TransformComponent",
+    "desc": ""
+  },
+  {
+    "name": "TransformComponent::type_name",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_type_name",
+    "desc": "Returns the type name string for this component."
+  },
+  {
+    "name": "TransformComponent::transform",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_transform",
+    "desc": "Returns a reference to the underlying coopa::util::Transform."
+  },
+  {
+    "name": "TransformComponent::transform",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_transform",
+    "desc": "Returns a const reference to the underlying coopa::util::Transform."
+  },
+  {
+    "name": "TransformComponent::get_world_matrix",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_get_world_matrix",
+    "desc": "Returns the world-space transform matrix. Lazily recomputed from the parent chain when dirty."
+  },
+  {
+    "name": "TransformComponent::set_parent_transform",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_set_parent_transform",
+    "desc": "Links this transform's parent pointer to another TransformComponent. Should be called by SceneLoader after building t..."
+  },
+  {
+    "name": "TransformComponent::update",
+    "kind": "Method",
+    "url": "class_TransformComponent.html#method_update",
+    "desc": "Called every frame; triggers recompute if dirty."
+  },
+  {
+    "name": "TransformSystem",
+    "kind": "Class",
+    "url": "class_TransformSystem.html",
+    "desc": "Registered at UpdatePhase::TransformResolve; recomputes every dirty Transform's world matrix, top-down, once per fram..."
+  },
+  {
+    "name": "TransformSystem::system_name",
+    "kind": "Method",
+    "url": "class_TransformSystem.html#method_system_name",
+    "desc": "Stable name used by Scene::find_system()/remove_system() and logging."
+  },
+  {
+    "name": "TransformSystem::runs_in_edit_mode",
+    "kind": "Method",
+    "url": "class_TransformSystem.html#method_runs_in_edit_mode",
+    "desc": "Keeps world matrices current for a non-simulating (editor) scene too."
+  },
+  {
+    "name": "TransformSystem::execute",
+    "kind": "Method",
+    "url": "class_TransformSystem.html#method_execute",
+    "desc": "Does this system's per-frame work. Called with a live Scene&amp; every time \u2014 a system must not cache the reference i..."
+  },
+  {
+    "name": "coopa::scene::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__scene__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "AddChildOp",
+    "kind": "Class",
+    "url": "class_AddChildOp.html",
+    "desc": ""
+  },
+  {
+    "name": "AddRootObjectOp",
+    "kind": "Class",
+    "url": "class_AddRootObjectOp.html",
+    "desc": ""
+  },
+  {
+    "name": "AttachComponentOp",
+    "kind": "Class",
+    "url": "class_AttachComponentOp.html",
+    "desc": ""
+  },
+  {
+    "name": "CustomOp",
+    "kind": "Class",
+    "url": "class_CustomOp.html",
+    "desc": ""
+  },
+  {
+    "name": "DestroyObjectOp",
+    "kind": "Class",
+    "url": "class_DestroyObjectOp.html",
+    "desc": ""
+  },
+  {
+    "name": "EmitOp",
+    "kind": "Class",
+    "url": "class_EmitOp.html",
+    "desc": ""
+  },
+  {
+    "name": "RemoveComponentOp",
+    "kind": "Class",
+    "url": "class_RemoveComponentOp.html",
+    "desc": ""
+  },
+  {
+    "name": "SetActiveOp",
+    "kind": "Class",
+    "url": "class_SetActiveOp.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::stat",
+    "kind": "Namespace",
+    "url": "scope_coopa__stat.html",
+    "desc": ""
+  },
+  {
+    "name": "Resource",
+    "kind": "Class",
+    "url": "class_Resource.html",
+    "desc": "A single current/max gameplay quantity with optional delayed regen. Deliberately generic \"health\", \"stamina\", and \"ma..."
+  },
+  {
+    "name": "Resource::Resource",
+    "kind": "Method",
+    "url": "class_Resource.html#method_Resource",
+    "desc": ""
+  },
+  {
+    "name": "Resource::Resource",
+    "kind": "Method",
+    "url": "class_Resource.html#method_Resource",
+    "desc": ""
+  },
+  {
+    "name": "Resource::Resource",
+    "kind": "Method",
+    "url": "class_Resource.html#method_Resource",
+    "desc": ""
+  },
+  {
+    "name": "Resource::operator=",
+    "kind": "Method",
+    "url": "class_Resource.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Resource::Resource",
+    "kind": "Method",
+    "url": "class_Resource.html#method_Resource",
+    "desc": ""
+  },
+  {
+    "name": "Resource::operator=",
+    "kind": "Method",
+    "url": "class_Resource.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Resource::normalized",
+    "kind": "Method",
+    "url": "class_Resource.html#method_normalized",
+    "desc": ""
+  },
+  {
+    "name": "Resource::is_depleted",
+    "kind": "Method",
+    "url": "class_Resource.html#method_is_depleted",
+    "desc": ""
+  },
+  {
+    "name": "Resource::is_full",
+    "kind": "Method",
+    "url": "class_Resource.html#method_is_full",
+    "desc": ""
+  },
+  {
+    "name": "Resource::damage",
+    "kind": "Method",
+    "url": "class_Resource.html#method_damage",
+    "desc": "Reduces current by amount (clamped at 0), resets the regen-delay countdown, and notifies."
+  },
+  {
+    "name": "Resource::heal",
+    "kind": "Method",
+    "url": "class_Resource.html#method_heal",
+    "desc": "Increases current by amount (clamped at max) and notifies. Does not affect the regen-delay countdown."
+  },
+  {
+    "name": "Resource::drain",
+    "kind": "Method",
+    "url": "class_Resource.html#method_drain",
+    "desc": "Alias for damage() reads better for a non-combat drain (stamina spent on a sprint, not incoming harm)."
+  },
+  {
+    "name": "Resource::set_max",
+    "kind": "Method",
+    "url": "class_Resource.html#method_set_max",
+    "desc": "Sets a new max. keep_ratio rescales current to preserve normalized() rather than clamping it against the new max outr..."
+  },
+  {
+    "name": "Resource::set_current",
+    "kind": "Method",
+    "url": "class_Resource.html#method_set_current",
+    "desc": ""
+  },
+  {
+    "name": "Resource::tick",
+    "kind": "Method",
+    "url": "class_Resource.html#method_tick",
+    "desc": "Advances the regen-delay countdown and, once elapsed, applies regen_per_second * dt, clamped at max. No-op once alrea..."
+  },
+  {
+    "name": "StatBlock",
+    "kind": "Class",
+    "url": "class_StatBlock.html",
+    "desc": "Owns a set of named Resource instances (e.g. \"health\", \"stamina\"). Backed by std::unordered_map, which is node-based ..."
+  },
+  {
+    "name": "StatBlock::resource",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_resource",
+    "desc": "Returns the named resource, default-constructing one (100/100, no regen) on first access."
+  },
+  {
+    "name": "StatBlock::find",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_find",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::find",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_find",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::contains",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_contains",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::clear",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_clear",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::size",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_size",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::begin",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_begin",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::end",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_end",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::begin",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_begin",
+    "desc": ""
+  },
+  {
+    "name": "StatBlock::end",
+    "kind": "Method",
+    "url": "class_StatBlock.html#method_end",
+    "desc": ""
+  },
+  {
+    "name": "coopa::util",
+    "kind": "Namespace",
+    "url": "scope_coopa__util.html",
+    "desc": ""
+  },
+  {
+    "name": "Time",
+    "kind": "Class",
+    "url": "class_Time.html",
+    "desc": "Tracks frame timing using a high-resolution clock. Call update() once per frame. Then query delta_time() for frame de..."
+  },
+  {
+    "name": "Time::Time",
+    "kind": "Method",
+    "url": "class_Time.html#method_Time",
+    "desc": "Constructs the timer, recording the start time."
+  },
+  {
+    "name": "Time::update",
+    "kind": "Method",
+    "url": "class_Time.html#method_update",
+    "desc": "Updates the timer. Call once per frame at the start of the frame loop."
+  },
+  {
+    "name": "Time::delta_time",
+    "kind": "Method",
+    "url": "class_Time.html#method_delta_time",
+    "desc": "Returns the time in seconds since the last update() call."
+  },
+  {
+    "name": "Time::elapsed",
+    "kind": "Method",
+    "url": "class_Time.html#method_elapsed",
+    "desc": "Returns total time in seconds since construction."
+  },
+  {
+    "name": "Time::frame_count",
+    "kind": "Method",
+    "url": "class_Time.html#method_frame_count",
+    "desc": "Returns the number of frames processed (incremented each update())."
+  },
+  {
+    "name": "Transform",
+    "kind": "Class",
+    "url": "class_Transform.html",
+    "desc": "Hierarchical 3D transform storing position, Euler rotation (degrees), and scale. The local matrix is composed from po..."
+  },
+  {
+    "name": "Transform::Transform",
+    "kind": "Method",
+    "url": "class_Transform.html#method_Transform",
+    "desc": "Default constructs an identity transform (origin, no rotation, unit scale)."
+  },
+  {
+    "name": "Transform::set_position",
+    "kind": "Method",
+    "url": "class_Transform.html#method_set_position",
+    "desc": "Sets the local position."
+  },
+  {
+    "name": "Transform::set_rotation",
+    "kind": "Method",
+    "url": "class_Transform.html#method_set_rotation",
+    "desc": "Sets the local rotation in Euler degrees (XYZ order)."
+  },
+  {
+    "name": "Transform::set_rotation_quat",
+    "kind": "Method",
+    "url": "class_Transform.html#method_set_rotation_quat",
+    "desc": "Sets the local rotation from a quaternion, for callers (e.g. physxcoopa) that integrate orientation directly and woul..."
+  },
+  {
+    "name": "Transform::set_scale",
+    "kind": "Method",
+    "url": "class_Transform.html#method_set_scale",
+    "desc": "Sets the local scale."
+  },
+  {
+    "name": "Transform::position",
+    "kind": "Method",
+    "url": "class_Transform.html#method_position",
+    "desc": "Returns local position."
+  },
+  {
+    "name": "Transform::rotation_degrees",
+    "kind": "Method",
+    "url": "class_Transform.html#method_rotation_degrees",
+    "desc": "Returns local rotation in Euler degrees."
+  },
+  {
+    "name": "Transform::rotation_quat",
+    "kind": "Method",
+    "url": "class_Transform.html#method_rotation_quat",
+    "desc": "Returns the local rotation as a quaternion. If the rotation was last set via set_rotation_quat(), returns that value ..."
+  },
+  {
+    "name": "Transform::scale",
+    "kind": "Method",
+    "url": "class_Transform.html#method_scale",
+    "desc": "Returns local scale."
+  },
+  {
+    "name": "Transform::set_from_node",
+    "kind": "Method",
+    "url": "class_Transform.html#method_set_from_node",
+    "desc": "Parses position, rotation, and scale from a raw fkYAML node. Expects the node to be a mapping with optional keys: pos..."
+  },
+  {
+    "name": "Transform::set_parent",
+    "kind": "Method",
+    "url": "class_Transform.html#method_set_parent",
+    "desc": "Sets the parent transform (non-owning pointer)."
+  },
+  {
+    "name": "Transform::parent",
+    "kind": "Method",
+    "url": "class_Transform.html#method_parent",
+    "desc": "Returns the parent transform pointer (may be nullptr)."
+  },
+  {
+    "name": "Transform::add_child",
+    "kind": "Method",
+    "url": "class_Transform.html#method_add_child",
+    "desc": "Registers a child transform for dirty propagation."
+  },
+  {
+    "name": "Transform::remove_child",
+    "kind": "Method",
+    "url": "class_Transform.html#method_remove_child",
+    "desc": "Removes a previously registered child."
+  },
+  {
+    "name": "Transform::get_local_matrix",
+    "kind": "Method",
+    "url": "class_Transform.html#method_get_local_matrix",
+    "desc": "Returns the local transform matrix (position * rotation * scale). Recomputed only when dirty."
+  },
+  {
+    "name": "Transform::get_world_matrix",
+    "kind": "Method",
+    "url": "class_Transform.html#method_get_world_matrix",
+    "desc": "Returns the world transform matrix (parent_world * local). Recomputed lazily. Walks the parent chain if needed."
+  },
+  {
+    "name": "Transform::world_matrix",
+    "kind": "Method",
+    "url": "class_Transform.html#method_world_matrix",
+    "desc": "Returns the cached world matrix WITHOUT recomputing it, even if dirty. Safe for unlimited concurrent readers, unlike ..."
+  },
+  {
+    "name": "Transform::is_dirty",
+    "kind": "Method",
+    "url": "class_Transform.html#method_is_dirty",
+    "desc": "Returns whether this transform needs recomputation."
+  },
+  {
+    "name": "Transform::recompute",
+    "kind": "Method",
+    "url": "class_Transform.html#method_recompute",
+    "desc": "Force-recomputes the world matrix. Called by the scene update pass."
+  },
+  {
+    "name": "coopa::yaml",
+    "kind": "Namespace",
+    "url": "scope_coopa__yaml.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::register_decoder",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_register_decoder",
+    "desc": "Registers (or replaces) the decoder for a magic/extension pair."
+  },
+  {
+    "name": "coopa::yaml::clear_decoders",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_clear_decoders",
+    "desc": "Removes every registered decoder (tests)."
+  },
+  {
+    "name": "coopa::yaml::is_document_ext",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_is_document_ext",
+    "desc": "True for extensions this module treats as YAML documents (.yaml, .yml, encoded)."
+  },
+  {
+    "name": "coopa::yaml::is_encoded_ext",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_is_encoded_ext",
+    "desc": "True if p carries an encoded-document extension (e.g. \".caml\")."
+  },
+  {
+    "name": "coopa::yaml::decode_bytes",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_decode_bytes",
+    "desc": "Decodes an in-memory document: registered magic -&gt; decoder, otherwise text."
+  },
+  {
+    "name": "coopa::yaml::read_text",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_read_text",
+    "desc": "Reads a document's YAML text, decoding it if it is an encoded container."
+  },
+  {
+    "name": "coopa::yaml::load_document",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_load_document",
+    "desc": "Reads and parses a document (plain or encoded)."
+  },
+  {
+    "name": "coopa::yaml::try_load_document",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_try_load_document",
+    "desc": "load_document() that returns nullopt when the file can't be opened (still throws on bad content)."
+  },
+  {
+    "name": "coopa::yaml::resolve_variant",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_resolve_variant",
+    "desc": "Finds the plain/encoded twin of a document path when the path itself doesn't exist. \"dir/x.yaml\" -&gt; \"dir/x.caml\" (..."
+  },
+  {
+    "name": "coopa::yaml::document_exists",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_document_exists",
+    "desc": "True if path or its plain/encoded twin exists."
+  },
+  {
+    "name": "coopa::yaml::emit",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_emit",
+    "desc": "Renders root as YAML text (see the file doc for the conventions)."
+  },
+  {
+    "name": "coopa::yaml::write_text_atomic",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_write_text_atomic",
+    "desc": "Writes text to path atomically: a sibling temp file, then a rename, so a crash mid-write never leaves a half-written ..."
+  },
+  {
+    "name": "coopa::yaml::save_document",
+    "kind": "Function",
+    "url": "scope_coopa__yaml.html#func_save_document",
+    "desc": "emit() + write_text_atomic()."
+  },
+  {
+    "name": "coopa::yaml::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__yaml__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::registry",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_registry",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::lower_ext",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_lower_ext",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::leading_keys",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_leading_keys",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::trailing_keys",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_trailing_keys",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::index_in",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_index_in",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::key_string",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_key_string",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::format_float",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_format_float",
+    "desc": "Shortest decimal that parses back to exactly v, always float-looking."
+  },
+  {
+    "name": "coopa::yaml::detail::looks_like_number",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_looks_like_number",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::format_string",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_format_string",
+    "desc": "Quotes s if a YAML reader would not read it back as this exact string."
+  },
+  {
+    "name": "coopa::yaml::detail::format_scalar",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_format_scalar",
+    "desc": ""
+  },
+  {
+    "name": "coopa::yaml::detail::is_flow_candidate",
+    "kind": "Function",
+    "url": "scope_coopa__yaml__detail.html#func_is_flow_candidate",
+    "desc": ""
+  },
+  {
+    "name": "DecoderEntry",
+    "kind": "Class",
+    "url": "class_DecoderEntry.html",
+    "desc": ""
+  },
+  {
+    "name": "DecoderRegistry",
+    "kind": "Class",
+    "url": "class_DecoderRegistry.html",
+    "desc": ""
+  },
+  {
+    "name": "Emitter",
+    "kind": "Class",
+    "url": "class_Emitter.html",
+    "desc": ""
+  },
+  {
+    "name": "Emitter::Emitter",
+    "kind": "Method",
+    "url": "class_Emitter.html#method_Emitter",
+    "desc": ""
+  },
+  {
+    "name": "Emitter::run",
+    "kind": "Method",
+    "url": "class_Emitter.html#method_run",
+    "desc": ""
+  },
+  {
+    "name": "Global Namespace",
+    "kind": "Namespace",
+    "url": "scope_Global_Namespace.html",
+    "desc": "Global C++ symbols."
+  },
+  {
+    "name": "coopa::job::CounterPool::Allocation",
+    "kind": "Class",
+    "url": "class_coopa__job__CounterPool__Allocation.html",
+    "desc": "Result of allocate(): the slot index plus the generation stamped into it."
+  },
+  {
+    "name": "coopa::input::InputMap::AxisBinding",
+    "kind": "Class",
+    "url": "class_coopa__input__InputMap__AxisBinding.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::anim::Animator::Binding",
+    "kind": "Class",
+    "url": "class_coopa__anim__Animator__Binding.html",
+    "desc": "One resolved (Component, AnimatedProperty) accumulation target, shared by every track that writes it."
+  },
+  {
+    "name": "coopa::input::InputMap::Binding",
+    "kind": "Class",
+    "url": "class_coopa__input__InputMap__Binding.html",
+    "desc": "One binding: a key or a mouse button, plus an optional required chord."
+  },
+  {
+    "name": "coopa::job::CounterPool::CounterSlot",
+    "kind": "Class",
+    "url": "class_coopa__job__CounterPool__CounterSlot.html",
+    "desc": "One handle's worth of tracking state."
+  },
+  {
+    "name": "coopa::event::Signal::Entry",
+    "kind": "Class",
+    "url": "class_coopa__event__Signal__Entry.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::scene::SceneManager::Entry",
+    "kind": "Class",
+    "url": "class_coopa__scene__SceneManager__Entry.html",
+    "desc": ""
+  },
+  {
+    "name": "FileUtil",
+    "kind": "Class",
+    "url": "class_FileUtil.html",
+    "desc": "Static utility class that helps resolve correct asset, resource, and project paths."
+  },
+  {
+    "name": "FileUtil::does_path_exist",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_does_path_exist",
+    "desc": "Checks if a file path exists and is readable."
+  },
+  {
+    "name": "FileUtil::get_root_path",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_get_root_path",
+    "desc": "Resolves a path relative to the root directory."
+  },
+  {
+    "name": "FileUtil::get_project_path",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_get_project_path",
+    "desc": "Resolves a path relative to the project directory."
+  },
+  {
+    "name": "FileUtil::get_generic_asset_path",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_get_generic_asset_path",
+    "desc": "Resolves generic asset/resource paths dynamically by trying assets, then resources."
+  },
+  {
+    "name": "FileUtil::get_asset_path",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_get_asset_path",
+    "desc": "Resolves a path specifically as an asset. Any existing ASSETS_PREFIX is stripped before the prefix is re-applied, so ..."
+  },
+  {
+    "name": "FileUtil::get_resource_path",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_get_resource_path",
+    "desc": "Resolves a path specifically as a resource. Mirrors get_asset_path(), including its anywhere-in-the-string prefix mat..."
+  },
+  {
+    "name": "FileUtil::does_asset_exist",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_does_asset_exist",
+    "desc": "Checks if a specific asset path exists."
+  },
+  {
+    "name": "FileUtil::does_resource_exist",
+    "kind": "Method",
+    "url": "class_FileUtil.html#method_does_resource_exist",
+    "desc": "Checks if a specific resource path exists."
+  },
+  {
+    "name": "IdUtil",
+    "kind": "Class",
+    "url": "class_IdUtil.html",
+    "desc": "A header-only utility class for generating unique unsigned integer IDs. This class provides a simple, thread-safe mec..."
+  },
+  {
+    "name": "IdUtil::get_unique_id",
+    "kind": "Method",
+    "url": "class_IdUtil.html#method_get_unique_id",
+    "desc": "Retrieves a unique unsigned integer ID. This method atomically increments an internal counter and returns its new val..."
+  },
+  {
+    "name": "coopa::anim::Animator::Layer",
+    "kind": "Class",
+    "url": "class_coopa__anim__Animator__Layer.html",
+    "desc": "One playing instance of a state: its own time cursor and crossfade weight."
+  },
+  {
+    "name": "Mat4",
+    "kind": "Class",
+    "url": "class_Mat4.html",
+    "desc": "A 4x4 matrix implementation optimized for column-major printing and local multiplication hazards. Provided for consum..."
+  },
+  {
+    "name": "Mat4::identity",
+    "kind": "Method",
+    "url": "class_Mat4.html#method_identity",
+    "desc": "Creates an identity matrix."
+  },
+  {
+    "name": "Mat4::translation",
+    "kind": "Method",
+    "url": "class_Mat4.html#method_translation",
+    "desc": "Creates a translation matrix."
+  },
+  {
+    "name": "Mat4::from_mat",
+    "kind": "Method",
+    "url": "class_Mat4.html#method_from_mat",
+    "desc": "Creates a Mat4 matrix from a GLM 4x4 matrix."
+  },
+  {
+    "name": "Mat4::operator*",
+    "kind": "Method",
+    "url": "class_Mat4.html#method_operator*",
+    "desc": "Performs matrix multiplication (this * right)."
+  },
+  {
+    "name": "Mat4::get_mat",
+    "kind": "Method",
+    "url": "class_Mat4.html#method_get_mat",
+    "desc": "Converts the Mat4 into a GLM 4x4 column-major matrix representation."
+  },
+  {
+    "name": "Mat4::log",
+    "kind": "Method",
+    "url": "class_Mat4.html#method_log",
+    "desc": "Utility helper that prints the matrix in a human-readable column-major format."
+  },
+  {
+    "name": "MathUtil",
+    "kind": "Class",
+    "url": "class_MathUtil.html",
+    "desc": "Static helper functions for basic math operations."
+  },
+  {
+    "name": "MathUtil::get_max",
+    "kind": "Method",
+    "url": "class_MathUtil.html#method_get_max",
+    "desc": "Returns the maximum of two floating-point numbers."
+  },
+  {
+    "name": "MathUtil::get_min",
+    "kind": "Method",
+    "url": "class_MathUtil.html#method_get_min",
+    "desc": "Returns the minimum of two floating-point numbers."
+  },
+  {
+    "name": "MathUtil::lerp",
+    "kind": "Method",
+    "url": "class_MathUtil.html#method_lerp",
+    "desc": "Linearly interpolates between two floats."
+  },
+  {
+    "name": "coopa::scene::SceneLoader::ParseContext",
+    "kind": "Class",
+    "url": "class_coopa__scene__SceneLoader__ParseContext.html",
+    "desc": "Context passed to every component parser alongside its YAML node."
+  },
+  {
+    "name": "coopa::scene::SceneLoader::ParseContext::base_dir",
+    "kind": "Method",
+    "url": "class_coopa__scene__SceneLoader__ParseContext.html#method_base_dir",
+    "desc": "Resolves a relative asset path against this context's provenance. Tries search_dirs in order, then scene_dir, returni..."
+  },
+  {
+    "name": "coopa::scene::SceneLoader::ParseContext::resolve",
+    "kind": "Method",
+    "url": "class_coopa__scene__SceneLoader__ParseContext.html#method_resolve",
+    "desc": ""
+  },
+  {
+    "name": "coopa::asset::AssetManager::PendingLoad",
+    "kind": "Class",
+    "url": "class_coopa__asset__AssetManager__PendingLoad.html",
+    "desc": "Bookkeeping for one in-flight load_async() call."
+  },
+  {
+    "name": "coopa::job::WorkStealingDeque::Slot",
+    "kind": "Class",
+    "url": "class_coopa__job__WorkStealingDeque__Slot.html",
+    "desc": "Cache-line-padded storage slot to prevent false sharing between adjacent elements accessed by different threads."
+  },
+  {
+    "name": "coopa::anim::Animator::StateBinding",
+    "kind": "Class",
+    "url": "class_coopa__anim__Animator__StateBinding.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::anim::Animator::TrackRef",
+    "kind": "Class",
+    "url": "class_coopa__anim__Animator__TrackRef.html",
+    "desc": "Per-track resolved state, parallel to one AnimationClip::tracks entry."
+  },
+  {
+    "name": "coopa::input::InputMap::VectorBinding",
+    "kind": "Class",
+    "url": "class_coopa__input__InputMap__VectorBinding.html",
+    "desc": ""
+  },
+  {
+    "name": "std",
+    "kind": "Namespace",
+    "url": "scope_std.html",
+    "desc": ""
+  },
+  {
+    "name": "AssetId >",
+    "kind": "Class",
+    "url": "class_AssetId__.html",
+    "desc": "Allows AssetId to be used directly as an unordered_map/unordered_set key."
+  },
+  {
+    "name": "AssetId >::operator()",
+    "kind": "Method",
+    "url": "class_AssetId__.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "ItemId >",
+    "kind": "Class",
+    "url": "class_ItemId__.html",
+    "desc": "Allows ItemId to be used directly as an unordered_map/unordered_set key."
+  },
+  {
+    "name": "ItemId >::operator()",
+    "kind": "Method",
+    "url": "class_ItemId__.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "StringUtil",
+    "kind": "Namespace",
+    "url": "scope_StringUtil.html",
+    "desc": "Namespace containing simple inline string utility functions."
+  },
+  {
+    "name": "StringUtil::split",
+    "kind": "Function",
+    "url": "scope_StringUtil.html#func_split",
+    "desc": "Splits a string by a given delimiter."
+  },
+  {
+    "name": "StringUtil::replace",
+    "kind": "Function",
+    "url": "scope_StringUtil.html#func_replace",
+    "desc": "Replaces all occurrences of a substring within a string."
+  },
+  {
+    "name": "StringUtil::join",
+    "kind": "Function",
+    "url": "scope_StringUtil.html#func_join",
+    "desc": "Joins a vector of strings together with a delimiter."
+  },
+  {
+    "name": "StringUtil::lower",
+    "kind": "Function",
+    "url": "scope_StringUtil.html#func_lower",
+    "desc": "Converts a copy of the string to lowercase."
+  },
+  {
+    "name": "StringUtil::upper",
+    "kind": "Function",
+    "url": "scope_StringUtil.html#func_upper",
+    "desc": "Converts a copy of the string to uppercase."
+  }
+]

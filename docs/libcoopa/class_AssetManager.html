@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssetManager - libcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">libcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__anim.html">
+                        <span class="badge">C++</span>coopa::anim
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset.html">
+                        <span class="badge">C++</span>coopa::asset
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset__detail.html">
+                        <span class="badge">C++</span>coopa::asset::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__collections.html">
+                        <span class="badge">C++</span>coopa::collections
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__debug.html">
+                        <span class="badge">C++</span>coopa::debug
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__debug__detail.html">
+                        <span class="badge">C++</span>coopa::debug::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__event.html">
+                        <span class="badge">C++</span>coopa::event
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__event__detail.html">
+                        <span class="badge">C++</span>coopa::event::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__input.html">
+                        <span class="badge">C++</span>coopa::input
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__item.html">
+                        <span class="badge">C++</span>coopa::item
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__job.html">
+                        <span class="badge">C++</span>coopa::job
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__job__detail.html">
+                        <span class="badge">C++</span>coopa::job::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__routine.html">
+                        <span class="badge">C++</span>coopa::routine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__routine__detail.html">
+                        <span class="badge">C++</span>coopa::routine::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene__detail.html">
+                        <span class="badge">C++</span>coopa::scene::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__stat.html">
+                        <span class="badge">C++</span>coopa::stat
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__util.html">
+                        <span class="badge">C++</span>coopa::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__yaml.html">
+                        <span class="badge">C++</span>coopa::yaml
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__yaml__detail.html">
+                        <span class="badge">C++</span>coopa::yaml::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_std.html">
+                        <span class="badge">C++</span>std
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_StringUtil.html">
+                        <span class="badge">C++</span>StringUtil
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimatedProperty.html">
+                        <span class="badge">C++</span>AnimatedProperty
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimatedPropertyRegistry.html">
+                        <span class="badge">C++</span>AnimatedPropertyRegistry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationClip.html">
+                        <span class="badge">C++</span>AnimationClip
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationClipLoader.html">
+                        <span class="badge">C++</span>AnimationClipLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationCurve.html">
+                        <span class="badge">C++</span>AnimationCurve
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationSystem.html">
+                        <span class="badge">C++</span>AnimationSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationTrack.html">
+                        <span class="badge">C++</span>AnimationTrack
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Animator.html">
+                        <span class="badge">C++</span>Animator
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimatorState.html">
+                        <span class="badge">C++</span>AnimatorState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Keyframe.html">
+                        <span class="badge">C++</span>Keyframe
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralInputs.html">
+                        <span class="badge">C++</span>ProceduralInputs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralParams.html">
+                        <span class="badge">C++</span>ProceduralParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralTrack.html">
+                        <span class="badge">C++</span>ProceduralTrack
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralTrackRegistry.html">
+                        <span class="badge">C++</span>ProceduralTrackRegistry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetHandle.html">
+                        <span class="badge">C++</span>AssetHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetId.html">
+                        <span class="badge">C++</span>AssetId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_AssetManager.html">
+                        <span class="badge">C++</span>AssetManager
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetSource.html">
+                        <span class="badge">C++</span>AssetSource
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IAssetLoader.html">
+                        <span class="badge">C++</span>IAssetLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LoadContext.html">
+                        <span class="badge">C++</span>LoadContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TypedAssetLoader.html">
+                        <span class="badge">C++</span>TypedAssetLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetSlot.html">
+                        <span class="badge">C++</span>AssetSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_YAMLMap.html">
+                        <span class="badge">C++</span>YAMLMap
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugBucket.html">
+                        <span class="badge">C++</span>DebugBucket
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugContext.html">
+                        <span class="badge">C++</span>DebugContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugManager.html">
+                        <span class="badge">C++</span>DebugManager
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Logger.html">
+                        <span class="badge">C++</span>Logger
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LogMessage.html">
+                        <span class="badge">C++</span>LogMessage
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Printer.html">
+                        <span class="badge">C++</span>Printer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Connection.html">
+                        <span class="badge">C++</span>Connection
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EventArgs.html">
+                        <span class="badge">C++</span>EventArgs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EventBus.html">
+                        <span class="badge">C++</span>EventBus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EventValue.html">
+                        <span class="badge">C++</span>EventValue
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ScopedConnection.html">
+                        <span class="badge">C++</span>ScopedConnection
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Signal.html">
+                        <span class="badge">C++</span>Signal
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SignalCore.html">
+                        <span class="badge">C++</span>SignalCore
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IInputBackend.html">
+                        <span class="badge">C++</span>IInputBackend
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Input.html">
+                        <span class="badge">C++</span>Input
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_InputMap.html">
+                        <span class="badge">C++</span>InputMap
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KeyEvent.html">
+                        <span class="badge">C++</span>KeyEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MouseButtonEvent.html">
+                        <span class="badge">C++</span>MouseButtonEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Hotbar.html">
+                        <span class="badge">C++</span>Hotbar
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Inventory.html">
+                        <span class="badge">C++</span>Inventory
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemDatabase.html">
+                        <span class="badge">C++</span>ItemDatabase
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemDatabaseLoader.html">
+                        <span class="badge">C++</span>ItemDatabaseLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemDef.html">
+                        <span class="badge">C++</span>ItemDef
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemId.html">
+                        <span class="badge">C++</span>ItemId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemStack.html">
+                        <span class="badge">C++</span>ItemStack
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CounterPool.html">
+                        <span class="badge">C++</span>CounterPool
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DependencyGraph.html">
+                        <span class="badge">C++</span>DependencyGraph
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Job.html">
+                        <span class="badge">C++</span>Job
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobContext.html">
+                        <span class="badge">C++</span>JobContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobEngine.html">
+                        <span class="badge">C++</span>JobEngine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobHandle.html">
+                        <span class="badge">C++</span>JobHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobNode.html">
+                        <span class="badge">C++</span>JobNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobNodeDefinition.html">
+                        <span class="badge">C++</span>JobNodeDefinition
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobScheduler.html">
+                        <span class="badge">C++</span>JobScheduler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ParallelMap.html">
+                        <span class="badge">C++</span>ParallelMap
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ParallelQueue.html">
+                        <span class="badge">C++</span>ParallelQueue
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ParallelVector.html">
+                        <span class="badge">C++</span>ParallelVector
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PendingNode.html">
+                        <span class="badge">C++</span>PendingNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ScopedJobHandle.html">
+                        <span class="badge">C++</span>ScopedJobHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TaskWrapper.html">
+                        <span class="badge">C++</span>TaskWrapper
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Thread.html">
+                        <span class="badge">C++</span>Thread
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaiterNode.html">
+                        <span class="badge">C++</span>WaiterNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WorkStealingDeque.html">
+                        <span class="badge">C++</span>WorkStealingDeque
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Routine.html">
+                        <span class="badge">C++</span>Routine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineHandle.html">
+                        <span class="badge">C++</span>RoutineHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineRunner.html">
+                        <span class="badge">C++</span>RoutineRunner
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineScope.html">
+                        <span class="badge">C++</span>RoutineScope
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineSystem.html">
+                        <span class="badge">C++</span>RoutineSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_YieldInstruction.html">
+                        <span class="badge">C++</span>YieldInstruction
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutinePromise.html">
+                        <span class="badge">C++</span>RoutinePromise
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineState.html">
+                        <span class="badge">C++</span>RoutineState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RunnerCore.html">
+                        <span class="badge">C++</span>RunnerCore
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BehaviourSystem.html">
+                        <span class="badge">C++</span>BehaviourSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Component.html">
+                        <span class="badge">C++</span>Component
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameContext.html">
+                        <span class="badge">C++</span>FrameContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ISceneSystem.html">
+                        <span class="badge">C++</span>ISceneSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LateBehaviourSystem.html">
+                        <span class="badge">C++</span>LateBehaviourSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Scene.html">
+                        <span class="badge">C++</span>Scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneCommandBuffer.html">
+                        <span class="badge">C++</span>SceneCommandBuffer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneConfig.html">
+                        <span class="badge">C++</span>SceneConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneInheritance.html">
+                        <span class="badge">C++</span>SceneInheritance
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneLoader.html">
+                        <span class="badge">C++</span>SceneLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneManager.html">
+                        <span class="badge">C++</span>SceneManager
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneObject.html">
+                        <span class="badge">C++</span>SceneObject
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransformComponent.html">
+                        <span class="badge">C++</span>TransformComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransformSystem.html">
+                        <span class="badge">C++</span>TransformSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AddChildOp.html">
+                        <span class="badge">C++</span>AddChildOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AddRootObjectOp.html">
+                        <span class="badge">C++</span>AddRootObjectOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AttachComponentOp.html">
+                        <span class="badge">C++</span>AttachComponentOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CustomOp.html">
+                        <span class="badge">C++</span>CustomOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DestroyObjectOp.html">
+                        <span class="badge">C++</span>DestroyObjectOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EmitOp.html">
+                        <span class="badge">C++</span>EmitOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RemoveComponentOp.html">
+                        <span class="badge">C++</span>RemoveComponentOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SetActiveOp.html">
+                        <span class="badge">C++</span>SetActiveOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Resource.html">
+                        <span class="badge">C++</span>Resource
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_StatBlock.html">
+                        <span class="badge">C++</span>StatBlock
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Time.html">
+                        <span class="badge">C++</span>Time
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Transform.html">
+                        <span class="badge">C++</span>Transform
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DecoderEntry.html">
+                        <span class="badge">C++</span>DecoderEntry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DecoderRegistry.html">
+                        <span class="badge">C++</span>DecoderRegistry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Emitter.html">
+                        <span class="badge">C++</span>Emitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__job__CounterPool__Allocation.html">
+                        <span class="badge">C++</span>coopa::job::CounterPool::Allocation
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__input__InputMap__AxisBinding.html">
+                        <span class="badge">C++</span>coopa::input::InputMap::AxisBinding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__Binding.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__input__InputMap__Binding.html">
+                        <span class="badge">C++</span>coopa::input::InputMap::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__job__CounterPool__CounterSlot.html">
+                        <span class="badge">C++</span>coopa::job::CounterPool::CounterSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__event__Signal__Entry.html">
+                        <span class="badge">C++</span>coopa::event::Signal::Entry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__scene__SceneManager__Entry.html">
+                        <span class="badge">C++</span>coopa::scene::SceneManager::Entry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FileUtil.html">
+                        <span class="badge">C++</span>FileUtil
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IdUtil.html">
+                        <span class="badge">C++</span>IdUtil
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__Layer.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::Layer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Mat4.html">
+                        <span class="badge">C++</span>Mat4
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MathUtil.html">
+                        <span class="badge">C++</span>MathUtil
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__scene__SceneLoader__ParseContext.html">
+                        <span class="badge">C++</span>coopa::scene::SceneLoader::ParseContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__asset__AssetManager__PendingLoad.html">
+                        <span class="badge">C++</span>coopa::asset::AssetManager::PendingLoad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__job__WorkStealingDeque__Slot.html">
+                        <span class="badge">C++</span>coopa::job::WorkStealingDeque::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__StateBinding.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::StateBinding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__TrackRef.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::TrackRef
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__input__InputMap__VectorBinding.html">
+                        <span class="badge">C++</span>coopa::input::InputMap::VectorBinding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetId__.html">
+                        <span class="badge">C++</span>AssetId >
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemId__.html">
+                        <span class="badge">C++</span>ItemId >
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; AssetManager
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            class
+        </span>
+    </div>
+    
+    <h1>class AssetManager</h1>
+    
+    
+    
+    
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/libcoopa/coopa/asset/asset_manager.h
+    </div>
+    
+    
+    
+    <div class="card docstring">
+        <p>Owns loader registration, slot caching, async loading, and hot reload for every asset type.</p>
+<p>Downstream packages register their own asset types by providing a loader (see IAssetLoader/TypedAssetLoader) — gfxcoopa registers Mesh, Texture, Shader; uicoopa registers Sprite, Font — exactly as they already register scene components via coopa::scene::SceneLoader::register_component_parser. AssetManager itself never names any of those types.</p>
+<p>Main-thread only: construct, register loaders on, load from, and destroy an AssetManager from a single thread — the same thread that owns the Device/Allocator/CommandPool it hands to its registered loaders. The one exception is a loader's decode() stage, which AssetManager itself may run on a worker thread when load_async() is used; decode() implementations must not touch the GPU (see IAssetLoader).</p>
+<p>`coopa::job::JobEngineengine;
+coopa::asset::AssetManagerassets(&amp;engine);
+assets.add_search_root(std::string(ROOT_DIR)+"/assets");
+assets.register_loader<Mesh>(std::make_unique<MeshLoader>(device,allocator,cmd_pool));</p>
+<p>coopa::asset::AssetHandle<Mesh>mesh=assets.load<Mesh>("meshes/cube.yaml");
+//Perframe:
+assets.update(delta_time);
+//BeforeDevice/Allocatoraredestroyed:
+assets.shutdown();`</p>
+    </div>
+    
+    
+    
+    <section>
+        <h2>Class Relationships</h2>
+        <div class="card mermaid-container" style="padding: 24px; display: flex; justify-content: center; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; position: relative; height: 400px;">
+            <div class="mermaid">
+                graph LR
+    AssetManager --> AssetId
+    AssetManager --> AssetSlot
+    AssetManager --> IAssetLoader
+    AssetManager --> JobHandle
+    AssetManager --> LoadContext
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Constructors -->
+    
+    
+    
+    <!-- Methods -->
+    
+    
+    <section>
+        <h2>Methods</h2>
+        
+        <div class="card" id="method_AssetManager">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                AssetManager
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">AssetManager</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">job</span><span class="o">::</span><span class="n">JobEngine</span><span class="w"> </span><span class="o">*</span><span class="n">engine</span><span class="o">=</span><span class="nb">nullptr</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">fallback_io_threads</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Constructs an AssetManager, optionally sharing an existing JobEngine.</p>
+<p>Handles are reclaimed individually (see handle.h's class doc), so decode() jobs can safely share the application's own JobEngine — pass it in, and this AssetManager submits decode() work at Priority::Low so it never preempts frame work. Passing nullptr gets a private engine instead.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">engine</td>
+                        <td class="param-type">coopa::job::JobEngine *</td>
+                        <td class="param-type" style="color: var(--text-muted);">nullptr</td>
+                        <td>Engine to submit decode() jobs on. If nullptr, this AssetManager constructs and owns a private fallback engine instead (matching every prior revision's default behavior).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fallback_io_threads</td>
+                        <td class="param-type">unsigned int</td>
+                        <td class="param-type" style="color: var(--text-muted);">2</td>
+                        <td>Worker threads for the private fallback engine. Ignored if `engine` is non-null.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_~AssetManager">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                ~AssetManager
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="o">~</span><span class="n">AssetManager</span><span class="p">()</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_AssetManager">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                AssetManager
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">AssetManager</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AssetManager</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_operator=">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                operator=
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">AssetManager</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AssetManager</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">AssetManager &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_add_search_root">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                add_search_root
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">add_search_root</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">dir</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Registers a directory the resolver should search, in registration order.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">dir</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_source">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                source
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">AssetSource</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">source</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The underlying path resolver, for loaders that need to resolve sibling files.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">AssetSource &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_source">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                source
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">AssetSource</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">source</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const AssetSource &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_register_loader">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                register_loader
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">register_loader</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">IAssetLoader</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">loader</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Registers the loader responsible for asset type T.</p>
+<p>Registering the same type twice replaces the previous loader.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">loader</td>
+                        <td class="param-type">std::unique_ptr< IAssetLoader ></td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Loader instance (typically a TypedAssetLoader<T, ...> subclass).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_clear_loaders">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                clear_loaders
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">clear_loaders</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Clears every registered loader. Call before the objects a loader's closure/ctor captured (Device, Allocator, ...) are destroyed.</p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_loader">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                loader
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">IAssetLoader</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">loader</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Returns the loader registered for asset type T, or nullptr if none is registered.</p>
+<p>Lets a caller reach loader-specific configuration methods (e.g. gfx::loaders::TextureLoader::declare_color_space()) that IAssetLoader's type-erased interface doesn't expose — the caller is responsible for downcasting to the concrete loader type it registered.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">IAssetLoader *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_loader">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                loader
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="k">const</span><span class="w"> </span><span class="n">IAssetLoader</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">loader</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Const overload of loader<T>().</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const IAssetLoader *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_load">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                load
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">AssetHandle</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">load</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">virtual_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">base_dir</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Loads (or returns the cached handle for) an asset, synchronously.</p>
+<p>If a load for this id is already in flight via load_async(), this completes it immediately on the calling thread rather than starting a duplicate load.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">virtual_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Path as referenced from YAML/scene files.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">base_dir</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">""</td>
+                        <td>Optional extra search root tried first (e.g. the loading scene's directory).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">AssetHandle< T ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_load_async">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                load_async
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">AssetHandle</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">load_async</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">virtual_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">base_dir</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Kicks off an asynchronous load on this manager's JobEngine, at Priority::Low so it never preempts ordinary frame work.</p>
+<p>decode() runs on a worker thread; finalize() runs on the main thread inside a later update() call. If a load is already in flight or complete for this id, this simply returns a handle to the existing slot without starting anything new. If the engine's handle pool is exhausted, the slot is marked Failed rather than blocking  handle pool exhaustion recovers on its own as in-flight handles are closed (see handle.h), so a retried load_async() shortly after will typically succeed.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">virtual_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Path as referenced from YAML/scene files.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">base_dir</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">""</td>
+                        <td>Optional extra search root tried first.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">AssetHandle< T ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_get">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                get
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">AssetHandle</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">get</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">virtual_path</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">base_dir</span><span class="o">=</span><span class="s">""</span><span class="p">)</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Looks up a handle for an already-known id without triggering a load.</p>
+<p>Resolves virtual_path/base_dir the same way load()/load_async() do, so a lookup here reliably finds a slot created by either of them.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">virtual_path</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Path as referenced from YAML/scene files.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">base_dir</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);">""</td>
+                        <td>Optional extra search root, matching whatever load() call created the slot.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">AssetHandle< T ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_create">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                create
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">AssetHandle</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">synthetic_id</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">payload</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Publishes an already-constructed payload into a slot, bypassing AssetSource and the loader entirely.</p>
+<p>For procedurally-generated runtime assets (a mesh built on the fly, a texture rendered into at startup) that have no file behind them: no resolve(), no decode(), no finalize(), and no loader needs to be registered for T. Because the slot's resolved_path is left empty, hot-reload polling skips it by construction (poll_for_reloads_() already bails on an empty resolved_path).</p>
+<p>Calling this again with the same synthetic_id ALWAYS re-publishes: the previous payload is retired with the same grace period a hot reload uses, revision is bumped, and on_reloaded fires. This differs deliberately from load(), whose second call is a convenience cache hit — handing in a freshly constructed payload is an explicit statement of intent to replace, and silently dropping it on the floor would leak the caller's work.</p>
+<p>Calling create() repeatedly on the same id every frame retires one payload per frame, each held for k_payload_grace_frames — fine occasionally, not something to do in a hot loop with large GPU payloads.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">synthetic_id</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Logical identity, normalized exactly like a path (see AssetId). Prefix these (e.g. "runtime/terrain_chunk_0") to keep them from colliding with a real asset's resolved path.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">payload</td>
+                        <td class="param-type">std::shared_ptr< T ></td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Fully constructed payload; must not be null.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">AssetHandle< T ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_unload">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                unload
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">unload</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AssetId</span><span class="w"> </span><span class="o">&amp;</span><span class="n">id</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Requests eviction of an asset's slot.</p>
+<p>If any AssetHandle still references the slot (or a load for it is in flight), this is a no-op — call garbage_collect() once handles are dropped, or rely on it running periodically.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">id</td>
+                        <td class="param-type">const AssetId &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Identity to evict.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_garbage_collect">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                garbage_collect
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">garbage_collect</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Evicts every slot whose ref_count has dropped to zero and has no load in flight.</p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_set_idle_eviction">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_idle_eviction
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_idle_eviction</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Enables/disables automatic eviction of slots unreferenced for max_idle_frames() (checked inside update()). Off by default.</p>
+<p>Complements, not replaces, garbage_collect(): garbage_collect() is for a caller that knows eviction is safe <em>right now</em> (e.g. immediately after a vkQueueWaitIdle at a level transition); idle eviction is for unattended, steady-state background reclamation. Both retire a slot's payload with the same grace period (see retire_payload_()).</p>
+<p>A Failed slot (payload already null) is evicted like any other once idle — meaning a later load() of the same path retries instead of serving a cached error forever. A create()d slot has no file to reload from once evicted; the existing refcount is what pins it — hold a handle to any procedural asset you want to keep.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_set_max_idle_frames">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_max_idle_frames
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_max_idle_frames</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">frames</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Consecutive idle update() calls before a slot is evicted. Default 300 (~5s at 60fps). 0 evicts on the first idle update().</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">frames</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_idle_eviction_enabled">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                idle_eviction_enabled
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">idle_eviction_enabled</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_max_idle_frames">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                max_idle_frames
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">max_idle_frames</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_hot_reload">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_hot_reload
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_hot_reload</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Enables/disables mtime-polling hot reload (checked inside update()). Off by default.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_reload_changed">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                reload_changed
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">reload_changed</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Runs hot reload's change check now, regardless of set_hot_reload() and the poll interval: every referenced, loaded asset whose file changed on disk is re-decoded and re-published (old payloads retired with the usual grace period). For a tool that just wrote an asset and needs every user  render meshes, colliders  current before the next frame, not up to a poll interval later.</p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_set_poll_interval">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_poll_interval
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_poll_interval</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">seconds</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Seconds between hot-reload polling passes. Default 1.0.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">seconds</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_hot_reload_enabled">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                hot_reload_enabled
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">hot_reload_enabled</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_pending_load_count">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                pending_load_count
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">pending_load_count</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Number of async loads still in flight; 0 once every load_async() has been finalized.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::size_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_update">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                update
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">update</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">delta_time</span><span class="o">=</span><span class="mf">0.0f</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Drains completed async loads, ages out retired payloads, sweeps idle slots, and (if enabled) polls for hot reload.</p>
+<p>Call once per frame from the main thread, after any GPU work that might reference a previous frame's assets has been submitted.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">delta_time</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td>Frame delta time in seconds; only used for hot-reload poll timing.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_shutdown">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                shutdown
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">shutdown</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Drains in-flight loads, releases every payload, and clears loaders and slots.</p>
+<p>Must be called while whatever a registered loader's finalize() needs (Device, Allocator, CommandPool, ...) is still alive. Safe to call more than once; the destructor calls it too.</p>
+<p>This destroys every AssetSlot, including ones still referenced by an outstanding AssetHandle<T> — do not dereference a handle after calling this. In-flight loads are drained first (their decode() job is waited on and finalize() is run) so no worker thread is left touching freed state, but the resulting payload is simply discarded rather than handed to whatever held the handle.</p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+    </section>
+    
+    
+    <!-- Members -->
+    
+    <section>
+        <h2>Attributes / Member Variables</h2>
+        <div class="card" style="padding: 0; overflow-x: auto;">
+            <table class="params-table" style="margin: 0;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">on_reloaded</td>
+                        <td class="param-type">coopa::event::Signal< const AssetId & ></td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td><p>Fired whenever a slot's payload is (re)published after its first load — i.e. on hot reload.</p></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

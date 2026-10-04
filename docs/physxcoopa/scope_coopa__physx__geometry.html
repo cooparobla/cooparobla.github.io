@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopa::physx::geometry - physxcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">physxcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset.html">
+                        <span class="badge">C++</span>coopa::asset
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx.html">
+                        <span class="badge">C++</span>coopa::physx
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__broadphase.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth.html">
+                        <span class="badge">C++</span>coopa::physx::cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth__detail.html">
+                        <span class="badge">C++</span>coopa::physx::cloth::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__collision.html">
+                        <span class="badge">C++</span>coopa::physx::collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__components.html">
+                        <span class="badge">C++</span>coopa::physx::components
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug.html">
+                        <span class="badge">C++</span>coopa::physx::debug
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug__colors.html">
+                        <span class="badge">C++</span>coopa::physx::debug::colors
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__detail.html">
+                        <span class="badge">C++</span>coopa::physx::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__dynamics.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_coopa__physx__geometry.html">
+                        <span class="badge">C++</span>coopa::physx::geometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders.html">
+                        <span class="badge">C++</span>coopa::physx::loaders
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders__detail.html">
+                        <span class="badge">C++</span>coopa::physx::loaders::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__query.html">
+                        <span class="badge">C++</span>coopa::physx::query
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__system.html">
+                        <span class="badge">C++</span>coopa::physx::system
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util.html">
+                        <span class="badge">C++</span>coopa::physx::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util__detail.html">
+                        <span class="badge">C++</span>coopa::physx::util::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsWorld.html">
+                        <span class="badge">C++</span>PhysicsWorld
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABBTree.html">
+                        <span class="badge">C++</span>AABBTree
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LayerMatrix.html">
+                        <span class="badge">C++</span>LayerMatrix
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PairCache.html">
+                        <span class="badge">C++</span>PairCache
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProxyPair.html">
+                        <span class="badge">C++</span>ProxyPair
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Cloth.html">
+                        <span class="badge">C++</span>Cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchor.html">
+                        <span class="badge">C++</span>ClothAnchor
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothCollider.html">
+                        <span class="badge">C++</span>ClothCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothConstraint.html">
+                        <span class="badge">C++</span>ClothConstraint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothId.html">
+                        <span class="badge">C++</span>ClothId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParams.html">
+                        <span class="badge">C++</span>ClothParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParticle.html">
+                        <span class="badge">C++</span>ClothParticle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothSolverScratch.html">
+                        <span class="badge">C++</span>ClothSolverScratch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothTether.html">
+                        <span class="badge">C++</span>ClothTether
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ConstraintBatch.html">
+                        <span class="badge">C++</span>ConstraintBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GridClothDesc.html">
+                        <span class="badge">C++</span>GridClothDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SerialDispatch.html">
+                        <span class="badge">C++</span>SerialDispatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClipPlane.html">
+                        <span class="badge">C++</span>ClipPlane
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactEvent.html">
+                        <span class="badge">C++</span>ContactEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactManifold.html">
+                        <span class="badge">C++</span>ContactManifold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactPoint.html">
+                        <span class="badge">C++</span>ContactPoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SatAxisResult.html">
+                        <span class="badge">C++</span>SatAxisResult
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Shape.html">
+                        <span class="badge">C++</span>Shape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BoxCollider.html">
+                        <span class="badge">C++</span>BoxCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CapsuleCollider.html">
+                        <span class="badge">C++</span>CapsuleCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchorSpec.html">
+                        <span class="badge">C++</span>ClothAnchorSpec
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothComponent.html">
+                        <span class="badge">C++</span>ClothComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collider.html">
+                        <span class="badge">C++</span>Collider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collision.html">
+                        <span class="badge">C++</span>Collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FixedUpdateBehaviour.html">
+                        <span class="badge">C++</span>FixedUpdateBehaviour
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJointComponent.html">
+                        <span class="badge">C++</span>HingeJointComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshCollider.html">
+                        <span class="badge">C++</span>MeshCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RigidbodyComponent.html">
+                        <span class="badge">C++</span>RigidbodyComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SphereCollider.html">
+                        <span class="badge">C++</span>SphereCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugDraw.html">
+                        <span class="badge">C++</span>DebugDraw
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Body.html">
+                        <span class="badge">C++</span>Body
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BodyId.html">
+                        <span class="badge">C++</span>BodyId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChildMassInput.html">
+                        <span class="badge">C++</span>ChildMassInput
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJoint.html">
+                        <span class="badge">C++</span>HingeJoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IslandUnionFind.html">
+                        <span class="badge">C++</span>IslandUnionFind
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JointId.html">
+                        <span class="badge">C++</span>JointId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MassProperties.html">
+                        <span class="badge">C++</span>MassProperties
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterial.html">
+                        <span class="badge">C++</span>PhysicsMaterial
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SolverState.html">
+                        <span class="badge">C++</span>SolverState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABB.html">
+                        <span class="badge">C++</span>AABB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Capsule.html">
+                        <span class="badge">C++</span>Capsule
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshBVH.html">
+                        <span class="badge">C++</span>MeshBVH
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OBB.html">
+                        <span class="badge">C++</span>OBB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Ray.html">
+                        <span class="badge">C++</span>Ray
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Sphere.html">
+                        <span class="badge">C++</span>Sphere
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleAdjacency.html">
+                        <span class="badge">C++</span>TriangleAdjacency
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMesh.html">
+                        <span class="badge">C++</span>TriangleMesh
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterialLoader.html">
+                        <span class="badge">C++</span>PhysicsMaterialLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMeshLoader.html">
+                        <span class="badge">C++</span>TriangleMeshLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RaycastHit.html">
+                        <span class="badge">C++</span>RaycastHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSystem.html">
+                        <span class="badge">C++</span>PhysicsSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsConfig.html">
+                        <span class="badge">C++</span>PhysicsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSettings.html">
+                        <span class="badge">C++</span>PhysicsSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Trs.html">
+                        <span class="badge">C++</span>Trs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__Binding.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__dynamics__SolverState__CachedImpulse.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics::SolverState::CachedImpulse
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__PhysicsWorld__DeferredCommand.html">
+                        <span class="badge">C++</span>coopa::physx::PhysicsWorld::DeferredCommand
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__broadphase__AABBTree__Node.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase::AABBTree::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__geometry__MeshBVH__Node.html">
+                        <span class="badge">C++</span>coopa::physx::geometry::MeshBVH::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__RaycastHit.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::RaycastHit
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; coopa::physx::geometry
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>coopa::physx::geometry</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/physxcoopa/physxcoopa/geometry/aabb.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_AABB.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class AABB
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Axis-aligned bounding box in world space.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Capsule.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Capsule
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A capsule: a line segment {a, b} swept by radius.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_MeshBVH.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class MeshBVH
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Maps a world/object-space AABB or ray query to a set of candidate triangle indices.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_OBB.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class OBB
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A box in world space with an arbitrary orientation.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Ray.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Ray
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A world-space ray with a maximum travel distance.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Sphere.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Sphere
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A sphere in world space.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TriangleAdjacency.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TriangleAdjacency
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Per-triangle neighbour info, indexed by triangle. Edge i of a triangle runs from vertex i to vertex (i+1)%3; neighbor...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TriangleMesh.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TriangleMesh
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A static, welded triangle mesh with precomputed per-triangle normals and adjacency. Used as the collision geometry fo...
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_closest_point_on_segment">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">closest_point_on_segment</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">closest_point_on_segment</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">t_out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Finds the closest point on segment [a, b] to <code>point</code>, and how far along the segment that point lies.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Query point.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Segment start.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Segment end.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">t_out</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: parametric position in [0, 1] along the segment.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_closest_point_on_segment">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">closest_point_on_segment</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">closest_point_on_segment</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Convenience overload discarding the parametric <code>t</code>.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_closest_points_segment_segment">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">closest_points_segment_segment</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">closest_points_segment_segment</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p1</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">q1</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p2</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">q2</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c1</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c2</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Finds the closest points between two segments [p1,q1] and [p2,q2].</p>
+<p>Standard clamped-parametric approach (Ericson, "Real-Time Collision Detection", 5.1.9), with the near-parallel-segments branch handled explicitly: when the segments' direction vectors are (near-)parallel, the general 2x2 linear system used to solve for both parameters simultaneously becomes singular (its determinant <code>denom</code> below tends to zero), so that branch instead fixes s = 0 (the start of the first segment) and solves for t alone.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">p1</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>First segment's start.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">q1</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>First segment's end.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">p2</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Second segment's start.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">q2</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Second segment's end.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">c1</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: closest point on the first segment.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">c2</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: closest point on the second segment.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_closest_point_on_obb">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">closest_point_on_obb</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">closest_point_on_obb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Finds the closest point on (or in) an OBB's surface/volume to a world-space point.</p>
+<p>Projects the point into the box's local frame, clamps each axis to [-half_extent, half_extent], then transforms back to world space. When <code>point</code> is inside the box, this returns <code>point</code> itself (the clamp is a no-op on every axis)  callers that need a <em>surface</em> point for an interior query should treat a zero/near-zero (point - result) distance as "penetrating" separately.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World-space query point.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Box to query against.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_ray_vs_sphere">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">ray_vs_sphere</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">ray_vs_sphere</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ray</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ray</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Sphere</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sphere</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Exact ray-vs-sphere intersection.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">ray</td>
+                        <td class="param-type">const Ray &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Query ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sphere</td>
+                        <td class="param-type">const Sphere &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Sphere to test.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">t</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: entry distance along the ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: surface normal at the hit point (points away from the sphere's center).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_ray_vs_obb">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">ray_vs_obb</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">ray_vs_obb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ray</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ray</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">OBB</span><span class="w"> </span><span class="o">&amp;</span><span class="n">box</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Exact ray-vs-OBB intersection, via the local-space slab test (Ray::intersect's slab test operates on an axis-aligned box; this transforms the ray into the box's local frame first, then converts the local-space normal back to world space).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">ray</td>
+                        <td class="param-type">const Ray &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Query ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">box</td>
+                        <td class="param-type">const OBB &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Box to test.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">t</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: entry distance along the ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: world-space face normal at the hit point.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_ray_vs_capsule">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">ray_vs_capsule</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">ray_vs_capsule</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ray</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ray</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Capsule</span><span class="w"> </span><span class="o">&amp;</span><span class="n">capsule</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Exact ray-vs-capsule intersection: nearest of the infinite-cylinder surface (clamped to the segment's span) and the two hemispherical end caps.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">ray</td>
+                        <td class="param-type">const Ray &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Query ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">capsule</td>
+                        <td class="param-type">const Capsule &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Capsule to test.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">t</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: entry distance along the ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: surface normal at the hit point.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_ray_vs_triangle">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">ray_vs_triangle</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">geometry</span><span class="o">::</span><span class="n">ray_vs_triangle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ray</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ray</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">t</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Exact ray-vs-triangle intersection (Moller-Trumbore, single-sided: only hits the face <code>normal</code> from triangle_mesh.h's winding actually points toward).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">ray</td>
+                        <td class="param-type">const Ray &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Query ray.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Triangle vertices, wound so that `cross(b-a, c-a)` is the outward face normal.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Triangle vertices, wound so that `cross(b-a, c-a)` is the outward face normal.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Triangle vertices, wound so that `cross(b-a, c-a)` is the outward face normal.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">t</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Output: entry distance along the ray.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopa::physx::cloth - physxcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">physxcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset.html">
+                        <span class="badge">C++</span>coopa::asset
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx.html">
+                        <span class="badge">C++</span>coopa::physx
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__broadphase.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_coopa__physx__cloth.html">
+                        <span class="badge">C++</span>coopa::physx::cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth__detail.html">
+                        <span class="badge">C++</span>coopa::physx::cloth::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__collision.html">
+                        <span class="badge">C++</span>coopa::physx::collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__components.html">
+                        <span class="badge">C++</span>coopa::physx::components
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug.html">
+                        <span class="badge">C++</span>coopa::physx::debug
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug__colors.html">
+                        <span class="badge">C++</span>coopa::physx::debug::colors
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__detail.html">
+                        <span class="badge">C++</span>coopa::physx::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__dynamics.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__geometry.html">
+                        <span class="badge">C++</span>coopa::physx::geometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders.html">
+                        <span class="badge">C++</span>coopa::physx::loaders
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders__detail.html">
+                        <span class="badge">C++</span>coopa::physx::loaders::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__query.html">
+                        <span class="badge">C++</span>coopa::physx::query
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__system.html">
+                        <span class="badge">C++</span>coopa::physx::system
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util.html">
+                        <span class="badge">C++</span>coopa::physx::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util__detail.html">
+                        <span class="badge">C++</span>coopa::physx::util::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsWorld.html">
+                        <span class="badge">C++</span>PhysicsWorld
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABBTree.html">
+                        <span class="badge">C++</span>AABBTree
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LayerMatrix.html">
+                        <span class="badge">C++</span>LayerMatrix
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PairCache.html">
+                        <span class="badge">C++</span>PairCache
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProxyPair.html">
+                        <span class="badge">C++</span>ProxyPair
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Cloth.html">
+                        <span class="badge">C++</span>Cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchor.html">
+                        <span class="badge">C++</span>ClothAnchor
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothCollider.html">
+                        <span class="badge">C++</span>ClothCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothConstraint.html">
+                        <span class="badge">C++</span>ClothConstraint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothId.html">
+                        <span class="badge">C++</span>ClothId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParams.html">
+                        <span class="badge">C++</span>ClothParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParticle.html">
+                        <span class="badge">C++</span>ClothParticle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothSolverScratch.html">
+                        <span class="badge">C++</span>ClothSolverScratch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothTether.html">
+                        <span class="badge">C++</span>ClothTether
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ConstraintBatch.html">
+                        <span class="badge">C++</span>ConstraintBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GridClothDesc.html">
+                        <span class="badge">C++</span>GridClothDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SerialDispatch.html">
+                        <span class="badge">C++</span>SerialDispatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClipPlane.html">
+                        <span class="badge">C++</span>ClipPlane
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactEvent.html">
+                        <span class="badge">C++</span>ContactEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactManifold.html">
+                        <span class="badge">C++</span>ContactManifold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactPoint.html">
+                        <span class="badge">C++</span>ContactPoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SatAxisResult.html">
+                        <span class="badge">C++</span>SatAxisResult
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Shape.html">
+                        <span class="badge">C++</span>Shape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BoxCollider.html">
+                        <span class="badge">C++</span>BoxCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CapsuleCollider.html">
+                        <span class="badge">C++</span>CapsuleCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchorSpec.html">
+                        <span class="badge">C++</span>ClothAnchorSpec
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothComponent.html">
+                        <span class="badge">C++</span>ClothComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collider.html">
+                        <span class="badge">C++</span>Collider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collision.html">
+                        <span class="badge">C++</span>Collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FixedUpdateBehaviour.html">
+                        <span class="badge">C++</span>FixedUpdateBehaviour
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJointComponent.html">
+                        <span class="badge">C++</span>HingeJointComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshCollider.html">
+                        <span class="badge">C++</span>MeshCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RigidbodyComponent.html">
+                        <span class="badge">C++</span>RigidbodyComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SphereCollider.html">
+                        <span class="badge">C++</span>SphereCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugDraw.html">
+                        <span class="badge">C++</span>DebugDraw
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Body.html">
+                        <span class="badge">C++</span>Body
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BodyId.html">
+                        <span class="badge">C++</span>BodyId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChildMassInput.html">
+                        <span class="badge">C++</span>ChildMassInput
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJoint.html">
+                        <span class="badge">C++</span>HingeJoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IslandUnionFind.html">
+                        <span class="badge">C++</span>IslandUnionFind
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JointId.html">
+                        <span class="badge">C++</span>JointId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MassProperties.html">
+                        <span class="badge">C++</span>MassProperties
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterial.html">
+                        <span class="badge">C++</span>PhysicsMaterial
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SolverState.html">
+                        <span class="badge">C++</span>SolverState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABB.html">
+                        <span class="badge">C++</span>AABB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Capsule.html">
+                        <span class="badge">C++</span>Capsule
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshBVH.html">
+                        <span class="badge">C++</span>MeshBVH
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OBB.html">
+                        <span class="badge">C++</span>OBB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Ray.html">
+                        <span class="badge">C++</span>Ray
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Sphere.html">
+                        <span class="badge">C++</span>Sphere
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleAdjacency.html">
+                        <span class="badge">C++</span>TriangleAdjacency
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMesh.html">
+                        <span class="badge">C++</span>TriangleMesh
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterialLoader.html">
+                        <span class="badge">C++</span>PhysicsMaterialLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMeshLoader.html">
+                        <span class="badge">C++</span>TriangleMeshLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RaycastHit.html">
+                        <span class="badge">C++</span>RaycastHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSystem.html">
+                        <span class="badge">C++</span>PhysicsSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsConfig.html">
+                        <span class="badge">C++</span>PhysicsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSettings.html">
+                        <span class="badge">C++</span>PhysicsSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Trs.html">
+                        <span class="badge">C++</span>Trs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__Binding.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__dynamics__SolverState__CachedImpulse.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics::SolverState::CachedImpulse
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__PhysicsWorld__DeferredCommand.html">
+                        <span class="badge">C++</span>coopa::physx::PhysicsWorld::DeferredCommand
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__broadphase__AABBTree__Node.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase::AABBTree::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__geometry__MeshBVH__Node.html">
+                        <span class="badge">C++</span>coopa::physx::geometry::MeshBVH::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__RaycastHit.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::RaycastHit
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; coopa::physx::cloth
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>coopa::physx::cloth</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/physxcoopa/physxcoopa/cloth/cloth.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    <section>
+        <h2>Subscopes</h2>
+        <div class="card">
+            <ul style="list-style: none;">
+                
+                <li style="margin-bottom: 12px;">
+                    <a href="scope_coopa__physx__cloth__detail.html" style="font-weight: 600; font-size: 1.1rem;">coopa::physx::cloth::detail</a>
+                    <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">
+                        
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Cloth.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Cloth
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A complete cloth sheet: particles, constraints, anchors, render topology and tunables. Owned by PhysicsWorld in a gen...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothAnchor.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothAnchor
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Pins a particle to a rigid body, so the sheet follows that body's motion. Anchored particles have inv_mass == 0, so e...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothCollider.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothCollider
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A snapshot of one rigid shape at the pose the cloth should collide against. A snapshot, rather than a (BodyId, shape ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothConstraint.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothConstraint
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One XPBD distance constraint C = |pa - pb| - rest_length, used for both stretch and bend. lambda is the constraint's ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothId.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothId
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Generational handle to a cloth owned by PhysicsWorld. Same index+generation scheme as dynamics::BodyId and dynamics::...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothParams.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothParams
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Per-cloth tunables. Field names and defaults track Unity's Cloth component where an equivalent exists, so a value cop...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothParticle.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothParticle
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One point mass in a cloth sheet. prev_position is the position at the START of the current substep, not the previous ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothSolverScratch.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothSolverScratch
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Reusable per-solve working memory. One instance per PhysicsWorld, resized on first use.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ClothTether.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ClothTether
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A one-sided maximum-distance constraint from a particle to an anchored particle. Also called a "long-range attachment...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ConstraintBatch.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ConstraintBatch
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A half-open [begin, end) range of constraints whose particle sets are pairwise disjoint. This is the whole parallelis...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_GridClothDesc.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class GridClothDesc
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Authoring description of a rectangular cloth sheet. The sheet is built in a local XY plane with its normal along +Z, ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_SerialDispatch.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class SerialDispatch
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Default work dispatcher: runs the whole range inline on the calling thread. solve_cloth() is templated on a dispatche...
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_compute_bounds">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_bounds</h3>
+            
+            <div class="signature-panel">
+                <span class="n">geometry</span><span class="o">::</span><span class="n">AABB</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">compute_bounds</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Recomputes the world AABB over a cloth's particles. Returns an inverted (empty) AABB for a cloth with no particles, which AABB::overlaps() then rejects against everything.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">const Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">geometry::AABB</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_max_particle_speed">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">max_particle_speed</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">max_particle_speed</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Largest particle speed in the cloth, in m/s. Drives both the sleep decision and the broadphase query margin (a fast sheet must query a correspondingly wider box).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">const Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_make_grid_cloth">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">make_grid_cloth</h3>
+            
+            <div class="signature-panel">
+                <span class="n">Cloth</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">make_grid_cloth</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">GridClothDesc</span><span class="w"> </span><span class="o">&amp;</span><span class="n">desc</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Builds a rectangular cloth sheet with structural, shear and bend constraints.</p>
+<p>Particles are emitted row-major (<code>index = y * columns + x</code>), which the triangle list, the constraint batching and toyengine's ClothRenderer all rely on.</p>
+<p>Constraints are grouped into ConstraintBatches whose members touch pairwise-disjoint particle sets, by index parity: structural edges split into even/odd along each axis, shear into even/odd by column, and bend (which spans two cells) into four classes by column/row modulo 4. See ConstraintBatch's doc for why disjointness  not just thread safety  is the requirement.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">desc</td>
+                        <td class="param-type">const GridClothDesc &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Sheet description; `columns`/`rows` are clamped to at least 2.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">Cloth</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_pin_to_body">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">pin_to_body</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">pin_to_body</span><span class="p">(</span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="n">dynamics</span><span class="o">::</span><span class="n">BodyId</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dynamics</span><span class="o">::</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">body</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">world_point</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Pins every particle within <code>radius</code> of <code>world_point</code> to <code>body</code>.</p>
+<p>Pinned particles get inv_mass = 0 and a ClothAnchor recording their offset in the body's local frame, so they rigidly follow it from then on  rotation included. This is the "cloth attached
+to a character" case; anchoring to the crown of a sphere gives a cape or a dust sheet.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Cloth to modify.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">id</td>
+                        <td class="param-type">dynamics::BodyId</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Handle of the body to follow (recorded, not dereferenced later).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">body</td>
+                        <td class="param-type">const dynamics::Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>That body's current pose, used to compute the local offsets.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">world_point</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Centre of the pinning region, in world space.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Pinning radius in metres.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_pin_static">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">pin_static</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">pin_static</span><span class="p">(</span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">world_point</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Pins every particle within <code>radius</code> of <code>world_point</code> in place, with no body to follow.</p>
+<p>The fixed-point equivalent of pin_to_body()  a banner nailed to a wall. Implemented as an anchor with an invalid BodyId so the solver's single anchor path handles both cases.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Cloth to modify.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">world_point</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Centre of the pinning region, in world space.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Pinning radius in metres.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_build_tethers">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">build_tethers</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">build_tethers</span><span class="p">(</span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Derives one tether per free particle from the current anchors.</p>
+<p>Runs Dijkstra over the stretch graph from every anchored particle at once (all anchors seeded at distance 0), so each particle ends up tethered to its geodesically nearest anchor at its rest-pose path length. Geodesic, not Euclidean: a particle hanging round the far side of a sphere is Euclidean-close to the anchor but can legitimately be a long way from it along the fabric, and a Euclidean tether would yank it through the body.</p>
+<p>Replaces any previously built tethers. Call after all pin_to_body()/pin_static() calls; a cloth with no anchors gets no tethers.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Cloth to modify.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_project_particle">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">project_particle</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">project_particle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ClothCollider</span><span class="w"> </span><span class="o">&amp;</span><span class="n">collider</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">thickness</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">normal_out</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">&amp;</span><span class="n">depth_out</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">*</span><span class="n">motion_start</span><span class="o">=</span><span class="nb">nullptr</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Pushes <code>p</code> out of a collider  including the volume it sweeps before the cloth is next solved  to <code>thickness</code> above its surface, if it is closer than that.</p>
+<p>Dispatch:<strong>Sphere</strong>, and anything not moving: one call to project_at_pose_(). A swept sphere is a capsule, which that function models exactly, so nothing extra is needed.<strong>Box / Capsule while moving</strong>: projected against the start AND end pose, keeping whichever correction is deeper. The exact swept volume of a rotating box is a hull no closest-point routine here can express, and two samples bound it closely enough for a sub-frame displacement  a sheet does not resolve the difference.<strong>TriangleMesh</strong>: never swept (non-convex mesh colliders are static-only in this engine), so it falls through the single-call path with whatever sweep it was given ignored.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">collider</td>
+                        <td class="param-type">const ClothCollider &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Shape snapshot to project out of, including its sweep.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">thickness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Standoff distance kept between the particle and the surface, metres.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">p</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>[in,out] Particle position; written only when a correction is applied.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal_out</td>
+                        <td class="param-type">glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>[out] Unit outward surface normal at the contact; untouched on no-hit.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">depth_out</td>
+                        <td class="param-type">float &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>[out] Correction distance actually applied, metres; untouched on no-hit.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">motion_start</td>
+                        <td class="param-type">const glm::vec3 *</td>
+                        <td class="param-type" style="color: var(--text-muted);">nullptr</td>
+                        <td>Particle position at the start of this substep, enabling the swept crossing test against a TriangleMesh (the one shape with no interior case of its own  see project_at_pose_'s TriangleMesh branch). nullptr disables it, which is what a caller with no motion information should pass.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_solve_cloth">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve_cloth</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Dispatch</span><span class="o">&gt;</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">solve_cloth</span><span class="p">(</span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">ClothCollider</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">colliders</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">gravity</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">substeps</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">iterations</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="n">ClothSolverScratch</span><span class="w"> </span><span class="o">&amp;</span><span class="n">scratch</span><span class="p">,</span><span class="w"> </span><span class="n">Dispatch</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="n">dispatch</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Advances one cloth by <code>h</code> seconds, in <code>substeps</code> XPBD substeps.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Cloth to advance, mutated in place. Anchors must already have their `world_position`/`prev_world_position` resolved for this step.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">colliders</td>
+                        <td class="param-type">const std::vector< ClothCollider > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Rigid shapes to collide against, snapshotted at this step's poses.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">gravity</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World gravity vector (m/s^2), before ClothParams::gravity_scale.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">substeps</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Cloth substeps within `h`; clamped to at least 1. PhysicsWorld sizes this per call so the resulting substep length stays constant as the frame rate varies  see PhysicsWorld::step_cloths_().</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">iterations</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Constraint iterations per substep; clamped to at least 1.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Step length in seconds (one rendered frame, as passed to PhysicsWorld::step).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">scratch</td>
+                        <td class="param-type">ClothSolverScratch &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Reusable working memory, resized on demand.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dispatch</td>
+                        <td class="param-type">Dispatch &&</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Work dispatcher for the parallelisable per-particle and per-batch stages.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_solve_cloth">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve_cloth</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">cloth</span><span class="o">::</span><span class="n">solve_cloth</span><span class="p">(</span><span class="n">Cloth</span><span class="w"> </span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">ClothCollider</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">colliders</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">gravity</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">substeps</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">iterations</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="n">ClothSolverScratch</span><span class="w"> </span><span class="o">&amp;</span><span class="n">scratch</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Serial convenience overload  what test.cpp and any job-engine-less caller uses.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">c</td>
+                        <td class="param-type">Cloth &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">colliders</td>
+                        <td class="param-type">const std::vector< ClothCollider > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">gravity</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">substeps</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">iterations</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">scratch</td>
+                        <td class="param-type">ClothSolverScratch &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

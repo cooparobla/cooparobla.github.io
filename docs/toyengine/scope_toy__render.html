@@ -1,0 +1,2869 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toy::render - toyengine Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">toyengine Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_std.html">
+                        <span class="badge">C++</span>std
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy.html">
+                        <span class="badge">C++</span>toy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core.html">
+                        <span class="badge">C++</span>toy::core
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core__detail.html">
+                        <span class="badge">C++</span>toy::core::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_toy__render.html">
+                        <span class="badge">C++</span>toy::render
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render__passes.html">
+                        <span class="badge">C++</span>toy::render::passes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__scene.html">
+                        <span class="badge">C++</span>toy::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water.html">
+                        <span class="badge">C++</span>toy::water
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water__detail.html">
+                        <span class="badge">C++</span>toy::water::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__world.html">
+                        <span class="badge">C++</span>toy::world
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__BuoyantEntry.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::BuoyantEntry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Camera.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Camera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__ContactShadowKnobs.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::ContactShadowKnobs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__DofFocus.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::DofFocus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameContext.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameScene.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameScene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatch.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshDrawStats.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshDrawStats
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshGather.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshGather
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__ContactShadowPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::ContactShadowPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__UnderwaterPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::UnderwaterPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__TransparentPreviewPass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::TransparentPreviewPass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__WaterFrameState__Ripple.html">
+                        <span class="badge">C++</span>toy::render::WaterFrameState::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__Ripple.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__RippleEmitter.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::RippleEmitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__FrameProfile__Row.html">
+                        <span class="badge">C++</span>toy::render::FrameProfile::Row
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Shadow.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Shadow
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__world__TileMeshLibrary__SideGeometry.html">
+                        <span class="badge">C++</span>toy::world::TileMeshLibrary::SideGeometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__GpuProfiler__Slot.html">
+                        <span class="badge">C++</span>toy::render::GpuProfiler::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__SpotShadowCaster.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::SpotShadowCaster
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterBody__TileSlot.html">
+                        <span class="badge">C++</span>toy::water::WaterBody::TileSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__UnderwaterInfo.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::UnderwaterInfo
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__Vertex.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::Vertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaveSet__Wave.html">
+                        <span class="badge">C++</span>toy::water::WaveSet::Wave
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord__.html">
+                        <span class="badge">C++</span>ChunkCoord >
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AppConfig.html">
+                        <span class="badge">C++</span>AppConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Engine.html">
+                        <span class="badge">C++</span>Engine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EngineOptions.html">
+                        <span class="badge">C++</span>EngineOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameHooks.html">
+                        <span class="badge">C++</span>FrameHooks
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobsConfig.html">
+                        <span class="badge">C++</span>JobsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LogoShape.html">
+                        <span class="badge">C++</span>LogoShape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OutputConfig.html">
+                        <span class="badge">C++</span>OutputConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WindowConfig.html">
+                        <span class="badge">C++</span>WindowConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CamlKeyState.html">
+                        <span class="badge">C++</span>CamlKeyState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeSplits.html">
+                        <span class="badge">C++</span>CascadeSplits
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeTile.html">
+                        <span class="badge">C++</span>CascadeTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CpuTimer.html">
+                        <span class="badge">C++</span>CpuTimer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugViewPushConstants.html">
+                        <span class="badge">C++</span>DebugViewPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DirShadowFit.html">
+                        <span class="badge">C++</span>DirShadowFit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobals.html">
+                        <span class="badge">C++</span>ForwardGlobals
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobalsData.html">
+                        <span class="badge">C++</span>ForwardGlobalsData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameProfile.html">
+                        <span class="badge">C++</span>FrameProfile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Frustum.html">
+                        <span class="badge">C++</span>Frustum
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GpuProfiler.html">
+                        <span class="badge">C++</span>GpuProfiler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_InstanceStream.html">
+                        <span class="badge">C++</span>InstanceStream
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LetterboxRect.html">
+                        <span class="badge">C++</span>LetterboxRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LodThreshold.html">
+                        <span class="badge">C++</span>LodThreshold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelLightingPushConstants.html">
+                        <span class="badge">C++</span>PixelLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRect.html">
+                        <span class="badge">C++</span>PixelRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRenderConfig.html">
+                        <span class="badge">C++</span>PixelRenderConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRenderPipeline.html">
+                        <span class="badge">C++</span>PixelRenderPipeline
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RenderExtent.html">
+                        <span class="badge">C++</span>RenderExtent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfClipRect.html">
+                        <span class="badge">C++</span>SdfClipRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfDrawItem.html">
+                        <span class="badge">C++</span>SdfDrawItem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShadowFitCamera.html">
+                        <span class="badge">C++</span>ShadowFitCamera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentCaptureLightingPushConstants.html">
+                        <span class="badge">C++</span>TransparentCaptureLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentRefractionPushConstants.html">
+                        <span class="badge">C++</span>TransparentRefractionPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterFrameState.html">
+                        <span class="badge">C++</span>WaterFrameState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WorldBounds.html">
+                        <span class="badge">C++</span>WorldBounds
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactShadowPass.html">
+                        <span class="badge">C++</span>ContactShadowPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLinePass.html">
+                        <span class="badge">C++</span>DebugLinePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FullscreenBlitPass.html">
+                        <span class="badge">C++</span>FullscreenBlitPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentPreviewPass.html">
+                        <span class="badge">C++</span>TransparentPreviewPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UiCompositePass.html">
+                        <span class="badge">C++</span>UiCompositePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UnderwaterPass.html">
+                        <span class="badge">C++</span>UnderwaterPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UpscalePass.html">
+                        <span class="badge">C++</span>UpscalePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CameraController.html">
+                        <span class="badge">C++</span>CameraController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothRenderer.html">
+                        <span class="badge">C++</span>ClothRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FreeMover.html">
+                        <span class="badge">C++</span>FreeMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HealthDriver.html">
+                        <span class="badge">C++</span>HealthDriver
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicController.html">
+                        <span class="badge">C++</span>KinematicController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicControlSystem.html">
+                        <span class="badge">C++</span>KinematicControlSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicMover.html">
+                        <span class="badge">C++</span>KinematicMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SkinnedMeshRenderer.html">
+                        <span class="badge">C++</span>SkinnedMeshRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Buoyancy.html">
+                        <span class="badge">C++</span>Buoyancy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowBakeParams.html">
+                        <span class="badge">C++</span>FlowBakeParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowRayHit.html">
+                        <span class="badge">C++</span>FlowRayHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Pontoon.html">
+                        <span class="badge">C++</span>Pontoon
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PontoonDesc.html">
+                        <span class="badge">C++</span>PontoonDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBaseSample.html">
+                        <span class="badge">C++</span>WaterBaseSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBody.html">
+                        <span class="badge">C++</span>WaterBody
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSample.html">
+                        <span class="badge">C++</span>WaterSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSettings.html">
+                        <span class="badge">C++</span>WaterSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSurfaceQuery.html">
+                        <span class="badge">C++</span>WaterSurfaceQuery
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSystem.html">
+                        <span class="badge">C++</span>WaterSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTile.html">
+                        <span class="badge">C++</span>WaterTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTileLodParams.html">
+                        <span class="badge">C++</span>WaterTileLodParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterVertex.html">
+                        <span class="badge">C++</span>WaterVertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveParams.html">
+                        <span class="badge">C++</span>WaveParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveQueryOptions.html">
+                        <span class="badge">C++</span>WaveQueryOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSample.html">
+                        <span class="badge">C++</span>WaveSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSet.html">
+                        <span class="badge">C++</span>WaveSet
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkBuildJob.html">
+                        <span class="badge">C++</span>ChunkBuildJob
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord.html">
+                        <span class="badge">C++</span>ChunkCoord
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkMeshData.html">
+                        <span class="badge">C++</span>ChunkMeshData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ColumnPad.html">
+                        <span class="badge">C++</span>ColumnPad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainChunk.html">
+                        <span class="badge">C++</span>TerrainChunk
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainComponent.html">
+                        <span class="badge">C++</span>TerrainComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainParams.html">
+                        <span class="badge">C++</span>TerrainParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSampler.html">
+                        <span class="badge">C++</span>TerrainSampler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSystem.html">
+                        <span class="badge">C++</span>TerrainSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileColumn.html">
+                        <span class="badge">C++</span>TileColumn
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileMeshLibrary.html">
+                        <span class="badge">C++</span>TileMeshLibrary
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; toy::render
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>toy::render</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/toyengine/render/forward_globals.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    <section>
+        <h2>Subscopes</h2>
+        <div class="card">
+            <ul style="list-style: none;">
+                
+                <li style="margin-bottom: 12px;">
+                    <a href="scope_toy__render__passes.html" style="font-weight: 600; font-size: 1.1rem;">toy::render::passes</a>
+                    <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">
+                        
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_CascadeSplits.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class CascadeSplits
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                The view-space depth boundaries of a cascaded shadow map's slices. Entry i is the FAR edge of cascade i; the near edg...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_CascadeTile.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class CascadeTile
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Where one cascade lives in the shadow atlas, in [0,1] ATLAS uv.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_CpuTimer.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class CpuTimer
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                RAII CPU timer: adds its lifetime to scope of the profile's current frame. A null profile makes it a no-op, so call s...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_DebugLine.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class DebugLine
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One world-space line segment. color must already be packed in vertex-buffer byte order (low byte = R, matching Format...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_DebugViewPushConstants.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class DebugViewPushConstants
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Matches debug_view.frag's DebugViewParams push-constant block (48 bytes). All plain scalars (int32_t + float), same a...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_DirShadowFit.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class DirShadowFit
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                compute_dir_shadow_fit()'s result: the light-space matrix to render the shadow map with, and the world size of one of...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ForwardGlobals.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ForwardGlobals
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                std140-aligned per-frame globals for transparent.frag: the lighting and indirect/SSR terms, plus two refraction vec4s.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ForwardGlobalsData.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ForwardGlobalsData
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Owns, per frame-in-flight slot, the ForwardGlobals UBO and its bound-once descriptor set. Usage: fill globals() then ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_FrameProfile.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class FrameProfile
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Collects per-frame timings, writes them to CSV, and summarises them.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Frustum.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Frustum
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                The six clip planes of a view-projection matrix, normalized, pointing inward. Gribb-Hartmann extraction for a [0, 1] ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_GpuProfiler.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class GpuProfiler
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_InstanceStream.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class InstanceStream
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Uploads one glm::mat4 per renderable into a per-frame-in-flight vertex buffer, bound at the G-buffer pipeline's insta...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_LetterboxRect.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class LetterboxRect
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A centred, integer-scaled viewport rect within the swapchain.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_LodThreshold.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class LodThreshold
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One LOD level's switch threshold. Level 0 is always the full-detail mesh.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_PixelLightingPushConstants.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class PixelLightingPushConstants
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Matches pixel_lighting.frag's PixelParams push-constant block (96 bytes). This engine's own cel-shading tuning. gfxco...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_PixelRect.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class PixelRect
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                An inclusive pixel rectangle, in the low-resolution render target's own pixel space.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_PixelRenderConfig.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class PixelRenderConfig
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Configuration for PixelRenderPipeline: internal resolution, upscaling, banded lighting, hard shadows, and the pixel-a...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_PixelRenderPipeline.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class PixelRenderPipeline
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Renders a scene through the low-resolution deferred pixel-art frame graph and upscales it into the swapchain. Not cop...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_RenderExtent.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class RenderExtent
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A low-resolution render target's (width, height) in pixels.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_SdfClipRect.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class SdfClipRect
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                An SdfRenderer's world AABB projected into NDC by the active camera's view-proj matrix.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_SdfDrawItem.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class SdfDrawItem
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One SdfRenderer gathered this frame: its index into the SdfData SSBO, which draw list it belongs to, and the world/sc...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ShadowFitCamera.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ShadowFitCamera
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                The camera properties the directional-shadow fit reads nothing else about a camera matters to it. A plain struct rath...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TransparentCaptureLightingPushConstants.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TransparentCaptureLightingPushConstants
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Matches transparent_capture.frag's push-constant block over [32, 56) appended after TransparentCapturePass::PushConst...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TransparentRefractionPushConstants.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TransparentRefractionPushConstants
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Matches transparent.frag's push-constant block over [64, 128) appended after TransparentPass::PushConstants' own 32-b...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_WaterFrameState.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class WaterFrameState
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                What the renderer needs from the water system each frame, handed over by Engine (PixelRenderPipeline::set_water_state...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_WorldBounds.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class WorldBounds
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A world-space axis-aligned box as centre + half-extent the form both the frustum test and the bounding-sphere radius ...
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_scope_name">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">scope_name</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">scope_name</span><span class="p">(</span><span class="n">CpuScope</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">CpuScope</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const char *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_scope_name">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">scope_name</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">scope_name</span><span class="p">(</span><span class="n">GpuScope</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">GpuScope</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const char *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_pack_gpu_color">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">pack_gpu_color</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">pack_gpu_color</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rrggbbaa</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Converts physxcoopa::debug::DebugLine's 0xRRGGBBAA color (most significant byte = R) into the little-endian vertex-buffer byte order Format::RGBA8_Unorm expects (least significant byte = R). Pure integer arithmetic, so this is correct regardless of the host's own endianness  it constructs the target byte order explicitly rather than reinterpreting one packing as the other.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">rrggbbaa</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_render_extent">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_render_extent</h3>
+            
+            <div class="signature-panel">
+                <span class="n">RenderExtent</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_render_extent</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">PixelRenderConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">swapchain_w</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">swapchain_h</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Derives the low-resolution render target dimensions from config.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const PixelRenderConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Pixel render configuration.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">swapchain_w</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Current swapchain width, used by "divisor" mode.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">swapchain_h</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Current swapchain height, used by "divisor" mode.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">RenderExtent</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_letterbox">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_letterbox</h3>
+            
+            <div class="signature-panel">
+                <span class="n">LetterboxRect</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_letterbox</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sh</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rh</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Computes the centred, integer-scaled letterbox rect for upscaling.</p>
+<p>scale = floor(min(sw/rw, sh/rh)), clamped to a minimum of 1 so a window smaller than the render resolution crops instead of producing a zero-sized viewport. Every low-res texel maps to an exact scale x scale block of swapchain pixels  the defining trait of the integer upscale mode.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Swapchain width in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Swapchain height in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render width in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render height in pixels.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">LetterboxRect</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_fit">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_fit</h3>
+            
+            <div class="signature-panel">
+                <span class="n">LetterboxRect</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_fit</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sh</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rh</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Computes a fractional, aspect-preserving best-fit destination rect.</p>
+<p>scale = min(sw/rw, sh/rh), kept fractional (no integer snapping) so the render fills as much of the swapchain as the render aspect allows  letterboxing only the one axis whose aspect doesn't match, rather than every axis down to the nearest whole scale factor the way compute_letterbox() does. Despite the historical name this preserves aspect; it does not stretch to fill both axes.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Swapchain width in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Swapchain height in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render width in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render height in pixels.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">LetterboxRect</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_display_rect">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_display_rect</h3>
+            
+            <div class="signature-panel">
+                <span class="n">LetterboxRect</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_display_rect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">PixelRenderConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sh</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rw</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">rh</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Computes the final upscale's destination rect, per config.upscale_mode.</p>
+<p>"integer" (compute_letterbox()) snaps to a whole scale factor: crisp NxN texel blocks, but can waste a large fraction of the window to letterbox bars. Anything else (the default, "fit") fits the window as closely as the render aspect allows (compute_fit()), letterboxing only the mismatched axis  at the cost of texel blocks alternating by a pixel at non-integer scales, since sampling stays NEAREST either way.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const PixelRenderConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Pixel render configuration; only `upscale_mode` is read.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Swapchain width in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Swapchain height in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rw</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render width in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rh</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render height in pixels.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">LetterboxRect</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_pixel_density">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_pixel_density</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_pixel_density</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">is_orthographic</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">orthographic_size</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">render_height</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Computes the world-space units per render-pixel used for camera snapping.</p>
+<p>Only meaningful under an orthographic projection, where world-to-pixel scale is constant across the frame. Under perspective it varies with depth, so snapping is intentionally disabled (returns 0)  callers should warn once when camera_pixel_snap is requested on a perspective camera.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">is_orthographic</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Whether the active camera is orthographic.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">orthographic_size</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Half-height of the orthographic view volume, in world units.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">render_height</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Low-resolution render height in pixels.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_shadow_normal_bias">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_shadow_normal_bias</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_shadow_normal_bias</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">pcf_radius_texels</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">extra_texels</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">texel_world</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The directional shadow's normal-offset bias, in WORLD units, for this frame's fit.</p>
+<p>Normal-offset shadows: before projecting a shading point into light space, push it off its own surface along the geometric normal. Unlike a depth bias  which shifts the comparison by a constant and so over-biases head-on surfaces to fix grazing ones  this scales with the actual cause of the artifact, which is that one shadow-map texel covers more and more surface as the surface tilts away from the light.</p>
+<p>The offset is therefore measured in TEXELS and converted to world units per frame, for exactly the reason <code>shadow_softness</code> is (see PixelRenderConfig): the ortho box refits to the camera every frame, so a world-space constant means a different number of texels in every scene and at every fit. As a concrete scale: on assets/scenes/terrain_test one texel is ~0.076 world units, so 0.05 world units would be ~0.66 texels  less than the PCF disk's own 2.0-texel reach, leaving every tap past 0.66 texels landing back on the surface's own depth.</p>
+<p>Which is why the PCF radius is part of the sum rather than something added on top by the caller. A Vogel tap <code>r</code> texels away must still clear the surface, so the offset has to exceed the disk's own reach before <code>extra_texels</code> buys any margin at all. With soft shadows off the radius is 0 and the whole offset is <code>extra_texels</code>.</p>
+<p><code>extra_texels</code> may be NEGATIVE, which dials the offset back inside the disk's own reach  trading acne back for less peter-panning. Only the SUM is floored at zero: a negative total would pull the sample into the surface, which is strictly worse than no bias at all.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">pcf_radius_texels</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The PCF disk's radius in shadow-map texels; 0 for a hard compare.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">extra_texels</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Margin beyond that reach, from PixelRenderConfig::shadow_normal_bias; may be negative.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">texel_world</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World units per shadow-map texel, from DirShadowFit::texel_world.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_cascade_splits">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_cascade_splits</h3>
+            
+            <div class="signature-panel">
+                <span class="n">CascadeSplits</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_cascade_splits</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">near_clip</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">shadow_distance</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">count</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">lambda</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Practical split scheme (Zhang et al.): a <code>lambda</code> blend of the logarithmic and uniform cascade distributions.</p>
+<p>The logarithmic distribution is what equalizes world-per-texel across cascades  it is the correct answer for perspective projection  but on its own it crushes the first cascade down to centimetres around a small <code>near_clip</code>, spending a whole tile on geometry that is mostly inside the camera. The uniform distribution has the opposite failure, a first cascade so large it barely improves on one map. Blending them is the standard fix; <code>lambda</code> = 1 is fully logarithmic, 0 fully uniform.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">near_clip</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Camera near plane, in world units; floored at 0.01 so the log term stays finite.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Far edge of the last cascade  the whole shadowed range.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">count</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Live cascade count; clamped to [1, 4].</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">lambda</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Log/uniform blend in [0, 1].</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">CascadeSplits</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_dir_shadow_fit_slice">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_dir_shadow_fit_slice</h3>
+            
+            <div class="signature-panel">
+                <span class="n">DirShadowFit</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_dir_shadow_fit_slice</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">light_direction</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ShadowFitCamera</span><span class="w"> </span><span class="o">*</span><span class="n">cam</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">slice_near</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">slice_far</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">caster_reach</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">tile_resolution</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Fits an orthographic light-space box to a bounding sphere of one SLICE of the camera's view frustum, with texel-snapped centering.</p>
+<p>The technique behind Unity/Unreal's directional "shadow distance", applied per cascade. Two properties matter and both are deliberate:</p>
+<p><strong>It is a function of the camera alone.</strong> No renderer, SDF or physics position is read, so nothing in the scene  including an object that escaped the playable area and is in unbounded freefall  can perturb or blow out the shadow frustum.<strong>It fits the slice's bounding SPHERE, not its box.</strong> A sphere's radius is invariant under camera rotation, so the box size is stable as the camera turns; snapping the centre to whole texels then removes the sub-texel crawl that remains under translation.</p>
+<p>The near plane sits a further <code>slice_far</code> behind the sphere on the towards-light side, so a caster outside the visible sphere but between it and the light still shadows into frame  sized off the slice's own reach, never off any object's actual position.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">light_direction</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Directional light's direction; normalized internally.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">cam</td>
+                        <td class="param-type">const ShadowFitCamera *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Active camera, or nullptr for the fixed fallback box.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">slice_near</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Near edge of this cascade's depth slice, in world units.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">slice_far</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Far edge of this cascade's depth slice, in world units.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">caster_reach</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tile_resolution</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Edge length of the cascade's atlas TILE in texels; drives the snap.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">DirShadowFit</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_dir_shadow_fit">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_dir_shadow_fit</h3>
+            
+            <div class="signature-panel">
+                <span class="n">DirShadowFit</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_dir_shadow_fit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">light_direction</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ShadowFitCamera</span><span class="w"> </span><span class="o">*</span><span class="n">cam</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">shadow_distance</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">shadow_map_resolution</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The single-cascade fit: one box over the whole <code>[near_clip, shadow_distance]</code> range, i.e. compute_dir_shadow_fit_slice() with the slice set to everything.</p>
+<p>What <code>PixelRenderConfig::shadow_cascades</code> of 1 produces, and the shape the volumetrics fallback and the no-camera startup path want.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">light_direction</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Directional light's direction; normalized internally.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">cam</td>
+                        <td class="param-type">const ShadowFitCamera *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Active camera, or nullptr for the fixed fallback box.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>How far from the camera shadows are computed, in world units.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_map_resolution</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Shadow map edge length in texels; drives the texel snap.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">DirShadowFit</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_cascade_atlas_grid">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">cascade_atlas_grid</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">uvec2</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">cascade_atlas_grid</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">cascade_count</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The atlas grid a cascade count uses: <code>grid_x</code> tiles per row, <code>grid_y</code> rows.</p>
+<p>1 -&gt; 1x1 (literally today's single map), 2 -&gt; 2x1, 3 and 4 -&gt; 2x2. Never a square grid with unused rows: the atlas image is allocated at <code>tile * grid_x</code> by <code>tile * grid_y</code>, so a wasted row is wasted VRAM.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">cascade_count</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::uvec2</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_cascade_atlas_tile">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">cascade_atlas_tile</h3>
+            
+            <div class="signature-panel">
+                <span class="n">CascadeTile</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">cascade_atlas_tile</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">cascade_count</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Cascade <code>index</code>'s tile rect in atlas uv, for the grid <code>cascade_count</code> implies.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">index</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">cascade_count</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">CascadeTile</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compute_sdf_clip_rect">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compute_sdf_clip_rect</h3>
+            
+            <div class="signature-panel">
+                <span class="n">SdfClipRect</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">compute_sdf_clip_rect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">view_proj</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bounds_min</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bounds_max</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Projects a world AABB's 8 corners into NDC via <code>view_proj</code>, returning the enclosing rectangle  the screen-space (pre-upscale) bounds an SdfRenderer's raymarch is scissored to.</p>
+<p>A corner behind (or exactly on) the near plane makes the projection undefined for that corner (dividing by a near-zero or negative w), so any such corner falls back the WHOLE box to the full-screen rect rather than computing a partial (and potentially wildly wrong) bound from only the corners that projected cleanly  correctness over tightness for the rare case of a camera inside, or very close to, the object's bounds.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">view_proj</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Camera projection * view.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bounds_min</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World AABB min.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bounds_max</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World AABB max.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">SdfClipRect</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sdf_clip_rect_to_pixels">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sdf_clip_rect_to_pixels</h3>
+            
+            <div class="signature-panel">
+                <span class="n">PixelRect</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">sdf_clip_rect_to_pixels</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec2</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ndc_min</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec2</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ndc_max</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">height</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Converts an NDC rect (see compute_sdf_clip_rect()) to a pixel scissor rect in the low-resolution render target's own space.</p>
+<p>NDC.y follows this engine's usual OpenGL-style convention (+1 = top, matching CameraComponent::get_projection_matrix()'s unflipped glm::ortho/ glm::perspective output), while framebuffer pixel space is Vulkan's (y = 0 at the top). Every SDF pass that draws this rect shares the same negative-viewport-height convention every other geometry target in this engine already uses to reconcile the two (see gbuffer_target.h/ transparent_capture_target.h/transparent_pass.h's identical <code>set_viewport(0, height, width, -height)</code> calls)  that flip happens to vertex positions during rasterization, but a dynamic scissor rect is specified directly in framebuffer pixel space and is NOT affected by the viewport transform, so this function performs the equivalent Y-flip by hand.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">ndc_min</td>
+                        <td class="param-type">const glm::vec2 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>NDC rect (compute_sdf_clip_rect()'s output).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ndc_max</td>
+                        <td class="param-type">const glm::vec2 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>NDC rect (compute_sdf_clip_rect()'s output).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">width</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Render target size in pixels.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">height</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Render target size in pixels.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">PixelRect</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_view_space_depth">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">view_space_depth</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">view_space_depth</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">view</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">world_pos</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>View-space depth (metres along the camera's forward axis) of a world point.</p>
+<p><code>view</code> follows this engine's usual convention  glm::inverse(world_matrix), the same one CameraComponent::get_view_matrix() and gfx's other view-space math use  under which the camera looks down its own -Z, so a point in front of the eye has a NEGATIVE view-space z. Negating gives a positive depth for anything in front, matching gfx_linear_depth()'s convention (positive, growing from near to far) that DofPass's dof_signed_coc() consumes as <code>view_depth_m</code>. A point behind the eye comes back negative, which callers should treat as "no valid focus" rather than clamping it positive (see resolve_dof_focus_()'s <code>depth &gt; 0.0f</code> guard).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">view</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Camera view matrix (world-to-view).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">world_pos</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World-space point.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_view_depth_half_extent">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">view_depth_half_extent</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">view_depth_half_extent</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">view</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">local_min</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">local_max</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Half the extent of a transformed object-space AABB along the camera's forward axis.</p>
+<p>The standard "project an oriented box onto one axis" sum: for the model-view matrix's third ROW (the one producing view-space z), the box's support along that axis is the sum of the per-axis contributions taken in absolute value, which is exactly how far the box reaches in front of and behind its own centre IN DEPTH. Taking <code>abs()</code> per term is also what makes this independent of view_space_depth()'s sign convention  a half-extent has no direction, so the negation that turns view-space z into a positive depth is irrelevant.</p>
+<p>Written for DofPass::Params::focus_range: pairing this with the view depth of the SAME box's centre gives the narrowest band that still holds a whole object sharp, which is the one quantity the thin-lens CoC cannot supply (see resolve_dof_focus_()).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">view</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Camera view matrix (world-to-view).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">model</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Object's world matrix.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">local_min</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Object-space AABB minimum corner (e.g. Mesh::bounds_min()).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">local_max</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Object-space AABB maximum corner (e.g. Mesh::bounds_max()).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_world_bounds_center">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">world_bounds_center</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">world_bounds_center</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">local_min</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">local_max</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>World-space centre of an object-space AABB under a model matrix.</p>
+<p>The companion to view_depth_half_extent(): a mesh's transform ORIGIN is not generally its centre (assets/scenes/pixel_demo/meshes/cube.000.yaml spans [0,1]^3, so its origin is a corner), and focusing on the origin biases the focal plane off the subject by half its depth.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">model</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Object's world matrix.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">local_min</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Object-space AABB minimum corner.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">local_max</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Object-space AABB maximum corner.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_exp_smooth_toward">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">exp_smooth_toward</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">exp_smooth_toward</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">current</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">rate</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>One frame of framerate-independent exponential easing toward <code>target</code>.</p>
+<p>Same <code>1 - exp(-rate * dt)</code> form as CameraController::update_orbit_()'s target smoothing, so a lens focus-rack (see dof_focus_smoothing) reads as consistent with the rest of this engine's follow/smoothing knobs: two half-steps at <code>dt</code> land at the same place as one step at <code>2*dt</code>, which a naive linear lerp does not guarantee.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">current</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Current smoothed value.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">target</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Value being eased toward.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rate</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Smoothing rate, 1/sec; <= 0 snaps `current` straight to `target`.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dt</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Frame delta time, seconds.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_parse_debug_view">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">parse_debug_view</h3>
+            
+            <div class="signature-panel">
+                <span class="n">DebugView</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">parse_debug_view</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Parses <code>debug_view</code>'s YAML string into a DebugView, defaulting to Off.</p>
+<p>Unlike an unrecognized YAML <em>key</em> (silently ignored, per this file's own parsing convention), a typo'd <em>value</em> here must not silently look like "the debug view is
+broken"  so an unknown name is reported to stderr, naming the valid set, rather than failing quietly the way a bad key does.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">value</td>
+                        <td class="param-type">const std::string &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">DebugView</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_debug_view_is_channel">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">debug_view_is_channel</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">debug_view_is_channel</span><span class="p">(</span><span class="n">DebugView</span><span class="w"> </span><span class="n">view</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>True for every DebugView drawn by PixelRenderPipeline's debug_view_pass_  i.e. every value except Off, Dof, Volumetrics and Lines (see that enum's doc).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">view</td>
+                        <td class="param-type">DebugView</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_debug_view_is_editor_shading">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">debug_view_is_editor_shading</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">debug_view_is_editor_shading</span><span class="p">(</span><span class="n">DebugView</span><span class="w"> </span><span class="n">view</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The editor's viewport shading modes (Solid / Wireframe / MaterialPreview): drawn by the channel pass, but meant to be looked at, not measured  so unlike the diagnostic channels they keep TAA's normal history blend (otherwise the sub-pixel jitter shows as shaking edges).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">view</td>
+                        <td class="param-type">DebugView</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_world_aabb">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">world_aabb</h3>
+            
+            <div class="signature-panel">
+                <span class="n">WorldBounds</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">world_aabb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">hi</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Object-space AABB [lo, hi] under an affine <code>model</code>, as the tightest world AABB enclosing the transformed box (Arvo's method: |M| applied to the half-extent).</p>
+<p>Exact for every affine matrix  rotation, non-uniform scale, shear  and identical to transforming all 8 corners and taking their min/max, at a fraction of the cost.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">model</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">lo</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">hi</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">WorldBounds</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_screen_height_fraction">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">screen_height_fraction</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">screen_height_fraction</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">center</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">view</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">proj</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Projected height of a bounding sphere as a fraction of the viewport height.</p>
+<p>1.0 = the sphere spans the full screen height. The LOD metric (independent of resolution, and of FOV to first order) and the small-object shadow cull share it.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">center</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World-space sphere centre.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Sphere radius.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">view</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World -> view matrix (right-handed, looking down -Z).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">proj</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Projection. Perspective vs orthographic is read from proj[3][3] (1 for orthographic, 0 for perspective).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_projected_texels">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">projected_texels</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">projected_texels</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="n">view_proj</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">center</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">resolution</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Approximate diameter, in texels, of a bounding sphere drawn into a square shadow map.</p>
+<p>Works directly on a combined light view-projection (the only form the cascade matrices exist in): the clip-space half-height a world radius maps to is radius * |row 1 of M|, divided by clip w at the centre (1 for an orthographic cascade). The NDC diameter (2 * that) spans <code>resolution</code> / 2 texels per unit. Returns a huge value when the sphere reaches the projection centre (w &lt;= radius), so a caster wrapped around a light is never culled.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">view_proj</td>
+                        <td class="param-type">const glm::mat4 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">center</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">resolution</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_select_lod">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">select_lod</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">int</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">render</span><span class="o">::</span><span class="n">select_lod</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">LodThreshold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">thresholds</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">cull_size</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">previous</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">hysteresis</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Picks the LOD level for an object <code>size</code> (screen_height_fraction) big.</p>
+<p>Levels are ordered coarse-ward: level i is used while size &gt;= thresholds[i] (level 0's threshold is ignored  it covers everything above level 1's). Returns -1 when size falls below <code>cull_size</code> (0 disables culling).</p>
+<p>Hysteresis: moving to a COARSER level than <code>previous</code> requires size to drop <code>hysteresis</code> (a fraction, e.g. 0.1) below that level's threshold, and moving finer requires it to rise that far above  so an object sitting on a threshold doesn't flicker between two levels every frame. Pass previous = -2 for "no history".</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">size</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">thresholds</td>
+                        <td class="param-type">const std::vector< LodThreshold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">cull_size</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">previous</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">hysteresis</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">int</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelRenderConfig - toyengine Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">toyengine Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_std.html">
+                        <span class="badge">C++</span>std
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy.html">
+                        <span class="badge">C++</span>toy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core.html">
+                        <span class="badge">C++</span>toy::core
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core__detail.html">
+                        <span class="badge">C++</span>toy::core::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render.html">
+                        <span class="badge">C++</span>toy::render
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render__passes.html">
+                        <span class="badge">C++</span>toy::render::passes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__scene.html">
+                        <span class="badge">C++</span>toy::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water.html">
+                        <span class="badge">C++</span>toy::water
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water__detail.html">
+                        <span class="badge">C++</span>toy::water::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__world.html">
+                        <span class="badge">C++</span>toy::world
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__BuoyantEntry.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::BuoyantEntry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Camera.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Camera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__ContactShadowKnobs.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::ContactShadowKnobs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__DofFocus.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::DofFocus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameContext.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameScene.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameScene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatch.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshDrawStats.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshDrawStats
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshGather.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshGather
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__ContactShadowPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::ContactShadowPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__UnderwaterPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::UnderwaterPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__TransparentPreviewPass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::TransparentPreviewPass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__WaterFrameState__Ripple.html">
+                        <span class="badge">C++</span>toy::render::WaterFrameState::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__Ripple.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__RippleEmitter.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::RippleEmitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__FrameProfile__Row.html">
+                        <span class="badge">C++</span>toy::render::FrameProfile::Row
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Shadow.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Shadow
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__world__TileMeshLibrary__SideGeometry.html">
+                        <span class="badge">C++</span>toy::world::TileMeshLibrary::SideGeometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__GpuProfiler__Slot.html">
+                        <span class="badge">C++</span>toy::render::GpuProfiler::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__SpotShadowCaster.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::SpotShadowCaster
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterBody__TileSlot.html">
+                        <span class="badge">C++</span>toy::water::WaterBody::TileSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__UnderwaterInfo.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::UnderwaterInfo
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__Vertex.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::Vertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaveSet__Wave.html">
+                        <span class="badge">C++</span>toy::water::WaveSet::Wave
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord__.html">
+                        <span class="badge">C++</span>ChunkCoord >
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AppConfig.html">
+                        <span class="badge">C++</span>AppConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Engine.html">
+                        <span class="badge">C++</span>Engine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EngineOptions.html">
+                        <span class="badge">C++</span>EngineOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameHooks.html">
+                        <span class="badge">C++</span>FrameHooks
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobsConfig.html">
+                        <span class="badge">C++</span>JobsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LogoShape.html">
+                        <span class="badge">C++</span>LogoShape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OutputConfig.html">
+                        <span class="badge">C++</span>OutputConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WindowConfig.html">
+                        <span class="badge">C++</span>WindowConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CamlKeyState.html">
+                        <span class="badge">C++</span>CamlKeyState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeSplits.html">
+                        <span class="badge">C++</span>CascadeSplits
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeTile.html">
+                        <span class="badge">C++</span>CascadeTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CpuTimer.html">
+                        <span class="badge">C++</span>CpuTimer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugViewPushConstants.html">
+                        <span class="badge">C++</span>DebugViewPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DirShadowFit.html">
+                        <span class="badge">C++</span>DirShadowFit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobals.html">
+                        <span class="badge">C++</span>ForwardGlobals
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobalsData.html">
+                        <span class="badge">C++</span>ForwardGlobalsData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameProfile.html">
+                        <span class="badge">C++</span>FrameProfile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Frustum.html">
+                        <span class="badge">C++</span>Frustum
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GpuProfiler.html">
+                        <span class="badge">C++</span>GpuProfiler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_InstanceStream.html">
+                        <span class="badge">C++</span>InstanceStream
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LetterboxRect.html">
+                        <span class="badge">C++</span>LetterboxRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LodThreshold.html">
+                        <span class="badge">C++</span>LodThreshold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelLightingPushConstants.html">
+                        <span class="badge">C++</span>PixelLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRect.html">
+                        <span class="badge">C++</span>PixelRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_PixelRenderConfig.html">
+                        <span class="badge">C++</span>PixelRenderConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRenderPipeline.html">
+                        <span class="badge">C++</span>PixelRenderPipeline
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RenderExtent.html">
+                        <span class="badge">C++</span>RenderExtent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfClipRect.html">
+                        <span class="badge">C++</span>SdfClipRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfDrawItem.html">
+                        <span class="badge">C++</span>SdfDrawItem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShadowFitCamera.html">
+                        <span class="badge">C++</span>ShadowFitCamera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentCaptureLightingPushConstants.html">
+                        <span class="badge">C++</span>TransparentCaptureLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentRefractionPushConstants.html">
+                        <span class="badge">C++</span>TransparentRefractionPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterFrameState.html">
+                        <span class="badge">C++</span>WaterFrameState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WorldBounds.html">
+                        <span class="badge">C++</span>WorldBounds
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactShadowPass.html">
+                        <span class="badge">C++</span>ContactShadowPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLinePass.html">
+                        <span class="badge">C++</span>DebugLinePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FullscreenBlitPass.html">
+                        <span class="badge">C++</span>FullscreenBlitPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentPreviewPass.html">
+                        <span class="badge">C++</span>TransparentPreviewPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UiCompositePass.html">
+                        <span class="badge">C++</span>UiCompositePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UnderwaterPass.html">
+                        <span class="badge">C++</span>UnderwaterPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UpscalePass.html">
+                        <span class="badge">C++</span>UpscalePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CameraController.html">
+                        <span class="badge">C++</span>CameraController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothRenderer.html">
+                        <span class="badge">C++</span>ClothRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FreeMover.html">
+                        <span class="badge">C++</span>FreeMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HealthDriver.html">
+                        <span class="badge">C++</span>HealthDriver
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicController.html">
+                        <span class="badge">C++</span>KinematicController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicControlSystem.html">
+                        <span class="badge">C++</span>KinematicControlSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicMover.html">
+                        <span class="badge">C++</span>KinematicMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SkinnedMeshRenderer.html">
+                        <span class="badge">C++</span>SkinnedMeshRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Buoyancy.html">
+                        <span class="badge">C++</span>Buoyancy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowBakeParams.html">
+                        <span class="badge">C++</span>FlowBakeParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowRayHit.html">
+                        <span class="badge">C++</span>FlowRayHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Pontoon.html">
+                        <span class="badge">C++</span>Pontoon
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PontoonDesc.html">
+                        <span class="badge">C++</span>PontoonDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBaseSample.html">
+                        <span class="badge">C++</span>WaterBaseSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBody.html">
+                        <span class="badge">C++</span>WaterBody
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSample.html">
+                        <span class="badge">C++</span>WaterSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSettings.html">
+                        <span class="badge">C++</span>WaterSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSurfaceQuery.html">
+                        <span class="badge">C++</span>WaterSurfaceQuery
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSystem.html">
+                        <span class="badge">C++</span>WaterSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTile.html">
+                        <span class="badge">C++</span>WaterTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTileLodParams.html">
+                        <span class="badge">C++</span>WaterTileLodParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterVertex.html">
+                        <span class="badge">C++</span>WaterVertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveParams.html">
+                        <span class="badge">C++</span>WaveParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveQueryOptions.html">
+                        <span class="badge">C++</span>WaveQueryOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSample.html">
+                        <span class="badge">C++</span>WaveSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSet.html">
+                        <span class="badge">C++</span>WaveSet
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkBuildJob.html">
+                        <span class="badge">C++</span>ChunkBuildJob
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord.html">
+                        <span class="badge">C++</span>ChunkCoord
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkMeshData.html">
+                        <span class="badge">C++</span>ChunkMeshData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ColumnPad.html">
+                        <span class="badge">C++</span>ColumnPad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainChunk.html">
+                        <span class="badge">C++</span>TerrainChunk
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainComponent.html">
+                        <span class="badge">C++</span>TerrainComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainParams.html">
+                        <span class="badge">C++</span>TerrainParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSampler.html">
+                        <span class="badge">C++</span>TerrainSampler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSystem.html">
+                        <span class="badge">C++</span>TerrainSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileColumn.html">
+                        <span class="badge">C++</span>TileColumn
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileMeshLibrary.html">
+                        <span class="badge">C++</span>TileMeshLibrary
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; PixelRenderConfig
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            class
+        </span>
+    </div>
+    
+    <h1>class PixelRenderConfig</h1>
+    
+    
+    
+    
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/toyengine/render/pixel_render_config.h
+    </div>
+    
+    
+    
+    <div class="card docstring">
+        <p>Configuration for PixelRenderPipeline: internal resolution, upscaling, banded lighting, hard shadows, and the pixel-art post-process stack (outline, palette quantization, ordered dithering), plus the independently-toggleable SSAO / SSR add-ons.</p>
+    </div>
+    
+    
+    
+    <section>
+        <h2>Class Relationships</h2>
+        <div class="card mermaid-container" style="padding: 24px; display: flex; justify-content: center; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; position: relative; height: 400px;">
+            <div class="mermaid">
+                graph LR
+    AppConfig --> PixelRenderConfig
+    Engine --> PixelRenderConfig
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Constructors -->
+    
+    
+    
+    <!-- Methods -->
+    
+    
+    <section>
+        <h2>Methods</h2>
+        
+        <div class="card" id="method_apply_quality_presets">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                apply_quality_presets
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">apply_quality_presets</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Overwrites every preset-covered field from the <code>*_quality</code> tiers above.</p>
+<p>Called by AppConfig::load() after the quality keys are parsed and before the per-key values are, so explicit keys win over their preset. The High row of every table equals the fields' own defaults.</p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+    </section>
+    
+    
+    <!-- Members -->
+    
+    <section>
+        <h2>Attributes / Member Variables</h2>
+        <div class="card" style="padding: 0; overflow-x: auto;">
+            <table class="params-table" style="margin: 0;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">outline_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">palette_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Independent of palette_path, so toggling off keeps the configured path.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dither_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Independent of dither_strength, so toggling off keeps the configured strength.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">camera_pixel_snap</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Orthographic cameras only.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">soft_lighting</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>true = smooth Cook-Torrance direct lighting; false = this engine's default banded/ramped cel-shaded look.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Also gates the SSGI diffuse-bounce term (ssgi_intensity).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">transparency_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Forward BLEND-material pass, drawn after SSR compositing.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">editor_ssao</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Editor viewport shading (debug_view solid / material_preview): darken with SSAO. Runtime-switchable; needs ssao_enabled (startup-fixed) for there to be any AO to show.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">editor_xray_alpha</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Editor viewport shading (solid / material preview): Blender's X-Ray  surfaces drawn at this opacity over the backdrop (1 = opaque, off). Runtime-switchable, editor-only.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_reflect_transparent</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Opaque surfaces (e.g. the floor) also reflect transparent geometry, via a second forward capture of BLEND objects (depth/normal/position/shaded-color) and a second Hi-Z pyramid ssr.frag's raymarch tries alongside its primary opaque source  see PixelRenderPipeline::record_transparent_capture_(). Meaningless without ssr_enabled AND transparency_enabled also true. Opt-in (default false), not implied by those two: this roughly doubles the opaque raymarch's per-pixel cost and adds an extra forward draw + Hi-Z build + scene-colour-mip build every frame it's on.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Screen-space refraction for BLEND MESH objects only  MeshRenderer, not SdfRenderer; SDF glass is deliberately excluded. Bends the background sample by the surface's IOR/thickness, applies Beer-Lambert tint absorption and roughness-driven blur, and optionally chromatic aberration and a Fresnel falloff  see assets/shaders/refraction.glsl. Requires transparency_enabled; meaningless without it. Per-object ior/refraction_thickness/refraction_tint/refraction override these defaults via PBRMaterial (see mesh_renderer.h).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_ior</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.45f</td>
+                        <td><p>Default IOR; glass ~1.45, water ~1.33.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_thickness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.25f</td>
+                        <td><p>Default world-space distance the ray travels through the object.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_strength</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Global multiplier on the screen-space UV offset.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_max_offset</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.08f</td>
+                        <td><p>Clamp in UV units; stops smearing at grazing angles.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_chromatic</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>RGB IOR split (chromatic aberration); 0 = single tap.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_blur</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Roughness -&gt; scene-colour mip scale; frosted glass.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_density</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Beer-Lambert absorption strength through refraction_tint.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_fresnel</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Dim transmission at grazing angles (energy already in the SSR/sky term).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_tint</td>
+                        <td class="param-type">glm::vec3</td>
+                        <td class="param-type" style="color: var(--text-muted);">glm::vec3(1.0f, 1.0f, 1.0f)</td>
+                        <td><p>Default transmission tint.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">refraction_include_reflections</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>When true (and refraction_enabled), refraction_scene_color_mip_pass_  the dedicated scene-colour chain the MESH forward pass's u_scene_color reads whenever refraction is active (see that member's own doc in pixel_render_pipeline.h)  is built from the SSR composite output each frame, so refraction sees a background that includes SSR reflections. When false, it's built from the same pre-SSR image ssr_pass_'s own trace uses instead. Either way this is a SEPARATE, independent SceneColorMipPass instance from scene_color_mip_pass_  not a second execute() on that shared one, which would corrupt its own internal per-mip descriptor sets (see that member's doc for the validation-layer error this was caught by). MESH-only: BLEND SdfRenderers are unaffected either way, since SDF glass is excluded from refraction entirely.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Unity-style GLOBAL fog (Linear/Exponential/Exp2), analytic and config-driven. There is no fog component and no local fog volume: anything bounded is a VolumeComponent on the volumetrics pass instead. Drawn after the transparent pass (so BLEND geometry is fogged too) and before pixel_stylize_pass_ (so fog sits in linear HDR, ahead of tonemap/ outline/dither/palette  see gfxcoopa's FogPass and PixelRenderPipeline's pre_fog_view_typed_). Always constructed; render() checks this per frame. The pass's SOURCE image is chosen once at construction from config_.ssr_enabled's startup value, matching pixel_stylize_pass_'s own binding  see that call site's comment for why a per-frame rebind isn't safe under this pipeline's frame-overlap model.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">underwater_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>The underwater look (toyengine/render/passes/underwater_pass.h): fog, absorption and caustics when the camera is below a water surface, driven per frame by set_water_state(). Startup-fixed like fog_enabled  it sits in the post chain's source path  and costs one full-resolution HDR copy per frame while the camera is above water.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Raymarched LOCAL volumes  scene-placed VolumeComponents, each <code>kind: fog</code> (a static pocket), <code>wind</code> (advected ribbons) or <code>haze</code> (drifting billows). Runs in linear HDR immediately after fog and before DOF/bloom, so volumes defocus and sun-lit ones glow (see gfxcoopa's VolumetricsPass / gfx/volumetrics.glsl).</p>
+<p>A separate pass from fog rather than more fog parameters, because fog is an analytic medium that is everywhere, while these are bounded and their density varies within them  which has no closed form, so they must march. The two toggle independently. The march clips to the union of the volumes' bounds, so a view with no volume in it skips the march entirely.</p>
+<p>With fog_enabled ALSO set, the two run as one pass: this shader applies the global fog term itself rather than reading an image FogPass wrote it into, which is where the second full-resolution HDR pass would otherwise go. See PixelRenderPipeline::fog_merged_into_volumetrics_(); the result is identical.</p>
+<p>Startup-fixed, same policy as fog_enabled/bloom_enabled/dof_enabled above: the pass's source image and DOF's source image are both chosen once at construction from this flag's value.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Signed-distance-field raymarching system (see gfxcoopa's SdfRenderer/SdfShape components and toyengine's sdf_gbuffer.frag/sdf_forward.frag/sdf_shadow*.frag/ sdf_capture.frag). sdf_enabled is the single per-frame gate: when false, the SDF gather in PixelRenderPipeline::render() produces an empty draw list and every downstream recording site (G-buffer/shadow/capture/forward) is naturally a no-op  the five SDF passes themselves are always constructed (same always-on-but-gated policy as SSR/fog/bloom above).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_shadows_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Independent of sdf_enabled/shadows_enabled  an SDF object can be visible but never cast a shadow (cheaper), same as shadows_enabled gates mesh shadow casting globally.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_max_steps</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">64</td>
+                        <td><p>Global ceiling on SdfRenderer::max_steps; a per-renderer value above this is clamped down.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_shadow_max_steps</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">32</td>
+                        <td><p>Cheaper step budget for the depth-only shadow march (see SdfShadowPass).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_max_renderers</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">64</td>
+                        <td><p>SdfData's renderer/shape SSBO capacities  startup-fixed (SSBO sizing), not a runtime toggle.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_max_shapes</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">512</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets shadow_map/cube/spot_shadow_resolution, shadow_pcf_samples, shadow_pcss_taps and contact_shadow_steps.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets ssao_slices/ssao_steps/ssao_max_radius_px/ssao_temporal_frames.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets ssr_max_iterations.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets ssgi_max_iterations. Separate from ssr_quality: the traced bounce is its own trace/resolve/denoise chain with its own budget (see ssgi_max_iterations).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets dof_sample_count (Ultra equals High: the gather shader clamps taps to 48).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets volumetrics_step_count and volumetrics_max_scatter_lights.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">sdf_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Sets sdf_max_steps and sdf_shadow_max_steps.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">water_quality</td>
+                        <td class="param-type">RenderQuality</td>
+                        <td class="param-type" style="color: var(--text-muted);">RenderQuality::High</td>
+                        <td><p>Water: simulation range, ripples, mesh density/LOD and shader detail. Not expanded here  Engine maps it to toy::water::WaterSettings (toyengine/water/water_settings.h) every frame, so it is live-switchable.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">resolution_mode</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">"fixed"</td>
+                        <td><p>"fixed", "divisor", or "fill": render_height rows, width following the display region's aspect so the image fills it (the Engine rebuilds the pipeline when that aspect changes).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">render_width</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">480</td>
+                        <td><p>Used when resolution_mode == "fixed".</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">render_height</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">270</td>
+                        <td><p>Used when resolution_mode == "fixed" or "fill".</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fill_aspect</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>fill mode: the display region's aspect (width / height). Set by the Engine, not YAML; 0 = use the swapchain's.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">scale_divisor</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">4</td>
+                        <td><p>Used when resolution_mode == "divisor".</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">upscale_mode</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">"fit"</td>
+                        <td><p>"fit" (aspect-preserving best fit, default, letterboxed only on the mismatched axis) or "integer" (whole-number scale, more letterboxing but every texel is an exact NxN block).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">exposure</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">auto_exposure_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Auto-exposure (eye adaptation): a 1x1 metering pass measures the geometric-mean luminance of the final pre-tonemap frame each frame and adapts an exposure multiplier toward it, which <code>exposure</code> above is then scaled by  so the config value keeps its meaning as the scene's baseline stop (see ExposurePass / exposure.frag). STARTUP-FIXED: it constructs a pass and binds the stylize pass's exposure descriptor. Every tunable below it is runtime.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">auto_exposure_compensation</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Multiplier on the metered exposure.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">auto_exposure_speed_up</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">3.0f</td>
+                        <td><p>Adaptation rate (1/sec) when the scene gets BRIGHTER.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">auto_exposure_speed_down</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Adaptation rate (1/sec) when the scene gets DARKER; lower than speed_up on purpose  the eye darkens fast and brightens slowly, and one symmetric rate reads wrong in both directions.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">auto_exposure_min</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.05f</td>
+                        <td><p>Clamps on the adapted multiplier. Keep the range narrow enough that a dark corner can't blow the whole frame out on approach.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">auto_exposure_max</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">8.0f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">grading_lut_path</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td><p>Colour grading through a strip LUT (N*N by N, e.g. 1024x32  the format an image editor or grading tool exports), applied after the tonemap and before outline/dither/palette. Empty path loads a 1x1 dummy and disables the lookup, so this costs nothing when unused. STARTUP-FIXED (the image is loaded and bound once), unlike grading_enabled, which only zeroes a push constant.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">grading_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Independent of grading_lut_path, so toggling off keeps the configured path.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">light_bands</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">4.0f</td>
+                        <td><p>Discrete shading steps per light; &lt;= 1 disables banding.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">spec_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.55f</td>
+                        <td><p>Hard specular highlight cutoff.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rim_strength</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>0 disables the rim term.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadows_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_map_resolution</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">2048</td>
+                        <td><p>Edge length, in texels, of ONE directional cascade's tile  not of the whole directional shadow image.</p>
+<p>The directional map is an atlas of <code>shadow_cascades</code> tiles this size (1x1, 2x1 or 2x2  see ShadowMapTarget), so the image is up to 2x this on each axis and up to 4x this many texels. At the default 4 cascades: low 512 -&gt; 1024^2 (4 MB), medium 1024 -&gt; 2048^2 (16 MB), high 2048 -&gt; 4096^2 (64 MB), ultra 3072 -&gt; 6144^2 (144 MB).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_cascades</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">4</td>
+                        <td><p>How many cascades the directional shadow splits into, 1..4.</p>
+<p>Each cascade is an independent ortho fit to one slice of the camera's depth range, so the near cascade's texels land on a box a few metres across instead of one spanning the whole <code>shadow_distance</code>  that is what makes close-up shadows sharp while distant ones stay coarse. Every cascade re-draws the shadow casters, so this multiplies the (depth-only) directional shadow pass cost directly.</p>
+<p>1 is the single-map behaviour: one box over the whole range, no atlas, no per-pixel cascade selection. Deliberately NOT covered by <code>shadow_quality</code>  the tier moves resolution only, so changing tiers can never silently change how many cascades exist.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_cascade_split_lambda</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.75f</td>
+                        <td><p>Log-vs-uniform blend for where the cascade boundaries fall, 0..1.</p>
+<p>1 is fully logarithmic (equalizes world-per-texel across cascades, but crushes the first cascade to centimetres around the near plane), 0 fully uniform (first cascade so large it barely improves on one map). See toy::render::compute_cascade_splits(). Ignored when <code>shadow_cascades</code> is 1.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">cube_shadow_resolution</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">512</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">spot_shadow_resolution</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">1024</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_bias</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.005f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_normal_bias</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Normal-offset shadow bias, in shadow-map TEXELS BEYOND the PCF disk's own reach.</p>
+<p>Converted to world units every frame against the ortho box actually in effect, exactly as <code>shadow_softness</code> below is  see toy::render::compute_shadow_normal_bias(), which also explains why the PCF radius is added in rather than left to the caller.</p>
+<p>Trades acne against peter-panning in the usual way: too small and grazing faces speckle and crawl as the camera moves, too large and a shadow visibly detaches from its caster at the contact point. At 1.0 the offset clears the PCF disk by a texel, which on assets/scenes/pixel_demo costs about 2% of the shadowed area  a measurable but visually negligible recession.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">60.0f</td>
+                        <td><p>How far from the camera, in world units, the directional shadow is computed at all  Unity's own "Shadow Distance" quality setting. update_dir_shadow_matrix_() fits the shadow frustum to a bounding sphere of the camera's OWN view frustum out to this distance (clipped to the camera's far clip plane), and separately uses it to size the near-side margin behind that sphere (so an off-frustum caster between the light and the visible sphere still shadows into frame). This is the only knob that affects the fit  unlike the AABB-over-scene-content fit this replaced, no renderer/SDF/physics-body position is ever read, so nothing in the scene (however far off, however it got there) can perturb or blow out the shadow frustum.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">soft_shadows</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>false = single hard depth compare (the pre-existing look).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_softness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.15f</td>
+                        <td><p>Directional PCF penumbra radius in WORLD units, not texels. Converted to a texel count every frame against the ortho box actually in effect (see update_dir_shadow_matrix_()), so the penumbra stays visually constant in world units even as that box refits to the camera  a fixed texel-count radius would otherwise shrink to imperceptible on a scene-spanning box and grow huge on a tight one. Ignored when soft_shadows is false.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point_shadow_softness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">3.0f</td>
+                        <td><p>Point-light cube-map PCF penumbra radius, in cube-map TEXELS (comparable in spirit to shadow_softness above, though that one is world units since a directional shadow map has a single, frame-varying world-per-texel scale while a point light's cube faces do not). Converted to a tangent-space offset on a unit sample direction every frame against cube_shadow_resolution (see gfx_shadow_cube_pcf_vogel's doc for that unit) and clamped to 8 texels, the kernel's own practical limit before the penumbra swallows the whole shadow. Ignored when soft_shadows is false.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">spot_shadow_softness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.15f</td>
+                        <td><p>Spot-light PCF penumbra radius in WORLD units, same convention as shadow_softness above. The spot map is a perspective projection, so its world-per-texel scale varies with each receiver's distance from the light; the conversion to a texel radius therefore happens PER PIXEL in calc_spot_shadow() (pixel_shadow_body.glsl), dividing a CPU-precomputed scale (softness * resolution / (2*tan(outer_half)), see update_spot_shadow_matrix_()) by the fragment's light-space depth. Clamped to 12 texels per pixel, matching the directional radius's own practical limit. Ignored when soft_shadows is false.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_pcf_samples</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">24</td>
+                        <td><p>Vogel disk taps for directional soft shadows; clamped to 1..32, the kernel's own hard limit.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_pcss_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>PCSS contact hardening for the directional shadow (Unity HDRP's "High Quality" shadow filtering): a blocker search drives the Vogel-PCF radius per pixel, so a shadow is sharp where it meets its caster and widens with occluder distance, instead of one constant <code>shadow_softness</code> width everywhere. Requires soft_shadows; <code>shadow_softness</code> becomes the penumbra's MAXIMUM. Runtime toggle (UBO fields only). Costs 8 extra depth reads per shadowed pixel, minus the fully-lit early-out on open ground.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_pcss_light_size</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.02f</td>
+                        <td><p>Sun angular size for PCSS, as tan(angular radius): the penumbra grows by this many world units per world unit of blocker-to-receiver gap. The real sun is ~0.005; stylized scenes usually want it larger. Ignored unless shadow_pcss_enabled.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_pcss_search_texels</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">8.0f</td>
+                        <td><p>PCSS blocker-search radius, in shadow-map texels; clamped to 1..16.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_pcss_taps</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">8</td>
+                        <td><p>PCSS blocker-search tap count; clamped to 1..16. Set by <code>shadow_quality</code>. This is the dial that actually costs, and it is separate from shadow_pcf_samples: the search runs on every shadowed pixel (including the fully-lit ones it then early-outs on), while the penumbra filter only runs where blockers were found.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadows_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Screen-space contact shadows (Unity HDRP's feature of the same name): a short per-pixel march through the G-buffer toward the sun, max()-combined with the shadow map's result. Catches the few-centimetre contact occlusion the normal-offset bias necessarily recedes from  the gap at every object's base. Deferred (directional light) only. Independent of shadows_enabled: with the shadow maps off the march is the only directional occlusion term, which gives a contact-only view of the effect. All four fields are runtime.</p>
+<p>Follows soft_shadows: when on, the march averages several rays across the sun's angular cone (sized from shadow_pcss_light_size) for a PCSS-style penumbra that is sharp at the contact point and softens with blocker distance; when off, a single ray gives a hard edge.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadow_length</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.5f</td>
+                        <td><p>March length in world units.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadow_strength</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Occlusion strength of a contact hit, 0..1.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadow_thickness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.15f</td>
+                        <td><p>Depth tolerance in world units  how thick a screen-space occluder is assumed to be behind its visible surface.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadow_steps</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">8</td>
+                        <td><p>March steps; clamped to 1..24. Set by <code>shadow_quality</code>  this is a per-pixel screen-space march, so the step count is the feature's whole cost.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadow_temporal_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Accumulate the contact-shadow march across frames, the way <code>ssao_temporal_enabled</code> and <code>ssr_temporal_enabled</code> do for theirs. Off makes ContactShadowPass's resolve a passthrough of the current frame, which is what an A/B capture needs: with it on, the march's input moves with the TAA sub-pixel jitter, so the running average is not periodic in the jitter cycle and two captures a cycle apart are not the same frame.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">contact_shadow_temporal_frames</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">16</td>
+                        <td><p>Accumulation depth of the contact-shadow temporal resolve, on the same converging <code>1/(N+1)</code> schedule (and against the same shared per-pixel count) as <code>ssao_temporal_frames</code> and <code>ssr_temporal_frames</code>. Shallower than either: a contact shadow is a thin, high-contrast, geometrically local feature, so deep accumulation trades its crispness for stability faster than the other two do.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">outline_thickness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>In low-resolution texels.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">outline_color</td>
+                        <td class="param-type">glm::vec4</td>
+                        <td class="param-type" style="color: var(--text-muted);">glm::vec4(0.05f, 0.04f, 0.08f, 1.0f)</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">depth_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.02f</td>
+                        <td><p>Relative depth step (fraction of the fragment's own view-space distance) that counts as an edge; scale-invariant, so one value works at any camera distance.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">normal_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.75f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">palette_path</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td><p>Empty disables palette quantization.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dither_strength</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>0 disables ordered dithering.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">texel_aa</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Texel-AA sampling for the pixel-art material textures (STARTUP-FIXED: chooses the TextureLoader's sampler at construction). True binds them LINEAR (SamplerDesc::pixel_art_smooth()) and gbuffer.frag sharpens UVs with gfx_texel_aa_uv(), which keeps texel interiors as flat and hard-edged as point sampling while blending each texel boundary over exactly one screen pixel  the fix for magnified texels crawling/shimmering whenever the camera moves sub-pixel. False restores raw NEAREST point sampling.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.5f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_bias</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.025f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_power</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.5f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_slices</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">2</td>
+                        <td><p>Horizon slices per pixel while the camera moves (ssao.frag).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_steps</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">8</td>
+                        <td><p>March steps per slice direction while the camera moves.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_max_radius_px</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">80.0f</td>
+                        <td><p>Upper clamp on the horizon march's screen-space extent, in render-target pixels (Unity HDRP's "Maximum Radius in Pixels": 40 medium, 80 high). Caps the cost and the screen-space reach of near-camera geometry regardless of ssao_radius.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_direct_lighting_strength</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.25f</td>
+                        <td><p>How much occlusion darkens direct lighting (Unity HDRP's Direct Lighting Strength, pixel_lighting.frag): 0 = occlusion affects indirect only.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_blur_plane_sigma</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.375f</td>
+                        <td><p>World-space plane-distance tolerance of the blur's bilateral weight, per dilation unit (ssao_blur.frag). Tracks the geometry's step scale (what depth gap separates two surfaces), independent of ssao_radius: coupling it to the gather radius made a wider radius silently blend AO across terrace faces the kernel should reject.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_half_res</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Run the AO estimate, temporal resolve and blur at half resolution per axis (a quarter of the pixels), then upsample to full resolution with the depth/normal-aware filter the SSR composite uses  Unity HDRP's and Unreal's default AO setup. The march keeps its full-resolution footprint; AO comes out very slightly softer. Startup-fixed (sizes targets).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_blur_light</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Lighter bilateral blur: 4x4 taps over the 8x8 kernel's footprint (a quarter of the fetches), and the motion dilation capped at half the default so a pan cannot spread the taps across a cache-hostile 40 px square. false = the original 8x8 kernel. RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_temporal_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssao_temporal_frames</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">32</td>
+                        <td><p>Accumulation depth of the temporal resolve: each pixel averages this many frames of the continuously-jittered estimate (blending frame N at 1/(N+1)) before switching to a fixed-rate running average. Deeper = smoother and more stable AO in motion, at the cost of slower response to genuine content changes.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_max_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">15.0f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_max_iterations</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">64</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_thickness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.05f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_thickness_scale</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.01f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_bias_texels</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">3.5f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_roughness_cutoff</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Roughness above which a surface stops tracing. 1.0 = everything traces, so rough surfaces still feed the SSGI bounce.</p>
+<p>Worth knowing before tuning it: the composite does not <em>add</em> the reflection, it <strong>replaces</strong> the env/sky specular with it  <code>scene_color + (ssr_specular - confidence * ind.value) * ao_spec</code> in <code>gfx/ssr_composite_body.glsl</code>. Roughness past the cutoff fades confidence to 0, which skips that subtraction and leaves the analytic sky term standing, and this engine has no reflection probes to hand those surfaces to (<code>indirect_hooks.glsl</code>'s <code>hook_env_specular()</code> returns the sky gradient unmodified). Measured on terrain_test, though, 1.0 vs 0.6 moves whole-frame saturation by 0.002  the handover is not the visible lever it looks like on paper.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_start_mip</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">0</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_min_mip0_steps</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">1</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_temporal_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_temporal_frames</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">32</td>
+                        <td><p>Accumulation depth of the SSR temporal resolve: each pixel averages this many frames of the stochastically-jittered trace (blending frame N at 1/(N+1), against the shared per-pixel count TemporalHistoryPass publishes) before switching to a fixed-rate running average. Deeper = quieter reflections in motion, slower response to genuine change. Same knob and same schedule as <code>ssao_temporal_frames</code>.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_temporal_frames</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">48</td>
+                        <td><p>Accumulation depth of the traced-SSGI bounce's temporal resolve. Deeper than <code>ssr_temporal_frames</code> on purpose: one cosine-hemisphere ray per pixel has far higher variance than a near-mirror reflection ray, and a diffuse bounce is low-frequency enough that the extra lag is invisible.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_temporal_blend</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.85f</td>
+                        <td><p>Fallback exponential-blend weight on history, used only where the shared accumulation count is unavailable (a consumer bound to TemporalHistoryPass's 1x1 neutral texture, i.e. a frame where that pass never ran). The converging <code>*_temporal_frames</code> average above is what the shipped path uses.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_blur_radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.5f</td>
+                        <td><p>World-space sigma for the spatial SSR denoise (ssr_blur.frag).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_blur_light</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>3x3 SSR denoise footprint instead of 5x5 (a third of the reads).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_blur_zero_skip</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Skip the SSR denoise kernel where its whole footprint is zero (exact).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_jitter</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>Stochastic ray jitter strength, as a fraction of the GGX lobe cone; 0 reproduces the old single-ray trace.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_half_res</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Trace SSR and SSGI at half the render resolution per axis (a quarter of the rays); the composite upsamples with a depth/normal-aware filter (gfx/ssr_composite_body.glsl), so geometry edges stay sharp and only the reflections themselves soften slightly. Cuts the trace, resolve and blur passes of both chains ~4x. Startup-fixed: it sizes targets.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_skip_negligible</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Skip the SSR trace for pixels whose reflection could add almost nothing: the specular weight the composite would apply (split-sum GGX, Fresnel) times the trace's own roughness and direction fades, all known before marching, below ssr_skip_threshold. On rough dielectrics (most terrain) that is nearly every pixel. SSGI is unaffected  it has its own trace. false = trace every pixel the roughness cutoff admits. RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_skip_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.02f</td>
+                        <td><p>Weight below which ssr_skip_negligible skips the trace.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssr_temporal_gamma</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Variance-clipping width for the SSR temporal resolve, in std deviations of the 3x3 neighbourhood.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_traced</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Traced SSGI: the composite's diffuse-bounce term reads a real cosine-hemisphere Hi-Z trace (ssgi.frag, one ray per pixel per frame, temporally resolved through the same variance-clipped resolve as SSR) instead of its single normal-offset mip tap  directional colour bleed rather than a uniform lift. STARTUP-FIXED (builds a pipeline and binds the composite's u_ssgi_map descriptor); the intensity dial stays <code>indirect.ssgi_intensity</code> either way, so 0 still disables the whole term at runtime. Meaningless without ssr_enabled.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_max_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">8.0f</td>
+                        <td><p>World-space ray length for the traced-SSGI march; the specular trace keeps its own ssr_max_distance.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_max_iterations</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">32</td>
+                        <td><p>Hi-Z iteration budget for the traced-SSGI march, set by <code>ssgi_quality</code>. Its own knob rather than a share of ssr_max_iterations, because the two marches want very different budgets: an SSGI ray is short (ssgi_max_distance, ~8 m) and its hit feeds a wide cone-mip lookup, so it converges in far fewer steps than a mirror reflection running out to ssr_max_distance.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_blur_radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>World-space sigma for the traced-SSGI spatial denoise. Wider than ssr_blur_radius on purpose: one hemisphere ray per pixel is far noisier than a near-mirror ray, and a diffuse bounce is low-frequency enough that a wide kernel costs it no real detail. Too low and the image keeps visibly settling for several frames after the camera stops.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ssgi_blur_light</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>3x3 SSGI denoise footprint instead of 5x5 (a third of the reads).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Additive glow from a dedicated BloomPass pyramid (bright-pass threshold -&gt; multi-tap downsample -&gt; tent-filter upsample+combine  see gfxcoopa's bloom_pass.h), sourced from the FINAL pre-tonemap HDR image (fog output when fog is on, else pre_fog_view_typed_)  the same image pixel_stylize_pass_ itself reads, so SSR reflections, transparent geometry and fog all bloom too.</p>
+<p>An independent pyramid with its own construction-fixed descriptors, deliberately not a reuse of SSR's mip chain: sharing that would tie bloom's availability to SSR being on, and its hard 2x2 <code>texelFetch</code> box downsample has no sub-texel interpolation, so the sampled brightness pops discretely as the camera moves. Every kernel here is a smooth multi-tap <code>texture()</code> read. Needing no per-frame rebind, it also costs no device wait.</p>
+<p>bloom_enabled is startup-fixed (the descriptor binding it controls is decided once at construction); bloom_intensity &lt;= 0 is a genuine per-frame no-op either way.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Brightness (max3 of RGB) below which nothing glows. 1.0 = "brighter than white".</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_soft_knee</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.5f</td>
+                        <td><p>0..1 fraction of bloom_threshold the quadratic knee spans; 0 = hard cutoff (pops).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_intensity</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Final multiplier on the composited glow; &lt;= 0 disables.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_scatter</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.7f</td>
+                        <td><p>Per-level blend toward the coarser tent; Unity URP's Bloom "Scatter". Higher = wider, softer halo.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Tent-filter width multiplier on the upsample; &gt; 1 widens further at a small cost in sharpness.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">bloom_clamp</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">20.0f</td>
+                        <td><p>Per-tap HDR ceiling applied before thresholding; suppresses single-texel fireflies.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_mode</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">2</td>
+                        <td><p>0 Linear, 1 Exponential, 2 Exp2 (Unity's default).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_density</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.02f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_linear_start</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">5.0f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_linear_end</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">60.0f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_color</td>
+                        <td class="param-type">glm::vec3</td>
+                        <td class="param-type" style="color: var(--text-muted);">glm::vec3(0.55f, 0.62f, 0.72f)</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_height_base</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>World Z (engine is Z-up); fog_height_falloff &lt;= 0 disables height fog.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_height_falloff</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_sky_blend</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>0 = flat fog_color, 1 = fully blended toward the sky gradient.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_sun_amount</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>Additive Henyey-Greenstein sun in-scatter tint strength; 0 disables.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_sun_anisotropy</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.7f</td>
+                        <td><p>HG g; 0 isotropic, close to 1 = tight forward scatter toward the sun.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_max_opacity</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Ceiling on how much fog can occlude the scene (1 = fully opaque at max density).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fog_max_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">150.0f</td>
+                        <td><p>Distance the global fog term saturates at, and the distance sky pixels are evaluated at  prevents a hard seam where a grazing near-horizon ray's apparent distance blows up against an otherwise-unfogged sky.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_step_count</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">48</td>
+                        <td><p>Raymarch steps. The primary perf knob, and what resolves thin ribbons; the start offset is dithered per pixel and per frame, so TAA recovers much of what a low count costs.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_max_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">40.0f</td>
+                        <td><p>Distance the march stops at.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_resolution_scale</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">2</td>
+                        <td><p>Divisor on render resolution for the march (1 = full, 2 = half, 4 = quarter per axis). The march is the expensive half of VolumetricsPass and a low-frequency medium loses little at reduced resolution: the full-resolution composite upsamples it with a depth-aware filter, so geometry silhouettes stay sharp through the haze. Each step of the divisor cuts march cost ~4x. Startup-fixed: it sizes a target.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_mode</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">"froxel"</td>
+                        <td><p>How the local volumes are resolved. Startup-fixed (it selects passes and targets): "froxel"  the Unreal/HDRP technique: density and lighting evaluated once per froxel of a camera-aligned grid, temporally reprojected, integrated per column, one lookup per pixel (gfxcoopa's FroxelVolumetricsPass). Cost follows the grid, not the screen or a step count; thin features soften to the grid. "raymarch"  per-pixel march at 1/volumetrics_resolution_scale resolution with volumetrics_step_count steps (VolumetricsPass). Sharper, much costlier.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_froxel_tile</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">8</td>
+                        <td><p>Render pixels per froxel, each axis. Startup-fixed.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_froxel_slices</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">64</td>
+                        <td><p>Depth slices along the view ray. Startup-fixed.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_froxel_history</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.9f</td>
+                        <td><p>Temporal reprojection weight (0 = none). RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_froxel_miss_samples</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);">4</td>
+                        <td><p>Samples taken by a froxel whose history was rejected (newly revealed by camera motion), so it does not start as one raw sample. 1 = no supersampling. RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_froxel_lookup_jitter</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>Per-pixel jitter of the composite's grid lookup, in froxels / slices (0 = off). Breaks up the froxel cell pattern for TAA to resolve; ignored unless aa_mode == "taa". Off by default: with centre-reprojected history the cells no longer show in pixel_demo, and the dither TAA leaves behind measured as slightly MORE flicker. RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_max_opacity</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.85f</td>
+                        <td><p>Ceiling on how much volumetrics can occlude the scene.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_sun_anisotropy</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.6f</td>
+                        <td><p>HG g; 0 isotropic, close to 1 = tight forward scatter. Shared, not per-volume: it is a property of the light's phase function, not of which medium a sample sits in.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_shadows_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Shadow the march's sun in-scatter term with the directional shadow map (one hardware-PCF tap per step), producing visible light shafts where geometry occludes a volume. A RUNTIME toggle  it only gates a UBO flag; the shadow maps themselves are always bound (VolumetricsPass::set_shadow_images). The GLOBAL fog term stays analytic and unshadowed by design: it has no march to sample along, so god rays are a volumetrics feature, not a fog one.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_light_scatter</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Strength of point/spot light in-scatter into local volumes (the closest MAX_SCATTER_LIGHTS lights are fed to the march each frame); 0 skips the per-step light loop entirely. Each volume's own <code>sun_amount</code> scales its response to these lights exactly as it scales its response to the sun.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">volumetrics_max_scatter_lights</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">4</td>
+                        <td><p>How many point/spot lights may in-scatter into the march, set by <code>volumetrics_quality</code> and capped at MAX_SCATTER_LIGHTS (4). The nearest to the camera win. This multiplies against volumetrics_step_count  every light is evaluated at every step of every pixel  so it is the second real cost dial of the pass, and 0 leaves the (much cheaper) sun-shaft term running on its own.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mesh_lod_bias</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Global multiplier on every renderer's projected screen size before LOD selection: 1 keeps detail longer, &lt; 1 switches to coarser levels sooner. Meshes without a <code>lods</code> block are unaffected (they have only LOD 0). RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shadow_min_caster_texels</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>A shadow caster whose bounds would cover fewer than this many texels of a shadow view (a cascade tile, a cube face, the spot map) is skipped in that view  tiny props in a far cascade contribute nothing a filter could resolve. 0 disables. RUNTIME.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Diorama-style tilt-shift blur (Zelda: Link's Awakening [Switch] reference)  see gfxcoopa's TiltShiftPass. Unlike every other post effect here, it runs at DISPLAY resolution, after the pixel-art upscale: it's a lens effect layered on the final image, not a pixel-grid effect, so running it at the low internal resolution would quantize the blur kernel and the focus ramp to a handful of steps (see TiltShiftPass's own file doc). The circle of confusion is a function of screen position only (no depth sampling), so it stays exact under a separable horizontal-then-vertical Gaussian with no silhouette bleeding.</p>
+<p>tilt_shift_enabled is a startup-fixed toggle (same policy as bloom_enabled/ fog_enabled): its descriptor binding  whether upscale_pass_ reads tilt_shift_pass_'s result or post_target_ directly  is decided once at construction from this flag's startup value.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_focus_center</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.55f</td>
+                        <td><p>0..1 screen position of the sharp band's centre (0 = top, at angle 0).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_focus_width</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.18f</td>
+                        <td><p>0..1 half-height of the fully-sharp band.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_ramp_width</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.22f</td>
+                        <td><p>0..1 distance the blur ramps in over, smoothstepped.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_blur_top</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Strength multiplier on the "far" side of the band.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_blur_bottom</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.7f</td>
+                        <td><p>Strength multiplier on the "near" side of the band.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_max_radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">6.0f</td>
+                        <td><p>Blur radius in DISPLAY pixels at full strength.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">tilt_shift_angle</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>Degrees; rotates the focus band off horizontal.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td><p>Physically-based depth of field  see gfxcoopa's DofPass. Unlike tilt_shift above, this runs at RENDER resolution, on linear HDR, before bloom_enabled's pyramid: the circle of confusion is a function of scene DEPTH (a thin-lens formula from focal length/aperture/focus distance), and defocused HDR highlights should bloom into real bokeh rather than DOF blurring an already-tonemapped image. See DofPass's own file doc for why a depth-driven CoC needs a single-pass gather rather than tilt_shift's separable blur.</p>
+<p>dof_focal_length/dof_sensor_width &lt;= 0 fall back to the active camera's <code>lens</code>/<code>sensor_width</code> (CameraComponent)  and a camera's own <code>aperture</code>/ <code>focus_distance</code> (also &lt;= 0 = inherit) override dof_aperture/ dof_focus_distance below, so a scene can DOF one camera differently from another without touching this global config.</p>
+<p>dof_focus_mode == "object" focuses on a named scene object instead of a fixed distance: dof_focus_object gives its ':'-separated scene path (e.g. "sdf_blob:sdf_blob_sphere", resolved via Scene::find_object_by_path()), and the view-space depth of its Transform each frame becomes the focal plane. A camera's own CameraComponent::focus_object (see that class's doc) overrides this field AND self-activates object-focus mode for that camera even when dof_focus_mode here is "manual"  see PixelRenderPipeline::resolve_dof_focus_() for the exact precedence. dof_focus_smoothing eases the focal plane toward a moving/retargeted object (1/sec, like CameraController::follow_smoothing; &lt;= 0 snaps instead)  it applies ONLY to object-focus mode, not orbit_target, which is already smoothed twice over by CameraController's own follow_smoothing/movement_smoothing.</p>
+<p>dof_enabled is a startup-fixed toggle (same policy as bloom_enabled/ fog_enabled/tilt_shift_enabled above): its descriptor binding  whether bloom_pass_/pixel_stylize_pass_ read dof_pass_'s result or the pre-DOF image directly  is decided once at construction from this flag's startup value. dof_focus_mode/object/smoothing (and debug_view, see that enum's doc) are RUNTIME fields: they only change push constants (or which scene object CPU code reads), not a descriptor binding, so they're safe to change every frame.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focus_mode</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">"manual"</td>
+                        <td><p>manual | orbit_target | object.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focus_object</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">""</td>
+                        <td><p>':'-separated scene path; used when dof_focus_mode == "object". Overridden by CameraComponent::focus_object.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focus_smoothing</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">8.0f</td>
+                        <td><p>Focus-rack rate (1/sec) for object-focus mode; &lt;= 0 snaps.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focus_distance</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">8.0f</td>
+                        <td><p>Metres; used when dof_focus_mode == "manual".</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focus_range</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>Extra forced-sharp half-depth in metres, added around the focal plane in EVERY focus mode. Deliberately non-physical: the thin-lens sharp band goes as F^2, so it collapses when the camera closes in and no aperture compensates  see DofPass::Params::focus_range.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focus_cover_object</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Object focus also fits the forced-sharp band to the subject's own depth extent, so the whole subject stays sharp at any distance. See resolve_dof_focus_().</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_blur_scale</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>Plain |CoC| multiplier (blur strength), applied before the dof_max_radius clamp. Separate from dof_focus_range (band WIDTH) and dof_max_radius (a safety ceiling).</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_aperture</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">2.8f</td>
+                        <td><p>f-stop; lower = shallower depth of field.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_focal_length</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>mm; &lt;= 0 takes the active camera's <code>lens</code>.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_sensor_width</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>mm; &lt;= 0 takes the active camera's <code>sensor_width</code>.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_max_radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">12.0f</td>
+                        <td><p>|CoC| ceiling, in full-res pixels.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_sample_count</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">32</td>
+                        <td><p>Spiral gather taps; clamped to [8, 48] in-shader.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_blade_count</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">0</td>
+                        <td><p>&lt; 3 = perfect disc bokeh; else an N-sided polygonal iris.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dof_blade_rotation</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0f</td>
+                        <td><p>Iris rotation, degrees.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">aa_mode</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">"off"</td>
+                        <td><p>Anti-aliasing. Three modes; MSAA is deliberately absent, since every target here is SampleCount::X1.</p>
+<p>aa_mode is STARTUP-FIXED: going from "off" to any AA mode (or back) changes which descriptor the composite and tilt shift are bound to, and that is decided once at pipeline construction. Switching AMONG "fxaa"/"smaa"/"taa" at runtime IS safe  all three passes are constructed together whenever aa_mode != "off" and all three write the same target, so render() just branches per frame on which draw() to call.</p>
+<p>"taa" jitters the camera projection every frame, which is in inherent tension with camera_pixel_snap's whole-texel snapping above  not a bug to fix. The TAA resolve reprojects its accumulation history through the camera's frame-to-frame motion (from the depth buffer and the previous unjittered view-projection; camera-only, there are no per-object motion vectors) and variance-clips it in YCoCg against the current 3x3 neighbourhood, so dynamic objects shed ghosts through the clip rather than through true velocities. Accumulation is age-weighted: a still camera converges as a true running average of the jitter cycle rather than orbiting an exponential blend. "off" | "fxaa" | "smaa" | "taa".</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fxaa_subpixel</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.75f</td>
+                        <td><p>Blend weight of FXAA's subpixel-aliasing term.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fxaa_edge_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.166f</td>
+                        <td><p>Local contrast (fraction of lumaMax) below which FXAA does nothing.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fxaa_edge_threshold_min</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.0312f</td>
+                        <td><p>Absolute contrast floor  avoids AA-ing near-black noise.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">smaa_threshold</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.1f</td>
+                        <td><p>SMAA edge-detection local contrast threshold.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">smaa_max_search_steps</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">16</td>
+                        <td><p>SMAA blend-weight pass's max horizontal/vertical search distance, in texels.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">taa_blending_weight</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.99f</td>
+                        <td><p>History weight TAA's accumulation converges to at rest.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">taa_weight_scale</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">30.0f</td>
+                        <td><p>Velocity response: TAA's history weight falls from taa_blending_weight toward taa_feedback_motion, reaching the floor at ~100/taa_weight_scale pixels of per-frame screen velocity.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">taa_feedback_motion</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.85f</td>
+                        <td><p>History weight floor under fast camera motion.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">taa_sharpness</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">0.25f</td>
+                        <td><p>Motion-gated high-frequency restore in the resolve; 0 disables.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">taa_variance_gamma</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1.0f</td>
+                        <td><p>History clip box half-width, in standard deviations of the 3x3 YCoCg neighbourhood.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">debug_view</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);">"off"</td>
+                        <td><p>Replaces the image with one intermediate render buffer, or (debug_view == "lines") overlays physics collider/contact wireframes (DebugLinePass, gathered each frame from PhysicsWorld::debug_draw()  see toyengine/render/passes/debug_line_pass.h) on top of the normal image.</p>
+<p>See the DebugView enum's own doc for the full option list and what each one shows. RUNTIME, like ssr_enabled: PixelRenderPipeline's debug_view_pass_ (and every pass this reduces to a no-op) is always constructed, so re-reading this fresh every frame changes nothing about which descriptors exist  only which fullscreen draw runs and which push-constant fields are zeroed.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">world_ui_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Draws every WorldSpace uicoopa CanvasComponent in the scene (UiWorldPass) as a guest inside post_target_'s bracket  see uicoopa/render/ui_world_pass.h and CanvasRenderMode.</p>
+<p>STARTUP-FIXED, unlike debug_view above: turning it on builds the UI pipelines and binds the G-buffer depth into a descriptor set, neither of which can happen once the frame loop is running (DescriptorSet::bind_image() updates descriptors immediately). Off leaves the pass unconstructed and the descriptor unallocated, so it costs literally nothing. See PixelRenderPipeline::apply_live_config().</p>
+<p>Screen-space canvases are unaffected by this flag  they are drawn by a separate pass with its own toggle, screen_ui_enabled below.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">screen_ui_enabled</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">true</td>
+                        <td><p>Draws ScreenSpaceOverlay canvases (uicoopa's UiPass), at WINDOW resolution.</p>
+<p>The companion to world_ui_enabled, and STARTUP-FIXED for the same reason: it decides whether the pass and its descriptor pool are built at all.</p>
+<p>Unlike the world-space layer, this one is not part of the pixel-art image: it draws last, straight into the swapchain-sized overlay target, at full window resolution, so an HUD stays crisp instead of being quantised to the internal render grid. Both UI layers land after every post effect  see PixelRenderPipeline's ui_composite_pass_.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">indirect</td>
+                        <td class="param-type">coopa::gfx::engine::IndirectParams</td>
+                        <td class="param-type" style="color: var(--text-muted);">{1.0f, 1.0f, 0.6f, 0.5f}</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shader_dir</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td><p>Absolute path to assets/shaders.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">shaders</td>
+                        <td class="param-type">coopa::gfx::pipeline::ShaderLibrary</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">surface_shaders</td>
+                        <td class="param-type">coopa::gfx::pipeline::SurfaceShaderRegistry</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

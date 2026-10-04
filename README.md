@@ -26,6 +26,22 @@ All paths are relative, so the site works at a domain root or under a sub-path.
 4. Add a `nav-proj` link to the nav on every page, and update the pager links at the
    bottom of the neighbouring project pages.
 
+## Docs
+
+`docs/` holds the API references for toyengine and its libraries, generated with
+[coopadocs](https://github.com/cooparobla/coopadocs). `docs/index.html` is the hand-written hub
+page; `docs/<repo>/` folders are generated and committed.
+
+Prerequisites: `coopadocs` and `toyengine` (with submodules) cloned next to this repo (override
+with `COOPADOCS_DIR` / `TOYENGINE_DIR`), Doxygen (`brew install doxygen`) and Python 3.12+ from
+python.org or Homebrew. The script makes its own venv in `.venv-docs/` on first run.
+
+```bash
+scripts/build-docs.sh                 # rebuild every reference
+scripts/build-docs.sh mapcoopa caml   # rebuild only these
+git add docs && git commit -m "Update API docs"
+```
+
 ## Run locally
 
 Serve the folder with any static file server (the icon sprite doesn't load over `file://`),

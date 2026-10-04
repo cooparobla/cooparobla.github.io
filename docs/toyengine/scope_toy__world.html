@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toy::world - toyengine Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">toyengine Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_std.html">
+                        <span class="badge">C++</span>std
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy.html">
+                        <span class="badge">C++</span>toy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core.html">
+                        <span class="badge">C++</span>toy::core
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__core__detail.html">
+                        <span class="badge">C++</span>toy::core::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render.html">
+                        <span class="badge">C++</span>toy::render
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__render__passes.html">
+                        <span class="badge">C++</span>toy::render::passes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__scene.html">
+                        <span class="badge">C++</span>toy::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water.html">
+                        <span class="badge">C++</span>toy::water
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_toy__water__detail.html">
+                        <span class="badge">C++</span>toy::water::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_toy__world.html">
+                        <span class="badge">C++</span>toy::world
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__BuoyantEntry.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::BuoyantEntry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Camera.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Camera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__ContactShadowKnobs.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::ContactShadowKnobs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__DofFocus.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::DofFocus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameContext.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__FrameScene.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::FrameScene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatch.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshDrawStats.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshDrawStats
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshGather.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshGather
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__ContactShadowPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::ContactShadowPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__UnderwaterPass__Params.html">
+                        <span class="badge">C++</span>toy::render::passes::UnderwaterPass::Params
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__TransparentPreviewPass__PushConstants.html">
+                        <span class="badge">C++</span>toy::render::passes::TransparentPreviewPass::PushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__WaterFrameState__Ripple.html">
+                        <span class="badge">C++</span>toy::render::WaterFrameState::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__Ripple.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::Ripple
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__RippleEmitter.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::RippleEmitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__FrameProfile__Row.html">
+                        <span class="badge">C++</span>toy::render::FrameProfile::Row
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__MeshBatchKey__Shadow.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::MeshBatchKey::Shadow
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__world__TileMeshLibrary__SideGeometry.html">
+                        <span class="badge">C++</span>toy::world::TileMeshLibrary::SideGeometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__GpuProfiler__Slot.html">
+                        <span class="badge">C++</span>toy::render::GpuProfiler::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__PixelRenderPipeline__SpotShadowCaster.html">
+                        <span class="badge">C++</span>toy::render::PixelRenderPipeline::SpotShadowCaster
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterBody__TileSlot.html">
+                        <span class="badge">C++</span>toy::water::WaterBody::TileSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaterSystem__UnderwaterInfo.html">
+                        <span class="badge">C++</span>toy::water::WaterSystem::UnderwaterInfo
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__render__passes__DebugLinePass__Vertex.html">
+                        <span class="badge">C++</span>toy::render::passes::DebugLinePass::Vertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_toy__water__WaveSet__Wave.html">
+                        <span class="badge">C++</span>toy::water::WaveSet::Wave
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord__.html">
+                        <span class="badge">C++</span>ChunkCoord >
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AppConfig.html">
+                        <span class="badge">C++</span>AppConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Engine.html">
+                        <span class="badge">C++</span>Engine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EngineOptions.html">
+                        <span class="badge">C++</span>EngineOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameHooks.html">
+                        <span class="badge">C++</span>FrameHooks
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobsConfig.html">
+                        <span class="badge">C++</span>JobsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LogoShape.html">
+                        <span class="badge">C++</span>LogoShape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OutputConfig.html">
+                        <span class="badge">C++</span>OutputConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WindowConfig.html">
+                        <span class="badge">C++</span>WindowConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CamlKeyState.html">
+                        <span class="badge">C++</span>CamlKeyState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeSplits.html">
+                        <span class="badge">C++</span>CascadeSplits
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CascadeTile.html">
+                        <span class="badge">C++</span>CascadeTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CpuTimer.html">
+                        <span class="badge">C++</span>CpuTimer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugViewPushConstants.html">
+                        <span class="badge">C++</span>DebugViewPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DirShadowFit.html">
+                        <span class="badge">C++</span>DirShadowFit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobals.html">
+                        <span class="badge">C++</span>ForwardGlobals
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ForwardGlobalsData.html">
+                        <span class="badge">C++</span>ForwardGlobalsData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameProfile.html">
+                        <span class="badge">C++</span>FrameProfile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Frustum.html">
+                        <span class="badge">C++</span>Frustum
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GpuProfiler.html">
+                        <span class="badge">C++</span>GpuProfiler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_InstanceStream.html">
+                        <span class="badge">C++</span>InstanceStream
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LetterboxRect.html">
+                        <span class="badge">C++</span>LetterboxRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LodThreshold.html">
+                        <span class="badge">C++</span>LodThreshold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelLightingPushConstants.html">
+                        <span class="badge">C++</span>PixelLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRect.html">
+                        <span class="badge">C++</span>PixelRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRenderConfig.html">
+                        <span class="badge">C++</span>PixelRenderConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PixelRenderPipeline.html">
+                        <span class="badge">C++</span>PixelRenderPipeline
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RenderExtent.html">
+                        <span class="badge">C++</span>RenderExtent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfClipRect.html">
+                        <span class="badge">C++</span>SdfClipRect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SdfDrawItem.html">
+                        <span class="badge">C++</span>SdfDrawItem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShadowFitCamera.html">
+                        <span class="badge">C++</span>ShadowFitCamera
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentCaptureLightingPushConstants.html">
+                        <span class="badge">C++</span>TransparentCaptureLightingPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentRefractionPushConstants.html">
+                        <span class="badge">C++</span>TransparentRefractionPushConstants
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterFrameState.html">
+                        <span class="badge">C++</span>WaterFrameState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WorldBounds.html">
+                        <span class="badge">C++</span>WorldBounds
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactShadowPass.html">
+                        <span class="badge">C++</span>ContactShadowPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLinePass.html">
+                        <span class="badge">C++</span>DebugLinePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FullscreenBlitPass.html">
+                        <span class="badge">C++</span>FullscreenBlitPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransparentPreviewPass.html">
+                        <span class="badge">C++</span>TransparentPreviewPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UiCompositePass.html">
+                        <span class="badge">C++</span>UiCompositePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UnderwaterPass.html">
+                        <span class="badge">C++</span>UnderwaterPass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UpscalePass.html">
+                        <span class="badge">C++</span>UpscalePass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CameraController.html">
+                        <span class="badge">C++</span>CameraController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothRenderer.html">
+                        <span class="badge">C++</span>ClothRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FreeMover.html">
+                        <span class="badge">C++</span>FreeMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HealthDriver.html">
+                        <span class="badge">C++</span>HealthDriver
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicController.html">
+                        <span class="badge">C++</span>KinematicController
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicControlSystem.html">
+                        <span class="badge">C++</span>KinematicControlSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KinematicMover.html">
+                        <span class="badge">C++</span>KinematicMover
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SkinnedMeshRenderer.html">
+                        <span class="badge">C++</span>SkinnedMeshRenderer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Buoyancy.html">
+                        <span class="badge">C++</span>Buoyancy
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowBakeParams.html">
+                        <span class="badge">C++</span>FlowBakeParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FlowRayHit.html">
+                        <span class="badge">C++</span>FlowRayHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Pontoon.html">
+                        <span class="badge">C++</span>Pontoon
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PontoonDesc.html">
+                        <span class="badge">C++</span>PontoonDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBaseSample.html">
+                        <span class="badge">C++</span>WaterBaseSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterBody.html">
+                        <span class="badge">C++</span>WaterBody
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSample.html">
+                        <span class="badge">C++</span>WaterSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSettings.html">
+                        <span class="badge">C++</span>WaterSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSurfaceQuery.html">
+                        <span class="badge">C++</span>WaterSurfaceQuery
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterSystem.html">
+                        <span class="badge">C++</span>WaterSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTile.html">
+                        <span class="badge">C++</span>WaterTile
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterTileLodParams.html">
+                        <span class="badge">C++</span>WaterTileLodParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaterVertex.html">
+                        <span class="badge">C++</span>WaterVertex
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveParams.html">
+                        <span class="badge">C++</span>WaveParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveQueryOptions.html">
+                        <span class="badge">C++</span>WaveQueryOptions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSample.html">
+                        <span class="badge">C++</span>WaveSample
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaveSet.html">
+                        <span class="badge">C++</span>WaveSet
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkBuildJob.html">
+                        <span class="badge">C++</span>ChunkBuildJob
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkCoord.html">
+                        <span class="badge">C++</span>ChunkCoord
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChunkMeshData.html">
+                        <span class="badge">C++</span>ChunkMeshData
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ColumnPad.html">
+                        <span class="badge">C++</span>ColumnPad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainChunk.html">
+                        <span class="badge">C++</span>TerrainChunk
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainComponent.html">
+                        <span class="badge">C++</span>TerrainComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainParams.html">
+                        <span class="badge">C++</span>TerrainParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSampler.html">
+                        <span class="badge">C++</span>TerrainSampler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainSystem.html">
+                        <span class="badge">C++</span>TerrainSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileColumn.html">
+                        <span class="badge">C++</span>TileColumn
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TileMeshLibrary.html">
+                        <span class="badge">C++</span>TileMeshLibrary
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; toy::world
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>toy::world</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/toyengine/world/terrain_chunk.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ChunkBuildJob.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ChunkBuildJob
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Everything one chunk-meshing job needs, plus the buffer it writes into. Bundled into a single heap object so the job'...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ChunkCoord.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ChunkCoord
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Integer address of a chunk in the chunk grid, in units of TerrainParams::chunk_size tiles.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ChunkMeshData.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ChunkMeshData
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A chunk's merged CPU geometry, ready for Mesh::from_arrays(). Object-space: positions are relative to the chunk's own...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ColumnPad.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ColumnPad
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A chunk's columns plus a one-tile skirt of its neighbours', in local chunk coordinates. Indexed by local tile coordin...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TerrainChunk.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TerrainChunk
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One chunk's lifetime state, from "wanted" to "drawing" to "let go of".
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TerrainComponent.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TerrainComponent
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Scene-authored terrain configuration, and the world state built from it.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TerrainParams.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TerrainParams
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                How the map's continuous world is cut into discrete tiles and chunks. Authored in scene YAML on the Terrain component...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TerrainSampler.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TerrainSampler
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                A generated map, plus the O(1) queries the tile system asks of it.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TerrainSystem.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TerrainSystem
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Drives every TerrainComponent in the scene: generate, mesh, upload, retire.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TileColumn.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TileColumn
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One tile's sampled state: how tall it is and what it is made of. steps is a COUNT of vertical tile steps, not a heigh...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_TileMeshLibrary.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class TileMeshLibrary
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Six baked side geometries, and append() to stamp one into a chunk buffer. `TileMeshLibrarylib; lib.bake_canonical(fla...
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_sample_chunk_columns">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sample_chunk_columns</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">sample_chunk_columns</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TerrainSampler</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sampler</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TerrainParams</span><span class="w"> </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ChunkCoord</span><span class="w"> </span><span class="o">&amp;</span><span class="n">coord</span><span class="p">,</span><span class="w"> </span><span class="n">ColumnPad</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Samples every column a chunk needs, including its one-tile neighbour skirt.</p>
+<p>The only part of meshing that touches the map. Split out from mesh_chunk_columns() so the merge can be tested against a hand-built pad with no generated world behind it.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sampler</td>
+                        <td class="param-type">const TerrainSampler &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The built world sampler; read concurrently by every chunk job.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">params</td>
+                        <td class="param-type">const TerrainParams &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The tiling.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">coord</td>
+                        <td class="param-type">const ChunkCoord &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Which chunk to sample.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ColumnPad &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Receives `(chunk_size + 2)^2` columns.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_mesh_chunk_columns">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">mesh_chunk_columns</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">mesh_chunk_columns</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ColumnPad</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pad</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TileMeshLibrary</span><span class="w"> </span><span class="o">&amp;</span><span class="n">library</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TerrainParams</span><span class="w"> </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="n">ChunkMeshData</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Merges every exposed side of a chunk's columns into one vertex/index buffer.</p>
+<p>Pure, deterministic and allocation-light: the emission order is a fixed walk (row-major over the tiles, top face then each lateral in <code>k_lateral_faces</code> order, walls top-down), so two runs over the same pad produce byte-identical buffers. The streamer's job parallelism relies on that  chunks are meshed on whichever worker is free, and nothing downstream may depend on which one.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">pad</td>
+                        <td class="param-type">const ColumnPad &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The chunk's columns plus its neighbour skirt, from sample_chunk_columns().</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">library</td>
+                        <td class="param-type">const TileMeshLibrary &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The baked side geometry.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">params</td>
+                        <td class="param-type">const TerrainParams &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The tiling; supplies the cell scale, the wall clamp and the soil depth.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ChunkMeshData &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Receives the merged geometry, in chunk-local object space. Cleared first.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_mesh_chunk_columns_greedy">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">mesh_chunk_columns_greedy</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">mesh_chunk_columns_greedy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ColumnPad</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pad</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TileMeshLibrary</span><span class="w"> </span><span class="o">&amp;</span><span class="n">library</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TerrainParams</span><span class="w"> </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="n">ChunkMeshData</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The greedy counterpart of mesh_chunk_columns(): the same surface, in far fewer quads.</p>
+<p>Tops: rectangles of equal (surface height, top kind) merge into one quad, grown greedily along +X then +Y.Walls: each exposed column face's cells split into runs of one TileKind (the soil band, then stone below it), each run one tall quad; a run also merges sideways across neighbouring columns whose same face carries the identical run.</p>
+<p>Only sides the library reports as mergeable (flat unit quads) are stretched; any other side keeps the per-tile path. Every UV is written in tile space (TileMeshLibrary::encode_uv), so the chunk must be drawn with the <code>terrain</code> surface shader. Deterministic like the per-tile mesher: a fixed walk order, so equal pads produce byte-identical buffers.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">pad</td>
+                        <td class="param-type">const ColumnPad &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">library</td>
+                        <td class="param-type">const TileMeshLibrary &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">params</td>
+                        <td class="param-type">const TerrainParams &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ChunkMeshData &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_build_chunk_mesh">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">build_chunk_mesh</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">build_chunk_mesh</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TerrainSampler</span><span class="w"> </span><span class="o">&amp;</span><span class="n">sampler</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TileMeshLibrary</span><span class="w"> </span><span class="o">&amp;</span><span class="n">library</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TerrainParams</span><span class="w"> </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ChunkCoord</span><span class="w"> </span><span class="o">&amp;</span><span class="n">coord</span><span class="p">,</span><span class="w"> </span><span class="n">ChunkMeshData</span><span class="w"> </span><span class="o">&amp;</span><span class="n">out</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Samples and meshes one chunk  the whole unit of work a chunk job performs.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">sampler</td>
+                        <td class="param-type">const TerrainSampler &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The built world sampler.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">library</td>
+                        <td class="param-type">const TileMeshLibrary &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The baked side geometry.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">params</td>
+                        <td class="param-type">const TerrainParams &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The tiling.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">coord</td>
+                        <td class="param-type">const ChunkCoord &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Which chunk to build.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">out</td>
+                        <td class="param-type">ChunkMeshData &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Receives the merged geometry, in chunk-local object space.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_chunk_origin">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">chunk_origin</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">chunk_origin</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TerrainParams</span><span class="w"> </span><span class="o">&amp;</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ChunkCoord</span><span class="w"> </span><span class="o">&amp;</span><span class="n">coord</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The world-space origin of a chunk's minimum corner  its SceneObject's position.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">params</td>
+                        <td class="param-type">const TerrainParams &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">coord</td>
+                        <td class="param-type">const ChunkCoord &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_install_terrain_system">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">install_terrain_system</h3>
+            
+            <div class="signature-panel">
+                <span class="n">TerrainSystem</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">install_terrain_system</span><span class="p">(</span><span class="n">coopa</span><span class="o">::</span><span class="n">scene</span><span class="o">::</span><span class="n">Scene</span><span class="w"> </span><span class="o">&amp;</span><span class="n">scene</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Device</span><span class="w"> </span><span class="o">&amp;</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">gfx</span><span class="o">::</span><span class="n">memory</span><span class="o">::</span><span class="n">Allocator</span><span class="w"> </span><span class="o">&amp;</span><span class="n">allocator</span><span class="p">,</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">asset</span><span class="o">::</span><span class="n">AssetManager</span><span class="w"> </span><span class="o">&amp;</span><span class="n">assets</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">order</span><span class="o">=</span><span class="n">k_terrain_system_order</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Constructs a TerrainSystem and registers it ahead of the physics phase.</p>
+<p>Mirrors toy::scene::install_kinematic_control_system(). Call once per scene, before the first update. The captured references must outlive the scene.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">scene</td>
+                        <td class="param-type">coopa::scene::Scene &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Scene to install into.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">device</td>
+                        <td class="param-type">coopa::gfx::core::Device &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Vulkan logical device.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">allocator</td>
+                        <td class="param-type">coopa::gfx::memory::Allocator &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>VMA allocator.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">assets</td>
+                        <td class="param-type">coopa::asset::AssetManager &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Asset manager the chunk meshes are published into.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">order</td>
+                        <td class="param-type">int</td>
+                        <td class="param-type" style="color: var(--text-muted);">k_terrain_system_order</td>
+                        <td>Registration order; defaults to k_terrain_system_order (60).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">TerrainSystem *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_atlas_cell">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">atlas_cell</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec4</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">atlas_cell</span><span class="p">(</span><span class="n">TileKind</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The UV rectangle a <code>TileKind</code> occupies in the terrain atlas.</p>
+<p>Returned as <code>{u0, v0, du, dv}</code>  an origin plus a size, so a caller maps a side mesh's own <code>[0,1]</code> UV into it with one multiply-add.</p>
+<p>The rectangle is inset by half a texel on every edge. The atlas is NEAREST-sampled (this is a pixel-art engine  see toy::loaders::PixelTextureLoader), and without the inset a UV landing exactly on a cell boundary can round into the neighbouring cell and paint a one-texel stripe of the wrong surface along every tile edge.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">kind</td>
+                        <td class="param-type">TileKind</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The surface to look up.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec4</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_chunk_distance">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">chunk_distance</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">chunk_distance</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ChunkCoord</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ChunkCoord</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Chebyshev (chessboard) distance between two chunks, in chunks.</p>
+<p>Chebyshev rather than Euclidean because the loaded region is a square ring around the camera: <code>chunk_distance(c, centre) &lt;= view_radius</code> is exactly "inside the square of side
+2*view_radius + 1", which is the set the streamer builds.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">const ChunkCoord &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>One chunk.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">const ChunkCoord &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The other.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::int32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_face_transform">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">face_transform</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">face_transform</span><span class="p">(</span><span class="n">TileFace</span><span class="w"> </span><span class="n">face</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The rigid transform taking the canonical (+Z, <code>[0,1]^3</code> unit cube) side mesh onto <code>face</code>.</p>
+<p>A rotation about the cube's own centre <code>(0.5, 0.5, 0.5)</code>, so the result still spans <code>[0,1]^3</code> and can be translated by a tile's origin directly. Built once into a function-local static table: glm's matrix constructors are not constexpr, and this is read once per emitted face.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">face</td>
+                        <td class="param-type">TileFace</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The face to orient onto.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const glm::mat4 &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_face_normal">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">face_normal</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">face_normal</span><span class="p">(</span><span class="n">TileFace</span><span class="w"> </span><span class="n">face</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The unit outward normal of <code>face</code>, in tile space.</p>
+<p>Stated directly rather than derived from face_transform() so a test can check the two agree.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">face</td>
+                        <td class="param-type">TileFace</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The face.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_face_step">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">face_step</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">ivec2</span><span class="w"> </span><span class="n">toy</span><span class="o">::</span><span class="n">world</span><span class="o">::</span><span class="n">face_step</span><span class="p">(</span><span class="n">TileFace</span><span class="w"> </span><span class="n">face</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The tile-grid step taken by moving one tile across <code>face</code>, for a lateral face.</p>
+<p><code>{0, 0}</code> for Top/Bottom, which have no neighbour in the tile plane.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">face</td>
+                        <td class="param-type">TileFace</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The face.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::ivec2</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

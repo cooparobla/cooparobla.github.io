@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopa::physx::dynamics - physxcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">physxcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset.html">
+                        <span class="badge">C++</span>coopa::asset
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx.html">
+                        <span class="badge">C++</span>coopa::physx
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__broadphase.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth.html">
+                        <span class="badge">C++</span>coopa::physx::cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__cloth__detail.html">
+                        <span class="badge">C++</span>coopa::physx::cloth::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__collision.html">
+                        <span class="badge">C++</span>coopa::physx::collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__components.html">
+                        <span class="badge">C++</span>coopa::physx::components
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug.html">
+                        <span class="badge">C++</span>coopa::physx::debug
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__debug__colors.html">
+                        <span class="badge">C++</span>coopa::physx::debug::colors
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__detail.html">
+                        <span class="badge">C++</span>coopa::physx::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_coopa__physx__dynamics.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__geometry.html">
+                        <span class="badge">C++</span>coopa::physx::geometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders.html">
+                        <span class="badge">C++</span>coopa::physx::loaders
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__loaders__detail.html">
+                        <span class="badge">C++</span>coopa::physx::loaders::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__query.html">
+                        <span class="badge">C++</span>coopa::physx::query
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__system.html">
+                        <span class="badge">C++</span>coopa::physx::system
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util.html">
+                        <span class="badge">C++</span>coopa::physx::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__physx__util__detail.html">
+                        <span class="badge">C++</span>coopa::physx::util::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsWorld.html">
+                        <span class="badge">C++</span>PhysicsWorld
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABBTree.html">
+                        <span class="badge">C++</span>AABBTree
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LayerMatrix.html">
+                        <span class="badge">C++</span>LayerMatrix
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PairCache.html">
+                        <span class="badge">C++</span>PairCache
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProxyPair.html">
+                        <span class="badge">C++</span>ProxyPair
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Cloth.html">
+                        <span class="badge">C++</span>Cloth
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchor.html">
+                        <span class="badge">C++</span>ClothAnchor
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothCollider.html">
+                        <span class="badge">C++</span>ClothCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothConstraint.html">
+                        <span class="badge">C++</span>ClothConstraint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothId.html">
+                        <span class="badge">C++</span>ClothId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParams.html">
+                        <span class="badge">C++</span>ClothParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothParticle.html">
+                        <span class="badge">C++</span>ClothParticle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothSolverScratch.html">
+                        <span class="badge">C++</span>ClothSolverScratch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothTether.html">
+                        <span class="badge">C++</span>ClothTether
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ConstraintBatch.html">
+                        <span class="badge">C++</span>ConstraintBatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_GridClothDesc.html">
+                        <span class="badge">C++</span>GridClothDesc
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SerialDispatch.html">
+                        <span class="badge">C++</span>SerialDispatch
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClipPlane.html">
+                        <span class="badge">C++</span>ClipPlane
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactEvent.html">
+                        <span class="badge">C++</span>ContactEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactManifold.html">
+                        <span class="badge">C++</span>ContactManifold
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ContactPoint.html">
+                        <span class="badge">C++</span>ContactPoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SatAxisResult.html">
+                        <span class="badge">C++</span>SatAxisResult
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Shape.html">
+                        <span class="badge">C++</span>Shape
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BoxCollider.html">
+                        <span class="badge">C++</span>BoxCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CapsuleCollider.html">
+                        <span class="badge">C++</span>CapsuleCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothAnchorSpec.html">
+                        <span class="badge">C++</span>ClothAnchorSpec
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClothComponent.html">
+                        <span class="badge">C++</span>ClothComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collider.html">
+                        <span class="badge">C++</span>Collider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Collision.html">
+                        <span class="badge">C++</span>Collision
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FixedUpdateBehaviour.html">
+                        <span class="badge">C++</span>FixedUpdateBehaviour
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJointComponent.html">
+                        <span class="badge">C++</span>HingeJointComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshCollider.html">
+                        <span class="badge">C++</span>MeshCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RigidbodyComponent.html">
+                        <span class="badge">C++</span>RigidbodyComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SphereCollider.html">
+                        <span class="badge">C++</span>SphereCollider
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugDraw.html">
+                        <span class="badge">C++</span>DebugDraw
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugLine.html">
+                        <span class="badge">C++</span>DebugLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Body.html">
+                        <span class="badge">C++</span>Body
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BodyId.html">
+                        <span class="badge">C++</span>BodyId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChildMassInput.html">
+                        <span class="badge">C++</span>ChildMassInput
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HingeJoint.html">
+                        <span class="badge">C++</span>HingeJoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IslandUnionFind.html">
+                        <span class="badge">C++</span>IslandUnionFind
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JointId.html">
+                        <span class="badge">C++</span>JointId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MassProperties.html">
+                        <span class="badge">C++</span>MassProperties
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterial.html">
+                        <span class="badge">C++</span>PhysicsMaterial
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SolverState.html">
+                        <span class="badge">C++</span>SolverState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AABB.html">
+                        <span class="badge">C++</span>AABB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Capsule.html">
+                        <span class="badge">C++</span>Capsule
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MeshBVH.html">
+                        <span class="badge">C++</span>MeshBVH
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OBB.html">
+                        <span class="badge">C++</span>OBB
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Ray.html">
+                        <span class="badge">C++</span>Ray
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Sphere.html">
+                        <span class="badge">C++</span>Sphere
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleAdjacency.html">
+                        <span class="badge">C++</span>TriangleAdjacency
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMesh.html">
+                        <span class="badge">C++</span>TriangleMesh
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsMaterialLoader.html">
+                        <span class="badge">C++</span>PhysicsMaterialLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TriangleMeshLoader.html">
+                        <span class="badge">C++</span>TriangleMeshLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RaycastHit.html">
+                        <span class="badge">C++</span>RaycastHit
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSystem.html">
+                        <span class="badge">C++</span>PhysicsSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsConfig.html">
+                        <span class="badge">C++</span>PhysicsConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PhysicsSettings.html">
+                        <span class="badge">C++</span>PhysicsSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Trs.html">
+                        <span class="badge">C++</span>Trs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__Binding.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__dynamics__SolverState__CachedImpulse.html">
+                        <span class="badge">C++</span>coopa::physx::dynamics::SolverState::CachedImpulse
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__PhysicsWorld__DeferredCommand.html">
+                        <span class="badge">C++</span>coopa::physx::PhysicsWorld::DeferredCommand
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__broadphase__AABBTree__Node.html">
+                        <span class="badge">C++</span>coopa::physx::broadphase::AABBTree::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__geometry__MeshBVH__Node.html">
+                        <span class="badge">C++</span>coopa::physx::geometry::MeshBVH::Node
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__physx__system__PhysicsSystem__RaycastHit.html">
+                        <span class="badge">C++</span>coopa::physx::system::PhysicsSystem::RaycastHit
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; coopa::physx::dynamics
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>coopa::physx::dynamics</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/physxcoopa/physxcoopa/dynamics/body.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    
+    <!-- Classes -->
+    
+    <section>
+        <h2>Classes</h2>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_Body.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class Body
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Full dynamic state of one rigid body. Geometry/material live alongside this in PhysicsWorld's parallel shape array (s...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_BodyId.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class BodyId
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Generational handle into PhysicsWorld's body array. Shape mirrors coopa::job::JobHandle's current design ({index, gen...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_ChildMassInput.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class ChildMassInput
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One compound-collider child's contribution, relative to the owning body's own local frame the input to compose_mass_p...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_HingeJoint.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class HingeJoint
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                One hinge constraint between bodies a and b. Anchors/axes are in each body's OWN local frame (rotated/translated by t...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_IslandUnionFind.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class IslandUnionFind
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Disjoint-set structure over body array indices, built fresh each substep from the current step's dynamic-dynamic cont...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_JointId.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class JointId
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Generational handle into PhysicsWorld's joint array same shape as BodyId (see its own doc for why: a plain, non-atomi...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_MassProperties.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class MassProperties
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Composite mass/center-of-mass/inertia produced by compose_mass_properties().
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_PhysicsMaterial.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class PhysicsMaterial
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Friction and restitution for one surface. Instances are shared by pointer; a Collider with no material assigned uses ...
+            </div>
+        </div>
+        
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <a href="class_SolverState.html" style="font-size: 1.25rem; font-weight: 600; font-family: var(--font-display);">
+                    class SolverState
+                </a>
+            </div>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">
+                Solver state that persists across steps currently just the warm-start impulse cache. Owned by PhysicsWorld, passed in...
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_box_inverse_inertia">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">box_inverse_inertia</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">box_inverse_inertia</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">half_extents</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">mass</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Inverse of the diagonal local-space inertia tensor for a solid box.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">half_extents</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Box half-extents.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mass</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body mass.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_sphere_inverse_inertia">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">sphere_inverse_inertia</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">sphere_inverse_inertia</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">mass</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Inverse of the local-space inertia tensor for a solid sphere (isotropic).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Sphere radius.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mass</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body mass.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_capsule_inverse_inertia">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">capsule_inverse_inertia</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">capsule_inverse_inertia</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">half_height</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">mass</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Inverse of the local-space inertia tensor for a solid capsule (cylinder + two hemispherical caps), with the capsule's long axis along local Z.</p>
+<p>Mass is distributed between the cylindrical and hemispherical parts by volume ratio. Derivation: a solid hemisphere has moment of inertia (2/5) m_h r^2 about an axis through the ORIGINAL sphere's center (i.e. the hemisphere's flat face), for both the polar axis and any axis perpendicular to it through that same point  the two are equal there by the same symmetry that gives a full sphere (2/5) M R^2 about any diameter. Each hemisphere's flat face sits <code>half_height</code> from the capsule's center of mass, so the perpendicular (X/Y) inertia additionally picks up a parallel-axis term m_h * half_height^2; the axial (Z) inertia does not, since translation along the axis itself doesn't change an axial moment.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">radius</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Capsule radius.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">half_height</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Distance from the capsule's center to a hemisphere's flat face (i.e. the cylindrical section's half-length  NOT including the caps).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mass</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body mass.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_inertia_for_shape">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">inertia_for_shape</h3>
+            
+            <div class="signature-panel">
+                <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">inertia_for_shape</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">Shape</span><span class="w"> </span><span class="o">&amp;</span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">mass</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Dispatches to the analytic inverse-inertia function matching <code>shape.type</code>, permuting the capsule result to match <code>shape.capsule_axis</code> (0=X, 1=Y, 2=Z; see capsule_inverse_inertia()'s doc  its own result is Z-axis-local).</p>
+<p>Moved here (out of PhysicsSystem, which originally owned the only copy of this dispatch) because it depends on nothing but a Shape and a mass  no Scene/Collider involvement  so PhysicsWorld::set_body_type() can share it for a runtime Kinematic-&gt;Dynamic transition without PhysicsWorld (which has no Scene dependency, see world.h's file doc) reaching into system/physics_system.h.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">shape</td>
+                        <td class="param-type">const collision::Shape &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Shape to derive inertia from.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mass</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body mass.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">glm::vec3</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_compose_mass_properties">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">compose_mass_properties</h3>
+            
+            <div class="signature-panel">
+                <span class="n">MassProperties</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">compose_mass_properties</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">ChildMassInput</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">children</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Composes N compound-collider children into one body's mass/center-of-mass/inertia via the parallel-axis theorem.</p>
+<p>DIAGONAL-ONLY APPROXIMATION: computes each child's full 3x3 forward inertia tensor (rotated into the body's frame via <code>R * I * R^T</code>, then parallel-axis-shifted from the child's own center to the COMPOSITE center of mass), sums them, then keeps only the diagonal of that sum  discarding whatever off-diagonal product-of-inertia terms it produced. This is exact when every child is symmetric about the body's own local axes (the common case: children arranged along cardinal directions/offsets), and an approximation otherwise (a modest rotational- response error under torque)  deliberately traded against widening Body::inv_inertia_local from glm::vec3 to a full matrix, which would ripple into every existing single-shape body/test/API in this codebase (RigidbodyComponent:: inertia_tensor_override included) for a case only compound bodies ever exercise. Mass and center of mass are always exact regardless  only the tensor's off-diagonal terms are dropped. A single-child call degenerates to exactly that child's own values (offset/rotation fold in via the same math, at zero approximation error since there's nothing to sum against).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">children</td>
+                        <td class="param-type">const std::vector< ChildMassInput > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Every child shape's contribution, relative to the body's own local frame.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">MassProperties</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_apply_gravity">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">apply_gravity</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">apply_gravity</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">body</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">gravity</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Applies gravity into a dynamic, awake body's force accumulator.</p>
+<p>Static/kinematic/sleeping bodies are untouched  their motion (if any) is driven externally (scripts, animation) rather than by force accumulation.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">body</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body to accumulate into.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">gravity</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>World-space gravity acceleration.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_apply_constraints">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">apply_constraints</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">apply_constraints</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">body</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Zeroes velocity components along axes frozen by Body::constraints.</p>
+<p>Applied after every velocity change (integration and, later, the solver) so a frozen axis never accumulates drift from forces or impulses applied along it.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">body</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_update_world_inertia">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">update_world_inertia</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">update_world_inertia</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">body</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Recomputes a dynamic body's world-space inverse inertia tensor from its current orientation: R * diag(inv_inertia_local) * R^T. Static/kinematic bodies keep an all-zero tensor (infinite inertia), matching their zero inv_mass.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">body</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_integrate_forces">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">integrate_forces</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">integrate_forces</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">body</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Integrates accumulated force/torque into velocity for one substep (semi-implicit Euler: velocity is updated from force BEFORE position is updated from velocity), applies linear/angular drag, then clears the accumulators.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">body</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body to integrate. No-op for non-dynamic or sleeping bodies.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Fixed substep length in seconds.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_integrate_velocities">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">integrate_velocities</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">integrate_velocities</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">body</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">exact</span><span class="o">=</span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">max_linear_velocity</span><span class="o">=</span><span class="mf">1e30f</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Integrates velocity into position/orientation for one substep.</p>
+<p>Quaternion integration convention: <code>angular_velocity</code> is WORLD-SPACE (consistent with <code>inv_inertia_world</code> above), so the derivative is the left-multiplied pure-vector product <code>dq/dt = 0.5 * (0, w) * q</code>. <code>exact</code> selects the exponential-map step (<code>q *= exp(0.5*w*h)</code>) instead of the default first-order form, which visibly gains energy on fast spinners.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">body</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body to integrate. No-op for non-dynamic or sleeping bodies.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Fixed substep length in seconds.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">exact</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td>Use the exact exponential-map quaternion step instead of first-order.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">max_linear_velocity</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);">1e30f</td>
+                        <td>Hard speed clamp (v1's stand-in for CCD  see config.h).</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_combine">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">combine</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">combine</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">CombineMode</span><span class="w"> </span><span class="n">mode_a</span><span class="p">,</span><span class="w"> </span><span class="n">CombineMode</span><span class="w"> </span><span class="n">mode_b</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Combines two scalar values (friction or restitution) per the higher-priority of the two materials' combine modes.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>First material's value.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Second material's value.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mode_a</td>
+                        <td class="param-type">CombineMode</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>First material's combine mode.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">mode_b</td>
+                        <td class="param-type">CombineMode</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Second material's combine mode.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_pack_warm_start_key">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">pack_warm_start_key</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint64_t</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">pack_warm_start_key</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">index_a</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">index_b</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">feature_id</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Packs an ordered body-index pair and a feature id into one warm-start cache key.</p>
+<p>Ordering by (min,max) index means the same physical contact hashes identically regardless of which body happens to be manifold.a vs manifold.b this step.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">index_a</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">index_b</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">feature_id</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint64_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_apply_impulse_pair">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">apply_impulse_pair</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">apply_impulse_pair</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">impulse</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Applies a world-space impulse at <code>point</code> to the pair (A,B): -impulse to A, +impulse to B (impulse is defined along the manifold's A-to-B normal convention). No-op on the side(s) that aren't an AWAKE dynamic body.</p>
+<p>The <code>awake</code> half of that guard is load-bearing, not defensive: every caller (warm_start(), solve_velocity_pass()) already zeroes a sleeping body's inv_mass/inv_inertia before deriving the impulse's magnitude, correctly treating it as immovable on its side of the contact. If this function applied that impulse to a sleeping body's velocity anyway (the old behavior  it only checked <code>type == Dynamic</code>), the body would end up with a nonzero velocity the solve never accounted for, silently, without ever being marked awake  integrate_velocities() skips a sleeping body, so nothing visibly moves yet, but the stale velocity sits there until something later wakes the body, which then pops/twitches with this leftover, non-physical value already baked in.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">point</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">impulse</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_apply_angular_impulse_pair">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">apply_angular_impulse_pair</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">apply_angular_impulse_pair</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">angular_impulse</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Applies a pure angular impulse (no linear component, no moment arm) to both bodies of a pair  the joint solver's counterpart to apply_impulse_pair() above, for the angular-only constraints a hinge needs (axis alignment, angle limits) that have no associated world point the way a contact or a joint's point constraint does. Same Dynamic-and-awake gating, same a-=/b+= sign convention.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">a</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">b</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">angular_impulse</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_capture_restitution_bias">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">capture_restitution_bias</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">capture_restitution_bias</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">util</span><span class="o">::</span><span class="n">PhysicsConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Captures each contact point's pre-solve approach velocity and derives its restitution target, before any impulse (warm-start or otherwise) is applied this step.</p>
+<p><code>restitution_bias</code> is left at 0 (a resting contact) unless the approach speed exceeds config.restitution_threshold  below that, restitution is deliberately zero regardless of the material's configured value, which is what stops resting contacts from micro-bouncing.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const util::PhysicsConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_warm_start">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">warm_start</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">warm_start</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="n">SolverState</span><span class="w"> </span><span class="o">&amp;</span><span class="n">state</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Seeds each point's impulse accumulators from the previous step's cache (if any point with the same key existed) and immediately re-applies that impulse, so the first velocity iteration this step starts from last step's converged solution instead of zero  the single biggest quality difference between a settling stack and one that jitters forever.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">state</td>
+                        <td class="param-type">SolverState &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_solve_velocity_pass">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve_velocity_pass</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">solve_velocity_pass</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">use_restitution</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">order_offset</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>One Gauss-Seidel velocity-iteration pass over every manifold point: solves the clamped normal constraint (with restitution when <code>use_restitution</code>), then Coulomb friction against the just-updated accumulated normal impulse, applying each point's impulse immediately (so later points/manifolds see its effect this same pass).</p>
+<p>Sequential (not Jacobi) application is load-bearing here, not just the simpler option: a box resting on a slope needs friction (acting at the contact face, offset from the center of mass along the normal) to redistribute normal force asymmetrically across the contact points  more on the downhill edge, less on the uphill edge  which is what actually keeps a physically-flush box from rotating/sliding under a friction coefficient above tan(slope angle). That redistribution is a real physical effect (shifting the torque reference point from the contact patch to the center of mass, which sits off the patch along the normal, turns a symmetric tangential force into a net torque  see the accompanying plan notes), and it converges far faster when each point reacts to the immediately-preceding points' impulses than when all points solve from one shared pre-pass snapshot.</p>
+<p><code>order_offset</code> rotates which point in each manifold is solved first across calls (see solve())  for a manifold with no genuine asymmetric-load requirement (e.g. a box resting flat on another box), sequential order alone gives the first-solved point a consistent advantage that shows up as a small torque bias, which does not average out over repeated iterations in the SAME order; cycling the starting point through all of a manifold's points (rather than just reversing, which only swaps a 2-way bias rather than cancelling it) does, while still preserving the sequential coupling the slope case above depends on.</p>
+<p>Never applies positional bias  see the file doc for why that's the whole point. The one exception, in spirit if not in mechanism: a SPECULATIVE point (ContactPoint::separation &gt; 0, see its own doc and collision/sat.h's <code>allow_separated</code>) targets <code>-separation / h</code> instead of 0/<code>restitution_bias</code>  not a positional-correction bias (nothing here moves position; this is still a pure velocity constraint), but a velocity CEILING that permits closing the gap by at most <code>separation</code> over this one substep, which is exactly what stops a fast body from tunneling through a thin target before the two shapes ever actually overlap. An ordinary point's <code>separation</code> is always 0, so <code>target</code> reduces to the pre-existing formula for every contact that existed before this branch did.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">use_restitution</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">order_offset</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_solve_position">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve_position</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">solve_position</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">util</span><span class="o">::</span><span class="n">PhysicsConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Linear-only non-linear-Gauss-Seidel position correction: nudges body positions directly along each manifold's normal, tracking how much correction has already been consumed via each body's cumulative displacement since <code>ref_position</code> so successive iterations converge rather than repeatedly over-correcting the same original penetration value.</p>
+<p>v1 simplification: rotational correction is not applied, only translation  acceptable for the shapes/scenarios v1 targets, and does not inject velocity (only position moves).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const util::PhysicsConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_hinge_current_angle">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">hinge_current_angle</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">hinge_current_angle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot_a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rot_b</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">local_axis_a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rest_relative_rotation</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Twist angle (radians) of <code>b</code> relative to <code>a</code> about the hinge axis, measured from <code>rest_relative_rotation</code> (the relative orientation at joint creation)  standard swing-twist decomposition: <code>delta = (inverse(rot_a) * rot_b) * inverse(rest)</code> is B's rotation relative to A since creation, expressed in A's own local frame (where <code>local_axis_a</code>  unrotating, since it's already local  is the reference axis); its TWIST component about that axis is <code>2 * atan2(dot(delta.xyz, axis), delta.w)</code>. Exact when <code>delta</code> is a pure rotation about <code>axis</code>; the axis-alignment constraint keeps the two hinge axes close enough to parallel every substep that the swing (non-twist) component this ignores stays negligible in practice.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">rot_a</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rot_b</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">local_axis_a</td>
+                        <td class="param-type">const glm::vec3 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rest_relative_rotation</td>
+                        <td class="param-type">const glm::quat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_warm_start_joints">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">warm_start_joints</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">warm_start_joints</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">HingeJoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">joints</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Re-applies each joint's own persistent impulse accumulators (point + axis-alignment; NOT the angle-limit impulse  see solve_joint_velocity_pass()'s doc for why that one isn't warm-started) so the first velocity iteration starts from last step's converged solution instead of zero. Same "skip if neither side is an awake dynamic body" gate as warm_start() for contacts, for the identical reason (a sleeping body has no gravity to counteract this step; re-applying its last impulse every step would accelerate it forever).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">joints</td>
+                        <td class="param-type">std::vector< HingeJoint > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_solve_joint_velocity_pass">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve_joint_velocity_pass</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">solve_joint_velocity_pass</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">HingeJoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">joints</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>One Gauss-Seidel velocity-iteration pass over every hinge joint: the point constraint (3 independent scalar constraints along world X/Y/Z, target 0, no clamp  an equality constraint, unlike a contact's one-sided normal), the axis-alignment constraint (2 scalar, angular-only, also target-0 equality  <code>util::orthonormal_basis()</code> builds the perpendicular pair <code>p</code>/<code>q</code> the same way the contact solver's friction tangent basis does), and, when <code>use_limits</code>, a ONE-SIDED angle-limit constraint using the exact same clamped-impulse pattern as a contact's normal constraint (<code>new_impulse = max(old+lambda, 0)</code>), just for an angular DOF instead of linear.</p>
+<p>Point and axis constraints compute their OWN per-body moment arms (<code>ra</code>/<code>rb</code>, the two anchors  generally different points until the constraint has converged) rather than calling apply_impulse_pair()/apply_angular_impulse_pair() with a single shared point/no point: that fits a contact (one shared contact point) but not a not-yet-converged joint anchor pair, so this applies impulses directly here using each body's own <code>ra</code>/<code>rb</code>.</p>
+<p>The angle-limit impulse is deliberately NOT warm-started (see warm_start_joints())  it's reset to 0 whenever the joint isn't currently at/past a limit, and limit violations are inherently edge-triggered (a door swinging shut hits its limit occasionally, not every step), so there's no steady-state impulse worth carrying across steps the way the point/axis constraints have.</p>
+<p>Never applies positional bias  same split-impulse reasoning as solve_velocity_pass() for contacts; drift closure is solve_joint_position()'s job, run once after every velocity iteration finishes (mirrors solve()'s own contact ordering).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">joints</td>
+                        <td class="param-type">std::vector< HingeJoint > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_solve_joint_position">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve_joint_position</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">solve_joint_position</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">HingeJoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">joints</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">util</span><span class="o">::</span><span class="n">PhysicsConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>NGS position correction for joints: closes point-constraint drift (linear, same cumulative-error-vs-slop pattern as solve_position() for contacts) and axis-alignment drift (angular  a hinge DOES need this, unlike solve_position()'s contacts, which deliberately skip rotational correction; an axis allowed to drift out of alignment has no OTHER mechanism to pull it back, since the velocity pass only stops the drift RATE from growing, never corrects an already-accumulated misalignment).</p>
+<p>Reuses config.linear_slop/position_correction/max_linear_correction for the angular case too (radians instead of meters) rather than adding new angular-specific tunables  both are already small, sane tolerances (0.005 rad =~ 0.29 degrees) and this keeps the joint API surface minimal, matching this feature's "relatively simple" scope. The angle-limit constraint gets no position correction of its own  same reasoning as its warm-start omission, the velocity-only clamped impulse is enough for the door/cantilever use cases this targets.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">joints</td>
+                        <td class="param-type">std::vector< HingeJoint > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const util::PhysicsConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_rebuild_warm_start_cache">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">rebuild_warm_start_cache</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">rebuild_warm_start_cache</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="n">SolverState</span><span class="w"> </span><span class="o">&amp;</span><span class="n">state</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Rebuilds the warm-start cache from this step's fully-solved manifolds, so next step's warm_start() has something to seed from.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">state</td>
+                        <td class="param-type">SolverState &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_wake_if_kinematic_moving">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">wake_if_kinematic_moving</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">wake_if_kinematic_moving</span><span class="p">(</span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">kin</span><span class="p">,</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&amp;</span><span class="n">dyn</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">util</span><span class="o">::</span><span class="n">PhysicsConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Wakes <code>dyn</code> if <code>kin</code> is a moving Kinematic body  shared by update_islands_and_sleep()'s manifold-based and joint-based wake-rule passes (see that function's own doc for the "linear OR angular" reasoning). A no-op unless <code>kin</code> is Kinematic and <code>dyn</code> is a sleeping Dynamic body.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">kin</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">dyn</td>
+                        <td class="param-type">Body &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const util::PhysicsConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_update_islands_and_sleep">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">update_islands_and_sleep</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">update_islands_and_sleep</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">alive</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">HingeJoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">joints</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">util</span><span class="o">::</span><span class="n">PhysicsConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Builds this step's islands, updates per-body sleep timers, applies the kinematic wake rule, and puts fully-settled islands to sleep.</p>
+<p>Wake rule (beyond "new contact / applied force / teleport"): a sleeping dynamic body touching a kinematic body whose derived velocity is non-zero wakes immediately, regardless of contact freshness  otherwise a box asleep on a stationary platform that starts moving would hover in place while the platform slides out from under it. Joints get the identical treatment (a door hinged to a moving kinematic frame must wake too) via the same wake_if_kinematic_moving() helper, not a separate rule.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">alive</td>
+                        <td class="param-type">const std::vector< bool > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">joints</td>
+                        <td class="param-type">std::vector< HingeJoint > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const util::PhysicsConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_solve">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">solve</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">physx</span><span class="o">::</span><span class="n">dynamics</span><span class="o">::</span><span class="n">solve</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">Body</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bodies</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">alive</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">collision</span><span class="o">::</span><span class="n">ContactManifold</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">manifolds</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">HingeJoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">joints</span><span class="p">,</span><span class="w"> </span><span class="n">SolverState</span><span class="w"> </span><span class="o">&amp;</span><span class="n">state</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">util</span><span class="o">::</span><span class="n">PhysicsConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Runs the full solve: warm start, restitution capture, velocity iterations, relax iterations, position correction, cache rebuild, then islands/sleep.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">bodies</td>
+                        <td class="param-type">std::vector< Body > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Body array (mutated in place).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">alive</td>
+                        <td class="param-type">const std::vector< bool > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Parallel liveness flags.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">manifolds</td>
+                        <td class="param-type">std::vector< collision::ContactManifold > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>This step's narrowphase output (mutated: impulse accumulators, positions).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">joints</td>
+                        <td class="param-type">std::vector< HingeJoint > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">state</td>
+                        <td class="param-type">SolverState &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Cross-step warm-start cache.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const util::PhysicsConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Solver tunables.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">h</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Substep length in seconds.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

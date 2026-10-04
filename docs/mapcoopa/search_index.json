@@ -1,0 +1,1766 @@
+[
+  {
+    "name": "coopa",
+    "kind": "Namespace",
+    "url": "scope_coopa.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps",
+    "kind": "Namespace",
+    "url": "scope_coopa__maps.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::biome_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_biome_name",
+    "desc": "Maps a biome to its serialisation name. These snake_case names are written into the .yaml and are the stable on-disk ..."
+  },
+  {
+    "name": "coopa::maps::biome_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_biome_from_name",
+    "desc": "Resolves a serialisation name back to its biome. Accepts temperate_decidious_forest as well as the correctly spelled ..."
+  },
+  {
+    "name": "coopa::maps::biome_habitability",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_biome_habitability",
+    "desc": "How readily a biome supports settlement and the traffic between settlements, from 0 to 1. Zero entries are hard exclu..."
+  },
+  {
+    "name": "coopa::maps::classify_biome",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_classify_biome",
+    "desc": "Classifies a cell from its terrain state and climate. Water state wins over climate: an ocean cell is Ocean at any la..."
+  },
+  {
+    "name": "coopa::maps::building_role_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_building_role_name",
+    "desc": "Maps a building role to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::building_role_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_building_role_from_name",
+    "desc": "Resolves a serialisation name back to a role."
+  },
+  {
+    "name": "coopa::maps::is_civic_role",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_is_civic_role",
+    "desc": "Whether a role belongs to the civic core rather than being a home. The one definition of \"is this a key structure\", s..."
+  },
+  {
+    "name": "coopa::maps::cave_zone_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_cave_zone_name",
+    "desc": "Maps a cave zone to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::cave_zone_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_cave_zone_from_name",
+    "desc": "Resolves a serialisation name back to a zone."
+  },
+  {
+    "name": "coopa::maps::cave_feature_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_cave_feature_name",
+    "desc": "Maps a cave feature to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::cave_feature_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_cave_feature_from_name",
+    "desc": "Resolves a serialisation name back to a feature."
+  },
+  {
+    "name": "coopa::maps::is_open_feature",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_is_open_feature",
+    "desc": "Whether a feature is somewhere a passage widens out rather than merely runs. The one definition of \"is this a room\", ..."
+  },
+  {
+    "name": "coopa::maps::fill_triangle",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_fill_triangle",
+    "desc": "Fills a triangle using half-space edge functions. Accepts either winding by testing the sign of the triangle's own ar..."
+  },
+  {
+    "name": "coopa::maps::fill_polygon",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_fill_polygon",
+    "desc": "Fills a convex polygon by fanning triangles out from its centroid."
+  },
+  {
+    "name": "coopa::maps::fill_triangle_shaded",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_fill_triangle_shaded",
+    "desc": "Fills a triangle, choosing each pixel's colour from a shader."
+  },
+  {
+    "name": "coopa::maps::fill_polygon_shaded",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_fill_polygon_shaded",
+    "desc": "Fills a convex polygon with a per-pixel shaded colour. The gradient counterpart to fill_polygon(). A heightmap flat-s..."
+  },
+  {
+    "name": "coopa::maps::draw_line",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_draw_line",
+    "desc": "Draws a line of a given half-width, by distance to the segment. Every pixel whose centre lies within half_width of th..."
+  },
+  {
+    "name": "coopa::maps::set_png_compression_level",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_set_png_compression_level",
+    "desc": "Sets the deflate effort every later write_png() in this TU will use. Encoding is the single most expensive thing this..."
+  },
+  {
+    "name": "coopa::maps::write_png",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_write_png",
+    "desc": "Writes an image to a PNG file. Safe to call concurrently for different images, which is what makes a parallel export ..."
+  },
+  {
+    "name": "coopa::maps::landmark_kind_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_landmark_kind_name",
+    "desc": "Maps a landmark kind to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::landmark_kind_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_landmark_kind_from_name",
+    "desc": "Resolves a serialisation name back to a landmark kind."
+  },
+  {
+    "name": "coopa::maps::landmark_noun",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_landmark_noun",
+    "desc": "The descriptive word a landmark's name is built around."
+  },
+  {
+    "name": "coopa::maps::landmark_suits_biome",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_landmark_suits_biome",
+    "desc": "Whether a landmark kind can plausibly stand on a given biome. Landmark vocabulary is gated by terrain rather than sca..."
+  },
+  {
+    "name": "coopa::maps::configure_noise",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_configure_noise",
+    "desc": "Applies a noise configuration to a FastNoiseLite generator. The eight setters live here rather than in Noise's constr..."
+  },
+  {
+    "name": "coopa::maps::town_tier_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_town_tier_name",
+    "desc": "Maps a town tier to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::town_tier_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_town_tier_from_name",
+    "desc": "Resolves a serialisation name back to a town tier, defaulting to Village."
+  },
+  {
+    "name": "coopa::maps::road_class_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_road_class_name",
+    "desc": "Maps a road class to its serialisation name. These snake_case names are the stable on-disk identity of a class, exact..."
+  },
+  {
+    "name": "coopa::maps::road_class_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_road_class_from_name",
+    "desc": "Resolves a serialisation name back to a road class. Unknown names become Trail rather than None: the name was written..."
+  },
+  {
+    "name": "coopa::maps::composite_shading_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_composite_shading_name",
+    "desc": "Maps a composite shading mode to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::composite_shading_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_composite_shading_from_name",
+    "desc": "Resolves a serialisation name back to a shading mode."
+  },
+  {
+    "name": "coopa::maps::elevation_surface_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_elevation_surface_name",
+    "desc": "Maps an elevation surface style to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::elevation_surface_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_elevation_surface_from_name",
+    "desc": "Resolves a serialisation name back to an elevation surface style."
+  },
+  {
+    "name": "coopa::maps::map_shape_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_map_shape_name",
+    "desc": "Maps a landmass shape to its serialisation name."
+  },
+  {
+    "name": "coopa::maps::map_shape_from_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_map_shape_from_name",
+    "desc": "Resolves a serialisation name back to a shape."
+  },
+  {
+    "name": "coopa::maps::shape_inset",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_shape_inset",
+    "desc": "How far inside the landmass shape a point lies, in grid units. A one-off query against a freshly resolved ShapeField...."
+  },
+  {
+    "name": "coopa::maps::meters_to_height",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_meters_to_height",
+    "desc": "Converts a height in metres into the normalised elevation field. The vertical counterpart of meters_to_grid(). Height..."
+  },
+  {
+    "name": "coopa::maps::height_to_meters",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_height_to_meters",
+    "desc": "Converts a normalised height into metres."
+  },
+  {
+    "name": "coopa::maps::land_height",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_land_height",
+    "desc": "Re-expresses a height as a fraction of the land above the waterline. Land occupies [sea_level, 1] of the height field..."
+  },
+  {
+    "name": "coopa::maps::meters_to_grid",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_meters_to_grid",
+    "desc": "Converts a length in metres to grid units. The bridge between the two systems the generator speaks. Sizes are configu..."
+  },
+  {
+    "name": "coopa::maps::grid_to_meters",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_grid_to_meters",
+    "desc": "Converts a length in grid units to metres."
+  },
+  {
+    "name": "coopa::maps::derive_image_size",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_derive_image_size",
+    "desc": "The render resolution the world extent and meters_per_pixel imply. grid_size * meters_per_grid_unit metres of world, ..."
+  },
+  {
+    "name": "coopa::maps::river_width_meters",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_river_width_meters",
+    "desc": "The width of a river carrying a given volume, in metres."
+  },
+  {
+    "name": "coopa::maps::river_width",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_river_width",
+    "desc": "The physical width of a river carrying a given volume, in grid units. The one definition of how wide a river is. The ..."
+  },
+  {
+    "name": "coopa::maps::road_width_meters",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_road_width_meters",
+    "desc": "The width of a road of a given class, in metres. The counterpart of river_width_meters(), and the one definition of h..."
+  },
+  {
+    "name": "coopa::maps::road_width_for",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_road_width_for",
+    "desc": "The width of a road of a given class, in grid units. The grid-space counterpart, so a caller working in graph coordin..."
+  },
+  {
+    "name": "coopa::maps::sort_points_radially",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_sort_points_radially",
+    "desc": "Sorts points counter-clockwise about their centroid, in place. Recovers a winding order from an unordered vertex set...."
+  },
+  {
+    "name": "coopa::maps::point_in_polygon",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_point_in_polygon",
+    "desc": "Ray-casting point-in-polygon test; an odd crossing count means inside. Works for any simple polygon, convex or not, w..."
+  },
+  {
+    "name": "coopa::maps::chaikin_smooth",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_chaikin_smooth",
+    "desc": "Chaikin corner-cutting, with the two endpoints pinned. Each interior segment is replaced by its quarter and three-qua..."
+  },
+  {
+    "name": "coopa::maps::make_street",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_make_street",
+    "desc": "Builds a street between two points, deriving its bearing and length. The one place those two are computed. They are d..."
+  },
+  {
+    "name": "coopa::maps::building_corners",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_building_corners",
+    "desc": "The four corners of a building's footprint, with its yaw applied. Returned counter-clockwise from the footprint's loc..."
+  },
+  {
+    "name": "coopa::maps::buildings_overlap",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_buildings_overlap",
+    "desc": "Separating-axis test for two oriented footprints. Two convex shapes miss each other exactly when some axis separates ..."
+  },
+  {
+    "name": "coopa::maps::country_language_seed",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_country_language_seed",
+    "desc": "The language seed for a country, from the map seed and its id. Shared so the region pass and the town pass derive the..."
+  },
+  {
+    "name": "coopa::maps::region_dialect_seed",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_region_dialect_seed",
+    "desc": "The dialect seed for a region, from the map seed and its id."
+  },
+  {
+    "name": "coopa::maps::make_terrain_detail",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_make_terrain_detail",
+    "desc": "Builds the detail sampler MapGraph::elevation_at() displaces with. The Noise must outlive every sample taken through ..."
+  },
+  {
+    "name": "coopa::maps::distance_to_segment",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_distance_to_segment",
+    "desc": "Distance from a point to a line segment, in grid units. The inner loop of the channel cut, so it is written without a..."
+  },
+  {
+    "name": "coopa::maps::edge_grade",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_edge_grade",
+    "desc": "Steepness of the ground across an edge, as a dimensionless grade. The one definition of \"how steep is it here\", and u..."
+  },
+  {
+    "name": "coopa::maps::make_river_channels",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_make_river_channels",
+    "desc": "Builds the channel index MapGraph::elevation_at() cuts the rivers with. Walks each river's smoothed centreline, pairi..."
+  },
+  {
+    "name": "coopa::maps::make_river_surfaces",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_make_river_surfaces",
+    "desc": "Computes the height every river's water is drawn at. Four stages, in order, each fixing something the stage before ca..."
+  },
+  {
+    "name": "coopa::maps::map_layer_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_map_layer_name",
+    "desc": "Maps a layer to the suffix its file takes, after the output prefix."
+  },
+  {
+    "name": "coopa::maps::map_layer_has_alpha",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_map_layer_has_alpha",
+    "desc": "True when a layer is an overlay, drawn on transparency rather than on ground."
+  },
+  {
+    "name": "coopa::maps::config_to_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_config_to_node",
+    "desc": "Serialises a MapConfig to a YAML mapping node."
+  },
+  {
+    "name": "coopa::maps::apply_config_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_apply_config_node",
+    "desc": "Applies a YAML mapping node on top of an existing MapConfig. Every key is optional; one that is absent leaves the cor..."
+  },
+  {
+    "name": "coopa::maps::config_from_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_config_from_node",
+    "desc": "Reads a MapConfig back from a YAML mapping node. Every key is optional and falls back to the in-struct default, so a ..."
+  },
+  {
+    "name": "coopa::maps::load_config",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_load_config",
+    "desc": "Applies a configuration file on top of an existing MapConfig. Keys absent from the document keep whatever out_config ..."
+  },
+  {
+    "name": "coopa::maps::map_to_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_map_to_node",
+    "desc": "Serialises a map and the configuration that produced it to a YAML document. The whole graph goes in cells, corners, e..."
+  },
+  {
+    "name": "coopa::maps::map_from_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_map_from_node",
+    "desc": "Reconstructs a map and its configuration from a YAML document. Edges whose noisy paths were omitted have them rebuilt..."
+  },
+  {
+    "name": "coopa::maps::save_map",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_save_map",
+    "desc": "Writes a map to a YAML file."
+  },
+  {
+    "name": "coopa::maps::load_map",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_load_map",
+    "desc": "Reads a map back from a YAML file."
+  },
+  {
+    "name": "coopa::maps::make_language",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_make_language",
+    "desc": "Invents a language by drawing a subset of each phoneme pool. The subset is what creates the accent: a language holdin..."
+  },
+  {
+    "name": "coopa::maps::derive_dialect",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_derive_dialect",
+    "desc": "Derives a related variant of a language. Keeps most of the parent's inventory and swaps a little, so a region reads a..."
+  },
+  {
+    "name": "coopa::maps::language_for",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_language_for",
+    "desc": "Builds the language belonging to a given seed, reproducibly. A language is generator state, not map data serialising ..."
+  },
+  {
+    "name": "coopa::maps::dialect_for",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_dialect_for",
+    "desc": "Builds a region's dialect of its country's language, reproducibly."
+  },
+  {
+    "name": "coopa::maps::generate_name",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_generate_name",
+    "desc": "Generates one place name."
+  },
+  {
+    "name": "coopa::maps::fill_depressions",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_fill_depressions",
+    "desc": "Raises closed basins until every land corner drains to water. The distance-from-coast field is monotone, but nothing ..."
+  },
+  {
+    "name": "coopa::maps::assign_downslopes",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_assign_downslopes",
+    "desc": "Points each corner at its lowest neighbour, or at itself in a basin. The comparison is strictly &lt;, not &lt;=. An e..."
+  },
+  {
+    "name": "coopa::maps::restore_drainage",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_restore_drainage",
+    "desc": "Restores both drainage invariants after something has moved the terrain. Anything that rewrites corner heights owes t..."
+  },
+  {
+    "name": "coopa::maps::shuffle",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_shuffle",
+    "desc": "Drop-in for std::shuffle, matching libstdc++'s sequence exactly including its two-swaps-per-draw fast path for short ..."
+  },
+  {
+    "name": "coopa::maps::sort",
+    "kind": "Function",
+    "url": "scope_coopa__maps.html#func_sort",
+    "desc": "Drop-in for std::sort(first, last, comp) with libstdc++'s exact element order, ties included, on every platform."
+  },
+  {
+    "name": "BiomePalette",
+    "kind": "Class",
+    "url": "class_BiomePalette.html",
+    "desc": "Render colours, in 0-255 component range, indexed by Biome. A flat array rather than one named field per biome: the r..."
+  },
+  {
+    "name": "BiomePalette::color_for",
+    "kind": "Method",
+    "url": "class_BiomePalette.html#method_color_for",
+    "desc": "Looks up the stroke colour for a road class."
+  },
+  {
+    "name": "BiomePalette::color_for",
+    "kind": "Method",
+    "url": "class_BiomePalette.html#method_color_for",
+    "desc": "Looks up the colour for a biome."
+  },
+  {
+    "name": "CaveConfig",
+    "kind": "Class",
+    "url": "class_CaveConfig.html",
+    "desc": "Where caves open, how far down they reach, and what shape they take. Every length here is in metres and every rate is..."
+  },
+  {
+    "name": "CaveNode",
+    "kind": "Class",
+    "url": "class_CaveNode.html",
+    "desc": "One station along a cave passage: where it is, and the rock it sits between. The first thing in this module that has ..."
+  },
+  {
+    "name": "CavePassage",
+    "kind": "Class",
+    "url": "class_CavePassage.html",
+    "desc": "One unbranched run of a cave, from a junction to the next junction or an end. Two representations of the same run, fo..."
+  },
+  {
+    "name": "CellGeometry",
+    "kind": "Class",
+    "url": "class_CellGeometry.html",
+    "desc": "Every cell's outline in pixel space, and the rows it spans. Built once and reused, for two reasons. Each of the layer..."
+  },
+  {
+    "name": "CellGeometry::covers",
+    "kind": "Method",
+    "url": "class_CellGeometry.html#method_covers",
+    "desc": "Whether geometry has been built for a given cell count."
+  },
+  {
+    "name": "ChannelSegment",
+    "kind": "Class",
+    "url": "class_ChannelSegment.html",
+    "desc": "One straight piece of a river centreline, and the cut it carries. Taken from MapRiver::points the smoothed centreline..."
+  },
+  {
+    "name": "ConfigLoadResult",
+    "kind": "Class",
+    "url": "class_ConfigLoadResult.html",
+    "desc": "What load_config() managed to do, and what a caller should say about it."
+  },
+  {
+    "name": "HeightField",
+    "kind": "Class",
+    "url": "class_HeightField.html",
+    "desc": "A single-channel copy of the height raster, for shading only. One byte per pixel rather than three: the shading reads..."
+  },
+  {
+    "name": "HeightField::at",
+    "kind": "Method",
+    "url": "class_HeightField.html#method_at",
+    "desc": "Reads a sample, clamping at the edges rather than falling off them."
+  },
+  {
+    "name": "Image",
+    "kind": "Class",
+    "url": "class_Image.html",
+    "desc": "An 8-bit-per-channel image with interleaved components, origin top-left. Deliberately not a texture: libcoopa carries..."
+  },
+  {
+    "name": "Image::reset",
+    "kind": "Method",
+    "url": "class_Image.html#method_reset",
+    "desc": "Allocates the buffer and clears it to a colour."
+  },
+  {
+    "name": "Image::reset",
+    "kind": "Method",
+    "url": "class_Image.html#method_reset",
+    "desc": "Allocates the buffer and clears it to a colour, alpha included."
+  },
+  {
+    "name": "Image::fill",
+    "kind": "Method",
+    "url": "class_Image.html#method_fill",
+    "desc": "Overwrites every pixel with one colour."
+  },
+  {
+    "name": "Image::fill",
+    "kind": "Method",
+    "url": "class_Image.html#method_fill",
+    "desc": "Overwrites every pixel with one colour, alpha included."
+  },
+  {
+    "name": "Image::set_pixel",
+    "kind": "Method",
+    "url": "class_Image.html#method_set_pixel",
+    "desc": "Writes one pixel, ignoring coordinates outside the image."
+  },
+  {
+    "name": "Image::set_pixel",
+    "kind": "Method",
+    "url": "class_Image.html#method_set_pixel",
+    "desc": "Writes one pixel including its alpha, ignoring coordinates outside the image. The overload that makes a 4-channel ima..."
+  },
+  {
+    "name": "Image::alpha_at",
+    "kind": "Method",
+    "url": "class_Image.html#method_alpha_at",
+    "desc": "Reads one pixel's alpha; 255 where the image has no alpha channel."
+  },
+  {
+    "name": "Image::color_at",
+    "kind": "Method",
+    "url": "class_Image.html#method_color_at",
+    "desc": "Reads one pixel's colour, ignoring alpha."
+  },
+  {
+    "name": "Image::to_byte",
+    "kind": "Method",
+    "url": "class_Image.html#method_to_byte",
+    "desc": "Converts a 0-255 float component to a byte. Clamps rather than casting straight through: a palette entry outside the ..."
+  },
+  {
+    "name": "LandmarkConfig",
+    "kind": "Class",
+    "url": "class_LandmarkConfig.html",
+    "desc": "Controls which notable places are found and how many."
+  },
+  {
+    "name": "Language",
+    "kind": "Class",
+    "url": "class_Language.html",
+    "desc": "A synthetic phonology: the pieces place names in one culture are built from. Each country draws its own, so its settl..."
+  },
+  {
+    "name": "MapBuilding",
+    "kind": "Class",
+    "url": "class_MapBuilding.html",
+    "desc": "One axis-aligned building footprint packed inside a settlement's cell."
+  },
+  {
+    "name": "MapCave",
+    "kind": "Class",
+    "url": "class_MapCave.html",
+    "desc": "One cave system, from the slope it opens on to the deepest passage it reaches. A system is a tree rooted at its mouth..."
+  },
+  {
+    "name": "MapCenter",
+    "kind": "Class",
+    "url": "class_MapCenter.html",
+    "desc": "One Voronoi cell a polygon of terrain, and a vertex of the Delaunay triangulation. This is the unit gameplay cares ab..."
+  },
+  {
+    "name": "MapConfig",
+    "kind": "Class",
+    "url": "class_MapConfig.html",
+    "desc": "The complete description of a map to generate. A MapConfig plus its seed fully determines the output: every pass draw..."
+  },
+  {
+    "name": "MapCorner",
+    "kind": "Class",
+    "url": "class_MapCorner.html",
+    "desc": "One Voronoi vertex the circumcentre of a Delaunay triangle. Elevation, moisture and rivers are all computed here firs..."
+  },
+  {
+    "name": "MapCountry",
+    "kind": "Class",
+    "url": "class_MapCountry.html",
+    "desc": "A nation: one or more regions under a single language."
+  },
+  {
+    "name": "MapEdge",
+    "kind": "Class",
+    "url": "class_MapEdge.html",
+    "desc": "A Delaunay edge and its dual Voronoi edge, stored as one object. d0/d1 are the two cells the edge separates; v0/v1 ar..."
+  },
+  {
+    "name": "MapExporter",
+    "kind": "Class",
+    "url": "class_MapExporter.html",
+    "desc": "Renders every MapLayer of a map and writes each to its own PNG. Why this is the part worth threading A default map 48..."
+  },
+  {
+    "name": "MapExporter::set_job_engine",
+    "kind": "Method",
+    "url": "class_MapExporter.html#method_set_job_engine",
+    "desc": "Sets the engine to spread work across; null runs everything inline."
+  },
+  {
+    "name": "MapExporter::set_max_concurrent_layers",
+    "kind": "Method",
+    "url": "class_MapExporter.html#method_set_max_concurrent_layers",
+    "desc": "Caps how many layers may be in flight at once, bounding peak memory. Uncapped by default, which means all seven, beca..."
+  },
+  {
+    "name": "MapExporter::set_band_rows",
+    "kind": "Method",
+    "url": "class_MapExporter.html#method_set_band_rows",
+    "desc": "Sets the row height of a render band; 0 picks one from the worker count."
+  },
+  {
+    "name": "MapExporter::export_layers",
+    "kind": "Method",
+    "url": "class_MapExporter.html#method_export_layers",
+    "desc": "Renders and writes every layer, returning when the last file is closed."
+  },
+  {
+    "name": "MapExporter::export_layers_async",
+    "kind": "Method",
+    "url": "class_MapExporter.html#method_export_layers_async",
+    "desc": "Starts the export and returns immediately. The returned task is the only thing keeping the work addressable: its dest..."
+  },
+  {
+    "name": "MapGenerator",
+    "kind": "Class",
+    "url": "class_MapGenerator.html",
+    "desc": "Turns a MapConfig into a finished MapGraph. The geometry comes first and never changes afterwards: points are laid on..."
+  },
+  {
+    "name": "MapGenerator::MapGenerator",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_MapGenerator",
+    "desc": "Constructs a generator."
+  },
+  {
+    "name": "MapGenerator::generate",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_generate",
+    "desc": "Generates the map, discarding any previous result."
+  },
+  {
+    "name": "MapGenerator::set_job_engine",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_set_job_engine",
+    "desc": "Sets the engine asynchronous generation runs on; null runs inline. Nothing inside generation is itself threaded, and ..."
+  },
+  {
+    "name": "MapGenerator::generate_async",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_generate_async",
+    "desc": "Starts generation and returns immediately. The generator itself must outlive the returned task the job writes into gr..."
+  },
+  {
+    "name": "MapGenerator::graph",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_graph",
+    "desc": "The generated map. Empty until generate() has been called."
+  },
+  {
+    "name": "MapGenerator::graph",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_graph",
+    "desc": "Mutable access to the generated map, for consumers that annotate it further."
+  },
+  {
+    "name": "MapGenerator::config",
+    "kind": "Method",
+    "url": "class_MapGenerator.html#method_config",
+    "desc": "The configuration this generator was built with."
+  },
+  {
+    "name": "MapGraph",
+    "kind": "Class",
+    "url": "class_MapGraph.html",
+    "desc": "Owns every cell, corner, edge, road run and settlement of one generated map. The three arrays are index-addressed and..."
+  },
+  {
+    "name": "MapGraph::clear",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_clear",
+    "desc": "Drops every array, returning the graph to its freshly constructed state."
+  },
+  {
+    "name": "MapGraph::elevation_at",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_elevation_at",
+    "desc": "Interpolates the ground height at a point. Barycentric over the Delaunay triangle containing the point, blending the ..."
+  },
+  {
+    "name": "MapGraph::elevation_at",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_elevation_at",
+    "desc": "Interpolates the ground height, with fractal detail on top. The control mesh gives the landform; the detail field giv..."
+  },
+  {
+    "name": "MapGraph::elevation_at",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_elevation_at",
+    "desc": "Interpolates the ground height, with detail and river channels on top. The full surface: the control mesh gives the l..."
+  },
+  {
+    "name": "MapGraph::channel_cut",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_channel_cut",
+    "desc": "How deep the river channel runs beneath a point, in height units. Public, and named without the trailing underscore t..."
+  },
+  {
+    "name": "MapGraph::triangle_elevation_",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_triangle_elevation_",
+    "desc": "Interpolates over whichever of a cell's Delaunay triangles claims a point. A cell's corners are exactly the circumcen..."
+  },
+  {
+    "name": "MapGraph::inverse_distance_elevation_",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_inverse_distance_elevation_",
+    "desc": "The inverse-distance fallback, for a point no incident triangle claims. Only reachable at the convex hull, where a co..."
+  },
+  {
+    "name": "MapGraph::elevation_at",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_elevation_at",
+    "desc": "Interpolates elevation along an edge from its two endpoint heights."
+  },
+  {
+    "name": "MapGraph::cell_outline",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_cell_outline",
+    "desc": "Collects a cell's polygon outline in grid space, in winding order. Walks the cell's corners which the generator has a..."
+  },
+  {
+    "name": "MapGraph::cell_area",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_cell_area",
+    "desc": "Polygon area of a cell, by the shoelace formula. Computed from MapCenter::corners, which the generator has already so..."
+  },
+  {
+    "name": "MapGraph::edge_between",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_edge_between",
+    "desc": "Finds the edge of a cell joining two of its corners. Scans only the cell's own bounding edges, of which there are as ..."
+  },
+  {
+    "name": "MapGraph::barycentric_",
+    "kind": "Method",
+    "url": "class_MapGraph.html#method_barycentric_",
+    "desc": "Barycentric coordinates of a point in a triangle, if it falls inside. A small negative tolerance on each weight, so a..."
+  },
+  {
+    "name": "MapLandmark",
+    "kind": "Class",
+    "url": "class_MapLandmark.html",
+    "desc": "A notable place worth putting on a map and worth travelling to."
+  },
+  {
+    "name": "MapLayers",
+    "kind": "Class",
+    "url": "class_MapLayers.html",
+    "desc": "Renders a MapGraph to any of its image layers. Every layer is drawn at the same scale, so they register pixel for pix..."
+  },
+  {
+    "name": "MapLayers::build_cell_geometry",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_build_cell_geometry",
+    "desc": "Builds the shared cell geometry for a map at a given render scale. Serial by design it is the prologue a parallel ren..."
+  },
+  {
+    "name": "MapLayers::build_height_field",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_build_height_field",
+    "desc": "Builds the smoothed height field a hillshaded composite needs. Only CompositeShading::Hillshade uses this; under the ..."
+  },
+  {
+    "name": "MapLayers::effective_surface",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_effective_surface",
+    "desc": "The style actually drawn, once a blend too small to see collapses to flat. Blended and Flat are not merely close at a..."
+  },
+  {
+    "name": "MapLayers::finish",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_finish",
+    "desc": "Applies the whole-image passes a layer needs once its pixels are drawn. The counterpart of allocate(): render_into() ..."
+  },
+  {
+    "name": "MapLayers::allocate",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_allocate",
+    "desc": "Allocates and clears the buffer a layer draws into, drawing nothing. Separate from drawing so a banded render can cle..."
+  },
+  {
+    "name": "MapLayers::render_into",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_render_into",
+    "desc": "Draws a slice of a layer into a buffer allocate() already prepared. The entry point a threaded render uses: several c..."
+  },
+  {
+    "name": "MapLayers::render",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_render",
+    "desc": "Renders one layer."
+  },
+  {
+    "name": "MapLayers::elevation",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_elevation",
+    "desc": "Terrain height as greyscale, black at sea level and white at the summit. Shaded per pixel from the cell's corner heig..."
+  },
+  {
+    "name": "MapLayers::water",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_water",
+    "desc": "Height of every water surface, on the same scale as the elevation layer. Read it exactly as _elevation.png: the same ..."
+  },
+  {
+    "name": "MapLayers::biomes",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_biomes",
+    "desc": "Flat biome colour per cell, tinted by region when show_regions is set."
+  },
+  {
+    "name": "MapLayers::regions",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_regions",
+    "desc": "Provinces in flat colour, one fill per region and nothing else. The political counterpart of the biome layer, and it ..."
+  },
+  {
+    "name": "MapLayers::roads",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_roads",
+    "desc": "The road network on transparency, stroked at its real width. Trails, then roads, then highways, so a highway is never..."
+  },
+  {
+    "name": "MapLayers::structures",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_structures",
+    "desc": "Building footprints on transparency, as the rotated quads they are."
+  },
+  {
+    "name": "MapLayers::landmarks",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_landmarks",
+    "desc": "Settlement and landmark markers on transparency."
+  },
+  {
+    "name": "MapLayers::composite",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_composite",
+    "desc": "Everything at once: lit terrain, then water, roads, buildings, markers. The light comes from the elevation field the ..."
+  },
+  {
+    "name": "MapLayers::caves",
+    "kind": "Method",
+    "url": "class_MapLayers.html#method_caves",
+    "desc": "Every cave system over dimmed terrain, coloured by how deep it runs. The readable one, and the only cave layer meant ..."
+  },
+  {
+    "name": "MapPlaza",
+    "kind": "Class",
+    "url": "class_MapPlaza.html",
+    "desc": "The open ground at the heart of a settlement, kept clear of building. A disc rather than a polygon, deliberately: a d..."
+  },
+  {
+    "name": "MapPoint",
+    "kind": "Class",
+    "url": "class_MapPoint.html",
+    "desc": "A position in grid space, where the map spans [0, grid_size] on both axes."
+  },
+  {
+    "name": "MapPoint::distance_to",
+    "kind": "Method",
+    "url": "class_MapPoint.html#method_distance_to",
+    "desc": "Euclidean distance to another point."
+  },
+  {
+    "name": "MapRegion",
+    "kind": "Class",
+    "url": "class_MapRegion.html",
+    "desc": "A province: a contiguous block of cells inside one country. Regions are the unit a settlement belongs to and takes it..."
+  },
+  {
+    "name": "MapRiver",
+    "kind": "Class",
+    "url": "class_MapRiver.html",
+    "desc": "One watercourse, as a smoothed centreline in grid units. The counterpart of MapRoad: the per-corner and per-edge rive..."
+  },
+  {
+    "name": "MapRoad",
+    "kind": "Class",
+    "url": "class_MapRoad.html",
+    "desc": "One continuous run of road, as a smoothed centreline in grid units. The per-edge flags say where roads are; this says..."
+  },
+  {
+    "name": "MapStreet",
+    "kind": "Class",
+    "url": "class_MapStreet.html",
+    "desc": "A lane inside a settlement, which its buildings front onto. The counterpart of MapRoad: a road joins settlements, a s..."
+  },
+  {
+    "name": "MapTask",
+    "kind": "Class",
+    "url": "class_MapTask.html",
+    "desc": "A handle on one asynchronous map operation: poll it, measure it, abandon it. Modelled on coopa::asset::AssetManager's..."
+  },
+  {
+    "name": "MapTask::MapTask",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_MapTask",
+    "desc": "Constructs an already-finished task with no work behind it."
+  },
+  {
+    "name": "MapTask::MapTask",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_MapTask",
+    "desc": "Constructs a task for work that has already run inline."
+  },
+  {
+    "name": "MapTask::MapTask",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_MapTask",
+    "desc": "Constructs a task for work in flight on an engine."
+  },
+  {
+    "name": "MapTask::MapTask",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_MapTask",
+    "desc": ""
+  },
+  {
+    "name": "MapTask::operator=",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "MapTask::MapTask",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_MapTask",
+    "desc": ""
+  },
+  {
+    "name": "MapTask::operator=",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "MapTask::~MapTask",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_~MapTask",
+    "desc": "Cancels the work and blocks until it has stopped. See the class note."
+  },
+  {
+    "name": "MapTask::done",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_done",
+    "desc": "Whether the work has stopped, whether it completed or was abandoned. Two sources, because neither alone covers every ..."
+  },
+  {
+    "name": "MapTask::progress",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_progress",
+    "desc": "How much of the work is finished."
+  },
+  {
+    "name": "MapTask::cancel",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_cancel",
+    "desc": "Asks the work to stop at its next checkpoint. Cooperative, and returns immediately. JobEngine::cancel() does not dequ..."
+  },
+  {
+    "name": "MapTask::cancelled",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_cancelled",
+    "desc": "Whether cancel() has been called on this task."
+  },
+  {
+    "name": "MapTask::wait",
+    "kind": "Method",
+    "url": "class_MapTask.html#method_wait",
+    "desc": "Blocks until done(). Safe to call from a job running on the same engine: JobEngine::wait_for() has the caller partici..."
+  },
+  {
+    "name": "MapTaskState",
+    "kind": "Class",
+    "url": "class_MapTaskState.html",
+    "desc": "The step counter an asynchronous map operation reports progress through. Held by shared_ptr on both sides. The job bo..."
+  },
+  {
+    "name": "MapTaskState::step",
+    "kind": "Method",
+    "url": "class_MapTaskState.html#method_step",
+    "desc": "Marks one step done. Safe from any thread."
+  },
+  {
+    "name": "MapTaskState::finish",
+    "kind": "Method",
+    "url": "class_MapTaskState.html#method_finish",
+    "desc": "Marks the whole operation over, however it ended."
+  },
+  {
+    "name": "MapTown",
+    "kind": "Class",
+    "url": "class_MapTown.html",
+    "desc": "A settlement occupying one cell, with the buildings packed into it."
+  },
+  {
+    "name": "Noise",
+    "kind": "Class",
+    "url": "class_Noise.html",
+    "desc": "Samples a fractal noise field configured once at construction. Holding the FastNoiseLite instance as a member is the ..."
+  },
+  {
+    "name": "Noise::Noise",
+    "kind": "Method",
+    "url": "class_Noise.html#method_Noise",
+    "desc": "Builds a sampler from a noise configuration."
+  },
+  {
+    "name": "Noise::sample",
+    "kind": "Method",
+    "url": "class_Noise.html#method_sample",
+    "desc": "Samples the field."
+  },
+  {
+    "name": "NoiseConfig",
+    "kind": "Class",
+    "url": "class_NoiseConfig.html",
+    "desc": "Parameters for the fractal noise field that decides land from water. The fields map one-to-one onto FastNoiseLite's s..."
+  },
+  {
+    "name": "PassBiomes",
+    "kind": "Class",
+    "url": "class_PassBiomes.html",
+    "desc": "Assigns MapCenter::biome. The classification itself lives in classify_biome() so it can be tested on a table of eleva..."
+  },
+  {
+    "name": "PassBiomes::execute",
+    "kind": "Method",
+    "url": "class_PassBiomes.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassCaves",
+    "kind": "Class",
+    "url": "class_PassCaves.html",
+    "desc": "Finds the slopes a cave would open on and grows a system down from each. The first feature in the module that exists ..."
+  },
+  {
+    "name": "PassCaves::execute",
+    "kind": "Method",
+    "url": "class_PassCaves.html#method_execute",
+    "desc": "Opens and grows every cave system."
+  },
+  {
+    "name": "PassCoast",
+    "kind": "Class",
+    "url": "class_PassCoast.html",
+    "desc": "Assigns coast to cells and refines ocean, coast and water on corners. A land cell is coast when any neighbour is ocea..."
+  },
+  {
+    "name": "PassCoast::execute",
+    "kind": "Method",
+    "url": "class_PassCoast.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassElevation",
+    "kind": "Class",
+    "url": "class_PassElevation.html",
+    "desc": "Assigns elevation to every corner and cell, and downslope to every corner. Height is graph distance from the map bord..."
+  },
+  {
+    "name": "PassElevation::execute",
+    "kind": "Method",
+    "url": "class_PassElevation.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassLandmarks",
+    "kind": "Class",
+    "url": "class_PassLandmarks.html",
+    "desc": "Fills MapGraph::landmarks. Natural landmarks are read off the terrain rather than sprinkled onto it: a peak is a cell..."
+  },
+  {
+    "name": "PassLandmarks::execute",
+    "kind": "Method",
+    "url": "class_PassLandmarks.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassMoisture",
+    "kind": "Class",
+    "url": "class_PassMoisture.html",
+    "desc": "Assigns moisture to every corner and cell. Lakes and rivers seed the field the ocean deliberately does not, so that a..."
+  },
+  {
+    "name": "PassMoisture::execute",
+    "kind": "Method",
+    "url": "class_PassMoisture.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassNoisyEdges",
+    "kind": "Class",
+    "url": "class_PassNoisyEdges.html",
+    "desc": "Fills MapEdge::noisy_points0 and noisy_points1. A Voronoi edge and the two cell sites it separates form a quadrilater..."
+  },
+  {
+    "name": "PassNoisyEdges::execute",
+    "kind": "Method",
+    "url": "class_PassNoisyEdges.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassRegions",
+    "kind": "Class",
+    "url": "class_PassRegions.html",
+    "desc": "Fills MapGraph::countries and MapGraph::regions, and stamps every land cell with the pair it belongs to. Territory is..."
+  },
+  {
+    "name": "PassRegions::execute",
+    "kind": "Method",
+    "url": "class_PassRegions.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassRivers",
+    "kind": "Class",
+    "url": "class_PassRivers.html",
+    "desc": "Raises river volume on the corners and edges a watercourse runs through. Sources are sampled uniformly from the corne..."
+  },
+  {
+    "name": "PassRivers::execute",
+    "kind": "Method",
+    "url": "class_PassRivers.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassRoads",
+    "kind": "Class",
+    "url": "class_PassRoads.html",
+    "desc": "Fills MapEdge::road, road_class, traffic and bridge, and MapGraph::roads. Roads are routed, not drawn. The pass build..."
+  },
+  {
+    "name": "PassRoads::execute",
+    "kind": "Method",
+    "url": "class_PassRoads.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassTemperature",
+    "kind": "Class",
+    "url": "class_PassTemperature.html",
+    "desc": "Assigns temperature to every corner and cell. Without this the map has no climate: biomes were classified on elevatio..."
+  },
+  {
+    "name": "PassTemperature::execute",
+    "kind": "Method",
+    "url": "class_PassTemperature.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassTowns",
+    "kind": "Class",
+    "url": "class_PassTowns.html",
+    "desc": "Fills MapGraph::towns. Sites are scored on where people actually settle: a habitable biome, low ground, and access to..."
+  },
+  {
+    "name": "PassTowns::execute",
+    "kind": "Method",
+    "url": "class_PassTowns.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassValleys",
+    "kind": "Class",
+    "url": "class_PassValleys.html",
+    "desc": "Lowers the ground along every watercourse, so rivers sit in valleys. Rivers erode, and until this pass existed nothin..."
+  },
+  {
+    "name": "PassValleys::execute",
+    "kind": "Method",
+    "url": "class_PassValleys.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "PassWater",
+    "kind": "Class",
+    "url": "class_PassWater.html",
+    "desc": "Assigns water and ocean to every corner and cell. Three stages. A corner is water where the island noise field exceed..."
+  },
+  {
+    "name": "PassWater::execute",
+    "kind": "Method",
+    "url": "class_PassWater.html#method_execute",
+    "desc": "Runs the pass."
+  },
+  {
+    "name": "RegionConfig",
+    "kind": "Class",
+    "url": "class_RegionConfig.html",
+    "desc": "Controls how the land is divided into countries and regions."
+  },
+  {
+    "name": "RenderSlice",
+    "kind": "Class",
+    "url": "class_RenderSlice.html",
+    "desc": "What part of a layer to draw, and the geometry to draw it from. Defaulted everywhere: a caller that wants a whole lay..."
+  },
+  {
+    "name": "RiverChannels",
+    "kind": "Class",
+    "url": "class_RiverChannels.html",
+    "desc": "The river channels cut into the sampled surface, indexed by cell. The counterpart of TerrainDetail: both are surface ..."
+  },
+  {
+    "name": "RiverChannels::empty",
+    "kind": "Method",
+    "url": "class_RiverChannels.html#method_empty",
+    "desc": "Whether any channel is cut at all."
+  },
+  {
+    "name": "RiverSurfaces",
+    "kind": "Class",
+    "url": "class_RiverSurfaces.html",
+    "desc": "The drawn water surface of every river, one height per segment. The one definition of the height a river's water is d..."
+  },
+  {
+    "name": "RiverSurfaces::at",
+    "kind": "Method",
+    "url": "class_RiverSurfaces.html#method_at",
+    "desc": "The height a river is drawn at over one segment."
+  },
+  {
+    "name": "RoadConfig",
+    "kind": "Class",
+    "url": "class_RoadConfig.html",
+    "desc": "Controls where roads run, how busy they get, and how they are drawn. Every cost here is a multiplier on the distance ..."
+  },
+  {
+    "name": "RowBand",
+    "kind": "Class",
+    "url": "class_RowBand.html",
+    "desc": "A range of image rows a draw call is confined to. What makes rendering one image on several threads safe and reproduc..."
+  },
+  {
+    "name": "RowBand::clamp",
+    "kind": "Method",
+    "url": "class_RowBand.html#method_clamp",
+    "desc": "Clamps a row range to this band and to an image height."
+  },
+  {
+    "name": "RowBand::intersects",
+    "kind": "Method",
+    "url": "class_RowBand.html#method_intersects",
+    "desc": "Whether a row range overlaps this band at all."
+  },
+  {
+    "name": "ShapeBlob",
+    "kind": "Class",
+    "url": "class_ShapeBlob.html",
+    "desc": "One landmass: where it sits, how big it is, and how its outline wanders."
+  },
+  {
+    "name": "ShapeConfig",
+    "kind": "Class",
+    "url": "class_ShapeConfig.html",
+    "desc": "The outline land is allowed to occupy, centred on the canvas. The canvas itself stays grid_size square whatever this ..."
+  },
+  {
+    "name": "ShapeField",
+    "kind": "Class",
+    "url": "class_ShapeField.html",
+    "desc": "The outline the landmass is confined to, resolved once and sampled cheaply. The shape of the world comes from one pre..."
+  },
+  {
+    "name": "ShapeField::ShapeField",
+    "kind": "Method",
+    "url": "class_ShapeField.html#method_ShapeField",
+    "desc": "Resolves the outline described by a configuration."
+  },
+  {
+    "name": "ShapeField::inset",
+    "kind": "Method",
+    "url": "class_ShapeField.html#method_inset",
+    "desc": "How far inside the outline a point lies, in grid units. Positive inside, negative outside, zero on the boundary. The ..."
+  },
+  {
+    "name": "ShapeField::landmasses",
+    "kind": "Method",
+    "url": "class_ShapeField.html#method_landmasses",
+    "desc": "The landmasses the organic shapes resolved to."
+  },
+  {
+    "name": "TerrainDetail",
+    "kind": "Class",
+    "url": "class_TerrainDetail.html",
+    "desc": "A fractal field sampled on top of the control mesh, and how hard to apply it. Built from a MapConfig by make_terrain_..."
+  },
+  {
+    "name": "TownConfig",
+    "kind": "Class",
+    "url": "class_TownConfig.html",
+    "desc": "Controls settlement placement and the building footprints packed into each one."
+  },
+  {
+    "name": "UniformIntDistribution",
+    "kind": "Class",
+    "url": "class_UniformIntDistribution.html",
+    "desc": "Drop-in for std::uniform_int_distribution: uniform integer in [a, b]."
+  },
+  {
+    "name": "UniformIntDistribution::UniformIntDistribution",
+    "kind": "Method",
+    "url": "class_UniformIntDistribution.html#method_UniformIntDistribution",
+    "desc": ""
+  },
+  {
+    "name": "UniformIntDistribution::operator()",
+    "kind": "Method",
+    "url": "class_UniformIntDistribution.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "UniformIntDistribution::a",
+    "kind": "Method",
+    "url": "class_UniformIntDistribution.html#method_a",
+    "desc": ""
+  },
+  {
+    "name": "UniformIntDistribution::b",
+    "kind": "Method",
+    "url": "class_UniformIntDistribution.html#method_b",
+    "desc": ""
+  },
+  {
+    "name": "UniformRealDistribution",
+    "kind": "Class",
+    "url": "class_UniformRealDistribution.html",
+    "desc": "Drop-in for std::uniform_real_distribution: uniform real in [a, b)."
+  },
+  {
+    "name": "UniformRealDistribution::UniformRealDistribution",
+    "kind": "Method",
+    "url": "class_UniformRealDistribution.html#method_UniformRealDistribution",
+    "desc": ""
+  },
+  {
+    "name": "UniformRealDistribution::operator()",
+    "kind": "Method",
+    "url": "class_UniformRealDistribution.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "UniformRealDistribution::a",
+    "kind": "Method",
+    "url": "class_UniformRealDistribution.html#method_a",
+    "desc": ""
+  },
+  {
+    "name": "UniformRealDistribution::b",
+    "kind": "Method",
+    "url": "class_UniformRealDistribution.html#method_b",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail",
+    "kind": "Namespace",
+    "url": "scope_coopa__maps__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::river_ground_under",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_river_ground_under",
+    "desc": "The highest drawn ground under one segment's stroke, in height units. Sampled over the whole footprint the renderer p..."
+  },
+  {
+    "name": "coopa::maps::detail::river_freeboard",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_river_freeboard",
+    "desc": "Freeboard of the sheet above the bed over one segment, in height units."
+  },
+  {
+    "name": "coopa::maps::detail::river_binding",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_river_binding",
+    "desc": "Forces one river's profile to fall, and to clear the ground beneath it. Both at once, which is why the floor is taken..."
+  },
+  {
+    "name": "coopa::maps::detail::settle_river_profile",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_settle_river_profile",
+    "desc": "Forces one river's profile to fall, given the bound it may not go under."
+  },
+  {
+    "name": "coopa::maps::detail::id_sequence",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_id_sequence",
+    "desc": "Builds a YAML sequence node from a list of integer ids."
+  },
+  {
+    "name": "coopa::maps::detail::read_id_sequence",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_read_id_sequence",
+    "desc": "Reads a YAML sequence of integers back into a list of ids."
+  },
+  {
+    "name": "coopa::maps::detail::scalar_sequence",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_scalar_sequence",
+    "desc": "Builds a YAML sequence node from a list of doubles. The scalar counterpart of point_sequence(), for the per-point arr..."
+  },
+  {
+    "name": "coopa::maps::detail::read_scalar_sequence",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_read_scalar_sequence",
+    "desc": "Reads a YAML sequence of numbers back into a list of doubles."
+  },
+  {
+    "name": "coopa::maps::detail::point_sequence",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_point_sequence",
+    "desc": "Builds a YAML sequence of [x, y] pairs from a polyline."
+  },
+  {
+    "name": "coopa::maps::detail::read_point_sequence",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_read_point_sequence",
+    "desc": "Reads a YAML sequence of [x, y] pairs back into a polyline."
+  },
+  {
+    "name": "coopa::maps::detail::read_or",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_read_or",
+    "desc": "Reads a key if present and convertible, otherwise returns the fallback. Tolerates a null node, which is what an empty..."
+  },
+  {
+    "name": "coopa::maps::detail::noise_to_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_noise_to_node",
+    "desc": "Encodes a NoiseConfig as a mapping node. Factored out because MapConfig carries two noise fields the island field and..."
+  },
+  {
+    "name": "coopa::maps::detail::noise_from_node",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_noise_from_node",
+    "desc": "Reads a NoiseConfig back from a parent mapping, if the key is present. The two enum-typed fields go through int: they..."
+  },
+  {
+    "name": "coopa::maps::detail::name_onset_pool",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_name_onset_pool",
+    "desc": "The full inventory a Language draws its own subset from."
+  },
+  {
+    "name": "coopa::maps::detail::name_nucleus_pool",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_name_nucleus_pool",
+    "desc": "Vowel cores available to a language."
+  },
+  {
+    "name": "coopa::maps::detail::name_coda_pool",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_name_coda_pool",
+    "desc": "Closing consonant clusters available to a language."
+  },
+  {
+    "name": "coopa::maps::detail::name_prefix_pool",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_name_prefix_pool",
+    "desc": "Leading particles a language may attach."
+  },
+  {
+    "name": "coopa::maps::detail::name_suffix_pool",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_name_suffix_pool",
+    "desc": "Trailing particles a language may attach."
+  },
+  {
+    "name": "coopa::maps::detail::draw_subset",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_draw_subset",
+    "desc": "Draws count distinct entries from pool."
+  },
+  {
+    "name": "coopa::maps::detail::capitalise",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_capitalise",
+    "desc": "Uppercases the first character of a name."
+  },
+  {
+    "name": "coopa::maps::detail::generate_name_once",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_generate_name_once",
+    "desc": "Generates one name without the length guard."
+  },
+  {
+    "name": "coopa::maps::detail::require_32bit_generator",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_require_32bit_generator",
+    "desc": "Requires a generator producing exactly 32 bits, [0, 2^32 - 1]."
+  },
+  {
+    "name": "coopa::maps::detail::lemire_downscale",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_lemire_downscale",
+    "desc": "Lemire's nearly-divisionless downscale of one 32-bit draw to [0, range)."
+  },
+  {
+    "name": "coopa::maps::detail::canonical",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail.html#func_canonical",
+    "desc": "A double/float in [0, 1) from whole 32-bit draws, as libstdc++'s generate_canonical."
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl",
+    "kind": "Namespace",
+    "url": "scope_coopa__maps__detail__sort_impl.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::push_heap",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_push_heap",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::adjust_heap",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_adjust_heap",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::pop_heap",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_pop_heap",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::make_heap",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_make_heap",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::heap_sort_range",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_heap_sort_range",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::move_median_to_first",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_move_median_to_first",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::unguarded_partition",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_unguarded_partition",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::unguarded_partition_pivot",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_unguarded_partition_pivot",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::introsort_loop",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_introsort_loop",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::unguarded_linear_insert",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_unguarded_linear_insert",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::insertion_sort",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_insertion_sort",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::detail::sort_impl::final_insertion_sort",
+    "kind": "Function",
+    "url": "scope_coopa__maps__detail__sort_impl.html#func_final_insertion_sort",
+    "desc": ""
+  },
+  {
+    "name": "Global Namespace",
+    "kind": "Namespace",
+    "url": "scope_Global_Namespace.html",
+    "desc": "Global C++ symbols."
+  },
+  {
+    "name": "coopa::maps::MapLayers::BlendField",
+    "kind": "Class",
+    "url": "class_coopa__maps__MapLayers__BlendField.html",
+    "desc": "The local blur factor over the image, one value per cell. Stored as a raster rather than a per-cell array because tha..."
+  },
+  {
+    "name": "coopa::maps::MapLayers::BlendField::at",
+    "kind": "Method",
+    "url": "class_coopa__maps__MapLayers__BlendField.html#method_at",
+    "desc": "The factor at a pixel."
+  },
+  {
+    "name": "coopa::maps::MapLayers::CaveDepthRange",
+    "kind": "Class",
+    "url": "class_coopa__maps__MapLayers__CaveDepthRange.html",
+    "desc": "The span of cave floor heights on a map; what the overview's ramp covers."
+  },
+  {
+    "name": "coopa::maps::RiverChannels::Cell",
+    "kind": "Class",
+    "url": "class_coopa__maps__RiverChannels__Cell.html",
+    "desc": "One cell's slice of segments, and the box that bounds it."
+  },
+  {
+    "name": "coopa::maps::PassRoads::CheapestFirst",
+    "kind": "Class",
+    "url": "class_coopa__maps__PassRoads__CheapestFirst.html",
+    "desc": "Orders the frontier cheapest-first; index breaks ties so a run is reproducible."
+  },
+  {
+    "name": "coopa::maps::PassRoads::CheapestFirst::operator()",
+    "kind": "Method",
+    "url": "class_coopa__maps__PassRoads__CheapestFirst.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::PassCaves::Head",
+    "kind": "Class",
+    "url": "class_coopa__maps__PassCaves__Head.html",
+    "desc": "One growing end of a system, and everything needed to carry it forward."
+  },
+  {
+    "name": "coopa::maps::PassTowns::KeepOut",
+    "kind": "Class",
+    "url": "class_coopa__maps__PassTowns__KeepOut.html",
+    "desc": "Everything a settlement's buildings must stay clear of, as segments. Water came first: a river runs along a cell boun..."
+  },
+  {
+    "name": "coopa::maps::PassTowns::Layout",
+    "kind": "Class",
+    "url": "class_coopa__maps__PassTowns__Layout.html",
+    "desc": "A settlement's layout sizes, converted from metres into grid units once. The packer works in grid space, because that..."
+  },
+  {
+    "name": "coopa::maps::MapLayers::Outlines",
+    "kind": "Class",
+    "url": "class_coopa__maps__MapLayers__Outlines.html",
+    "desc": "Hands out a cell's pixel-space outline, shared if the caller has one. Two jobs in one place. It hides whether the geo..."
+  },
+  {
+    "name": "coopa::maps::MapLayers::Outlines::Outlines",
+    "kind": "Method",
+    "url": "class_coopa__maps__MapLayers__Outlines.html#method_Outlines",
+    "desc": ""
+  },
+  {
+    "name": "coopa::maps::MapLayers::Outlines::of",
+    "kind": "Method",
+    "url": "class_coopa__maps__MapLayers__Outlines.html#method_of",
+    "desc": "The cell's outline, or an empty one if it misses the band."
+  },
+  {
+    "name": "coopa::maps::PassRoads::State",
+    "kind": "Class",
+    "url": "class_coopa__maps__PassRoads__State.html",
+    "desc": "A search state: standing in a cell, having crossed water_run water cells to get there."
+  },
+  {
+    "name": "coopa::maps::PassRoads::Step",
+    "kind": "Class",
+    "url": "class_coopa__maps__PassRoads__Step.html",
+    "desc": "One step out of a cell: where it lands and which edge it crosses."
+  }
+]

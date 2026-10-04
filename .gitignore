@@ -1,0 +1,3 @@
+# coopadocs venv created by scripts/build-docs.sh (docs/<name>/ output IS committed)
+.venv-docs/
+.DS_Store

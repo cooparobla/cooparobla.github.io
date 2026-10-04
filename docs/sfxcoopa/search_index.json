@@ -1,0 +1,1400 @@
+[
+  {
+    "name": "coopa",
+    "kind": "Namespace",
+    "url": "scope_coopa.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::collections",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__collections.html",
+    "desc": ""
+  },
+  {
+    "name": "RingBuffer",
+    "kind": "Class",
+    "url": "class_RingBuffer.html",
+    "desc": "Lock-free SPSC circular buffer of T, capacity rounded up to a power of two. Thread-safety contract:push()/write() may..."
+  },
+  {
+    "name": "RingBuffer::RingBuffer",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_RingBuffer",
+    "desc": "Constructs a ring buffer able to hold at least capacity elements."
+  },
+  {
+    "name": "RingBuffer::~RingBuffer",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_~RingBuffer",
+    "desc": ""
+  },
+  {
+    "name": "RingBuffer::RingBuffer",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_RingBuffer",
+    "desc": ""
+  },
+  {
+    "name": "RingBuffer::operator=",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "RingBuffer::RingBuffer",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_RingBuffer",
+    "desc": ""
+  },
+  {
+    "name": "RingBuffer::operator=",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "RingBuffer::push",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_push",
+    "desc": "Pushes a single element. Producer-thread only."
+  },
+  {
+    "name": "RingBuffer::pop",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_pop",
+    "desc": "Pops a single element. Consumer-thread only."
+  },
+  {
+    "name": "RingBuffer::write",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_write",
+    "desc": "Writes up to n elements from src. Producer-thread only."
+  },
+  {
+    "name": "RingBuffer::read",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_read",
+    "desc": "Reads up to n elements into dst. Consumer-thread only."
+  },
+  {
+    "name": "RingBuffer::available_read",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_available_read",
+    "desc": "Best-effort count of elements available to read. Safe from either thread."
+  },
+  {
+    "name": "RingBuffer::available_write",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_available_write",
+    "desc": "Best-effort count of free slots available to write. Safe from either thread."
+  },
+  {
+    "name": "RingBuffer::capacity",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_capacity",
+    "desc": "Total capacity (rounded up to a power of two at construction)."
+  },
+  {
+    "name": "RingBuffer::clear",
+    "kind": "Method",
+    "url": "class_RingBuffer.html#method_clear",
+    "desc": "Drops all buffered elements. Owner thread only, not thread-safe."
+  },
+  {
+    "name": "coopa::sfx::core",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__core.html",
+    "desc": ""
+  },
+  {
+    "name": "AudioDevice",
+    "kind": "Class",
+    "url": "class_AudioDevice.html",
+    "desc": "RAII over ma_context + ma_device: opens the device (or the null backend, for CI/headless boxes) in the constructor, s..."
+  },
+  {
+    "name": "AudioDevice::AudioDevice",
+    "kind": "Method",
+    "url": "class_AudioDevice.html#method_AudioDevice",
+    "desc": ""
+  },
+  {
+    "name": "AudioDevice::~AudioDevice",
+    "kind": "Method",
+    "url": "class_AudioDevice.html#method_~AudioDevice",
+    "desc": ""
+  },
+  {
+    "name": "AudioDevice::AudioDevice",
+    "kind": "Method",
+    "url": "class_AudioDevice.html#method_AudioDevice",
+    "desc": ""
+  },
+  {
+    "name": "AudioDevice::operator=",
+    "kind": "Method",
+    "url": "class_AudioDevice.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AudioDevice::AudioDevice",
+    "kind": "Method",
+    "url": "class_AudioDevice.html#method_AudioDevice",
+    "desc": ""
+  },
+  {
+    "name": "AudioDevice::operator=",
+    "kind": "Method",
+    "url": "class_AudioDevice.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine",
+    "kind": "Class",
+    "url": "class_AudioEngine.html",
+    "desc": "The one object an application constructs. Ctor-init/dtor-shutdown only, per house style no init()/shutdown() methods."
+  },
+  {
+    "name": "AudioEngine::AudioEngine",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_AudioEngine",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::play",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_play",
+    "desc": "Plays a clip on its default (or PlayParams-overridden) bus, not spatialized."
+  },
+  {
+    "name": "AudioEngine::play_3d",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_play_3d",
+    "desc": "Plays a clip at a fixed 3D position, binaurally spatialized."
+  },
+  {
+    "name": "AudioEngine::stop",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_stop",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::pause",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_pause",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::resume",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_resume",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::set_voice_gain",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_set_voice_gain",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::set_voice_pitch",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_set_voice_pitch",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::set_voice_position",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_set_voice_position",
+    "desc": "Moves an actively-spatialized voice's source position; takes effect on the next update(dt)."
+  },
+  {
+    "name": "AudioEngine::master",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_master",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::create_bus",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_create_bus",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::find_bus",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_find_bus",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::set_listener",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_set_listener",
+    "desc": ""
+  },
+  {
+    "name": "AudioEngine::update",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_update",
+    "desc": "Main-thread per-frame tick: drains events (firing Signals, releasing per-voice clip references), reclaims finished vo..."
+  },
+  {
+    "name": "AudioEngine::render_offline",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_render_offline",
+    "desc": "Hardware-free render path: identical output to what a real AudioDevice callback would produce."
+  },
+  {
+    "name": "AudioEngine::load_clip",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_load_clip",
+    "desc": "Sidecar-aware: loads (or returns the cached) clip using ClipImportSettings::load(path)."
+  },
+  {
+    "name": "AudioEngine::load_clip",
+    "kind": "Method",
+    "url": "class_AudioEngine.html#method_load_clip",
+    "desc": "Loads (or returns the cached) clip using settings exactly as given no sidecar lookup."
+  },
+  {
+    "name": "DeviceConfig",
+    "kind": "Class",
+    "url": "class_DeviceConfig.html",
+    "desc": "What sound card to open and at what rate/buffer size."
+  },
+  {
+    "name": "DeviceConfig::from_env",
+    "kind": "Method",
+    "url": "class_DeviceConfig.html#method_from_env",
+    "desc": "Overlays the SFX_DEVICE=null environment variable (the convention this library's headless-safe demo target uses) onto..."
+  },
+  {
+    "name": "DeviceConfig::from_env",
+    "kind": "Method",
+    "url": "class_DeviceConfig.html#method_from_env",
+    "desc": "Overload of from_env() defaulting base to DeviceConfig{}."
+  },
+  {
+    "name": "MixerBus",
+    "kind": "Class",
+    "url": "class_MixerBus.html",
+    "desc": "One node of the mix graph. Voices write directly into a bus's own scratch buffer (via scratch()); the bus then recurs..."
+  },
+  {
+    "name": "MixerBus::MixerBus",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_MixerBus",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::MixerBus",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_MixerBus",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::MixerBus",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_MixerBus",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::operator=",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::operator=",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::name",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_name",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::index",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_index",
+    "desc": "Stable index assigned at creation; commands address buses by this, never by name."
+  },
+  {
+    "name": "MixerBus::parent",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_parent",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::children",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_children",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::add_child",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_add_child",
+    "desc": "Links child under this bus. Called only by whoever builds the tree (Mixer::create_bus)."
+  },
+  {
+    "name": "MixerBus::volume",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_volume",
+    "desc": "Linear gain applied to this bus's own mix before it's read by its parent (or Mixer, for the root)."
+  },
+  {
+    "name": "MixerBus::set_volume",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_volume",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::volume_db",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_volume_db",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::set_volume_db",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_volume_db",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::mute",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_mute",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::set_mute",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_mute",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::solo",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_solo",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::set_solo",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_solo",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::effective_mute",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_effective_mute",
+    "desc": "The control-side-computed flag the audio thread actually reads; see recompute_effective_mutes()."
+  },
+  {
+    "name": "MixerBus::add_effect",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_add_effect",
+    "desc": "Appends an effect to this bus's chain, run in append order."
+  },
+  {
+    "name": "MixerBus::prepare",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_prepare",
+    "desc": "Allocates this bus's scratch buffer and prepares its effect chain."
+  },
+  {
+    "name": "MixerBus::scratch",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_scratch",
+    "desc": "This bus's scratch buffer voices targeting this bus accumulate directly into it."
+  },
+  {
+    "name": "MixerBus::clear_scratch",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_clear_scratch",
+    "desc": "Zeroes this bus's scratch buffer for a new render block. Must be called before voices render into it."
+  },
+  {
+    "name": "MixerBus::render",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_render",
+    "desc": "Depth-first post-order render: recursively renders and accumulates every child (each already gain/effect-applied by i..."
+  },
+  {
+    "name": "MixerBus::recompute_effective_mutes",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_recompute_effective_mutes",
+    "desc": "Recomputes effective_mute() for every bus in all_buses (main-thread only). If any bus has solo() true, a bus is kept ..."
+  },
+  {
+    "name": "PlayParams",
+    "kind": "Class",
+    "url": "class_PlayParams.html",
+    "desc": "Per-call play tuning. Loop points and whether a clip spatializes are clip properties (set via its .import sidecar, re..."
+  },
+  {
+    "name": "VoiceHandle",
+    "kind": "Class",
+    "url": "class_VoiceHandle.html",
+    "desc": "A generational reference to a pool slot: a stale handle (one whose generation no longer matches the slot's current ge..."
+  },
+  {
+    "name": "VoiceHandle::is_valid",
+    "kind": "Method",
+    "url": "class_VoiceHandle.html#method_is_valid",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::data",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__data.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::data::sample_format_from_ma",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__data.html#func_sample_format_from_ma",
+    "desc": "Maps a miniaudio sample format to sfxcoopa's SampleFormat."
+  },
+  {
+    "name": "coopa::sfx::data::load_type_to_string",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__data.html#func_load_type_to_string",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::data::load_type_from_string",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__data.html#func_load_type_from_string",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::data::rolloff_mode_to_string",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__data.html#func_rolloff_mode_to_string",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::data::rolloff_mode_from_string",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__data.html#func_rolloff_mode_from_string",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::data::read_smpl_loops",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__data.html#func_read_smpl_loops",
+    "desc": "Reads all sample-loop markers from a wav file's smpl chunk, if present. Walks the RIFF chunk list rather than assumin..."
+  },
+  {
+    "name": "AudioClip",
+    "kind": "Class",
+    "url": "class_AudioClip.html",
+    "desc": "Owns a clip's fully-decoded PCM data at a chosen engine format. Constructed only via load(): a Decoder is opened at t..."
+  },
+  {
+    "name": "AudioClip::AudioClip",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_AudioClip",
+    "desc": ""
+  },
+  {
+    "name": "AudioClip::operator=",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AudioClip::AudioClip",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_AudioClip",
+    "desc": ""
+  },
+  {
+    "name": "AudioClip::operator=",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "AudioClip::frame_count",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_frame_count",
+    "desc": "Number of frames (not interleaved samples) of decoded PCM."
+  },
+  {
+    "name": "AudioClip::format",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_format",
+    "desc": "The format this clip's PCM is stored at."
+  },
+  {
+    "name": "AudioClip::settings",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_settings",
+    "desc": "The import settings this clip was loaded with."
+  },
+  {
+    "name": "AudioClip::data",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_data",
+    "desc": "Raw interleaved PCM data, frame_count() * format().channels floats."
+  },
+  {
+    "name": "AudioClip::load",
+    "kind": "Method",
+    "url": "class_AudioClip.html#method_load",
+    "desc": "Decodes path fully into memory at engine_format's sample rate (or settings.sample_rate_override, if nonzero) and the ..."
+  },
+  {
+    "name": "AudioFormat",
+    "kind": "Class",
+    "url": "class_AudioFormat.html",
+    "desc": "Sample rate + channel count pair describing a PCM stream."
+  },
+  {
+    "name": "ClipImportSettings",
+    "kind": "Class",
+    "url": "class_ClipImportSettings.html",
+    "desc": "How one clip should be loaded, mixed, and (optionally) spatialized. Resolution order when loading a clip: explicit ar..."
+  },
+  {
+    "name": "ClipImportSettings::load",
+    "kind": "Method",
+    "url": "class_ClipImportSettings.html#method_load",
+    "desc": "Loads settings for a clip, merging (highest to lowest precedence) its .import sidecar, its embedded smpl loop points ..."
+  },
+  {
+    "name": "ClipImportSettings::save",
+    "kind": "Method",
+    "url": "class_ClipImportSettings.html#method_save",
+    "desc": "Writes this settings struct as a \".import\" YAML sidecar."
+  },
+  {
+    "name": "Decoder",
+    "kind": "Class",
+    "url": "class_Decoder.html",
+    "desc": "RAII over ma_decoder, always producing f32 PCM at a caller-chosen sample rate/channel count the format zoo (u8/s16/s2..."
+  },
+  {
+    "name": "Decoder::Decoder",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_Decoder",
+    "desc": "Opens a wav/mp3/flac file from a filesystem path."
+  },
+  {
+    "name": "Decoder::Decoder",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_Decoder",
+    "desc": "Opens a wav/mp3/flac file already resident in memory. The memory must outlive this Decoder."
+  },
+  {
+    "name": "Decoder::~Decoder",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_~Decoder",
+    "desc": ""
+  },
+  {
+    "name": "Decoder::Decoder",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_Decoder",
+    "desc": ""
+  },
+  {
+    "name": "Decoder::operator=",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Decoder::Decoder",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_Decoder",
+    "desc": ""
+  },
+  {
+    "name": "Decoder::operator=",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Decoder::read_frames",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_read_frames",
+    "desc": "Reads up to frame_count frames of interleaved f32 PCM at format()."
+  },
+  {
+    "name": "Decoder::seek_to_frame",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_seek_to_frame",
+    "desc": "Seeks the read cursor to the given frame index, in format()'s sample rate."
+  },
+  {
+    "name": "Decoder::total_frames",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_total_frames",
+    "desc": "Total frame count at format()'s sample rate."
+  },
+  {
+    "name": "Decoder::format",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_format",
+    "desc": "The format this Decoder actually produces (always f32, at the requested rate/channels)."
+  },
+  {
+    "name": "Decoder::source_format",
+    "kind": "Method",
+    "url": "class_Decoder.html#method_source_format",
+    "desc": "The source file's own format, before rate/channel/sample-format conversion."
+  },
+  {
+    "name": "SampleLoop",
+    "kind": "Class",
+    "url": "class_SampleLoop.html",
+    "desc": "One loop region as authored in a wav file's smpl chunk."
+  },
+  {
+    "name": "SourceFormat",
+    "kind": "Class",
+    "url": "class_SourceFormat.html",
+    "desc": "The source file's own format, before any rate/channel conversion."
+  },
+  {
+    "name": "coopa::sfx::dsp",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__dsp.html",
+    "desc": ""
+  },
+  {
+    "name": "Biquad",
+    "kind": "Class",
+    "url": "class_Biquad.html",
+    "desc": "A single second-order IIR section, coefficients from the RBJ \"Audio EQ Cookbook\", evaluated in Direct Form I. coopa::..."
+  },
+  {
+    "name": "Biquad::Biquad",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_Biquad",
+    "desc": "Constructs an identity (pass-through) biquad."
+  },
+  {
+    "name": "Biquad::process",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_process",
+    "desc": "Processes one sample through Direct Form I."
+  },
+  {
+    "name": "Biquad::reset",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_reset",
+    "desc": "Resets internal state (input/output history) to zero."
+  },
+  {
+    "name": "Biquad::lowpass",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_lowpass",
+    "desc": "RBJ cookbook lowpass, -3dB at freq_hz, resonance q."
+  },
+  {
+    "name": "Biquad::highpass",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_highpass",
+    "desc": "RBJ cookbook highpass, -3dB at freq_hz, resonance q."
+  },
+  {
+    "name": "Biquad::peaking",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_peaking",
+    "desc": "RBJ cookbook peaking EQ: gain_db boost/cut centred at freq_hz."
+  },
+  {
+    "name": "Biquad::lowshelf",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_lowshelf",
+    "desc": "RBJ cookbook low shelf: gain_db boost/cut below freq_hz."
+  },
+  {
+    "name": "Biquad::highshelf",
+    "kind": "Method",
+    "url": "class_Biquad.html#method_highshelf",
+    "desc": "RBJ cookbook high shelf: gain_db boost/cut above freq_hz."
+  },
+  {
+    "name": "DelayLine",
+    "kind": "Class",
+    "url": "class_DelayLine.html",
+    "desc": "Fixed-capacity circular f32 buffer supporting fractional-sample delay reads. Linear interpolation between the two nea..."
+  },
+  {
+    "name": "DelayLine::DelayLine",
+    "kind": "Method",
+    "url": "class_DelayLine.html#method_DelayLine",
+    "desc": "Constructs a delay line able to hold delays up to max_delay_samples."
+  },
+  {
+    "name": "DelayLine::set_delay_samples",
+    "kind": "Method",
+    "url": "class_DelayLine.html#method_set_delay_samples",
+    "desc": "Sets the read delay, in fractional samples behind the most recently pushed sample."
+  },
+  {
+    "name": "DelayLine::push",
+    "kind": "Method",
+    "url": "class_DelayLine.html#method_push",
+    "desc": "Pushes a new sample, advancing the write cursor."
+  },
+  {
+    "name": "DelayLine::read",
+    "kind": "Method",
+    "url": "class_DelayLine.html#method_read",
+    "desc": "Reads the currently configured delay via linear interpolation."
+  },
+  {
+    "name": "DelayLine::reset",
+    "kind": "Method",
+    "url": "class_DelayLine.html#method_reset",
+    "desc": "Clears all buffered samples and resets the write cursor."
+  },
+  {
+    "name": "IEffect",
+    "kind": "Class",
+    "url": "class_IEffect.html",
+    "desc": "In-place audio effect processed as part of a MixerBus's effect chain. All allocation must happen in prepare(); proces..."
+  },
+  {
+    "name": "IEffect::~IEffect",
+    "kind": "Method",
+    "url": "class_IEffect.html#method_~IEffect",
+    "desc": ""
+  },
+  {
+    "name": "IEffect::prepare",
+    "kind": "Method",
+    "url": "class_IEffect.html#method_prepare",
+    "desc": "Allocates any internal buffers needed to process up to max_frames frames."
+  },
+  {
+    "name": "IEffect::process",
+    "kind": "Method",
+    "url": "class_IEffect.html#method_process",
+    "desc": "Processes frames interleaved frames of channels channels, in place."
+  },
+  {
+    "name": "IEffect::reset",
+    "kind": "Method",
+    "url": "class_IEffect.html#method_reset",
+    "desc": "Clears any internal filter/delay state (not buffer allocations)."
+  },
+  {
+    "name": "OnePoleLowpass",
+    "kind": "Class",
+    "url": "class_OnePoleLowpass.html",
+    "desc": "A single-pole exponential-moving-average lowpass filter. Used both as a DSP building block (per-ear head-shadow shapi..."
+  },
+  {
+    "name": "OnePoleLowpass::set_cutoff",
+    "kind": "Method",
+    "url": "class_OnePoleLowpass.html#method_set_cutoff",
+    "desc": "Sets the -3dB cutoff frequency."
+  },
+  {
+    "name": "OnePoleLowpass::process",
+    "kind": "Method",
+    "url": "class_OnePoleLowpass.html#method_process",
+    "desc": "Processes one sample, returning the filtered output."
+  },
+  {
+    "name": "OnePoleLowpass::reset",
+    "kind": "Method",
+    "url": "class_OnePoleLowpass.html#method_reset",
+    "desc": "Resets internal state to zero."
+  },
+  {
+    "name": "Resampler",
+    "kind": "Class",
+    "url": "class_Resampler.html",
+    "desc": "Converts between sample rates (and applies pitch shift) via a 4-point Catmull-Rom cubic Hermite interpolator. Cubic H..."
+  },
+  {
+    "name": "Resampler::Resampler",
+    "kind": "Method",
+    "url": "class_Resampler.html#method_Resampler",
+    "desc": "Constructs a resampler at unity ratio (pass-through, with cubic-Hermite smoothing)."
+  },
+  {
+    "name": "Resampler::set_ratio",
+    "kind": "Method",
+    "url": "class_Resampler.html#method_set_ratio",
+    "desc": "Sets the conversion ratio: output_rate / input_rate. 2.0 doubles the frame count."
+  },
+  {
+    "name": "Resampler::process",
+    "kind": "Method",
+    "url": "class_Resampler.html#method_process",
+    "desc": "Consumes input and produces output, both up to the given counts. Always accepts (buffers) the entirety of in in_consu..."
+  },
+  {
+    "name": "Resampler::reset",
+    "kind": "Method",
+    "url": "class_Resampler.html#method_reset",
+    "desc": "Resets the resampler to its just-constructed state."
+  },
+  {
+    "name": "coopa::sfx::mixer",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__mixer.html",
+    "desc": ""
+  },
+  {
+    "name": "Command",
+    "kind": "Class",
+    "url": "class_Command.html",
+    "desc": "POD, voice-scoped control message pushed by the main thread and applied by Mixer::render(). A flat struct rather than..."
+  },
+  {
+    "name": "Event",
+    "kind": "Class",
+    "url": "class_Event.html",
+    "desc": "POD event pushed by Mixer::render(), drained by AudioEngine::update(dt) on the main thread."
+  },
+  {
+    "name": "Mixer",
+    "kind": "Class",
+    "url": "class_Mixer.html",
+    "desc": "Owns the VoicePool, the bus graph rooted at \"Master\", and the command/event rings. render() is the single audio-threa..."
+  },
+  {
+    "name": "Mixer::Mixer",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_Mixer",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::create_bus",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_create_bus",
+    "desc": "Creates a bus under parent (nullptr only valid for the very first call, which creates Master)."
+  },
+  {
+    "name": "Mixer::master",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_master",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::find_bus",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_find_bus",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::update_bus_mutes",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_update_bus_mutes",
+    "desc": "Recomputes every bus's effective_mute() from current mute()/solo() flags. Call after changing either."
+  },
+  {
+    "name": "Mixer::voice_pool",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_voice_pool",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::commands",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_commands",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::events",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_events",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::format",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_format",
+    "desc": ""
+  },
+  {
+    "name": "Mixer::prepare",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_prepare",
+    "desc": "Allocates scratch buffers for every bus sized for up to max_frames frames per render() call."
+  },
+  {
+    "name": "Mixer::render",
+    "kind": "Method",
+    "url": "class_Mixer.html#method_render",
+    "desc": "The single render entry point: drains commands, renders every active voice into its target bus, renders the bus graph..."
+  },
+  {
+    "name": "MixerBus",
+    "kind": "Class",
+    "url": "class_MixerBus.html",
+    "desc": "One node of the mix graph. Voices write directly into a bus's own scratch buffer (via scratch()); the bus then recurs..."
+  },
+  {
+    "name": "MixerBus::MixerBus",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_MixerBus",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::MixerBus",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_MixerBus",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::operator=",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::MixerBus",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_MixerBus",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::operator=",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::name",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_name",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::index",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_index",
+    "desc": "Stable index assigned at creation; commands address buses by this, never by name."
+  },
+  {
+    "name": "MixerBus::parent",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_parent",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::children",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_children",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::add_child",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_add_child",
+    "desc": "Links child under this bus. Called only by whoever builds the tree (Mixer::create_bus)."
+  },
+  {
+    "name": "MixerBus::volume",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_volume",
+    "desc": "Linear gain applied to this bus's own mix before it's read by its parent (or Mixer, for the root)."
+  },
+  {
+    "name": "MixerBus::set_volume",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_volume",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::volume_db",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_volume_db",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::set_volume_db",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_volume_db",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::mute",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_mute",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::set_mute",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_mute",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::solo",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_solo",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::set_solo",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_set_solo",
+    "desc": ""
+  },
+  {
+    "name": "MixerBus::effective_mute",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_effective_mute",
+    "desc": "The control-side-computed flag the audio thread actually reads; see recompute_effective_mutes()."
+  },
+  {
+    "name": "MixerBus::add_effect",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_add_effect",
+    "desc": "Appends an effect to this bus's chain, run in append order."
+  },
+  {
+    "name": "MixerBus::prepare",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_prepare",
+    "desc": "Allocates this bus's scratch buffer and prepares its effect chain."
+  },
+  {
+    "name": "MixerBus::scratch",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_scratch",
+    "desc": "This bus's scratch buffer voices targeting this bus accumulate directly into it."
+  },
+  {
+    "name": "MixerBus::clear_scratch",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_clear_scratch",
+    "desc": "Zeroes this bus's scratch buffer for a new render block. Must be called before voices render into it."
+  },
+  {
+    "name": "MixerBus::render",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_render",
+    "desc": "Depth-first post-order render: recursively renders and accumulates every child (each already gain/effect-applied by i..."
+  },
+  {
+    "name": "MixerBus::recompute_effective_mutes",
+    "kind": "Method",
+    "url": "class_MixerBus.html#method_recompute_effective_mutes",
+    "desc": "Recomputes effective_mute() for every bus in all_buses (main-thread only). If any bus has solo() true, a bus is kept ..."
+  },
+  {
+    "name": "SourceRef",
+    "kind": "Class",
+    "url": "class_SourceRef.html",
+    "desc": "What a Voice plays from: a non-owning reference to an AudioClip's PCM today, with room left for an AudioStream varian..."
+  },
+  {
+    "name": "Voice",
+    "kind": "Class",
+    "url": "class_Voice.html",
+    "desc": "One playing sound. render_add() mixes additively into a bus's scratch buffer; every parameter change is a target the ..."
+  },
+  {
+    "name": "Voice::Voice",
+    "kind": "Method",
+    "url": "class_Voice.html#method_Voice",
+    "desc": ""
+  },
+  {
+    "name": "Voice::play",
+    "kind": "Method",
+    "url": "class_Voice.html#method_play",
+    "desc": "Starts playback from the beginning of source, resetting all ramp/fade state."
+  },
+  {
+    "name": "Voice::stop",
+    "kind": "Method",
+    "url": "class_Voice.html#method_stop",
+    "desc": "Begins a ~5ms fade to Free rather than cutting playback immediately."
+  },
+  {
+    "name": "Voice::pause",
+    "kind": "Method",
+    "url": "class_Voice.html#method_pause",
+    "desc": ""
+  },
+  {
+    "name": "Voice::resume",
+    "kind": "Method",
+    "url": "class_Voice.html#method_resume",
+    "desc": ""
+  },
+  {
+    "name": "Voice::state",
+    "kind": "Method",
+    "url": "class_Voice.html#method_state",
+    "desc": ""
+  },
+  {
+    "name": "Voice::target_bus_index",
+    "kind": "Method",
+    "url": "class_Voice.html#method_target_bus_index",
+    "desc": ""
+  },
+  {
+    "name": "Voice::generation",
+    "kind": "Method",
+    "url": "class_Voice.html#method_generation",
+    "desc": "The generation this Voice was most recently (re)established under. Set by whoever applies a Play command (see mixer/m..."
+  },
+  {
+    "name": "Voice::set_generation",
+    "kind": "Method",
+    "url": "class_Voice.html#method_set_generation",
+    "desc": ""
+  },
+  {
+    "name": "Voice::loop_count",
+    "kind": "Method",
+    "url": "class_Voice.html#method_loop_count",
+    "desc": "Incremented each time playback wraps at loop_end back to loop_start_frame."
+  },
+  {
+    "name": "Voice::set_gain_target",
+    "kind": "Method",
+    "url": "class_Voice.html#method_set_gain_target",
+    "desc": ""
+  },
+  {
+    "name": "Voice::set_pitch_target",
+    "kind": "Method",
+    "url": "class_Voice.html#method_set_pitch_target",
+    "desc": ""
+  },
+  {
+    "name": "Voice::set_spatialize",
+    "kind": "Method",
+    "url": "class_Voice.html#method_set_spatialize",
+    "desc": "Enables binaural panning for this voice; source must be mono (see AudioClip's spatialize guard)."
+  },
+  {
+    "name": "Voice::set_spatial_target",
+    "kind": "Method",
+    "url": "class_Voice.html#method_set_spatial_target",
+    "desc": "Updates the panning target this voice ramps toward; see BinauralPanner::set_target()."
+  },
+  {
+    "name": "Voice::render_add",
+    "kind": "Method",
+    "url": "class_Voice.html#method_render_add",
+    "desc": "Additively mixes up to frames frames into bus_scratch (interleaved, bus_channels channels). No-op for Free or Paused ..."
+  },
+  {
+    "name": "VoiceHandle",
+    "kind": "Class",
+    "url": "class_VoiceHandle.html",
+    "desc": "A generational reference to a pool slot: a stale handle (one whose generation no longer matches the slot's current ge..."
+  },
+  {
+    "name": "VoiceHandle::is_valid",
+    "kind": "Method",
+    "url": "class_VoiceHandle.html#method_is_valid",
+    "desc": ""
+  },
+  {
+    "name": "VoicePool",
+    "kind": "Class",
+    "url": "class_VoicePool.html",
+    "desc": "Fixed-size array of Voices with main-thread-only allocation. allocate() pulls from a free list when one is available;..."
+  },
+  {
+    "name": "VoicePool::VoicePool",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_VoicePool",
+    "desc": ""
+  },
+  {
+    "name": "VoicePool::allocate",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_allocate",
+    "desc": "Allocates a slot (from the free list, or by stealing) and bumps its generation. Main-thread only."
+  },
+  {
+    "name": "VoicePool::is_valid",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_is_valid",
+    "desc": "True if handle refers to the slot's current occupancy (not stale, not out of range)."
+  },
+  {
+    "name": "VoicePool::get",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_get",
+    "desc": "The Voice for handle, or nullptr if the handle is stale/invalid."
+  },
+  {
+    "name": "VoicePool::reclaim_finished",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_reclaim_finished",
+    "desc": "Scans for slots whose Voice has reached Free and returns them to the free list. Main-thread only."
+  },
+  {
+    "name": "VoicePool::voice_at",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_voice_at",
+    "desc": "Direct index access for the audio-thread render loop, which iterates every slot each block."
+  },
+  {
+    "name": "VoicePool::capacity",
+    "kind": "Method",
+    "url": "class_VoicePool.html#method_capacity",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::spatial",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__spatial.html",
+    "desc": ""
+  },
+  {
+    "name": "AttenuationCurve",
+    "kind": "Class",
+    "url": "class_AttenuationCurve.html",
+    "desc": "Maps source-to-listener distance to a linear gain multiplier. Gain is always exactly 1.0 at or inside min_distance an..."
+  },
+  {
+    "name": "AttenuationCurve::evaluate",
+    "kind": "Method",
+    "url": "class_AttenuationCurve.html#method_evaluate",
+    "desc": "Evaluates the curve at the given distance, returning a linear gain in [0,1]."
+  },
+  {
+    "name": "BinauralPanner",
+    "kind": "Class",
+    "url": "class_BinauralPanner.html",
+    "desc": "Computes and applies analytic binaural panning for a mono source. compute() is a pure function of (SpatialParams, Lis..."
+  },
+  {
+    "name": "BinauralPanner::BinauralPanner",
+    "kind": "Method",
+    "url": "class_BinauralPanner.html#method_BinauralPanner",
+    "desc": ""
+  },
+  {
+    "name": "BinauralPanner::compute",
+    "kind": "Method",
+    "url": "class_BinauralPanner.html#method_compute",
+    "desc": "Computes this frame's ear targets from a source's spatial parameters and the listener's current pose. Pure/stateless."
+  },
+  {
+    "name": "BinauralPanner::set_target",
+    "kind": "Method",
+    "url": "class_BinauralPanner.html#method_set_target",
+    "desc": "Updates the held target ear parameters that process() renders. Held constant until the next call."
+  },
+  {
+    "name": "BinauralPanner::process",
+    "kind": "Method",
+    "url": "class_BinauralPanner.html#method_process",
+    "desc": "Renders frames mono input samples into interleaved stereo output using the current target."
+  },
+  {
+    "name": "BinauralPanner::reset",
+    "kind": "Method",
+    "url": "class_BinauralPanner.html#method_reset",
+    "desc": "Resets all internal filter/delay state."
+  },
+  {
+    "name": "EarParams",
+    "kind": "Class",
+    "url": "class_EarParams.html",
+    "desc": "Per-ear rendering targets computed by BinauralPanner::compute()."
+  },
+  {
+    "name": "Listener",
+    "kind": "Class",
+    "url": "class_Listener.html",
+    "desc": "World-space position, velocity, and orientation of the audio listener. forward/up use the same -Z-forward, +Y-up conv..."
+  },
+  {
+    "name": "Listener::basis",
+    "kind": "Method",
+    "url": "class_Listener.html#method_basis",
+    "desc": "Orthonormal basis (right, up, -forward) as columns."
+  },
+  {
+    "name": "Listener::set_from_transform",
+    "kind": "Method",
+    "url": "class_Listener.html#method_set_from_transform",
+    "desc": "Sets position/forward/up from a Transform's current world matrix. Main-thread only: Transform::get_world_matrix() mut..."
+  },
+  {
+    "name": "SpatialParams",
+    "kind": "Class",
+    "url": "class_SpatialParams.html",
+    "desc": "Per-source 3D audio parameters: where it is, how it attenuates, and which spatialization effects apply."
+  },
+  {
+    "name": "coopa::sfx::util",
+    "kind": "Namespace",
+    "url": "scope_coopa__sfx__util.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::util::db_to_linear",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__util.html#func_db_to_linear",
+    "desc": "Converts a decibel value to a linear amplitude multiplier."
+  },
+  {
+    "name": "coopa::sfx::util::linear_to_db",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__util.html#func_linear_to_db",
+    "desc": "Converts a linear amplitude multiplier to decibels."
+  },
+  {
+    "name": "coopa::sfx::util::ma_check",
+    "kind": "Function",
+    "url": "scope_coopa__sfx__util.html#func_ma_check",
+    "desc": "Checks an ma_result and throws std::runtime_error on failure."
+  },
+  {
+    "name": "Global Namespace",
+    "kind": "Namespace",
+    "url": "scope_Global_Namespace.html",
+    "desc": "Global C++ symbols."
+  },
+  {
+    "name": "coopa::sfx::dsp::Biquad::Coeffs",
+    "kind": "Class",
+    "url": "class_coopa__sfx__dsp__Biquad__Coeffs.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::mixer::VoicePool::Slot",
+    "kind": "Class",
+    "url": "class_coopa__sfx__mixer__VoicePool__Slot.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::mixer::VoicePool::Slot::Slot",
+    "kind": "Method",
+    "url": "class_coopa__sfx__mixer__VoicePool__Slot.html#method_Slot",
+    "desc": ""
+  },
+  {
+    "name": "coopa::sfx::core::AudioEngine::SpatialEntry",
+    "kind": "Class",
+    "url": "class_coopa__sfx__core__AudioEngine__SpatialEntry.html",
+    "desc": ""
+  }
+]

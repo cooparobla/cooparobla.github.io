@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixerBus - sfxcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">sfxcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx.html">
+                        <span class="badge">C++</span>coopa::sfx
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__collections.html">
+                        <span class="badge">C++</span>coopa::sfx::collections
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__core.html">
+                        <span class="badge">C++</span>coopa::sfx::core
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__data.html">
+                        <span class="badge">C++</span>coopa::sfx::data
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__dsp.html">
+                        <span class="badge">C++</span>coopa::sfx::dsp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__mixer.html">
+                        <span class="badge">C++</span>coopa::sfx::mixer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__spatial.html">
+                        <span class="badge">C++</span>coopa::sfx::spatial
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__sfx__util.html">
+                        <span class="badge">C++</span>coopa::sfx::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RingBuffer.html">
+                        <span class="badge">C++</span>RingBuffer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AudioDevice.html">
+                        <span class="badge">C++</span>AudioDevice
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AudioEngine.html">
+                        <span class="badge">C++</span>AudioEngine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DeviceConfig.html">
+                        <span class="badge">C++</span>DeviceConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_MixerBus.html">
+                        <span class="badge">C++</span>MixerBus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PlayParams.html">
+                        <span class="badge">C++</span>PlayParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_VoiceHandle.html">
+                        <span class="badge">C++</span>VoiceHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AudioClip.html">
+                        <span class="badge">C++</span>AudioClip
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AudioFormat.html">
+                        <span class="badge">C++</span>AudioFormat
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ClipImportSettings.html">
+                        <span class="badge">C++</span>ClipImportSettings
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Decoder.html">
+                        <span class="badge">C++</span>Decoder
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SampleLoop.html">
+                        <span class="badge">C++</span>SampleLoop
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SourceFormat.html">
+                        <span class="badge">C++</span>SourceFormat
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Biquad.html">
+                        <span class="badge">C++</span>Biquad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DelayLine.html">
+                        <span class="badge">C++</span>DelayLine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IEffect.html">
+                        <span class="badge">C++</span>IEffect
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_OnePoleLowpass.html">
+                        <span class="badge">C++</span>OnePoleLowpass
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Resampler.html">
+                        <span class="badge">C++</span>Resampler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Command.html">
+                        <span class="badge">C++</span>Command
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Event.html">
+                        <span class="badge">C++</span>Event
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Mixer.html">
+                        <span class="badge">C++</span>Mixer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_MixerBus.html">
+                        <span class="badge">C++</span>MixerBus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SourceRef.html">
+                        <span class="badge">C++</span>SourceRef
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Voice.html">
+                        <span class="badge">C++</span>Voice
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_VoiceHandle.html">
+                        <span class="badge">C++</span>VoiceHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_VoicePool.html">
+                        <span class="badge">C++</span>VoicePool
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AttenuationCurve.html">
+                        <span class="badge">C++</span>AttenuationCurve
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BinauralPanner.html">
+                        <span class="badge">C++</span>BinauralPanner
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EarParams.html">
+                        <span class="badge">C++</span>EarParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Listener.html">
+                        <span class="badge">C++</span>Listener
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SpatialParams.html">
+                        <span class="badge">C++</span>SpatialParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__sfx__dsp__Biquad__Coeffs.html">
+                        <span class="badge">C++</span>coopa::sfx::dsp::Biquad::Coeffs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__sfx__mixer__VoicePool__Slot.html">
+                        <span class="badge">C++</span>coopa::sfx::mixer::VoicePool::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__sfx__core__AudioEngine__SpatialEntry.html">
+                        <span class="badge">C++</span>coopa::sfx::core::AudioEngine::SpatialEntry
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; MixerBus
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            class
+        </span>
+    </div>
+    
+    <h1>class MixerBus</h1>
+    
+    
+    
+    
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/sfxcoopa/sfxcoopa/mixer/bus.h
+    </div>
+    
+    
+    
+    <div class="card docstring">
+        <p>One node of the mix graph. Voices write directly into a bus's own scratch buffer (via scratch()); the bus then recursively pulls in its children, runs its effect chain, and applies its own gain  so a bus always publishes an already gain-and-effect-applied result for whichever bus reads it next (its parent, or Mixer for the root).</p>
+<p>Solo is resolved globally and control-side via recompute_effective_mutes(): whenever any bus anywhere in the graph has solo() true, every bus that is not that bus, an ancestor of it, or a descendant of it becomes effectively muted for that render  computed once so the audio thread only ever reads the precomputed effective_mute() flag, never scans graph state itself.</p>
+<p>Non-copyable, non-movable: children_ store raw pointers to sibling MixerBus instances by address, which a copy or move would invalidate. Mixer owns all MixerBus instances behind stable-address unique_ptrs for exactly this reason.</p>
+    </div>
+    
+    
+    
+    <section>
+        <h2>Class Relationships</h2>
+        <div class="card mermaid-container" style="padding: 24px; display: flex; justify-content: center; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; position: relative; height: 400px;">
+            <div class="mermaid">
+                graph LR
+    Mixer --> MixerBus
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Constructors -->
+    
+    
+    
+    <!-- Methods -->
+    
+    
+    <section>
+        <h2>Methods</h2>
+        
+        <div class="card" id="method_MixerBus">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                MixerBus
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">MixerBus</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="n">MixerBus</span><span class="w"> </span><span class="o">*</span><span class="n">parent</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">name</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">index</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">parent</td>
+                        <td class="param-type">MixerBus *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_MixerBus">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                MixerBus
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">MixerBus</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">MixerBus</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_operator=">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                operator=
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">MixerBus</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">MixerBus</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">MixerBus &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_MixerBus">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                MixerBus
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">MixerBus</span><span class="p">(</span><span class="n">MixerBus</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_operator=">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                operator=
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">MixerBus</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="n">MixerBus</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="p">)</span><span class="o">=</span><span class="k">delete</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">MixerBus &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_name">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                name
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::string &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_index">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                index
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">uint32_t</span><span class="w"> </span><span class="n">index</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Stable index assigned at creation; commands address buses by this, never by name.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_parent">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                parent
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="n">MixerBus</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">parent</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">MixerBus *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_children">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                children
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">MixerBus</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">children</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::vector< MixerBus * > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_add_child">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                add_child
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">add_child</span><span class="p">(</span><span class="n">MixerBus</span><span class="w"> </span><span class="o">*</span><span class="n">child</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Links <code>child</code> under this bus. Called only by whoever builds the tree (Mixer::create_bus).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">child</td>
+                        <td class="param-type">MixerBus *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_volume">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                volume
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">volume</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Linear gain applied to this bus's own mix before it's read by its parent (or Mixer, for the root).</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_volume">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_volume
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_volume</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">linear</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">linear</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_volume_db">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                volume_db
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="n">volume_db</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_volume_db">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_volume_db
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_volume_db</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">db</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">db</td>
+                        <td class="param-type">float</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_mute">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                mute
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">mute</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_mute">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_mute
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_mute</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">m</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">m</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_solo">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                solo
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">solo</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_set_solo">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                set_solo
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">set_solo</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">s</span><span class="p">)</span>
+
+            </div>
+            
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">s</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_effective_mute">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">const</span> 
+                effective_mute
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">bool</span><span class="w"> </span><span class="n">effective_mute</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The control-side-computed flag the audio thread actually reads; see recompute_effective_mutes().</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">bool</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_add_effect">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                add_effect
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">add_effect</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">sfx</span><span class="o">::</span><span class="n">dsp</span><span class="o">::</span><span class="n">IEffect</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">effect</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Appends an effect to this bus's chain, run in append order.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">effect</td>
+                        <td class="param-type">std::unique_ptr< coopa::sfx::dsp::IEffect ></td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_prepare">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                prepare
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">prepare</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">sfx</span><span class="o">::</span><span class="n">data</span><span class="o">::</span><span class="n">AudioFormat</span><span class="w"> </span><span class="o">&amp;</span><span class="n">format</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">max_frames</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Allocates this bus's scratch buffer and prepares its effect chain.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">format</td>
+                        <td class="param-type">const coopa::sfx::data::AudioFormat &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">max_frames</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_scratch">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                scratch
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">float</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">scratch</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>This bus's scratch buffer  voices targeting this bus accumulate directly into it.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">float *</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="method_clear_scratch">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                clear_scratch
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">clear_scratch</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">frames</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Zeroes this bus's scratch buffer for a new render block. Must be called before voices render into it.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">frames</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_render">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                
+                
+                render
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">render</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">frames</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Depth-first post-order render: recursively renders and accumulates every child (each already gain/effect-applied by its own render()), runs this bus's own effect chain, then scales this bus's entire scratch buffer by its own gain (0 if effective_mute()).</p>
+<p>Assumes clear_scratch() plus any directly-assigned voices' output already populated this bus's scratch buffer for this block.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">frames</td>
+                        <td class="param-type">uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="method_recompute_effective_mutes">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">
+                <span class="badge" style="background-color: var(--border-color); color: var(--text-main);">static</span> 
+                
+                recompute_effective_mutes
+            </h3>
+            
+            <div class="signature-panel">
+                <span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">recompute_effective_mutes</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">MixerBus</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">all_buses</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Recomputes effective_mute() for every bus in <code>all_buses</code> (main-thread only). If any bus has solo() true, a bus is kept audible only if it <em>is</em> a soloed bus, is an ancestor of one (so the soloed signal still has a path up to the root), or is a descendant of one (soloing a bus means "this and everything under it")  every other bus becomes effectively muted. With no solo active anywhere, effective_mute() is just each bus's own mute() flag.</p>
+<p>A naive "mute everything that isn't itself soloed" rule is wrong here: it would also mute the soloed bus's own ancestors, silencing the very signal the solo was meant to isolate before it ever reaches the root.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">all_buses</td>
+                        <td class="param-type">const std::vector< MixerBus * > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+    </section>
+    
+    
+    <!-- Members -->
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

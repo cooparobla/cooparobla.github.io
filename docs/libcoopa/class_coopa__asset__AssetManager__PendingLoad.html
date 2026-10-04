@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopa::asset::AssetManager::PendingLoad - libcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">libcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__anim.html">
+                        <span class="badge">C++</span>coopa::anim
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset.html">
+                        <span class="badge">C++</span>coopa::asset
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__asset__detail.html">
+                        <span class="badge">C++</span>coopa::asset::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__collections.html">
+                        <span class="badge">C++</span>coopa::collections
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__debug.html">
+                        <span class="badge">C++</span>coopa::debug
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__debug__detail.html">
+                        <span class="badge">C++</span>coopa::debug::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__event.html">
+                        <span class="badge">C++</span>coopa::event
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__event__detail.html">
+                        <span class="badge">C++</span>coopa::event::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__input.html">
+                        <span class="badge">C++</span>coopa::input
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__item.html">
+                        <span class="badge">C++</span>coopa::item
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__job.html">
+                        <span class="badge">C++</span>coopa::job
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__job__detail.html">
+                        <span class="badge">C++</span>coopa::job::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__routine.html">
+                        <span class="badge">C++</span>coopa::routine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__routine__detail.html">
+                        <span class="badge">C++</span>coopa::routine::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene.html">
+                        <span class="badge">C++</span>coopa::scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__scene__detail.html">
+                        <span class="badge">C++</span>coopa::scene::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__stat.html">
+                        <span class="badge">C++</span>coopa::stat
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__util.html">
+                        <span class="badge">C++</span>coopa::util
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__yaml.html">
+                        <span class="badge">C++</span>coopa::yaml
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__yaml__detail.html">
+                        <span class="badge">C++</span>coopa::yaml::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_std.html">
+                        <span class="badge">C++</span>std
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_StringUtil.html">
+                        <span class="badge">C++</span>StringUtil
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimatedProperty.html">
+                        <span class="badge">C++</span>AnimatedProperty
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimatedPropertyRegistry.html">
+                        <span class="badge">C++</span>AnimatedPropertyRegistry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationClip.html">
+                        <span class="badge">C++</span>AnimationClip
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationClipLoader.html">
+                        <span class="badge">C++</span>AnimationClipLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationCurve.html">
+                        <span class="badge">C++</span>AnimationCurve
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationSystem.html">
+                        <span class="badge">C++</span>AnimationSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimationTrack.html">
+                        <span class="badge">C++</span>AnimationTrack
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Animator.html">
+                        <span class="badge">C++</span>Animator
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AnimatorState.html">
+                        <span class="badge">C++</span>AnimatorState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Keyframe.html">
+                        <span class="badge">C++</span>Keyframe
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralInputs.html">
+                        <span class="badge">C++</span>ProceduralInputs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralParams.html">
+                        <span class="badge">C++</span>ProceduralParams
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralTrack.html">
+                        <span class="badge">C++</span>ProceduralTrack
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ProceduralTrackRegistry.html">
+                        <span class="badge">C++</span>ProceduralTrackRegistry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetHandle.html">
+                        <span class="badge">C++</span>AssetHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetId.html">
+                        <span class="badge">C++</span>AssetId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetManager.html">
+                        <span class="badge">C++</span>AssetManager
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetSource.html">
+                        <span class="badge">C++</span>AssetSource
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IAssetLoader.html">
+                        <span class="badge">C++</span>IAssetLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LoadContext.html">
+                        <span class="badge">C++</span>LoadContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TypedAssetLoader.html">
+                        <span class="badge">C++</span>TypedAssetLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetSlot.html">
+                        <span class="badge">C++</span>AssetSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_YAMLMap.html">
+                        <span class="badge">C++</span>YAMLMap
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugBucket.html">
+                        <span class="badge">C++</span>DebugBucket
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugContext.html">
+                        <span class="badge">C++</span>DebugContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DebugManager.html">
+                        <span class="badge">C++</span>DebugManager
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Logger.html">
+                        <span class="badge">C++</span>Logger
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LogMessage.html">
+                        <span class="badge">C++</span>LogMessage
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Printer.html">
+                        <span class="badge">C++</span>Printer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Connection.html">
+                        <span class="badge">C++</span>Connection
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EventArgs.html">
+                        <span class="badge">C++</span>EventArgs
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EventBus.html">
+                        <span class="badge">C++</span>EventBus
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EventValue.html">
+                        <span class="badge">C++</span>EventValue
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ScopedConnection.html">
+                        <span class="badge">C++</span>ScopedConnection
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Signal.html">
+                        <span class="badge">C++</span>Signal
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SignalCore.html">
+                        <span class="badge">C++</span>SignalCore
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IInputBackend.html">
+                        <span class="badge">C++</span>IInputBackend
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Input.html">
+                        <span class="badge">C++</span>Input
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_InputMap.html">
+                        <span class="badge">C++</span>InputMap
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_KeyEvent.html">
+                        <span class="badge">C++</span>KeyEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MouseButtonEvent.html">
+                        <span class="badge">C++</span>MouseButtonEvent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Hotbar.html">
+                        <span class="badge">C++</span>Hotbar
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Inventory.html">
+                        <span class="badge">C++</span>Inventory
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemDatabase.html">
+                        <span class="badge">C++</span>ItemDatabase
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemDatabaseLoader.html">
+                        <span class="badge">C++</span>ItemDatabaseLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemDef.html">
+                        <span class="badge">C++</span>ItemDef
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemId.html">
+                        <span class="badge">C++</span>ItemId
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemStack.html">
+                        <span class="badge">C++</span>ItemStack
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CounterPool.html">
+                        <span class="badge">C++</span>CounterPool
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DependencyGraph.html">
+                        <span class="badge">C++</span>DependencyGraph
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Job.html">
+                        <span class="badge">C++</span>Job
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobContext.html">
+                        <span class="badge">C++</span>JobContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobEngine.html">
+                        <span class="badge">C++</span>JobEngine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobHandle.html">
+                        <span class="badge">C++</span>JobHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobNode.html">
+                        <span class="badge">C++</span>JobNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobNodeDefinition.html">
+                        <span class="badge">C++</span>JobNodeDefinition
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_JobScheduler.html">
+                        <span class="badge">C++</span>JobScheduler
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ParallelMap.html">
+                        <span class="badge">C++</span>ParallelMap
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ParallelQueue.html">
+                        <span class="badge">C++</span>ParallelQueue
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ParallelVector.html">
+                        <span class="badge">C++</span>ParallelVector
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PendingNode.html">
+                        <span class="badge">C++</span>PendingNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ScopedJobHandle.html">
+                        <span class="badge">C++</span>ScopedJobHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TaskWrapper.html">
+                        <span class="badge">C++</span>TaskWrapper
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Thread.html">
+                        <span class="badge">C++</span>Thread
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WaiterNode.html">
+                        <span class="badge">C++</span>WaiterNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_WorkStealingDeque.html">
+                        <span class="badge">C++</span>WorkStealingDeque
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Routine.html">
+                        <span class="badge">C++</span>Routine
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineHandle.html">
+                        <span class="badge">C++</span>RoutineHandle
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineRunner.html">
+                        <span class="badge">C++</span>RoutineRunner
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineScope.html">
+                        <span class="badge">C++</span>RoutineScope
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineSystem.html">
+                        <span class="badge">C++</span>RoutineSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_YieldInstruction.html">
+                        <span class="badge">C++</span>YieldInstruction
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutinePromise.html">
+                        <span class="badge">C++</span>RoutinePromise
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoutineState.html">
+                        <span class="badge">C++</span>RoutineState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RunnerCore.html">
+                        <span class="badge">C++</span>RunnerCore
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BehaviourSystem.html">
+                        <span class="badge">C++</span>BehaviourSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Component.html">
+                        <span class="badge">C++</span>Component
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FrameContext.html">
+                        <span class="badge">C++</span>FrameContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ISceneSystem.html">
+                        <span class="badge">C++</span>ISceneSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LateBehaviourSystem.html">
+                        <span class="badge">C++</span>LateBehaviourSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Scene.html">
+                        <span class="badge">C++</span>Scene
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneCommandBuffer.html">
+                        <span class="badge">C++</span>SceneCommandBuffer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneConfig.html">
+                        <span class="badge">C++</span>SceneConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneInheritance.html">
+                        <span class="badge">C++</span>SceneInheritance
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneLoader.html">
+                        <span class="badge">C++</span>SceneLoader
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneManager.html">
+                        <span class="badge">C++</span>SceneManager
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SceneObject.html">
+                        <span class="badge">C++</span>SceneObject
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransformComponent.html">
+                        <span class="badge">C++</span>TransformComponent
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TransformSystem.html">
+                        <span class="badge">C++</span>TransformSystem
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AddChildOp.html">
+                        <span class="badge">C++</span>AddChildOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AddRootObjectOp.html">
+                        <span class="badge">C++</span>AddRootObjectOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AttachComponentOp.html">
+                        <span class="badge">C++</span>AttachComponentOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CustomOp.html">
+                        <span class="badge">C++</span>CustomOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DestroyObjectOp.html">
+                        <span class="badge">C++</span>DestroyObjectOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_EmitOp.html">
+                        <span class="badge">C++</span>EmitOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RemoveComponentOp.html">
+                        <span class="badge">C++</span>RemoveComponentOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_SetActiveOp.html">
+                        <span class="badge">C++</span>SetActiveOp
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Resource.html">
+                        <span class="badge">C++</span>Resource
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_StatBlock.html">
+                        <span class="badge">C++</span>StatBlock
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Time.html">
+                        <span class="badge">C++</span>Time
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Transform.html">
+                        <span class="badge">C++</span>Transform
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DecoderEntry.html">
+                        <span class="badge">C++</span>DecoderEntry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_DecoderRegistry.html">
+                        <span class="badge">C++</span>DecoderRegistry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Emitter.html">
+                        <span class="badge">C++</span>Emitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__job__CounterPool__Allocation.html">
+                        <span class="badge">C++</span>coopa::job::CounterPool::Allocation
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__input__InputMap__AxisBinding.html">
+                        <span class="badge">C++</span>coopa::input::InputMap::AxisBinding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__Binding.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__input__InputMap__Binding.html">
+                        <span class="badge">C++</span>coopa::input::InputMap::Binding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__job__CounterPool__CounterSlot.html">
+                        <span class="badge">C++</span>coopa::job::CounterPool::CounterSlot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__event__Signal__Entry.html">
+                        <span class="badge">C++</span>coopa::event::Signal::Entry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__scene__SceneManager__Entry.html">
+                        <span class="badge">C++</span>coopa::scene::SceneManager::Entry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_FileUtil.html">
+                        <span class="badge">C++</span>FileUtil
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_IdUtil.html">
+                        <span class="badge">C++</span>IdUtil
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__Layer.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::Layer
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Mat4.html">
+                        <span class="badge">C++</span>Mat4
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MathUtil.html">
+                        <span class="badge">C++</span>MathUtil
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__scene__SceneLoader__ParseContext.html">
+                        <span class="badge">C++</span>coopa::scene::SceneLoader::ParseContext
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="class_coopa__asset__AssetManager__PendingLoad.html">
+                        <span class="badge">C++</span>coopa::asset::AssetManager::PendingLoad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__job__WorkStealingDeque__Slot.html">
+                        <span class="badge">C++</span>coopa::job::WorkStealingDeque::Slot
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__StateBinding.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::StateBinding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__anim__Animator__TrackRef.html">
+                        <span class="badge">C++</span>coopa::anim::Animator::TrackRef
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__input__InputMap__VectorBinding.html">
+                        <span class="badge">C++</span>coopa::input::InputMap::VectorBinding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_AssetId__.html">
+                        <span class="badge">C++</span>AssetId >
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ItemId__.html">
+                        <span class="badge">C++</span>ItemId >
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; coopa::asset::AssetManager::PendingLoad
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            class
+        </span>
+    </div>
+    
+    <h1>class coopa::asset::AssetManager::PendingLoad</h1>
+    
+    
+    
+    
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/libcoopa/coopa/asset/asset_manager.h
+    </div>
+    
+    
+    
+    <div class="card docstring">
+        <p>Bookkeeping for one in-flight load_async() call.</p>
+    </div>
+    
+    
+    
+    
+    <!-- Constructors -->
+    
+    
+    
+    <!-- Methods -->
+    
+    
+    
+    <!-- Members -->
+    
+    <section>
+        <h2>Attributes / Member Variables</h2>
+        <div class="card" style="padding: 0; overflow-x: auto;">
+            <table class="params-table" style="margin: 0;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">slot</td>
+                        <td class="param-type">detail::AssetSlot *</td>
+                        <td class="param-type" style="color: var(--text-muted);">nullptr</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">handle</td>
+                        <td class="param-type">coopa::job::JobHandle</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">decoded</td>
+                        <td class="param-type">std::shared_ptr< void ></td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td><p>Written by the worker; read only after handle.is_complete().</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">error</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td><p>Set by the worker on a decode() failure.</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">decode_failed</td>
+                        <td class="param-type">bool</td>
+                        <td class="param-type" style="color: var(--text-muted);">false</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">loader</td>
+                        <td class="param-type">IAssetLoader *</td>
+                        <td class="param-type" style="color: var(--text-muted);">nullptr</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">ctx</td>
+                        <td class="param-type">LoadContext</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

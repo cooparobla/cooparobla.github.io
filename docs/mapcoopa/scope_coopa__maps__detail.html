@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopa::maps::detail - mapcoopa Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">mapcoopa Docs</a>
+        </div>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Search symbols..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-section-title">Modules / Namespaces</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa.html">
+                        <span class="badge">C++</span>coopa
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__maps.html">
+                        <span class="badge">C++</span>coopa::maps
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="scope_coopa__maps__detail.html">
+                        <span class="badge">C++</span>coopa::maps::detail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_coopa__maps__detail__sort_impl.html">
+                        <span class="badge">C++</span>coopa::maps::detail::sort_impl
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="scope_Global_Namespace.html">
+                        <span class="badge">C++</span>Global Namespace
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+            <div class="nav-section-title">Classes</div>
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_BiomePalette.html">
+                        <span class="badge">C++</span>BiomePalette
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CaveConfig.html">
+                        <span class="badge">C++</span>CaveConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CaveNode.html">
+                        <span class="badge">C++</span>CaveNode
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CavePassage.html">
+                        <span class="badge">C++</span>CavePassage
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_CellGeometry.html">
+                        <span class="badge">C++</span>CellGeometry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ChannelSegment.html">
+                        <span class="badge">C++</span>ChannelSegment
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ConfigLoadResult.html">
+                        <span class="badge">C++</span>ConfigLoadResult
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_HeightField.html">
+                        <span class="badge">C++</span>HeightField
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Image.html">
+                        <span class="badge">C++</span>Image
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_LandmarkConfig.html">
+                        <span class="badge">C++</span>LandmarkConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Language.html">
+                        <span class="badge">C++</span>Language
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapBuilding.html">
+                        <span class="badge">C++</span>MapBuilding
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapCave.html">
+                        <span class="badge">C++</span>MapCave
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapCenter.html">
+                        <span class="badge">C++</span>MapCenter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapConfig.html">
+                        <span class="badge">C++</span>MapConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapCorner.html">
+                        <span class="badge">C++</span>MapCorner
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapCountry.html">
+                        <span class="badge">C++</span>MapCountry
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapEdge.html">
+                        <span class="badge">C++</span>MapEdge
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapExporter.html">
+                        <span class="badge">C++</span>MapExporter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapGenerator.html">
+                        <span class="badge">C++</span>MapGenerator
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapGraph.html">
+                        <span class="badge">C++</span>MapGraph
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapLandmark.html">
+                        <span class="badge">C++</span>MapLandmark
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapLayers.html">
+                        <span class="badge">C++</span>MapLayers
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapPlaza.html">
+                        <span class="badge">C++</span>MapPlaza
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapPoint.html">
+                        <span class="badge">C++</span>MapPoint
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapRegion.html">
+                        <span class="badge">C++</span>MapRegion
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapRiver.html">
+                        <span class="badge">C++</span>MapRiver
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapRoad.html">
+                        <span class="badge">C++</span>MapRoad
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapStreet.html">
+                        <span class="badge">C++</span>MapStreet
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapTask.html">
+                        <span class="badge">C++</span>MapTask
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapTaskState.html">
+                        <span class="badge">C++</span>MapTaskState
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_MapTown.html">
+                        <span class="badge">C++</span>MapTown
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_Noise.html">
+                        <span class="badge">C++</span>Noise
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_NoiseConfig.html">
+                        <span class="badge">C++</span>NoiseConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassBiomes.html">
+                        <span class="badge">C++</span>PassBiomes
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassCaves.html">
+                        <span class="badge">C++</span>PassCaves
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassCoast.html">
+                        <span class="badge">C++</span>PassCoast
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassElevation.html">
+                        <span class="badge">C++</span>PassElevation
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassLandmarks.html">
+                        <span class="badge">C++</span>PassLandmarks
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassMoisture.html">
+                        <span class="badge">C++</span>PassMoisture
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassNoisyEdges.html">
+                        <span class="badge">C++</span>PassNoisyEdges
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassRegions.html">
+                        <span class="badge">C++</span>PassRegions
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassRivers.html">
+                        <span class="badge">C++</span>PassRivers
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassRoads.html">
+                        <span class="badge">C++</span>PassRoads
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassTemperature.html">
+                        <span class="badge">C++</span>PassTemperature
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassTowns.html">
+                        <span class="badge">C++</span>PassTowns
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassValleys.html">
+                        <span class="badge">C++</span>PassValleys
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_PassWater.html">
+                        <span class="badge">C++</span>PassWater
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RegionConfig.html">
+                        <span class="badge">C++</span>RegionConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RenderSlice.html">
+                        <span class="badge">C++</span>RenderSlice
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RiverChannels.html">
+                        <span class="badge">C++</span>RiverChannels
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RiverSurfaces.html">
+                        <span class="badge">C++</span>RiverSurfaces
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RoadConfig.html">
+                        <span class="badge">C++</span>RoadConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_RowBand.html">
+                        <span class="badge">C++</span>RowBand
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShapeBlob.html">
+                        <span class="badge">C++</span>ShapeBlob
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShapeConfig.html">
+                        <span class="badge">C++</span>ShapeConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_ShapeField.html">
+                        <span class="badge">C++</span>ShapeField
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TerrainDetail.html">
+                        <span class="badge">C++</span>TerrainDetail
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_TownConfig.html">
+                        <span class="badge">C++</span>TownConfig
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UniformIntDistribution.html">
+                        <span class="badge">C++</span>UniformIntDistribution
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_UniformRealDistribution.html">
+                        <span class="badge">C++</span>UniformRealDistribution
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__MapLayers__BlendField.html">
+                        <span class="badge">C++</span>coopa::maps::MapLayers::BlendField
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__MapLayers__CaveDepthRange.html">
+                        <span class="badge">C++</span>coopa::maps::MapLayers::CaveDepthRange
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__RiverChannels__Cell.html">
+                        <span class="badge">C++</span>coopa::maps::RiverChannels::Cell
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__PassRoads__CheapestFirst.html">
+                        <span class="badge">C++</span>coopa::maps::PassRoads::CheapestFirst
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__PassCaves__Head.html">
+                        <span class="badge">C++</span>coopa::maps::PassCaves::Head
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__PassTowns__KeepOut.html">
+                        <span class="badge">C++</span>coopa::maps::PassTowns::KeepOut
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__PassTowns__Layout.html">
+                        <span class="badge">C++</span>coopa::maps::PassTowns::Layout
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__MapLayers__Outlines.html">
+                        <span class="badge">C++</span>coopa::maps::MapLayers::Outlines
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__PassRoads__State.html">
+                        <span class="badge">C++</span>coopa::maps::PassRoads::State
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="class_coopa__maps__PassRoads__Step.html">
+                        <span class="badge">C++</span>coopa::maps::PassRoads::Step
+                    </a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+        
+        <div class="sidebar-footer">
+            <span style="font-size: 0.75rem; color: var(--text-muted);">coopadocs v0.1.0</span>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <header class="header">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--text-muted);">
+                Documentation &raquo; coopa::maps::detail
+            </div>
+        </header>
+        
+        <main class="content">
+            
+<article>
+    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+        <span class="badge">C++</span>
+        <span style="font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">
+            Namespace
+        </span>
+    </div>
+    
+    <h1>coopa::maps::detail</h1>
+    
+    
+    <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; font-family: var(--font-mono);">
+        Defined in: /Users/tblaney/Code/toyengine/libs/mapcoopa/coopa/maps/map_data.h
+    </div>
+    
+    
+    
+    
+    <!-- Subscopes -->
+    
+    <section>
+        <h2>Subscopes</h2>
+        <div class="card">
+            <ul style="list-style: none;">
+                
+                <li style="margin-bottom: 12px;">
+                    <a href="scope_coopa__maps__detail__sort_impl.html" style="font-weight: 600; font-size: 1.1rem;">coopa::maps::detail::sort_impl</a>
+                    <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">
+                        
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    
+    
+    <!-- Classes -->
+    
+    
+    <!-- Functions -->
+    
+    <section>
+        <h2>Functions</h2>
+        
+        <div class="card" id="func_river_ground_under">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">river_ground_under</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">double</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">river_ground_under</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">MapGraph</span><span class="w"> </span><span class="o">&amp;</span><span class="n">graph</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">MapRiver</span><span class="w"> </span><span class="o">&amp;</span><span class="n">river</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">segment</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">MapConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TerrainDetail</span><span class="w"> </span><span class="o">&amp;</span><span class="n">detail</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">RiverChannels</span><span class="w"> </span><span class="o">*</span><span class="n">channels</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The highest drawn ground under one segment's stroke, in height units.</p>
+<p>Sampled over the whole footprint the renderer paints  both endpoints stepped past by the reach, the midpoint, and each offset to either side  because a single sample at the centre can sit under the ground at an end or at the edge of the stroke.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">graph</td>
+                        <td class="param-type">const MapGraph &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The map being measured.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">river</td>
+                        <td class="param-type">const MapRiver &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The watercourse.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">segment</td>
+                        <td class="param-type">std::size_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Which segment of it.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const MapConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Supplies the widths and the vertical scale.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">detail</td>
+                        <td class="param-type">const TerrainDetail &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The detail field, so the sheet follows a roughened surface.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">channels</td>
+                        <td class="param-type">const RiverChannels *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The carved channels, or null to sample the ground uncut.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">double</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_river_freeboard">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">river_freeboard</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">double</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">river_freeboard</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">MapGraph</span><span class="w"> </span><span class="o">&amp;</span><span class="n">graph</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">MapRiver</span><span class="w"> </span><span class="o">&amp;</span><span class="n">river</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">segment</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">MapConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Freeboard of the sheet above the bed over one segment, in height units.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">graph</td>
+                        <td class="param-type">const MapGraph &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">river</td>
+                        <td class="param-type">const MapRiver &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">segment</td>
+                        <td class="param-type">std::size_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">config</td>
+                        <td class="param-type">const MapConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">double</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_river_binding">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">river_binding</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">river_binding</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">floors</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Forces one river's profile to fall, and to clear the ground beneath it.</p>
+<p>Both at once, which is why the floor is taken as a <em>suffix</em> maximum first: to be non-increasing and still above the ground everywhere, a segment has to clear not only its own ground but every piece of ground downstream of it. Applying the two rules in turn instead makes them fight  lowering for monotonicity pushes the sheet into a hillside, raising it off the hillside breaks monotonicity.</p>
+<p>Holding the water up behind high ground is also the right picture: that is what a natural weir does, rather than the river cutting through it.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">floors</td>
+                        <td class="param-type">const std::vector< double > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The ground plus freeboard each segment must clear.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< double ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_settle_river_profile">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">settle_river_profile</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">settle_river_profile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">binding</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">surface</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Forces one river's profile to fall, given the bound it may not go under.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">binding</td>
+                        <td class="param-type">const std::vector< double > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The suffix-maximum floor, from `river_binding()`.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">surface</td>
+                        <td class="param-type">std::vector< double > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The profile to settle, in place.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_id_sequence">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">id_sequence</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">IdType</span><span class="o">&gt;</span>
+<span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">id_sequence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">IdType</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ids</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Builds a YAML sequence node from a list of integer ids.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">ids</td>
+                        <td class="param-type">const std::vector< IdType > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">fkyaml::node</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_read_id_sequence">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">read_id_sequence</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">IdType</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">IdType</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">read_id_sequence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parent</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">key</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Reads a YAML sequence of integers back into a list of ids.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">parent</td>
+                        <td class="param-type">const fkyaml::node &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const char *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< IdType ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_scalar_sequence">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">scalar_sequence</h3>
+            
+            <div class="signature-panel">
+                <span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">scalar_sequence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">values</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Builds a YAML sequence node from a list of doubles.</p>
+<p>The scalar counterpart of <code>point_sequence()</code>, for the per-point arrays a cave passage carries alongside its centreline.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">values</td>
+                        <td class="param-type">const std::vector< double > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">fkyaml::node</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_read_scalar_sequence">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">read_scalar_sequence</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">read_scalar_sequence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parent</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">key</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Reads a YAML sequence of numbers back into a list of doubles.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">parent</td>
+                        <td class="param-type">const fkyaml::node &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const char *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< double ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_point_sequence">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">point_sequence</h3>
+            
+            <div class="signature-panel">
+                <span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">point_sequence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">MapPoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">points</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Builds a YAML sequence of <code>[x, y]</code> pairs from a polyline.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">points</td>
+                        <td class="param-type">const std::vector< MapPoint > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">fkyaml::node</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_read_point_sequence">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">read_point_sequence</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">MapPoint</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">read_point_sequence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parent</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">key</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Reads a YAML sequence of <code>[x, y]</code> pairs back into a polyline.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">parent</td>
+                        <td class="param-type">const fkyaml::node &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const char *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< MapPoint ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_read_or">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">read_or</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">T</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">read_or</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">fallback</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Reads a key if present and convertible, otherwise returns the fallback.</p>
+<p>Tolerates a null node, which is what an empty string round-trips to: fkYAML emits <code>key:</code> with nothing after it and parses that back as null, not as "". Without this guard one unnamed place would abort a whole map load.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">node</td>
+                        <td class="param-type">const fkyaml::node &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const char *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">fallback</td>
+                        <td class="param-type">T</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">T</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_noise_to_node">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">noise_to_node</h3>
+            
+            <div class="signature-panel">
+                <span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">noise_to_node</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">NoiseConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">noise</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Encodes a <code>NoiseConfig</code> as a mapping node.</p>
+<p>Factored out because <code>MapConfig</code> carries two noise fields  the island field and the temperature variation field  and eight keys written twice by hand is eight chances for the second copy to fall behind the first.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">noise</td>
+                        <td class="param-type">const NoiseConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The field parameters to encode.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">fkyaml::node</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_noise_from_node">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">noise_from_node</h3>
+            
+            <div class="signature-panel">
+                <span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">noise_from_node</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">fkyaml</span><span class="o">::</span><span class="n">node</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parent</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">NoiseConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">noise</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Reads a <code>NoiseConfig</code> back from a parent mapping, if the key is present.</p>
+<p>The two enum-typed fields go through <code>int</code>: they are FastNoiseLite's own enums and the document stores the underlying value, not a name.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">parent</td>
+                        <td class="param-type">const fkyaml::node &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The mapping that may contain the block.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">key</td>
+                        <td class="param-type">const char *</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The block's key, e.g. `"noise_island"`.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">noise</td>
+                        <td class="param-type">NoiseConfig &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>Updated in place; any absent key keeps its current value.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_name_onset_pool">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">name_onset_pool</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">name_onset_pool</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>The full inventory a <code>Language</code> draws its own subset from.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::vector< std::string > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_name_nucleus_pool">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">name_nucleus_pool</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">name_nucleus_pool</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Vowel cores available to a language.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::vector< std::string > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_name_coda_pool">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">name_coda_pool</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">name_coda_pool</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Closing consonant clusters available to a language.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::vector< std::string > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_name_prefix_pool">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">name_prefix_pool</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">name_prefix_pool</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Leading particles a language may attach.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::vector< std::string > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_name_suffix_pool">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">name_suffix_pool</h3>
+            
+            <div class="signature-panel">
+                <span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">name_suffix_pool</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Trailing particles a language may attach.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">const std::vector< std::string > &</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_draw_subset">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">draw_subset</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">draw_subset</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pool</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">count</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rng</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Draws <code>count</code> distinct entries from <code>pool</code>.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">pool</td>
+                        <td class="param-type">const std::vector< std::string > &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">count</td>
+                        <td class="param-type">std::size_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rng</td>
+                        <td class="param-type">std::mt19937 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::vector< std::string ></code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_capitalise">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">capitalise</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">capitalise</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">text</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Uppercases the first character of a name.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">text</td>
+                        <td class="param-type">std::string</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::string</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_generate_name_once">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">generate_name_once</h3>
+            
+            <div class="signature-panel">
+                <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">generate_name_once</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Language</span><span class="w"> </span><span class="o">&amp;</span><span class="n">language</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rng</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Generates one name without the length guard.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">language</td>
+                        <td class="param-type">const Language &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The phonology to build from.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">rng</td>
+                        <td class="param-type">std::mt19937 &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td>The caller's seeded generator.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::string</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_require_32bit_generator">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">require_32bit_generator</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">G</span><span class="o">&gt;</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">require_32bit_generator</span><span class="p">()</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Requires a generator producing exactly 32 bits, [0, 2^32 - 1].</p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        <div class="card" id="func_lemire_downscale">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">lemire_downscale</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">G</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">lemire_downscale</span><span class="p">(</span><span class="n">G</span><span class="w"> </span><span class="o">&amp;</span><span class="n">g</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">range</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>Lemire's nearly-divisionless downscale of one 32-bit draw to [0, range).</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">g</td>
+                        <td class="param-type">G &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="param-name">range</td>
+                        <td class="param-type">std::uint32_t</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">std::uint32_t</code>
+            </div>
+            
+        </div>
+        
+        <div class="card" id="func_canonical">
+            <h3 style="margin-top: 0; font-family: var(--font-mono);">canonical</h3>
+            
+            <div class="signature-panel">
+                <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Real</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span><span class="w"> </span><span class="nc">G</span><span class="o">&gt;</span>
+<span class="n">Real</span><span class="w"> </span><span class="n">coopa</span><span class="o">::</span><span class="n">maps</span><span class="o">::</span><span class="n">detail</span><span class="o">::</span><span class="n">canonical</span><span class="p">(</span><span class="n">G</span><span class="w"> </span><span class="o">&amp;</span><span class="n">g</span><span class="p">)</span>
+
+            </div>
+            
+            
+            <div class="docstring" style="margin-top: 16px; margin-bottom: 16px;">
+                <p>A double/float in [0, 1) from whole 32-bit draws, as libstdc++'s generate_canonical.</p>
+            </div>
+            
+            
+            
+            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-top: 16px;">Parameters</h4>
+            <table class="params-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="param-name">g</td>
+                        <td class="param-type">G &</td>
+                        <td class="param-type" style="color: var(--text-muted);"></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            
+            
+            <div style="margin-top: 16px; font-size: 0.9rem;">
+                <strong>Returns:</strong> <code style="color: var(--primary-color);">Real</code>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+</article>
+
+        </main>
+    </div>
+    
+    <script src="search.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function enablePanZoom(container) {
+            let isDragging = false;
+            let startX, startY;
+            let translateX = 0, translateY = 0;
+            let scale = 1;
+            
+            const svg = container.querySelector('svg');
+            if (!svg) return;
+            
+            svg.style.transformOrigin = 'center center';
+            svg.style.transition = 'transform 0.1s ease-out';
+            container.style.overflow = 'hidden';
+            container.style.position = 'relative';
+            container.style.cursor = 'grab';
+            
+            function updateTransform() {
+                svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                container.style.cursor = 'grabbing';
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                svg.style.transition = 'none';
+                e.preventDefault();
+            });
+            
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateTransform();
+            });
+            
+            window.addEventListener('mouseup', () => {
+                isDragging = false;
+                container.style.cursor = 'grab';
+            });
+            
+            container.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                svg.style.transition = 'none';
+                const zoomIntensity = 0.15;
+                if (e.deltaY < 0) {
+                    scale *= (1 + zoomIntensity);
+                } else {
+                    scale /= (1 + zoomIntensity);
+                }
+                scale = Math.min(Math.max(0.1, scale), 8);
+                updateTransform();
+            });
+            
+            const controls = document.createElement('div');
+            controls.className = 'mermaid-controls';
+            controls.style.cssText = 'position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 10;';
+            
+            const btnStyle = 'width: 28px; height: 28px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-main); border-radius: 4px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.85rem; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.05); user-select: none;';
+            
+            const btnIn = document.createElement('button');
+            btnIn.innerHTML = '➕';
+            btnIn.style.cssText = btnStyle;
+            btnIn.title = 'Zoom In';
+            btnIn.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.min(scale + 0.2, 5);
+                updateTransform();
+            });
+            
+            const btnOut = document.createElement('button');
+            btnOut.innerHTML = '➖';
+            btnOut.style.cssText = btnStyle;
+            btnOut.title = 'Zoom Out';
+            btnOut.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = Math.max(scale - 0.2, 0.1);
+                updateTransform();
+            });
+            
+            const btnReset = document.createElement('button');
+            btnReset.innerHTML = '🔄';
+            btnReset.style.cssText = btnStyle;
+            btnReset.title = 'Reset';
+            btnReset.addEventListener('click', () => {
+                svg.style.transition = 'transform 0.2s ease-out';
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateTransform();
+            });
+            
+            controls.appendChild(btnIn);
+            controls.appendChild(btnOut);
+            controls.appendChild(btnReset);
+            container.appendChild(controls);
+        }
+
+        window.addEventListener('load', () => {
+            const containers = document.querySelectorAll('.mermaid-container');
+            containers.forEach(container => {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.addedNodes.length > 0) {
+                            const svg = container.querySelector('svg');
+                            if (svg) {
+                                enablePanZoom(container);
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                observer.observe(container, { childList: true, subtree: true });
+                
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    enablePanZoom(container);
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check localStorage
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

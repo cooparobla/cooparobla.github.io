@@ -1,0 +1,2954 @@
+[
+  {
+    "name": "coopa",
+    "kind": "Namespace",
+    "url": "scope_coopa.html",
+    "desc": ""
+  },
+  {
+    "name": "coopa::scene",
+    "kind": "Namespace",
+    "url": "scope_coopa__scene.html",
+    "desc": ""
+  },
+  {
+    "name": "Global Namespace",
+    "kind": "Namespace",
+    "url": "scope_Global_Namespace.html",
+    "desc": "Global C++ symbols."
+  },
+  {
+    "name": "toy::water::WaterSystem::BuoyantEntry",
+    "kind": "Class",
+    "url": "class_toy__water__WaterSystem__BuoyantEntry.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshBatchKey::Camera",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__MeshBatchKey__Camera.html",
+    "desc": "Every scalar the camera passes push (GBuffer / capture constants). Compared bytewise."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::ContactShadowKnobs",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__ContactShadowKnobs.html",
+    "desc": "The contact march's runtime knobs as of last frame. A change to any of them invalidates the accumulated history, so a..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::ContactShadowKnobs::operator==",
+    "kind": "Method",
+    "url": "class_toy__render__PixelRenderPipeline__ContactShadowKnobs.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::DofFocus",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__DofFocus.html",
+    "desc": "resolve_dof_focus_()'s pair of outputs: where the focal plane sits and how wide a band around it is forced sharp. Bot..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::FrameContext",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__FrameContext.html",
+    "desc": "Everything render() resolves before recording, shared by the three record_* stages so none of them re-derives it."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::FrameScene",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__FrameScene.html",
+    "desc": "Every component this frame's render() reads, gathered by ONE hierarchy walk. Scene::get_components() / find_first_com..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshBatch",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__MeshBatch.html",
+    "desc": "One instanced draw: instance_count renderers that share a mesh, an LOD level and every material input the pass reads,..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshBatchKey",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__MeshBatchKey.html",
+    "desc": "The per-renderer inputs a batch must agree on, precomputed once per frame so the per-view sorts compare plain data. T..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshDrawStats",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__MeshDrawStats.html",
+    "desc": "Draw calls / instances / triangles recorded for meshes in one frame, by pass family. Accumulated across frames for En..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshGather",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__MeshGather.html",
+    "desc": "This frame's MeshRenderers, their world matrices/bounds and LOD, and the frustum-culled, batched draw list of every v..."
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshGather::material",
+    "kind": "Method",
+    "url": "class_toy__render__PixelRenderPipeline__MeshGather.html#method_material",
+    "desc": "The material the item draws with (its renderer's material for its slot)."
+  },
+  {
+    "name": "toy::render::passes::ContactShadowPass::Params",
+    "kind": "Class",
+    "url": "class_toy__render__passes__ContactShadowPass__Params.html",
+    "desc": "Per-frame parameters. Mirrors the temporal half of SsrPass::Params, since the resolve is literally the same shader."
+  },
+  {
+    "name": "toy::render::passes::UnderwaterPass::Params",
+    "kind": "Class",
+    "url": "class_toy__render__passes__UnderwaterPass__Params.html",
+    "desc": "Matches underwater.frag's push-constant block byte for byte."
+  },
+  {
+    "name": "toy::render::passes::DebugLinePass::PushConstants",
+    "kind": "Class",
+    "url": "class_toy__render__passes__DebugLinePass__PushConstants.html",
+    "desc": "Matches debug_line.vert/.frag's push block."
+  },
+  {
+    "name": "toy::render::passes::TransparentPreviewPass::PushConstants",
+    "kind": "Class",
+    "url": "class_toy__render__passes__TransparentPreviewPass__PushConstants.html",
+    "desc": "transparent_preview.frag's push block; the first 64 bytes are pbr.vert's."
+  },
+  {
+    "name": "toy::render::WaterFrameState::Ripple",
+    "kind": "Class",
+    "url": "class_toy__render__WaterFrameState__Ripple.html",
+    "desc": "An expanding ring (see toy::water::WaterSystem::Ripple), already aged."
+  },
+  {
+    "name": "toy::water::WaterSystem::Ripple",
+    "kind": "Class",
+    "url": "class_toy__water__WaterSystem__Ripple.html",
+    "desc": "One expanding ring on a water surface. See emit_ripples_() for the sources."
+  },
+  {
+    "name": "toy::water::WaterSystem::RippleEmitter",
+    "kind": "Class",
+    "url": "class_toy__water__WaterSystem__RippleEmitter.html",
+    "desc": "Per-Rigidbody ripple bookkeeping, keyed by component, pruned every frame."
+  },
+  {
+    "name": "toy::render::FrameProfile::Row",
+    "kind": "Class",
+    "url": "class_toy__render__FrameProfile__Row.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::MeshBatchKey::Shadow",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__MeshBatchKey__Shadow.html",
+    "desc": "The subset the shadow passes push so casters that differ only in colour still share one instanced shadow draw."
+  },
+  {
+    "name": "toy::world::TileMeshLibrary::SideGeometry",
+    "kind": "Class",
+    "url": "class_toy__world__TileMeshLibrary__SideGeometry.html",
+    "desc": "One face's geometry, already rotated out of canonical space onto that face. Positions still span the unit cube [0,1]^..."
+  },
+  {
+    "name": "toy::world::TileMeshLibrary::SideGeometry::empty",
+    "kind": "Method",
+    "url": "class_toy__world__TileMeshLibrary__SideGeometry.html#method_empty",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::GpuProfiler::Slot",
+    "kind": "Class",
+    "url": "class_toy__render__GpuProfiler__Slot.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::PixelRenderPipeline::SpotShadowCaster",
+    "kind": "Class",
+    "url": "class_toy__render__PixelRenderPipeline__SpotShadowCaster.html",
+    "desc": "A shadow-casting SpotLightComponent plus its index into update_lights_()'s spots array (get_components() order), or {..."
+  },
+  {
+    "name": "toy::water::WaterBody::TileSlot",
+    "kind": "Class",
+    "url": "class_toy__water__WaterBody__TileSlot.html",
+    "desc": "A published render tile of a multi-tile body: a runtime child object."
+  },
+  {
+    "name": "toy::water::WaterSystem::UnderwaterInfo",
+    "kind": "Class",
+    "url": "class_toy__water__WaterSystem__UnderwaterInfo.html",
+    "desc": "Where p sits relative to the water: see underwater_at()."
+  },
+  {
+    "name": "toy::render::passes::DebugLinePass::Vertex",
+    "kind": "Class",
+    "url": "class_toy__render__passes__DebugLinePass__Vertex.html",
+    "desc": "Matches VertexLayout below exactly RGB32_Sfloat position + RGBA8_Unorm color."
+  },
+  {
+    "name": "toy::water::WaveSet::Wave",
+    "kind": "Class",
+    "url": "class_toy__water__WaveSet__Wave.html",
+    "desc": ""
+  },
+  {
+    "name": "std",
+    "kind": "Namespace",
+    "url": "scope_std.html",
+    "desc": ""
+  },
+  {
+    "name": "ChunkCoord >",
+    "kind": "Class",
+    "url": "class_ChunkCoord__.html",
+    "desc": "Hash for toy::world::ChunkCoord, so a chunk map can be an unordered_map."
+  },
+  {
+    "name": "ChunkCoord >::operator()",
+    "kind": "Method",
+    "url": "class_ChunkCoord__.html#method_operator()",
+    "desc": ""
+  },
+  {
+    "name": "toy",
+    "kind": "Namespace",
+    "url": "scope_toy.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::core",
+    "kind": "Namespace",
+    "url": "scope_toy__core.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::core::logo_shapes",
+    "kind": "Function",
+    "url": "scope_toy__core.html#func_logo_shapes",
+    "desc": "The logo, back to front."
+  },
+  {
+    "name": "toy::core::rasterize_logo",
+    "kind": "Function",
+    "url": "scope_toy__core.html#func_rasterize_logo",
+    "desc": "The logo as size x size straight-alpha RGBA8 pixels (row 0 at the top), antialiased with 4x4 supersampling."
+  },
+  {
+    "name": "toy::core::install_caml_codec",
+    "kind": "Function",
+    "url": "scope_toy__core.html#func_install_caml_codec",
+    "desc": "Registers the caml decoder with coopa::yaml. Idempotent; call before loading any config."
+  },
+  {
+    "name": "toy::core::encode_caml_text",
+    "kind": "Function",
+    "url": "scope_toy__core.html#func_encode_caml_text",
+    "desc": "Encodes YAML text to .caml bytes with the cached key."
+  },
+  {
+    "name": "toy::core::encode_caml_file",
+    "kind": "Function",
+    "url": "scope_toy__core.html#func_encode_caml_file",
+    "desc": "Encodes a YAML (or already-.caml) file to a .caml file."
+  },
+  {
+    "name": "toy::core::parse_render_quality",
+    "kind": "Function",
+    "url": "scope_toy__core.html#func_parse_render_quality",
+    "desc": "Parses one quality-tier string from config.yaml. Accepts low, med, medium, high and ultra; anything else falls back t..."
+  },
+  {
+    "name": "AppConfig",
+    "kind": "Class",
+    "url": "class_AppConfig.html",
+    "desc": "Aggregated runtime configuration for toyengine."
+  },
+  {
+    "name": "AppConfig::load",
+    "kind": "Method",
+    "url": "class_AppConfig.html#method_load",
+    "desc": "Loads application configuration from a YAML file."
+  },
+  {
+    "name": "AppConfig::from_node",
+    "kind": "Method",
+    "url": "class_AppConfig.html#method_from_node",
+    "desc": "Parses an already-loaded config document AppConfig::load() minus the file read. The editor uses this to apply an edit..."
+  },
+  {
+    "name": "Engine",
+    "kind": "Class",
+    "url": "class_Engine.html",
+    "desc": "Top-level owner of the window, Vulkan device, assets, scene, and the render loop. Not copyable or movable every gfxco..."
+  },
+  {
+    "name": "Engine::Engine",
+    "kind": "Method",
+    "url": "class_Engine.html#method_Engine",
+    "desc": "Constructs the window and every core Vulkan/asset/scene object."
+  },
+  {
+    "name": "Engine::Engine",
+    "kind": "Method",
+    "url": "class_Engine.html#method_Engine",
+    "desc": "Constructs an Engine embedded per options (project root, edit mode, ...)."
+  },
+  {
+    "name": "Engine::load_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_load_scene",
+    "desc": "Replaces every managed scene with the one at path, fully set up: per-scene systems installed, every asset load draine..."
+  },
+  {
+    "name": "Engine::set_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_scene",
+    "desc": "Replaces every managed scene with an already-built one (e.g. from SceneLoader::load_from_node()) and sets it up exact..."
+  },
+  {
+    "name": "Engine::push_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_push_scene",
+    "desc": "Adds an already-built scene alongside the current ones and makes it active, set up like load_scene(). The previously ..."
+  },
+  {
+    "name": "Engine::remove_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_remove_scene",
+    "desc": "Destroys a scene added by push_scene() (or any managed scene)."
+  },
+  {
+    "name": "Engine::activate_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_activate_scene",
+    "desc": "Makes a managed scene the active, updating one; every other scene stops updating."
+  },
+  {
+    "name": "Engine::set_edit_mode",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_edit_mode",
+    "desc": "Edit mode on/off. In edit mode the active scene does not simulate (only systems with ISceneSystem::runs_in_edit_mode(..."
+  },
+  {
+    "name": "Engine::edit_mode",
+    "kind": "Method",
+    "url": "class_Engine.html#method_edit_mode",
+    "desc": ""
+  },
+  {
+    "name": "Engine::set_game_input_focus",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_game_input_focus",
+    "desc": "Gives the game the keyboard and mouse, or takes them away, while it keeps running. A standalone run always has focus ..."
+  },
+  {
+    "name": "Engine::game_input_focus",
+    "kind": "Method",
+    "url": "class_Engine.html#method_game_input_focus",
+    "desc": ""
+  },
+  {
+    "name": "Engine::set_frame_hooks",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_frame_hooks",
+    "desc": "Installs the host callbacks tick() runs; see FrameHooks."
+  },
+  {
+    "name": "Engine::set_overlay_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_overlay_scene",
+    "desc": "A second scene ticked and drawn on top of the active one the editor's UI. It is updated after the active scene, simul..."
+  },
+  {
+    "name": "Engine::set_display_region",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_display_region",
+    "desc": "Confines the rendered scene to a window-pixel rect (an editor viewport panel), letterboxed inside it. nullopt restore..."
+  },
+  {
+    "name": "Engine::display_rect",
+    "kind": "Method",
+    "url": "class_Engine.html#method_display_rect",
+    "desc": "The window-pixel rect the low-res scene image currently lands in."
+  },
+  {
+    "name": "Engine::viewport_ray",
+    "kind": "Method",
+    "url": "class_Engine.html#method_viewport_ray",
+    "desc": "World-space ray through a window-pixel position, through the current display rect and the main camera. Direction is n..."
+  },
+  {
+    "name": "Engine::world_to_window",
+    "kind": "Method",
+    "url": "class_Engine.html#method_world_to_window",
+    "desc": "Projects a world point to window pixels through the main camera and display rect."
+  },
+  {
+    "name": "Engine::pipeline",
+    "kind": "Method",
+    "url": "class_Engine.html#method_pipeline",
+    "desc": ""
+  },
+  {
+    "name": "Engine::frame_slot",
+    "kind": "Method",
+    "url": "class_Engine.html#method_frame_slot",
+    "desc": "The frame-in-flight slot this tick records into for a host re-uploading a dynamic mesh (Mesh::update_vertices) the wa..."
+  },
+  {
+    "name": "Engine::assets",
+    "kind": "Method",
+    "url": "class_Engine.html#method_assets",
+    "desc": ""
+  },
+  {
+    "name": "Engine::scene_manager",
+    "kind": "Method",
+    "url": "class_Engine.html#method_scene_manager",
+    "desc": ""
+  },
+  {
+    "name": "Engine::config",
+    "kind": "Method",
+    "url": "class_Engine.html#method_config",
+    "desc": ""
+  },
+  {
+    "name": "Engine::project_root",
+    "kind": "Method",
+    "url": "class_Engine.html#method_project_root",
+    "desc": ""
+  },
+  {
+    "name": "Engine::has_scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_has_scene",
+    "desc": ""
+  },
+  {
+    "name": "Engine::window_extent",
+    "kind": "Method",
+    "url": "class_Engine.html#method_window_extent",
+    "desc": "Window size in swapchain pixels."
+  },
+  {
+    "name": "Engine::cursor_scale",
+    "kind": "Method",
+    "url": "class_Engine.html#method_cursor_scale",
+    "desc": "Framebuffer pixels per Input cursor unit. Always 1: gfxcoopa's Window already converts GLFW's screen-point cursor pos..."
+  },
+  {
+    "name": "Engine::queue_input",
+    "kind": "Method",
+    "url": "class_Engine.html#method_queue_input",
+    "desc": "Queues fn to run against the live Input right after the next poll synthetic clicks, keys and scrolls for tests and sc..."
+  },
+  {
+    "name": "Engine::display_scale",
+    "kind": "Method",
+    "url": "class_Engine.html#method_display_scale",
+    "desc": "Framebuffer pixels per screen point for this display, whether or not the window is visible what a tool UI scales by s..."
+  },
+  {
+    "name": "Engine::cursor_pixels",
+    "kind": "Method",
+    "url": "class_Engine.html#method_cursor_pixels",
+    "desc": "The cursor in swapchain pixels (honours set_cursor_override())."
+  },
+  {
+    "name": "Engine::wait_idle",
+    "kind": "Method",
+    "url": "class_Engine.html#method_wait_idle",
+    "desc": "Blocks until the GPU is idle (before destroying a resource a frame may reference)."
+  },
+  {
+    "name": "Engine::~Engine",
+    "kind": "Method",
+    "url": "class_Engine.html#method_~Engine",
+    "desc": ""
+  },
+  {
+    "name": "Engine::Engine",
+    "kind": "Method",
+    "url": "class_Engine.html#method_Engine",
+    "desc": ""
+  },
+  {
+    "name": "Engine::operator=",
+    "kind": "Method",
+    "url": "class_Engine.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "Engine::run",
+    "kind": "Method",
+    "url": "class_Engine.html#method_run",
+    "desc": "Runs the main loop until the window closes or a frame limit is hit. Honors two headless-verification env vars (matchi..."
+  },
+  {
+    "name": "Engine::render_config",
+    "kind": "Method",
+    "url": "class_Engine.html#method_render_config",
+    "desc": "MUTABLE access to the live render config, for changing parameters at runtime. Forwards to PixelRenderPipeline::render..."
+  },
+  {
+    "name": "Engine::set_cursor_override",
+    "kind": "Method",
+    "url": "class_Engine.html#method_set_cursor_override",
+    "desc": "Pins the pointer to a fixed window-pixel position from now on, exactly as CURSOR_POS=\",\" does but settable on a runni..."
+  },
+  {
+    "name": "Engine::clear_cursor_override",
+    "kind": "Method",
+    "url": "class_Engine.html#method_clear_cursor_override",
+    "desc": "Releases set_cursor_override(), handing the pointer back to the real mouse."
+  },
+  {
+    "name": "Engine::capture_image",
+    "kind": "Method",
+    "url": "class_Engine.html#method_capture_image",
+    "desc": "Reads the current offscreen buffer back into host memory, as tightly-packed row-major RGBA8. The in-memory half of sa..."
+  },
+  {
+    "name": "Engine::save_screenshot",
+    "kind": "Method",
+    "url": "class_Engine.html#method_save_screenshot",
+    "desc": "Writes the current offscreen buffer to a PNG."
+  },
+  {
+    "name": "Engine::capture_sequence_frame_",
+    "kind": "Method",
+    "url": "class_Engine.html#method_capture_sequence_frame_",
+    "desc": "Writes the just-rendered frame to output/seq/frame_%04d.png, for CAPTURE_FRAMES."
+  },
+  {
+    "name": "Engine::tick",
+    "kind": "Method",
+    "url": "class_Engine.html#method_tick",
+    "desc": "Advances and renders exactly one frame."
+  },
+  {
+    "name": "Engine::sync_water_render_state_",
+    "kind": "Method",
+    "url": "class_Engine.html#method_sync_water_render_state_",
+    "desc": "Hands the renderer this frame's water state: the live ripple rings (aged) and, if the main camera is below a water su..."
+  },
+  {
+    "name": "Engine::update_fill_extent_",
+    "kind": "Method",
+    "url": "class_Engine.html#method_update_fill_extent_",
+    "desc": "resolution_mode: fill: keeps the render target's aspect equal to the display region's (the window, or an editor viewp..."
+  },
+  {
+    "name": "Engine::rebuild_pipeline",
+    "kind": "Method",
+    "url": "class_Engine.html#method_rebuild_pipeline",
+    "desc": "Rebuilds the render pipeline with cfg (e.g. a new render size), carrying over everything the Engine configured on the..."
+  },
+  {
+    "name": "Engine::frame_dt_",
+    "kind": "Method",
+    "url": "class_Engine.html#method_frame_dt_",
+    "desc": "Delta time for this tick's asset/scene updates: FIXED_DT override if set, else the real wall-clock ctx_.delta_time()...."
+  },
+  {
+    "name": "Engine::window",
+    "kind": "Method",
+    "url": "class_Engine.html#method_window",
+    "desc": ""
+  },
+  {
+    "name": "Engine::device",
+    "kind": "Method",
+    "url": "class_Engine.html#method_device",
+    "desc": ""
+  },
+  {
+    "name": "Engine::allocator",
+    "kind": "Method",
+    "url": "class_Engine.html#method_allocator",
+    "desc": ""
+  },
+  {
+    "name": "Engine::command_pool",
+    "kind": "Method",
+    "url": "class_Engine.html#method_command_pool",
+    "desc": ""
+  },
+  {
+    "name": "Engine::input",
+    "kind": "Method",
+    "url": "class_Engine.html#method_input",
+    "desc": ""
+  },
+  {
+    "name": "Engine::spawn",
+    "kind": "Method",
+    "url": "class_Engine.html#method_spawn",
+    "desc": "Spawns an object asset (objects/crate) into the active scene at position, started and ready the runtime half of objec..."
+  },
+  {
+    "name": "Engine::scene",
+    "kind": "Method",
+    "url": "class_Engine.html#method_scene",
+    "desc": "The active scene for physics-focused headless tests and gameplay code that needs to reach a system (e.g. scene().find..."
+  },
+  {
+    "name": "Engine::input_state",
+    "kind": "Method",
+    "url": "class_Engine.html#method_input_state",
+    "desc": "The raw per-frame keyboard/mouse state edges, deltas, held time for game code that wants more than input()'s named ac..."
+  },
+  {
+    "name": "Engine::delta_time",
+    "kind": "Method",
+    "url": "class_Engine.html#method_delta_time",
+    "desc": ""
+  },
+  {
+    "name": "Engine::elapsed",
+    "kind": "Method",
+    "url": "class_Engine.html#method_elapsed",
+    "desc": ""
+  },
+  {
+    "name": "Engine::frame_count",
+    "kind": "Method",
+    "url": "class_Engine.html#method_frame_count",
+    "desc": ""
+  },
+  {
+    "name": "Engine::water_settings_for_",
+    "kind": "Method",
+    "url": "class_Engine.html#method_water_settings_for_",
+    "desc": "render::RenderQuality (config.yaml's water_quality) as the water module's tier."
+  },
+  {
+    "name": "EngineOptions",
+    "kind": "Class",
+    "url": "class_EngineOptions.html",
+    "desc": "How an Engine is embedded: by the game (the defaults) or by a tool like the editor."
+  },
+  {
+    "name": "FrameHooks",
+    "kind": "Class",
+    "url": "class_FrameHooks.html",
+    "desc": "Optional callbacks a host (the editor) runs at fixed points inside tick()."
+  },
+  {
+    "name": "JobsConfig",
+    "kind": "Class",
+    "url": "class_JobsConfig.html",
+    "desc": "Job-system sizing and the per-frame parallel-dispatch threshold."
+  },
+  {
+    "name": "LogoShape",
+    "kind": "Class",
+    "url": "class_LogoShape.html",
+    "desc": "One flat shape of the logo, in a unit square (x right, y down)."
+  },
+  {
+    "name": "OutputConfig",
+    "kind": "Class",
+    "url": "class_OutputConfig.html",
+    "desc": "Headless frame export configuration."
+  },
+  {
+    "name": "WindowConfig",
+    "kind": "Class",
+    "url": "class_WindowConfig.html",
+    "desc": "Window and presentation settings."
+  },
+  {
+    "name": "toy::core::detail",
+    "kind": "Namespace",
+    "url": "scope_toy__core__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::core::detail::hex_rgb",
+    "kind": "Function",
+    "url": "scope_toy__core__detail.html#func_hex_rgb",
+    "desc": ""
+  },
+  {
+    "name": "toy::core::detail::logo_inside",
+    "kind": "Function",
+    "url": "scope_toy__core__detail.html#func_logo_inside",
+    "desc": "Whether p (unit square) is inside shape sh."
+  },
+  {
+    "name": "toy::core::detail::caml_key_state",
+    "kind": "Function",
+    "url": "scope_toy__core__detail.html#func_caml_key_state",
+    "desc": ""
+  },
+  {
+    "name": "toy::core::detail::default_caml_passphrase",
+    "kind": "Function",
+    "url": "scope_toy__core__detail.html#func_default_caml_passphrase",
+    "desc": "TOY_CAML_KEY, or caml's default passphrase."
+  },
+  {
+    "name": "toy::core::detail::caml_key",
+    "kind": "Function",
+    "url": "scope_toy__core__detail.html#func_caml_key",
+    "desc": "The cached 32-byte key for passphrase, derived on first use or when it changes."
+  },
+  {
+    "name": "CamlKeyState",
+    "kind": "Class",
+    "url": "class_CamlKeyState.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::render",
+    "kind": "Namespace",
+    "url": "scope_toy__render.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::scope_name",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_scope_name",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::scope_name",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_scope_name",
+    "desc": ""
+  },
+  {
+    "name": "toy::render::pack_gpu_color",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_pack_gpu_color",
+    "desc": "Converts physxcoopa::debug::DebugLine's 0xRRGGBBAA color (most significant byte = R) into the little-endian vertex-bu..."
+  },
+  {
+    "name": "toy::render::compute_render_extent",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_render_extent",
+    "desc": "Derives the low-resolution render target dimensions from config."
+  },
+  {
+    "name": "toy::render::compute_letterbox",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_letterbox",
+    "desc": "Computes the centred, integer-scaled letterbox rect for upscaling. scale = floor(min(sw/rw, sh/rh)), clamped to a min..."
+  },
+  {
+    "name": "toy::render::compute_fit",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_fit",
+    "desc": "Computes a fractional, aspect-preserving best-fit destination rect. scale = min(sw/rw, sh/rh), kept fractional (no in..."
+  },
+  {
+    "name": "toy::render::compute_display_rect",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_display_rect",
+    "desc": "Computes the final upscale's destination rect, per config.upscale_mode. \"integer\" (compute_letterbox()) snaps to a wh..."
+  },
+  {
+    "name": "toy::render::compute_pixel_density",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_pixel_density",
+    "desc": "Computes the world-space units per render-pixel used for camera snapping. Only meaningful under an orthographic proje..."
+  },
+  {
+    "name": "toy::render::compute_shadow_normal_bias",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_shadow_normal_bias",
+    "desc": "The directional shadow's normal-offset bias, in WORLD units, for this frame's fit. Normal-offset shadows: before proj..."
+  },
+  {
+    "name": "toy::render::compute_cascade_splits",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_cascade_splits",
+    "desc": "Practical split scheme (Zhang et al.): a lambda blend of the logarithmic and uniform cascade distributions. The logar..."
+  },
+  {
+    "name": "toy::render::compute_dir_shadow_fit_slice",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_dir_shadow_fit_slice",
+    "desc": "Fits an orthographic light-space box to a bounding sphere of one SLICE of the camera's view frustum, with texel-snapp..."
+  },
+  {
+    "name": "toy::render::compute_dir_shadow_fit",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_dir_shadow_fit",
+    "desc": "The single-cascade fit: one box over the whole [near_clip, shadow_distance] range, i.e. compute_dir_shadow_fit_slice(..."
+  },
+  {
+    "name": "toy::render::cascade_atlas_grid",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_cascade_atlas_grid",
+    "desc": "The atlas grid a cascade count uses: grid_x tiles per row, grid_y rows. 1 -&gt; 1x1 (literally today's single map), 2..."
+  },
+  {
+    "name": "toy::render::cascade_atlas_tile",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_cascade_atlas_tile",
+    "desc": "Cascade index's tile rect in atlas uv, for the grid cascade_count implies."
+  },
+  {
+    "name": "toy::render::compute_sdf_clip_rect",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_compute_sdf_clip_rect",
+    "desc": "Projects a world AABB's 8 corners into NDC via view_proj, returning the enclosing rectangle the screen-space (pre-ups..."
+  },
+  {
+    "name": "toy::render::sdf_clip_rect_to_pixels",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_sdf_clip_rect_to_pixels",
+    "desc": "Converts an NDC rect (see compute_sdf_clip_rect()) to a pixel scissor rect in the low-resolution render target's own ..."
+  },
+  {
+    "name": "toy::render::view_space_depth",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_view_space_depth",
+    "desc": "View-space depth (metres along the camera's forward axis) of a world point. view follows this engine's usual conventi..."
+  },
+  {
+    "name": "toy::render::view_depth_half_extent",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_view_depth_half_extent",
+    "desc": "Half the extent of a transformed object-space AABB along the camera's forward axis. The standard \"project an oriented..."
+  },
+  {
+    "name": "toy::render::world_bounds_center",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_world_bounds_center",
+    "desc": "World-space centre of an object-space AABB under a model matrix. The companion to view_depth_half_extent(): a mesh's ..."
+  },
+  {
+    "name": "toy::render::exp_smooth_toward",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_exp_smooth_toward",
+    "desc": "One frame of framerate-independent exponential easing toward target. Same 1 - exp(-rate * dt) form as CameraControlle..."
+  },
+  {
+    "name": "toy::render::parse_debug_view",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_parse_debug_view",
+    "desc": "Parses debug_view's YAML string into a DebugView, defaulting to Off. Unlike an unrecognized YAML key (silently ignore..."
+  },
+  {
+    "name": "toy::render::debug_view_is_channel",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_debug_view_is_channel",
+    "desc": "True for every DebugView drawn by PixelRenderPipeline's debug_view_pass_ i.e. every value except Off, Dof, Volumetric..."
+  },
+  {
+    "name": "toy::render::debug_view_is_editor_shading",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_debug_view_is_editor_shading",
+    "desc": "The editor's viewport shading modes (Solid / Wireframe / MaterialPreview): drawn by the channel pass, but meant to be..."
+  },
+  {
+    "name": "toy::render::world_aabb",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_world_aabb",
+    "desc": "Object-space AABB [lo, hi] under an affine model, as the tightest world AABB enclosing the transformed box (Arvo's me..."
+  },
+  {
+    "name": "toy::render::screen_height_fraction",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_screen_height_fraction",
+    "desc": "Projected height of a bounding sphere as a fraction of the viewport height. 1.0 = the sphere spans the full screen he..."
+  },
+  {
+    "name": "toy::render::projected_texels",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_projected_texels",
+    "desc": "Approximate diameter, in texels, of a bounding sphere drawn into a square shadow map. Works directly on a combined li..."
+  },
+  {
+    "name": "toy::render::select_lod",
+    "kind": "Function",
+    "url": "scope_toy__render.html#func_select_lod",
+    "desc": "Picks the LOD level for an object size (screen_height_fraction) big. Levels are ordered coarse-ward: level i is used ..."
+  },
+  {
+    "name": "CascadeSplits",
+    "kind": "Class",
+    "url": "class_CascadeSplits.html",
+    "desc": "The view-space depth boundaries of a cascaded shadow map's slices. Entry i is the FAR edge of cascade i; the near edg..."
+  },
+  {
+    "name": "CascadeTile",
+    "kind": "Class",
+    "url": "class_CascadeTile.html",
+    "desc": "Where one cascade lives in the shadow atlas, in [0,1] ATLAS uv."
+  },
+  {
+    "name": "CpuTimer",
+    "kind": "Class",
+    "url": "class_CpuTimer.html",
+    "desc": "RAII CPU timer: adds its lifetime to scope of the profile's current frame. A null profile makes it a no-op, so call s..."
+  },
+  {
+    "name": "CpuTimer::CpuTimer",
+    "kind": "Method",
+    "url": "class_CpuTimer.html#method_CpuTimer",
+    "desc": ""
+  },
+  {
+    "name": "CpuTimer::~CpuTimer",
+    "kind": "Method",
+    "url": "class_CpuTimer.html#method_~CpuTimer",
+    "desc": ""
+  },
+  {
+    "name": "CpuTimer::CpuTimer",
+    "kind": "Method",
+    "url": "class_CpuTimer.html#method_CpuTimer",
+    "desc": ""
+  },
+  {
+    "name": "CpuTimer::operator=",
+    "kind": "Method",
+    "url": "class_CpuTimer.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "DebugLine",
+    "kind": "Class",
+    "url": "class_DebugLine.html",
+    "desc": "One world-space line segment. color must already be packed in vertex-buffer byte order (low byte = R, matching Format..."
+  },
+  {
+    "name": "DebugViewPushConstants",
+    "kind": "Class",
+    "url": "class_DebugViewPushConstants.html",
+    "desc": "Matches debug_view.frag's DebugViewParams push-constant block (48 bytes). All plain scalars (int32_t + float), same a..."
+  },
+  {
+    "name": "DirShadowFit",
+    "kind": "Class",
+    "url": "class_DirShadowFit.html",
+    "desc": "compute_dir_shadow_fit()'s result: the light-space matrix to render the shadow map with, and the world size of one of..."
+  },
+  {
+    "name": "ForwardGlobals",
+    "kind": "Class",
+    "url": "class_ForwardGlobals.html",
+    "desc": "std140-aligned per-frame globals for transparent.frag: the lighting and indirect/SSR terms, plus two refraction vec4s."
+  },
+  {
+    "name": "ForwardGlobalsData",
+    "kind": "Class",
+    "url": "class_ForwardGlobalsData.html",
+    "desc": "Owns, per frame-in-flight slot, the ForwardGlobals UBO and its bound-once descriptor set. Usage: fill globals() then ..."
+  },
+  {
+    "name": "ForwardGlobalsData::ForwardGlobalsData",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_ForwardGlobalsData",
+    "desc": ""
+  },
+  {
+    "name": "ForwardGlobalsData::ForwardGlobalsData",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_ForwardGlobalsData",
+    "desc": ""
+  },
+  {
+    "name": "ForwardGlobalsData::operator=",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "ForwardGlobalsData::begin",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_begin",
+    "desc": "Records this frame's slot call once per frame before globals()/upload()."
+  },
+  {
+    "name": "ForwardGlobalsData::globals",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_globals",
+    "desc": "Mutable access to this frame's globals fill then upload()."
+  },
+  {
+    "name": "ForwardGlobalsData::upload",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_upload",
+    "desc": "Uploads this frame's globals to the slot most recently begin()'d."
+  },
+  {
+    "name": "ForwardGlobalsData::current_set",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_current_set",
+    "desc": "The descriptor set bound once at construction for the slot most recently begin()'d. Bound at every mesh transparent d..."
+  },
+  {
+    "name": "ForwardGlobalsData::layout",
+    "kind": "Method",
+    "url": "class_ForwardGlobalsData.html#method_layout",
+    "desc": "The layout every set() shares for building a pipeline's descriptor_layouts list."
+  },
+  {
+    "name": "FrameProfile",
+    "kind": "Class",
+    "url": "class_FrameProfile.html",
+    "desc": "Collects per-frame timings, writes them to CSV, and summarises them."
+  },
+  {
+    "name": "FrameProfile::FrameProfile",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_FrameProfile",
+    "desc": ""
+  },
+  {
+    "name": "FrameProfile::~FrameProfile",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_~FrameProfile",
+    "desc": ""
+  },
+  {
+    "name": "FrameProfile::path",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_path",
+    "desc": ""
+  },
+  {
+    "name": "FrameProfile::ok",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_ok",
+    "desc": ""
+  },
+  {
+    "name": "FrameProfile::begin_frame",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_begin_frame",
+    "desc": "Starts frame frame (call at the top of each tick). Closes the previous frame's CPU half, whose cpu.frame is the time ..."
+  },
+  {
+    "name": "FrameProfile::current_frame",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_current_frame",
+    "desc": ""
+  },
+  {
+    "name": "FrameProfile::add_cpu",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_add_cpu",
+    "desc": "Adds ms to a CPU scope of the current frame (scopes may be entered more than once)."
+  },
+  {
+    "name": "FrameProfile::set_gpu",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_set_gpu",
+    "desc": "Records a completed frame's GPU timings (from GpuProfiler::collect)."
+  },
+  {
+    "name": "FrameProfile::prune",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_prune",
+    "desc": "Drops rows that never got their GPU half (a skipped/resized frame) once they are well behind the current frame, so th..."
+  },
+  {
+    "name": "FrameProfile::print_summary",
+    "kind": "Method",
+    "url": "class_FrameProfile.html#method_print_summary",
+    "desc": "Writes the end-of-run summary to stdout. Incomplete trailing frames are not included."
+  },
+  {
+    "name": "Frustum",
+    "kind": "Class",
+    "url": "class_Frustum.html",
+    "desc": "The six clip planes of a view-projection matrix, normalized, pointing inward. Gribb-Hartmann extraction for a [0, 1] ..."
+  },
+  {
+    "name": "Frustum::from_matrix",
+    "kind": "Method",
+    "url": "class_Frustum.html#method_from_matrix",
+    "desc": ""
+  },
+  {
+    "name": "Frustum::intersects",
+    "kind": "Method",
+    "url": "class_Frustum.html#method_intersects",
+    "desc": "True unless the box lies entirely outside at least one plane (the p-vertex test). Conservative: a box straddling a fr..."
+  },
+  {
+    "name": "GpuProfiler",
+    "kind": "Class",
+    "url": "class_GpuProfiler.html",
+    "desc": ""
+  },
+  {
+    "name": "GpuProfiler::GpuProfiler",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_GpuProfiler",
+    "desc": ""
+  },
+  {
+    "name": "GpuProfiler::~GpuProfiler",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_~GpuProfiler",
+    "desc": ""
+  },
+  {
+    "name": "GpuProfiler::GpuProfiler",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_GpuProfiler",
+    "desc": ""
+  },
+  {
+    "name": "GpuProfiler::operator=",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "GpuProfiler::enabled",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_enabled",
+    "desc": ""
+  },
+  {
+    "name": "GpuProfiler::collect",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_collect",
+    "desc": "Reads back slot's previous frame, if it recorded one. Call once the slot's fence has signalled (PixelRenderPipeline::..."
+  },
+  {
+    "name": "GpuProfiler::begin_frame",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_begin_frame",
+    "desc": "Starts slot's timestamps for profile frame frame. First thing in the command buffer."
+  },
+  {
+    "name": "GpuProfiler::mark",
+    "kind": "Method",
+    "url": "class_GpuProfiler.html#method_mark",
+    "desc": "Closes a scope: the GPU time since the previous mark is attributed to scope. Must be recorded outside any render pass."
+  },
+  {
+    "name": "InstanceStream",
+    "kind": "Class",
+    "url": "class_InstanceStream.html",
+    "desc": "Uploads one glm::mat4 per renderable into a per-frame-in-flight vertex buffer, bound at the G-buffer pipeline's insta..."
+  },
+  {
+    "name": "InstanceStream::InstanceStream",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_InstanceStream",
+    "desc": ""
+  },
+  {
+    "name": "InstanceStream::InstanceStream",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_InstanceStream",
+    "desc": ""
+  },
+  {
+    "name": "InstanceStream::operator=",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "InstanceStream::begin",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_begin",
+    "desc": "Drops last frame's pending transforms. Call once per frame before any add()."
+  },
+  {
+    "name": "InstanceStream::add",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_add",
+    "desc": "Appends one instance transform."
+  },
+  {
+    "name": "InstanceStream::size",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_size",
+    "desc": "Number of transforms added since begin() the next add()'s index."
+  },
+  {
+    "name": "InstanceStream::upload",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_upload",
+    "desc": "Uploads all instances added since begin() to this frame's buffer slot, first growing the slot's buffer (to the next p..."
+  },
+  {
+    "name": "InstanceStream::buffer",
+    "kind": "Method",
+    "url": "class_InstanceStream.html#method_buffer",
+    "desc": "The current frame slot's buffer bind at slot 1 before drawing."
+  },
+  {
+    "name": "LetterboxRect",
+    "kind": "Class",
+    "url": "class_LetterboxRect.html",
+    "desc": "A centred, integer-scaled viewport rect within the swapchain."
+  },
+  {
+    "name": "LodThreshold",
+    "kind": "Class",
+    "url": "class_LodThreshold.html",
+    "desc": "One LOD level's switch threshold. Level 0 is always the full-detail mesh."
+  },
+  {
+    "name": "PixelLightingPushConstants",
+    "kind": "Class",
+    "url": "class_PixelLightingPushConstants.html",
+    "desc": "Matches pixel_lighting.frag's PixelParams push-constant block (96 bytes). This engine's own cel-shading tuning. gfxco..."
+  },
+  {
+    "name": "PixelRect",
+    "kind": "Class",
+    "url": "class_PixelRect.html",
+    "desc": "An inclusive pixel rectangle, in the low-resolution render target's own pixel space."
+  },
+  {
+    "name": "PixelRenderConfig",
+    "kind": "Class",
+    "url": "class_PixelRenderConfig.html",
+    "desc": "Configuration for PixelRenderPipeline: internal resolution, upscaling, banded lighting, hard shadows, and the pixel-a..."
+  },
+  {
+    "name": "PixelRenderConfig::apply_quality_presets",
+    "kind": "Method",
+    "url": "class_PixelRenderConfig.html#method_apply_quality_presets",
+    "desc": "Overwrites every preset-covered field from the *_quality tiers above. Called by AppConfig::load() after the quality k..."
+  },
+  {
+    "name": "PixelRenderPipeline",
+    "kind": "Class",
+    "url": "class_PixelRenderPipeline.html",
+    "desc": "Renders a scene through the low-resolution deferred pixel-art frame graph and upscales it into the swapchain. Not cop..."
+  },
+  {
+    "name": "PixelRenderPipeline::PixelRenderPipeline",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_PixelRenderPipeline",
+    "desc": ""
+  },
+  {
+    "name": "PixelRenderPipeline::PixelRenderPipeline",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_PixelRenderPipeline",
+    "desc": ""
+  },
+  {
+    "name": "PixelRenderPipeline::operator=",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "PixelRenderPipeline::set_job_engine",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_set_job_engine",
+    "desc": "Installs the JobEngine render()'s per-frame gathers may dispatch to."
+  },
+  {
+    "name": "PixelRenderPipeline::set_parallel_threshold",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_set_parallel_threshold",
+    "desc": "Sets the minimum element count before a gather dispatches jobs instead of running serially see should_parallelize_()'..."
+  },
+  {
+    "name": "PixelRenderPipeline::debug_lines",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_debug_lines",
+    "desc": "This frame's physics debug-draw lines fill it (typically from PhysicsWorld::debug_draw(), see debug_line_pass.h's fil..."
+  },
+  {
+    "name": "PixelRenderPipeline::set_display_region",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_set_display_region",
+    "desc": "Confines the scene image to a window-pixel rect (an editor viewport panel); the image is letterboxed/fit inside it ex..."
+  },
+  {
+    "name": "PixelRenderPipeline::display_region",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_display_region",
+    "desc": ""
+  },
+  {
+    "name": "PixelRenderPipeline::display_rect_for",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_display_rect_for",
+    "desc": "The window-pixel rect the scene image lands in for a swapchain of sw x sh."
+  },
+  {
+    "name": "PixelRenderPipeline::set_overlay_scene",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_set_overlay_scene",
+    "desc": "A second scene whose screen-space canvases draw over the main scene's (the editor UI). Null removes it. Needs screen_..."
+  },
+  {
+    "name": "PixelRenderPipeline::world_ui_white_view",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_world_ui_white_view",
+    "desc": "world_ui_pass_'s 1x1 white texture view, for seeding a world canvas's DrawList::set_default_texture() or a default-co..."
+  },
+  {
+    "name": "PixelRenderPipeline::render_width",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_render_width",
+    "desc": "Low-resolution render width in pixels."
+  },
+  {
+    "name": "PixelRenderPipeline::render_height",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_render_height",
+    "desc": "Low-resolution render height in pixels."
+  },
+  {
+    "name": "PixelRenderPipeline::low_res_color_image",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_low_res_color_image",
+    "desc": "The final low-resolution LDR color image, for pixel-accurate screenshots: aa_target_'s result once config_.aa_mode !=..."
+  },
+  {
+    "name": "PixelRenderPipeline::final_color_image",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_final_color_image",
+    "desc": "The full-window image actually presented: the post-processed scene with both UI layers composited over it, letterbox ..."
+  },
+  {
+    "name": "PixelRenderPipeline::screen_ui_white_view",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_screen_ui_white_view",
+    "desc": "The screen-space UI pass's default white texture, for seeding a screen canvas's DrawList::set_default_texture(). Empt..."
+  },
+  {
+    "name": "PixelRenderPipeline::set_water_state",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_set_water_state",
+    "desc": "Hands over this frame's water state ripple rings for the water shader and the underwater parameters for UnderwaterPas..."
+  },
+  {
+    "name": "PixelRenderPipeline::water_state",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_water_state",
+    "desc": ""
+  },
+  {
+    "name": "PixelRenderPipeline::underwater_active",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_underwater_active",
+    "desc": "True when UnderwaterPass exists and is applying the underwater look this frame."
+  },
+  {
+    "name": "PixelRenderPipeline::validate_material_shaders",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_validate_material_shaders",
+    "desc": "Validates every loaded MeshRenderer/SdfRenderer material's shader field against config_.surface_shaders, throwing on ..."
+  },
+  {
+    "name": "PixelRenderPipeline::render_config",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_render_config",
+    "desc": "Read-only access to the live render config."
+  },
+  {
+    "name": "PixelRenderPipeline::set_profiler",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_set_profiler",
+    "desc": "Turns on profiling mode: CPU phase timers record into profile, and GPU timestamp queries time each feature's passes (..."
+  },
+  {
+    "name": "PixelRenderPipeline::mesh_draw_stats_summary",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_mesh_draw_stats_summary",
+    "desc": "Per-frame mesh draw averages since startup MeshRenderers, how many the camera sees, and draw calls / instances / tria..."
+  },
+  {
+    "name": "PixelRenderPipeline::render_config_mut",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_render_config_mut",
+    "desc": "MUTABLE access to the live render config, for changing parameters at runtime. Most parameters are re-read from config..."
+  },
+  {
+    "name": "PixelRenderPipeline::apply_live_config",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_apply_live_config",
+    "desc": "Applies a whole config to the live pipeline, skipping startup-fixed fields. The bulk counterpart to render_config_mut..."
+  },
+  {
+    "name": "PixelRenderPipeline::render",
+    "kind": "Method",
+    "url": "class_PixelRenderPipeline.html#method_render",
+    "desc": "Renders one frame of the given scene."
+  },
+  {
+    "name": "RenderExtent",
+    "kind": "Class",
+    "url": "class_RenderExtent.html",
+    "desc": "A low-resolution render target's (width, height) in pixels."
+  },
+  {
+    "name": "SdfClipRect",
+    "kind": "Class",
+    "url": "class_SdfClipRect.html",
+    "desc": "An SdfRenderer's world AABB projected into NDC by the active camera's view-proj matrix."
+  },
+  {
+    "name": "SdfDrawItem",
+    "kind": "Class",
+    "url": "class_SdfDrawItem.html",
+    "desc": "One SdfRenderer gathered this frame: its index into the SdfData SSBO, which draw list it belongs to, and the world/sc..."
+  },
+  {
+    "name": "ShadowFitCamera",
+    "kind": "Class",
+    "url": "class_ShadowFitCamera.html",
+    "desc": "The camera properties the directional-shadow fit reads nothing else about a camera matters to it. A plain struct rath..."
+  },
+  {
+    "name": "TransparentCaptureLightingPushConstants",
+    "kind": "Class",
+    "url": "class_TransparentCaptureLightingPushConstants.html",
+    "desc": "Matches transparent_capture.frag's push-constant block over [32, 56) appended after TransparentCapturePass::PushConst..."
+  },
+  {
+    "name": "TransparentRefractionPushConstants",
+    "kind": "Class",
+    "url": "class_TransparentRefractionPushConstants.html",
+    "desc": "Matches transparent.frag's push-constant block over [64, 128) appended after TransparentPass::PushConstants' own 32-b..."
+  },
+  {
+    "name": "WaterFrameState",
+    "kind": "Class",
+    "url": "class_WaterFrameState.html",
+    "desc": "What the renderer needs from the water system each frame, handed over by Engine (PixelRenderPipeline::set_water_state..."
+  },
+  {
+    "name": "WorldBounds",
+    "kind": "Class",
+    "url": "class_WorldBounds.html",
+    "desc": "A world-space axis-aligned box as centre + half-extent the form both the frustum test and the bounding-sphere radius ..."
+  },
+  {
+    "name": "WorldBounds::radius",
+    "kind": "Method",
+    "url": "class_WorldBounds.html#method_radius",
+    "desc": "Radius of the sphere enclosing the box."
+  },
+  {
+    "name": "toy::render::passes",
+    "kind": "Namespace",
+    "url": "scope_toy__render__passes.html",
+    "desc": ""
+  },
+  {
+    "name": "ContactShadowPass",
+    "kind": "Class",
+    "url": "class_ContactShadowPass.html",
+    "desc": "Marches the screen-space contact shadow into its own buffer, then averages that buffer over frames the way the reflec..."
+  },
+  {
+    "name": "ContactShadowPass::ContactShadowPass",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_ContactShadowPass",
+    "desc": ""
+  },
+  {
+    "name": "ContactShadowPass::update_descriptors",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_update_descriptors",
+    "desc": "Binds the live G-buffer, the scene depth the resolve reprojects from, and both parities of the shared accumulation co..."
+  },
+  {
+    "name": "ContactShadowPass::execute",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_execute",
+    "desc": ""
+  },
+  {
+    "name": "ContactShadowPass::clear_output",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_clear_output",
+    "desc": "Clears the output to 0 (no occlusion) without marching for a caller that skips execute() while the feature is off. Le..."
+  },
+  {
+    "name": "ContactShadowPass::output_view_typed",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_output_view_typed",
+    "desc": "The resolved occlusion buffer. One image for the pass's lifetime, so a consumer binds it once at setup and always rea..."
+  },
+  {
+    "name": "ContactShadowPass::sampler",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_sampler",
+    "desc": "NEAREST/ClampToEdge sampler consumers should read the output through."
+  },
+  {
+    "name": "ContactShadowPass::invalidate_history",
+    "kind": "Method",
+    "url": "class_ContactShadowPass.html#method_invalidate_history",
+    "desc": "Drops the accumulated history. Call on any frame execute() is skipped, so the next enabled frame does not average aga..."
+  },
+  {
+    "name": "DebugLinePass",
+    "kind": "Class",
+    "url": "class_DebugLinePass.html",
+    "desc": ""
+  },
+  {
+    "name": "DebugLinePass::DebugLinePass",
+    "kind": "Method",
+    "url": "class_DebugLinePass.html#method_DebugLinePass",
+    "desc": ""
+  },
+  {
+    "name": "DebugLinePass::set_scene_depth",
+    "kind": "Method",
+    "url": "class_DebugLinePass.html#method_set_scene_depth",
+    "desc": "The scene depth occluded lines compare against (bind once; the G-buffer is never recreated). Until bound, nothing dra..."
+  },
+  {
+    "name": "DebugLinePass::DebugLinePass",
+    "kind": "Method",
+    "url": "class_DebugLinePass.html#method_DebugLinePass",
+    "desc": ""
+  },
+  {
+    "name": "DebugLinePass::operator=",
+    "kind": "Method",
+    "url": "class_DebugLinePass.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "DebugLinePass::upload",
+    "kind": "Method",
+    "url": "class_DebugLinePass.html#method_upload",
+    "desc": "Uploads this frame's line list into frame_index's buffer slot call once per frame, before Renderer::begin_frame() (ma..."
+  },
+  {
+    "name": "DebugLinePass::draw",
+    "kind": "Method",
+    "url": "class_DebugLinePass.html#method_draw",
+    "desc": "Draws whatever upload() last recorded for this frame slot, letterboxed. No-op if upload() saw an empty line list this..."
+  },
+  {
+    "name": "FullscreenBlitPass",
+    "kind": "Class",
+    "url": "class_FullscreenBlitPass.html",
+    "desc": "Samples one texture across the full viewport, with no lighting and no depth test."
+  },
+  {
+    "name": "FullscreenBlitPass::FullscreenBlitPass",
+    "kind": "Method",
+    "url": "class_FullscreenBlitPass.html#method_FullscreenBlitPass",
+    "desc": ""
+  },
+  {
+    "name": "FullscreenBlitPass::FullscreenBlitPass",
+    "kind": "Method",
+    "url": "class_FullscreenBlitPass.html#method_FullscreenBlitPass",
+    "desc": ""
+  },
+  {
+    "name": "FullscreenBlitPass::operator=",
+    "kind": "Method",
+    "url": "class_FullscreenBlitPass.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "FullscreenBlitPass::set_source_image",
+    "kind": "Method",
+    "url": "class_FullscreenBlitPass.html#method_set_source_image",
+    "desc": "Binds the texture to display. Must be called before Renderer::begin_frame() DescriptorSet::bind_image() issues vkUpda..."
+  },
+  {
+    "name": "FullscreenBlitPass::draw",
+    "kind": "Method",
+    "url": "class_FullscreenBlitPass.html#method_draw",
+    "desc": "Draws the fullscreen triangle over a viewport of the given size."
+  },
+  {
+    "name": "TransparentPreviewPass",
+    "kind": "Class",
+    "url": "class_TransparentPreviewPass.html",
+    "desc": ""
+  },
+  {
+    "name": "TransparentPreviewPass::TransparentPreviewPass",
+    "kind": "Method",
+    "url": "class_TransparentPreviewPass.html#method_TransparentPreviewPass",
+    "desc": ""
+  },
+  {
+    "name": "TransparentPreviewPass::TransparentPreviewPass",
+    "kind": "Method",
+    "url": "class_TransparentPreviewPass.html#method_TransparentPreviewPass",
+    "desc": ""
+  },
+  {
+    "name": "TransparentPreviewPass::operator=",
+    "kind": "Method",
+    "url": "class_TransparentPreviewPass.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "TransparentPreviewPass::set_scene_depth",
+    "kind": "Method",
+    "url": "class_TransparentPreviewPass.html#method_set_scene_depth",
+    "desc": "The scene depth to test against (bound once; the G-buffer is never recreated)."
+  },
+  {
+    "name": "TransparentPreviewPass::begin",
+    "kind": "Method",
+    "url": "class_TransparentPreviewPass.html#method_begin",
+    "desc": "Binds the pipeline, viewport (Y-flipped like DebugLinePass) and sets 0 / 1."
+  },
+  {
+    "name": "TransparentPreviewPass::push",
+    "kind": "Method",
+    "url": "class_TransparentPreviewPass.html#method_push",
+    "desc": "Per-object push constants + material set (call between begin() and the draw)."
+  },
+  {
+    "name": "UiCompositePass",
+    "kind": "Class",
+    "url": "class_UiCompositePass.html",
+    "desc": "Draws base into a letterboxed viewport with the UI layer composited over it. Both sources are sampled NEAREST and bot..."
+  },
+  {
+    "name": "UiCompositePass::UiCompositePass",
+    "kind": "Method",
+    "url": "class_UiCompositePass.html#method_UiCompositePass",
+    "desc": ""
+  },
+  {
+    "name": "UiCompositePass::UiCompositePass",
+    "kind": "Method",
+    "url": "class_UiCompositePass.html#method_UiCompositePass",
+    "desc": ""
+  },
+  {
+    "name": "UiCompositePass::operator=",
+    "kind": "Method",
+    "url": "class_UiCompositePass.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "UiCompositePass::set_base_image",
+    "kind": "Method",
+    "url": "class_UiCompositePass.html#method_set_base_image",
+    "desc": "Binds the post-processed scene image (tilt shift's result, or the AA/post target when tilt shift is off). Must be cal..."
+  },
+  {
+    "name": "UiCompositePass::set_ui_image",
+    "kind": "Method",
+    "url": "class_UiCompositePass.html#method_set_ui_image",
+    "desc": "Binds the world-UI layer, which the caller must have built at exactly the rect draw() will be given that is what make..."
+  },
+  {
+    "name": "UiCompositePass::draw",
+    "kind": "Method",
+    "url": "class_UiCompositePass.html#method_draw",
+    "desc": "Draws into the centred destination rect; the target's own clear fills the bars. The viewport height is POSITIVE, and ..."
+  },
+  {
+    "name": "UnderwaterPass",
+    "kind": "Class",
+    "url": "class_UnderwaterPass.html",
+    "desc": "See the file doc."
+  },
+  {
+    "name": "UnderwaterPass::UnderwaterPass",
+    "kind": "Method",
+    "url": "class_UnderwaterPass.html#method_UnderwaterPass",
+    "desc": ""
+  },
+  {
+    "name": "UnderwaterPass::UnderwaterPass",
+    "kind": "Method",
+    "url": "class_UnderwaterPass.html#method_UnderwaterPass",
+    "desc": ""
+  },
+  {
+    "name": "UnderwaterPass::operator=",
+    "kind": "Method",
+    "url": "class_UnderwaterPass.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "UnderwaterPass::set_source_images",
+    "kind": "Method",
+    "url": "class_UnderwaterPass.html#method_set_source_images",
+    "desc": "Binds the scene colour (linear, for the shimmer offset) and G-buffer normal/position (nearest see FogPass on why filt..."
+  },
+  {
+    "name": "UnderwaterPass::draw",
+    "kind": "Method",
+    "url": "class_UnderwaterPass.html#method_draw",
+    "desc": ""
+  },
+  {
+    "name": "UpscalePass",
+    "kind": "Class",
+    "url": "class_UpscalePass.html",
+    "desc": "Draws the low-resolution source image into a letterboxed viewport on the swapchain, using a NEAREST sampler so every ..."
+  },
+  {
+    "name": "UpscalePass::UpscalePass",
+    "kind": "Method",
+    "url": "class_UpscalePass.html#method_UpscalePass",
+    "desc": ""
+  },
+  {
+    "name": "UpscalePass::UpscalePass",
+    "kind": "Method",
+    "url": "class_UpscalePass.html#method_UpscalePass",
+    "desc": ""
+  },
+  {
+    "name": "UpscalePass::operator=",
+    "kind": "Method",
+    "url": "class_UpscalePass.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "UpscalePass::set_source_image",
+    "kind": "Method",
+    "url": "class_UpscalePass.html#method_set_source_image",
+    "desc": "Binds the low-resolution source image with a NEAREST sampler. Must be called before Renderer::begin_frame() Descripto..."
+  },
+  {
+    "name": "UpscalePass::draw",
+    "kind": "Method",
+    "url": "class_UpscalePass.html#method_draw",
+    "desc": "Draws into the centred destination rect. The swapchain pass's clear (black, by convention) fills the bars outside rec..."
+  },
+  {
+    "name": "toy::scene",
+    "kind": "Namespace",
+    "url": "scope_toy__scene.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::scene::install_kinematic_control_system",
+    "kind": "Function",
+    "url": "scope_toy__scene.html#func_install_kinematic_control_system",
+    "desc": "Constructs a KinematicControlSystem and registers it ahead of the physics phase. Mirrors coopa::scene::install_transf..."
+  },
+  {
+    "name": "toy::scene::parse_vec3",
+    "kind": "Function",
+    "url": "scope_toy__scene.html#func_parse_vec3",
+    "desc": "Reads an {x, y, z} YAML mapping, leaving any absent component at fallback."
+  },
+  {
+    "name": "toy::scene::parse_rgb",
+    "kind": "Function",
+    "url": "scope_toy__scene.html#func_parse_rgb",
+    "desc": "Reads an {r, g, b} YAML mapping, leaving any absent channel at fallback."
+  },
+  {
+    "name": "toy::scene::register_scene_components",
+    "kind": "Function",
+    "url": "scope_toy__scene.html#func_register_scene_components",
+    "desc": "Registers the \"CameraController\", \"KinematicMover\" and \"HealthDriver\" parsers. Call once at startup, before the first..."
+  },
+  {
+    "name": "toy::scene::register_scene_components",
+    "kind": "Function",
+    "url": "scope_toy__scene.html#func_register_scene_components",
+    "desc": "Registers the argument-free parsers above, plus \"ClothRenderer\", which needs GPU handles. Call this overload instead ..."
+  },
+  {
+    "name": "CameraController",
+    "kind": "Class",
+    "url": "class_CameraController.html",
+    "desc": "Drives the owning SceneObject's Transform in Orbit or Fly mode. Orbit mode always looks directly at its target (a tra..."
+  },
+  {
+    "name": "CameraController::type_name",
+    "kind": "Method",
+    "url": "class_CameraController.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "CameraController::start",
+    "kind": "Method",
+    "url": "class_CameraController.html#method_start",
+    "desc": "Seeds orbit geometry from the owner's initial Transform. Runs once when the scene finishes loading (see coopa::scene:..."
+  },
+  {
+    "name": "CameraController::update",
+    "kind": "Method",
+    "url": "class_CameraController.html#method_update",
+    "desc": ""
+  },
+  {
+    "name": "CameraController::orbit_distance",
+    "kind": "Method",
+    "url": "class_CameraController.html#method_orbit_distance",
+    "desc": "Current smoothed camera-to-target orbit radius, in world units. Meaningful only in Orbit mode (0 in Fly mode, which h..."
+  },
+  {
+    "name": "ClothRenderer",
+    "kind": "Class",
+    "url": "class_ClothRenderer.html",
+    "desc": "Builds and maintains the GPU mesh for a sibling ClothComponent. Requires two siblings on the same SceneObject: a Clot..."
+  },
+  {
+    "name": "ClothRenderer::ClothRenderer",
+    "kind": "Method",
+    "url": "class_ClothRenderer.html#method_ClothRenderer",
+    "desc": ""
+  },
+  {
+    "name": "ClothRenderer::type_name",
+    "kind": "Method",
+    "url": "class_ClothRenderer.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "ClothRenderer::start",
+    "kind": "Method",
+    "url": "class_ClothRenderer.html#method_start",
+    "desc": "Caches the sibling Cloth and MeshRenderer. The GPU mesh is NOT built here. SceneLoader::load() calls Scene::start() a..."
+  },
+  {
+    "name": "ClothRenderer::rebuild_vertices",
+    "kind": "Method",
+    "url": "class_ClothRenderer.html#method_rebuild_vertices",
+    "desc": "Recomputes this frame's object-space vertex positions, normals and tangents from the solver's particles. Cheap enough..."
+  },
+  {
+    "name": "ClothRenderer::upload",
+    "kind": "Method",
+    "url": "class_ClothRenderer.html#method_upload",
+    "desc": "Builds the mesh if needed, refreshes the vertices, and uploads them into frame_slot's buffer, making it the one the f..."
+  },
+  {
+    "name": "ClothRenderer::is_ready",
+    "kind": "Method",
+    "url": "class_ClothRenderer.html#method_is_ready",
+    "desc": "True once the GPU mesh exists and is bound to the sibling MeshRenderer."
+  },
+  {
+    "name": "FreeMover",
+    "kind": "Class",
+    "url": "class_FreeMover.html",
+    "desc": "Moves the owning object along the world axes from a pushed-in 3D input vector. Motion is in WORLD axes, not the objec..."
+  },
+  {
+    "name": "FreeMover::type_name",
+    "kind": "Method",
+    "url": "class_FreeMover.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "FreeMover::update",
+    "kind": "Method",
+    "url": "class_FreeMover.html#method_update",
+    "desc": "Advances the owner along the world axes by one frame of smoothed move_input."
+  },
+  {
+    "name": "FreeMover::velocity",
+    "kind": "Method",
+    "url": "class_FreeMover.html#method_velocity",
+    "desc": "Current smoothed velocity in world units per second for tests and readback."
+  },
+  {
+    "name": "HealthDriver",
+    "kind": "Class",
+    "url": "class_HealthDriver.html",
+    "desc": "Drives a descendant ProgressBar from a Resource this component owns. Example YAML, on the same object as (or an ances..."
+  },
+  {
+    "name": "HealthDriver::type_name",
+    "kind": "Method",
+    "url": "class_HealthDriver.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "HealthDriver::health",
+    "kind": "Method",
+    "url": "class_HealthDriver.html#method_health",
+    "desc": "The Resource this component owns, for code that wants to damage/heal directly (e.g. a world-space \"Heal\" Button wired..."
+  },
+  {
+    "name": "HealthDriver::start",
+    "kind": "Method",
+    "url": "class_HealthDriver.html#method_start",
+    "desc": ""
+  },
+  {
+    "name": "HealthDriver::update",
+    "kind": "Method",
+    "url": "class_HealthDriver.html#method_update",
+    "desc": ""
+  },
+  {
+    "name": "KinematicController",
+    "kind": "Class",
+    "url": "class_KinematicController.html",
+    "desc": "Moves the owning object across the world XY plane from a pushed-in input vector, holding its authored height. Height ..."
+  },
+  {
+    "name": "KinematicController::type_name",
+    "kind": "Method",
+    "url": "class_KinematicController.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "KinematicController::start",
+    "kind": "Method",
+    "url": "class_KinematicController.html#method_start",
+    "desc": "Captures the authored height every subsequent frame holds."
+  },
+  {
+    "name": "KinematicController::update",
+    "kind": "Method",
+    "url": "class_KinematicController.html#method_update",
+    "desc": "Intentionally empty the motion lives in advance(), driven by toy::scene::KinematicControlSystem at order 50. A compon..."
+  },
+  {
+    "name": "KinematicController::advance",
+    "kind": "Method",
+    "url": "class_KinematicController.html#method_advance",
+    "desc": "Advances the owner along the world XY plane by one frame of smoothed move_input."
+  },
+  {
+    "name": "KinematicController::velocity",
+    "kind": "Method",
+    "url": "class_KinematicController.html#method_velocity",
+    "desc": "Current smoothed planar velocity in m/s for tests and gameplay readback."
+  },
+  {
+    "name": "KinematicControlSystem",
+    "kind": "Class",
+    "url": "class_KinematicControlSystem.html",
+    "desc": "Advances every KinematicController and KinematicMover in the scene, before physics reads their Transforms."
+  },
+  {
+    "name": "KinematicControlSystem::system_name",
+    "kind": "Method",
+    "url": "class_KinematicControlSystem.html#method_system_name",
+    "desc": ""
+  },
+  {
+    "name": "KinematicControlSystem::execute",
+    "kind": "Method",
+    "url": "class_KinematicControlSystem.html#method_execute",
+    "desc": ""
+  },
+  {
+    "name": "KinematicMover",
+    "kind": "Class",
+    "url": "class_KinematicMover.html",
+    "desc": "Scripts a kinematic Rigidbody's Transform pairs with Rigidbody { is_kinematic: true } on the same SceneObject in scen..."
+  },
+  {
+    "name": "KinematicMover::type_name",
+    "kind": "Method",
+    "url": "class_KinematicMover.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "KinematicMover::start",
+    "kind": "Method",
+    "url": "class_KinematicMover.html#method_start",
+    "desc": "Captures the seed position/rotation every subsequent frame is computed relative to."
+  },
+  {
+    "name": "KinematicMover::update",
+    "kind": "Method",
+    "url": "class_KinematicMover.html#method_update",
+    "desc": "Intentionally empty the motion lives in advance(), driven by toy::scene::KinematicControlSystem at order 50. A compon..."
+  },
+  {
+    "name": "KinematicMover::advance",
+    "kind": "Method",
+    "url": "class_KinematicMover.html#method_advance",
+    "desc": "Advances the scripted motion by one frame."
+  },
+  {
+    "name": "SkinnedMeshRenderer",
+    "kind": "Class",
+    "url": "class_SkinnedMeshRenderer.html",
+    "desc": "Builds and maintains a CPU-skinned dynamic GPU mesh for a sibling MeshRenderer. Requires a sibling MeshRenderer (mate..."
+  },
+  {
+    "name": "SkinnedMeshRenderer::SkinnedMeshRenderer",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_SkinnedMeshRenderer",
+    "desc": ""
+  },
+  {
+    "name": "SkinnedMeshRenderer::type_name",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "SkinnedMeshRenderer::set_source",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_set_source",
+    "desc": "Sets the loaded (still possibly in-flight) bind-pose source. Called by the parser."
+  },
+  {
+    "name": "SkinnedMeshRenderer::set_bones",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_set_bones",
+    "desc": "Sets the bone palette: paths under the rig, in mesh joint-index order (empty: the mesh's vertex groups)."
+  },
+  {
+    "name": "SkinnedMeshRenderer::set_rig",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_set_rig",
+    "desc": "Names the rig root explicitly (a scene path); empty = the nearest Animator ancestor."
+  },
+  {
+    "name": "SkinnedMeshRenderer::start",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_start",
+    "desc": "Finds the sibling MeshRenderer and the rig root, and snapshots the REST pose: the world matrix of the owner and of ev..."
+  },
+  {
+    "name": "SkinnedMeshRenderer::rig",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_rig",
+    "desc": "The rig root bones are resolved under (after start())."
+  },
+  {
+    "name": "SkinnedMeshRenderer::bones",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_bones",
+    "desc": "The resolved palette (after the mesh loaded); entries may be null."
+  },
+  {
+    "name": "SkinnedMeshRenderer::upload",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_upload",
+    "desc": "Builds the mesh if needed, re-skins this frame's vertices, and uploads them. No-op until source_ finishes loading (as..."
+  },
+  {
+    "name": "SkinnedMeshRenderer::rebuild",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_rebuild",
+    "desc": "Drops the GPU mesh so the next upload rebuilds it from the (new) source for a tool replacing the bind pose (the toyed..."
+  },
+  {
+    "name": "SkinnedMeshRenderer::is_ready",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_is_ready",
+    "desc": "True once the GPU mesh exists and is bound to the sibling MeshRenderer."
+  },
+  {
+    "name": "SkinnedMeshRenderer::skinned_vertices",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_skinned_vertices",
+    "desc": "The last skinned vertices uploaded (object space; tests and tools)."
+  },
+  {
+    "name": "SkinnedMeshRenderer::skin",
+    "kind": "Method",
+    "url": "class_SkinnedMeshRenderer.html#method_skin",
+    "desc": "Skins src's bind-pose vertices with one matrix per palette entry into out (object space of the mesh's owner). A verte..."
+  },
+  {
+    "name": "toy::water",
+    "kind": "Namespace",
+    "url": "scope_toy__water.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::water::weld_by_position",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_weld_by_position",
+    "desc": "Welds a per-corner triangle soup (positions + uvs) by quantized position. Returns the welded positions/uvs and rewrit..."
+  },
+  {
+    "name": "toy::water::uv_u_direction",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_uv_u_direction",
+    "desc": "Direction (unit, in the triangle's plane) in which UV u increases; zero if degenerate."
+  },
+  {
+    "name": "toy::water::bake_flow",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_bake_flow",
+    "desc": "Bakes per-vertex surface current (out_flow, world m/s) and turbulence (out_turbulence, 0..1) for welded world-space p..."
+  },
+  {
+    "name": "toy::water::install_water_system",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_install_water_system",
+    "desc": "Constructs a WaterSystem and registers it just ahead of the physics phase. GPU arguments may be null for CPU-only (he..."
+  },
+  {
+    "name": "toy::water::water_lod_crack",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_water_lod_crack",
+    "desc": "Worst T-junction gap against a LOD of vertex spacing spacing seen from distance: each wave's linear-interpolation err..."
+  },
+  {
+    "name": "toy::water::water_lod_distance",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_water_lod_distance",
+    "desc": "The nearest distance at which a LOD of vertex spacing spacing may be drawn: the pixel criterion met, and its T-juncti..."
+  },
+  {
+    "name": "toy::water::build_grid_tiles",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_build_grid_tiles",
+    "desc": "Tiles a procedural grid of res_x x res_y quads whose (res_x+1)*(res_y+1) vertices are row-major in verts (LOD 0, full..."
+  },
+  {
+    "name": "toy::water::build_mesh_tiles",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_build_mesh_tiles",
+    "desc": "Tiles an arbitrary triangle mesh (verts/indices, local space) into tile_size squares in local XY by triangle centroid..."
+  },
+  {
+    "name": "toy::water::depth_attenuation",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_depth_attenuation",
+    "desc": "Wave attenuation for a point depth metres above the bed: waves calm in shallow water. GLSL: water_depth_attenuation()."
+  },
+  {
+    "name": "toy::water::wave_distance_fade",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_wave_distance_fade",
+    "desc": "Distance fade of a derived wave of wavelength lambda seen from distance metres: 1 near, 0 beyond 2 * k_wave_fade_star..."
+  },
+  {
+    "name": "toy::water::evaluate",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_evaluate",
+    "desc": "evaluate() over a precomputed WaveSet. distance is the undisplaced point's distance from the camera / focus, for wave..."
+  },
+  {
+    "name": "toy::water::evaluate",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_evaluate",
+    "desc": "Sum of k_wave_count Gerstner waves at undisplaced world XY p, time t, scaled by atten (depth_attenuation()). The unca..."
+  },
+  {
+    "name": "toy::water::height_at",
+    "kind": "Function",
+    "url": "scope_toy__water.html#func_height_at",
+    "desc": "Displaced surface height above the undisplaced plane at world XY target. Gerstner moves points horizontally, so the c..."
+  },
+  {
+    "name": "Buoyancy",
+    "kind": "Class",
+    "url": "class_Buoyancy.html",
+    "desc": "See the file doc. Requires a Rigidbody (and normally a Collider) on the same object."
+  },
+  {
+    "name": "Buoyancy::type_name",
+    "kind": "Method",
+    "url": "class_Buoyancy.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "FlowBakeParams",
+    "kind": "Class",
+    "url": "class_FlowBakeParams.html",
+    "desc": "Tunables for bake_flow(); mirror WaterBody's flow_* fields."
+  },
+  {
+    "name": "FlowRayHit",
+    "kind": "Class",
+    "url": "class_FlowRayHit.html",
+    "desc": "A hit reported by the bake's obstacle ray callback."
+  },
+  {
+    "name": "Pontoon",
+    "kind": "Class",
+    "url": "class_Pontoon.html",
+    "desc": "One resolved pontoon, in the owner's world-scaled local frame (pivot origin)."
+  },
+  {
+    "name": "PontoonDesc",
+    "kind": "Class",
+    "url": "class_PontoonDesc.html",
+    "desc": "An authored pontoon (YAML pontoons: entry), in the owner's UNSCALED local frame."
+  },
+  {
+    "name": "WaterBaseSample",
+    "kind": "Class",
+    "url": "class_WaterBaseSample.html",
+    "desc": "The undisplaced surface interpolated at an XY point."
+  },
+  {
+    "name": "WaterBody",
+    "kind": "Class",
+    "url": "class_WaterBody.html",
+    "desc": "A body of water. See the file doc."
+  },
+  {
+    "name": "WaterBody::type_name",
+    "kind": "Method",
+    "url": "class_WaterBody.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "WaterBody::set_geometry",
+    "kind": "Method",
+    "url": "class_WaterBody.html#method_set_geometry",
+    "desc": "Supplies the surface geometry directly (local space; triangle triples into positions), taking priority over mesh_path..."
+  },
+  {
+    "name": "WaterBody::mark_dirty",
+    "kind": "Method",
+    "url": "class_WaterBody.html#method_mark_dirty",
+    "desc": "Marks the bake stale (e.g. after editing a field at runtime)."
+  },
+  {
+    "name": "WaterBody::sample",
+    "kind": "Method",
+    "url": "class_WaterBody.html#method_sample",
+    "desc": "Samples this body's surface above world XY p at water time t."
+  },
+  {
+    "name": "WaterBody::wave_set",
+    "kind": "Method",
+    "url": "class_WaterBody.html#method_wave_set",
+    "desc": "waves with its per-wave constants precomputed; rebuilt whenever waves changes."
+  },
+  {
+    "name": "WaterSample",
+    "kind": "Class",
+    "url": "class_WaterSample.html",
+    "desc": "Full surface query result: base surface plus waves."
+  },
+  {
+    "name": "WaterSettings",
+    "kind": "Class",
+    "url": "class_WaterSettings.html",
+    "desc": "A tier expanded into concrete values. See the file doc; from_quality() is the table."
+  },
+  {
+    "name": "WaterSettings::from_quality",
+    "kind": "Method",
+    "url": "class_WaterSettings.html#method_from_quality",
+    "desc": ""
+  },
+  {
+    "name": "WaterSurfaceQuery",
+    "kind": "Class",
+    "url": "class_WaterSurfaceQuery.html",
+    "desc": "Uniform XY grid over a water body's baked surface triangles."
+  },
+  {
+    "name": "WaterSurfaceQuery::build",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_build",
+    "desc": "Builds the grid. indices are triangle triples into vertices (both world space). Cell size targets ~2 triangles per cell."
+  },
+  {
+    "name": "WaterSurfaceQuery::valid",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_valid",
+    "desc": ""
+  },
+  {
+    "name": "WaterSurfaceQuery::bounds_min",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_bounds_min",
+    "desc": ""
+  },
+  {
+    "name": "WaterSurfaceQuery::bounds_max",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_bounds_max",
+    "desc": ""
+  },
+  {
+    "name": "WaterSurfaceQuery::vertices",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_vertices",
+    "desc": ""
+  },
+  {
+    "name": "WaterSurfaceQuery::indices",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_indices",
+    "desc": ""
+  },
+  {
+    "name": "WaterSurfaceQuery::overlaps_xy",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_overlaps_xy",
+    "desc": "True if XY p (expanded by margin) overlaps this body's XY bounds."
+  },
+  {
+    "name": "WaterSurfaceQuery::sample_base",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_sample_base",
+    "desc": "Interpolates the undisplaced surface at XY p; false if p is off the surface."
+  },
+  {
+    "name": "WaterSurfaceQuery::sample",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_sample",
+    "desc": "The wave-displaced surface above XY p at time t. Mirrors the vertex shader: the wave sum is evaluated at the undispla..."
+  },
+  {
+    "name": "WaterSurfaceQuery::sample",
+    "kind": "Method",
+    "url": "class_WaterSurfaceQuery.html#method_sample",
+    "desc": "sample() from plain WaveParams (builds the WaveSet on the spot)."
+  },
+  {
+    "name": "WaterSystem",
+    "kind": "Class",
+    "url": "class_WaterSystem.html",
+    "desc": "See the file doc."
+  },
+  {
+    "name": "WaterSystem::WaterSystem",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_WaterSystem",
+    "desc": "GPU arguments may be null (headless tests): bodies are then baked CPU-side only."
+  },
+  {
+    "name": "WaterSystem::~WaterSystem",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_~WaterSystem",
+    "desc": ""
+  },
+  {
+    "name": "WaterSystem::system_name",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_system_name",
+    "desc": ""
+  },
+  {
+    "name": "WaterSystem::runs_in_edit_mode",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_runs_in_edit_mode",
+    "desc": "Runs in the editor too, but only to BAKE: water bodies need their mesh published to be visible at all, simulating or ..."
+  },
+  {
+    "name": "WaterSystem::execute",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_execute",
+    "desc": ""
+  },
+  {
+    "name": "WaterSystem::set_settings",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_set_settings",
+    "desc": "Applies a quality tier (live). Procedural grids re-bake at the new density."
+  },
+  {
+    "name": "WaterSystem::settings",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_settings",
+    "desc": ""
+  },
+  {
+    "name": "WaterSystem::set_focus",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_set_focus",
+    "desc": "Measures ranges from p instead of the main camera (until clear_focus())."
+  },
+  {
+    "name": "WaterSystem::clear_focus",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_clear_focus",
+    "desc": ""
+  },
+  {
+    "name": "WaterSystem::focus",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_focus",
+    "desc": "The point ranges were measured from on the last execute(); false = no focus."
+  },
+  {
+    "name": "WaterSystem::refresh_bodies",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_refresh_bodies",
+    "desc": "Re-reads the scene's WaterBody list. sample()/underwater_at() walk the list taken at the last execute(); anything tha..."
+  },
+  {
+    "name": "WaterSystem::time",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_time",
+    "desc": "Water clock (seconds) the time every wave on the CPU is evaluated at."
+  },
+  {
+    "name": "WaterSystem::sample",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_sample",
+    "desc": "Samples the highest water surface above world XY p across every water body."
+  },
+  {
+    "name": "WaterSystem::active_buoyant_count",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_active_buoyant_count",
+    "desc": "Number of bodies buoyancy considered on the last substep (diagnostics/tests)."
+  },
+  {
+    "name": "WaterSystem::ripples",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_ripples",
+    "desc": "Live rings, oldest first."
+  },
+  {
+    "name": "WaterSystem::emit_ripple",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_emit_ripple",
+    "desc": "Adds a ring by hand (gameplay: a thrown stone, a footstep)."
+  },
+  {
+    "name": "WaterSystem::underwater_at",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_underwater_at",
+    "desc": "Whether world point p (e.g. a camera) is under a water surface the highest surface above its XY, waves included and a..."
+  },
+  {
+    "name": "WaterSystem::is_published",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_is_published",
+    "desc": "True when every render tile of body (or its own MeshRenderer) has a mesh."
+  },
+  {
+    "name": "WaterSystem::sync_material",
+    "kind": "Method",
+    "url": "class_WaterSystem.html#method_sync_material",
+    "desc": "Copies the owner MeshRenderer's material (and look flags) to every render tile."
+  },
+  {
+    "name": "WaterTile",
+    "kind": "Class",
+    "url": "class_WaterTile.html",
+    "desc": "One render tile: its grid coordinate and its mesh (with LODs), in the body's local space."
+  },
+  {
+    "name": "WaterTileLodParams",
+    "kind": "Class",
+    "url": "class_WaterTileLodParams.html",
+    "desc": "Inputs to the LOD switch distances; see the file doc."
+  },
+  {
+    "name": "WaterVertex",
+    "kind": "Class",
+    "url": "class_WaterVertex.html",
+    "desc": "One baked surface vertex, world space, undisplaced by waves."
+  },
+  {
+    "name": "WaveParams",
+    "kind": "Class",
+    "url": "class_WaveParams.html",
+    "desc": "The authored base wave; packs into PBRMaterial::shader_params as (amplitude, wavelength, direction_radians, steepness)."
+  },
+  {
+    "name": "WaveParams::pack",
+    "kind": "Method",
+    "url": "class_WaveParams.html#method_pack",
+    "desc": ""
+  },
+  {
+    "name": "WaveParams::calm",
+    "kind": "Method",
+    "url": "class_WaveParams.html#method_calm",
+    "desc": ""
+  },
+  {
+    "name": "WaveQueryOptions",
+    "kind": "Class",
+    "url": "class_WaveQueryOptions.html",
+    "desc": "How a WaterSurfaceQuery::sample() evaluates the waves (see WaterSettings)."
+  },
+  {
+    "name": "WaveSample",
+    "kind": "Class",
+    "url": "class_WaveSample.html",
+    "desc": "Result of evaluating the wave field at an UNDISPLACED surface point."
+  },
+  {
+    "name": "WaveSet",
+    "kind": "Class",
+    "url": "class_WaveSet.html",
+    "desc": "A WaveParams with every per-wave constant precomputed what the CPU hot paths (buoyancy, surface queries) evaluate. Bu..."
+  },
+  {
+    "name": "WaveSet::from",
+    "kind": "Method",
+    "url": "class_WaveSet.html#method_from",
+    "desc": ""
+  },
+  {
+    "name": "WaveSet::matches",
+    "kind": "Method",
+    "url": "class_WaveSet.html#method_matches",
+    "desc": "Whether this set was built from w (cheap staleness check for a cached set)."
+  },
+  {
+    "name": "toy::water::detail",
+    "kind": "Namespace",
+    "url": "scope_toy__water__detail.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::water::detail::finish_tile_",
+    "kind": "Function",
+    "url": "scope_toy__water__detail.html#func_finish_tile_",
+    "desc": "Fills bounds (inflated by inflate for the wave displacement the vertex shader adds) and rewinds every triangle of d s..."
+  },
+  {
+    "name": "toy::water::detail::grid_lines_",
+    "kind": "Function",
+    "url": "scope_toy__water__detail.html#func_grid_lines_",
+    "desc": "Grid lines from a to b every step, always ending on b."
+  },
+  {
+    "name": "toy::water::detail::simplify_tile_lods_",
+    "kind": "Function",
+    "url": "scope_toy__water__detail.html#func_simplify_tile_lods_",
+    "desc": "Appends simplified LODs (vertex subsets, borders locked) to a single-level tile."
+  },
+  {
+    "name": "toy::world",
+    "kind": "Namespace",
+    "url": "scope_toy__world.html",
+    "desc": ""
+  },
+  {
+    "name": "toy::world::sample_chunk_columns",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_sample_chunk_columns",
+    "desc": "Samples every column a chunk needs, including its one-tile neighbour skirt. The only part of meshing that touches the..."
+  },
+  {
+    "name": "toy::world::mesh_chunk_columns",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_mesh_chunk_columns",
+    "desc": "Merges every exposed side of a chunk's columns into one vertex/index buffer. Pure, deterministic and allocation-light..."
+  },
+  {
+    "name": "toy::world::mesh_chunk_columns_greedy",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_mesh_chunk_columns_greedy",
+    "desc": "The greedy counterpart of mesh_chunk_columns(): the same surface, in far fewer quads. Tops: rectangles of equal (surf..."
+  },
+  {
+    "name": "toy::world::build_chunk_mesh",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_build_chunk_mesh",
+    "desc": "Samples and meshes one chunk the whole unit of work a chunk job performs."
+  },
+  {
+    "name": "toy::world::chunk_origin",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_chunk_origin",
+    "desc": "The world-space origin of a chunk's minimum corner its SceneObject's position."
+  },
+  {
+    "name": "toy::world::install_terrain_system",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_install_terrain_system",
+    "desc": "Constructs a TerrainSystem and registers it ahead of the physics phase. Mirrors toy::scene::install_kinematic_control..."
+  },
+  {
+    "name": "toy::world::atlas_cell",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_atlas_cell",
+    "desc": "The UV rectangle a TileKind occupies in the terrain atlas. Returned as {u0, v0, du, dv} an origin plus a size, so a c..."
+  },
+  {
+    "name": "toy::world::chunk_distance",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_chunk_distance",
+    "desc": "Chebyshev (chessboard) distance between two chunks, in chunks. Chebyshev rather than Euclidean because the loaded reg..."
+  },
+  {
+    "name": "toy::world::face_transform",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_face_transform",
+    "desc": "The rigid transform taking the canonical (+Z, [0,1]^3 unit cube) side mesh onto face. A rotation about the cube's own..."
+  },
+  {
+    "name": "toy::world::face_normal",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_face_normal",
+    "desc": "The unit outward normal of face, in tile space. Stated directly rather than derived from face_transform() so a test c..."
+  },
+  {
+    "name": "toy::world::face_step",
+    "kind": "Function",
+    "url": "scope_toy__world.html#func_face_step",
+    "desc": "The tile-grid step taken by moving one tile across face, for a lateral face. {0, 0} for Top/Bottom, which have no nei..."
+  },
+  {
+    "name": "ChunkBuildJob",
+    "kind": "Class",
+    "url": "class_ChunkBuildJob.html",
+    "desc": "Everything one chunk-meshing job needs, plus the buffer it writes into. Bundled into a single heap object so the job'..."
+  },
+  {
+    "name": "ChunkBuildJob::run",
+    "kind": "Method",
+    "url": "class_ChunkBuildJob.html#method_run",
+    "desc": "The job body. Touches nothing but this object and the two borrowed, const inputs."
+  },
+  {
+    "name": "ChunkCoord",
+    "kind": "Class",
+    "url": "class_ChunkCoord.html",
+    "desc": "Integer address of a chunk in the chunk grid, in units of TerrainParams::chunk_size tiles."
+  },
+  {
+    "name": "ChunkCoord::operator==",
+    "kind": "Method",
+    "url": "class_ChunkCoord.html#method_operator==",
+    "desc": ""
+  },
+  {
+    "name": "ChunkCoord::operator!=",
+    "kind": "Method",
+    "url": "class_ChunkCoord.html#method_operator!=",
+    "desc": ""
+  },
+  {
+    "name": "ChunkMeshData",
+    "kind": "Class",
+    "url": "class_ChunkMeshData.html",
+    "desc": "A chunk's merged CPU geometry, ready for Mesh::from_arrays(). Object-space: positions are relative to the chunk's own..."
+  },
+  {
+    "name": "ChunkMeshData::empty",
+    "kind": "Method",
+    "url": "class_ChunkMeshData.html#method_empty",
+    "desc": "True when there is nothing to draw an all-air chunk beyond the map, say."
+  },
+  {
+    "name": "ChunkMeshData::clear",
+    "kind": "Method",
+    "url": "class_ChunkMeshData.html#method_clear",
+    "desc": ""
+  },
+  {
+    "name": "ColumnPad",
+    "kind": "Class",
+    "url": "class_ColumnPad.html",
+    "desc": "A chunk's columns plus a one-tile skirt of its neighbours', in local chunk coordinates. Indexed by local tile coordin..."
+  },
+  {
+    "name": "ColumnPad::resize",
+    "kind": "Method",
+    "url": "class_ColumnPad.html#method_resize",
+    "desc": "Allocates the pad for a chunk of size tiles per edge."
+  },
+  {
+    "name": "ColumnPad::at",
+    "kind": "Method",
+    "url": "class_ColumnPad.html#method_at",
+    "desc": "Mutable access by local tile coordinate, valid over [-1, chunk_size]."
+  },
+  {
+    "name": "ColumnPad::at",
+    "kind": "Method",
+    "url": "class_ColumnPad.html#method_at",
+    "desc": "Read-only access by local tile coordinate, valid over [-1, chunk_size]."
+  },
+  {
+    "name": "TerrainChunk",
+    "kind": "Class",
+    "url": "class_TerrainChunk.html",
+    "desc": "One chunk's lifetime state, from \"wanted\" to \"drawing\" to \"let go of\"."
+  },
+  {
+    "name": "TerrainComponent",
+    "kind": "Class",
+    "url": "class_TerrainComponent.html",
+    "desc": "Scene-authored terrain configuration, and the world state built from it."
+  },
+  {
+    "name": "TerrainComponent::TerrainComponent",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_TerrainComponent",
+    "desc": ""
+  },
+  {
+    "name": "TerrainComponent::~TerrainComponent",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_~TerrainComponent",
+    "desc": "Cancels and WAITS FOR every in-flight chunk job before letting anything go. Not optional, and not merely tidy. A Chun..."
+  },
+  {
+    "name": "TerrainComponent::type_name",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_type_name",
+    "desc": ""
+  },
+  {
+    "name": "TerrainComponent::begin_generation",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_begin_generation",
+    "desc": "Starts generating the world, off the calling thread when an engine is available. Idempotent: a second call while gene..."
+  },
+  {
+    "name": "TerrainComponent::poll_generation",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_poll_generation",
+    "desc": "Moves a finished generation into the sampler, once."
+  },
+  {
+    "name": "TerrainComponent::is_ready",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_is_ready",
+    "desc": "True once the world exists and the side meshes are baked i.e. chunks can build."
+  },
+  {
+    "name": "TerrainComponent::sampler",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_sampler",
+    "desc": "The built world sampler; read concurrently by chunk jobs once is_ready()."
+  },
+  {
+    "name": "TerrainComponent::library",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_library",
+    "desc": "The baked side geometry; read concurrently by chunk jobs once is_ready()."
+  },
+  {
+    "name": "TerrainComponent::chunks",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_chunks",
+    "desc": "The chunk table, keyed by chunk coordinate. Owned by TerrainSystem."
+  },
+  {
+    "name": "TerrainComponent::chunks",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_chunks",
+    "desc": "The chunk table, for read-only inspection."
+  },
+  {
+    "name": "TerrainComponent::set_side_source",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_set_side_source",
+    "desc": "The asset handle for the canonical side mesh; set by the \"Terrain\" scene parser."
+  },
+  {
+    "name": "TerrainComponent::set_face_source",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_set_face_source",
+    "desc": "The asset handle for one face's override mesh; set by the \"Terrain\" scene parser."
+  },
+  {
+    "name": "TerrainComponent::poll_side_meshes",
+    "kind": "Method",
+    "url": "class_TerrainComponent.html#method_poll_side_meshes",
+    "desc": "Bakes the loaded side meshes into the library, once they have finished loading. Deliberately NOT done from a worker: ..."
+  },
+  {
+    "name": "TerrainParams",
+    "kind": "Class",
+    "url": "class_TerrainParams.html",
+    "desc": "How the map's continuous world is cut into discrete tiles and chunks. Authored in scene YAML on the Terrain component..."
+  },
+  {
+    "name": "TerrainParams::chunk_world_size",
+    "kind": "Method",
+    "url": "class_TerrainParams.html#method_chunk_world_size",
+    "desc": "World-space size of one chunk edge."
+  },
+  {
+    "name": "TerrainParams::cell_scale",
+    "kind": "Method",
+    "url": "class_TerrainParams.html#method_cell_scale",
+    "desc": "The per-axis scale of one tile cell, for TileMeshLibrary::append()."
+  },
+  {
+    "name": "TerrainParams::chunk_at",
+    "kind": "Method",
+    "url": "class_TerrainParams.html#method_chunk_at",
+    "desc": "The chunk containing a world position (ignoring z)."
+  },
+  {
+    "name": "TerrainSampler",
+    "kind": "Class",
+    "url": "class_TerrainSampler.html",
+    "desc": "A generated map, plus the O(1) queries the tile system asks of it."
+  },
+  {
+    "name": "TerrainSampler::TerrainSampler",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_TerrainSampler",
+    "desc": ""
+  },
+  {
+    "name": "TerrainSampler::TerrainSampler",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_TerrainSampler",
+    "desc": "Non-copyable, non-movable see this file's doc (borrowed interior pointers)."
+  },
+  {
+    "name": "TerrainSampler::operator=",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "TerrainSampler::TerrainSampler",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_TerrainSampler",
+    "desc": ""
+  },
+  {
+    "name": "TerrainSampler::operator=",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_operator=",
+    "desc": ""
+  },
+  {
+    "name": "TerrainSampler::build",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_build",
+    "desc": "Takes ownership of a generated world and indexes it for querying. Deliberately serial. The index is one pass over the..."
+  },
+  {
+    "name": "TerrainSampler::is_built",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_is_built",
+    "desc": "True once build() has been handed a non-empty world."
+  },
+  {
+    "name": "TerrainSampler::config",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_config",
+    "desc": "The configuration the world was generated from."
+  },
+  {
+    "name": "TerrainSampler::graph",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_graph",
+    "desc": "The generated world itself, for a consumer that wants towns, roads or rivers."
+  },
+  {
+    "name": "TerrainSampler::params",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_params",
+    "desc": "The tiling this sampler was built for."
+  },
+  {
+    "name": "TerrainSampler::tiles_per_axis",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_tiles_per_axis",
+    "desc": "Tiles along one axis of the whole world; tile indices span [0, tiles_per_axis())."
+  },
+  {
+    "name": "TerrainSampler::sea_level_steps",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_sea_level_steps",
+    "desc": "The height of the waterline, in tile steps the top of every water column."
+  },
+  {
+    "name": "TerrainSampler::cell_at",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_cell_at",
+    "desc": "The Voronoi cell containing a point in grid space. A nearest-site query over the bucket index. Rings are expanded out..."
+  },
+  {
+    "name": "TerrainSampler::sample",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_sample",
+    "desc": "Samples one tile column: how tall it is and what it is made of. Sampled at the tile's CENTRE, not its corner, so a co..."
+  },
+  {
+    "name": "TerrainSampler::tile_kind_for_biome",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_tile_kind_for_biome",
+    "desc": "Maps a mapcoopa biome onto the surface a tile face is textured with. Thirty-three biomes collapse onto twelve surface..."
+  },
+  {
+    "name": "TerrainSampler::side_kind_for",
+    "kind": "Method",
+    "url": "class_TerrainSampler.html#method_side_kind_for",
+    "desc": "What sits immediately under a given top surface, on a lateral face. The grass-over-dirt read every block game uses: a..."
+  },
+  {
+    "name": "TerrainSystem",
+    "kind": "Class",
+    "url": "class_TerrainSystem.html",
+    "desc": "Drives every TerrainComponent in the scene: generate, mesh, upload, retire."
+  },
+  {
+    "name": "TerrainSystem::TerrainSystem",
+    "kind": "Method",
+    "url": "class_TerrainSystem.html#method_TerrainSystem",
+    "desc": ""
+  },
+  {
+    "name": "TerrainSystem::system_name",
+    "kind": "Method",
+    "url": "class_TerrainSystem.html#method_system_name",
+    "desc": ""
+  },
+  {
+    "name": "TerrainSystem::runs_in_edit_mode",
+    "kind": "Method",
+    "url": "class_TerrainSystem.html#method_runs_in_edit_mode",
+    "desc": "Terrain is authored data, not simulation: an editor scene still meshes it."
+  },
+  {
+    "name": "TerrainSystem::execute",
+    "kind": "Method",
+    "url": "class_TerrainSystem.html#method_execute",
+    "desc": ""
+  },
+  {
+    "name": "TileColumn",
+    "kind": "Class",
+    "url": "class_TileColumn.html",
+    "desc": "One tile's sampled state: how tall it is and what it is made of. steps is a COUNT of vertical tile steps, not a heigh..."
+  },
+  {
+    "name": "TileMeshLibrary",
+    "kind": "Class",
+    "url": "class_TileMeshLibrary.html",
+    "desc": "Six baked side geometries, and append() to stamp one into a chunk buffer. `TileMeshLibrarylib; lib.bake_canonical(fla..."
+  },
+  {
+    "name": "TileMeshLibrary::encode_uv",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_encode_uv",
+    "desc": ""
+  },
+  {
+    "name": "TileMeshLibrary::bake_canonical",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_bake_canonical",
+    "desc": "Bakes one authored mesh onto all six faces. The ordinary case: one tile_side_flat.yaml becomes a whole cube's worth o..."
+  },
+  {
+    "name": "TileMeshLibrary::bake_side",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_bake_side",
+    "desc": "Bakes one authored mesh onto a single face, replacing whatever was there."
+  },
+  {
+    "name": "TileMeshLibrary::is_baked",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_is_baked",
+    "desc": "True once every face has geometry i.e. a chunk built from this can draw."
+  },
+  {
+    "name": "TileMeshLibrary::side",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_side",
+    "desc": "Read-only access to one face's baked geometry, for tests and diagnostics."
+  },
+  {
+    "name": "TileMeshLibrary::append",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_append",
+    "desc": "Stamps one side into a chunk's merged buffers. The inner loop of chunk meshing: everything expensive (rotation, tange..."
+  },
+  {
+    "name": "TileMeshLibrary::append_span",
+    "kind": "Method",
+    "url": "class_TileMeshLibrary.html#method_append_span",
+    "desc": "Appends a mergeable side stretched over span tiles/cells (1 on the face's normal axis), with tile-space UVs encoded f..."
+  }
+]
