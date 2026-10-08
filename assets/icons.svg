@@ -85,6 +85,41 @@
     <path d="M30 18a8 8 0 0 1 0 12M34 13a15 15 0 0 1 0 22M38.5 8.5a21 21 0 0 1 0 31" fill="none" stroke="#a78bfa" stroke-width="2.4" stroke-linecap="round"/>
   </symbol>
 
+  <symbol id="i-fire" viewBox="0 0 48 48">
+    <path d="M10 40 24 47 38 40 24 33Z" fill="#2a2a32"/>
+    <path d="M14 39 34 33M14 33 34 39" stroke="#5b5b68" stroke-width="3" stroke-linecap="round"/>
+    <path d="M24 6c4 7 11 12 11 21a11 11 0 0 1-22 0c0-5 3-8 5-11 0 4 2 6 4 6-1-6 0-11 2-16Z" fill="#8b5cf6"/>
+    <path d="M24 20c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3 0-5 1-8Z" fill="#ede9fe"/>
+    <circle cx="36" cy="10" r="1.6" fill="#c4b5fd"/><circle cx="12" cy="15" r="1.3" fill="#a78bfa"/><circle cx="31" cy="4" r="1.1" fill="#ede9fe"/>
+  </symbol>
+
+  <symbol id="i-fog" viewBox="0 0 48 48">
+    <path d="M24 30 42 39 24 47 6 39Z" fill="#2a2a32"/>
+    <path d="M18 4H30L27 9H21Z" fill="#5b5b68"/>
+    <path d="M21 9H27L38 38H10Z" fill="#a78bfa" opacity=".35"/>
+    <path d="M22.5 9H25.5L31 38H17Z" fill="#ede9fe" opacity=".45"/>
+    <path d="M4 26c4-2 8-2 12 0s8 2 12 0 8-2 12 0" fill="none" stroke="#c4b5fd" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+    <path d="M8 32c4-2 8-2 12 0s8 2 12 0 6-2 9-1" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+  </symbol>
+
+  <symbol id="i-anim" viewBox="0 0 48 48">
+    <rect x="4" y="32" width="40" height="10" rx="3" fill="#24242c" stroke="#5b5b68" stroke-width="1.5"/>
+    <path d="M12 37 15 34 18 37 15 40ZM24 37 27 34 30 37 27 40Z" fill="#c4b5fd"/>
+    <path d="M36 37 39 34 42 37 39 40Z" fill="#8b5cf6"/>
+    <path d="M21 30V44" stroke="#a78bfa" stroke-width="2" stroke-linecap="round"/>
+    <path d="M10 26 18 14 28 18" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="10" cy="26" r="3" fill="#5b5b68"/><circle cx="18" cy="14" r="3" fill="#c4b5fd"/><circle cx="28" cy="18" r="3" fill="#ede9fe"/>
+    <path d="M32 8a12 12 0 0 1 6 10" fill="none" stroke="#6b6b78" stroke-width="1.6" stroke-dasharray="2 3" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="i-ship" viewBox="0 0 48 48">
+    <path d="M24 14 40 22 24 30 8 22Z" fill="#c4b5fd"/>
+    <path d="M8 22 24 30V44L8 36Z" fill="#8b5cf6"/>
+    <path d="M24 30 40 22V36L24 44Z" fill="#5b3fc4"/>
+    <path d="M16 18 32 26V31" fill="none" stroke="#ede9fe" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M24 2V10M20 6.5 24 10.5 28 6.5" fill="none" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
   <symbol id="i-map" viewBox="0 0 48 48">
     <path d="M24 10 32 14.6V23.8L24 28.4 16 23.8V14.6Z" fill="#c4b5fd"/>
     <path d="M32 23.8 40 28.4V37.6L32 42.2 24 37.6V28.4Z" fill="#6d28d9"/>

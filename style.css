@@ -200,6 +200,7 @@ figcaption b { color: var(--violet-200); font-weight: 600; }
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .gallery img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
 .gallery.square img { aspect-ratio: 1; }
+.gallery.gallery-2 { grid-template-columns: repeat(2, 1fr); margin-bottom: 18px; }
 .split-shot { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .split-shot .shot { margin: 0; }
 
@@ -426,7 +427,7 @@ pre code { background: none; border: 0; padding: 0; border-radius: 0; color: inh
   .page-head { padding-top: 110px; }
   .strip-inner { grid-template-columns: repeat(2, 1fr); }
   .strip-inner div:last-child:nth-child(odd) { grid-column: span 2; }
-  .gallery, .grid-2, .grid-3, .grid-4, .brick-row, .brick-row-base, .pager { grid-template-columns: 1fr; }
+  .gallery, .gallery.gallery-2, .grid-2, .grid-3, .grid-4, .brick-row, .brick-row-base, .pager { grid-template-columns: 1fr; }
   .project-head { flex-direction: column; align-items: flex-start; gap: 16px; }
   .project-icon { width: 76px; height: 76px; border-radius: 20px; }
   .project-icon svg { width: 48px; height: 48px; }

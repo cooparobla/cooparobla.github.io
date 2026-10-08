@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>coopa · render + game engine engineering</title>
-  <meta name="description" content="coopa (cooparobla): real-time rendering and game engine engineering. Home of toyengine, a C++20 / Vulkan 3D engine, and mapcoopa, a seeded fantasy world generator.">
+  <meta name="description" content="coopa (cooparobla): real-time rendering and game engine engineering. Home of toyengine, a C++20 / Vulkan 3D engine with a Blender-style editor, and mapcoopa, a seeded fantasy world generator.">
   <meta name="theme-color" content="#0f0f12">
   <meta property="og:title" content="coopa · render + game engine engineering">
   <meta property="og:description" content="toyengine, a C++20 / Vulkan 3D game engine with a Blender-style editor, and mapcoopa, a seeded world generator.">
-  <meta property="og:image" content="assets/img/toyengine/water_test.jpg">
+  <meta property="og:image" content="assets/img/toyengine/particles_test.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -43,14 +43,14 @@
       <p class="eyebrow"><span class="dot"></span>open source · C++20 · Vulkan</p>
       <h1>Rendering <span class="plus">+</span> Game Engine <span class="grad">Engineering</span></h1>
       <p class="lede">
-        <b>toyengine</b> is a 3D game engine with a deferred PBR renderer, physics, dynamic water and a
-        Blender-style editor. <b>mapcoopa</b> generates whole fantasy worlds from a single seed.
+        <b>toyengine</b> is a 3D game engine with a deferred PBR renderer, volumetric fog, particles,
+        physics, dynamic water and a Blender-style editor. <b>mapcoopa</b> generates whole fantasy worlds from a single seed.
       </p>
       <div class="cta">
         <a class="btn btn-primary" href="projects/toyengine/">toyengine <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
         <a class="btn btn-ghost" href="projects/mapcoopa/">mapcoopa <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></a>
       </div>
-      <p class="hero-term mono" aria-hidden="true"><span class="prompt">$</span><span id="typed" data-lines='["./build/toyengine water_test","./build/mapcoopa --seed=42 --out=world","./build/toyengine terrain_test","./build/toyengine_editor --new-project ~/game","./build/mapcoopa --shape=archipelago --out=islands","./build/toyengine underwater_test"]'>./build/toyengine water_test</span><span class="caret"></span></p>
+      <p class="hero-term mono" aria-hidden="true"><span class="prompt">$</span><span id="typed" data-lines='["./build/toyengine particles_test","./build/mapcoopa --seed=42 --out=world","./build/toyengine fog_test","./build/toyengine_hub","./build/toyengine water_test","./build/mapcoopa --shape=archipelago --out=islands","./build/toyengine underwater_test"]'>./build/toyengine particles_test</span><span class="caret"></span></p>
     </div>
     <p class="hero-note mono">↖ Gerstner waves on a grid of blocks. Move the cursor to make ripples.</p>
   </section>
@@ -59,7 +59,7 @@
   <section class="strip" aria-label="Disciplines">
     <div class="wrap strip-inner">
       <div><b>Rendering</b><span>deferred PBR · Vulkan</span></div>
-      <div><b>Simulation</b><span>rigid bodies · cloth · water</span></div>
+      <div><b>Simulation</b><span>physics · cloth · water · particles</span></div>
       <div><b>Procedural</b><span>seeded worlds · terrain</span></div>
       <div><b>Tools</b><span>editors · pipelines</span></div>
       <div><b>Engines</b><span>C++20 · header-only libs</span></div>
@@ -77,10 +77,10 @@
       <div class="projects">
         <a class="project-card reveal" href="projects/toyengine/">
           <span class="badge">Flagship</span>
-          <div class="thumb"><img src="assets/img/toyengine/water_test.jpg" alt="toyengine water_test scene: a lake with waves, foam and floating crates" loading="lazy"></div>
+          <div class="thumb"><img src="assets/img/toyengine/particles_test.jpg" alt="toyengine particles_test scene: a campfire at dusk with flames, lit smoke and embers" loading="lazy"></div>
           <div class="body">
             <div class="title"><svg aria-hidden="true"><use href="assets/icons.svg#i-brick"/></svg><h3>toyengine</h3></div>
-            <p>A modern C++20 / Vulkan 3D game engine with a Blender-style editor. Deferred PBR, rigid-body and cloth physics, dynamic water, streamed procedural terrain, and an editor that writes exactly the files the game loads.</p>
+            <p>A modern C++20 / Vulkan 3D game engine with a Blender-style editor. Deferred PBR, volumetric fog and light, particles, rigid-body and cloth physics, dynamic water, streamed procedural terrain, animation and 3D audio, plus an editor that writes exactly the files the game loads and builds signed, standalone games.</p>
             <div class="tags"><span class="tag">C++20</span><span class="tag">Vulkan</span><span class="tag">editor</span><span class="tag">Linux · macOS</span></div>
             <span class="more">Explore toyengine <svg aria-hidden="true"><use href="assets/icons.svg#i-arrow"/></svg></span>
           </div>

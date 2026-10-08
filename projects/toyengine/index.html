@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>toyengine · coopa</title>
-  <meta name="description" content="toyengine: an open source C++20 / Vulkan 3D game engine with deferred PBR, physics, water, streamed procedural terrain and a Blender-style editor.">
+  <meta name="description" content="toyengine: an open source C++20 / Vulkan 3D game engine with deferred PBR, volumetrics, particles, physics, water, streamed procedural terrain, audio and a Blender-style editor.">
   <meta name="theme-color" content="#0f0f12">
   <meta property="og:title" content="toyengine · coopa">
   <meta property="og:description" content="A modern C++20 / Vulkan 3D game engine with a Blender-style editor.">
-  <meta property="og:image" content="../../assets/img/toyengine/water_test.jpg">
+  <meta property="og:image" content="../../assets/img/toyengine/particles_test.jpg">
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../style.css?v=4">
+  <link rel="stylesheet" href="../../style.css?v=5">
 </head>
 <body>
 
@@ -46,13 +46,14 @@
           <p class="eyebrow">Flagship project · open source · v0.1.0</p>
           <h1>toyengine</h1>
           <p class="sub">A modern C++20 / Vulkan 3D game engine with a Blender-style editor.</p>
-          <div class="tags"><span class="tag">C++20</span><span class="tag">Vulkan</span><span class="tag">MoltenVK</span><span class="tag">Linux</span><span class="tag">macOS</span><span class="tag">YAML scenes</span></div>
+          <div class="tags"><span class="tag">C++20</span><span class="tag">Vulkan</span><span class="tag">MoltenVK</span><span class="tag">Linux</span><span class="tag">macOS</span><span class="tag">YAML scenes</span><span class="tag">editor + hub</span></div>
         </div>
       </div>
       <p class="prose">
-        toyengine pairs a full-resolution deferred PBR renderer with rigid-body and cloth physics,
-        dynamic water, streamed procedural terrain, an interactive UI toolkit and a native editor
-        that writes exactly the files the game loads. It is <em>adaptable</em> by design: scenes,
+        toyengine pairs a full-resolution deferred PBR renderer with volumetric fog and light,
+        particles, rigid-body and cloth physics, dynamic water, streamed procedural terrain,
+        animation, 3D audio, an interactive UI toolkit and a native editor that writes exactly the
+        files the game loads. It is <em>adaptable</em> by design: scenes,
         objects, materials and render settings are plain YAML, every rendering feature has quality
         tiers and a master switch, and each subsystem is its own library that can be lifted out and
         used elsewhere.
@@ -69,17 +70,22 @@
   <section class="section" style="padding-top: 20px">
     <div class="wrap">
       <figure class="shot reveal">
-        <img src="../../assets/img/toyengine/water_test.jpg" alt="A lake with Gerstner waves, shoreline foam, a river and floating crates" data-zoom>
-        <figcaption><b>water_test</b>: lake, river, foam, ripples, buoyant crates</figcaption>
+        <img src="../../assets/img/toyengine/particles_test.jpg" alt="A campfire at dusk: flames, lit smoke, embers, a torch trail and scattered mushrooms" data-zoom>
+        <figcaption><b>particles_test</b>: flames, lit smoke, embers, a torch trail, mesh scatter</figcaption>
       </figure>
 
+      <div class="gallery gallery-2">
+        <figure class="reveal"><img src="../../assets/img/toyengine/water_test.jpg" alt="A lake with Gerstner waves, shoreline foam, a river and floating crates" loading="lazy" data-zoom><figcaption><b>water_test</b>: waves, foam, a flowing river, buoyant crates</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/fog_test.jpg" alt="Volumetric spotlights in stage haze, a lantern halo and drifting ground mist" loading="lazy" data-zoom><figcaption><b>fog_test</b>: global fog, local volumes, volumetric light</figcaption></figure>
+      </div>
+
       <div class="gallery">
-        <figure class="reveal"><img src="../../assets/img/toyengine/terrain_test.jpg" alt="Streamed procedural tile terrain" loading="lazy" data-zoom><figcaption><b>terrain_test</b>: streamed procedural world</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/ssr_test.jpg" alt="Screen-space reflections across mirror, glossy and rough floor strips" loading="lazy" data-zoom><figcaption><b>ssr_test</b>: Hi-Z reflections, mirror to rough</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/underwater_test.jpg" alt="Underwater fog, caustics and Snell's window" loading="lazy" data-zoom><figcaption><b>underwater_test</b>: caustics, Snell's window</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/pixel_demo.jpg" alt="PBR materials, glass, emissive and water" loading="lazy" data-zoom><figcaption><b>pixel_demo</b>: PBR, refraction, SDFs, bloom</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/terrain_test.jpg" alt="Streamed procedural tile terrain" loading="lazy" data-zoom><figcaption><b>terrain_test</b>: streamed procedural world</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/physics_test.jpg" alt="Rigid-body physics arena" loading="lazy" data-zoom><figcaption><b>physics_test</b>: stacking, hinges, triggers</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/cloth_test.jpg" alt="XPBD cloth draped over a moving ball" loading="lazy" data-zoom><figcaption><b>cloth_test</b>: XPBD cloth</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor with the water_test scene open" loading="lazy" data-zoom><figcaption><b>toyengine_editor</b></figcaption></figure>
       </div>
     </div>
   </section>
@@ -88,7 +94,7 @@
   <section class="strip" aria-label="At a glance">
     <div class="wrap strip-inner">
       <div><b>Deferred</b><span>PBR renderer</span></div>
-      <div><b>9</b><span>demo scenes</span></div>
+      <div><b>15</b><span>demo scenes</span></div>
       <div><b>7</b><span>coopa libraries</span></div>
       <div><b>2</b><span>platforms: Linux + macOS</span></div>
       <div><b>.caml</b><span>packaged builds</span></div>
@@ -100,19 +106,27 @@
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">What's inside</p>
-        <h2>Rendering, simulation and worlds</h2>
+        <h2>Rendering, simulation, worlds and sound</h2>
       </div>
       <div class="grid-3">
         <article class="card reveal">
           <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-render"/></svg>
           <h4>Rendering</h4>
           <ul>
-            <li>Deferred PBR: Cook-Torrance with directional, point and spot lights</li>
-            <li>Cascaded shadows, soft PCF, PCSS and contact shadows</li>
-            <li>Hi-Z SSR, traced SSGI, temporally stable SSAO</li>
-            <li>SDF raymarching that mixes with meshes; volumetric light shafts</li>
-            <li>Bloom, auto exposure, LUTs, physical DoF, TAA / SMAA / FXAA</li>
-            <li>Optional cel bands, outlines, dithering and palette quantisation</li>
+            <li>Deferred PBR: Cook-Torrance with directional, point and spot lights, sky and environment</li>
+            <li>Cascaded sun shadows with cascade blending; many shadowed local lights in one atlas, with static casters cached</li>
+            <li>Soft PCF, optional PCSS and single-ray contact shadows</li>
+            <li>Hi-Z SSR, traced SSGI and GTAO-style SSAO, with per-object motion vectors feeding the temporal filters and TAA</li>
+            <li>Bloom, auto exposure, LUTs, physical DoF, tilt-shift, TAA / SMAA / FXAA</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-fog"/></svg>
+          <h4>Volumetrics and fog</h4>
+          <ul>
+            <li>Global analytic height fog</li>
+            <li>Local fog volumes, box or sphere: pockets, drifting haze, wind ribbons</li>
+            <li>Sun shafts that respect shadows, plus visible spotlight cones and lantern halos</li>
           </ul>
         </article>
         <article class="card reveal">
@@ -127,20 +141,23 @@
           </ul>
         </article>
         <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-fire"/></svg>
+          <h4>Particles</h4>
+          <ul>
+            <li>Unity-style modules: bursts, shapes, forces, curl-noise turbulence, colour and size over life, collision, sub-emitters</li>
+            <li>Blender-style emission from mesh faces, vertices or edges, and a hair-like scatter mode for instanced meshes</li>
+            <li>Simulated on the job system; sorted, instanced and soft-faded in the transparent pass with HDR glow</li>
+            <li><code>LightFlicker</code> for firelight</li>
+          </ul>
+        </article>
+        <article class="card reveal">
           <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-physics"/></svg>
-          <h4>Physics</h4>
+          <h4>Physics and cloth</h4>
           <ul>
             <li>Box, sphere, capsule and triangle-mesh colliders</li>
             <li>Physics materials, hinge joints, triggers, collision layers</li>
             <li>Kinematic movers and character controllers</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-cloth"/></svg>
-          <h4>Cloth</h4>
-          <ul>
-            <li>XPBD cloth that collides with the world</li>
-            <li>Renders as a shaded, shadow-casting mesh</li>
+            <li>XPBD cloth that collides with the world and renders as a shaded, shadow-casting mesh</li>
           </ul>
         </article>
         <article class="card reveal">
@@ -153,11 +170,30 @@
           </ul>
         </article>
         <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-anim"/></svg>
+          <h4>Animation</h4>
+          <ul>
+            <li>Keyframed clips on object-hierarchy rigs, driven by an <code>Animator</code> with states</li>
+            <li>Skinned meshes that bend with vertex-group weights</li>
+            <li>Keyed in the editor's timeline and dope sheet with record mode and auto-keying</li>
+          </ul>
+        </article>
+        <article class="card reveal">
           <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-ui"/></svg>
           <h4>UI toolkit</h4>
           <ul>
             <li>Panels, text, buttons, sliders, progress bars, layouts, masks</li>
+            <li>Themed composites: windows, menus, stat bars, hotbars, setting rows</li>
             <li>Crisp screen-space HUDs, or world-space canvases that stay clickable in 3D</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-audio"/></svg>
+          <h4>Audio</h4>
+          <ul>
+            <li>WAV and MP3 clips through a bus mixer (Master, Music, SFX, UI)</li>
+            <li>Binaural 3D panning, distance falloff and doppler</li>
+            <li><code>AudioSource</code> and <code>AudioListener</code> components; settings sliders bind straight to buses</li>
           </ul>
         </article>
       </div>
@@ -176,15 +212,27 @@
         </p>
         <ul class="ticks">
           <li><b>Scenes and object assets.</b> Hierarchy, inspector, gizmos, and play / pause / step in place. Prefab-style assets are instanced with <code>prefab:</code>.</li>
-          <li><b>Mesh modelling.</b> Extrude, inset, bevel, loop cut, bridge, Catmull-Clark subdivide, mirror and UVs. Sculpting with draw, smooth, inflate, grab and flatten.</li>
-          <li><b>Material lookdev.</b> Shader ball, studio lighting, turntable.</li>
-          <li><b>Build › Package.</b> Turns a project into compact <code>.caml</code> binaries.</li>
+          <li><b>Mesh modelling.</b> Extrude, inset, bevel, loop cut and slide, bridge, Catmull-Clark subdivide, mirror and UVs. Sculpt, vertex paint and weight paint modes.</li>
+          <li><b>Animation.</b> A timeline and dope sheet with record mode: move a rig and the changed channels are keyed.</li>
+          <li><b>Material lookdev and UI design.</b> A shader ball with studio lighting, and a UI designer drawn by the game's own UI pass.</li>
+          <li><b>Render and project settings,</b> applied live.</li>
           <li><b>Plain files.</b> Everything saves as YAML in <code>assets/</code>, ready to hand-edit, diff and merge.</li>
         </ul>
       </div>
       <div class="window reveal">
-        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · WaterTest</span></div>
-        <img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor showing the water_test scene, outliner and properties" loading="lazy" data-zoom>
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · fog_test</span></div>
+        <img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor with fog_test in Full Render and a stage spotlight selected" loading="lazy" data-zoom>
+      </div>
+    </div>
+
+    <div class="wrap" style="margin-top: 64px">
+      <div class="gallery">
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/edit_mode.jpg" alt="Edit Mode on a loop-cut cube with its top face selected" loading="lazy" data-zoom><figcaption><b>Edit Mode</b>: extrude, bevel, loop cut, UVs</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/sculpt.jpg" alt="Sculpt Mode with the draw brush and X mirror on a sphere" loading="lazy" data-zoom><figcaption><b>Sculpt</b>: draw, smooth, inflate, grab, flatten</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/weight_paint.jpg" alt="Weight Paint Mode showing vertex-group weights as a heatmap" loading="lazy" data-zoom><figcaption><b>Weight Paint</b>: vertex groups for skinning</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/timeline.jpg" alt="The timeline and dope sheet keying a robot arm rig" loading="lazy" data-zoom><figcaption><b>Timeline</b>: dope sheet, record, auto-key</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/material_editor.jpg" alt="The material editor previewing a brick material on a shader ball" loading="lazy" data-zoom><figcaption><b>Materials</b>: shader ball lookdev</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/ui_designer.jpg" alt="The UI designer editing a game HUD with a selected hotbar" loading="lazy" data-zoom><figcaption><b>UI designer</b>: HUDs and menus</figcaption></figure>
       </div>
     </div>
   </section>
@@ -234,8 +282,8 @@
         <div class="term mono">
           <div><span class="prompt">$</span>git clone --recurse-submodules git@github.com:cooparobla/toyengine.git</div>
           <div><span class="prompt">$</span>cmake -B build &amp;&amp; cmake --build build -j</div>
-          <div><span class="prompt">$</span>./build/toyengine water_test</div>
-          <div><span class="prompt">$</span>./build/toyengine_editor</div>
+          <div><span class="prompt">$</span>./build/toyengine particles_test</div>
+          <div><span class="prompt">$</span>./build/toyengine_hub</div>
           <button class="copy" data-copy="git clone --recurse-submodules git@github.com:cooparobla/toyengine.git&#10;cd toyengine&#10;cmake -B build &amp;&amp; cmake --build build -j" aria-label="Copy build commands"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-copy"/></svg></button>
         </div>
         <p class="prose" style="font-size: .92rem; margin-top: 14px">On macOS, run <code>tools/setup_macos.sh</code> once first to install MoltenVK, the Vulkan loader, <code>glslc</code> and GLFW.</p>
@@ -243,8 +291,33 @@
     </div>
   </section>
 
+  <!-- ───────── Projects and shipping ───────── -->
+  <section id="ship" class="section section-alt">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow">Projects and shipping</p>
+        <h2>From a new project to a <span class="grad">signed build</span></h2>
+        <p class="prose">
+          A game lives in its own project folder with its assets and C++ components. The project
+          builds the engine alongside its own code, either pinned to a pushed commit for
+          reproducible builds or linked to a local checkout for working on both at once.
+        </p>
+        <ul class="ticks">
+          <li><b>toyengine Hub.</b> Creates, adds, opens and re-pins projects, and streams the first build into its log.</li>
+          <li><b>Your code in the editor.</b> Components in <code>src/</code> compile into both the game and the editor, so Play runs them. <b>Build › Refresh</b> rebuilds both.</li>
+          <li><b>Build.</b> A standalone game that runs without the engine repo or the Vulkan SDK: a <code>.app</code> on macOS with MoltenVK bundled, a folder on Linux.</li>
+          <li><b>Development or Shipping.</b> Shipping is a Release build with encoded <code>.caml</code> assets, debug hooks off, and Developer ID signing with notarization on macOS.</li>
+        </ul>
+      </div>
+      <div class="window reveal">
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine Hub</span></div>
+        <img src="../../assets/img/toyengine/getting_started_hub.jpg" alt="The toyengine hub listing a new linked project" loading="lazy" data-zoom>
+      </div>
+    </div>
+  </section>
+
   <!-- ───────── Stack ───────── -->
-  <section id="stack" class="section section-alt">
+  <section id="stack" class="section">
     <div class="wrap">
       <div class="center reveal">
         <p class="eyebrow">The coopa stack</p>
