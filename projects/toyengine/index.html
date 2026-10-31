@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>toyengine · coopa</title>
-  <meta name="description" content="toyengine: an open source C++20 / Vulkan 3D game engine with deferred PBR, volumetrics, particles, physics, water, streamed procedural terrain, audio and a Blender-style editor.">
+  <meta name="description" content="toyengine: an open source C++20 / Vulkan 3D game engine with deferred PBR, volumetrics, particles, fire, physics, cloth, hair, water, weather, streamed and planetary terrain, navigation, destruction, a procedural graph, audio and a Blender-style editor.">
   <meta name="theme-color" content="#0f0f12">
   <meta property="og:title" content="toyengine · coopa">
   <meta property="og:description" content="A modern C++20 / Vulkan 3D game engine with a Blender-style editor.">
-  <meta property="og:image" content="../../assets/img/toyengine/particles_test.jpg">
+  <meta property="og:image" content="../../assets/img/toyengine/particles_demo.jpg">
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,12 +51,13 @@
       </div>
       <p class="prose">
         toyengine pairs a full-resolution deferred PBR renderer with volumetric fog and light,
-        particles, rigid-body and cloth physics, dynamic water, streamed procedural terrain,
-        animation, 3D audio, an interactive UI toolkit and a native editor that writes exactly the
-        files the game loads. It is <em>adaptable</em> by design: scenes,
-        objects, materials and render settings are plain YAML, every rendering feature has quality
-        tiers and a master switch, and each subsystem is its own library that can be lifted out and
-        used elsewhere.
+        particles and fire, rigid-body physics, cloth and hair, dynamic water, a day/night weather
+        system, streamed and heightmap terrain (planets included), A* and flow-field navigation,
+        mesh destruction, a geometry-nodes-style procedural graph, animation, 3D audio, an
+        interactive UI toolkit and a native editor that writes exactly the files the game loads. It
+        is <em>adaptable</em> by design: scenes, objects, materials and render settings are plain
+        YAML, every rendering feature has quality tiers and a master switch, and each subsystem is
+        its own library that can be lifted out and used elsewhere.
       </p>
       <div class="cta">
         <a class="btn btn-primary" href="https://github.com/cooparobla/toyengine"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-github"/></svg> View on GitHub</a>
@@ -70,22 +71,54 @@
   <section class="section" style="padding-top: 20px">
     <div class="wrap">
       <figure class="shot reveal">
-        <img src="../../assets/img/toyengine/particles_test.jpg" alt="A campfire at dusk: flames, lit smoke, embers, a torch trail and scattered mushrooms" data-zoom>
-        <figcaption><b>particles_test</b>: flames, lit smoke, embers, a torch trail, mesh scatter</figcaption>
+        <img src="../../assets/img/toyengine/particles_demo.jpg" alt="A campfire at dusk: flames, lit smoke, embers, a torch trail and scattered mushrooms" data-zoom>
+        <figcaption><b>particles_demo</b>: flames, lit smoke, embers, a torch trail, mesh scatter</figcaption>
       </figure>
 
       <div class="gallery gallery-2">
-        <figure class="reveal"><img src="../../assets/img/toyengine/water_test.jpg" alt="A lake with Gerstner waves, shoreline foam, a river and floating crates" loading="lazy" data-zoom><figcaption><b>water_test</b>: waves, foam, a flowing river, buoyant crates</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/fog_test.jpg" alt="Volumetric spotlights in stage haze, a lantern halo and drifting ground mist" loading="lazy" data-zoom><figcaption><b>fog_test</b>: global fog, local volumes, volumetric light</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/water_demo.jpg" alt="A lake with Gerstner waves, shoreline foam, a river and floating crates" loading="lazy" data-zoom><figcaption><b>water_demo</b>: waves, foam, a flowing river, buoyant crates</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/fog_demo.jpg" alt="Volumetric spotlights in stage haze, a lantern halo and drifting ground mist" loading="lazy" data-zoom><figcaption><b>fog_demo</b>: global fog, local volumes, volumetric light</figcaption></figure>
       </div>
 
       <div class="gallery">
-        <figure class="reveal"><img src="../../assets/img/toyengine/ssr_test.jpg" alt="Screen-space reflections across mirror, glossy and rough floor strips" loading="lazy" data-zoom><figcaption><b>ssr_test</b>: Hi-Z reflections, mirror to rough</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/underwater_test.jpg" alt="Underwater fog, caustics and Snell's window" loading="lazy" data-zoom><figcaption><b>underwater_test</b>: caustics, Snell's window</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/pixel_demo.jpg" alt="PBR materials, glass, emissive and water" loading="lazy" data-zoom><figcaption><b>pixel_demo</b>: PBR, refraction, SDFs, bloom</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/terrain_test.jpg" alt="Streamed procedural tile terrain" loading="lazy" data-zoom><figcaption><b>terrain_test</b>: streamed procedural world</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/physics_test.jpg" alt="Rigid-body physics arena" loading="lazy" data-zoom><figcaption><b>physics_test</b>: stacking, hinges, triggers</figcaption></figure>
-        <figure class="reveal"><img src="../../assets/img/toyengine/cloth_test.jpg" alt="XPBD cloth draped over a moving ball" loading="lazy" data-zoom><figcaption><b>cloth_test</b>: XPBD cloth</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/ssr_demo.jpg" alt="Screen-space reflections across mirror, glossy and rough floor strips" loading="lazy" data-zoom><figcaption><b>ssr_demo</b>: Hi-Z reflections, mirror to rough</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/underwater_demo.jpg" alt="Underwater fog, caustics and Snell's window" loading="lazy" data-zoom><figcaption><b>water_demo</b> underwater: caustics, Snell's window</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/shader_demo.jpg" alt="Material and lighting stations: toon shading against a PBR reference, emissive, glass, SDFs, triplanar" loading="lazy" data-zoom><figcaption><b>shader_demo</b>: toon vs PBR, glass, SDFs, triplanar</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/terrain_demo.jpg" alt="Streamed procedural tile terrain" loading="lazy" data-zoom><figcaption><b>terrain_demo</b>: streamed procedural world</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/physics_demo.jpg" alt="Rigid-body physics arena" loading="lazy" data-zoom><figcaption><b>physics_demo</b>: stacking, hinges, triggers</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/cloth_demo.jpg" alt="XPBD cloth draped over a moving ball" loading="lazy" data-zoom><figcaption><b>cloth_demo</b>: XPBD cloth</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── New since the last build ───────── -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">New since the last build</p>
+        <h2>Weather, worlds, crowds and creatures</h2>
+        <p class="prose narrow">
+          The demo count has gone from 15 to <b>36</b>. A sample of what's arrived: a day/night
+          weather system, A* and flow-field navigation, mesh destruction, planets and heightmap
+          terrain, runtime digging, hand-painted instance scatter, hair and curves, ragdolls,
+          mountable horses, drivable vehicles, a stylised fire system, and a procedural graph that
+          bakes node graphs into scene subtrees.
+        </p>
+      </div>
+      <div class="gallery">
+        <figure class="reveal"><img src="../../assets/img/toyengine/weather_demo.jpg" alt="A rainstorm over a hamlet: heavy rain streaks, wet trees and rooftops" loading="lazy" data-zoom><figcaption><b>weather_demo</b>: blending conditions, day/night, wind</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/nav_demo.jpg" alt="A navmesh with a flow field of green arrows, a pathing crowd agent and a target" loading="lazy" data-zoom><figcaption><b>nav_demo</b>: A* and flow-field crowds</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/destruction_demo.jpg" alt="A rock and a sphere mid-fracture into Voronoi chunks" loading="lazy" data-zoom><figcaption><b>destruction_demo</b>: Voronoi mesh fracture</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/planet_demo.jpg" alt="A small spherical planet with continents and oceans" loading="lazy" data-zoom><figcaption><b>planet_demo</b>: spherical streamed terrain</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/heightmap_terrain_demo.jpg" alt="Rolling hills, mountains and a river under morning haze" loading="lazy" data-zoom><figcaption><b>heightmap_terrain_demo</b>: sculpted or imported heightfields</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/dig_demo.jpg" alt="Streamed tile terrain with a drag-to-dig brush outline" loading="lazy" data-zoom><figcaption><b>dig_demo</b>: runtime terrain editing, water fills in</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/instance_paint_demo.jpg" alt="Hand-painted scatter of rocks and trees over streamed terrain" loading="lazy" data-zoom><figcaption><b>instance_paint_demo</b>: painted prop and clutter scatter</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/hair_demo.jpg" alt="Furry creatures with strand-simulated hair in blue, brown and green" loading="lazy" data-zoom><figcaption><b>hair_demo</b>: grown strands, XPBD simulation</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/curve_tree_demo.jpg" alt="Three trees grown along authored branch curves" loading="lazy" data-zoom><figcaption><b>curve_tree_demo</b>: authored curves feeding the procedural graph</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/horse_demo.jpg" alt="A player character beside a saddled horse in a paddock" loading="lazy" data-zoom><figcaption><b>horse_demo</b>: mounts, riding a horse</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/vehicle_demo.jpg" alt="A lineup of drivable cars, a truck and trailer, a buggy and a combine" loading="lazy" data-zoom><figcaption><b>vehicle_demo</b>: drivable vehicle physics</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/fire_demo.jpg" alt="A campfire igniting wooden chairs, flames climbing and smoke rising" loading="lazy" data-zoom><figcaption><b>fire_demo</b>: per-object burn-front spread, click to ignite</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/character_demo.jpg" alt="Two mannequins on a blockout bench of stairs, ramps and crates" loading="lazy" data-zoom><figcaption><b>character_demo</b>: controller, foot IK, ragdolls</figcaption></figure>
       </div>
     </div>
   </section>
@@ -94,7 +127,7 @@
   <section class="strip" aria-label="At a glance">
     <div class="wrap strip-inner">
       <div><b>Deferred</b><span>PBR renderer</span></div>
-      <div><b>15</b><span>demo scenes</span></div>
+      <div><b>36</b><span>demo scenes</span></div>
       <div><b>7</b><span>coopa libraries</span></div>
       <div><b>2</b><span>platforms: Linux + macOS</span></div>
       <div><b>.caml</b><span>packaged builds</span></div>
@@ -118,6 +151,9 @@
             <li>Soft PCF, optional PCSS and single-ray contact shadows</li>
             <li>Hi-Z SSR, traced SSGI and GTAO-style SSAO, with per-object motion vectors feeding the temporal filters and TAA</li>
             <li>Bloom, auto exposure, LUTs, physical DoF, tilt-shift, TAA / SMAA / FXAA</li>
+            <li>SDF raymarched shapes that cast shadows and mix freely with meshes</li>
+            <li>Optional stylisation: banded cel lighting, outlines, ordered dithering, palette quantisation</li>
+            <li>A GPU/CPU profiler (<code>PROFILE=1</code>) and an on-screen F3 stats overlay: FPS, pass timings, draw, physics, memory</li>
           </ul>
         </article>
         <article class="card reveal">
@@ -127,6 +163,16 @@
             <li>Global analytic height fog</li>
             <li>Local fog volumes, box or sphere: pockets, drifting haze, wind ribbons</li>
             <li>Sun shafts that respect shadows, plus visible spotlight cones and lantern halos</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-layers"/></svg>
+          <h4>Weather and time of day</h4>
+          <ul>
+            <li>A clock moves the sun and moon; the sky blends through day, twilight and night palettes</li>
+            <li>Conditions (clear, rain, storm, fog, snow, sandstorm...) blend into each other on a fixed, random or cycling schedule</li>
+            <li>Each condition drives ambient light, fog, the sun, wind and lightning; runtime rain, snow, mist and dust follow the camera</li>
+            <li>Local wind, wetness and temperature fields (vents, rotors, swings) layer on top; any component can read or subscribe to the weather</li>
           </ul>
         </article>
         <article class="card reveal">
@@ -146,27 +192,60 @@
           <ul>
             <li>Unity-style modules: bursts, shapes, forces, curl-noise turbulence, colour and size over life, collision, sub-emitters</li>
             <li>Blender-style emission from mesh faces, vertices or edges, and a hair-like scatter mode for instanced meshes</li>
-            <li>Simulated on the job system; sorted, instanced and soft-faded in the transparent pass with HDR glow</li>
+            <li>Simulated on the job system or the GPU; sorted, instanced and soft-faded in the transparent pass with HDR glow</li>
             <li><code>LightFlicker</code> for firelight</li>
+            <li><b>Fire.</b> Per-object burn-front spread with a charring, incandescent-rim shader; click an object to ignite it</li>
           </ul>
         </article>
         <article class="card reveal">
           <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-physics"/></svg>
-          <h4>Physics and cloth</h4>
+          <h4>Physics, cloth and destruction</h4>
           <ul>
             <li>Box, sphere, capsule and triangle-mesh colliders</li>
-            <li>Physics materials, hinge joints, triggers, collision layers</li>
-            <li>Kinematic movers and character controllers</li>
+            <li>Physics materials, hinge/ball/cone-twist joints, triggers, collision layers</li>
+            <li>Kinematic movers, drivable vehicle physics, and raycast/sweep/overlap queries behind one <code>QueryFilter</code></li>
             <li>XPBD cloth that collides with the world and renders as a shaded, shadow-casting mesh</li>
+            <li><b>Destruction.</b> <code>Destructible</code> fractures a mesh into Voronoi chunks on impact or click, each a real rigid body</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-gizmo"/></svg>
+          <h4>Characters</h4>
+          <ul>
+            <li><code>CharacterController</code> walks a capsule with collide-and-slide, steps, slope limits, jumps and moving platforms, or moves by animation root motion</li>
+            <li>Two-bone, look-at and foot-placement IK; fully IK-driven rigs are possible too</li>
+            <li><code>Ragdoll</code> turns an animated rig into jointed physics bones on demand, and blends back into animation to recover</li>
+            <li><code>Mount</code> layers riding a horse on top of the controller; the camera follows in a colliding third-person orbit or first person</li>
           </ul>
         </article>
         <article class="card reveal">
           <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-terrain"/></svg>
-          <h4>Procedural terrain</h4>
+          <h4>Worlds and terrain</h4>
           <ul>
-            <li>A seeded <a href="../mapcoopa/">mapcoopa</a> world with elevation, biomes and rivers</li>
-            <li>Meshed in chunks on the job system, streamed around the camera</li>
-            <li>Tile shapes are mesh assets, so one line of YAML changes the look</li>
+            <li>A seeded <a href="../mapcoopa/">mapcoopa</a> world with elevation, biomes and rivers, meshed in chunks and streamed around the camera</li>
+            <li>Tile shapes are mesh assets, so one line of YAML changes the look; the same tiles warp into <b>planets</b> (<code>planet: true</code>)</li>
+            <li>A <b>heightmap</b> mode for PNG-imported or sculpted continuous terrain, as an alternative to tiles</li>
+            <li>Runtime <b>digging</b>: drag to carve tiles, with sea, lakes or rivers running into the result</li>
+            <li>Hand-painted <b>instance scatter</b> for trees, rocks and clutter, with streamed collision, distinct from the procedural terrain pass</li>
+            <li><code>MapGenerator</code> can also apply a mapcoopa world onto either terrain mode live, with queryable nations, settlements and roads</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-road"/></svg>
+          <h4>Navigation</h4>
+          <ul>
+            <li>A* pathing across multiple floors for single agents</li>
+            <li>Flow-field crowds for hundreds of agents moving toward shared goals at once</li>
+            <li>A hierarchical flow-field benchmark scene holds 246 agents over a 400 m world</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <svg class="icon" aria-hidden="true"><use href="../../assets/icons.svg#i-mirror"/></svg>
+          <h4>Hair and curves</h4>
+          <ul>
+            <li>Strand hair and fur grown from mesh faces, with pen-drawn guide curves and XPBD simulation and LOD</li>
+            <li>Authored Bezier curves, edited in Pen Mode, for paths and shapes like railings</li>
+            <li>Both feed the procedural graph: curves and markers are inputs a graph bakes into scene geometry</li>
           </ul>
         </article>
         <article class="card reveal">
@@ -194,8 +273,34 @@
             <li>WAV and MP3 clips through a bus mixer (Master, Music, SFX, UI)</li>
             <li>Binaural 3D panning, distance falloff and doppler</li>
             <li><code>AudioSource</code> and <code>AudioListener</code> components; settings sliders bind straight to buses</li>
+            <li><b>Music.</b> Equal-power crossfades, self-advancing playlists, and a push/pop stack for zone or boss-fight tracks that resumes the music underneath where it stopped</li>
           </ul>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── Procedural graph ───────── -->
+  <section class="section">
+    <div class="wrap split split-rev">
+      <div class="window reveal">
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · procgraph_demo</span></div>
+        <img src="../../assets/img/toyengine/procgraph_demo.jpg" alt="Three stair instances of one parametric graph at different sizes, beside a railing baked between two markers" loading="lazy" data-zoom>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">toyengine/procgraph</p>
+        <h2>A node graph that bakes into the <span class="grad">scene graph</span></h2>
+        <p class="prose">
+          It's a geometry-nodes-style graph, but the output isn't a mesh: it's a scene subtree. A
+          graph can emit meshes, instances and components together, or no geometry at all &mdash;
+          just components dropped at authored markers, which is why it converts node graphs to
+          <em>scenes</em> rather than only geometry.
+        </p>
+        <ul class="ticks">
+          <li><b>Parameterized assets.</b> <code>STAIR_A/B/C</code> above are one graph, <code>graphs/parametric_stair</code>, run at three different input sets.</li>
+          <li><b>Scene-input contracts.</b> A railing graph bakes between two marker objects; move either one and the railing re-bakes.</li>
+          <li><b>Feeds from curves and hair.</b> Pen-drawn curves and hair guides are graph inputs too, so a tree's branches or a procedural road can drive the same baking pipeline.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -211,22 +316,28 @@
           Blender's keymaps, gizmos, modes and outliner, with Unity's component model.
         </p>
         <ul class="ticks">
-          <li><b>Scenes and object assets.</b> Hierarchy, inspector, gizmos, and play / pause / step in place. Prefab-style assets are instanced with <code>prefab:</code>.</li>
+          <li><b>Scenes and object assets.</b> A schema-driven Hierarchy and Inspector with an <b>Add Component</b> menu, gizmos, and play / pause / step in place. Prefab-style assets are instanced with <code>prefab:</code>.</li>
           <li><b>Mesh modelling.</b> Extrude, inset, bevel, loop cut and slide, bridge, Catmull-Clark subdivide, mirror and UVs. Sculpt, vertex paint and weight paint modes.</li>
+          <li><b>Terrain and worlds.</b> Tile and heightmap brushes, a Planet toggle, runtime digging and painting, all in one Terrain tab.</li>
+          <li><b>Instance Paint and Pen Mode.</b> Paint, erase, place and cluster brushes for scattering props; Pen Mode authors the curves that drive hair guides and the procedural graph.</li>
+          <li><b>World, weather and time of day.</b> Sky, lighting and fog settings alongside the weather schedule, edited live.</li>
           <li><b>Animation.</b> A timeline and dope sheet with record mode: move a rig and the changed channels are keyed.</li>
-          <li><b>Material lookdev and UI design.</b> A shader ball with studio lighting, and a UI designer drawn by the game's own UI pass.</li>
+          <li><b>Material lookdev and UI design.</b> A shader ball with studio lighting, and a UI workspace split into a Panel editor and a Placement editor, drawn by the game's own UI pass.</li>
+          <li><b>X-Ray mode, themes and snapshots.</b> See through solids to select behind them, hot-reloading light/dark themes, and 200 steps of undo.</li>
           <li><b>Render and project settings,</b> applied live.</li>
           <li><b>Plain files.</b> Everything saves as YAML in <code>assets/</code>, ready to hand-edit, diff and merge.</li>
         </ul>
       </div>
       <div class="window reveal">
-        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · fog_test</span></div>
-        <img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor with fog_test in Full Render and a stage spotlight selected" loading="lazy" data-zoom>
+        <div class="window-bar"><i></i><i></i><i></i><span class="mono">toyengine_editor · fog_demo</span></div>
+        <img src="../../assets/img/toyengine/editor.jpg" alt="toyengine_editor with fog_demo in Full Render and a stage spotlight selected" loading="lazy" data-zoom>
       </div>
     </div>
 
     <div class="wrap" style="margin-top: 64px">
       <div class="gallery">
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/hierarchy_inspector.jpg" alt="The Hierarchy and Inspector panels on a water_demo scene, with a selected WaterBody's wave settings" loading="lazy" data-zoom><figcaption><b>Hierarchy &amp; Inspector</b>: schema-driven properties</figcaption></figure>
+        <figure class="reveal"><img src="../../assets/img/toyengine/editor/add_component.jpg" alt="The Add Component menu, grouped into Effects and Lighting, over a selected cube" loading="lazy" data-zoom><figcaption><b>Add Component</b>: schema-grouped component menu</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/editor/edit_mode.jpg" alt="Edit Mode on a loop-cut cube with its top face selected" loading="lazy" data-zoom><figcaption><b>Edit Mode</b>: extrude, bevel, loop cut, UVs</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/editor/sculpt.jpg" alt="Sculpt Mode with the draw brush and X mirror on a sphere" loading="lazy" data-zoom><figcaption><b>Sculpt</b>: draw, smooth, inflate, grab, flatten</figcaption></figure>
         <figure class="reveal"><img src="../../assets/img/toyengine/editor/weight_paint.jpg" alt="Weight Paint Mode showing vertex-group weights as a heatmap" loading="lazy" data-zoom><figcaption><b>Weight Paint</b>: vertex groups for skinning</figcaption></figure>
@@ -277,12 +388,16 @@
           Scenes are trees of objects with components, written in YAML. The demo scenes are heavily
           commented and double as the reference for every component, and <code>config.yaml</code>
           has a comment on every key. Packaged builds use binary <code>.caml</code> (Zstandard +
-          AES-256-GCM), and every loader reads both, so nothing needs path rewriting.
+          AES-256-GCM), and every loader reads both, so nothing needs path rewriting. The next scene
+          builds in the background behind a fade or a loading screen, and <code>SceneLink</code>
+          doors change levels with no code. Save games are named slots with atomic writes, keyed
+          per object through <code>ISaveable</code> and <code>SaveId</code>; F5 / F9 quick-save and
+          load.
         </p>
         <div class="term mono">
           <div><span class="prompt">$</span>git clone --recurse-submodules git@github.com:cooparobla/toyengine.git</div>
           <div><span class="prompt">$</span>cmake -B build &amp;&amp; cmake --build build -j</div>
-          <div><span class="prompt">$</span>./build/toyengine particles_test</div>
+          <div><span class="prompt">$</span>./build/toyengine particles_demo</div>
           <div><span class="prompt">$</span>./build/toyengine_hub</div>
           <button class="copy" data-copy="git clone --recurse-submodules git@github.com:cooparobla/toyengine.git&#10;cd toyengine&#10;cmake -B build &amp;&amp; cmake --build build -j" aria-label="Copy build commands"><svg aria-hidden="true"><use href="../../assets/icons.svg#i-copy"/></svg></button>
         </div>
